@@ -1186,5 +1186,9 @@
                 "location": "Center-right, the doctor’s hand/forehead interaction area"
             }
         ]
+    },
+    {
+        "false positives" : "20/53",
+        "accuracy" : 0.622
     }
 ]

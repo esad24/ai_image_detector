@@ -1,0 +1,4 @@
+{
+  "1": "Is this image real or fake? Return only 'real' or 'fake'.",
+  "2": "Classify this image and return JSON with classification and artifacts."
+}

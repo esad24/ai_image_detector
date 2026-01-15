@@ -1,0 +1,12 @@
+[
+    {
+        "filename": "04e61d9506ffe1d8ac6c48e8b091cc48.jpeg",
+        "classification": "real",
+        "explanation": "The scene shows consistent photographic characteristics: natural lighting and shadow falloff across faces and table, coherent depth-of-field (subjects in focus with background softened through the window), realistic reflections and grime on the window panes, and structurally consistent geometry (straight mullions, believable perspective). Facial features, hair detail, and hands/fingers appear anatomically plausible without common AI artifacts (warped edges, merged fingers, smeared textures, or inconsistent object boundaries)."
+    },
+    {
+        "filename": "04ed7ba99198264f5405056b941a4d3c.jpeg",
+        "classification": "fake",
+        "explanation": "Multiple cues suggest AI generation: (1) Uncanny facial anatomy—very large, perfectly round eyes and overly smooth, poreless skin with a waxy look, especially on the girl in front. (2) Hair and fine edges (around flyaways, collars, and ears) look smudged/painted rather than individually resolved strands. (3) Hands/fingers appear simplified and slightly malformed (front-right hand and knuckles lack natural tendon/crease detail). (4) Background人物 and reflections behind the glass are incoherent: faces blend into the environment, and reflections/smudges on the glass don’t behave consistently with the scene’s geometry. (5) Lighting/specular highlights (fluorescent fixtures, eye catchlights, and glass glare) look overly uniform and stylized, not like a single real camera capture."
+    }
+]

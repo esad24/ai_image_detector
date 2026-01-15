@@ -7,7 +7,7 @@ import base64
 from openai import OpenAI
 from dotenv import load_dotenv
 from prompts import PROMPTS
-from response_schema import ImageAuthenticityResult
+from response_schema import givenTypes, explain
 
 load_dotenv()
 
@@ -34,15 +34,14 @@ def encode_image(path):
 def analyze_image(base64_image):
     response = client.responses.parse(
         model=MODEL_NAME,
-        #reasoning={"effort": "medium"},          # somehow this doesnt return a response yet
-        #text={"verbosity": "low"},               # Only want 1-word output
+        reasoning={"effort": "high"},          # somehow this doesnt return a response yet
         input=[
             {
                 "role": "user",
                 "content": [
                     {
                         "type": "input_text",
-                        "text": PROMPTS["prompt3"]["text"]
+                        "text": PROMPTS["prompt4"]["text"]
                     },
                     {
                         "type": "input_image",
@@ -51,14 +50,13 @@ def analyze_image(base64_image):
                 ]
             }
         ],
-        text_format=ImageAuthenticityResult,        
+        text_format=explain,        
         max_output_tokens=1000
     )
     return response.output_parsed
 
 
 def main():
-    # Load image file paths
     images = []
     for root, dirs, files in os.walk(IMAGE_FOLDER):
         for f in files:
@@ -86,8 +84,8 @@ def main():
 
         results.append([os.path.basename(img_path), result])
 
-        #i += 1
-        #if i == 2: break
+        i += 1
+        if i == 2: break
 
 
 # Classification
@@ -131,7 +129,25 @@ def main():
 
     # import json
 
-    OUTPUT_JSON = "results/classification_artifacts_explanation.json"
+    # OUTPUT_JSON = "results/gpt-5.2/explain.json"
+
+    # # Convert results to serializable format
+    # serializable_results = []
+    # for filename, result in results:
+    #     serializable_results.append({
+    #         "filename": filename,
+    #         "classification": result.classification,
+    #         "artifacts": [a.__dict__ for a in result.artifacts]
+    #     })
+
+    # # Save to JSON file
+    # with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
+    #     json.dump(serializable_results, f, ensure_ascii=False, indent=4)
+
+    # print(f"\nSaved all results to {OUTPUT_JSON}")
+
+
+    OUTPUT_JSON = "results/gpt-5.2/explain.json"
 
     # Convert results to serializable format
     serializable_results = []
@@ -139,7 +155,7 @@ def main():
         serializable_results.append({
             "filename": filename,
             "classification": result.classification,
-            "artifacts": [a.__dict__ for a in result.artifacts]
+            "explanation": result.explanation
         })
 
     # Save to JSON file
@@ -148,6 +164,9 @@ def main():
 
     print(f"\nSaved all results to {OUTPUT_JSON}")
 
+    
+
 
 if __name__ == "__main__":
+
     main()

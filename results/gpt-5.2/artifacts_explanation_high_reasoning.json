@@ -1,0 +1,33 @@
+[
+    {
+        "filename": "04e61d9506ffe1d8ac6c48e8b091cc48.jpeg",
+        "classification": "real",
+        "artifacts": []
+    },
+    {
+        "filename": "04ed7ba99198264f5405056b941a4d3c.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "structural",
+                "description": "The front-right child’s hand resting on the counter (bottom-right) shows malformed finger anatomy—fingers appear fused/unnaturally shaped and the knuckle structure is unclear."
+            },
+            {
+                "type": "structural",
+                "description": "The center-back child’s face and hair (middle of image) blend oddly: a strand of hair crosses the forehead and merges into the facial area with smeared/unclear edges, giving an implausible occlusion."
+            },
+            {
+                "type": "semantic",
+                "description": "Several children have unusually large, glassy eyes with overly smooth, poreless skin (especially the front-right child), producing a doll-like, non-photographic facial realism inconsistency."
+            },
+            {
+                "type": "physical",
+                "description": "Reflections/lighting on the glass partition (upper center with fluorescent lights) don’t convincingly interact with the subjects—high-intensity reflected panels and smudges appear disconnected from expected glare and depth cues."
+            },
+            {
+                "type": "stylistic",
+                "description": "The image has a strong cinematic/processed look with uniform grain and softened detail across faces and clothing textures, consistent with AI-generated rendering rather than camera-specific noise and sharpness falloff."
+            }
+        ]
+    }
+]
