@@ -2,14 +2,13 @@ from pydantic import BaseModel
 from typing import List, Literal
 
 # Sub-model for the items inside the 'artifacts' array
-class Artifact(BaseModel):
+class ArtifactTypes(BaseModel):
     type: Literal["structural", "physical", "semantic", "stylistic"]
-    description: str
 
 # Main model for the API response
-class givenTypes(BaseModel):
+class artifacts(BaseModel):
     classification: Literal["real", "fake"]
-    artifacts: List[Artifact]
+    artifacts: List[ArtifactTypes]
 
 
 # Main model for the API response

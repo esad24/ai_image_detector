@@ -1,12 +1,9 @@
-import json
+from config.response_schema import artifacts
 
-def load_prompt(prompt_id: int):
-    with open("config/prompts.json", "r") as f:
-        prompts = json.load(f)
-
-    key = str(prompt_id)
-    if key not in prompts:
-        raise ValueError("Prompt ID not found")
-
-    return prompts[key]
-
+prompt_dict = {
+  "1": "Is this image real or fake? Return only 'real' or 'fake'.",
+  "2": {
+        "text": "Analyze the image and decide whether it is real or AI-generated. If it is fake identify which artifact types are present using only the following categories: 'structural' (Structural & Component Defects), 'physics' (violation of the laws of physics), 'semantic' (Semantic & Functional Implausibilities), 'stylistic'. Do not provide any explanation.",
+        "schema": artifacts
+      }
+}
