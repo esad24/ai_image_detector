@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "model": "qwen3-vl",
+    "prompt_id": 3,
+    "temperature": 0.1,
+    "reasoning": false
+  },
+  "image_count": 5,
+  "results": [
+    {
+      "filename": "7784c7d9d0ff5eec84cf377888af309f0b2e1af6f5a5b3f89ae7b4de591de9a5.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "The middle person's jacket has buttons where a zip-up jacket should have a zipper, creating a mismatched component.",
+          "location": "middle person's jacket (front)"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "The middle person's visible hand has distorted finger proportions, making the hand appear unnatural.",
+          "location": "middle person's visible hand (fingers)"
+        }
+      ]
+    },
+    {
+      "filename": "2ddf7a07da956c375d9d512cf876bd871f5a3150db7b68b7ef25c1c91a694238_r4.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "2ed5f853e9c2b6a92bca20cfcf5a9fe85d353d5ece606d57dba8a024dd1887db.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "3fa232ceac1b8827f71f6d6c4c617dd7.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "physical",
+          "reasoning": "Two toothbrushes positioned inside the mouth in a physically impossible way, as the bristles would overlap and interfere with each other, making it impossible to hold both in the mouth simultaneously like this.",
+          "location": "mouth"
+        }
+      ]
+    },
+    {
+      "filename": "1c5a36da63d77c6a529d14f6ede897e28406569e3e471361f4282d10a1c7442b_r12.jpeg",
+      "classification": "fake",
+      "artifacts": []
+    }
+  ]
+}

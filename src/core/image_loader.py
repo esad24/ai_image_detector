@@ -2,13 +2,17 @@ import os
 
 ALLOWED_EXTENSIONS = (".jpg", ".jpeg", ".png", ".webp")
 
-def load_images(folder_path):
-    if(folder_path == "train"):
-        folder_path = "/home/usluesyr/ai_image_detector/data/train/images"
-    elif(folder_path == "test"):
-        folder_path = "/home/usluesyr/ai_image_detector/data/test/images"
+def load_images(image_folder):
+    if(image_folder == "fake_train"):
+        folder_path = "/home/usluesyr/ai_image_detector/data/fake/train/images"
+    elif(image_folder == "fake_test"):
+        folder_path = "/home/usluesyr/ai_image_detector/data/fake/test/images"
+    elif(image_folder == "real_train"):
+        folder_path = "/home/usluesyr/ai_image_detector/data/real/train/images"
+    elif(image_folder == "real_test"):
+        folder_path = "/home/usluesyr/ai_image_detector/data/real/test/images"
     else:
-        if not os.path.isdir(folder_path):
+        if not os.path.isdir(image_folder):
             raise ValueError("Image folder does not exist")
 
     images = []

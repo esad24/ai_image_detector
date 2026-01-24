@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "model": "gpt-5.2",
+    "prompt_id": 3,
+    "temperature": 0.2,
+    "reasoning": "none"
+  },
+  "image_count": 5,
+  "results": [
+    {
+      "filename": "7784c7d9d0ff5eec84cf377888af309f0b2e1af6f5a5b3f89ae7b4de591de9a5.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "description": "Severe smearing/black blur obscures and deforms the central subject\u2019s torso and arms, creating an unnaturally blended silhouette where clothing/body boundaries should be clear (looks like a generation \u201cmelt\u201d/masking failure). Spatial location: center of the image, running vertically from the mid-chest area down to the waist/hand area of the middle person and spilling into the lower-center foreground."
+        },
+        {
+          "type": "structural",
+          "description": "Hands/fingers appear partially lost in the same blur with unclear finger separation and inconsistent edges, suggesting malformed anatomy rather than motion blur. Spatial location: lower center, where the middle person\u2019s hands should be."
+        },
+        {
+          "type": "semantic",
+          "description": "T-shirt/hoodie lettering is not cleanly legible and looks inconsistent/garbled (typical AI text rendering issue). Spatial location: chest of the middle person (center)."
+        },
+        {
+          "type": "stylistic",
+          "description": "Depth-of-field/softness is applied in a way that feels uneven: faces are sharp while adjacent body/clothing regions collapse into heavy, unnatural blur without a consistent optical explanation. Spatial location: primarily center and lower-center foreground compared to the relatively crisp faces in the upper-middle."
+        }
+      ]
+    },
+    {
+      "filename": "2ddf7a07da956c375d9d512cf876bd871f5a3150db7b68b7ef25c1c91a694238_r4.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "semantic",
+          "description": "Subject is wearing what appears to be a space/astronaut-style suit/neck ring, but also a regular casual baseball cap; the combination is functionally inconsistent for real protective gear (helmet missing/doesn\u2019t interface). Location: top-center on the woman\u2019s head/neck area (cap and collar)."
+        },
+        {
+          "type": "structural",
+          "description": "Neck collar/helmet-ring geometry looks malformed: asymmetric thickness and irregular inner rim contours that don\u2019t follow a consistent manufactured shape. Location: center of image around the woman\u2019s neck (teal/white collar)."
+        },
+        {
+          "type": "stylistic",
+          "description": "Overly uniform, glossy \u2018product-render\u2019 look on the white suit with very clean edges and simplified fabric micro-texture compared to the rest of the scene. Location: center/lower-center on the woman\u2019s torso and pants."
+        },
+        {
+          "type": "structural",
+          "description": "Hand/finger anatomy appears off: the supporting hand under the child\u2019s thigh has ambiguous finger separation and unnatural curvature/length, suggesting fused or poorly defined digits. Location: lower-right center where the woman\u2019s hand supports the boy\u2019s leg."
+        },
+        {
+          "type": "structural",
+          "description": "Child\u2019s lower-leg/ankle area blends oddly into the sock/shoe edge with smeared boundaries and inconsistent seam alignment. Location: lower center where the boy\u2019s foot meets the girl\u2019s hands."
+        },
+        {
+          "type": "stylistic",
+          "description": "Lighting/shadow consistency is slightly unnatural: faces appear evenly and cleanly lit while some clothing folds and background areas show harsher, more directional contrast, giving a composited feel. Location: overall, most noticeable on faces (upper center/right) vs. suit/background (center/right background)."
+        }
+      ]
+    },
+    {
+      "filename": "2ed5f853e9c2b6a92bca20cfcf5a9fe85d353d5ece606d57dba8a024dd1887db.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "description": "Right hand shows muddled finger structure (digits appear fused/indistinct, with an unnatural knuckle/finger outline).','location':'mid-right of image, in front of her chest (raised arm/hand)."
+        },
+        {
+          "type": "structural",
+          "description": "Left hand/fingers look malformed and partially merged into the shorts/hip area; edges lack clear finger separation.','location':'mid-left, near her left hip (lowered arm/hand)."
+        },
+        {
+          "type": "structural",
+          "description": "Shoe/foot geometry is inconsistent: the rear/left shoe looks like an amorphous dark wedge with unclear sole and heel definition.','location':'lower center-left, trailing foot behind the front leg."
+        },
+        {
+          "type": "semantic",
+          "description": "Background runners are excessively smeared/ill-defined in a way that doesn\u2019t match a typical camera motion pattern for a sharp subject (faces/bodies become vague blobs rather than coherent motion blur).','location':'mid-right background and mid-left background behind the main runner."
+        },
+        {
+          "type": "stylistic",
+          "description": "Overly smooth, airbrushed skin and very uniform lighting/tonal transitions (especially on face and arms), giving a synthetic \u201cstock-render\u201d look.','location':'subject\u2019s face (upper center) and arms/legs (center to lower center)."
+        }
+      ]
+    },
+    {
+      "filename": "3fa232ceac1b8827f71f6d6c4c617dd7.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "description": "Teeth/mouth geometry is inconsistent: the visible teeth appear as a smooth, evenly spaced \u201cblock\u201d with unnatural uniformity and unclear separation between individual teeth, not matching the lip/cheek deformation expected from the bite angle and pressure of the toothbrush head(s). This reads as a blended or synthesized dental region rather than a natural bite/teeth edge alignment (center of image, inside the open mouth)."
+        },
+        {
+          "type": "semantic",
+          "description": "Implausible brushing action: the subject appears to be biting down on a toothbrush head while another toothbrush is also positioned across/into the mouth area at the same time, creating an awkward, functionally odd configuration for actually brushing (lower center; two toothbrush heads converging at the mouth)."
+        },
+        {
+          "type": "structural",
+          "description": "Toothbrush interaction/occlusion looks off: the bristles and plastic edges don\u2019t convincingly compress against the lips/teeth; contact points look \u2018hovered\u2019 or too clean with minimal deformation, suggesting imperfect object-to-face compositing (at the mouth line where both toothbrush heads meet the teeth/lip area)."
+        },
+        {
+          "type": "structural",
+          "description": "Hand/finger rendering irregularities: fingertips and nail/skin transitions look slightly waxy/smudged with some ambiguous edge definition, typical of generative smoothing, especially on the hand at the right edge holding the blue-handled brush (right side, lower-right quadrant)."
+        },
+        {
+          "type": "stylistic",
+          "description": "Overly cinematic, shallow-depth-of-field look with very uniform skin detail and microtexture that feels \u2018airbrushed\u2019/CG-like compared to the rest of the scene\u2019s realism (face overall, especially cheeks/forehead in the upper-center)."
+        }
+      ]
+    },
+    {
+      "filename": "1c5a36da63d77c6a529d14f6ede897e28406569e3e471361f4282d10a1c7442b_r12.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "description": "Ear anatomy looks simplified/warped: the outer rim and inner folds are under-defined and blend unnaturally into the side of the head/hairline, with a slightly \u201cmelted\u201d contour rather than crisp cartilage detail typical in photos at this resolution/sharpness level (right side of face, mid-right edge)."
+        },
+        {
+          "type": "structural",
+          "description": "Stethoscope tubing/hardware has inconsistent geometry: the left loop and the lower connection area show odd kinks/joins and an unclear attachment point where the metal/plastic transitions, giving a subtly malformed, non-manufactured look (lower-left chest area, around the stethoscope\u2019s lower bend/connector)."
+        },
+        {
+          "type": "semantic",
+          "description": "Wardrobe/prop styling feels like a stock \u201cdoctor\u201d composite: perfectly clean lab coat with stethoscope and an unusually pristine, uniform texture shirt with a slightly ambiguous collar/placket structure\u2014reads more like a generic AI/stock archetype than a candid clinical portrait (center torso: collar, buttons/placket, and coat lapels)."
+        },
+        {
+          "type": "stylistic",
+          "description": "Skin appears overly smooth with uniform pore detail and cosmetically even specular highlights, producing a \u2018plastic/airbrushed\u2019 finish inconsistent with the otherwise sharp, high-contrast portrait lighting (entire face, especially cheeks and forehead)."
+        },
+        {
+          "type": "stylistic",
+          "description": "Background bokeh and lighting look algorithmically uniform: repeated soft rectangular ceiling lights and corridor blur appear too clean/regular, with a rendered \u201cstudio-like\u201d depth-of-field feel rather than natural optical imperfections (upper background and corridor behind subject)."
+        }
+      ]
+    }
+  ]
+}

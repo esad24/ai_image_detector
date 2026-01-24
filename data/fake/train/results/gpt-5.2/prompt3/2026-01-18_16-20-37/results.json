@@ -1,0 +1,201 @@
+{
+  "meta": {
+    "model": "gpt-5.2",
+    "prompt_id": 3,
+    "temperature": null,
+    "reasoning": "high"
+  },
+  "image_count": 5,
+  "results": [
+    {
+      "filename": "7784c7d9d0ff5eec84cf377888af309f0b2e1af6f5a5b3f89ae7b4de591de9a5.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "stylistic",
+          "reasoning": "Large, soft-edged dark smears/occlusions cut across the subjects, resembling an unrealistic foreground vignette or inpainting error rather than a coherent object.",
+          "location": "Lower middle, spanning across the center subject\u2019s torso and into the right subject\u2019s jacket"
+        },
+        {
+          "type": "structural",
+          "reasoning": "Hand anatomy is malformed/indistinct (fingers and joints are not clearly defined and appear merged/blurred into a single shape).",
+          "location": "Bottom center, near the middle subject\u2019s hand/waist area"
+        },
+        {
+          "type": "semantic",
+          "reasoning": "Clothing text/lettering is garbled and not cleanly readable, consistent with AI text-rendering failures.",
+          "location": "Center subject\u2019s chest (middle of image)"
+        },
+        {
+          "type": "structural",
+          "reasoning": "Background utility pole/crossbar geometry looks inconsistent, with unclear or missing cable connections and slightly implausible structure.",
+          "location": "Upper center background above the subjects\u2019 heads"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "Over-smoothed facial/skin texture and subtle haloing around hairlines/edges compared to the rest of the scene, suggesting synthetic rendering.",
+          "location": "Around all three faces and hairlines, most noticeable on the left and right subjects"
+        }
+      ]
+    },
+    {
+      "filename": "2ddf7a07da956c375d9d512cf876bd871f5a3150db7b68b7ef25c1c91a694238_r4.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "The woman\u2019s right hand shows irregular finger geometry (fingers appear fused/unnaturally bent, with unclear separation and proportions) while supporting the boy\u2019s legs.",
+          "location": "Lower center-right, on the woman\u2019s hand under the boy\u2019s knees/shins"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The girl\u2019s hand gripping the boy\u2019s ankle/foot has distorted finger shapes and an unclear transition into the sock/foot area (blended edges).",
+          "location": "Lower center-left, where the girl holds the boy\u2019s foot"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The boy\u2019s foot/ankle area looks malformed and ambiguously clothed (the sock/shoe boundary is unclear, with smeared edges and an odd rounded toe shape).",
+          "location": "Lower center, at the end of the boy\u2019s extended leg"
+        },
+        {
+          "type": "semantic",
+          "reasoning": "The neck/helmet component of the astronaut suit is functionally implausible: a rigid collar/visor element is present but not connected to a helmet, and it sits awkwardly around the neck like a detached ring.",
+          "location": "Center, around the woman\u2019s neck/chest (blue-tinted collar)"
+        },
+        {
+          "type": "semantic",
+          "reasoning": "A baseball cap worn with an apparent astronaut suit collar/helmet assembly is contextually inconsistent with typical suit/helmet use (cap would interfere with sealing/fit).",
+          "location": "Top center, on the woman\u2019s head"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The collar/visor piece has warped geometry and inconsistent edge continuity (uneven curvature and layered bands that don\u2019t align cleanly).",
+          "location": "Center, the blue-and-white collar/visor assembly"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "Skin and facial textures appear overly smooth and uniformly lit compared to surrounding fabric detail, giving a synthetic \u2018airbrushed\u2019 look.",
+          "location": "Faces of the woman and both children (upper center and upper right/left)"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "Some background railing segments show slight \u2018melted\u2019/softened detail and inconsistent sharpness that doesn\u2019t match the main subjects\u2019 crisp edges.",
+          "location": "Lower right and lower left along the blue railings"
+        },
+        {
+          "type": "physical",
+          "reasoning": "Contact shadows are weak/inconsistent where hands and legs meet (notably under the boy\u2019s leg on the suit and around the grasp points), reducing the sense of real physical contact.",
+          "location": "Lower center to lower center-right at the hand/leg contact areas"
+        }
+      ]
+    },
+    {
+      "filename": "2ed5f853e9c2b6a92bca20cfcf5a9fe85d353d5ece606d57dba8a024dd1887db.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "Left hand shows poorly defined/fused fingers and an ambiguous thumb shape, reading more like a soft blob than distinct digits.",
+          "location": "lower-left quadrant, near the runner's left hip"
+        },
+        {
+          "type": "structural",
+          "reasoning": "Right hand (raised) has muddled finger/knuckle separation with an unclear thumb attachment, creating an anatomically inconsistent fist.",
+          "location": "upper-center/right, in front of the runner's chest"
+        },
+        {
+          "type": "structural",
+          "reasoning": "Rear (trailing) shoe lacks normal footwear structure (missing clear sole/upper separation and details), appearing as a simplified dark wedge.",
+          "location": "lower-center/left, behind the forward leg"
+        },
+        {
+          "type": "structural",
+          "reasoning": "Forward shoe surface details and highlights look inconsistent and smeared (irregular white patches without clear material seams), reducing realistic texture cues.",
+          "location": "bottom-center, at the runner's front foot"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "Skin appears overly smooth and evenly lit with reduced natural micro-texture, giving a synthetic/airbrushed look relative to the scene.",
+          "location": "center (face, arms, and legs)"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "Background blur looks excessively uniform and painterly on people/foliage, with some figures losing coherent limb boundaries rather than natural motion/DOF blur.",
+          "location": "mid-right and mid-left background (other runners and trees)"
+        }
+      ]
+    },
+    {
+      "filename": "3fa232ceac1b8827f71f6d6c4c617dd7.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "semantic",
+          "reasoning": "Subject appears to be brushing/biting with two toothbrushes simultaneously in a crossed arrangement, which is an implausible usage scenario for the objects.",
+          "location": "Center-lower area at the mouth; both toothbrushes spanning left-to-right across the frame"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The toothbrush head inside the mouth lacks clear separation from teeth/gums; the bristles look fused into a smooth white mass with poorly defined tooth boundaries.",
+          "location": "Center-lower area, inside the mouth around the toothbrush head"
+        },
+        {
+          "type": "structural",
+          "reasoning": "Bristle geometry is unnaturally uniform and blocky, with repeating, overly-even tufts that look synthetic rather than manufactured/photographed.",
+          "location": "Both toothbrush heads (left-middle and center-lower/right-middle)"
+        },
+        {
+          "type": "structural",
+          "reasoning": "Right hand grip shows odd finger proportions and unclear joint/nail definition, suggesting malformed anatomy typical of generative artifacts.",
+          "location": "Bottom-right corner, fingers holding the blue-handled toothbrush"
+        },
+        {
+          "type": "structural",
+          "reasoning": "Left hand fingers appear smeared with indistinct knuckle structure and ambiguous finger separation around the toothbrush handle.",
+          "location": "Bottom-left corner, hand holding the white-handled toothbrush"
+        },
+        {
+          "type": "physical",
+          "reasoning": "Despite apparent biting/pressure against the toothbrush bristles, the bristles do not visibly compress or splay in a physically consistent way.",
+          "location": "Center-lower area, bristles in contact with the mouth/teeth"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "Skin and facial texture have a slightly waxy, overly-smoothed look with cinematic lighting/DOF that reads more like synthetic portrait rendering than a natural photo.",
+          "location": "Across the face, especially forehead and cheeks"
+        }
+      ]
+    },
+    {
+      "filename": "1c5a36da63d77c6a529d14f6ede897e28406569e3e471361f4282d10a1c7442b_r12.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "Stethoscope hardware on the viewer-left side has an ambiguous/warped junction where the metal and tubing meet, with geometry that looks partially melted and lacks clear, mechanically plausible parts.",
+          "location": "Lower-left quadrant, on the stethoscope yoke/junction near the chest"
+        },
+        {
+          "type": "structural",
+          "reasoning": "Stethoscope tubing appears to disappear/merge into the lab coat without a clear path around the collar/neck, with edges that fade unnaturally.",
+          "location": "Lower half, along both sides of the neck and where the tubing meets the coat lapels"
+        },
+        {
+          "type": "structural",
+          "reasoning": "Lab coat lapel and seam lines look inconsistent and overly smooth, with folds that do not form coherent fabric structure (some creases terminate abruptly).",
+          "location": "Lower-middle area around both lapels, especially viewer-right lapel"
+        },
+        {
+          "type": "structural",
+          "reasoning": "Shirt placket/collar details are not well-defined (buttons/buttonholes and stitching are indistinct), and the fabric texture warps unnaturally near the center line.",
+          "location": "Center-lower area, shirt collar and placket just below the chin"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "Facial skin appears unnaturally uniform and airbrushed with overly even specular highlights, giving a synthetic/plastic look rather than natural pore variation.",
+          "location": "Center of image, face (forehead, cheeks, and nose)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "model": "gemma3",
+    "prompt_id": 3,
+    "temperature": 0.1,
+    "reasoning": true
+  },
+  "image_count": 5,
+  "results": [
+    {
+      "filename": "7784c7d9d0ff5eec84cf377888af309f0b2e1af6f5a5b3f89ae7b4de591de9a5.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "The middle person's right hand (in the pants pocket) has malformed fingers or an abnormal number of fingers. This is a common artifact in AI-generated images where hands are rendered incorrectly.",
+          "location": "middle person's right hand in pants pocket, approximately center of the image"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "The right person's dreadlocks appear uniformly textured with no visible individual strands, which is inconsistent with the natural variation expected in real human hair.",
+          "location": "right person's hair, top right of the image"
+        }
+      ]
+    },
+    {
+      "filename": "2ddf7a07da956c375d9d512cf876bd871f5a3150db7b68b7ef25c1c91a694238_r4.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "2ed5f853e9c2b6a92bca20cfcf5a9fe85d353d5ece606d57dba8a024dd1887db.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "type": "semantic",
+          "reasoning": "The text is in the language of the original article, which is English, so it's semantically related to the article.",
+          "location": "The entire text is semantically related to the article. The text is the article itself."
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "The text uses a language that matches the original article, which is English, and the sentence structure and punctuation are consistent with English writing style. The text does not have any stylistic deviations from the original article.",
+          "location": "The entire text is stylistically consistent with the article."
+        },
+        {
+          "type": "structural",
+          "reasoning": "The text is structured as a narrative paragraph, which is consistent with the original article. The text has no structural deviations from the article.",
+          "location": "The entire text is structurally consistent with the - 1741334860684"
+        }
+      ]
+    },
+    {
+      "filename": "3fa232ceac1b8827f71f6d6c4c617dd7.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "physical",
+          "reasoning": "Violates the laws of physics: a person cannot hold two toothbrushes with their bristles inside the mouth simultaneously. Normally, only one toothbrush is used at a time for brushing.",
+          "location": "The area around the mouth where two toothbrushes are positioned inside the mouth"
+        }
+      ]
+    },
+    {
+      "filename": "1c5a36da63d77c6a529d14f6ede897e28406569e3e471361f4282d10a1c7442b_r12.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "type": "stylistic",
+          "reasoning": "The text appears to have been written in a stylized manner, possibly by an AI, but it does not exhibit typical AI-generated text characteristics such as excessive repetition or predictable patterns. The content is coherent and logically structured, with a clear introduction, body, and conclusion. The language is formal and academic, yet the structure suggests a human author. The use of precise terminology and formal academic language is consistent with human writing. Additionally, the text includes references to specific, real-world topics (e.g., 'The Great Pacific Garbage Patch', 'NASA', 'Tungsten') that are not commonly associated with AI-generated content. The text's coherence and logical flow also suggest human authorship. The text does not contain common AI artifacts like overuse of adjectives or predictable sentence structures. The overall structure and language choices indicate that the text was likely written by a human.",
+          "location": "The text is written in English language. It is structured as an essay with an introduction, body, and conclusion. The content discusses topics related to environmental science, sustainability, and the impacts of human activities on the planet. It specifically mentions 'The Great Pacific Garbage Patch', 'NASA', 'Tungsten', and 'carbon footprint'. The text is formal and academic in tone, and uses technical terms correctly. The reference to 'carbon footprint' in the context of 'Tungsten' seems to be a specific example within the discussion of environmental impact. The text does not contain typical AI-generated artifacts like excessive repetition or predictable patterns. The content is logically structured and coherent, which is more typical of human writing than AI-generated text."
+        }
+      ]
+    }
+  ]
+}

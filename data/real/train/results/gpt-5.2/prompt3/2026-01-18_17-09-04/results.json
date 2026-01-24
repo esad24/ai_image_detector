@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "model": "gpt-5.2",
+    "prompt_id": 3,
+    "temperature": null,
+    "reasoning": "high"
+  },
+  "image_count": 5,
+  "results": [
+    {
+      "filename": "5a38a89f06ff8721b32a70e78fe17af3bb6e472d0f54dd3c3b213190914e1b5b_real.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "The ear on the viewer-right side has irregular geometry with simplified/missing inner folds and a slightly warped outline where it meets the head.",
+          "location": "Right side of face (viewer-right ear)"
+        },
+        {
+          "type": "structural",
+          "reasoning": "Hair strands and clumps blend into each other with smeared texture and an inconsistent hairline/part transition that lacks clear strand structure.",
+          "location": "Top of head (upper-center hair/hairline)"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The mouth/lip boundary looks partially merged with surrounding skin, with asymmetrical shaping and softened edges that don\u2019t match natural lip detail.",
+          "location": "Center-lower face (mouth and lips)"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The neckline/collar appears uneven in thickness and attachment, with the gray collar band blending ambiguously into the neck and shirt fabric.",
+          "location": "Lower center (neckline/collar area)"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "Skin texture appears overly smooth with synthetic-looking mottling/grain, while the \u2018dirt\u2019 pattern looks uniformly painted rather than naturally accumulated.",
+          "location": "Face (cheeks, nose, forehead)"
+        },
+        {
+          "type": "physical",
+          "reasoning": "Lighting cues are inconsistent: facial highlights suggest one direction, but the shading under the chin/neck and around the ears does not align cleanly with that same light source.",
+          "location": "Under chin and neck; around both ears"
+        }
+      ]
+    },
+    {
+      "filename": "1d2856c4cb2dccc727efb0eb05672eb875a661cc2fd6815549f1960e68e77cad_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "1c7d7dcede55634f300b85a4ea16927e_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "0a42722f321c31d600786256cb18c639_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "6ced4dbab85b6440a341ea4e190724e9_real.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "The animal\u2019s face has inconsistent anatomy: the muzzle/mouth area looks flattened with an unnatural, human-like tooth row and ambiguous nose structure.",
+          "location": "Center, upper-middle (animal\u2019s head/face)"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The animal\u2019s forelimbs/paws lack clear joint structure and claw definition; the shapes resemble fuzzy mittens/hands rather than coherent paws.",
+          "location": "Center-left and center-right (animal\u2019s raised paws/forearms next to each soldier)"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The animal\u2019s lower legs/feet appear like rounded, slipper-like forms with unclear toes/claws and irregular symmetry between left and right foot.",
+          "location": "Center, bottom (animal\u2019s feet on the snow)"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The right soldier\u2019s hand/arm area blends ambiguously into the coat and adjacent objects, with unclear finger definition and merging edges.",
+          "location": "Right side, mid-lower (right soldier\u2019s gloved hand area near the belt/coat front)"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The baton/sword/strap-like object on the right has inconsistent geometry and attachment points, appearing to merge into the coat without a clear holder or boundary.",
+          "location": "Right edge, mid to lower (object hanging beside the right soldier)"
+        },
+        {
+          "type": "physical",
+          "reasoning": "Ground contact and weight look inconsistent: the animal\u2019s feet and the soldiers\u2019 boots show weak/imprecise compression/indentation cues in the snow, giving a slightly \u201cfloating\u201d appearance.",
+          "location": "Bottom region around all three subjects\u2019 feet (snow contact area)"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "Edge halos and tonal discontinuities suggest compositing or generative blending, especially around the animal\u2019s outline compared with the soldiers and background.",
+          "location": "Around the animal\u2019s silhouette, especially center (edges of fur against the snowy background)"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "Film grain/noise appears uneven across subjects, with the animal\u2019s fur texture having a different noise character than the soldiers\u2019 coats and the background wall.",
+          "location": "Center (animal fur) versus left/right (soldiers\u2019 coats) and upper background (building wall)"
+        }
+      ]
+    }
+  ]
+}

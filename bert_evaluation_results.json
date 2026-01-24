@@ -1,0 +1,28 @@
+{
+  "per_file": [
+    {
+      "filename": "ccbcb5187879ea5f9ef2871e59b94651.jpeg",
+      "global_f1": 0.0,
+      "artifact_recall": 0.0,
+      "artifact_precision": 0.0,
+      "artifact_f1": 0.0,
+      "num_result_artifacts": 0,
+      "num_gt_artifacts": 1
+    },
+    {
+      "filename": "1e4cc5c247a3bdf572d4969c07992b34.jpeg",
+      "global_f1": 0.8467668890953064,
+      "artifact_recall": 0.8719485402107239,
+      "artifact_precision": 0.8655856251716614,
+      "artifact_f1": 0.8687554320748764,
+      "num_result_artifacts": 7,
+      "num_gt_artifacts": 4
+    }
+  ],
+  "dataset_summary": {
+    "global_f1_mean": 0.4233834445476532,
+    "artifact_recall_mean": 0.43597427010536194,
+    "artifact_precision_mean": 0.4327928125858307,
+    "artifact_f1_mean": 0.4343777160374382
+  }
+}

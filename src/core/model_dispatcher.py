@@ -1,7 +1,14 @@
-from model.openai_model import OpenAIModel
+from model.openai import OpenAIModel
+from model.ollama import OllamaModel
 
-def get_model(model_name: str, api_key: str):
+def get_model(model_name: str):
     if model_name == "gpt-5.2":
-        return OpenAIModel(model_name=model_name, api_key=api_key)
+        return OpenAIModel()
+    if model_name == "qwen3-vl":
+        return OllamaModel("qwen3-vl:8b")
+    if model_name == ("llava"):
+        return OllamaModel("llava:7b")
+    if model_name== ("gemma3"):
+        return OllamaModel("gemma3:4b")
 
     raise ValueError(f"Unknown model: {model_name}")

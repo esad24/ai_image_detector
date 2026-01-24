@@ -1,0 +1,120 @@
+{
+  "meta": {
+    "model": "gpt-5.2",
+    "prompt_id": 3,
+    "temperature": 0.2,
+    "reasoning": "none"
+  },
+  "image_count": 5,
+  "results": [
+    {
+      "filename": "7784c7d9d0ff5eec84cf377888af309f0b2e1af6f5a5b3f89ae7b4de591de9a5.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "description": "Central subject\u2019s body/arm area is smudged into an amorphous dark blur, obscuring clothing boundaries and creating an unnatural tapered shape that doesn\u2019t match a real jacket/torso silhouette (looks like a generation/segmentation failure). This blur also partially erases the hands/forearms region rather than showing distinct limbs and edges as expected in a photo with this focus/exposure)."
+        },
+        {
+          "type": "semantic",
+          "description": "Depth-of-field behavior is inconsistent: faces and jackets are sharp, but a large, localized blur covers only the center person\u2019s midsection/hands area instead of following a plausible focus plane or motion blur pattern; it reads as a localized \u201cmask\u201d artifact rather than optical blur."
+        },
+        {
+          "type": "structural",
+          "description": "Hands/fingers appear incomplete/unclear: the center figure\u2019s hand region lacks distinct finger structure and transitions into the same dark smear, suggesting malformed anatomy or missing detail."
+        },
+        {
+          "type": "stylistic",
+          "description": "Overall skin and fabric rendering has a slightly \u2018airbrushed\u2019/over-smooth look with high-contrast cinematic grading that can be consistent with AI portrait stylization (especially on faces and leather highlights), rather than natural camera noise/texture."
+        }
+      ]
+    },
+    {
+      "filename": "2ddf7a07da956c375d9d512cf876bd871f5a3150db7b68b7ef25c1c91a694238_r4.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "description": "Visor/helmet collar geometry looks inconsistent: the teal neck ring has irregular thickness and warped edges, with strap/buckle-like details that don\u2019t align cleanly with the suit seams on both sides of the neck/shoulders (mis-registered components). Location: center, around the woman\u2019s neck and upper chest."
+        },
+        {
+          "type": "structural",
+          "description": "Hand/finger anatomy looks off: the supporting hand under the boy\u2019s thigh shows unnaturally tapered/merged fingers and ambiguous knuckle structure, with a thumb/finger overlap that doesn\u2019t read as a clear grip. Location: lower center-right, under the boy\u2019s legs."
+        },
+        {
+          "type": "structural",
+          "description": "Contact/occlusion errors at the child\u2019s shoe/foot being held: edges blur and blend into the girl\u2019s hands, with unclear separation between the shoe, sock, and fingers. Location: lower center, where the girl holds the boy\u2019s foot."
+        },
+        {
+          "type": "semantic",
+          "description": "Spacesuit-like torso combined with a casual baseball cap and no visible helmet is an odd/implausible functional pairing for an EVA-style suit (protective system incomplete). Location: upper center (cap) and center (suit/neck ring)."
+        },
+        {
+          "type": "stylistic",
+          "description": "Overly \u201cstudio\u201d lighting and skin smoothing: faces have a slightly plastic, airbrushed look with very clean gradients and crisp specular highlights that don\u2019t match the rougher, outdoor background texture. Location: faces (upper center/right/left) compared to background (all around)."
+        }
+      ]
+    },
+    {
+      "filename": "2ed5f853e9c2b6a92bca20cfcf5a9fe85d353d5ece606d57dba8a024dd1887db.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "3fa232ceac1b8827f71f6d6c4c617dd7.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "semantic",
+          "description": "Implausible action: the toothbrush is being bitten/held between the teeth without any toothpaste or brushing motion; reads like a staged/incorrect depiction of brushing rather than a real moment of brushing teeth (especially with bristles pressed into the mouth while smiling). Location: center, at the mouth/teeth area with the toothbrush head inside the lips/teeth line."
+        },
+        {
+          "type": "structural",
+          "description": "Toothbrush intersection/geometry looks inconsistent: the brush head appears to merge awkwardly with the lips/teeth, with bristles clipping into the mouth and an unclear contact boundary. Location: center, where the upper toothbrush head meets the teeth/lips."
+        },
+        {
+          "type": "structural",
+          "description": "Hand/finger anatomy irregularities: the left hand (bottom-left) shows slightly malformed fingertip shapes and an odd nail/skin boundary; finger segments look a bit \u201cmelted\u201d compared with the rest of the image. Location: bottom-left corner, left hand holding the toothbrush."
+        },
+        {
+          "type": "structural",
+          "description": "Right-hand grip/knuckle structure appears off: subtle distortion around the thumb/index pinch and knuckle creases, with unnatural smoothness and ambiguous joint definition. Location: right side, hand holding the blue-handled toothbrush."
+        },
+        {
+          "type": "stylistic",
+          "description": "Overly uniform, \u201cwaxy\u201d skin rendering with exaggerated microtexture and specular highlights that don\u2019t fully match the soft indoor lighting; pores/wrinkles look algorithmically emphasized. Location: face, especially forehead and cheeks."
+        },
+        {
+          "type": "stylistic",
+          "description": "Depth-of-field/background blur feels overly synthetic and uniform, with indistinct shapes lacking natural detail transitions. Location: entire background, especially upper-right and left window area."
+        }
+      ]
+    },
+    {
+      "filename": "1c5a36da63d77c6a529d14f6ede897e28406569e3e471361f4282d10a1c7442b_r12.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "description": "Ears show slightly simplified/softened anatomy with unnaturally clean edges and reduced inner-ear detail compared to the rest of the high-detail face rendering; looks subtly \u201cmolded.\u201d Location: both ears, more noticeable on the viewer-right ear (image right side of head)."
+        },
+        {
+          "type": "structural",
+          "description": "Stethoscope tubing/metal junction appears inconsistently attached and slightly warped where it meets the chestpiece/connector, with a \u201cmelted\u201d transition rather than a crisp mechanical join. Location: lower-left quadrant on the viewer-left side, near the stethoscope yoke/connector above the left lapel."
+        },
+        {
+          "type": "semantic",
+          "description": "Stethoscope drape and visible parts don\u2019t fully read as a coherent, correctly routed stethoscope: the tubing paths and where they disappear under the coat look ambiguous and inconsistent with typical placement. Location: around the neck and both lapels, especially viewer-left lapel area."
+        },
+        {
+          "type": "stylistic",
+          "description": "Skin has an overly uniform, pore-minimized \u2018airbrushed\u2019 texture with very smooth tonal gradients and limited micro-variation, typical of AI/CG portrait rendering. Location: cheeks, forehead, and around the nose/mouth."
+        },
+        {
+          "type": "stylistic",
+          "description": "Background corridor lighting and bokeh look artificially even and \u201cdesigned,\u201d with smooth gradients and uniform blur that don\u2019t strongly match real lens character; the ceiling lights have a slightly synthetic glow. Location: upper background, especially ceiling lights behind the head and along the hallway."
+        }
+      ]
+    }
+  ]
+}

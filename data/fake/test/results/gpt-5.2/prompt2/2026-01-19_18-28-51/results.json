@@ -1,0 +1,509 @@
+{
+  "meta": {
+    "model": "gpt-5.2",
+    "prompt_id": 2,
+    "temperature": null,
+    "reasoning": "high"
+  },
+  "image_count": 50,
+  "total_fakes": 30,
+  "total_real": 20,
+  "results": [
+    {
+      "filename": "ccbcb5187879ea5f9ef2871e59b94651.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "7isuvh7isuvh7isu.jpg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "semantic"
+        },
+        {
+          "type": "stylistic"
+        }
+      ]
+    },
+    {
+      "filename": "1e4cc5c247a3bdf572d4969c07992b34.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural"
+        },
+        {
+          "type": "physical"
+        },
+        {
+          "type": "semantic"
+        },
+        {
+          "type": "stylistic"
+        }
+      ]
+    },
+    {
+      "filename": "h1gpeyh1gpeyh1gp.jpg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "149af80e3cf3af0e46ab47863eb7b03e.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "semantic"
+        },
+        {
+          "type": "structural"
+        },
+        {
+          "type": "physical"
+        }
+      ]
+    },
+    {
+      "filename": "86ae36214222e367f9bc162308095ada_r12.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "physical"
+        },
+        {
+          "type": "semantic"
+        }
+      ]
+    },
+    {
+      "filename": "616ba73f50088eb13244a807076248f7.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural"
+        },
+        {
+          "type": "stylistic"
+        }
+      ]
+    },
+    {
+      "filename": "2df3e5ecf2315ee61ffe3c566e125c8a.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural"
+        },
+        {
+          "type": "semantic"
+        },
+        {
+          "type": "stylistic"
+        }
+      ]
+    },
+    {
+      "filename": "5d04c3a88fe8c5d2d7c7a8877e7880fe.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "3dbe741ec8da19e60d694783dada6491.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural"
+        },
+        {
+          "type": "semantic"
+        },
+        {
+          "type": "stylistic"
+        }
+      ]
+    },
+    {
+      "filename": "2ddf7a07da956c375d9d512cf876bd871f5a3150db7b68b7ef25c1c91a694238_r6.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural"
+        },
+        {
+          "type": "stylistic"
+        }
+      ]
+    },
+    {
+      "filename": "fe7ovxfe7ovxfe7o.jpg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "2aa0e54b4dc251420a3679b501dc8a06.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "09edc782a2e242c0840d3b8a3960420d.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural"
+        },
+        {
+          "type": "stylistic"
+        }
+      ]
+    },
+    {
+      "filename": "6f9t1r6f9t1r6f9t.jpg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "semantic"
+        }
+      ]
+    },
+    {
+      "filename": "3de04fb6e7a042632a00f765cdb60e39224156c3a9d7055951f5a0298feb2dba.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural"
+        },
+        {
+          "type": "stylistic"
+        },
+        {
+          "type": "physical"
+        }
+      ]
+    },
+    {
+      "filename": "3b1558eefcb3008a00a5e863ce729092.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural"
+        },
+        {
+          "type": "semantic"
+        }
+      ]
+    },
+    {
+      "filename": "2aee09d253a4606d2b5b4a630fbd6b834074ae2a91a3dd28e361eb8dadafad24_r2.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "kv57cgkv57cgkv57.jpg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "semantic"
+        }
+      ]
+    },
+    {
+      "filename": "1a7a5fe1c457806cb6d9fb17649b923a.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "62ddb30f859923e2231a777f55de69c7.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural"
+        },
+        {
+          "type": "semantic"
+        },
+        {
+          "type": "stylistic"
+        }
+      ]
+    },
+    {
+      "filename": "59de5a40846ba0dca00d56c21c43afd17c4592b3ba6cbffbc73a985b061fb4a4.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "64294f3a2adb2e48ac82d6f65ea9d52c.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural"
+        },
+        {
+          "type": "semantic"
+        },
+        {
+          "type": "stylistic"
+        }
+      ]
+    },
+    {
+      "filename": "4pwf294pwf294pwf.jpg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "semantic"
+        },
+        {
+          "type": "structural"
+        },
+        {
+          "type": "stylistic"
+        }
+      ]
+    },
+    {
+      "filename": "4c27a50c2f1d7755efe281ea88758885.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural"
+        },
+        {
+          "type": "stylistic"
+        }
+      ]
+    },
+    {
+      "filename": "0e65a4e5adc50344a43ffbd1f9ff84ea_r1.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural"
+        },
+        {
+          "type": "stylistic"
+        }
+      ]
+    },
+    {
+      "filename": "e566b28a9429f693defb306c191d05a6.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural"
+        },
+        {
+          "type": "stylistic"
+        }
+      ]
+    },
+    {
+      "filename": "3ae4bd2508eb036a3df769348af8e8e8.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural"
+        },
+        {
+          "type": "stylistic"
+        }
+      ]
+    },
+    {
+      "filename": "v7ghcav7ghcav7gh.jpg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "637d149bc1ccd8dedacdf37530cf408e.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "0d003053cff1c844a1a733b02ea73606.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural"
+        },
+        {
+          "type": "semantic"
+        },
+        {
+          "type": "stylistic"
+        }
+      ]
+    },
+    {
+      "filename": "ozrpf8ozrpf8ozrp.jpg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural"
+        },
+        {
+          "type": "semantic"
+        },
+        {
+          "type": "stylistic"
+        }
+      ]
+    },
+    {
+      "filename": "eaef1ce47d4afebf42b1a93fcf502386.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "2c4c0b171577884f5c0991cacb5c5ebc_r1.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "0bce6c35c24ec5ce8ae8ad5bb4f67d59_r2.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "b289c80bdf2d5092fffe0e53d927af2c.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "04ed7ba99198264f5405056b941a4d3c.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural"
+        },
+        {
+          "type": "semantic"
+        },
+        {
+          "type": "stylistic"
+        }
+      ]
+    },
+    {
+      "filename": "04e61d9506ffe1d8ac6c48e8b091cc48.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "7xld4y7xld4y7xld.jpg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "me07oqme07oqme07.jpg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural"
+        },
+        {
+          "type": "semantic"
+        },
+        {
+          "type": "stylistic"
+        }
+      ]
+    },
+    {
+      "filename": "5bd35cd9932265235fd90b3daf32c65d.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural"
+        },
+        {
+          "type": "semantic"
+        },
+        {
+          "type": "stylistic"
+        }
+      ]
+    },
+    {
+      "filename": "4ca91e737979369e37478c4f4ec6e84e_r9.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "2ad2e05330051435a8976d2f72819b57.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "4ca91e737979369e37478c4f4ec6e84e_r4.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "semantic"
+        },
+        {
+          "type": "stylistic"
+        }
+      ]
+    },
+    {
+      "filename": "mnj16pmnj16pmnj1.jpg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "semantic"
+        }
+      ]
+    },
+    {
+      "filename": "53805809adf9a3d8d0d33c71253fe7eb.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural"
+        },
+        {
+          "type": "semantic"
+        },
+        {
+          "type": "stylistic"
+        }
+      ]
+    },
+    {
+      "filename": "2ebd5194c37a818d1805082c34065c30.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural"
+        },
+        {
+          "type": "stylistic"
+        }
+      ]
+    },
+    {
+      "filename": "0b5a6fe395e6652f45b8bdab691c28adc961287d6ecc86ca1f739abcfe584ed2.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural"
+        },
+        {
+          "type": "stylistic"
+        }
+      ]
+    },
+    {
+      "filename": "2aee09d253a4606d2b5b4a630fbd6b834074ae2a91a3dd28e361eb8dadafad24_r11.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "0bce6c35c24ec5ce8ae8ad5bb4f67d59_r1.jpeg",
+      "classification": "real",
+      "artifacts": []
+    }
+  ]
+}

@@ -15,11 +15,13 @@ def main():
     print(f"Found {len(images)} images. Starting analysis...\n")
 
     prompt = load_prompt(args.prompt_id)
-    model = get_model(args.model, args.api_key)
+    model = get_model(args.model)
 
     writer = ResultWriter(
         image_folder=args.image_folder,
         model_name=args.model,
+        temp=model.temp,
+        reasoning=model.reasoning,
         prompt_id=args.prompt_id
     )
 
@@ -35,7 +37,32 @@ if __name__ == "__main__":
     main()
 
 """
-python3 main.py /home/usluesyr/ai_image_detector/data/train 1 gpt-5.2
+gpt-5.2
+python3 main.py -i fake_train -m gpt-5.2 -p 
+python3 main.py -i real_train -m gpt-5.2 -p 
 
-read -s -p "Enter API Key: " KEY python3 main.py /home/usluesyr/ai_image_detector/data/train 1 gpt-5.2 "$KEY"
+python3 main.py -i fake_test -m gpt-5.2 -p 
+python3 main.py -i real_test -m gpt-5.2 -p 
+
+qwen3
+python3 main.py -i fake_train -m qwen3-vl -p 
+python3 main.py -i real_train -m qwen3-vl -p
+
+python3 main.py -i fake_test -m qwen3-vl -p 
+python3 main.py -i real_test -m qwen3-vl -p  
+
+llava
+python3 main.py -i fake_train -m llava -p 
+python3 main.py -i real_train -m llava -p 
+
+python3 main.py -i fake_test -m llava -p 
+python3 main.py -i real_test -m llava -p 
+
+gemma3
+python3 main.py -i fake_train -m gemma3 -p 
+python3 main.py -i real_train -m gemma3 -p 
+
+python3 main.py -i fake_train -m gemma3 -p 
+python3 main.py -i real_train -m gemma3 -p 
+
 """
