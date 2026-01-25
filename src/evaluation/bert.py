@@ -3,6 +3,7 @@ from bert_score import score
 from tqdm import tqdm
 import torch
 import numpy as np
+import os
 
 result = "/home/usluesyr/ai_image_detector/data/fake/test/results/gpt-5.2/prompt3/2026-01-20_18-46-16/results.json"
 ground_truth = "/home/usluesyr/ai_image_detector/data/fake/test/results/ground_truth/ground_truth.json"
@@ -11,17 +12,26 @@ ground_truth = "/home/usluesyr/ai_image_detector/data/fake/test/results/ground_t
 # Helper functions
 # -------------------------------
 
-def add_location_to_reasoning(result_artifacts):
+def artifact_to_text(artifact):
     """
-    Append location info to reasoning so it matches ground truth style.
+    Combine type, reasoning and location into one comparable text string.
     """
-    for artifact in result_artifacts:
-        if "location" in artifact and artifact["location"]:
-            artifact["reasoning"] = f"{artifact['reasoning']} (location: {artifact['location']})"
+    parts = []
+    
+    if "type" in artifact and artifact["type"]:
+        parts.append(f"type: {artifact['type']}")
+        
+    if "reasoning" in artifact and artifact["reasoning"]:
+        parts.append(f"reasoning: {artifact['reasoning']}")
+        
+    if "location" in artifact and artifact["location"]:
+        parts.append(f"location: {artifact['location']}")
+        
+    return " | ".join(parts)
 
-def extract_reasonings(artifacts):
-    """Return list of reasoning strings."""
-    return [a["reasoning"] for a in artifacts]
+def extract_combined_texts(artifacts):
+    """Return list of combined artifact texts."""
+    return [artifact_to_text(a) for a in artifacts]
 
 def compute_best_match_scores(result_texts, gt_texts):
     """
@@ -32,9 +42,9 @@ def compute_best_match_scores(result_texts, gt_texts):
         f1: harmonic mean of precision and recall
     """
     if not result_texts and not gt_texts:
-        return 1.0, 1.0, 1.0  # perfect match if both empty
+        return 1.0, 1.0, 1.0
     elif not result_texts or not gt_texts:
-        return 0.0, 0.0, 0.0  # nothing matches
+        return 0.0, 0.0, 0.0
     
     # Pairwise F1 matrix
     f1_matrix = torch.zeros(len(result_texts), len(gt_texts))
@@ -77,29 +87,25 @@ gt_map = {item["filename"]: item for item in gt_json}
 file_scores = []
 
 # Loop through each result image
-for image in tqdm(result_json["results"][:3], desc="Evaluating first 3 images"):
+for image in tqdm(result_json["results"][:5], desc="Evaluating images"):
     filename = image["filename"]
     gt_item = gt_map.get(filename)
     
     if gt_item is None:
-        # No ground truth for this image
         continue
 
-    # Step 1: add location info to result reasoning
-    add_location_to_reasoning(image["artifacts"])
+    # Step 1: build combined texts
+    result_texts = extract_combined_texts(image["artifacts"])
+    gt_texts     = extract_combined_texts(gt_item["artifacts"])
     
-    # Step 2: extract reasoning lists
-    result_texts = extract_reasonings(image["artifacts"])
-    gt_texts     = extract_reasonings(gt_item["artifacts"])
-    
-    # Step 3: Global BERTScore (concatenate all reasonings)
+    # Step 2: Global BERTScore (concatenate all combined texts)
     result_concat = " ".join(result_texts) if result_texts else ""
     gt_concat     = " ".join(gt_texts) if gt_texts else ""
     
-    P_global, R_global, F1_global = score([result_concat], [gt_concat], lang="en", verbose=False)
+    _, _, F1_global = score([result_concat], [gt_concat], lang="en", verbose=False)
     global_f1 = F1_global.item()
     
-    # Step 4: Pairwise artifact-level BERTScore
+    # Step 3: Pairwise artifact-level BERTScore
     recall, precision, f1 = compute_best_match_scores(result_texts, gt_texts)
     
     # Store results for this file
@@ -131,7 +137,15 @@ output = {
     "dataset_summary": summary
 }
 
-with open("bert_evaluation_results.json", "w") as f:
+# -------------------------------
+# Save output in same folder as results.json
+# -------------------------------
+
+results_dir = os.path.dirname(result)
+output_path = os.path.join(results_dir, "bert_evaluation_results.json")
+
+with open(output_path, "w") as f:
     json.dump(output, f, indent=2)
 
-print("Evaluation complete! Results saved to bert_evaluation_results.json")
+print(f"Evaluation complete! Results saved to {output_path}")
+

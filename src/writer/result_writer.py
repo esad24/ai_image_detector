@@ -1,31 +1,46 @@
 import json
 import os
 from datetime import datetime
-from zoneinfo import ZoneInfo
 
 class ResultWriter:
 
-    def __init__(self, image_folder, model_name, temp, reasoning, prompt_id):
-
-        # german_tz = ZoneInfo("Europe/Berlin")
-        # now_germany = datetime.now(german_tz)
-        # timestamp = now_germany.strftime("%Y-%m-%d_%H-%M-%S")
-
-        timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-
-        if(image_folder == "real_train"):
-            self.run_dir = f"/home/usluesyr/ai_image_detector/data/real/train/results/{model_name}/prompt{prompt_id}/{timestamp}"
-        elif(image_folder == "real_test"):
-            self.run_dir = f"/home/usluesyr/ai_image_detector/data/real/test/results/{model_name}/prompt{prompt_id}/{timestamp}"
-        elif(image_folder == "fake_train"):
-            self.run_dir = f"/home/usluesyr/ai_image_detector/data/fake/train/results/{model_name}/prompt{prompt_id}/{timestamp}"
-        elif(image_folder == "fake_test"):
-            self.run_dir = f"/home/usluesyr/ai_image_detector/data/fake/test/results/{model_name}/prompt{prompt_id}/{timestamp}"
+    def __init__(self, image_folder, model_name, temp, reasoning, prompt_id, resume=False):
+        """
+        resume: if True, try to resume the latest previous run for this folder/model/prompt_id
+        """
+        base_dir = ""
+        if image_folder.startswith("real_train"):
+            base_dir = f"/home/usluesyr/ai_image_detector/data/real/train/results/{model_name}/prompt{prompt_id}"
+        elif image_folder.startswith("real_test"):
+            base_dir = f"/home/usluesyr/ai_image_detector/data/real/test/results/{model_name}/prompt{prompt_id}"
+        elif image_folder.startswith("fake_train"):
+            base_dir = f"/home/usluesyr/ai_image_detector/data/fake/train/results/{model_name}/prompt{prompt_id}"
+        elif image_folder.startswith("fake_test"):
+            base_dir = f"/home/usluesyr/ai_image_detector/data/fake/test/results/{model_name}/prompt{prompt_id}"
         else:
-            self.run_dir = f"{image_folder}/results/{model_name}/prompt{prompt_id}/{timestamp}"
-        os.makedirs(self.run_dir, exist_ok=True)
+            base_dir = f"{image_folder}/results/{model_name}/prompt{prompt_id}"
 
-        self.results = []
+        os.makedirs(base_dir, exist_ok=True)
+
+        # Resume logic
+        if resume:
+            previous_runs = sorted(os.listdir(base_dir))
+            if previous_runs:
+                self.run_dir = os.path.join(base_dir, previous_runs[-1])
+                print(f"Resuming previous run: {self.run_dir}")
+            else:
+                timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+                self.run_dir = os.path.join(base_dir, timestamp)
+                os.makedirs(self.run_dir, exist_ok=True)
+                print(f"No previous run found. Starting new run: {self.run_dir}")
+        else:
+            timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+            self.run_dir = os.path.join(base_dir, timestamp)
+            os.makedirs(self.run_dir, exist_ok=True)
+            print(f"Starting new run: {self.run_dir}")
+
+        self.file_path = os.path.join(self.run_dir, "results.json")
+
         self.fake = 0
         self.real = 0
         self.meta = {
@@ -35,33 +50,62 @@ class ResultWriter:
             "reasoning": reasoning
         }
 
+        if os.path.exists(self.file_path):
+            self._load_counters()
+        else:
+            self._init_file()
+
+    def _init_file(self):
+        base = {
+            "meta": self.meta,
+            "image_count": 0,
+            "total_fakes": 0,
+            "total_real": 0,
+            "results": []
+        }
+        with open(self.file_path, "w") as f:
+            json.dump(base, f, indent=2)
+
+    def _load(self):
+        with open(self.file_path, "r") as f:
+            return json.load(f)
+
+    def _save(self, data):
+        with open(self.file_path, "w") as f:
+            json.dump(data, f, indent=2)
+
+    def _load_counters(self):
+        data = self._load()
+        self.fake = data.get("total_fakes", 0)
+        self.real = data.get("total_real", 0)
+
+    def get_processed_filenames(self):
+        if not os.path.exists(self.file_path):
+            return set()
+        data = self._load()
+        return set(r["filename"] for r in data.get("results", []))
+
     def write(self, image_path, result):
-        # Parse result if it's a JSON string
         if isinstance(result, str):
             result = json.loads(result)
-        
-        # Merge filename with result fields, filename first
+
         if isinstance(result, dict):
             result = {"filename": os.path.basename(image_path), **result}
-        
-        classification = result["classification"]
-        if(classification == "fake"): 
+
+        classification = result.get("classification")
+        if classification == "fake":
             self.fake += 1
-        elif(classification == "real"):
+        elif classification == "real":
             self.real += 1
 
-        
-        self.results.append(result)
+        # load current results
+        data = self._load()
+        data["results"].append(result)
+        data["image_count"] = len(data["results"])
+        data["total_fakes"] = self.fake
+        data["total_real"] = self.real
+
+        self._save(data)
 
     def save_summary(self, image_count):
-        output = {
-            "meta": self.meta,
-            "image_count": image_count,
-            "total_fakes": self.fake,
-            "total_real": self.real,
-            "results": self.results
-        }
-
-        with open(os.path.join(self.run_dir, "results.json"), "w") as f:
-            json.dump(output, f, indent=2)
-        print("result saved in " + self.run_dir)
+        print("Final summary already saved incrementally in:", self.run_dir)

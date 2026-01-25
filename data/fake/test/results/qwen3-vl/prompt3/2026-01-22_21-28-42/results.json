@@ -2,7 +2,6 @@
   "meta": {
     "model": "qwen3-vl",
     "prompt_id": 3,
-    "temperature": 0.1,
     "reasoning": false
   },
   "image_count": 50,

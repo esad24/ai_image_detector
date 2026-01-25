@@ -2,7 +2,6 @@
   "meta": {
     "model": "gpt-5.2",
     "prompt_id": 3,
-    "temperature": null,
     "reasoning": "none"
   },
   "image_count": 50,

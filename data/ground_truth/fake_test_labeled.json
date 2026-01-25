@@ -1,0 +1,982 @@
+[
+    {
+        "filename": "04e61d9506ffe1d8ac6c48e8b091cc48.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "structural",
+                "reasoning": "Both faces appears uncanny.",
+                "location": "Both faces(center of the image)."
+            },
+            {
+                "type": "semantic",
+                "reasoning": "The two people do not appear to be making eye contact.",
+                "location": "Between the two people’s faces (center of the image)."
+            },
+            {
+                "type": "structural",
+                "reasoning": "The hands appear deformed.",
+                "location": "Hands on the table (lower center of the image)."
+            },
+            {
+                "type": "semantic",
+                "reasoning": "The windows appear to be below ground level.",
+                "location": "Building windows visible through the large window on the right side (mid-right of the image)."
+            }
+        ]
+    },
+    {
+        "filename": "04ed7ba99198264f5405056b941a4d3c.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "semantic",
+                "reasoning": "There is an unusual object present.",
+                "location": "Top-left of the image, near the hanging chain."
+            },
+            {
+                "type": "physical",
+                "reasoning": "The reflection appears inaccurate.",
+                "location": "Upper-right area of the image, around the standing boy."
+            },
+            {
+                "type": "structural",
+                "reasoning": "The eyes appear deformed.",
+                "location": "On the standing boy’s face, around the eyes."
+            },
+            {
+                "type": "structural",
+                "reasoning": "The eyes appear deformed.",
+                "location": "On the seated child’s face at the bottom-left, around the eyes."
+            }
+        ]
+    },
+    {
+        "filename": "09edc782a2e242c0840d3b8a3960420d.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "structural",
+                "reasoning": "The iris appears distorted.",
+                "location": "In the subject’s left eye."
+            },
+            {
+                "type": "stylistic",
+                "reasoning": "The skin texture looks unnatural.",
+                "location": "On the subject’s face."
+            },
+            {
+                "type": "semantic",
+                "reasoning": "There is an unusual hole pattern.",
+                "location": "On the subject’s shirt."
+            }
+        ]
+    },
+    {
+        "filename": "0b5a6fe395e6652f45b8bdab691c28adc961287d6ecc86ca1f739abcfe584ed2.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "stylistic",
+                "reasoning": "The image has an overly smooth and plastic look.",
+                "location": "Across the subject’s face and skin."
+            },
+            {
+                "type": "structural",
+                "reasoning": "The iris is distorted, and the right iris has unnatural coloring.",
+                "location": "In the eyes, particularly the right iris."
+            }
+        ]
+    },
+    {
+        "filename": "0bce6c35c24ec5ce8ae8ad5bb4f67d59_r1.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "structural",
+                "reasoning": "The eyes look unnatural.",
+                "location": "On the man's eyes near the upper center of the image."
+            },
+            {
+                "type": "semantic",
+                "reasoning": "There is a weird object.",
+                "location": "In the right background near the bench."
+            },
+            {
+                "type": "structural",
+                "reasoning": "The watch appears deformed.",
+                "location": "On the man's right wrist near the lower center-left of the image."
+            }
+        ]
+    },
+    {
+        "filename": "0bce6c35c24ec5ce8ae8ad5bb4f67d59_r2.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "structural",
+                "reasoning": "Some background faces appear smudged and lack clear detail.",
+                "location": "Right side of the image in the background near the tree."
+            },
+            {
+                "type": "structural",
+                "reasoning": "The hands show anatomical errors and unrealistic finger structure.",
+                "location": "Bottom center of the image, where the subject’s hands are clasped."
+            },
+            {
+                "type": "semantic",
+                "reasoning": "The bench rest stops randomly rather than continuing in a coherent way.",
+                "location": "Left side of the image on the bench backrest area."
+            }
+        ]
+    },
+    {
+        "filename": "0d003053cff1c844a1a733b02ea73606.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "stylistic",
+                "reasoning": "The image has an overly smooth and plastic look.",
+                "location": "Across the face."
+            },
+            {
+                "type": "structural",
+                "reasoning": "There is an anatomical error with unnatural iris coloring.",
+                "location": "In the irises of the eyes, especially the left eye."
+            }
+        ]
+    },
+    {
+        "filename": "0e65a4e5adc50344a43ffbd1f9ff84ea_r1.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "structural",
+                "reasoning": "There are anatomical errors with the hands.",
+                "location": "On both hands of the violin player."
+            },
+            {
+                "type": "structural",
+                "reasoning": "There are distorted shapes.",
+                "location": "On the tall vertical structure along the right edge of the image."
+            }
+        ]
+    },
+    {
+        "filename": "149af80e3cf3af0e46ab47863eb7b03e.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "structural",
+                "reasoning": "A face appears deformed.",
+                "location": "Upper center, on the person’s face in the background."
+            },
+            {
+                "type": "physical",
+                "reasoning": "The shadows in the scene appear to fall in different directions.",
+                "location": "Lower left sidewalk area and around the people’s legs in the mid-lower portion of the image."
+            },
+            {
+                "type": "semantic",
+                "reasoning": "A crocodile appearing on a city sidewalk is an unrealistic occurrence.",
+                "location": "Bottom right, on the sidewalk where the crocodile is lying."
+            }
+        ]
+    },
+    {
+        "filename": "1a7a5fe1c457806cb6d9fb17649b923a.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "structural",
+                "reasoning": "There are component defects on the dumbbell.",
+                "location": "On the dumbbell being held in the right hand."
+            },
+            {
+                "type": "stylistic",
+                "reasoning": "There is a smudged area.",
+                "location": "On the right shoulder strap area of the top."
+            },
+            {
+                "type": "structural",
+                "reasoning": "There are unnatural marks on the fingers.",
+                "location": "On the fingers of the left hand resting on the belly."
+            }
+        ]
+    },
+    {
+        "filename": "1e4cc5c247a3bdf572d4969c07992b34.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "physical",
+                "reasoning": "The lighting appears unnatural and inconsistent in an outdoor environment.",
+                "location": "Lighting on the couples faces."
+            },
+            {
+                "type": "physical",
+                "reasoning": "The child appears to be floating instead of being supported naturally.",
+                "location": "Center of the image around the child’s body."
+            },
+            {
+                "type": "structural",
+                "reasoning": "There are anatomical errors with the hands.",
+                "location": "Lower-left center of the image around the adult hands near the child."
+            },
+            {
+                "type": "structural",
+                "reasoning": "There appears to be a third leg and a deformed foot.",
+                "location": "Lower-right center of the image around the adults’ and child’s legs and feet."
+            }
+        ]
+    },
+    {
+        "filename": "2aa0e54b4dc251420a3679b501dc8a06.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "structural",
+                "reasoning": "There are anatomical errors with the eyes.",
+                "location": "Eyes of the left woman, man in the back, and center woman."
+            },
+            {
+                "type": "structural",
+                "reasoning": "There is an unnaturally long neck.",
+                "location": "Neck of the woman on the right."
+            },
+            {
+                "type": "structural",
+                "reasoning": "There are anatomical errors with the hands.",
+                "location": "Hands highlighted in the pink boxes (left woman holding an object and right woman’s hand/wrist area)."
+            }
+        ]
+    },
+    {
+        "filename": "2ad2e05330051435a8976d2f72819b57.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "stylistic",
+                "reasoning": "There are smudges on the runner's shirt.",
+                "location": "On the upper shirt near the runner’s right shoulder/upper arm area."
+            },
+            {
+                "type": "structural",
+                "reasoning": "The watch, wrist, and fingers are deformed.",
+                "location": "On the runner’s right hand and left wrist and hand area."
+            },
+            {
+                "type": "structural",
+                "reasoning": "The shoe is deformed.",
+                "location": "On the runner’s front foot shoe near the bottom center of the image."
+            }
+        ]
+    },
+    {
+        "filename": "2aee09d253a4606d2b5b4a630fbd6b834074ae2a91a3dd28e361eb8dadafad24_r11.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "stylistic",
+                "reasoning": "There are smudges and painterly textures on the suit sleeve.",
+                "location": "The persons right suit sleeve."
+            },
+            {
+                "type": "stylistic",
+                "reasoning": "There are smudges and painterly textures on the tie.",
+                "location": "Center of the image on the tie"
+            },
+            {
+                "type": "stylistic",
+                "reasoning": "There are smudges and painterly textures on the suit sleeve.",
+                "location": "The persons left suit sleeve."
+            }
+        ]
+    },
+    {
+        "filename": "2aee09d253a4606d2b5b4a630fbd6b834074ae2a91a3dd28e361eb8dadafad24_r2.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "structural",
+                "reasoning": "There are deformities visible around the glasses on the subject's face.",
+                "location": "Around the glasses on the face (upper center-left and upper center-right)."
+            },
+            {
+                "type": "structural",
+                "reasoning": "The left side of the picture frame is missing.",
+                "location": "Right side of the image, on the wall behind the subject."
+            },
+            {
+                "type": "stylistic",
+                "reasoning": "The suit and tie area appears overly sharp.",
+                "location": "Center of the image, on the subject’s chest and tie."
+            },
+            {
+                "type": "structural",
+                "reasoning": "Some objects appear unrealistic.",
+                "location": "Bottom-left of the image, on the desk."
+            },
+            {
+                "type": "structural",
+                "reasoning": "There are anatomical errors with the hands.",
+                "location": "Bottom-center of the image, where the subject’s hands are clasped."
+            }
+        ]
+    },
+    {
+        "filename": "2c4c0b171577884f5c0991cacb5c5ebc_r1.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "structural",
+                "reasoning": "The person’s eyes and teeth appear unnatural.",
+                "location": "On the person’s face in the center of the image."
+            },
+            {
+                "type": "semantic",
+                "reasoning": "The letters on the board are illegible.",
+                "location": "On the whiteboard on the left side of the image."
+            },
+            {
+                "type": "semantic",
+                "reasoning": "The ceiling lights are placed illogically.",
+                "location": "On the ceiling in the upper-right portion of the image."
+            },
+            {
+                "type": "structural",
+                "reasoning": "There are anatomical errors with the hands.",
+                "location": "On both of the person’s hands in the center-left and center-right of the image."
+            },
+            {
+                "type": "semantic",
+                "reasoning": "The coat appears to have no button.",
+                "location": "On the front of the person’s coat near the waist in the lower-center of the image."
+            },
+            {
+                "type": "structural",
+                "reasoning": "The chair legs appear extended and deformed.",
+                "location": "On the chair in the lower-right portion of the image."
+            }
+        ]
+    },
+    {
+        "filename": "2ddf7a07da956c375d9d512cf876bd871f5a3150db7b68b7ef25c1c91a694238_r6.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "structural",
+                "reasoning": "There are visible deformities in the background structure.",
+                "location": "Top center background above the family."
+            },
+            {
+                "type": "structural",
+                "reasoning": "There are visible deformities on the girl’s right armpit area.",
+                "location": "Left side, on the girl’s right armpit area."
+            },
+            {
+                "type": "semantic",
+                "reasoning": "A line on the girl’s shirt does not connect properly.",
+                "location": "Left side, on the girl’s striped shirt near the waist."
+            },
+            {
+                "type": "semantic",
+                "reasoning": "The boy appears to be wearing unusual gloves.",
+                "location": "Right side, on the boy’s hand area."
+            },
+            {
+                "type": "structural",
+                "reasoning": "The girl’s pants appear to become part of the man’s jacket.",
+                "location": "Lower center-left, where the girl’s pants meet the man’s jacket near his hip."
+            }
+        ]
+    },
+    {
+        "filename": "2df3e5ecf2315ee61ffe3c566e125c8a.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "stylistic",
+                "reasoning": "The background, clothes, dogs, and hands look overly painterly.",
+                "location": "Across the image, including the background, the subjects’ clothing, the dogs, and the hands."
+            },
+            {
+                "type": "semantic",
+                "reasoning": "There is an unusual button structure.",
+                "location": "On the sweater of the person on the right, around the button area on the torso."
+            },
+            {
+                "type": "structural",
+                "reasoning": "A hand is missing.",
+                "location": "Near the lower right side of the image, around the right subject’s hand holding the leash."
+            }
+        ]
+    },
+    {
+        "filename": "2ebd5194c37a818d1805082c34065c30.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "structural",
+                "reasoning": "A face appears deformed.",
+                "location": "Left side of the image, on the background pedestrian’s face."
+            },
+            {
+                "type": "structural",
+                "reasoning": "The faces appear unnatural.",
+                "location": "Upper center and upper right, on the two women’s faces."
+            },
+            {
+                "type": "structural",
+                "reasoning": "The sports bra appears to melt into the skin.",
+                "location": "Center-left, along the neckline/strap area of the left woman’s sports bra."
+            },
+            {
+                "type": "structural",
+                "reasoning": "The hands appear deformed.",
+                "location": "Lower center-right, on the hands holding the pizza slice and left women's right hand."
+            },
+            {
+                "type": "structural",
+                "reasoning": "The bench does not continue logically.",
+                "location": "Lower left, along the bench edge below the right women."
+            }
+        ]
+    },
+    {
+        "filename": "3ae4bd2508eb036a3df769348af8e8e8.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "structural",
+                "reasoning": "There are unnatural wrinkles on the woman’s face.",
+                "location": "Left-center of the image, on the woman’s face around the eye area."
+            },
+            {
+                "type": "semantic",
+                "reasoning": "The background structure deviates from the original structure.",
+                "location": "Top-right of the image, in the building background."
+            },
+            {
+                "type": "stylistic",
+                "reasoning": "The child’s skin appears overly smooth.",
+                "location": "Bottom-center of the image, on the child’s face."
+            }
+        ]
+    },
+    {
+        "filename": "3b1558eefcb3008a00a5e863ce729092.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "structural",
+                "reasoning": "The eyes are deformed.",
+                "location": "Eyes of the person."
+            },
+            {
+                "type": "semantic",
+                "reasoning": "He is biting with a closed mouth.",
+                "location": "Mouth area."
+            },
+            {
+                "type": "stylistic",
+                "reasoning": "The pizza ingredients seem flat and two-dimensional.",
+                "location": "Pizza on the plate in the lower-right area."
+            }
+        ]
+    },
+    {
+        "filename": "3dbe741ec8da19e60d694783dada6491.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "stylistic",
+                "reasoning": "The skin appears overly smooth and plastic-looking.",
+                "location": "On the faces of the men."
+            },
+            {
+                "type": "structural",
+                "reasoning": "The eyes look unnatural.",
+                "location": "On the faces of the man."
+            },
+            {
+                "type": "structural",
+                "reasoning": "The hands appear deformed.",
+                "location": "The hands holding in the lower center."
+            }
+        ]
+    },
+    {
+        "filename": "3de04fb6e7a042632a00f765cdb60e39224156c3a9d7055951f5a0298feb2dba.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "structural",
+                "reasoning": "The orange pieces appear illogical.",
+                "location": "In the drink garnish area near the top of the glass."
+            },
+            {
+                "type": "physical",
+                "reasoning": "The reflection is not logical compared to the background.",
+                "location": "On the glossy bar counter surface in the lower-left foreground."
+            },
+            {
+                "type": "stylistic",
+                "reasoning": "The womens hand looks too soft and flat.",
+                "location": "On the woman’s left hand in the lower-right foreground."
+            }
+        ]
+    },
+    {
+        "filename": "4c27a50c2f1d7755efe281ea88758885.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "structural",
+                "reasoning": "The window frame appears deformed.",
+                "location": "Upper middle area near the window behind the subjects."
+            },
+            {
+                "type": "stylistic",
+                "reasoning": "The hair looks flat and painterly.",
+                "location": "Center-left area on the man's hair."
+            },
+            {
+                "type": "semantic",
+                "reasoning": "The hairband looks unusual.",
+                "location": "Left side on the girl's hair."
+            },
+            {
+                "type": "structural",
+                "reasoning": "The hair and hairline at the back of the head look unnatural.",
+                "location": "Lower-left area at the back of the girl's head, near the hairline."
+            },
+            {
+                "type": "structural",
+                "reasoning": "The eyes and teeth are deformed.",
+                "location": "Right-center area on the woman's face."
+            },
+            {
+                "type": "structural",
+                "reasoning": "The boy's position is not possible.",
+                "location": "Lower-right area where the boy is leaning near the woman."
+            }
+        ]
+    },
+    {
+        "filename": "4ca91e737979369e37478c4f4ec6e84e_r4.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "semantic",
+                "reasoning": "The clock hands are not centered.",
+                "location": "Top-right corner clock face."
+            },
+            {
+                "type": "structural",
+                "reasoning": "The person’s right eye appears deformed.",
+                "location": "Center-left of the image on the main subject’s right eye."
+            }
+        ]
+    },
+    {
+        "filename": "4ca91e737979369e37478c4f4ec6e84e_r9.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "stylistic",
+                "reasoning": "The hair looks painterly.",
+                "location": "Hair of the man and front hair region of the woman."
+            },
+            {
+                "type": "stylistic",
+                "reasoning": "The skin texture looks unnatural.",
+                "location": "Face of the man."
+            },
+            {
+                "type": "semantic",
+                "reasoning": "The zipper is inconsistent.",
+                "location": "Lower-right jacket zipper area."
+            }
+        ]
+    },
+    {
+        "filename": "4pwf294pwf294pwf.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "semantic",
+                "reasoning": "Putin and Zelensky are depicted as being friendly and drinking a beer, which is a very unlikely situation.",
+                "location": "Center of the image, on the couch where the two men are clinking beer mugs."
+            }
+        ]
+    },
+    {
+        "filename": "53805809adf9a3d8d0d33c71253fe7eb.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "physical",
+                "reasoning": "There is an illogical shadow that does not match the scene lighting.",
+                "location": "Left side of the image on the sidewalk near the pedestrian."
+            },
+            {
+                "type": "structural",
+                "reasoning": "The hands appear deformed.",
+                "location": "Center of the image on the women's hands."
+            },
+            {
+                "type": "physical",
+                "reasoning": "The shadows of the women fall in a different direction compared to the shadow of the tree.",
+                "location": "Lower half of the image on the ground near the women’s feet and the shadow of a tree on the right side."
+            }
+        ]
+    },
+    {
+        "filename": "59de5a40846ba0dca00d56c21c43afd17c4592b3ba6cbffbc73a985b061fb4a4.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "structural",
+                "reasoning": "The eyes appear deformed.",
+                "location": "Eyes on the face"
+            },
+            {
+                "type": "semantic",
+                "reasoning": "The face differs from Obama.",
+                "location": "Face"
+            },
+            {
+                "type": "stylistic",
+                "reasoning": "The skin and clothes look plastic.",
+                "location": "Skin and suit of the perosn"
+            }
+        ]
+    },
+    {
+        "filename": "5bd35cd9932265235fd90b3daf32c65d.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "structural",
+                "reasoning": "A body appears to be disappearing.",
+                "location": "Left side of the image near the storefront."
+            },
+            {
+                "type": "semantic",
+                "reasoning": "The button arrangement on the coat is illogical.",
+                "location": "On the front of the man’s coat, around the midsection where the buttons are highlighted."
+            }
+        ]
+    },
+    {
+        "filename": "5d04c3a88fe8c5d2d7c7a8877e7880fe.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "structural",
+                "reasoning": "The eyebrow hair structure seems unnatural.",
+                "location": "Eyebrow area, especially toward the upper-right portion of the image."
+            },
+            {
+                "type": "structural",
+                "reasoning": "The eyelash structure does not seem possible.",
+                "location": "Lower-right eyelid/eyelash area."
+            }
+        ]
+    },
+    {
+        "filename": "616ba73f50088eb13244a807076248f7.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "structural",
+                "reasoning": "The eye appears flat and the eyelashes look unusual.",
+                "location": "Right eye area of the subject’s face."
+            },
+            {
+                "type": "structural",
+                "reasoning": "The upper arm is disproportionately large.",
+                "location": "Subject’s upper arm on the right side of the image."
+            }
+        ]
+    },
+    {
+        "filename": "62ddb30f859923e2231a777f55de69c7.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "structural",
+                "reasoning": "The eyes appear deformed.",
+                "location": "On the faces of the two seated people, near the center-left and center-right of the image."
+            },
+            {
+                "type": "stylistic",
+                "reasoning": "The skin appears overly smooth.",
+                "location": "On the faces of the two seated people, near the center-left and center-right of the image."
+            },
+            {
+                "type": "semantic",
+                "reasoning": "The face differs from Obama/Catherine.",
+                "location": "On the faces of the two seated people, near the center-left and center-right of the image."
+            },
+            {
+                "type": "structural",
+                "reasoning": "The elbow appears to merge with the chair rest.",
+                "location": "On the left side of the image, where the left seated person’s right arm meets the chair armrest."
+            },
+            {
+                "type": "structural",
+                "reasoning": "The fingers appear deformed.",
+                "location": "At the bottom-center of the image, on the left seated person’s hands resting in their lap."
+            }
+        ]
+    },
+    {
+        "filename": "637d149bc1ccd8dedacdf37530cf408e.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "structural",
+                "reasoning": "The teeth have no gap.",
+                "location": "Mouth/teeth area of the woman."
+            },
+            {
+                "type": "structural",
+                "reasoning": "The fingers are disproportionally long.",
+                "location": "Left hand of the woman (lower right of the image)."
+            }
+        ]
+    },
+    {
+        "filename": "64294f3a2adb2e48ac82d6f65ea9d52c.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "semantic",
+                "reasoning": "A funeral where attendees are wearing swimwear is not socially accepted.",
+                "location": "Across the entire image."
+            },
+            {
+                "type": "structural",
+                "reasoning": "Deformed faces.",
+                "location": "Women in the green top in the center-left area."
+            }
+        ]
+    },
+    {
+        "filename": "6f9t1r6f9t1r6f9t.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "semantic",
+                "reasoning": "Martin Luther King uses a modern phone, which doesn't exist in that time.",
+                "location": "In the lower-right area of the image, in Martin Luther King’s left hand near the microphone stand."
+            }
+        ]
+    },
+    {
+        "filename": "7isuvh7isuvh7isu.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "semantic",
+                "reasoning": "Trump and Putin are shown kissing in front of the White House, which is extremly unlikely.",
+                "location": "Center foreground, in front of the White House"
+            }
+        ]
+    },
+    {
+        "filename": "7xld4y7xld4y7xld.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "physical",
+                "reasoning": "The reflection of the bricks is not accurate.",
+                "location": "In the window area on the left side of the image."
+            },
+            {
+                "type": "stylistic",
+                "reasoning": "The beard hair looks painterly.",
+                "location": "On the man’s beard in the lower center of the image."
+            }
+        ]
+    },
+    {
+        "filename": "86ae36214222e367f9bc162308095ada_r12.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "semantic",
+                "reasoning": "The ant appears to be an impossible size relative to the person’s face.",
+                "location": "Left side of the image, where the ant is next to the person’s face."
+            },
+            {
+                "type": "structural",
+                "reasoning": "There is an extra antenna that appears to be coming out of nowhere.",
+                "location": "Center-left of the image, near the ant’s head and on the person’s nose."
+            },
+            {
+                "type": "structural",
+                "reasoning": "The ant has extra limbs.",
+                "location": "Lower center to lower right area, around the ant’s legs."
+            }
+        ]
+    },
+    {
+        "filename": "b289c80bdf2d5092fffe0e53d927af2c.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "structural",
+                "reasoning": "The mouth, hands, and cup appear deformed.",
+                "location": "On the person’s face and hands holding the cup near the upper-left of the image."
+            },
+            {
+                "type": "physical",
+                "reasoning": "The shadow of the cap does not make sense.",
+                "location": "In the lower-left area of the image near the shadow of the man's head."
+            },
+            {
+                "type": "physical",
+                "reasoning": "The dog’s shadow is too long in relation to the man's shadow.",
+                "location": "On the ground beneath and in front of the dog in the center-right of the image."
+            }
+        ]
+    },
+    {
+        "filename": "ccbcb5187879ea5f9ef2871e59b94651.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "stylistic",
+                "reasoning": "The skin and hair appear overly smooth.",
+                "location": "On the subject's face and hair."
+            }
+        ]
+    },
+    {
+        "filename": "e566b28a9429f693defb306c191d05a6.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "semantic",
+                "reasoning": "The background structure deviates from the original structure.",
+                "location": "Bulding in the bakcground in the top-left area."
+            },
+            {
+                "type": "structural",
+                "reasoning": "The hair flow appears unnatural.",
+                "location": "The child's hair in the center-right area."
+            },
+            {
+                "type": "structural",
+                "reasoning": "The eyes appear unnatural.",
+                "location": "The child's eyes in the lower center-right area of the image."
+            }
+        ]
+    },
+    {
+        "filename": "eaef1ce47d4afebf42b1a93fcf502386.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "stylistic",
+                "reasoning": "The skin appears overly smooth and waxy.",
+                "location": "Face and hand skin of the woman."
+            },
+            {
+                "type": "semantic",
+                "reasoning": "The person is holding the sandwich in an impractical way.",
+                "location": "Hands and sandwich in the center of the image."
+            }
+        ]
+    },
+    {
+        "filename": "fe7ovxfe7ovxfe7o.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "semantic",
+                "reasoning": "The chair placement is illogical.",
+                "location": "The chair behind woman on the right, and the chair behind the second table."
+            }
+        ]
+    },
+    {
+        "filename": "h1gpeyh1gpeyh1gp.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "structural",
+                "reasoning": "The eyes appear unusual.",
+                "location": "On the faces of the man with the champagne and the bald men on the right side."
+            },
+            {
+                "type": "semantic",
+                "reasoning": "The scene depicts people celebrating at a funeral.",
+                "location": "In the central group of people in the foreground, with graves visible in the background."
+            }
+        ]
+    },
+    {
+        "filename": "kv57cgkv57cgkv57.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "structural",
+                "reasoning": "The numbers on the patient monitor are disfigured and unclear.",
+                "location": "Top-left patient monitor display."
+            },
+            {
+                "type": "semantic",
+                "reasoning": "The team appears to be operating using kitchen knives and forks instead of proper surgical instruments.",
+                "location": "Center-right operating area over the patient and the instrument tray on the left."
+            }
+        ]
+    },
+    {
+        "filename": "me07oqme07oqme07.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "semantic",
+                "reasoning": "The image depicts an arrest of Trump that never took place.",
+                "location": "Center of the image, where Trump is shown being escorted by police officers."
+            }
+        ]
+    },
+    {
+        "filename": "mnj16pmnj16pmnj1.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "semantic",
+                "reasoning": "A firefighter is shown adding gasoline to the fire, which is implausible behavior for a firefighter.",
+                "location": "Foreground, center-right, where the firefighter is pouring liquid from a red gasoline can onto the flames."
+            }
+        ]
+    },
+    {
+        "filename": "ozrpf8ozrpf8ozrp.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "semantic",
+                "reasoning": "The image depicts Putin and Zelensky participating in a boxing match, which is implausible.",
+                "location": "Center of the image, inside the boxing ring scene with the two fighters."
+            }
+        ]
+    },
+    {
+        "filename": "v7ghcav7ghcav7gh.jpeg",
+        "classification": "fake",
+        "artifacts": [
+            {
+                "type": "semantic",
+                "reasoning": "A doctor is shown checking a patient's temperature with a watch, which is implausible.",
+                "location": "Upper-right area of the image, where the watch is pressed against the patient's forehead."
+            }
+        ]
+    }
+]

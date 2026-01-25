@@ -1,12 +1,12 @@
 {
   "meta": {
-    "model": "gpt-5.2",
+    "model": "qwen3-vl",
     "prompt_id": 2,
-    "reasoning": "none"
+    "reasoning": false
   },
   "image_count": 50,
-  "total_fakes": 18,
-  "total_real": 32,
+  "total_fakes": 28,
+  "total_real": 22,
   "results": [
     {
       "filename": "d7f62506968b2101234d06827fc7f959bd2e09c98c21e28d86ef8a4b6c7f9ca7_real.jpeg",
@@ -17,12 +17,6 @@
       "filename": "1baf3f78a5ea367863f70e867819f795ca6bcf73a331f741ba00f484aed98b61_real.jpeg",
       "classification": "fake",
       "artifacts": [
-        {
-          "type": "structural"
-        },
-        {
-          "type": "semantic"
-        },
         {
           "type": "stylistic"
         }
@@ -35,7 +29,7 @@
     },
     {
       "filename": "b9836f50be0bc4098534bf668a8d68209c3708e6574595f492faeff454fcba7f_real.jpeg",
-      "classification": "real",
+      "classification": "fake",
       "artifacts": []
     },
     {
@@ -45,35 +39,165 @@
     },
     {
       "filename": "f87823469991b7b1704ff9e4d4c7d05674097995db209a8e20dbcafdbc5cece9_real.jpeg",
-      "classification": "real",
-      "artifacts": []
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "stylistic"
+        },
+        {
+          "type": "semantic"
+        }
+      ]
     },
     {
       "filename": "b4f77b64ace4bd0e275f9189bb4dda9f_real.jpeg",
-      "classification": "real",
-      "artifacts": []
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "semantic"
+        },
+        {
+          "type": "stylistic"
+        },
+        {
+          "type": "structural"
+        }
+      ]
     },
     {
       "filename": "e4fd0b7c8c7d3dca42aab01618224fabc57cb8690ec4f3566b3335f83c8ab0ff_real.jpeg",
       "classification": "fake",
       "artifacts": [
         {
-          "type": "structural"
+          "type": "semantic"
         },
         {
-          "type": "stylistic"
+          "type": "structural"
         }
       ]
     },
     {
       "filename": "pexels-maryiaplashchynskaya-3400764.jpg",
       "classification": "real",
-      "artifacts": []
+      "artifacts": [
+        {
+          "type": "semantic"
+        },
+        {
+          "type": "stylistic"
+        },
+        {
+          "type": "stylistic"
+        },
+        {
+          "type": "structural"
+        },
+        {
+          "type": "semantic"
+        },
+        {
+          "type": "physical"
+        },
+        {
+          "type": "structural"
+        },
+        {
+          "type": "physical"
+        },
+        {
+          "type": "semantic"
+        },
+        {
+          "type": "physical"
+        },
+        {
+          "type": "semantic"
+        },
+        {
+          "type": "semantic"
+        },
+        {
+          "type": "semantic"
+        },
+        {
+          "type": "semantic"
+        },
+        {
+          "type": "structural"
+        },
+        {
+          "type": "physical"
+        },
+        {
+          "type": "semantic"
+        },
+        {
+          "type": "structural"
+        },
+        {
+          "type": "semantic"
+        },
+        {
+          "type": "structural"
+        },
+        {
+          "type": "physical"
+        },
+        {
+          "type": "semantic"
+        },
+        {
+          "type": "stylistic"
+        },
+        {
+          "type": "physical"
+        },
+        {
+          "type": "structural"
+        },
+        {
+          "type": "physical"
+        },
+        {
+          "type": "semantic"
+        },
+        {
+          "type": "structural"
+        },
+        {
+          "type": "stylistic"
+        },
+        {
+          "type": "structural"
+        },
+        {
+          "type": "structural"
+        },
+        {
+          "type": "semantic"
+        },
+        {
+          "type": "stylistic"
+        },
+        {
+          "type": "semantic"
+        },
+        {
+          "type": "semantic"
+        }
+      ]
     },
     {
       "filename": "ce8af8f993f2ac560f968fe64c1a887b_real.jpeg",
-      "classification": "real",
-      "artifacts": []
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "physical"
+        },
+        {
+          "type": "semantic"
+        }
+      ]
     },
     {
       "filename": "c38189c54230e478e366311946620a3a_real.jpeg",
@@ -83,60 +207,55 @@
           "type": "structural"
         },
         {
-          "type": "semantic"
-        },
-        {
           "type": "stylistic"
         }
       ]
     },
     {
       "filename": "282422ac298c060155c2cc4312119bd0_real.jpeg",
-      "classification": "real",
-      "artifacts": []
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "semantic"
+        },
+        {
+          "type": "structural"
+        },
+        {
+          "type": "stylistic"
+        },
+        {
+          "type": "physical"
+        }
+      ]
     },
     {
       "filename": "c65987f9418f465555948957aa66dced2c94386ef70da3809c09ba7a7fd8dd8b_real.jpeg",
       "classification": "fake",
       "artifacts": [
         {
-          "type": "structural"
-        },
-        {
-          "type": "semantic"
-        },
-        {
-          "type": "stylistic"
+          "type": "physical"
         }
       ]
     },
     {
       "filename": "415c0714987b4920f194b5f2053152b8bdaa8f4185583c984f32b950506be724_real.jpeg",
-      "classification": "real",
-      "artifacts": []
-    },
-    {
-      "filename": "be43d363ea6ba1e080580d3a2a74c6a000041940d0f27dd9af71faca66afd4ec_real.jpeg",
       "classification": "fake",
       "artifacts": [
         {
           "type": "structural"
-        },
-        {
-          "type": "semantic"
         }
       ]
+    },
+    {
+      "filename": "be43d363ea6ba1e080580d3a2a74c6a000041940d0f27dd9af71faca66afd4ec_real.jpeg",
+      "classification": "real",
+      "artifacts": []
     },
     {
       "filename": "35ed44c64fa9ebe57b0f51a055d1b56a_real.jpeg",
       "classification": "fake",
       "artifacts": [
-        {
-          "type": "structural"
-        },
-        {
-          "type": "semantic"
-        },
         {
           "type": "stylistic"
         }
@@ -180,35 +299,23 @@
     {
       "filename": "fb1eff5acdf20dd6aa902af046c1837a_real.jpeg",
       "classification": "fake",
-      "artifacts": [
-        {
-          "type": "structural"
-        },
-        {
-          "type": "semantic"
-        },
-        {
-          "type": "stylistic"
-        }
-      ]
+      "artifacts": []
     },
     {
       "filename": "d07a9e73914dad147383eb40cb21a296_real.jpeg",
-      "classification": "real",
-      "artifacts": []
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural"
+        }
+      ]
     },
     {
       "filename": "b472b7624e736851155da6ece8d096ed1d6ffb74cd3710667a4e956d0812cfc9_real.jpeg",
       "classification": "fake",
       "artifacts": [
         {
-          "type": "structural"
-        },
-        {
           "type": "semantic"
-        },
-        {
-          "type": "stylistic"
         }
       ]
     },
@@ -217,55 +324,37 @@
       "classification": "fake",
       "artifacts": [
         {
-          "type": "structural"
-        },
-        {
           "type": "semantic"
-        },
-        {
-          "type": "stylistic"
         }
       ]
     },
     {
       "filename": "97cb4675b218ffb0f3902bf9af1c4660a6ec7268f5c08641a605e6d073e0c246_real.jpeg",
-      "classification": "real",
-      "artifacts": []
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural"
+        }
+      ]
     },
     {
       "filename": "bb940e5b5eb4667fa106086a3ddd34ce_real.jpeg",
       "classification": "fake",
-      "artifacts": [
-        {
-          "type": "structural"
-        },
-        {
-          "type": "semantic"
-        },
-        {
-          "type": "stylistic"
-        }
-      ]
-    },
-    {
-      "filename": "06086a7210d32ee6f6d7afdf64e95c67_real.jpeg",
-      "classification": "real",
       "artifacts": []
     },
     {
-      "filename": "03a001b85768dd4c7bcb8e20486bf0f20973314b1ec269ef1057f6565de34016_real.jpeg",
+      "filename": "06086a7210d32ee6f6d7afdf64e95c67_real.jpeg",
       "classification": "fake",
       "artifacts": [
-        {
-          "type": "structural"
-        },
-        {
-          "type": "semantic"
-        },
         {
           "type": "stylistic"
         }
       ]
+    },
+    {
+      "filename": "03a001b85768dd4c7bcb8e20486bf0f20973314b1ec269ef1057f6565de34016_real.jpeg",
+      "classification": "real",
+      "artifacts": []
     },
     {
       "filename": "7d95deb6a1fc9795a849e2eab10f49b6_real.jpeg",
@@ -280,9 +369,6 @@
       "filename": "caabe61d5e181b8da352b0e7b73dfeb4_real.jpeg",
       "classification": "fake",
       "artifacts": [
-        {
-          "type": "structural"
-        },
         {
           "type": "stylistic"
         }
@@ -312,13 +398,17 @@
     },
     {
       "filename": "56eb13f536b858a48ea41076c246a1f2_real.jpeg",
-      "classification": "real",
+      "classification": "fake",
       "artifacts": []
     },
     {
       "filename": "the-magician-2817077_1280.jpg",
-      "classification": "real",
-      "artifacts": []
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "physical"
+        }
+      ]
     },
     {
       "filename": "a78602fa52fe9377759a2df17a8a09cdbf52a21626a202b4c2a11460312104f5_real.jpeg",
@@ -327,33 +417,27 @@
     },
     {
       "filename": "0ae750b9ec4bd9ceaaab393a928b77ac_real.jpeg",
-      "classification": "fake",
-      "artifacts": [
-        {
-          "type": "semantic"
-        },
-        {
-          "type": "structural"
-        },
-        {
-          "type": "stylistic"
-        }
-      ]
+      "classification": "real",
+      "artifacts": []
     },
     {
       "filename": "pexels-orestsv-1821699.jpg",
-      "classification": "real",
+      "classification": "fake",
       "artifacts": []
     },
     {
       "filename": "pexels-markarronsmith-2168356.jpg",
-      "classification": "real",
+      "classification": "fake",
       "artifacts": []
     },
     {
       "filename": "d6cf6f6e189a0e2a890f90e0cba185c2_real.jpeg",
-      "classification": "real",
-      "artifacts": []
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "semantic"
+        }
+      ]
     },
     {
       "filename": "99c5f61aa990fcbcaff73a63fdaef4cd_real.jpeg",
@@ -365,10 +449,7 @@
       "classification": "fake",
       "artifacts": [
         {
-          "type": "structural"
-        },
-        {
-          "type": "semantic"
+          "type": "stylistic"
         }
       ]
     },
@@ -390,7 +471,7 @@
           "type": "structural"
         },
         {
-          "type": "semantic"
+          "type": "physical"
         },
         {
           "type": "stylistic"
@@ -400,19 +481,103 @@
     {
       "filename": "pexels-canan-altan-2152293568-32121769.jpg",
       "classification": "real",
-      "artifacts": []
-    },
-    {
-      "filename": "0b96dd5fd38f6c18236dcec8df90c549_real.jpeg",
-      "classification": "fake",
       "artifacts": [
+        {
+          "type": "semantic"
+        },
+        {
+          "type": "semantic"
+        },
         {
           "type": "structural"
         },
         {
+          "type": "semantic"
+        },
+        {
+          "type": "structural"
+        },
+        {
+          "type": "physical"
+        },
+        {
           "type": "stylistic"
+        },
+        {
+          "type": "stylistic"
+        },
+        {
+          "type": "stylistic"
+        },
+        {
+          "type": "semantic"
+        },
+        {
+          "type": "structural"
+        },
+        {
+          "type": "physical"
+        },
+        {
+          "type": "stylistic"
+        },
+        {
+          "type": "stylistic"
+        },
+        {
+          "type": "physical"
+        },
+        {
+          "type": "stylistic"
+        },
+        {
+          "type": "semantic"
+        },
+        {
+          "type": "semantic"
+        },
+        {
+          "type": "structural"
+        },
+        {
+          "type": "semantic"
+        },
+        {
+          "type": "semantic"
+        },
+        {
+          "type": "physical"
+        },
+        {
+          "type": "semantic"
+        },
+        {
+          "type": "structural"
+        },
+        {
+          "type": "physical"
+        },
+        {
+          "type": "physical"
+        },
+        {
+          "type": "stylistic"
+        },
+        {
+          "type": "semantic"
+        },
+        {
+          "type": "physical"
+        },
+        {
+          "type": "physical"
         }
       ]
+    },
+    {
+      "filename": "0b96dd5fd38f6c18236dcec8df90c549_real.jpeg",
+      "classification": "real",
+      "artifacts": []
     }
   ]
 }
