@@ -14,22 +14,22 @@
         {
           "type": "stylistic",
           "reasoning": "Large, soft-edged dark smears/occlusions cut across the subjects, resembling an unrealistic foreground vignette or inpainting error rather than a coherent object.",
-          "location": "Lower middle, spanning across the center subject\u2019s torso and into the right subject\u2019s jacket"
+          "location": "Lower middle, spanning across the center subject’s torso and into the right subject’s jacket"
         },
         {
           "type": "structural",
           "reasoning": "Hand anatomy is malformed/indistinct (fingers and joints are not clearly defined and appear merged/blurred into a single shape).",
-          "location": "Bottom center, near the middle subject\u2019s hand/waist area"
+          "location": "Bottom center, near the middle subject’s hand/waist area"
         },
         {
           "type": "semantic",
           "reasoning": "Clothing text/lettering is garbled and not cleanly readable, consistent with AI text-rendering failures.",
-          "location": "Center subject\u2019s chest (middle of image)"
+          "location": "Center subject’s chest (middle of image)"
         },
         {
           "type": "structural",
           "reasoning": "Background utility pole/crossbar geometry looks inconsistent, with unclear or missing cable connections and slightly implausible structure.",
-          "location": "Upper center background above the subjects\u2019 heads"
+          "location": "Upper center background above the subjects’ heads"
         },
         {
           "type": "stylistic",
@@ -44,47 +44,47 @@
       "artifacts": [
         {
           "type": "structural",
-          "reasoning": "The woman\u2019s right hand shows irregular finger geometry (fingers appear fused/unnaturally bent, with unclear separation and proportions) while supporting the boy\u2019s legs.",
-          "location": "Lower center-right, on the woman\u2019s hand under the boy\u2019s knees/shins"
+          "reasoning": "The woman’s right hand shows irregular finger geometry (fingers appear fused/unnaturally bent, with unclear separation and proportions) while supporting the boy’s legs.",
+          "location": "Lower center-right, on the woman’s hand under the boy’s knees/shins"
         },
         {
           "type": "structural",
-          "reasoning": "The girl\u2019s hand gripping the boy\u2019s ankle/foot has distorted finger shapes and an unclear transition into the sock/foot area (blended edges).",
-          "location": "Lower center-left, where the girl holds the boy\u2019s foot"
+          "reasoning": "The girl’s hand gripping the boy’s ankle/foot has distorted finger shapes and an unclear transition into the sock/foot area (blended edges).",
+          "location": "Lower center-left, where the girl holds the boy’s foot"
         },
         {
           "type": "structural",
-          "reasoning": "The boy\u2019s foot/ankle area looks malformed and ambiguously clothed (the sock/shoe boundary is unclear, with smeared edges and an odd rounded toe shape).",
-          "location": "Lower center, at the end of the boy\u2019s extended leg"
+          "reasoning": "The boy’s foot/ankle area looks malformed and ambiguously clothed (the sock/shoe boundary is unclear, with smeared edges and an odd rounded toe shape).",
+          "location": "Lower center, at the end of the boy’s extended leg"
         },
         {
           "type": "semantic",
           "reasoning": "The neck/helmet component of the astronaut suit is functionally implausible: a rigid collar/visor element is present but not connected to a helmet, and it sits awkwardly around the neck like a detached ring.",
-          "location": "Center, around the woman\u2019s neck/chest (blue-tinted collar)"
+          "location": "Center, around the woman’s neck/chest (blue-tinted collar)"
         },
         {
           "type": "semantic",
           "reasoning": "A baseball cap worn with an apparent astronaut suit collar/helmet assembly is contextually inconsistent with typical suit/helmet use (cap would interfere with sealing/fit).",
-          "location": "Top center, on the woman\u2019s head"
+          "location": "Top center, on the woman’s head"
         },
         {
           "type": "structural",
-          "reasoning": "The collar/visor piece has warped geometry and inconsistent edge continuity (uneven curvature and layered bands that don\u2019t align cleanly).",
+          "reasoning": "The collar/visor piece has warped geometry and inconsistent edge continuity (uneven curvature and layered bands that don’t align cleanly).",
           "location": "Center, the blue-and-white collar/visor assembly"
         },
         {
           "type": "stylistic",
-          "reasoning": "Skin and facial textures appear overly smooth and uniformly lit compared to surrounding fabric detail, giving a synthetic \u2018airbrushed\u2019 look.",
+          "reasoning": "Skin and facial textures appear overly smooth and uniformly lit compared to surrounding fabric detail, giving a synthetic ‘airbrushed’ look.",
           "location": "Faces of the woman and both children (upper center and upper right/left)"
         },
         {
           "type": "stylistic",
-          "reasoning": "Some background railing segments show slight \u2018melted\u2019/softened detail and inconsistent sharpness that doesn\u2019t match the main subjects\u2019 crisp edges.",
+          "reasoning": "Some background railing segments show slight ‘melted’/softened detail and inconsistent sharpness that doesn’t match the main subjects’ crisp edges.",
           "location": "Lower right and lower left along the blue railings"
         },
         {
           "type": "physical",
-          "reasoning": "Contact shadows are weak/inconsistent where hands and legs meet (notably under the boy\u2019s leg on the suit and around the grasp points), reducing the sense of real physical contact.",
+          "reasoning": "Contact shadows are weak/inconsistent where hands and legs meet (notably under the boy’s leg on the suit and around the grasp points), reducing the sense of real physical contact.",
           "location": "Lower center to lower center-right at the hand/leg contact areas"
         }
       ]

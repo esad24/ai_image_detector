@@ -19,23 +19,23 @@
       "artifacts": [
         {
           "type": "structural",
-          "reasoning": "Left woman\u2019s raised hand shows malformed finger geometry (fingers appear merged/blurred with unclear joints and an implausible finger count/spacing).",
-          "location": "Center-left, in front of the left woman\u2019s chest/face (raised hand)"
+          "reasoning": "Left woman’s raised hand shows malformed finger geometry (fingers appear merged/blurred with unclear joints and an implausible finger count/spacing).",
+          "location": "Center-left, in front of the left woman’s chest/face (raised hand)"
         },
         {
           "type": "structural",
-          "reasoning": "Left woman\u2019s hand holding the pizza slice has unclear/partially missing fingers and smeared edges where the hand meets the slice.",
-          "location": "Far left edge, near the left woman\u2019s mouth and the pizza slice"
+          "reasoning": "Left woman’s hand holding the pizza slice has unclear/partially missing fingers and smeared edges where the hand meets the slice.",
+          "location": "Far left edge, near the left woman’s mouth and the pizza slice"
         },
         {
           "type": "structural",
-          "reasoning": "Right woman\u2019s pointing hand has distorted anatomy: the index finger/knuckle transitions look warped and the thumb/other fingers are not clearly separable.",
-          "location": "Center-right, in front of the right woman\u2019s chest (pointing gesture)"
+          "reasoning": "Right woman’s pointing hand has distorted anatomy: the index finger/knuckle transitions look warped and the thumb/other fingers are not clearly separable.",
+          "location": "Center-right, in front of the right woman’s chest (pointing gesture)"
         },
         {
           "type": "structural",
-          "reasoning": "Pizza slice near the right woman\u2019s mouth has unnatural edge/cheese texture and ambiguous separation between crust, toppings, and bite area (appears smudged rather than detailed).",
-          "location": "Right edge, adjacent to the right woman\u2019s mouth"
+          "reasoning": "Pizza slice near the right woman’s mouth has unnatural edge/cheese texture and ambiguous separation between crust, toppings, and bite area (appears smudged rather than detailed).",
+          "location": "Right edge, adjacent to the right woman’s mouth"
         },
         {
           "type": "structural",
@@ -49,7 +49,7 @@
         },
         {
           "type": "stylistic",
-          "reasoning": "Overall rendering has an AI-like \u2018over-smoothed\u2019 look: skin appears plasticky with uniform shading and the depth-of-field blur feels excessively uniform/creamy compared to the foreground sharpness.",
+          "reasoning": "Overall rendering has an AI-like ‘over-smoothed’ look: skin appears plasticky with uniform shading and the depth-of-field blur feels excessively uniform/creamy compared to the foreground sharpness.",
           "location": "Across both subjects (faces/skin) and the upper background"
         }
       ]
@@ -75,7 +75,7 @@
         },
         {
           "type": "physical",
-          "reasoning": "The stethoscope loop shows inconsistent depth/contact\u2014parts look like they hover or sink into the coat rather than resting naturally with gravity and fabric tension.",
+          "reasoning": "The stethoscope loop shows inconsistent depth/contact—parts look like they hover or sink into the coat rather than resting naturally with gravity and fabric tension.",
           "location": "Around the neckline and upper chest where the tubing crosses the coat"
         },
         {
@@ -122,17 +122,17 @@
         {
           "type": "structural",
           "reasoning": "Hair boundaries and strand detail look partially smeared/merged where heads overlap, creating an unnaturally clean seam and inconsistent strand direction.",
-          "location": "Upper-center where the left subject\u2019s hair meets/overlaps the upper-right subject\u2019s head."
+          "location": "Upper-center where the left subject’s hair meets/overlaps the upper-right subject’s head."
         },
         {
           "type": "structural",
-          "reasoning": "Hair color transitions look like a continuous gradient rather than discrete strands, with texture loss and \u201cpainted\u201d appearance.",
-          "location": "Right side of the image along the upper-right subject\u2019s hair (mid-right to lower-right)."
+          "reasoning": "Hair color transitions look like a continuous gradient rather than discrete strands, with texture loss and “painted” appearance.",
+          "location": "Right side of the image along the upper-right subject’s hair (mid-right to lower-right)."
         },
         {
           "type": "semantic",
-          "reasoning": "Clothing/neckline geometry looks ambiguous: folds and collar edges are indistinct and don\u2019t read as a clear garment structure, as if the neckline is partially synthesized or blended into surrounding areas.",
-          "location": "Lower-center around the front subject\u2019s collar/neckline."
+          "reasoning": "Clothing/neckline geometry looks ambiguous: folds and collar edges are indistinct and don’t read as a clear garment structure, as if the neckline is partially synthesized or blended into surrounding areas.",
+          "location": "Lower-center around the front subject’s collar/neckline."
         }
       ]
     },
@@ -148,7 +148,7 @@
         {
           "type": "structural",
           "reasoning": "A supporting hand behind the baby has unclear/merged finger shapes and indistinct joints, giving an unnatural anatomy.",
-          "location": "Right-middle, just behind the baby\u2019s right shoulder (viewer right)"
+          "location": "Right-middle, just behind the baby’s right shoulder (viewer right)"
         },
         {
           "type": "structural",
@@ -157,18 +157,18 @@
         },
         {
           "type": "physical",
-          "reasoning": "The waterline interaction with the body/strap looks inconsistent (soft, \u2018melted\u2019 boundary and refraction), and the near-surface reflection/distortion in the foreground appears unnaturally smooth compared to the surrounding ripples.",
+          "reasoning": "The waterline interaction with the body/strap looks inconsistent (soft, ‘melted’ boundary and refraction), and the near-surface reflection/distortion in the foreground appears unnaturally smooth compared to the surrounding ripples.",
           "location": "Across the lower third of the image at the chest waterline and the immediate foreground water"
         },
         {
           "type": "stylistic",
           "reasoning": "Skin rendering is unusually uniform and airbrushed (waxy/plastic look) with minimal natural micro-texture, typical of generative imagery.",
-          "location": "Center, across the baby\u2019s face and scalp"
+          "location": "Center, across the baby’s face and scalp"
         },
         {
           "type": "physical",
           "reasoning": "Eye highlights and shading are slightly inconsistent between the two eyes, suggesting non-physical lighting/catchlight generation.",
-          "location": "Center, the baby\u2019s eyes"
+          "location": "Center, the baby’s eyes"
         }
       ]
     },
@@ -224,26 +224,26 @@
         {
           "type": "physical",
           "reasoning": "The figure in the glass does not behave like a true mirror reflection: the orientation/side placement appears inconsistent (the person and tool appear on the same side rather than being laterally flipped as expected in a reflection).",
-          "location": "Center-right, within the glass door panel (the \u2018reflected\u2019 person and crowbar area)."
+          "location": "Center-right, within the glass door panel (the ‘reflected’ person and crowbar area)."
         },
         {
           "type": "semantic",
-          "reasoning": "The \u2018reflection\u2019 depicts clothing tones and segmentation that don\u2019t match the subject (dark/black upper body with a light/cream midsection and tan-looking pants vs the subject\u2019s purple hoodie and blue jeans), which is implausible if it is the same person\u2019s reflection.",
-          "location": "Center-right, reflected person\u2019s torso and legs in the glass."
+          "reasoning": "The ‘reflection’ depicts clothing tones and segmentation that don’t match the subject (dark/black upper body with a light/cream midsection and tan-looking pants vs the subject’s purple hoodie and blue jeans), which is implausible if it is the same person’s reflection.",
+          "location": "Center-right, reflected person’s torso and legs in the glass."
         },
         {
           "type": "structural",
           "reasoning": "The reflected person has smeared/under-defined anatomy and boundaries (hands/arms and head contours blend into the background with muddy edges), a common generative/compositing artifact.",
-          "location": "Center-right, around the reflected figure\u2019s head and hands/forearms."
+          "location": "Center-right, around the reflected figure’s head and hands/forearms."
         },
         {
           "type": "physical",
-          "reasoning": "Ground-plane consistency is off: the reflected feet/shoes and stride do not align convincingly with the visible floor line and door threshold, making the reflection appear to \u2018float\u2019 or sit on a different plane than the real subject.",
-          "location": "Lower-right quadrant, near the reflected figure\u2019s feet and the door threshold."
+          "reasoning": "Ground-plane consistency is off: the reflected feet/shoes and stride do not align convincingly with the visible floor line and door threshold, making the reflection appear to ‘float’ or sit on a different plane than the real subject.",
+          "location": "Lower-right quadrant, near the reflected figure’s feet and the door threshold."
         },
         {
           "type": "stylistic",
-          "reasoning": "Local sharpness/noise differs unnaturally between the main subject, the reflected subject, and the background (the reflection has a \u2018cutout/ghost\u2019 look rather than uniform optical blur and glass reflections).",
+          "reasoning": "Local sharpness/noise differs unnaturally between the main subject, the reflected subject, and the background (the reflection has a ‘cutout/ghost’ look rather than uniform optical blur and glass reflections).",
           "location": "Overall, most noticeable in the center-right glass panel around the reflected figure."
         }
       ]
@@ -260,7 +260,7 @@
         {
           "type": "structural",
           "reasoning": "The lower-right hand shows malformed anatomy: fingers appear oddly shaped and/or partially merged, with an unnatural pose relative to the wrist.",
-          "location": "Bottom-right quadrant (right woman\u2019s lowered hand)"
+          "location": "Bottom-right quadrant (right woman’s lowered hand)"
         },
         {
           "type": "structural",
@@ -269,12 +269,12 @@
         },
         {
           "type": "semantic",
-          "reasoning": "The phone-holding arm is difficult to trace back naturally to either person\u2019s shoulder/upper arm, creating an implausible limb connection/ownership.",
+          "reasoning": "The phone-holding arm is difficult to trace back naturally to either person’s shoulder/upper arm, creating an implausible limb connection/ownership.",
           "location": "Center-lower (between the two torsos, leading to the phone)"
         },
         {
           "type": "structural",
-          "reasoning": "The tote bag handles/straps appear to merge and/or terminate oddly, with attachment points that don\u2019t cleanly connect to the bag rim.",
+          "reasoning": "The tote bag handles/straps appear to merge and/or terminate oddly, with attachment points that don’t cleanly connect to the bag rim.",
           "location": "Bottom-left corner (tote bag and straps)"
         },
         {
@@ -295,7 +295,7 @@
         },
         {
           "type": "structural",
-          "reasoning": "The bear\u2019s lower body reads as a continuous shaggy column with no clearly defined hips, legs, paws, or distinct ground contact points.",
+          "reasoning": "The bear’s lower body reads as a continuous shaggy column with no clearly defined hips, legs, paws, or distinct ground contact points.",
           "location": "center-lower"
         },
         {
@@ -305,13 +305,13 @@
         },
         {
           "type": "semantic",
-          "reasoning": "The animal\u2019s coat appears long, wavy, and costume-like rather than the shorter, denser fur typical of a polar bear, making the species depiction incoherent.",
+          "reasoning": "The animal’s coat appears long, wavy, and costume-like rather than the shorter, denser fur typical of a polar bear, making the species depiction incoherent.",
           "location": "center (bear body)"
         },
         {
           "type": "structural",
-          "reasoning": "The woman\u2019s hand gripping the bear lacks clear finger separation and appears to merge into the fur texture, suggesting a generative deformation.",
-          "location": "left-center (woman\u2019s hand on the bear)"
+          "reasoning": "The woman’s hand gripping the bear lacks clear finger separation and appears to merge into the fur texture, suggesting a generative deformation.",
+          "location": "left-center (woman’s hand on the bear)"
         },
         {
           "type": "stylistic",
@@ -377,18 +377,18 @@
       "artifacts": [
         {
           "type": "structural",
-          "reasoning": "The hand with red-painted nails resting on the seated man\u2019s left shoulder has distorted finger anatomy (irregular finger lengths/spacing and partially merged digits).",
-          "location": "Center-right, on the seated man\u2019s left shoulder"
+          "reasoning": "The hand with red-painted nails resting on the seated man’s left shoulder has distorted finger anatomy (irregular finger lengths/spacing and partially merged digits).",
+          "location": "Center-right, on the seated man’s left shoulder"
         },
         {
           "type": "structural",
-          "reasoning": "The right-side man\u2019s forearm/hand area shows blending with the chair and jacket edge, producing an unclear boundary and slightly melted-looking contours.",
-          "location": "Right-lower quadrant, along the standing man\u2019s right arm near the chair back"
+          "reasoning": "The right-side man’s forearm/hand area shows blending with the chair and jacket edge, producing an unclear boundary and slightly melted-looking contours.",
+          "location": "Right-lower quadrant, along the standing man’s right arm near the chair back"
         },
         {
           "type": "structural",
-          "reasoning": "The hand placed on the standing man\u2019s shoulder (with bracelet) has inconsistent finger definition and jewelry appears fused into the skin/hand edge.",
-          "location": "Far right-middle, on the standing man\u2019s shoulder"
+          "reasoning": "The hand placed on the standing man’s shoulder (with bracelet) has inconsistent finger definition and jewelry appears fused into the skin/hand edge.",
+          "location": "Far right-middle, on the standing man’s shoulder"
         },
         {
           "type": "structural",
@@ -403,7 +403,7 @@
         {
           "type": "structural",
           "reasoning": "Hairline and hair strands on the blonde woman show unnatural clumping and a slightly painted transition into the forehead.",
-          "location": "Center, blonde woman\u2019s head/hairline"
+          "location": "Center, blonde woman’s head/hairline"
         },
         {
           "type": "structural",
@@ -423,18 +423,18 @@
       "artifacts": [
         {
           "type": "structural",
-          "reasoning": "The astronaut\u2019s gloved fingers appear fused/indistinct, with mitten-like shapes and unclear finger separations.",
-          "location": "lower center-right (astronaut\u2019s hands holding the child)"
+          "reasoning": "The astronaut’s gloved fingers appear fused/indistinct, with mitten-like shapes and unclear finger separations.",
+          "location": "lower center-right (astronaut’s hands holding the child)"
         },
         {
           "type": "structural",
-          "reasoning": "The child\u2019s fingers gripping the suit/collar look malformed or partially merged, with unclear joints and finger boundaries.",
+          "reasoning": "The child’s fingers gripping the suit/collar look malformed or partially merged, with unclear joints and finger boundaries.",
           "location": "center-right (child in blue, hands on the astronaut suit ring/torso)"
         },
         {
           "type": "structural",
           "reasoning": "The suit collar/neck ring geometry looks warped and the boundary around the neck/inner ring shows imperfect blending and irregular edges.",
-          "location": "right-center (around the astronaut\u2019s neck opening)"
+          "location": "right-center (around the astronaut’s neck opening)"
         },
         {
           "type": "structural",
@@ -444,7 +444,7 @@
         {
           "type": "stylistic",
           "reasoning": "Facial skin appears overly smooth with airbrushed texture, and teeth highlights look uniformly bright compared with surrounding detail, suggesting generative/over-processed rendering.",
-          "location": "faces, especially the astronaut\u2019s face on the right"
+          "location": "faces, especially the astronaut’s face on the right"
         }
       ]
     },
@@ -469,7 +469,7 @@
         },
         {
           "type": "physical",
-          "reasoning": "Printed logos/text do not convincingly follow the fabric\u2019s curvature/texture; the mark looks like it sits flat without realistic warping over the shirt surface.",
+          "reasoning": "Printed logos/text do not convincingly follow the fabric’s curvature/texture; the mark looks like it sits flat without realistic warping over the shirt surface.",
           "location": "Lower-right chest area around the 'TEAM' text, logo, and rings"
         },
         {
@@ -489,7 +489,7 @@
         },
         {
           "type": "physical",
-          "reasoning": "Eye catchlights and iris sharpness appear unnaturally uniform and symmetric, giving an implausibly \u2018perfect\u2019 reflective pattern for a natural portrait.",
+          "reasoning": "Eye catchlights and iris sharpness appear unnaturally uniform and symmetric, giving an implausibly ‘perfect’ reflective pattern for a natural portrait.",
           "location": "Both eyes (center of the image)"
         }
       ]
@@ -555,12 +555,12 @@
       "artifacts": [
         {
           "type": "structural",
-          "reasoning": "Left subject\u2019s hands show abnormal finger geometry/spacing (some fingers appear fused or unnaturally shaped for a clapping pose).",
+          "reasoning": "Left subject’s hands show abnormal finger geometry/spacing (some fingers appear fused or unnaturally shaped for a clapping pose).",
           "location": "bottom-left quadrant (hands in foreground)"
         },
         {
           "type": "structural",
-          "reasoning": "Right subject\u2019s hands show malformed anatomy with unclear finger separation and odd thumb/palm contours, consistent with AI hand artifacts.",
+          "reasoning": "Right subject’s hands show malformed anatomy with unclear finger separation and odd thumb/palm contours, consistent with AI hand artifacts.",
           "location": "bottom-center/right (hands in foreground)"
         },
         {
@@ -581,7 +581,7 @@
         {
           "type": "stylistic",
           "reasoning": "Over-smoothed, slightly plastic-looking skin texture with uneven micro-detail compared to clothing fabric sharpness, a common AI rendering inconsistency.",
-          "location": "center-left and center-right (both subjects\u2019 faces)"
+          "location": "center-left and center-right (both subjects’ faces)"
         }
       ]
     },
@@ -601,7 +601,7 @@
       "artifacts": [
         {
           "type": "structural",
-          "reasoning": "The bartender\u2019s left-hand fingers appear partially fused/indistinct around the bottle neck, with unclear finger separation and unnatural digit contours.",
+          "reasoning": "The bartender’s left-hand fingers appear partially fused/indistinct around the bottle neck, with unclear finger separation and unnatural digit contours.",
           "location": "Upper-left quadrant, hand gripping the bottle neck"
         },
         {
@@ -632,7 +632,7 @@
         {
           "type": "stylistic",
           "reasoning": "Facial details (eyes/lips/skin texture) look over-smoothed with slightly inconsistent edges, creating a synthetic portrait-like rendering rather than natural camera detail.",
-          "location": "Upper center, bartender\u2019s face"
+          "location": "Upper center, bartender’s face"
         }
       ]
     },

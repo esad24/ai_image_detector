@@ -22,7 +22,7 @@
         },
         {
           "type": "structural",
-          "reasoning": "The mouth/lip boundary looks partially merged with surrounding skin, with asymmetrical shaping and softened edges that don\u2019t match natural lip detail.",
+          "reasoning": "The mouth/lip boundary looks partially merged with surrounding skin, with asymmetrical shaping and softened edges that don’t match natural lip detail.",
           "location": "Center-lower face (mouth and lips)"
         },
         {
@@ -32,7 +32,7 @@
         },
         {
           "type": "stylistic",
-          "reasoning": "Skin texture appears overly smooth with synthetic-looking mottling/grain, while the \u2018dirt\u2019 pattern looks uniformly painted rather than naturally accumulated.",
+          "reasoning": "Skin texture appears overly smooth with synthetic-looking mottling/grain, while the ‘dirt’ pattern looks uniformly painted rather than naturally accumulated.",
           "location": "Face (cheeks, nose, forehead)"
         },
         {
@@ -63,23 +63,23 @@
       "artifacts": [
         {
           "type": "structural",
-          "reasoning": "The animal\u2019s face has inconsistent anatomy: the muzzle/mouth area looks flattened with an unnatural, human-like tooth row and ambiguous nose structure.",
-          "location": "Center, upper-middle (animal\u2019s head/face)"
+          "reasoning": "The animal’s face has inconsistent anatomy: the muzzle/mouth area looks flattened with an unnatural, human-like tooth row and ambiguous nose structure.",
+          "location": "Center, upper-middle (animal’s head/face)"
         },
         {
           "type": "structural",
-          "reasoning": "The animal\u2019s forelimbs/paws lack clear joint structure and claw definition; the shapes resemble fuzzy mittens/hands rather than coherent paws.",
-          "location": "Center-left and center-right (animal\u2019s raised paws/forearms next to each soldier)"
+          "reasoning": "The animal’s forelimbs/paws lack clear joint structure and claw definition; the shapes resemble fuzzy mittens/hands rather than coherent paws.",
+          "location": "Center-left and center-right (animal’s raised paws/forearms next to each soldier)"
         },
         {
           "type": "structural",
-          "reasoning": "The animal\u2019s lower legs/feet appear like rounded, slipper-like forms with unclear toes/claws and irregular symmetry between left and right foot.",
-          "location": "Center, bottom (animal\u2019s feet on the snow)"
+          "reasoning": "The animal’s lower legs/feet appear like rounded, slipper-like forms with unclear toes/claws and irregular symmetry between left and right foot.",
+          "location": "Center, bottom (animal’s feet on the snow)"
         },
         {
           "type": "structural",
-          "reasoning": "The right soldier\u2019s hand/arm area blends ambiguously into the coat and adjacent objects, with unclear finger definition and merging edges.",
-          "location": "Right side, mid-lower (right soldier\u2019s gloved hand area near the belt/coat front)"
+          "reasoning": "The right soldier’s hand/arm area blends ambiguously into the coat and adjacent objects, with unclear finger definition and merging edges.",
+          "location": "Right side, mid-lower (right soldier’s gloved hand area near the belt/coat front)"
         },
         {
           "type": "structural",
@@ -88,18 +88,18 @@
         },
         {
           "type": "physical",
-          "reasoning": "Ground contact and weight look inconsistent: the animal\u2019s feet and the soldiers\u2019 boots show weak/imprecise compression/indentation cues in the snow, giving a slightly \u201cfloating\u201d appearance.",
-          "location": "Bottom region around all three subjects\u2019 feet (snow contact area)"
+          "reasoning": "Ground contact and weight look inconsistent: the animal’s feet and the soldiers’ boots show weak/imprecise compression/indentation cues in the snow, giving a slightly “floating” appearance.",
+          "location": "Bottom region around all three subjects’ feet (snow contact area)"
         },
         {
           "type": "stylistic",
-          "reasoning": "Edge halos and tonal discontinuities suggest compositing or generative blending, especially around the animal\u2019s outline compared with the soldiers and background.",
-          "location": "Around the animal\u2019s silhouette, especially center (edges of fur against the snowy background)"
+          "reasoning": "Edge halos and tonal discontinuities suggest compositing or generative blending, especially around the animal’s outline compared with the soldiers and background.",
+          "location": "Around the animal’s silhouette, especially center (edges of fur against the snowy background)"
         },
         {
           "type": "stylistic",
-          "reasoning": "Film grain/noise appears uneven across subjects, with the animal\u2019s fur texture having a different noise character than the soldiers\u2019 coats and the background wall.",
-          "location": "Center (animal fur) versus left/right (soldiers\u2019 coats) and upper background (building wall)"
+          "reasoning": "Film grain/noise appears uneven across subjects, with the animal’s fur texture having a different noise character than the soldiers’ coats and the background wall.",
+          "location": "Center (animal fur) versus left/right (soldiers’ coats) and upper background (building wall)"
         }
       ]
     }

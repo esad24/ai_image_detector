@@ -133,8 +133,12 @@ summary = {
 # Output results
 # -------------------------------
 output = {
-    "per_file": file_scores,
-    "dataset_summary": summary
+    "meta": result_json.get("meta", {}),
+    "image_count": result_json.get("image_count", len(result_json["results"])),
+    "total_fakes": result_json.get("total_fakes", 0),
+    "total_real": result_json.get("total_real", 0),
+    "image_scores": file_scores,
+    "dataset_average": summary
 }
 
 # -------------------------------

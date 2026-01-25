@@ -71,8 +71,8 @@ class ResultWriter:
             return json.load(f)
 
     def _save(self, data):
-        with open(self.file_path, "w") as f:
-            json.dump(data, f, indent=2)
+        with open(self.file_path, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
 
     def _load_counters(self):
         data = self._load()

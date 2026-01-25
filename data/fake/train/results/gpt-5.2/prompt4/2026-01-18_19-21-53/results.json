@@ -13,15 +13,15 @@
       "artifacts": [
         {
           "reasoning": "Multiple large, semi-transparent dark diagonal bands appear over the subjects, resembling generation/masking smears rather than natural shadows or lens artifacts.",
-          "location": "Across the lower half of the image, especially over the center subject\u2019s torso and the area between the three people (diagonal streaks running bottom-left to upper-right)."
+          "location": "Across the lower half of the image, especially over the center subject’s torso and the area between the three people (diagonal streaks running bottom-left to upper-right)."
         },
         {
           "reasoning": "Clothing graphics/text look inconsistent and partially unreadable, a common synthetic artifact where logos/letters fail to form cleanly.",
-          "location": "Center subject\u2019s chest (red/white lettering) and right subject\u2019s T\u2011shirt graphic."
+          "location": "Center subject’s chest (red/white lettering) and right subject’s T‑shirt graphic."
         },
         {
           "reasoning": "Some fine details blend or deform at edges, suggesting imperfect synthesis of complex structures.",
-          "location": "Hands near the bottom center (center subject) and hair/jacket boundaries (right subject\u2019s dreadlocks against the bright sky)."
+          "location": "Hands near the bottom center (center subject) and hair/jacket boundaries (right subject’s dreadlocks against the bright sky)."
         }
       ]
     },
@@ -30,20 +30,20 @@
       "classification": "fake",
       "artifacts": [
         {
-          "reasoning": "Hand anatomy looks synthesized: the adult\u2019s supporting hand under the boy shows oddly merged/flattened finger shapes and unclear knuckle definition.",
-          "location": "Lower center-right (adult hand supporting the child\u2019s legs) and lower left (adult arm/hand around the girl)."
+          "reasoning": "Hand anatomy looks synthesized: the adult’s supporting hand under the boy shows oddly merged/flattened finger shapes and unclear knuckle definition.",
+          "location": "Lower center-right (adult hand supporting the child’s legs) and lower left (adult arm/hand around the girl)."
         },
         {
-          "reasoning": "The girl\u2019s hand holding the boy\u2019s foot appears structurally inconsistent (fingers blend into the sock/foot area and the grip geometry is ambiguous).",
-          "location": "Lower center (girl\u2019s hand on the child\u2019s foot/ankle)."
+          "reasoning": "The girl’s hand holding the boy’s foot appears structurally inconsistent (fingers blend into the sock/foot area and the grip geometry is ambiguous).",
+          "location": "Lower center (girl’s hand on the child’s foot/ankle)."
         },
         {
-          "reasoning": "Clothing and object detailing is unusually \u201cclean\u201d yet inconsistent: the astronaut-style neck ring/visor area has smeared textures and irregular concentric edges that don\u2019t match real materials/reflections.",
-          "location": "Center (around the woman\u2019s neck/helmet collar)."
+          "reasoning": "Clothing and object detailing is unusually “clean” yet inconsistent: the astronaut-style neck ring/visor area has smeared textures and irregular concentric edges that don’t match real materials/reflections.",
+          "location": "Center (around the woman’s neck/helmet collar)."
         },
         {
           "reasoning": "Fine hair edges and facial micro-texture look overly smooth with slight haloing/edge artifacts against the background, typical of generative portraits.",
-          "location": "Around the woman\u2019s hairline and the children\u2019s hair edges against the wall/background (upper center and left)."
+          "location": "Around the woman’s hairline and the children’s hair edges against the wall/background (upper center and left)."
         }
       ]
     },

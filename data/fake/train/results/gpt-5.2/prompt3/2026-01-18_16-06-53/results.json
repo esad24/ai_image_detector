@@ -13,23 +13,23 @@
       "artifacts": [
         {
           "type": "structural",
-          "description": "A dark, smeared vertical band obscures the middle subject\u2019s torso and the space between subjects, resembling an unnatural blur/overlay rather than a plausible shadow or occlusion (center of image, running from upper chest area down toward the bottom edge)."
+          "description": "A dark, smeared vertical band obscures the middle subject’s torso and the space between subjects, resembling an unnatural blur/overlay rather than a plausible shadow or occlusion (center of image, running from upper chest area down toward the bottom edge)."
         },
         {
           "type": "structural",
-          "description": "The middle subject\u2019s hand/fingers appear poorly defined and partially fused into the dark smear, with unclear finger separation and anatomy (bottom center, just above the lower edge)."
+          "description": "The middle subject’s hand/fingers appear poorly defined and partially fused into the dark smear, with unclear finger separation and anatomy (bottom center, just above the lower edge)."
         },
         {
           "type": "structural",
-          "description": "The right subject\u2019s lower arm/hand region looks smeared and incomplete, with edges blending into the jacket/background and no clear hand structure (lower right quadrant, near the right edge)."
+          "description": "The right subject’s lower arm/hand region looks smeared and incomplete, with edges blending into the jacket/background and no clear hand structure (lower right quadrant, near the right edge)."
         },
         {
           "type": "semantic",
-          "description": "The lettering on the middle subject\u2019s shirt/hoodie is incoherent and doesn\u2019t form clean, readable characters typical of real apparel printing (center, behind the blurred band on the middle subject\u2019s chest)."
+          "description": "The lettering on the middle subject’s shirt/hoodie is incoherent and doesn’t form clean, readable characters typical of real apparel printing (center, behind the blurred band on the middle subject’s chest)."
         },
         {
           "type": "stylistic",
-          "description": "Skin texture appears unnaturally smooth and airbrushed with a \u2018plastic\u2019 look, inconsistent with a natural photographic portrait at this distance (all three faces, especially cheeks/foreheads)."
+          "description": "Skin texture appears unnaturally smooth and airbrushed with a ‘plastic’ look, inconsistent with a natural photographic portrait at this distance (all three faces, especially cheeks/foreheads)."
         },
         {
           "type": "stylistic",
@@ -43,27 +43,27 @@
       "artifacts": [
         {
           "type": "structural",
-          "description": "Right hand supporting the child shows malformed finger geometry (unclear/merged fingers and an awkward thumb angle) where it grips under the child\u2019s thigh/knee area (lower center-right)."
+          "description": "Right hand supporting the child shows malformed finger geometry (unclear/merged fingers and an awkward thumb angle) where it grips under the child’s thigh/knee area (lower center-right)."
         },
         {
           "type": "structural",
-          "description": "The girl\u2019s hands appear unnaturally merged with the boy\u2019s sock/foot, with ambiguous finger separation and an imprecise contact boundary (lower center)."
+          "description": "The girl’s hands appear unnaturally merged with the boy’s sock/foot, with ambiguous finger separation and an imprecise contact boundary (lower center)."
         },
         {
           "type": "structural",
-          "description": "The neck/helmet collar assembly has inconsistent construction: layered rings and the teal inner piece don\u2019t connect convincingly to the suit, and edges look unnaturally smooth/blended (center, around the woman\u2019s neck/chest)."
+          "description": "The neck/helmet collar assembly has inconsistent construction: layered rings and the teal inner piece don’t connect convincingly to the suit, and edges look unnaturally smooth/blended (center, around the woman’s neck/chest)."
         },
         {
           "type": "semantic",
-          "description": "Outfit is functionally implausible: a rigid astronaut-style collar/partial helmet is paired with a casual baseball cap and no matching helmet hardware, which doesn\u2019t make practical sense as protective gear (upper center)."
+          "description": "Outfit is functionally implausible: a rigid astronaut-style collar/partial helmet is paired with a casual baseball cap and no matching helmet hardware, which doesn’t make practical sense as protective gear (upper center)."
         },
         {
           "type": "structural",
-          "description": "Clothing details on the boy (cuff/bracelet area) look fused/misaligned, with stitching and folds that don\u2019t resolve cleanly into a coherent sleeve edge (mid-right, boy\u2019s wrist)."
+          "description": "Clothing details on the boy (cuff/bracelet area) look fused/misaligned, with stitching and folds that don’t resolve cleanly into a coherent sleeve edge (mid-right, boy’s wrist)."
         },
         {
           "type": "stylistic",
-          "description": "Faces and skin have an overly airbrushed, plastic-like finish with uniform pores/texture and unnaturally clean specular highlights, typical of generative rendering (center on woman\u2019s face; left on girl\u2019s face; right on boy\u2019s face)."
+          "description": "Faces and skin have an overly airbrushed, plastic-like finish with uniform pores/texture and unnaturally clean specular highlights, typical of generative rendering (center on woman’s face; left on girl’s face; right on boy’s face)."
         },
         {
           "type": "structural",
@@ -71,7 +71,7 @@
         },
         {
           "type": "physical",
-          "description": "Lighting/shadow cues are inconsistent: subjects have strong directional highlights, but the background surfaces and shadows don\u2019t match the same light direction/intensity convincingly (overall, especially behind the subjects in the upper half)."
+          "description": "Lighting/shadow cues are inconsistent: subjects have strong directional highlights, but the background surfaces and shadows don’t match the same light direction/intensity convincingly (overall, especially behind the subjects in the upper half)."
         }
       ]
     },
@@ -115,7 +115,7 @@
         },
         {
           "type": "structural",
-          "description": "The left toothbrush appears fused or ambiguously connected to a white rectangular object (unclear separation between handle and adjacent object), located in the lower-left quadrant near the man\u2019s chin."
+          "description": "The left toothbrush appears fused or ambiguously connected to a white rectangular object (unclear separation between handle and adjacent object), located in the lower-left quadrant near the man’s chin."
         },
         {
           "type": "structural",
@@ -127,7 +127,7 @@
         },
         {
           "type": "physical",
-          "description": "Object\u2013skin/teeth interaction looks physically off: the toothbrush head/bristles intersect the lips/teeth area with little convincing compression or occlusion where contact should occur, located at the center around the mouth."
+          "description": "Object–skin/teeth interaction looks physically off: the toothbrush head/bristles intersect the lips/teeth area with little convincing compression or occlusion where contact should occur, located at the center around the mouth."
         },
         {
           "type": "structural",

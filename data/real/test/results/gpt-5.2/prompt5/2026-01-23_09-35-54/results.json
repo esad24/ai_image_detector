@@ -22,7 +22,7 @@
         },
         {
           "reasoning": "Slight haloing/edge sharpening around the runner suggests compression/post-processing rather than synthesis.",
-          "location": "Edges of the runner\u2019s shoulders/arms and torso outline against the blurred background"
+          "location": "Edges of the runner’s shoulders/arms and torso outline against the blurred background"
         }
       ]
     },
@@ -31,19 +31,19 @@
       "classification": "fake",
       "artifacts": [
         {
-          "reasoning": "The pizza slice at the far right has irregular, smeared edges and warped cheese/pepperoni textures that don\u2019t align cleanly with the woman\u2019s mouth or the plate perspective, suggesting generative blending.",
-          "location": "Right side of image: pizza slice near the right woman\u2019s mouth and the pizza on the lower-right plate."
+          "reasoning": "The pizza slice at the far right has irregular, smeared edges and warped cheese/pepperoni textures that don’t align cleanly with the woman’s mouth or the plate perspective, suggesting generative blending.",
+          "location": "Right side of image: pizza slice near the right woman’s mouth and the pizza on the lower-right plate."
         },
         {
           "reasoning": "Hands/fingers show subtle anatomical inconsistencies (odd finger thickness/creases and slightly fused-looking contours) typical of AI generation, especially around the pinching gesture.",
-          "location": "Center-right: the right woman\u2019s raised hand and fingers; center-left: the left woman\u2019s raised hand near her face."
+          "location": "Center-right: the right woman’s raised hand and fingers; center-left: the left woman’s raised hand near her face."
         },
         {
           "reasoning": "Hairline and ear area contain unnatural wispy strands and muddy transitions where hair meets skin, indicating synthesized detail rather than clean photographic edges.",
-          "location": "Top-right: right woman\u2019s hairline/ear region; top-left: left woman\u2019s hairline near the temple."
+          "location": "Top-right: right woman’s hairline/ear region; top-left: left woman’s hairline near the temple."
         },
         {
-          "reasoning": "Background pedestrians and street details exhibit overly smooth, incoherent shapes and depth blur that doesn\u2019t preserve realistic structure (faces and limbs dissolve into indistinct forms).",
+          "reasoning": "Background pedestrians and street details exhibit overly smooth, incoherent shapes and depth blur that doesn’t preserve realistic structure (faces and limbs dissolve into indistinct forms).",
           "location": "Upper center background: people walking down the street and surrounding architecture."
         }
       ]
@@ -62,7 +62,7 @@
         },
         {
           "reasoning": "The ear area lacks clear anatomical structure (weak helix/antihelix definition) and blends into surrounding skin/hair with overly smooth transitions.",
-          "location": "Ear region on the viewer\u2019s right side of the head (upper-right of face)"
+          "location": "Ear region on the viewer’s right side of the head (upper-right of face)"
         },
         {
           "reasoning": "Fine facial skin texture (pores, micro-contrast) is unusually uniform and airbrushed compared with the sharpness of some edges, suggesting synthetic or heavy generative denoising.",
@@ -83,12 +83,12 @@
       "classification": "fake",
       "artifacts": [
         {
-          "reasoning": "The stethoscope tubing and yoke show inconsistent geometry: the left and right sides don\u2019t mirror naturally, and the curve transitions look slightly \u201cmelted\u201d/over-smoothed as if synthesized rather than physically hanging with gravity.",
+          "reasoning": "The stethoscope tubing and yoke show inconsistent geometry: the left and right sides don’t mirror naturally, and the curve transitions look slightly “melted”/over-smoothed as if synthesized rather than physically hanging with gravity.",
           "location": "Center chest area around the stethoscope loop, especially where the tubing meets the neck and where it curves down toward the diaphragm."
         },
         {
-          "reasoning": "The chestpiece/diaphragm detailing looks simplified and uneven, with highlights that don\u2019t match the overall lighting direction; edges appear softly blended instead of having crisp metallic boundaries.",
-          "location": "Lower-left side of the chest (viewer\u2019s left), on the circular stethoscope chestpiece."
+          "reasoning": "The chestpiece/diaphragm detailing looks simplified and uneven, with highlights that don’t match the overall lighting direction; edges appear softly blended instead of having crisp metallic boundaries.",
+          "location": "Lower-left side of the chest (viewer’s left), on the circular stethoscope chestpiece."
         },
         {
           "reasoning": "Hands/forearms in the crossed-arms pose have subtly incorrect layering and edge transitions; the boundary between sleeve cuff and skin is overly smooth and lacks fine fabric/skin detail consistent with the rest of the image.",
@@ -99,7 +99,7 @@
           "location": "Across the front of the coat from mid-torso to lower torso, especially around the elbows and forearm fold lines."
         },
         {
-          "reasoning": "Background blur and edge separation around the subject look algorithmic: hair and shoulder boundaries have slightly haloed transitions that don\u2019t match a typical lens bokeh falloff.",
+          "reasoning": "Background blur and edge separation around the subject look algorithmic: hair and shoulder boundaries have slightly haloed transitions that don’t match a typical lens bokeh falloff.",
           "location": "Along the outer contour of the head/hair and both shoulders against the bright corridor background."
         }
       ]
@@ -114,7 +114,7 @@
         },
         {
           "reasoning": "Anatomy and object interactions appear coherent (hands gripping the broom handle, natural folds in clothing, consistent perspective and depth of field).",
-          "location": "Worker\u2019s hands/arms and broom handle"
+          "location": "Worker’s hands/arms and broom handle"
         }
       ]
     },
@@ -124,14 +124,14 @@
       "artifacts": [
         {
           "reasoning": "The tennis racket head/strings show irregular, inconsistent hole/string patterns and a mushy, AI-like texture rather than crisp, repeating string geometry.",
-          "location": "Racket head behind the man\u2019s right shoulder (upper center-right of image)."
+          "location": "Racket head behind the man’s right shoulder (upper center-right of image)."
         },
         {
           "reasoning": "The hand resting on the net has unclear finger separation and unnatural contours; the grip/knuckle anatomy blends into the net post area.",
-          "location": "Lower right: man\u2019s right hand on top of the net/post."
+          "location": "Lower right: man’s right hand on top of the net/post."
         },
         {
-          "reasoning": "Net and post intersection contains warped geometry and inconsistent alignment (net cords don\u2019t meet the post cleanly; edges appear smeared).",
+          "reasoning": "Net and post intersection contains warped geometry and inconsistent alignment (net cords don’t meet the post cleanly; edges appear smeared).",
           "location": "Bottom center-right: where the net meets the vertical post."
         },
         {
@@ -163,7 +163,7 @@
           "location": "Midsection/abdomen area (center-right of subject), including the waist-to-hip curve."
         },
         {
-          "reasoning": "Hands/fingers show irregular shape and unclear joint definition; the lower hand appears to blend into the dark dress with ambiguous finger separation\u2014common in generated or heavily edited images.",
+          "reasoning": "Hands/fingers show irregular shape and unclear joint definition; the lower hand appears to blend into the dark dress with ambiguous finger separation—common in generated or heavily edited images.",
           "location": "Hands placed on the belly (one near the upper belly, one near the lower belly)."
         },
         {
@@ -171,7 +171,7 @@
           "location": "Outline of the body along the left side against the wall and around the legs/hips."
         },
         {
-          "reasoning": "Lighting and shadows are inconsistent: the wall/ground shadows look simplified and airbrushed, with a smooth gradient that doesn\u2019t match the complex form (legs, heels) and expected multiple shadow edges.",
+          "reasoning": "Lighting and shadows are inconsistent: the wall/ground shadows look simplified and airbrushed, with a smooth gradient that doesn’t match the complex form (legs, heels) and expected multiple shadow edges.",
           "location": "Shadow region behind the subject on the wall and the floor area near the feet."
         },
         {
@@ -186,23 +186,23 @@
       "artifacts": [
         {
           "reasoning": "Hair strands blend into each other with smeared, painterly texture and inconsistent strand-level detail, typical of generative synthesis rather than optical capture.",
-          "location": "Where the three heads/hair overlap in the center (top of the lower subject\u2019s head and the adjacent hair of the left and right subjects)."
+          "location": "Where the three heads/hair overlap in the center (top of the lower subject’s head and the adjacent hair of the left and right subjects)."
         },
         {
           "reasoning": "Edges around hair and shoulders look overly clean and slightly haloed against the plain background, suggesting cutout/compositing or AI edge artifacts instead of natural lens blur and stray hairs.",
-          "location": "Outer contours of the left subject\u2019s hair (left border) and the right subject\u2019s hair/shoulder (right border)."
+          "location": "Outer contours of the left subject’s hair (left border) and the right subject’s hair/shoulder (right border)."
         },
         {
           "reasoning": "Skin appears uniformly airbrushed with reduced pore detail and a plastic-like smoothness; highlights are simplified and lack fine-scale texture expected in a close portrait.",
-          "location": "All three faces, especially the cheeks and foreheads (left subject\u2019s cheekbone highlight; right subject\u2019s forehead; lower subject\u2019s cheek area)."
+          "location": "All three faces, especially the cheeks and foreheads (left subject’s cheekbone highlight; right subject’s forehead; lower subject’s cheek area)."
         },
         {
-          "reasoning": "Eye rendering shows unnaturally crisp irises with simplified reflections and slightly inconsistent catchlight behavior compared to the soft studio lighting; the eyes look \u2018printed\u2019 rather than optically complex.",
-          "location": "All three sets of eyes, most noticeable on the lower subject\u2019s bright blue irises and the right subject\u2019s catchlights."
+          "reasoning": "Eye rendering shows unnaturally crisp irises with simplified reflections and slightly inconsistent catchlight behavior compared to the soft studio lighting; the eyes look ‘printed’ rather than optically complex.",
+          "location": "All three sets of eyes, most noticeable on the lower subject’s bright blue irises and the right subject’s catchlights."
         },
         {
           "reasoning": "Occlusion and contact shadows between heads are weak/ambiguous; where faces press together, the expected compression, skin deformation, and shadow gradients are reduced, a common AI/compositing inconsistency.",
-          "location": "Contact areas: left subject\u2019s head leaning onto the lower subject; right subject\u2019s head leaning inward near the top-center."
+          "location": "Contact areas: left subject’s head leaning onto the lower subject; right subject’s head leaning inward near the top-center."
         }
       ]
     },
@@ -234,15 +234,15 @@
       "artifacts": [
         {
           "reasoning": "The iris/pupil detail is soft and lacks natural, crisp catchlight structure; the eyes appear slightly asymmetrical in shape and alignment in a way common to generated faces.",
-          "location": "Baby\u2019s eyes (center of image) \u2014 especially the viewer-left eye and the catchlights."
+          "location": "Baby’s eyes (center of image) — especially the viewer-left eye and the catchlights."
         },
         {
-          "reasoning": "Hair strands on the scalp look like faint, wispy strokes that don\u2019t emerge consistently from follicles and have an airbrushed/painted quality.",
-          "location": "Top/front of the baby\u2019s head (upper center)."
+          "reasoning": "Hair strands on the scalp look like faint, wispy strokes that don’t emerge consistently from follicles and have an airbrushed/painted quality.",
+          "location": "Top/front of the baby’s head (upper center)."
         },
         {
           "reasoning": "Mouth and lip edges show smeared transitions and an ambiguous lip boundary, giving a subtly 'melted' look rather than a clean photographic edge.",
-          "location": "Baby\u2019s mouth/lips (center-lower of face)."
+          "location": "Baby’s mouth/lips (center-lower of face)."
         },
         {
           "reasoning": "Neck/chin folds appear overly smooth and uniformly shaded, with reduced micro-texture compared to real skin under similar lighting.",
@@ -254,14 +254,14 @@
         },
         {
           "reasoning": "The hand/arm behind the baby has unclear anatomy and blending at the waterline, with an indistinct connection and unnatural edge transitions.",
-          "location": "Behind the baby\u2019s right shoulder (viewer-right), just above the water surface."
+          "location": "Behind the baby’s right shoulder (viewer-right), just above the water surface."
         },
         {
-          "reasoning": "Waterline interaction lacks convincing refraction/occlusion: the boundary around the chest/strap area looks composited, and surface ripples don\u2019t deform consistently around the body.",
-          "location": "Waterline across the baby\u2019s chest and around the straps (lower third of image)."
+          "reasoning": "Waterline interaction lacks convincing refraction/occlusion: the boundary around the chest/strap area looks composited, and surface ripples don’t deform consistently around the body.",
+          "location": "Waterline across the baby’s chest and around the straps (lower third of image)."
         },
         {
-          "reasoning": "Background blur/bokeh appears overly uniform and 'painted,' with simplified shapes and gradients (notably the rectangular structure) that don\u2019t retain realistic lens characteristics.",
+          "reasoning": "Background blur/bokeh appears overly uniform and 'painted,' with simplified shapes and gradients (notably the rectangular structure) that don’t retain realistic lens characteristics.",
           "location": "Far background (upper right rectangle/building and surrounding hills)."
         }
       ]
@@ -272,10 +272,10 @@
       "artifacts": [
         {
           "reasoning": "Fine, high-contrast edges (hairline, sunglasses, jaw) show slight haloing and inconsistent sharpening relative to the background, suggesting cutout/composite or generative edge enhancement.",
-          "location": "Around the subject\u2019s head and sunglasses (center-lower third)."
+          "location": "Around the subject’s head and sunglasses (center-lower third)."
         },
         {
-          "reasoning": "Lighting/shadow consistency is off: the subject\u2019s shading and highlight direction do not match the broader scene illumination; contact shadows under the body/legs on the rock look weak/unanchored.",
+          "reasoning": "Lighting/shadow consistency is off: the subject’s shading and highlight direction do not match the broader scene illumination; contact shadows under the body/legs on the rock look weak/unanchored.",
           "location": "Subject torso/legs and the rock surface directly beneath and behind him (lower half)."
         },
         {
@@ -294,22 +294,22 @@
       "artifacts": [
         {
           "reasoning": "Multiple hands/fingers show inconsistent anatomy (odd finger lengths/joins and unnatural bends), typical of generative artifacts.",
-          "location": "Center subject (older woman): raised right hand near chest; also rightmost subject\u2019s hand holding the cigarette near his mouth."
+          "location": "Center subject (older woman): raised right hand near chest; also rightmost subject’s hand holding the cigarette near his mouth."
         },
         {
-          "reasoning": "Cigarette and smoke/edge blending look pasted/AI-synthesized: the cigarette tip and fingers lack crisp contact shadows; smoke-like wisps are irregular and don\u2019t match scene lighting.",
-          "location": "Upper-right quadrant: cigarette near the rightmost man\u2019s mouth and the faint wisps around that area."
+          "reasoning": "Cigarette and smoke/edge blending look pasted/AI-synthesized: the cigarette tip and fingers lack crisp contact shadows; smoke-like wisps are irregular and don’t match scene lighting.",
+          "location": "Upper-right quadrant: cigarette near the rightmost man’s mouth and the faint wisps around that area."
         },
         {
           "reasoning": "Weapon-like object has unclear structure and attachment: strap/rigging and barrel details are mushy, and it blends into the chair/leg with inconsistent perspective and shadows.",
-          "location": "Lower-right edge: dark object leaning by the rightmost man\u2019s chair/leg."
+          "location": "Lower-right edge: dark object leaning by the rightmost man’s chair/leg."
         },
         {
           "reasoning": "Background shelf items have unreadable/garbled label text and inconsistent jar geometry, common in AI images.",
           "location": "Right side: shelving unit and containers/jars."
         },
         {
-          "reasoning": "Tablecloth pattern alignment and folds are physically inconsistent: checks warp oddly across edges and corners, and some folds don\u2019t follow the table\u2019s geometry.",
+          "reasoning": "Tablecloth pattern alignment and folds are physically inconsistent: checks warp oddly across edges and corners, and some folds don’t follow the table’s geometry.",
           "location": "Lower center/left: red-and-white checkered tablecloth along the front edge and corner."
         }
       ]
@@ -346,7 +346,7 @@
         },
         {
           "reasoning": "Hand/finger anatomy inconsistencies: uneven finger lengths, ambiguous knuckle definition, and smeared edges typical of AI synthesis.",
-          "location": "Hands holding bouquets\u2014most noticeable on the two rightmost bridesmaids and the second from the left (lower center-right and lower left areas)."
+          "location": "Hands holding bouquets—most noticeable on the two rightmost bridesmaids and the second from the left (lower center-right and lower left areas)."
         },
         {
           "reasoning": "Hair edges blend unnaturally into the background with soft, smeared boundaries and inconsistent strand detail, indicating synthetic masking.",
@@ -367,7 +367,7 @@
       "classification": "fake",
       "artifacts": [
         {
-          "reasoning": "Reflections in the upper window area look like duplicated/warped vertical streaks and don\u2019t correspond to clear, physically plausible reflected objects; the highlight bands appear smeared and inconsistently aligned with the train\u2019s geometry.",
+          "reasoning": "Reflections in the upper window area look like duplicated/warped vertical streaks and don’t correspond to clear, physically plausible reflected objects; the highlight bands appear smeared and inconsistently aligned with the train’s geometry.",
           "location": "Top band of the image, across the ceiling/upper window reflections above the doors."
         },
         {
@@ -380,7 +380,7 @@
         },
         {
           "reasoning": "Some hands/phone interactions appear geometrically off and overly smoothed, with finger contours lacking realistic knuckle definition and consistent contact shadows, which is a common generative artifact.",
-          "location": "Center-right: the standing man\u2019s hands holding the phone; also lower-left passengers\u2019 hands holding devices."
+          "location": "Center-right: the standing man’s hands holding the phone; also lower-left passengers’ hands holding devices."
         }
       ]
     },
@@ -393,11 +393,11 @@
           "location": "On the iris/cornea at the viewer-right side of the pupil (bright white rectangular reflection)."
         },
         {
-          "reasoning": "Iris texture shows overly uniform radial striations and repeated-looking fiber patterns, with a \u201cprocedural\u201d appearance and inconsistent micro-contrast compared to real macro eye photography.",
+          "reasoning": "Iris texture shows overly uniform radial striations and repeated-looking fiber patterns, with a “procedural” appearance and inconsistent micro-contrast compared to real macro eye photography.",
           "location": "Across the entire iris, especially the outer blue ring and the radial streaks around the pupil."
         },
         {
-          "reasoning": "Iris\u2013sclera boundary (limbal region) has an unnaturally clean, smooth transition with a dark ring that looks airbrushed, lacking the subtle irregularities and vascular detail typically seen at this magnification.",
+          "reasoning": "Iris–sclera boundary (limbal region) has an unnaturally clean, smooth transition with a dark ring that looks airbrushed, lacking the subtle irregularities and vascular detail typically seen at this magnification.",
           "location": "Circular border between iris and sclera (around the full iris circumference)."
         },
         {
@@ -427,20 +427,20 @@
           "location": "Center: child's hands around the teddy bear."
         },
         {
-          "reasoning": "The child\u2019s lower legs/socks/shoes exhibit mismatched edges and odd geometry (strap/sole alignment and sock folds look inconsistent with perspective).",
-          "location": "Lower center: child\u2019s feet and socks/shoes."
+          "reasoning": "The child’s lower legs/socks/shoes exhibit mismatched edges and odd geometry (strap/sole alignment and sock folds look inconsistent with perspective).",
+          "location": "Lower center: child’s feet and socks/shoes."
         },
         {
           "reasoning": "Suit fabric and lapel edges show overly smooth, 'painted' texture with weak seam/crease detail compared to expected photographic micro-texture.",
-          "location": "Center-right: man in glasses\u2019 suit jacket and sleeves."
+          "location": "Center-right: man in glasses’ suit jacket and sleeves."
         },
         {
           "reasoning": "Background trees have repeated, softened patterns with inconsistent depth cues; bokeh looks uniform and synthetic rather than lens-specific.",
           "location": "Upper half/background: forest trees and foliage behind the people."
         },
         {
-          "reasoning": "Rightmost man\u2019s hand and the object edge (coffin/podium-like surface) show slight warping and unclear contact/shadow definition, typical of generative blending errors.",
-          "location": "Right side: older man\u2019s hand near the lower-right object edge."
+          "reasoning": "Rightmost man’s hand and the object edge (coffin/podium-like surface) show slight warping and unclear contact/shadow definition, typical of generative blending errors.",
+          "location": "Right side: older man’s hand near the lower-right object edge."
         }
       ]
     },
@@ -475,23 +475,23 @@
       "classification": "fake",
       "artifacts": [
         {
-          "reasoning": "Multiple areas show unnaturally smooth, airbrushed skin texture and inconsistent film grain for a purported vintage black\u2011and\u2011white photo, suggesting AI upscaling/synthesis rather than uniform photographic noise.",
-          "location": "Faces and exposed skin across the group, especially the seated woman\u2019s face and the child in the center foreground."
+          "reasoning": "Multiple areas show unnaturally smooth, airbrushed skin texture and inconsistent film grain for a purported vintage black‑and‑white photo, suggesting AI upscaling/synthesis rather than uniform photographic noise.",
+          "location": "Faces and exposed skin across the group, especially the seated woman’s face and the child in the center foreground."
         },
         {
-          "reasoning": "Hands and finger geometry look subtly malformed/merged, with unclear knuckle definition and ambiguous overlaps where hands meet chair arms\u2014common generative artifact.",
-          "location": "Lower-left child\u2019s hands resting on the chair arm; seated woman\u2019s right hand/forearm area near the chair arm."
+          "reasoning": "Hands and finger geometry look subtly malformed/merged, with unclear knuckle definition and ambiguous overlaps where hands meet chair arms—common generative artifact.",
+          "location": "Lower-left child’s hands resting on the chair arm; seated woman’s right hand/forearm area near the chair arm."
         },
         {
           "reasoning": "Edges around subjects show haloing and cutout-like transitions inconsistent with optical blur; hairlines and suit outlines appear overly crisp against the background.",
-          "location": "Man\u2019s suit shoulders and head outline; girl\u2019s hair/face edge at upper-left; boy at far-right along his jacket edge."
+          "location": "Man’s suit shoulders and head outline; girl’s hair/face edge at upper-left; boy at far-right along his jacket edge."
         },
         {
           "reasoning": "Background text/details on book spines are repetitive and pattern-like rather than distinct, legible titles; spacing and motifs repeat unnaturally across rows.",
           "location": "Top bookshelf row behind the man and to the upper-right (repeated spine patterns)."
         },
         {
-          "reasoning": "Chair geometry and fabric patterning look inconsistently rendered: repeated/warped motifs and perspective that doesn\u2019t cleanly converge, typical of synthetic image generation.",
+          "reasoning": "Chair geometry and fabric patterning look inconsistently rendered: repeated/warped motifs and perspective that doesn’t cleanly converge, typical of synthetic image generation.",
           "location": "Backrest upholstery pattern behind the seated woman; right-side armrest and seat edges."
         }
       ]
@@ -506,11 +506,11 @@
         },
         {
           "reasoning": "The reflected crowbar-like object does not align consistently with the held object; its angle/position and visibility differ in a way that looks composited.",
-          "location": "Mid-right on the glass: near the reflected figure\u2019s hands where a faint, differently angled tool appears."
+          "location": "Mid-right on the glass: near the reflected figure’s hands where a faint, differently angled tool appears."
         },
         {
           "reasoning": "Edge halos/soft cutout-like boundaries suggest the foreground subject may be pasted over the background (inconsistent sharpness and boundary blending compared with surrounding window frame).",
-          "location": "Around the foreground subject\u2019s head/shoulders and along the sweater outline against the glass and sky (upper-middle left)."
+          "location": "Around the foreground subject’s head/shoulders and along the sweater outline against the glass and sky (upper-middle left)."
         },
         {
           "reasoning": "Lighting and contrast are inconsistent: the foreground subject has flat, diffuse shading while the reflection/background exhibit different brightness and tonal response, which can indicate compositing.",
@@ -527,7 +527,7 @@
           "location": "Sky areas immediately surrounding the top-center onion dome cross and the top-right golden dome cross; also around the upper-left patterned dome cross."
         },
         {
-          "reasoning": "Edge halos and cutout-like boundaries suggest compositing/sharpening artifacts: high-contrast outlines that don\u2019t match the rest of the scene\u2019s atmospheric softness.",
+          "reasoning": "Edge halos and cutout-like boundaries suggest compositing/sharpening artifacts: high-contrast outlines that don’t match the rest of the scene’s atmospheric softness.",
           "location": "Along the silhouettes of the domes and crosses against the bright sky, especially the top-center dome and top-right golden dome."
         },
         {
@@ -556,15 +556,15 @@
         },
         {
           "reasoning": "Edges where the bear meets the people show compositing/retouching artifacts: fur blends unnaturally into the subjects with smeared transitions and inconsistent edge sharpness compared to surrounding grain.",
-          "location": "Left and right boundaries of the bear where it overlaps the woman\u2019s shoulder/arm (left-middle) and the man\u2019s shoulder (right-middle)."
+          "location": "Left and right boundaries of the bear where it overlaps the woman’s shoulder/arm (left-middle) and the man’s shoulder (right-middle)."
         },
         {
-          "reasoning": "Lighting and shading on the bear\u2019s head/face are inconsistent with the rest of the scene: facial features look overly clean/high-contrast relative to the softer, aged-photo look and do not match the directionality of light on the humans.",
-          "location": "Upper center: bear\u2019s face and head area."
+          "reasoning": "Lighting and shading on the bear’s head/face are inconsistent with the rest of the scene: facial features look overly clean/high-contrast relative to the softer, aged-photo look and do not match the directionality of light on the humans.",
+          "location": "Upper center: bear’s face and head area."
         },
         {
-          "reasoning": "Contact/occlusion cues are weak: the woman\u2019s hand placement against the bear\u2019s fur lacks convincing compression/shadowing, suggesting staging with a prop/costume or later manipulation.",
-          "location": "Lower center-left: woman\u2019s hand touching the bear\u2019s abdomen/fur."
+          "reasoning": "Contact/occlusion cues are weak: the woman’s hand placement against the bear’s fur lacks convincing compression/shadowing, suggesting staging with a prop/costume or later manipulation.",
+          "location": "Lower center-left: woman’s hand touching the bear’s abdomen/fur."
         }
       ]
     },
@@ -573,19 +573,19 @@
       "classification": "fake",
       "artifacts": [
         {
-          "reasoning": "The red graphic/logo on the bus panel has irregular, painterly edges and inconsistent perspective/placement relative to the bus\u2019s surface curvature, suggesting it was generated or composited rather than printed.",
+          "reasoning": "The red graphic/logo on the bus panel has irregular, painterly edges and inconsistent perspective/placement relative to the bus’s surface curvature, suggesting it was generated or composited rather than printed.",
           "location": "Right side of image, on the white bus body (upper-right quadrant)."
         },
         {
-          "reasoning": "Edges where the young man\u2019s right hand meets the suitcase handle show slight warping/blur and an implausible grip-to-handle alignment, consistent with generative hand/object artifacts.",
+          "reasoning": "Edges where the young man’s right hand meets the suitcase handle show slight warping/blur and an implausible grip-to-handle alignment, consistent with generative hand/object artifacts.",
           "location": "Center-right, the man holding the suitcase handle (hand and top of handle)."
         },
         {
-          "reasoning": "The suitcase handle/telescoping rods appear uneven and slightly mismatched in thickness/straightness, with subtle bending that doesn\u2019t match rigid metal behavior.",
+          "reasoning": "The suitcase handle/telescoping rods appear uneven and slightly mismatched in thickness/straightness, with subtle bending that doesn’t match rigid metal behavior.",
           "location": "Center-right, vertical suitcase handle rods above the red suitcase."
         },
         {
-          "reasoning": "The orange shopping bag\u2019s printed text/graphics look partially distorted and not fully coherent, with letterforms that degrade into ambiguous shapes\u2014common in AI-generated imagery.",
+          "reasoning": "The orange shopping bag’s printed text/graphics look partially distorted and not fully coherent, with letterforms that degrade into ambiguous shapes—common in AI-generated imagery.",
           "location": "Lower-right, orange shopping bag."
         },
         {
@@ -603,7 +603,7 @@
           "location": "Large window panels in the background, especially upper-right and center-right where the white numbers and graph lines appear."
         },
         {
-          "reasoning": "Laptop screen content has incoherent UI elements: unreadable micro-text, inconsistent candlestick/grid alignment, and smeared interface details that don\u2019t match a real trading platform at this resolution.",
+          "reasoning": "Laptop screen content has incoherent UI elements: unreadable micro-text, inconsistent candlestick/grid alignment, and smeared interface details that don’t match a real trading platform at this resolution.",
           "location": "Laptop display on the right side of the image."
         },
         {
@@ -630,22 +630,22 @@
         },
         {
           "reasoning": "Hands and fingers show indistinct shapes and awkward blending into the beltline, with missing/merged finger separations and inconsistent anatomy.",
-          "location": "Lower-left officer\u2019s hands near his belt buckle; mid-right black-uniform officer\u2019s hands/forearms near his waist."
+          "location": "Lower-left officer’s hands near his belt buckle; mid-right black-uniform officer’s hands/forearms near his waist."
         },
         {
           "reasoning": "Faces exhibit waxy skin texture, simplified pores, and slightly inconsistent edge transitions (especially around hairlines and ears), suggesting synthetic rendering rather than photographic detail.",
-          "location": "Central figure\u2019s face and hairline; background faces behind him; right-side suited man\u2019s facial profile."
+          "location": "Central figure’s face and hairline; background faces behind him; right-side suited man’s facial profile."
         },
         {
           "reasoning": "Edges around heads and shoulders have subtle haloing and cutout-like transitions, as if subjects were composited or AI-upscaled, with background blur not matching foreground contours.",
-          "location": "Around the central figure\u2019s shoulders against the doorway; around the right-side white-shirt officer against the dark window."
+          "location": "Around the central figure’s shoulders against the doorway; around the right-side white-shirt officer against the dark window."
         },
         {
-          "reasoning": "Background signage is present but not legible, with pseudo-text blocks that don\u2019t resolve into real characters, a typical AI text failure.",
+          "reasoning": "Background signage is present but not legible, with pseudo-text blocks that don’t resolve into real characters, a typical AI text failure.",
           "location": "Wall sign inside the doorway behind the central figure (upper-middle background)."
         },
         {
-          "reasoning": "Lighting/reflections in the upper window panels appear inconsistent: repeated ceiling-light rectangles look unnaturally uniform and do not align with plausible interior geometry; reflections don\u2019t match scene perspective.",
+          "reasoning": "Lighting/reflections in the upper window panels appear inconsistent: repeated ceiling-light rectangles look unnaturally uniform and do not align with plausible interior geometry; reflections don’t match scene perspective.",
           "location": "Top row window panels above the doorway (upper-left to upper-middle)."
         },
         {
@@ -682,18 +682,18 @@
       "artifacts": [
         {
           "reasoning": "Hands/fingers show anatomical inconsistencies (odd finger lengths, merged/blurred digits, unnatural nail/knuckle definition) typical of AI synthesis.",
-          "location": "Center-right: the hand with red nails resting on the seated man\u2019s right shoulder; left side: the woman in the red dress\u2019 hands near her waist; right edge: the hand/bracelet area resting on the suited man\u2019s shoulder."
+          "location": "Center-right: the hand with red nails resting on the seated man’s right shoulder; left side: the woman in the red dress’ hands near her waist; right edge: the hand/bracelet area resting on the suited man’s shoulder."
         },
         {
           "reasoning": "Eyeglasses/jewelry have warped geometry and inconsistent reflections; edges look partially melted into the face/hair.",
-          "location": "Lower-left: the woman\u2019s glasses frames and the way they meet her cheeks/temples; upper-right: triangular earrings/neckpiece with overly uniform shine and slightly irregular contours."
+          "location": "Lower-left: the woman’s glasses frames and the way they meet her cheeks/temples; upper-right: triangular earrings/neckpiece with overly uniform shine and slightly irregular contours."
         },
         {
           "reasoning": "Hairlines and head/ear boundaries contain smeared transitions and patchy detail, suggesting generated texture rather than photographic strands.",
-          "location": "Top-center/left: the man with short dark hair behind the blonde woman (hairline and fade); center: the blonde woman\u2019s hair edges against her face; upper-right group: hair/ear boundaries on the man near the flag."
+          "location": "Top-center/left: the man with short dark hair behind the blonde woman (hairline and fade); center: the blonde woman’s hair edges against her face; upper-right group: hair/ear boundaries on the man near the flag."
         },
         {
-          "reasoning": "Lighting/shadows are inconsistent across faces and hands (some highlights overly glossy while nearby skin is flat; shadow directions don\u2019t fully match).",
+          "reasoning": "Lighting/shadows are inconsistent across faces and hands (some highlights overly glossy while nearby skin is flat; shadow directions don’t fully match).",
           "location": "Across the cluster of heads in the upper half; especially the bald head highlights vs. adjacent faces and the hands placed on shoulders."
         },
         {
@@ -711,24 +711,24 @@
       "classification": "fake",
       "artifacts": [
         {
-          "reasoning": "Grass texture shows repeated/over-smoothed patterns with a slightly \u201cpainted\u201d look rather than distinct blades across the field, typical of generative background fill.",
-          "location": "Background lawn, especially upper half and around both children\u2019s outlines."
+          "reasoning": "Grass texture shows repeated/over-smoothed patterns with a slightly “painted” look rather than distinct blades across the field, typical of generative background fill.",
+          "location": "Background lawn, especially upper half and around both children’s outlines."
         },
         {
           "reasoning": "Edge blending/haloing around hair and shoulders suggests subject-background compositing or AI matting artifacts.",
-          "location": "Older child\u2019s hair perimeter and shoulders; toddler\u2019s hair fringe and right shoulder outline."
+          "location": "Older child’s hair perimeter and shoulders; toddler’s hair fringe and right shoulder outline."
         },
         {
           "reasoning": "Hands/fingers have subtly inconsistent anatomy and merging contours (knuckle definition and finger separation look unnatural).",
-          "location": "Older child\u2019s hands in lap; toddler\u2019s left hand on head and right hand resting near the shoe."
+          "location": "Older child’s hands in lap; toddler’s left hand on head and right hand resting near the shoe."
         },
         {
           "reasoning": "Footwear details contain implausible geometry and texture continuity (sole pattern and straps blend oddly, with inconsistent perspective).",
-          "location": "Toddler\u2019s shoes and the visible soles near the center-bottom."
+          "location": "Toddler’s shoes and the visible soles near the center-bottom."
         },
         {
-          "reasoning": "Fabric folds and shading on clothing appear inconsistently structured (creases don\u2019t follow natural tension lines, with blotchy texture).",
-          "location": "Older child\u2019s pink dress chest area; toddler\u2019s white shirt around the sleeves and chest."
+          "reasoning": "Fabric folds and shading on clothing appear inconsistently structured (creases don’t follow natural tension lines, with blotchy texture).",
+          "location": "Older child’s pink dress chest area; toddler’s white shirt around the sleeves and chest."
         }
       ]
     },
@@ -738,15 +738,15 @@
       "artifacts": [
         {
           "reasoning": "The astronaut suit appears composited: edge halos and mismatched sharpness/grain compared to the faces and clothing, suggesting elements were cut and pasted.",
-          "location": "Along the right subject\u2019s suit boundary, especially around the shoulder/upper arm and the suit collar opening."
+          "location": "Along the right subject’s suit boundary, especially around the shoulder/upper arm and the suit collar opening."
         },
         {
           "reasoning": "Lighting is inconsistent: faces and children have soft, studio-like lighting, while the suit has different highlight behavior and contrast, making the materials look like they were photographed under different conditions.",
           "location": "Highlights on the white suit torso and sleeves versus the comparatively even-lit faces (right half of image)."
         },
         {
-          "reasoning": "Occlusion/contact looks unnatural: the child\u2019s hands and the suit hardware/gloves don\u2019t align with realistic depth and contact shadows, indicating layering errors.",
-          "location": "Center-right where the child in blue is held\u2014around the child\u2019s right hand on the suit and the glove area below."
+          "reasoning": "Occlusion/contact looks unnatural: the child’s hands and the suit hardware/gloves don’t align with realistic depth and contact shadows, indicating layering errors.",
+          "location": "Center-right where the child in blue is held—around the child’s right hand on the suit and the glove area below."
         },
         {
           "reasoning": "Some fine details on the suit (seams/hardware) look smeared and overly smooth, consistent with generative or heavy retouch artifacts rather than real fabric texture.",
@@ -754,7 +754,7 @@
         },
         {
           "reasoning": "Background/subject separation shows subtle cutout artifacts (soft edge fringing), typical of compositing onto a plain backdrop.",
-          "location": "Outer contours of hair and shoulders (left adult\u2019s hairline and right subject\u2019s head/helmet opening)."
+          "location": "Outer contours of hair and shoulders (left adult’s hairline and right subject’s head/helmet opening)."
         }
       ]
     },
@@ -780,7 +780,7 @@
         },
         {
           "reasoning": "Ear structure lacks fine anatomical detail and blends into surrounding skin/hair with soft boundaries.",
-          "location": "Ears (especially the left ear on the viewer\u2019s right)"
+          "location": "Ears (especially the left ear on the viewer’s right)"
         }
       ]
     },
@@ -790,7 +790,7 @@
       "artifacts": [
         {
           "reasoning": "Hair detail looks AI-like: strands smear together into painterly ribbons and some flyaway hairs fade into the background without clean edge separation.",
-          "location": "Along the outer hair silhouette on both sides, especially the right side of the head (viewer\u2019s right) where strands blend into the gray background."
+          "location": "Along the outer hair silhouette on both sides, especially the right side of the head (viewer’s right) where strands blend into the gray background."
         },
         {
           "reasoning": "Skin texture is unnaturally uniform and airbrushed with minimal pores; shading gradients on cheeks/forehead look overly smooth for the image resolution.",
@@ -805,8 +805,8 @@
           "location": "Upper eyelids and eyebrows."
         },
         {
-          "reasoning": "Fabric/logo region shows subtle warping and texture inconsistency typical of generative images (micro-patterns that don\u2019t follow folds naturally).",
-          "location": "Right chest area (viewer\u2019s right) around the 'TEAM' and emblem/marks on the shirt."
+          "reasoning": "Fabric/logo region shows subtle warping and texture inconsistency typical of generative images (micro-patterns that don’t follow folds naturally).",
+          "location": "Right chest area (viewer’s right) around the 'TEAM' and emblem/marks on the shirt."
         },
         {
           "reasoning": "Neck/jawline transition has a slightly unnatural blend and edge sharpness compared to surrounding hair and clothing, suggesting compositing/generation artifacts.",
@@ -849,8 +849,8 @@
       "classification": "fake",
       "artifacts": [
         {
-          "reasoning": "Fire/smoke lighting is inconsistent: the flames are extremely bright but do not cast matching warm illumination on the firefighters\u2019 backs or the nearby ground, which stays relatively neutral/overcast.",
-          "location": "Center/background fireball behind the firefighters; compare to the firefighters\u2019 jackets/helmets and pavement in the lower center."
+          "reasoning": "Fire/smoke lighting is inconsistent: the flames are extremely bright but do not cast matching warm illumination on the firefighters’ backs or the nearby ground, which stays relatively neutral/overcast.",
+          "location": "Center/background fireball behind the firefighters; compare to the firefighters’ jackets/helmets and pavement in the lower center."
         },
         {
           "reasoning": "Smoke/flame boundary shows painterly, blended textures and repeating-looking turbulence rather than natural chaotic detail; edges appear overly smooth in places.",
@@ -858,7 +858,7 @@
         },
         {
           "reasoning": "Cutout-like compositing around subjects: some edges of helmets/shoulders appear slightly too crisp against the smoky background, with minor haloing.",
-          "location": "Around the three firefighters\u2019 silhouettes in the middle foreground, especially helmet outlines against the bright smoke."
+          "location": "Around the three firefighters’ silhouettes in the middle foreground, especially helmet outlines against the bright smoke."
         },
         {
           "reasoning": "Perspective/scale inconsistency: the large wall of flames appears very close, yet the scene lacks corresponding heat haze/distortion and strong atmospheric effects on foreground objects.",
@@ -879,15 +879,15 @@
           "location": "Along the back edge of the table from center to right, where the white tablecloth meets the dark wall/booth."
         },
         {
-          "reasoning": "Child\u2019s hands/utensil area shows muddled, merged shapes; fingers and the object being held don\u2019t resolve cleanly and appear fused.",
-          "location": "Center of image, child seated between adults\u2014hands at chest level."
+          "reasoning": "Child’s hands/utensil area shows muddled, merged shapes; fingers and the object being held don’t resolve cleanly and appear fused.",
+          "location": "Center of image, child seated between adults—hands at chest level."
         },
         {
           "reasoning": "Inconsistent cutlery rendering: forks/spoons on the right plate look duplicated/misaligned and partially fade into the table/plate, suggesting synthesis artifacts rather than a single coherent object.",
-          "location": "Right side of table, near the man\u2019s plate and the utensils resting on/near it."
+          "location": "Right side of table, near the man’s plate and the utensils resting on/near it."
         },
         {
-          "reasoning": "Glass and surrounding shadows/reflections are physically inconsistent; the rim/side highlights and cast shadows don\u2019t match the lighting direction seen on the tablecloth folds.",
+          "reasoning": "Glass and surrounding shadows/reflections are physically inconsistent; the rim/side highlights and cast shadows don’t match the lighting direction seen on the tablecloth folds.",
           "location": "Lower center-right, drinking glass in front of the man."
         },
         {
@@ -909,7 +909,7 @@
           "location": "Lower-right quadrant at the hand resting under the chin (index/middle finger area)."
         },
         {
-          "reasoning": "The ring/metal highlight lacks crisp structure and has smeared specular reflections inconsistent with a real ring\u2019s edges at this resolution.",
+          "reasoning": "The ring/metal highlight lacks crisp structure and has smeared specular reflections inconsistent with a real ring’s edges at this resolution.",
           "location": "Lower-right quadrant on the finger near the chin (ring area)."
         },
         {
@@ -938,23 +938,23 @@
       "artifacts": [
         {
           "reasoning": "The face appears composited: skin texture is overly smooth and has a different sharpness/noise pattern than the surrounding scene.",
-          "location": "Right subject\u2019s face (cheeks/forehead) compared to his shirt and the background."
+          "location": "Right subject’s face (cheeks/forehead) compared to his shirt and the background."
         },
         {
           "reasoning": "Halo/edge inconsistencies suggest cutout blending; the transition between skin and background is unnaturally crisp in places.",
-          "location": "Outline around the right subject\u2019s head and ear, especially along the top of the head and near the right ear against the light wall."
+          "location": "Outline around the right subject’s head and ear, especially along the top of the head and near the right ear against the light wall."
         },
         {
-          "reasoning": "Lighting mismatch: the face highlights/shadows don\u2019t align with the scene\u2019s flash lighting; the face looks lit from a slightly different direction/intensity than the shirt and hands.",
-          "location": "Right subject\u2019s face vs. his collar/neck area and the table objects (specular highlights)."
+          "reasoning": "Lighting mismatch: the face highlights/shadows don’t align with the scene’s flash lighting; the face looks lit from a slightly different direction/intensity than the shirt and hands.",
+          "location": "Right subject’s face vs. his collar/neck area and the table objects (specular highlights)."
         },
         {
           "reasoning": "Color/white-balance mismatch: facial tones skew differently than nearby skin tones in the same scene, giving a pasted-in look.",
-          "location": "Right subject\u2019s face compared to the hands holding the sandwich and the left subject\u2019s visible skin."
+          "location": "Right subject’s face compared to the hands holding the sandwich and the left subject’s visible skin."
         },
         {
           "reasoning": "Teeth/mouth region shows warping and unnatural edges typical of AI/poor compositing (blurred boundary and odd geometry).",
-          "location": "Right subject\u2019s mouth and teeth area while biting the sandwich."
+          "location": "Right subject’s mouth and teeth area while biting the sandwich."
         }
       ]
     },
@@ -963,24 +963,24 @@
       "classification": "fake",
       "artifacts": [
         {
-          "reasoning": "The creature\u2019s head and mouth show inconsistent anatomy (tooth/inner-mouth shapes don\u2019t follow a coherent 3D form) and edges that look composited against the fur.",
-          "location": "Upper center-right: the creature\u2019s face/mouth area."
+          "reasoning": "The creature’s head and mouth show inconsistent anatomy (tooth/inner-mouth shapes don’t follow a coherent 3D form) and edges that look composited against the fur.",
+          "location": "Upper center-right: the creature’s face/mouth area."
         },
         {
           "reasoning": "Fur texture is overly uniform and repetitive with smeared, strand-like patterns, lacking natural directional variation and depth; it reads like synthetic/painted texture.",
-          "location": "Center-right: the creature\u2019s torso and arms (most of the white fur mass)."
+          "location": "Center-right: the creature’s torso and arms (most of the white fur mass)."
         },
         {
           "reasoning": "Contact and shadowing between the boy and the creature is physically inconsistent; the boy appears cut out with weak interaction (no convincing occlusion or shared lighting where bodies meet).",
-          "location": "Lower center-right: where the boy\u2019s right shoulder/side meets the creature\u2019s body."
+          "location": "Lower center-right: where the boy’s right shoulder/side meets the creature’s body."
         },
         {
           "reasoning": "Edges around the creature show faint halos and blending mismatches relative to the background (brick/door), suggesting a pasted subject into an old-photo backdrop.",
-          "location": "Along the creature\u2019s outer silhouette, especially right edge against the brick wall and left edge near the dark door."
+          "location": "Along the creature’s outer silhouette, especially right edge against the brick wall and left edge near the dark door."
         },
         {
-          "reasoning": "Lighting/grain mismatch: the background has older-photo grain and tonal rolloff, while parts of the creature\u2019s fur and face have different contrast and clarity, indicating different sources or generation layers.",
-          "location": "Global, most noticeable comparing the brick wall (upper right) to the creature\u2019s fur (center-right)."
+          "reasoning": "Lighting/grain mismatch: the background has older-photo grain and tonal rolloff, while parts of the creature’s fur and face have different contrast and clarity, indicating different sources or generation layers.",
+          "location": "Global, most noticeable comparing the brick wall (upper right) to the creature’s fur (center-right)."
         }
       ]
     },
@@ -989,7 +989,7 @@
       "classification": "real",
       "artifacts": [
         {
-          "reasoning": "The scene shows consistent natural lighting and shadowing: the tree\u2019s shadow direction and softness match the sun angle implied by the sky gradient, and the shadow detail under the canopy is plausible.",
+          "reasoning": "The scene shows consistent natural lighting and shadowing: the tree’s shadow direction and softness match the sun angle implied by the sky gradient, and the shadow detail under the canopy is plausible.",
           "location": "Ground area directly beneath the tree canopy (lower middle of image)"
         },
         {
@@ -1007,7 +1007,7 @@
       "classification": "fake",
       "artifacts": [
         {
-          "reasoning": "Iris texture shows unnaturally sharp, repetitive radial striations and a \u201cpainted\u201d look that lacks the irregular micro-patterns typically seen in real macro eye photos.",
+          "reasoning": "Iris texture shows unnaturally sharp, repetitive radial striations and a “painted” look that lacks the irregular micro-patterns typically seen in real macro eye photos.",
           "location": "Iris (gold/brown area around the pupil), especially the mid-to-outer ring."
         },
         {
@@ -1019,7 +1019,7 @@
           "location": "Upper eyelid/eyelash line across the top-left quadrant of the image."
         },
         {
-          "reasoning": "Specular \u201cbokeh bead\u201d artifacts form a suspiciously uniform vertical chain, resembling synthetic highlight repetition rather than natural tear-film reflections.",
+          "reasoning": "Specular “bokeh bead” artifacts form a suspiciously uniform vertical chain, resembling synthetic highlight repetition rather than natural tear-film reflections.",
           "location": "Right side near the inner corner/sclera boundary (a vertical row of small circular highlights)."
         },
         {
@@ -1033,11 +1033,11 @@
       "classification": "fake",
       "artifacts": [
         {
-          "reasoning": "Several small cylindrical objects embedded in the beard have inconsistent geometry and blending with surrounding hair (edges look pasted-on; hair strands don\u2019t convincingly occlude/wrap around them).",
+          "reasoning": "Several small cylindrical objects embedded in the beard have inconsistent geometry and blending with surrounding hair (edges look pasted-on; hair strands don’t convincingly occlude/wrap around them).",
           "location": "Lower half of the face: throughout the beard/mustache area, especially near the center and right side of the beard where multiple light-colored sticks appear."
         },
         {
-          "reasoning": "Hair detail shows unnatural, smeared/over-sharpened texture and repetitive clumping that doesn\u2019t follow coherent strand direction, a common generative artifact.",
+          "reasoning": "Hair detail shows unnatural, smeared/over-sharpened texture and repetitive clumping that doesn’t follow coherent strand direction, a common generative artifact.",
           "location": "Top of head (hairline and crown) and along the beard edges where strands look mushy or patterned rather than individual hairs."
         },
         {
@@ -1056,7 +1056,7 @@
       "artifacts": [
         {
           "reasoning": "The hand/fingers show unnatural blending and ambiguous finger boundaries, consistent with generative smearing or compositing.",
-          "location": "Lower-right foreground: the right person\u2019s hand resting near the bottom edge."
+          "location": "Lower-right foreground: the right person’s hand resting near the bottom edge."
         },
         {
           "reasoning": "Shoelaces and eyelets lack consistent structure; lace paths appear tangled and partially melted into the shoe, a common AI artifact.",
@@ -1068,7 +1068,7 @@
         },
         {
           "reasoning": "Facial details (teeth and mouth interiors) look overly uniform and slightly inconsistent in lighting/texture, which can indicate generation artifacts.",
-          "location": "Both subjects\u2019 smiles: teeth and mouth areas, more noticeable on the right person."
+          "location": "Both subjects’ smiles: teeth and mouth areas, more noticeable on the right person."
         }
       ]
     },
@@ -1078,11 +1078,11 @@
       "artifacts": [
         {
           "reasoning": "Multiple hands show fused/ambiguous fingers and inconsistent anatomy (odd spacing, missing knuckle definition, unnatural fingertip shapes), which is a common AI-generation artifact.",
-          "location": "Lower-left foreground: the man\u2019s hands/clapping gesture."
+          "location": "Lower-left foreground: the man’s hands/clapping gesture."
         },
         {
-          "reasoning": "The woman\u2019s hands appear to have unclear finger separation and inconsistent edges; some parts blend into the coat and scarf, producing smeared boundaries.",
-          "location": "Lower-right foreground: the woman\u2019s hands near the bottom edge."
+          "reasoning": "The woman’s hands appear to have unclear finger separation and inconsistent edges; some parts blend into the coat and scarf, producing smeared boundaries.",
+          "location": "Lower-right foreground: the woman’s hands near the bottom edge."
         },
         {
           "reasoning": "Fine texture on the red scarves looks plasticky with uneven, non-fabric-like highlights and abrupt tonal transitions, suggesting synthetic rendering rather than real cloth capture.",
@@ -1103,20 +1103,20 @@
       "classification": "fake",
       "artifacts": [
         {
-          "reasoning": "The boxer\u2019s left glove shows an implausible/garbled emblem resembling an inconsistent letterform; the printed mark looks AI-synthesized rather than a clean logo.",
-          "location": "Left subject (standing), both white gloves\u2014most noticeable on the glove facing camera (center-left of image)."
+          "reasoning": "The boxer’s left glove shows an implausible/garbled emblem resembling an inconsistent letterform; the printed mark looks AI-synthesized rather than a clean logo.",
+          "location": "Left subject (standing), both white gloves—most noticeable on the glove facing camera (center-left of image)."
         },
         {
-          "reasoning": "The right boxer\u2019s glove has smeared/unclear branding; the text/marking does not resolve into crisp, readable lettering consistent with real glove printing.",
+          "reasoning": "The right boxer’s glove has smeared/unclear branding; the text/marking does not resolve into crisp, readable lettering consistent with real glove printing.",
           "location": "Right subject (crouching), red glove near his face (center-right)."
         },
         {
-          "reasoning": "Ring rope attachments appear inconsistent: straps/knots look oddly formed and don\u2019t clearly wrap or tie in a physically believable way, with unnatural edges and blending into the rope.",
+          "reasoning": "Ring rope attachments appear inconsistent: straps/knots look oddly formed and don’t clearly wrap or tie in a physically believable way, with unnatural edges and blending into the rope.",
           "location": "Left side ring ropes near the corner (far left mid-frame) and the black hanging ties on the right-side ropes (right mid-frame)."
         },
         {
           "reasoning": "Some boundaries (hair, gloves, and arms) show mild haloing and soft, painterly transitions inconsistent with the otherwise sharp environment lighting, suggesting compositing/generation artifacts.",
-          "location": "Around the standing boxer\u2019s hairline and glove/forearm edges (upper center-left)."
+          "location": "Around the standing boxer’s hairline and glove/forearm edges (upper center-left)."
         }
       ]
     },
@@ -1147,7 +1147,7 @@
       "classification": "fake",
       "artifacts": [
         {
-          "reasoning": "Liquid stream and splash geometry looks physically inconsistent: the pour forms a thick, oddly uniform ribbon with little breakup, and the meniscus at the jigger rim doesn\u2019t match the stream\u2019s angle and volume.",
+          "reasoning": "Liquid stream and splash geometry looks physically inconsistent: the pour forms a thick, oddly uniform ribbon with little breakup, and the meniscus at the jigger rim doesn’t match the stream’s angle and volume.",
           "location": "Center-left: between the blue bottle mouth and the jigger; top of the jigger opening."
         },
         {
@@ -1155,19 +1155,19 @@
           "location": "Upper-left: hand gripping the bottle; center-right: hand near the shaker/jigger."
         },
         {
-          "reasoning": "Bow tie and collar have asymmetric, warped shapes and soft boundaries, with folds that don\u2019t align to the neck and shirt placket realistically.",
-          "location": "Center: bartender\u2019s neck area (bow tie/collar)."
+          "reasoning": "Bow tie and collar have asymmetric, warped shapes and soft boundaries, with folds that don’t align to the neck and shirt placket realistically.",
+          "location": "Center: bartender’s neck area (bow tie/collar)."
         },
         {
           "reasoning": "Facial features look slightly mismatched: lips/teeth edge and nose/cheek shading appear airbrushed and inconsistent with the scene lighting, with mild blur around the jawline.",
-          "location": "Upper-center: bartender\u2019s face and jawline."
+          "location": "Upper-center: bartender’s face and jawline."
         },
         {
-          "reasoning": "Background bottles and labels contain illegible, pseudo-text-like patterns and repeating shapes, common in AI-generated images; depth-of-field blur appears uneven and \u201cpainterly.\u201d",
+          "reasoning": "Background bottles and labels contain illegible, pseudo-text-like patterns and repeating shapes, common in AI-generated images; depth-of-field blur appears uneven and “painterly.”",
           "location": "Top half background: shelves behind the bartender."
         },
         {
-          "reasoning": "Metal reflections on the shaker tins and bar surface are inconsistent: highlights don\u2019t align with a single light source and some edges look melted/warped.",
+          "reasoning": "Metal reflections on the shaker tins and bar surface are inconsistent: highlights don’t align with a single light source and some edges look melted/warped.",
           "location": "Bottom-center: shaker tins and bar counter reflections."
         }
       ]
@@ -1186,10 +1186,10 @@
         },
         {
           "reasoning": "Lighting and shadows appear consistent with real-world illumination: subtle shading on the table and the subject, and plausible contact relationships between the table legs and the floor pattern.",
-          "location": "Under the table/around table legs on the floor, and on the subject\u2019s clothing and face."
+          "location": "Under the table/around table legs on the floor, and on the subject’s clothing and face."
         },
         {
-          "reasoning": "The only noticeable imperfections are minor compression/aliasing artifacts from the high-contrast checkerboard, which can create moir\u00e9-like shimmer and slight jaggedness on diagonals; these are typical of camera capture and resizing, not synthesis errors.",
+          "reasoning": "The only noticeable imperfections are minor compression/aliasing artifacts from the high-contrast checkerboard, which can create moiré-like shimmer and slight jaggedness on diagonals; these are typical of camera capture and resizing, not synthesis errors.",
           "location": "High-contrast edges throughout the checkerboard pattern, most visible on diagonal lines and near the image periphery."
         }
       ]
@@ -1207,15 +1207,15 @@
           "location": "Forehead hairline and along the headscarf edge (top-center)"
         },
         {
-          "reasoning": "Ear shape and attachment appear slightly malformed, with ambiguous contours and texture that doesn\u2019t match the rest of the skin detail.",
-          "location": "Visible ear on the right side of the face (viewer\u2019s right)"
+          "reasoning": "Ear shape and attachment appear slightly malformed, with ambiguous contours and texture that doesn’t match the rest of the skin detail.",
+          "location": "Visible ear on the right side of the face (viewer’s right)"
         },
         {
-          "reasoning": "Background objects are incoherent and painterly (bike/frame-like shapes and structures don\u2019t resolve into consistent geometry), indicating synthetic rendering.",
+          "reasoning": "Background objects are incoherent and painterly (bike/frame-like shapes and structures don’t resolve into consistent geometry), indicating synthetic rendering.",
           "location": "Left background (bicycle-like forms) and mid/background structures behind the subject"
         },
         {
-          "reasoning": "Fabric patterns and folds show repetition/warping: floral motifs and weave highlights don\u2019t follow the shirt\u2019s folds consistently.",
+          "reasoning": "Fabric patterns and folds show repetition/warping: floral motifs and weave highlights don’t follow the shirt’s folds consistently.",
           "location": "Blue shirt across the shoulders and chest (lower half of image)"
         }
       ]
