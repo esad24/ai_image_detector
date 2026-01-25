@@ -117,7 +117,7 @@
             "location": "Center of the image, on the adult hands near the child."
           },
           "cosine_score": 0.5131882429122925,
-          "manual_review": "mismatch between result and gt, skin texture appears normal."
+          "manual_review": "mismatch: skin texture appears normal."
         },
         {
           "result_artifact": null,
@@ -487,7 +487,8 @@
             "reasoning": "The eyes appear unnatural.",
             "location": "Upper center of the image, on the men's faces."
           },
-          "cosine_score": 0.5544680953025818
+          "cosine_score": 0.5544680953025818,
+          "manual_review": "mismatch: has a normal lower face"
         },
         {
           "result_artifact": {
@@ -496,7 +497,8 @@
             "location": "across all five faces, especially the two central figures and the far-right figure"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "valid"
         },
         {
           "result_artifact": {
@@ -518,7 +520,8 @@
             "location": "center-right and center-left torsos (lapels/ties)"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "uncertain"
         },
         {
           "result_artifact": {
@@ -527,7 +530,8 @@
             "location": "upper half/background behind the group"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "valid"
         }
       ]
     },
@@ -551,7 +555,8 @@
             "reasoning": "There are deformities in the armpit area.",
             "location": "Left side of the image, on the girl's right armpit area."
           },
-          "cosine_score": 0.6217761635780334
+          "cosine_score": 0.6217761635780334,
+          "manual_review": "valid, but a mismatch and the girl is not holding anything"
         },
         {
           "result_artifact": {
@@ -564,7 +569,8 @@
             "reasoning": "The girl's pants appear to merge with the man's jacket.",
             "location": "Lower center-left of the image, where the girl's pants meet the man's jacket."
           },
-          "cosine_score": 0.5676926374435425
+          "cosine_score": 0.5676926374435425,
+          "manual_review": "valid, but a mismatch"
         },
         {
           "result_artifact": {
@@ -577,7 +583,8 @@
             "reasoning": "The boy appears to be wearing unusual gloves.",
             "location": "Right side of the image, on the boy's hands."
           },
-          "cosine_score": 0.6318581700325012
+          "cosine_score": 0.6318581700325012,
+          "manual_review": "partially valid"
         },
         {
           "result_artifact": {
@@ -590,7 +597,8 @@
             "reasoning": "The girl's pants appear to merge with the man's jacket.",
             "location": "Lower center-left of the image, where the girl's pants meet the man's jacket."
           },
-          "cosine_score": 0.5200958847999573
+          "cosine_score": 0.5200958847999573,
+          "manual_review": "mismatch and invalid reasoning"
         },
         {
           "result_artifact": {
@@ -599,7 +607,8 @@
             "location": "Faces of the man and woman (upper center)"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "valid"
         },
         {
           "result_artifact": {
@@ -658,7 +667,8 @@
             "reasoning": "The hands show anatomical errors.",
             "location": "Left and right sides of the image, on the left woman's hand holding an object and the right woman's hand/wrist area."
           },
-          "cosine_score": 0.6732971668243408
+          "cosine_score": 0.6732971668243408,
+          "manual_review": "valid and more detailed explanation"
         },
         {
           "result_artifact": {
@@ -684,7 +694,8 @@
             "reasoning": "The hands show anatomical errors.",
             "location": "Left and right sides of the image, on the left woman's hand holding an object and the right woman's hand/wrist area."
           },
-          "cosine_score": 0.579763650894165
+          "cosine_score": 0.579763650894165,
+          "manual_review": "mismatch but valid artifact"
         },
         {
           "result_artifact": {
@@ -697,7 +708,8 @@
             "reasoning": "The neck is unnaturally long.",
             "location": "Right side of the image, on the woman's neck."
           },
-          "cosine_score": 0.5000386834144592
+          "cosine_score": 0.5000386834144592,
+          "manual_review": "mismatch"
         },
         {
           "result_artifact": {
@@ -710,7 +722,8 @@
             "reasoning": "The eyes show anatomical errors.",
             "location": "Center of the image, on the eyes of the left woman, man in the back, and center woman."
           },
-          "cosine_score": 0.5538467168807983
+          "cosine_score": 0.5538467168807983,
+          "manual_review": "partially valid, skin and sharpness looks normal, but eyes and teeth are deformed"
         },
         {
           "result_artifact": {
@@ -719,7 +732,8 @@
             "location": "left woman's hair and right woman's hair edges"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "uncertain"
         },
         {
           "result_artifact": {
@@ -728,7 +742,8 @@
             "location": "top half background (building windows/railings)"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "uncertain"
         }
       ]
     },
@@ -748,7 +763,8 @@
             "location": "upper-right quadrant, inside the racket head behind the subject's head"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "invalid: looks normal"
         },
         {
           "result_artifact": {
@@ -757,7 +773,8 @@
             "location": "right side, mid-to-lower area where the racket narrows toward the handle"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "invalid"
         },
         {
           "result_artifact": {
@@ -812,7 +829,8 @@
             "reasoning": "The hand appears too soft and flat.",
             "location": "Lower-right of the image, on the woman's left hand."
           },
-          "cosine_score": 0.5781978368759155
+          "cosine_score": 0.5781978368759155,
+          "manual_review": "missmatch: anatomy looks correct, but skin looks unnatural"
         },
         {
           "result_artifact": {
@@ -825,7 +843,8 @@
             "reasoning": "The hand appears too soft and flat.",
             "location": "Lower-right of the image, on the woman's left hand."
           },
-          "cosine_score": 0.5183945298194885
+          "cosine_score": 0.5183945298194885,
+          "manual_review": "mismatch, but valid artifact"
         },
         {
           "result_artifact": {
@@ -834,7 +853,8 @@
             "location": "Upper center-left around the top of the head"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "invalid: hair looks normal"
         },
         {
           "result_artifact": {
@@ -843,7 +863,8 @@
             "location": "Lower center, inside the glass near the rim"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "valid: artifact was included in gt but did not match"
         },
         {
           "result_artifact": {
@@ -852,7 +873,8 @@
             "location": "Upper half/background shelves"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "uncertain"
         },
         {
           "result_artifact": null,
