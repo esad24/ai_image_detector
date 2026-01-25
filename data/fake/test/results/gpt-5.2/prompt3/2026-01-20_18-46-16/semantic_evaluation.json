@@ -55,7 +55,8 @@
             "location": "center of image at the point where the faces meet (mouth area)"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "invalid"
         },
         {
           "result_artifact": {
@@ -64,7 +65,8 @@
             "location": "lower center foreground (interlocked hands)"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "valid"
         },
         {
           "result_artifact": {
@@ -73,7 +75,8 @@
             "location": "around the left subject’s hairline and both subjects’ shoulder outlines against the White House/sky (upper-left foreground and upper-right foreground)"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "partially valid"
         },
         {
           "result_artifact": {
@@ -82,7 +85,8 @@
             "location": "mid-to-upper background (White House facade, especially central balcony/railings and window rows)"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "valid"
         }
       ]
     },
@@ -219,7 +223,8 @@
             "location": "Center foreground from bottle down into the grave"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "valid"
         },
         {
           "result_artifact": {
@@ -232,7 +237,8 @@
             "reasoning": "The eyes appear unusual.",
             "location": "Upper-center and right side of the image, on the faces of the man with champagne and the bald men."
           },
-          "cosine_score": 0.5630799531936646
+          "cosine_score": 0.5630799531936646,
+          "manual_review": "mismatch and invalid reasoning"
         },
         {
           "result_artifact": {
@@ -241,7 +247,8 @@
             "location": "Top-left (phone hand), top-right (phone hand), mid-right (hands holding glasses)"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "uncertain"
         },
         {
           "result_artifact": {
@@ -250,7 +257,8 @@
             "location": "Faces across the group (center to right)"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "uncertain"
         }
       ]
     },
@@ -774,7 +782,8 @@
             "location": "Lower center-right, in the right woman's hand above the right pizza"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "uncertain"
         },
         {
           "result_artifact": {
@@ -783,7 +792,8 @@
             "location": "Lower center-right, between the right woman and her pizza"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "invalid: not unusual to be eaten with a fork"
         },
         {
           "result_artifact": {
@@ -792,7 +802,8 @@
             "location": "Bottom center, both pizzas on the plates"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "uncertain"
         },
         {
           "result_artifact": {
@@ -810,7 +821,8 @@
             "location": "Global, most noticeable on both women's faces/skin and the blurred pedestrians in the background"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "uncertain"
         },
         {
           "result_artifact": null,
@@ -1014,7 +1026,8 @@
             "location": "lower-right quadrant, in the speaker's hands"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "valid: artifact was included in gt but did not match"
         },
         {
           "result_artifact": {
@@ -1023,7 +1036,8 @@
             "location": "lower-right quadrant, speaker's hands around the phone"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "invalid"
         },
         {
           "result_artifact": {
@@ -1032,7 +1046,8 @@
             "location": "right side, microphone near the speaker's face"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "valid"
         },
         {
           "result_artifact": {
@@ -1041,7 +1056,8 @@
             "location": "lower-right quadrant, phone screen"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "uncertain"
         },
         {
           "result_artifact": {
@@ -1050,7 +1066,9 @@
             "location": "lower half of image, background behind the podium"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "uncertain"
+
         },
         {
           "result_artifact": {
@@ -1059,7 +1077,8 @@
             "location": "lower-right quadrant, phone screen"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "valid: text looks disfigured"
         },
         {
           "result_artifact": null,
