@@ -12,7 +12,7 @@ warnings.filterwarnings("ignore")
 hf_logging.set_verbosity_error()
 
 # Paths
-result = "/home/usluesyr/ai_image_detector/data/fake/test/results/gpt-5.2/prompt3/2026-01-20_18-46-16/results.json"
+result = "/home/usluesyr/ai_image_detector/data/fake/test/results/qwen3-vl/prompt3/2026-01-22_21-28-42/results.json"
 ground_truth = "/home/usluesyr/ai_image_detector/data/ground_truth/fake_test_labeled.json"
 
 
