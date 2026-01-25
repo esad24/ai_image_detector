@@ -179,7 +179,7 @@
             {
                 "type": "semantic",
                 "reasoning": "A crocodile appearing on a city sidewalk is unrealistic.",
-                "location": "Bottom right of the image, on the sidewalk where the crocodile is located."
+                "location": "Bottom side of the image, on the sidewalk where the crocodile is located."
             }
         ]
     },

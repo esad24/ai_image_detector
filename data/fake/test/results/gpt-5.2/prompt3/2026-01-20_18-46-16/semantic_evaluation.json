@@ -2,7 +2,8 @@
   "meta": {
     "model": "gpt-5.2",
     "prompt_id": 3,
-    "reasoning": "none"
+    "reasoning": "none",
+    "ground_truth": 1
   },
   "threshold": 0.5,
   "image_count": 50,
@@ -41,7 +42,8 @@
             "location": "Around the family’s silhouettes (woman’s hair/shoulders, man’s shoulders, child’s outline) in the central foreground"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "valid"
         },
         {
           "result_artifact": {
@@ -63,7 +65,9 @@
             "location": "Lower center foreground around the child’s feet and the adults’ lower legs"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "invalid: can't really see the ground to make this judgement."
+
         },
         {
           "result_artifact": {
@@ -98,7 +102,8 @@
             "location": "Overall image—sharpness contrast between central foreground subjects and distant mountains/valley background"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "valid"
         },
         {
           "result_artifact": {
@@ -111,7 +116,8 @@
             "reasoning": "The hands show anatomical errors.",
             "location": "Center of the image, on the adult hands near the child."
           },
-          "cosine_score": 0.5131882429122925
+          "cosine_score": 0.5131882429122925,
+          "manual_review": "mismatch between result and gt, skin texture appears normal."
         },
         {
           "result_artifact": null,
@@ -142,7 +148,7 @@
           "matched_gt_artifact": {
             "type": "semantic",
             "reasoning": "A crocodile appearing on a city sidewalk is unrealistic.",
-            "location": "Bottom right of the image, on the sidewalk where the crocodile is located."
+            "location": "Bottom side of the image, on the sidewalk where the crocodile is located."
           },
           "cosine_score": 0.7836410999298096
         },
@@ -153,7 +159,8 @@
             "location": "midground center-left group of people"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "valid"
         },
         {
           "result_artifact": {
@@ -162,7 +169,8 @@
             "location": "bottom center foreground around the alligator’s legs and belly"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "looks normal"
         },
         {
           "result_artifact": {
@@ -171,7 +179,8 @@
             "location": "bottom center foreground on the alligator’s head and back"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "valid, but is more of a stylistic artifact"
         },
         {
           "result_artifact": {
@@ -180,7 +189,8 @@
             "location": "bottom right foreground at the man’s shoes and the alligator’s tail/side"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "invalid: looks normal"
         },
         {
           "result_artifact": {
@@ -189,7 +199,8 @@
             "location": "overall image context"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "valid"
         },
         {
           "result_artifact": null,
@@ -270,7 +281,8 @@
             "reasoning": "There is an extra antenna.",
             "location": "Center of the image, near the ant's head and on the person's nose."
           },
-          "cosine_score": 0.6240606307983398
+          "cosine_score": 0.6240606307983398,
+          "manual_review": "invalid: appears normal"
         },
         {
           "result_artifact": {
@@ -279,7 +291,8 @@
             "location": "Global image, especially the shallow depth-of-field around both eyes (upper-right) and the ant head (lower-left)."
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "valid"
         }
       ]
     },
@@ -299,7 +312,8 @@
             "location": "Left side of image, inside the racket head"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "invalid: looks normal"
         },
         {
           "result_artifact": {
@@ -308,7 +322,8 @@
             "location": "Left side, lower portion of the racket head near the throat"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "invalid: looks normal"
         },
         {
           "result_artifact": {
@@ -317,7 +332,8 @@
             "location": "Lower-left quadrant, both hands around the racket handle"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "invalid: boundaries and knuckles are well defined"
         },
         {
           "result_artifact": {
@@ -326,7 +342,8 @@
             "location": "Upper center-right, forehead and headband region"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "invalid: no merging"
         },
         {
           "result_artifact": {
@@ -335,7 +352,8 @@
             "location": "Entire image, most noticeable on face/shoulders"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "invalid: could pass as a normal photo shooting"
         },
         {
           "result_artifact": {
@@ -344,7 +362,8 @@
             "location": "Entire background, especially upper half behind the subject"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "uncertain"
         },
         {
           "result_artifact": null,
@@ -382,7 +401,8 @@
             "location": "Center-left and center-right (both women’s faces and hair)"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "invalid: the two women don't look identical"
         },
         {
           "result_artifact": null,

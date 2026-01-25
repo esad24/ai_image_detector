@@ -92,7 +92,7 @@ def compute_semantic_matches(result_artifacts, gt_artifacts, threshold=THRESHOLD
             matches.append({
                 "result_artifact": r_art,
                 "matched_gt_artifact": None,
-                "cosine_score": 0.0
+                "cosine_score": 0.0,
             })
 
     # Add unmatched GT artifacts
