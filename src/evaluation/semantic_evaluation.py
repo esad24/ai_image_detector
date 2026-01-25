@@ -15,6 +15,7 @@ hf_logging.set_verbosity_error()
 result = "/home/usluesyr/ai_image_detector/data/fake/test/results/gpt-5.2/prompt3/2026-01-20_18-46-16/results.json"
 ground_truth = "/home/usluesyr/ai_image_detector/data/ground_truth/fake_test_labeled.json"
 
+
 # Load SBERT model
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
@@ -176,7 +177,7 @@ output = {
 
 # Save JSON
 results_dir = os.path.dirname(result)
-output_path = os.path.join(results_dir, "semantic_evaluation.json")
+output_path = os.path.join(results_dir, "semantic_evaluation_2.json")
 with open(output_path, "w", encoding="utf-8") as f:
     json.dump(output, f, indent=2, ensure_ascii=False)
 
