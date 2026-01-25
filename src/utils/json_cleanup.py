@@ -1,9 +1,8 @@
 import os
 import json
 
-# Ordner, der die JSON-Dateien enthält
 folder = "/home/usluesyr/ai_image_detector/data/real/test/results/gpt-5.2"
-# Optional: Unterordner durchsuchen
+
 recursive = True
 
 def clean_json_file(file_path):
@@ -25,7 +24,6 @@ def clean_json_file(file_path):
     except Exception as e:
         print(f"Error cleaning {file_path}: {e}")
 
-# Alle JSON-Dateien durchsuchen
 if recursive:
     for root, dirs, files in os.walk(folder):
         for file in files:
