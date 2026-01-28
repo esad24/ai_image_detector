@@ -1981,7 +1981,8 @@
             "reasoning": "A doctor is shown checking a patient's temperature with a watch, which is implausible.",
             "location": "Right center of the image, where the watch is pressed against the patient's forehead."
           },
-          "cosine_score": 0.5740939974784851
+          "cosine_score": 0.5740939974784851,
+          "manual_review": "uncertain"
         },
         {
           "result_artifact": {
@@ -1994,7 +1995,8 @@
             "reasoning": "A doctor is shown checking a patient's temperature with a watch, which is implausible.",
             "location": "Right center of the image, where the watch is pressed against the patient's forehead."
           },
-          "cosine_score": 0.5466134548187256
+          "cosine_score": 0.5466134548187256,
+          "manual_review": "invalid"
         },
         {
           "result_artifact": {
@@ -2003,7 +2005,8 @@
             "location": "background, especially upper half behind both subjects and around the blurred medical equipment"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "partially valid, skin texture looks noisy and patchy"
         }
       ]
     },
@@ -2061,7 +2064,8 @@
             "reasoning": "The irises have unnatural coloring.",
             "location": "Upper center of the image, on the eyes, especially the subject's left eye."
           },
-          "cosine_score": 0.752004861831665
+          "cosine_score": 0.752004861831665,
+          "manual_review": "valid, added glossy eyes artifact"
         },
         {
           "result_artifact": {
@@ -2083,7 +2087,8 @@
             "location": "Upper eyelids, especially left eye (mid-left) and right eye (mid-right)"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "valid"
         },
         {
           "result_artifact": {
@@ -2092,7 +2097,8 @@
             "location": "Lower lip and lip line (bottom-center)"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "uncertain"
         },
         {
           "result_artifact": {
@@ -2138,7 +2144,8 @@
             "location": "lower-right quadrant, blue glove"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "valid"
         },
         {
           "result_artifact": {
@@ -2147,7 +2154,8 @@
             "location": "upper-left quadrant, black headgear"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "invalid"
         },
         {
           "result_artifact": {
@@ -2156,7 +2164,8 @@
             "location": "mid-to-lower middle background, white ring ropes"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "uncertain"
         },
         {
           "result_artifact": {
@@ -2165,7 +2174,8 @@
             "location": "mid-to-lower background, crowd and ropes"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "uncertain"
         }
       ]
     },
@@ -2189,7 +2199,8 @@
             "reasoning": "The person is holding the sandwich in an impractical way.",
             "location": "Center of the image, on the hands and sandwich."
           },
-          "cosine_score": 0.5549554228782654
+          "cosine_score": 0.5549554228782654,
+          "manual_review": "mismatch and invalid reasoning"
         },
         {
           "result_artifact": {
@@ -2198,7 +2209,8 @@
             "location": "Lower right, ring on the right hand"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "invalid"
         },
         {
           "result_artifact": {
@@ -2211,7 +2223,8 @@
             "reasoning": "The person is holding the sandwich in an impractical way.",
             "location": "Center of the image, on the hands and sandwich."
           },
-          "cosine_score": 0.6003533005714417
+          "cosine_score": 0.6003533005714417,
+          "manual_review": "uncertain"
         },
         {
           "result_artifact": {
@@ -2220,7 +2233,8 @@
             "location": "Upper half and far background (left and right sides)"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "uncertain"
         },
         {
           "result_artifact": null,
@@ -2301,7 +2315,8 @@
             "location": "Projection screen on the right background"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "invalid, projection is too transparent to make a clear judgement"
         },
         {
           "result_artifact": {
@@ -2418,7 +2433,8 @@
             "location": "bottom-right corner on the wooden counter (girl in vest’s right hand)"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "invalid"
         },
         {
           "result_artifact": {
@@ -2431,7 +2447,8 @@
             "reasoning": "The eyes appear deformed.",
             "location": "Center-right of the image, on the standing girl's face."
           },
-          "cosine_score": 0.5210717916488647
+          "cosine_score": 0.5210717916488647,
+          "manual_review": "mismatch and uncertain about reasoning, ears appear normal"
         },
         {
           "result_artifact": {
@@ -2440,7 +2457,8 @@
             "location": "lower-right quadrant on the girl’s torso/arms (vest edge and right sleeve/cuff area)"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "uncertain"
         },
         {
           "result_artifact": {
@@ -2453,7 +2471,8 @@
             "reasoning": "The eyes appear deformed.",
             "location": "Center-right of the image, on the standing girl's face."
           },
-          "cosine_score": 0.6751239895820618
+          "cosine_score": 0.6751239895820618,
+          "manual_review": "valid"
         },
         {
           "result_artifact": {
@@ -2462,7 +2481,8 @@
             "location": "entire image, especially midtones in background and skin areas"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "uncertain"
         },
         {
           "result_artifact": {
@@ -2471,7 +2491,8 @@
             "location": "left side and rear background behind the glass (blurred boy and desk area)"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "valid"
         },
         {
           "result_artifact": null,
