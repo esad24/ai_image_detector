@@ -1410,7 +1410,8 @@
             "location": "Center of image, table lamp base beneath the shade"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "invalid"
         },
         {
           "result_artifact": {
@@ -1419,7 +1420,8 @@
             "location": "Upper-right quadrant, framed portrait"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "uncertain"
         },
         {
           "result_artifact": {
@@ -1428,7 +1430,8 @@
             "location": "Center-bottom area, on the table in front of the lamp"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "invalid"
         },
         {
           "result_artifact": {
@@ -1514,7 +1517,8 @@
             "location": "mid-background group around the center-left to center (people behind the central figure), and right-background near the white-haired person"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "valid"
         },
         {
           "result_artifact": {
@@ -1523,7 +1527,8 @@
             "location": "center-left midground near the blonde person leaning forward; center midground around the coffin edge"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "valid"
         },
         {
           "result_artifact": {
@@ -1532,7 +1537,8 @@
             "location": "center midground extending to right midground (white coffin-like structure)"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "uncertain"
         },
         {
           "result_artifact": {
@@ -1541,7 +1547,8 @@
             "location": "top surface of the coffin, center-right midground (sunflower cluster and mixed flowers)"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "uncertain"
         },
         {
           "result_artifact": {
@@ -1550,7 +1557,8 @@
             "location": "left foreground (red straps/ties), center foreground (back straps), right midground (swimsuit straps)"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "valid"
         },
         {
           "result_artifact": {
@@ -1606,7 +1614,8 @@
             "location": "Center of image, both hands holding the two beer mugs (mid-frame)."
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "uncertain"
         },
         {
           "result_artifact": {
@@ -1615,7 +1624,8 @@
             "location": "Center of image, top of both beer mugs."
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "invalid"
         },
         {
           "result_artifact": {
@@ -1624,7 +1634,8 @@
             "location": "Center of image, front faces of both beer mugs."
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "uncertain"
         },
         {
           "result_artifact": {
@@ -1633,7 +1644,8 @@
             "location": "Across both faces and clothing, especially mid-right (right person’s face) and mid-left (left person’s face)."
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "valid"
         },
         {
           "result_artifact": {
@@ -1642,7 +1654,8 @@
             "location": "Bottom left and bottom right foreground (beer bottles) and bottom center (snack bowl)."
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "uncertain"
         },
         {
           "result_artifact": null,
@@ -1671,7 +1684,8 @@
             "location": "Lower center-right, on top of the blue blanket near the boy’s hands"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "uncertain"
         },
         {
           "result_artifact": {
@@ -1684,7 +1698,8 @@
             "reasoning": "The boy's position is not anatomically possible.",
             "location": "Center-right of the image, where the boy is leaning near the woman."
           },
-          "cosine_score": 0.5597661733627319
+          "cosine_score": 0.5597661733627319,
+          "manual_review": "mismatch and invalid reasoning"
         },
         {
           "result_artifact": {
@@ -1693,7 +1708,8 @@
             "location": "Lower right, where the woman leans in toward the bed"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "uncertain"
         },
         {
           "result_artifact": {
@@ -1702,7 +1718,8 @@
             "location": "Across the lower half of the image, especially center-right over the patient and boy"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "invalid"
         },
         {
           "result_artifact": {
@@ -1715,7 +1732,8 @@
             "reasoning": "The eyes and teeth are deformed.",
             "location": "Right-center of the image, on the woman's face."
           },
-          "cosine_score": 0.5051419734954834
+          "cosine_score": 0.5051419734954834,
+          "manual_review": "mismatch"
         },
         {
           "result_artifact": null,
@@ -1784,7 +1802,8 @@
             "location": "Center, on the violin body under the bow hair"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "valid"
         },
         {
           "result_artifact": {
@@ -1793,7 +1812,8 @@
             "location": "Throughout the bookshelves, especially upper half and right side"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "uncertain"
         },
         {
           "result_artifact": {
@@ -1802,7 +1822,8 @@
             "location": "Background bookshelves across the entire image"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "uncertain"
         },
         {
           "result_artifact": null,
@@ -1861,7 +1882,8 @@
             "reasoning": "The skin appears overly smooth.",
             "location": "Bottom-center of the image, on the child's face."
           },
-          "cosine_score": 0.5041886568069458
+          "cosine_score": 0.5041886568069458,
+          "manual_review": "mismatch but valid artifact"
         },
         {
           "result_artifact": {
@@ -1870,7 +1892,8 @@
             "location": "Left side of image: woman’s hairline around the beanie edge"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "valid"
         },
         {
           "result_artifact": {
@@ -1879,7 +1902,8 @@
             "location": "Hats: left woman’s beanie; lower-center child’s yellow/gray beanie; right boy’s striped beanie"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "uncertain"
         },
         {
           "result_artifact": {
@@ -1897,7 +1921,8 @@
             "location": "Overall image; especially the transition between subjects and blurred background architecture"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "uncertain"
         },
         {
           "result_artifact": {
