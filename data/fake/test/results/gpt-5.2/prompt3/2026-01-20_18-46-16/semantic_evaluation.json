@@ -1279,7 +1279,8 @@
             "location": "Center-right (forks near incision) and lower-center (spoon on drape)."
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "valid"
         },
         {
           "result_artifact": {
@@ -1399,7 +1400,8 @@
             "reasoning": "The fingers appear deformed.",
             "location": "Bottom center of the image, on the left seated person's hands."
           },
-          "cosine_score": 0.5515444278717041
+          "cosine_score": 0.5515444278717041,
+          "manual_review": "valid, but missmatch with wrong subjects artifact, added new artifact in GT"
         },
         {
           "result_artifact": {
