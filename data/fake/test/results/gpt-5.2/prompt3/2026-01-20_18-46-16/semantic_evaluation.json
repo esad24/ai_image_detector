@@ -2591,7 +2591,8 @@
             "location": "right side, on the police vehicle door panel"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "invalid"
         },
         {
           "result_artifact": {
@@ -2600,7 +2601,8 @@
             "location": "both officers' chests and shoulder patches (center-left and center-right)"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "invalid"
         },
         {
           "result_artifact": {
@@ -2609,7 +2611,8 @@
             "location": "center, lower-middle (central subject’s hands in front)"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "partially valid, hands looks normal, but handcuffs are deformed"
         },
         {
           "result_artifact": {
@@ -2618,7 +2621,8 @@
             "location": "center, lower-middle (central subject’s wrists/hands)"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "invalid, handcuffs valid"
         },
         {
           "result_artifact": {
@@ -2627,7 +2631,8 @@
             "location": "global, most noticeable on faces (center and both officers)"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "uncertain, looks normal"
         },
         {
           "result_artifact": null,
@@ -2656,7 +2661,8 @@
             "location": "Upper center-left, large sign above the street"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "valid"
         },
         {
           "result_artifact": {
@@ -2665,7 +2671,8 @@
             "location": "Mid-right to far-right background sidewalk crowd"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "partially valid, right side looks normal, but person on the left has no upper body"
         },
         {
           "result_artifact": {
@@ -2674,7 +2681,8 @@
             "location": "Center-right background, behind pedestrians"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "valid, looks like a train"
         },
         {
           "result_artifact": {
@@ -2683,7 +2691,8 @@
             "location": "Across entire frame, especially edges and corners"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "valid"
         },
         {
           "result_artifact": {
@@ -2692,7 +2701,8 @@
             "location": "Upper left building awning and sign area"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "uncertain"
         },
         {
           "result_artifact": null,
@@ -2730,7 +2740,8 @@
             "location": "mid-right and far-right background (behind the main subject) and mid-left background (behind the man)"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "valid, person on the left"
         },
         {
           "result_artifact": {
@@ -2739,7 +2750,8 @@
             "location": "top center and top-right"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "invalid, hand straps are connected and consistent"
         },
         {
           "result_artifact": {
@@ -2748,7 +2760,8 @@
             "location": "top-right along the carriage wall/ceiling line"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "invalid"
         },
         {
           "result_artifact": {
@@ -2901,7 +2914,8 @@
             "reasoning": "A firefighter is shown adding gasoline to the fire, which is implausible.",
             "location": "Lower center of the image, where the firefighter is pouring liquid from a gasoline can onto the flames."
           },
-          "cosine_score": 0.560564398765564
+          "cosine_score": 0.560564398765564,
+          "manual_review": "uncertain"
         },
         {
           "result_artifact": {
@@ -2923,7 +2937,8 @@
             "location": "Left side (windows and siding where flames climb), and lower-left foreground (ground fire)"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "uncertain"
         }
       ]
     },
@@ -2947,7 +2962,8 @@
             "reasoning": "There is an illogical shadow.",
             "location": "Left side of the image, on the sidewalk near the pedestrian."
           },
-          "cosine_score": 0.5546520948410034
+          "cosine_score": 0.5546520948410034,
+          "manual_review": "valid"
         },
         {
           "result_artifact": {
@@ -2965,7 +2981,8 @@
             "location": "upper left and upper right along the street (lamp/sign poles near tree canopy)"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "uncertain"
         },
         {
           "result_artifact": {
@@ -2974,7 +2991,8 @@
             "location": "mid-ground buildings and trees across the upper half of the image"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "uncertain"
         },
         {
           "result_artifact": null,
@@ -3016,7 +3034,8 @@
             "reasoning": "The hands appear deformed.",
             "location": "Center of the image, on the hands holding the pizza slice and the left woman's right hand."
           },
-          "cosine_score": 0.6893897652626038
+          "cosine_score": 0.6893897652626038,
+          "manual_review": "mismatch but valid artifact"
         },
         {
           "result_artifact": {
@@ -3042,7 +3061,8 @@
             "reasoning": "The hands appear deformed.",
             "location": "Center of the image, on the hands holding the pizza slice and the left woman's right hand."
           },
-          "cosine_score": 0.5858404040336609
+          "cosine_score": 0.5858404040336609,
+          "manual_review": "mismatch but valid artifact"
         },
         {
           "result_artifact": {
@@ -3051,7 +3071,8 @@
             "location": "Lower left, around the pizza box/tray and paper liner."
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "invalid"
         },
         {
           "result_artifact": {
@@ -3060,7 +3081,8 @@
             "location": "Mid to lower background, wooden benches and table surfaces behind the subjects."
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "valid"
         },
         {
           "result_artifact": {
@@ -3073,7 +3095,8 @@
             "reasoning": "The faces appear unnatural.",
             "location": "Upper center of the image, on the two women's faces."
           },
-          "cosine_score": 0.5503312349319458
+          "cosine_score": 0.5503312349319458,
+          "manual_review": "uncertain"
         },
         {
           "result_artifact": null,
@@ -3137,7 +3160,8 @@
             "reasoning": "The image has an overly smooth and plastic appearance.",
             "location": "Upper center of the image, on the subject's face and skin."
           },
-          "cosine_score": 0.5348923802375793
+          "cosine_score": 0.5348923802375793,
+          "manual_review": "valid"
         },
         {
           "result_artifact": {
@@ -3149,7 +3173,7 @@
             "type": "structural",
             "reasoning": "The irises are distorted with unnatural coloring.",
             "location": "Upper center of the image, on the subject's eyes, particularly the right iris."
-          },
+          },  
           "cosine_score": 0.654154360294342
         },
         {
@@ -3159,7 +3183,8 @@
             "location": "Hair perimeter, especially right side (upper-right around curls)"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "uncertain"
         },
         {
           "result_artifact": {
@@ -3168,7 +3193,8 @@
             "location": "Background (entire backdrop, strongest at corners)"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "invalid, not unrealistic background"
         },
         {
           "result_artifact": {
@@ -3177,7 +3203,8 @@
             "location": "White shirt torso area (lower-center), especially near buttons and collar"
           },
           "matched_gt_artifact": null,
-          "cosine_score": 0.0
+          "cosine_score": 0.0,
+          "manual_review": "uncertain"
         }
       ]
     },
@@ -3218,17 +3245,17 @@
       "matched_artifacts": [
         {
           "result_artifact": null,
-          "matched_gt_artifact": "The eyes appear unnatural.. Upper center of the image, on the man's eyes.",
+          "matched_gt_artifact": "The eyes appear unnatural. Upper center of the image, on the man's eyes.",
           "cosine_score": 0.0
         },
         {
           "result_artifact": null,
-          "matched_gt_artifact": "There is an unusual object present.. Right side of the image, in the background near the bench.",
+          "matched_gt_artifact": "There is an unusual object present. Right side of the image, in the background near the bench.",
           "cosine_score": 0.0
         },
         {
           "result_artifact": null,
-          "matched_gt_artifact": "The watch appears deformed.. Lower center-left of the image, on the man's right wrist.",
+          "matched_gt_artifact": "The watch appears deformed. Lower center-left of the image, on the man's right wrist.",
           "cosine_score": 0.0
         }
       ]
