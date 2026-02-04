@@ -28,5 +28,5 @@ def false_postives(image_folder, json_file):
 if __name__ == "__main__":
     # Example usage
     image_folder = "/home/usluesyr/ai_image_detector/data/real/test/images"
-    json_file = "/home/usluesyr/ai_image_detector/data/real/test/results/gpt-5.2/prompt3/2026-01-20_20-09-43/results.json"
+    json_file = "/home/usluesyr/ai_image_detector/data/real/test/results/gpt-5.2/prompt2/2026-01-20_19-03-04/results.json"
     false_postives(image_folder, json_file)
