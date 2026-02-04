@@ -25,8 +25,10 @@ def false_postives(image_folder, json_file):
             else:
                 print(f"File not found: {filename}")
 
+    print(destination_folder)
+
 if __name__ == "__main__":
     # Example usage
     image_folder = "/home/usluesyr/ai_image_detector/data/real/test/images"
-    json_file = "/home/usluesyr/ai_image_detector/data/real/test/results/gpt-5.2/prompt2/2026-01-20_19-03-04/results.json"
+    json_file = "/home/usluesyr/ai_image_detector/data/real/test/results/qwen3-vl/prompt4/2026-01-24_18-27-42/results.json"
     false_postives(image_folder, json_file)
