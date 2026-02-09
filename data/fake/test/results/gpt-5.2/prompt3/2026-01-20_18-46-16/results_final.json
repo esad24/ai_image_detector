@@ -88,8 +88,7 @@
         {
           "type": "stylistic",
           "reasoning": "Skin texture and facial details look overly smooth and uniform, consistent with generative/retouched rendering rather than natural photographic microtexture.",
-          "location": "Faces of the adults and child in the central foreground",
-          "manual_review": "mismatch: skin texture appears normal."
+          "location": "Faces of the adults and child in the central foreground"
         }
       ]
     },
@@ -111,8 +110,7 @@
         {
           "type": "semantic",
           "reasoning": "Several champagne flutes appear oddly inconsistent in shape and transparency; some rims/edges look uneven as if partially melted or poorly defined.",
-          "location": "Hands of people across the mid-right and right side (multiple glasses)",
-          "manual_review": "mismatch and invalid reasoning"
+          "location": "Hands of people across the mid-right and right side (multiple glasses)"
         },
         {
           "type": "structural",
@@ -147,7 +145,7 @@
           "type": "structural",
           "reasoning": "The animal’s contact with the ground looks inconsistent: the body/legs appear to rest without clear weight-bearing deformation or consistent shadowing around the feet/claws.",
           "location": "bottom center foreground around the alligator’s legs and belly",
-          "manual_review": "looks normal"
+          "manual_review": "invalid"
         },
         {
           "type": "structural",
@@ -273,8 +271,7 @@
         {
           "type": "structural",
           "reasoning": "The person in the back has an unusually small/flattened lower face and neck relative to head size, suggesting compositing/generation distortion.",
-          "location": "center background (face between the two central men)",
-          "manual_review": "mismatch: has a normal lower face"
+          "location": "center background (face between the two central men)"
         },
         {
           "type": "semantic",
@@ -309,13 +306,13 @@
           "type": "structural",
           "reasoning": "The girl’s hand/arm on the viewer-left side shows deformed fingers and an unnatural, fused look around the small object she’s holding; finger count/shape appears inconsistent.",
           "location": "Left child’s hand (mid-left of image, near her torso)",
-          "manual_review": "valid, but a mismatch and the girl is not holding anything"
+          "manual_review": "valid"
         },
         {
           "type": "structural",
           "reasoning": "The adult man’s hand supporting the girl’s legs looks anatomically off (irregular thumb/finger shapes and unnatural grip contour).",
           "location": "Man’s right hand under the girl’s legs (lower-left center)",
-          "manual_review": "valid, but a mismatch"
+          "manual_review": "valid"
         },
         {
           "type": "structural",
@@ -327,7 +324,7 @@
           "type": "structural",
           "reasoning": "Edges where the boy’s clothing meets the mother’s arm and torso show blending/warping, as if the layers are not cleanly separated.",
           "location": "Contact area between mother’s forearm and boy’s outfit (right-center)",
-          "manual_review": "mismatch and invalid reasoning"
+          "manual_review": "invalid"
         },
         {
           "type": "stylistic",
@@ -401,13 +398,12 @@
           "type": "structural",
           "reasoning": "Watch/bracelet area has warped details and imperfect circularity, with smeared texture suggesting generation artifacts.",
           "location": "bottom-right, on the right woman's wrist",
-          "manual_review": "mismatch but valid artifact"
+          "manual_review": "valid"
         },
         {
           "type": "structural",
           "reasoning": "Necklace/pendant appears inconsistently rendered with a faint/blurred chain and oddly floating highlight.",
-          "location": "upper-right, on the right woman's neck/chest",
-          "manual_review": "mismatch"
+          "location": "upper-right, on the right woman's neck/chest"
         },
         {
           "type": "stylistic",
@@ -508,7 +504,7 @@
           "type": "structural",
           "reasoning": "Tattoo on the forearm appears smeared/ill-defined with uncertain linework and shape coherence, typical of generative texture artifacts rather than crisp ink edges.",
           "location": "Lower right, on the visible forearm near the wrist",
-          "manual_review": "mismatch, but valid artifact"
+          "manual_review": "valid"
         },
         {
           "type": "structural",
@@ -723,7 +719,7 @@
           "type": "structural",
           "reasoning": "The boy’s hands appear poorly defined, with ambiguous finger separation and unnatural overlap where his hands meet the blanket and the patient’s hand.",
           "location": "Right-center, at the boy’s forearms/hands atop the blanket",
-          "manual_review": "mismatch and invalid reasoning"
+          "manual_review": "invalid"
         },
         {
           "type": "structural",
@@ -740,8 +736,7 @@
         {
           "type": "stylistic",
           "reasoning": "Overall lighting and skin texture look overly smooth and uniformly cinematic, with a slightly plastic sheen and reduced micro-detail typical of generative imagery.",
-          "location": "Faces and exposed skin areas across all subjects, most noticeable on the patient and right woman",
-          "manual_review": "mismatch"
+          "location": "Faces and exposed skin areas across all subjects, most noticeable on the patient and right woman"
         }
       ]
     },
@@ -787,7 +782,7 @@
           "type": "structural",
           "reasoning": "Teeth appear overly uniform and smooth with slightly blended edges typical of generative rendering rather than natural tooth variation.",
           "location": "All three visible smiles (left woman, right boy, lower-center child)",
-          "manual_review": "mismatch but valid artifact"
+          "manual_review": "valid"
         },
         {
           "type": "structural",
@@ -935,7 +930,7 @@
           "type": "structural",
           "reasoning": "Fingers show subtle shape inconsistencies and unnatural tapering/contours around the sandwich grip, with slightly ambiguous joint definition typical of generative hand errors.",
           "location": "Lower center, both hands around the sandwich",
-          "manual_review": "mismatch and invalid reasoning"
+          "manual_review": "invalid"
         },
         {
           "type": "structural",
@@ -1018,7 +1013,7 @@
           "type": "structural",
           "reasoning": "Ear shape looks irregular/underdefined with unnatural contours and attachment to the head.",
           "location": "right side of the girl’s head (frame right), around the ear area",
-          "manual_review": "mismatch and uncertain about reasoning, ears appear normal"
+          "manual_review": "uncertain"
         },
         {
           "type": "structural",
@@ -1253,7 +1248,7 @@
           "type": "structural",
           "reasoning": "Pizza slice edges and toppings appear smeared/warped, with cheese/pepperoni shapes lacking crisp boundaries typical of a real photo.",
           "location": "Lower center-right, in the slice held by the right woman (near her hands).",
-          "manual_review": "mismatch but valid artifact"
+          "manual_review": "valid"
         },
         {
           "type": "structural",
@@ -1264,7 +1259,7 @@
           "type": "structural",
           "reasoning": "Pizza in the box has irregular, unnatural topping geometry and low-detail texture; some toppings look partially melted into the surface in a non-photographic way.",
           "location": "Lower left-center, pizza inside the open box on the left woman’s lap.",
-          "manual_review": "mismatch but valid artifact"
+          "manual_review": "valid"
         },
         {
           "type": "semantic",

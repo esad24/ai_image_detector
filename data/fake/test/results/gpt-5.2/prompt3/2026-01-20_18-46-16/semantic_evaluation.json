@@ -1319,7 +1319,8 @@
             "reasoning": "The team appears to be operating using kitchen knives and forks instead of proper surgical instruments.",
             "location": "Center of the image, over the patient and on the instrument tray on the left side."
           },
-          "cosine_score": 0.5095646381378174
+          "cosine_score": 0.5095646381378174,
+          "manual_review": "mismatch"
         },
         {
           "result_artifact": null,

@@ -305,7 +305,7 @@
           },
           "matched_gt_artifact": null,
           "cosine_score": 0.0,
-          "manual_review": "looks normal"
+          "manual_review": "invalid"
         },
         {
           "result_artifact": {
