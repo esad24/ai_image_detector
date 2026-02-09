@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "model": "gpt-5.2",
+    "prompt_id": 1,
+    "temperature": null,
+    "reasoning": "none"
+  },
+  "image_count": 6,
+  "total_fakes": 2,
+  "total_real": 4,
+  "results": [
+    {
+      "filename": "9td0pt9td0pt9td0.png",
+      "classification": "real"
+    },
+    {
+      "filename": "o9ino5o9ino5o9in.png",
+      "classification": "real"
+    },
+    {
+      "filename": "w0jm8aw0jm8aw0jm.png",
+      "classification": "fake"
+    },
+    {
+      "filename": "4a9fmy4a9fmy4a9f.png",
+      "classification": "fake"
+    },
+    {
+      "filename": "yr5c1iyr5c1iyr5c.png",
+      "classification": "real"
+    },
+    {
+      "filename": "r64htwr64htwr64h.png",
+      "classification": "real"
+    }
+  ]
+}

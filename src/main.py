@@ -59,6 +59,10 @@ python3 main.py -i real_train -m gpt-5.2 -p
 python3 main.py -i fake_test -m gpt-5.2 -p 
 python3 main.py -i real_test -m gpt-5.2 -p 
 
+python3 main.py -i "/home/usluesyr/ai_image_detector/data/reconstructed_images/fake" -m gpt-5.2 -p
+python3 main.py -i "/home/usluesyr/ai_image_detector/data/reconstructed_images/real" -m gpt-5.2 -p
+
+
 qwen3
 python3 main.py -i fake_train -m qwen3-vl -p 
 python3 main.py -i real_train -m qwen3-vl -p

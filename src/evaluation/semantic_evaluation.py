@@ -12,9 +12,8 @@ warnings.filterwarnings("ignore")
 hf_logging.set_verbosity_error()
 
 # Paths
-result = "/home/usluesyr/ai_image_detector/data/fake/test/results/qwen3-vl/prompt3/2026-01-22_21-28-42/results.json"
-ground_truth = "/home/usluesyr/ai_image_detector/data/ground_truth/fake_test_labeled.json"
-
+result = "/home/usluesyr/ai_image_detector/data/fake/test/results/gpt-5.2/prompt3/2026-01-20_18-46-16/results.json"
+ground_truth = "/home/usluesyr/ai_image_detector/data/fake/test/results/gpt-5.2/prompt4/2026-01-23_08-50-39/results.json"
 
 # Load SBERT model
 model = SentenceTransformer("all-MiniLM-L6-v2")
@@ -128,7 +127,7 @@ with open(ground_truth, "r") as f:
     gt_json = json.load(f)
 
 # Build lookup table for ground truth by filename
-gt_map = {item["filename"]: item for item in gt_json}
+gt_map = {item["filename"]: item for item in gt_json["results"]}
 
 file_scores = []
 
@@ -177,7 +176,7 @@ output = {
 
 # Save JSON
 results_dir = os.path.dirname(result)
-output_path = os.path.join(results_dir, "semantic_evaluation_2.json")
+output_path = os.path.join(results_dir, "semantic_evaluation_gpt_prompt3_and_prompt4.json")
 with open(output_path, "w", encoding="utf-8") as f:
     json.dump(output, f, indent=2, ensure_ascii=False)
 

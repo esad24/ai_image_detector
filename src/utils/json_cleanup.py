@@ -3,7 +3,7 @@ import json
 
 folder = "/home/usluesyr/ai_image_detector/data/real/test/results/gpt-5.2"
 
-recursive = True
+recursive = False
 
 def clean_json_file(file_path):
     """Load a JSON file and save a cleaned copy with proper Unicode in the same folder."""
@@ -33,3 +33,6 @@ else:
     for file in os.listdir(folder):
         if file.lower().endswith(".json"):
             clean_json_file(os.path.join(folder, file))
+
+file = "/home/usluesyr/ai_image_detector/data/fake/test/results/gpt-5.2/prompt3/2026-01-20_18-46-16/json2_with_manual_reviews.json"
+clean_json_file(file)

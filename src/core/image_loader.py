@@ -14,6 +14,7 @@ def load_images(image_folder):
     else:
         if not os.path.isdir(image_folder):
             raise ValueError("Image folder does not exist")
+        folder_path = image_folder
 
     images = []
     for file in os.listdir(folder_path):

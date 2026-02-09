@@ -59,7 +59,8 @@
           "result_artifact": {
             "type": "structural",
             "reasoning": "Hands are positioned in a way that is anatomically impossible. In a normal handshake, fingers should be interlaced with palms slightly facing, but here the hands are fused in a manner that does not match human anatomy (e.g., fingers too close, overlapping in a way that cannot occur in reality).",
-            "location": "Center of the image, involving the handshake between the two individuals."
+            "location": "Center of the image, involving the handshake between the two individuals.",
+            "manual_review": "valid"
           },
           "matched_gt_artifact": null,
           "cosine_score": 0.0
@@ -68,7 +69,8 @@
           "result_artifact": {
             "type": "semantic",
             "reasoning": "The simultaneous act of kissing and shaking hands is semantically implausible, as these two actions cannot occur concurrently in a natural interaction. A kiss requires close facial contact, while a handshake typically involves a grip without such proximity.",
-            "location": "Center of the image, where the two individuals are interacting."
+            "location": "Center of the image, where the two individuals are interacting.",
+            "manual_review": "invalid"
           },
           "matched_gt_artifact": null,
           "cosine_score": 0.0
@@ -141,7 +143,8 @@
           "result_artifact": {
             "type": "physical",
             "reasoning": "Champagne bottle's bubble stream is depicted as a uniform, straight vertical line, violating natural behavior of gas bubbles in liquid (which would rise organically and be less uniform).",
-            "location": "Center of the image, near the champagne bottle held by the man in the middle"
+            "location": "Center of the image, near the champagne bottle held by the man in the middle",
+            "manual_review": "valid"
           },
           "matched_gt_artifact": null,
           "cosine_score": 0.0
@@ -150,7 +153,8 @@
           "result_artifact": {
             "type": "structural",
             "reasoning": "Flower arrangement is overly uniform and lacks natural variations (e.g., asymmetry, imperfections) typical of real floral displays.",
-            "location": "Left side of the image, near the grave mound and flowers"
+            "location": "Left side of the image, near the grave mound and flowers",
+            "manual_review": "invalid"
           },
           "matched_gt_artifact": null,
           "cosine_score": 0.0
@@ -315,7 +319,8 @@
           "result_artifact": {
             "type": "structural",
             "reasoning": "The hand holding the tennis racket frame has anatomically incorrect finger proportions. For example, the fingers appear to be too long or positioned in a way that is unnatural for gripping the frame. This is a common issue in AI generation artifacts. So the conclusion is that the image is AI-generated, and the key artifact is in the hand with structural defects. So the answer should be: {",
-            "location": "hand holding the frame (viewer's perspective left side of the image)"
+            "location": "hand holding the frame (viewer's perspective left side of the image)",
+            "manual_review": "invalid"
           },
           "matched_gt_artifact": null,
           "cosine_score": 0.0
@@ -379,7 +384,8 @@
           "result_artifact": {
             "type": "structural",
             "reasoning": "Eyelashes are too uniform and dense; upper and lower lashes lack natural variation in length and thickness. In real eyes, eyelashes have individual variations.",
-            "location": "upper and lower eyelid areas"
+            "location": "upper and lower eyelid areas",
+            "manual_review": "invalid, looks like eyelash extensions"
           },
           "matched_gt_artifact": {
             "type": "structural",
@@ -392,7 +398,8 @@
           "result_artifact": {
             "type": "physical",
             "reasoning": "Reflection in pupil appears to come from multiple sources or has unnatural patterns. Real eyes reflect light from a single source, creating a single point reflection.",
-            "location": "pupil"
+            "location": "pupil",
+            "manual_review": "invalid, looks like two windows"
           },
           "matched_gt_artifact": null,
           "cosine_score": 0.0
@@ -401,7 +408,8 @@
           "result_artifact": {
             "type": "semantic",
             "reasoning": "Conjunctiva (white part of eye) has uniform red color without visible blood vessel network. Real conjunctiva displays a fine, irregular network of blood vessels.",
-            "location": "lower eyelid conjunctiva"
+            "location": "lower eyelid conjunctiva",
+            "manual_review": "valid"
           },
           "matched_gt_artifact": null,
           "cosine_score": 0.0
@@ -410,7 +418,8 @@
           "result_artifact": {
             "type": "stylistic",
             "reasoning": "Skin texture around eye is overly smooth with minimal pore variation, lacking natural skin details (e.g., pores, fine lines).",
-            "location": "surrounding skin (upper and lower eyelid areas)"
+            "location": "surrounding skin (upper and lower eyelid areas)",
+            "manual_review": "invalid"
           },
           "matched_gt_artifact": null,
           "cosine_score": 0.0
@@ -755,7 +764,8 @@
           "result_artifact": {
             "type": "structural",
             "reasoning": "The hand holding the pizza slice has fingers with unnatural proportions (e.g., too thin, incorrect joint angles) and improper alignment with the pizza slice.",
-            "location": "Left hand holding the pizza slice near the mouth"
+            "location": "Left hand holding the pizza slice near the mouth",
+            "manual_review": "invalid"
           },
           "matched_gt_artifact": {
             "type": "stylistic",
@@ -961,7 +971,8 @@
           "result_artifact": {
             "type": "physical",
             "reasoning": "Shadow on right foot (viewer's left) is positioned to the left, while light source (top left) should cast shadow to the right, violating light/shadow physics.",
-            "location": "Right foot (left side of image)"
+            "location": "Right foot (left side of image)",
+            "manual_review": "valid"
           },
           "matched_gt_artifact": null,
           "cosine_score": 0.0
@@ -1083,7 +1094,8 @@
           "result_artifact": {
             "type": "structural",
             "reasoning": "Man's left hand (viewer's perspective) on bed has unnatural thumb position: the thumb appears to be floating or not properly attached to the fingers, which is a common AI-generated artifact.",
-            "location": "Left hand on bed"
+            "location": "Left hand on bed",
+            "manual_review": "invalid"
           },
           "matched_gt_artifact": null,
           "cosine_score": 0.0
@@ -1281,7 +1293,8 @@
           "result_artifact": {
             "type": "semantic",
             "reasoning": "Woman's face has overly smooth skin with no visible pores or wrinkles, which is implausible for a human face. Natural human skin exhibits fine details like pores, fine lines, and subtle texture variations which are absent here.",
-            "location": "[0, 100, 300, 600]"
+            "location": "[0, 100, 300, 600]",
+            "manual_review": "valid"
           },
           "matched_gt_artifact": {
             "type": "structural",
@@ -1316,7 +1329,8 @@
           "result_artifact": {
             "type": "semantic",
             "reasoning": "Right child's face has eyes that appear overly uniform and lack realistic detail. Human eyes typically have nuanced textures, subtle reflections, and varied pupil shapes which are missing here.",
-            "location": "[600, 300, 900, 650]"
+            "location": "[600, 300, 900, 650]",
+            "manual_review": "valid"
           },
           "matched_gt_artifact": {
             "type": "stylistic",
@@ -1349,7 +1363,8 @@
           "result_artifact": {
             "type": "physical",
             "reasoning": "The wristwatch is positioned on the patient's forehead, which is an impossible placement for a wristwatch (designed for wrist, not head), violating laws of physics regarding intended use and physical interaction",
-            "location": "patient's forehead"
+            "location": "patient's forehead",
+            "manual_review": "invalid"
           },
           "matched_gt_artifact": {
             "type": "semantic",
@@ -1472,7 +1487,8 @@
           "result_artifact": {
             "type": "semantic",
             "reasoning": "Left boxer's red gloves show incorrect branding: 'EAST' instead of 'Everlast' (missing letters).",
-            "location": "Left boxer's red gloves, both hands"
+            "location": "Left boxer's red gloves, both hands",
+            "manual_review": "invalid, it does say everlast"
           },
           "matched_gt_artifact": null,
           "cosine_score": 0.0
@@ -2124,7 +2140,8 @@
           "result_artifact": {
             "type": "structural",
             "reasoning": "The man's backpack strap appears inconsistently attached, with unnatural alignment on the shoulder.",
-            "location": "shoulder"
+            "location": "shoulder",
+            "manual_review": "uncertain"
           },
           "matched_gt_artifact": {
             "type": "semantic",
