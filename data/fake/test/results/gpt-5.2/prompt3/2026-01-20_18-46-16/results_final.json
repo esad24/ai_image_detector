@@ -20,7 +20,8 @@
         {
           "type": "semantic",
           "reasoning": "Depicts a highly implausible public scenario (two heads of state kissing) staged directly in front of the White House; content reads as a fabricated/composite political image rather than a documentary photo.",
-          "location": "center foreground (two men kissing), with the White House in the background"
+          "location": "center foreground (two men kissing), with the White House in the background",
+          "manual_review": "valid"
         },
         {
           "type": "structural",
@@ -32,19 +33,19 @@
           "type": "structural",
           "reasoning": "Hands/fingers appear anatomically inconsistent: finger contours look fused and the handshake grip is ambiguous, with unnatural knuckle/finger separations.",
           "location": "lower center foreground (interlocked hands)",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         },
         {
           "type": "stylistic",
           "reasoning": "Lighting and sharpness feel overly uniform between subjects and background; edges around hair and suit shoulders look slightly cutout/too clean for the depth and atmospheric conditions, suggesting compositing or generation.",
           "location": "around the left subject’s hairline and both subjects’ shoulder outlines against the White House/sky (upper-left foreground and upper-right foreground)",
-          "manual_review": "partially valid"
+          "manual_review": "uncertain"
         },
         {
           "type": "semantic",
           "reasoning": "Background architecture reads like the White House but several fine details (window/railing symmetry and ornamental elements) appear subtly off and simplified, consistent with AI approximations of iconic buildings.",
           "location": "mid-to-upper background (White House facade, especially central balcony/railings and window rows)",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         }
       ]
     },
@@ -56,12 +57,13 @@
           "type": "stylistic",
           "reasoning": "Subjects appear cut out and composited onto the background; edges look overly clean with slight haloing and different sharpness compared to the landscape.",
           "location": "Around the family’s silhouettes (woman’s hair/shoulders, man’s shoulders, child’s outline) in the central foreground",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         },
         {
           "type": "semantic",
           "reasoning": "Lighting on the people (soft, studio-like frontal illumination) does not match the background’s directional, low-angle mountain sunlight; shadows and highlights feel inconsistent with the scene.",
-          "location": "Faces and torsos of all three people in the central foreground compared to sunlit hills on right side background"
+          "location": "Faces and torsos of all three people in the central foreground compared to sunlit hills on right side background",
+          "manual_review": "valid"
         },
         {
           "type": "physical",
@@ -72,23 +74,26 @@
         {
           "type": "structural",
           "reasoning": "Child’s legs/feet placement looks anatomically inconsistent with stance; one foot appears oddly shaped/flattened and the pose reads unstable for the given support.",
-          "location": "Lower center foreground: child’s right leg and both feet"
+          "location": "Lower center foreground: child’s right leg and both feet",
+          "manual_review": "valid"
         },
         {
           "type": "structural",
           "reasoning": "Hands appear unnaturally formed/merged at the grip point; finger definition is unclear and the grasp looks ambiguous.",
-          "location": "Center-lower foreground: woman’s hands holding the child’s hand"
+          "location": "Center-lower foreground: woman’s hands holding the child’s hand",
+          "manual_review": "valid"
         },
         {
           "type": "stylistic",
           "reasoning": "Depth of field and detail rendering mismatch: background looks like a separate, slightly blurred scenic plate while the subjects are crisp with portrait-style clarity.",
           "location": "Overall image—sharpness contrast between central foreground subjects and distant mountains/valley background",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         },
         {
           "type": "stylistic",
           "reasoning": "Skin texture and facial details look overly smooth and uniform, consistent with generative/retouched rendering rather than natural photographic microtexture.",
-          "location": "Faces of the adults and child in the central foreground"
+          "location": "Faces of the adults and child in the central foreground",
+          "manual_review": "invalid"
         }
       ]
     },
@@ -99,18 +104,20 @@
         {
           "type": "semantic",
           "reasoning": "Group is posing for cheerful selfies while standing at an open grave in a cemetery next to a fresh dirt pile and funeral flowers—contextually implausible behavior for a funeral scene.",
-          "location": "Foreground center/bottom (open grave), left foreground (dirt mound and flowers), entire group center/right"
+          "location": "Foreground center/bottom (open grave), left foreground (dirt mound and flowers), entire group center/right",
+          "manual_review": "valid"
         },
         {
           "type": "structural",
           "reasoning": "Champagne spray appears as an unnaturally uniform vertical dotted stream with inconsistent droplet shapes and spacing, lacking realistic dispersion and motion blur.",
           "location": "Center foreground from bottle down into the grave",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         },
         {
           "type": "semantic",
           "reasoning": "Several champagne flutes appear oddly inconsistent in shape and transparency; some rims/edges look uneven as if partially melted or poorly defined.",
-          "location": "Hands of people across the mid-right and right side (multiple glasses)"
+          "location": "Hands of people across the mid-right and right side (multiple glasses)",
+          "manual_review": "invalid"
         },
         {
           "type": "structural",
@@ -133,13 +140,14 @@
         {
           "type": "semantic",
           "reasoning": "A full-sized alligator/crocodile is improbably present on a busy city sidewalk with no visible containment, handler equipment, or bystander reaction consistent with such danger.",
-          "location": "bottom center foreground on the sidewalk"
+          "location": "bottom center foreground on the sidewalk",
+          "manual_review": "valid"
         },
         {
           "type": "semantic",
           "reasoning": "Bystanders appear oddly unconcerned/posed despite close proximity to a large dangerous animal; their attention is not clearly focused on it.",
           "location": "midground center-left group of people",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         },
         {
           "type": "structural",
@@ -151,19 +159,19 @@
           "type": "structural",
           "reasoning": "Fine details on the animal (scales/teeth/ridges) look overly uniform and sharpened compared to the camera’s depth-of-field and the softer rendering of surrounding street textures.",
           "location": "bottom center foreground on the alligator’s head and back",
-          "manual_review": "valid, but is more of a stylistic artifact"
+          "manual_review": "new artifact, but is more of a stylistic artifact"
         },
         {
           "type": "structural",
           "reasoning": "Edge blending around the man’s shoes and the animal’s body is slightly ambiguous, with unclear occlusion where the shoe should block parts of the animal or cast a crisp overlapping shadow.",
           "location": "bottom right foreground at the man’s shoes and the alligator’s tail/side",
-          "manual_review": "invalid: looks normal"
+          "manual_review": "invalid"
         },
         {
           "type": "semantic",
           "reasoning": "The scene reads like a staged juxtaposition (street crowd + large reptile) without any visible cues of an event, emergency response, or safety measures, making the overall situation implausible.",
           "location": "overall image context",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         }
       ]
     },
@@ -174,17 +182,20 @@
         {
           "type": "semantic",
           "reasoning": "Implausible scale/interaction: an ant is depicted at a size comparable to the person’s face, perched on the nose with no realistic context (would imply an ant many centimeters long).",
-          "location": "Lower-left foreground ant and its contact point on the nose (center-right)."
+          "location": "Lower-left foreground ant and its contact point on the nose (center-right).",
+          "manual_review": "valid"
         },
         {
           "type": "structural",
           "reasoning": "Appendage geometry issues: some legs appear to merge into each other or into the background, with unclear joints/segments and inconsistent thickness.",
-          "location": "Ant legs across the lower center and lower-right (near the person’s upper lip and chin area)."
+          "location": "Ant legs across the lower center and lower-right (near the person’s upper lip and chin area).",
+          "manual_review": "new artifact"
         },
         {
           "type": "structural",
           "reasoning": "Antenna segmentation and alignment look irregular: bead-like segments vary inconsistently and the antenna seems to kink unnaturally near the face contact.",
-          "location": "Ant antenna touching the nose tip (center) and the long antenna arcing into the upper-left quadrant."
+          "location": "Ant antenna touching the nose tip (center) and the long antenna arcing into the upper-left quadrant.",
+          "manual_review": "valid"
         },
         {
           "type": "structural",
@@ -196,7 +207,7 @@
           "type": "stylistic",
           "reasoning": "Hyperreal/macro aesthetic with uniform cinematic bokeh and overly clean micro-detail inconsistent with a single plausible camera setup for both a human face and an extreme macro insect at this scale.",
           "location": "Global image, especially the shallow depth-of-field around both eyes (upper-right) and the ant head (lower-left).",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         }
       ]
     },
@@ -266,23 +277,26 @@
         {
           "type": "structural",
           "reasoning": "Hand anatomy appears malformed: the foreground clasped hands lack clear separation of fingers and show an unnatural merged/rounded shape inconsistent with a typical handshake.",
-          "location": "bottom center (hands in the foreground)"
+          "location": "bottom center (hands in the foreground)",
+          "manual_review": "valid"
         },
         {
           "type": "structural",
           "reasoning": "The person in the back has an unusually small/flattened lower face and neck relative to head size, suggesting compositing/generation distortion.",
-          "location": "center background (face between the two central men)"
+          "location": "center background (face between the two central men)",
+          "manual_review": "invalid"
         },
         {
           "type": "semantic",
           "reasoning": "Repeated near-identical facial features/age/hair styling across multiple individuals suggests identity cloning rather than a natural group photo.",
           "location": "across all five faces, especially the two central figures and the far-right figure",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         },
         {
           "type": "stylistic",
           "reasoning": "Lighting and skin rendering look overly uniform and airbrushed (waxy highlights, minimal skin micro-texture) compared to the fabric detail, a common generative look.",
-          "location": "faces throughout the image"
+          "location": "faces throughout the image",
+          "manual_review": "valid"
         },
         {
           "type": "structural",
@@ -294,7 +308,7 @@
           "type": "stylistic",
           "reasoning": "Background is unnaturally clean and featureless with abrupt falloff into black, giving a cutout/studio-composite feel rather than a realistic room depth.",
           "location": "upper half/background behind the group",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         }
       ]
     },
@@ -306,13 +320,13 @@
           "type": "structural",
           "reasoning": "The girl’s hand/arm on the viewer-left side shows deformed fingers and an unnatural, fused look around the small object she’s holding; finger count/shape appears inconsistent.",
           "location": "Left child’s hand (mid-left of image, near her torso)",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         },
         {
           "type": "structural",
           "reasoning": "The adult man’s hand supporting the girl’s legs looks anatomically off (irregular thumb/finger shapes and unnatural grip contour).",
           "location": "Man’s right hand under the girl’s legs (lower-left center)",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         },
         {
           "type": "structural",
@@ -330,12 +344,13 @@
           "type": "stylistic",
           "reasoning": "Skin appears overly smooth and uniformly lit with a ‘plastic’ retouched look, especially on adult faces, inconsistent with natural portrait texture.",
           "location": "Faces of the man and woman (upper center)",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         },
         {
           "type": "stylistic",
           "reasoning": "Background architectural elements (window frames/panels) look overly clean and slightly inconsistent in perspective and detail, typical of generative smoothing.",
-          "location": "Window/frame area behind the family (upper half background)"
+          "location": "Window/frame area behind the family (upper half background)",
+          "manual_review": "valid"
         }
       ]
     },
@@ -364,7 +379,8 @@
         {
           "type": "structural",
           "reasoning": "Tablecloth pattern shows warping/aliasing and inconsistent plaid geometry, especially where it folds and meets the table edge.",
-          "location": "Bottom center, plaid tablecloth on the table"
+          "location": "Bottom center, plaid tablecloth on the table",
+          "manual_review": "invalid"
         },
         {
           "type": "stylistic",
@@ -381,35 +397,38 @@
         {
           "type": "structural",
           "reasoning": "Left woman's hand shows deformed/merged fingers and unclear knuckle structure while holding the strap/cup area.",
-          "location": "left side, mid-lower area near the brunette woman's hand/forearm"
+          "location": "left side, mid-lower area near the brunette woman's hand/forearm",
+          "manual_review": "valid"
         },
         {
           "type": "structural",
           "reasoning": "Object being held (appears like a cup/strap) has ambiguous geometry and blending into the hand and clothing edges.",
           "location": "left-center, between the left woman and the man, near the hand",
-          "manual_review": "valid and more detailed explanation"
+          "manual_review": "valid and new artifact"
         },
         {
           "type": "structural",
           "reasoning": "Right woman's hand on the front woman's shoulder has unnatural finger shape/spacing and inconsistent joint definition; the grip looks partially fused with the sleeve/shoulder.",
-          "location": "right-center, over the front woman's right shoulder"
+          "location": "right-center, over the front woman's right shoulder",
+          "manual_review": "valid"
         },
         {
           "type": "structural",
           "reasoning": "Watch/bracelet area has warped details and imperfect circularity, with smeared texture suggesting generation artifacts.",
           "location": "bottom-right, on the right woman's wrist",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         },
         {
           "type": "structural",
           "reasoning": "Necklace/pendant appears inconsistently rendered with a faint/blurred chain and oddly floating highlight.",
-          "location": "upper-right, on the right woman's neck/chest"
+          "location": "upper-right, on the right woman's neck/chest",
+          "manual_review": "uncertain"
         },
         {
           "type": "stylistic",
           "reasoning": "Faces exhibit overly smooth, uniform skin texture with sharpened eyes/teeth compared to the rest of the image, a common AI portrait look.",
           "location": "all faces, especially center-front woman and man",
-          "manual_review": "partially valid, skin and sharpness looks normal, but eyes and teeth are deformed"
+          "manual_review": "partially valid: skin and sharpness looks normal, but eyes and teeth are deformed"
         },
         {
           "type": "stylistic",
@@ -433,7 +452,7 @@
           "type": "structural",
           "reasoning": "Tennis racket strings show inconsistent/warped grid spacing and moiré-like irregularity rather than a clean, uniform string bed.",
           "location": "upper-right quadrant, inside the racket head behind the subject's head",
-          "manual_review": "invalid: looks normal"
+          "manual_review": "invalid"
         },
         {
           "type": "structural",
@@ -444,7 +463,8 @@
         {
           "type": "stylistic",
           "reasoning": "Skin texture appears overly uniform and 'plastic' with exaggerated micro-contrast and sharpening, especially on forehead/cheek, resembling synthetic enhancement.",
-          "location": "center, across forehead, nose bridge, and right cheek (viewer’s left/right depending on face)"
+          "location": "center, across forehead, nose bridge, and right cheek (viewer’s left/right depending on face)",
+          "manual_review": "valid"
         }
       ]
     },
@@ -456,7 +476,7 @@
           "type": "semantic",
           "reasoning": "Anachronistic object: a modern smartphone with a bright screen is being used at a historical-style podium speech setting (mid-20th-century attire and scene).",
           "location": "lower-right quadrant, in the speaker's hands",
-          "manual_review": "valid: artifact was included in gt but did not match"
+          "manual_review": "valid"
         },
         {
           "type": "structural",
@@ -468,7 +488,7 @@
           "type": "structural",
           "reasoning": "Microphone assembly appears inconsistent: the microphone head and mount/arm connections look slightly misaligned and plasticky, with unclear mechanical joints.",
           "location": "right side, microphone near the speaker's face",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         },
         {
           "type": "stylistic",
@@ -486,7 +506,7 @@
           "type": "semantic",
           "reasoning": "Text rendering on the phone screen appears AI-like: dense paragraphs with unnatural spacing/line consistency and unclear legibility typical of generated text blocks.",
           "location": "lower-right quadrant, phone screen",
-          "manual_review": "valid: text looks disfigured"
+          "manual_review": "new artifact"
         }
       ]
     },
@@ -498,13 +518,13 @@
           "type": "structural",
           "reasoning": "Right hand/fingers gripping the glass show irregular anatomy: fingers blend together with ambiguous knuckle/joint definition and slightly mismatched proportions against the rim.",
           "location": "Lower center, on the hand holding the glass",
-          "manual_review": "missmatch: anatomy looks correct, but skin looks unnatural"
+          "manual_review": "invalid"
         },
         {
           "type": "structural",
           "reasoning": "Tattoo on the forearm appears smeared/ill-defined with uncertain linework and shape coherence, typical of generative texture artifacts rather than crisp ink edges.",
           "location": "Lower right, on the visible forearm near the wrist",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         },
         {
           "type": "structural",
@@ -516,7 +536,7 @@
           "type": "semantic",
           "reasoning": "Drink garnish looks physically ambiguous: the red element reads partly like a twisted peel but also like an unrealistic ribbon shape, with unclear attachment/placement relative to the ice and rim.",
           "location": "Lower center, inside the glass near the rim",
-          "manual_review": "valid: artifact was included in gt but did not match"
+          "manual_review": "valid"
         },
         {
           "type": "stylistic",
@@ -543,28 +563,32 @@
         {
           "type": "semantic",
           "reasoning": "Multiple eating utensils (forks/spoons) are being used/placed as if they were surgical instruments, which is functionally implausible in an operating room.",
-          "location": "Operating field center-right (forks held over incision), and draped patient area lower-center (spoon and fork on drape), plus instrument table left-lower quadrant (mix of cutlery)."
+          "location": "Operating field center-right (forks held over incision), and draped patient area lower-center (spoon and fork on drape), plus instrument table left-lower quadrant (mix of cutlery).",
+          "manual_review": "valid"
         },
         {
           "type": "structural",
           "reasoning": "Utensil geometry appears inconsistent with real surgical tools: fork tines and spoon bowls show slightly malformed/soft edges and odd specular reflections typical of generative artifacts.",
           "location": "Center-right (forks near incision) and lower-center (spoon on drape).",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         },
         {
           "type": "semantic",
           "reasoning": "A large kitchen-style knife appears placed on the sterile drape near the operative field, which is implausible for surgery and sterile practice.",
-          "location": "Lower-center on the blue drape (dark-handled knife)."
+          "location": "Lower-center on the blue drape (dark-handled knife).",
+          "manual_review": "valid"
         },
         {
           "type": "structural",
           "reasoning": "Hands/instrument interactions look off: the right-side operator appears to grip/coordinate two utensils in a way that doesn’t match realistic surgical ergonomics; contact points between utensils and the incision area are visually ambiguous.",
-          "location": "Right side, around the operator’s hands and the incision center."
+          "location": "Right side, around the operator’s hands and the incision center.",
+          "manual_review": "valid"
         },
         {
           "type": "stylistic",
           "reasoning": "Lighting and texture around the incision area have an over-smooth, slightly airbrushed look with a blown-out hotspot that doesn’t integrate cleanly with surrounding fabric folds.",
-          "location": "Center of image at the illuminated surgical opening and adjacent drape."
+          "location": "Center of image at the illuminated surgical opening and adjacent drape.",
+          "manual_review": "uncertain"
         }
       ]
     },
@@ -580,18 +604,20 @@
         {
           "type": "structural",
           "reasoning": "Hands/fingers show malformed geometry and inconsistent digit shapes (some fingers appear fused/oddly bent) on the man seated at left.",
-          "location": "Lower-left quadrant, man’s hands resting near his lap"
+          "location": "Lower-left quadrant, man’s hands resting near his lap",
+          "manual_review": "valid"
         },
         {
           "type": "structural",
           "reasoning": "Jaw/neck transition and ear contour look smeared and anatomically inconsistent, with overly smooth blending typical of generative artifacts.",
-          "location": "Left subject’s head/neck/ear area (left-center)"
+          "location": "Left subject’s head/neck/ear area (left-center)",
+          "manual_review": "new artifact"
         },
         {
           "type": "structural",
           "reasoning": "The woman’s hand/jewelry area has irregular finger shapes and unclear ring/knuckle definition.",
           "location": "Lower-right quadrant, woman’s hands in her lap",
-          "manual_review": "valid, but missmatch with wrong subjects artifact, added new artifact in GT"
+          "manual_review": "new artifact"
         },
         {
           "type": "structural",
@@ -614,7 +640,8 @@
         {
           "type": "stylistic",
           "reasoning": "Depth-of-field and surface textures are unnaturally uniform and waxy (especially skin and fabric), with a ‘painterly’ smoothness inconsistent with a real photo.",
-          "location": "Across the entire image, most noticeable on both subjects’ faces and clothing"
+          "location": "Across the entire image, most noticeable on both subjects’ faces and clothing",
+          "manual_review": "valid"
         }
       ]
     },
@@ -631,13 +658,13 @@
           "type": "structural",
           "reasoning": "Repeated/duplicated-looking facial/head shapes with smeared features and inconsistent detail compared to bodies (typical generative face degradation in crowds).",
           "location": "mid-background group around the center-left to center (people behind the central figure), and right-background near the white-haired person",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         },
         {
           "type": "structural",
           "reasoning": "Hand/arm anatomy appears fused/ambiguous with unclear fingers and unnatural overlaps where people are interacting around the coffin area.",
           "location": "center-left midground near the blonde person leaning forward; center midground around the coffin edge",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         },
         {
           "type": "semantic",
@@ -655,17 +682,19 @@
           "type": "structural",
           "reasoning": "Clothing/strap rendering has irregular continuity: thin straps and ties blend into skin or terminate oddly (especially around backs and hips).",
           "location": "left foreground (red straps/ties), center foreground (back straps), right midground (swimsuit straps)",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         },
         {
           "type": "stylistic",
           "reasoning": "Uniform 'film grain/scratch' overlay and overly even, stylized color grading that reads as applied texture rather than naturally captured noise.",
-          "location": "across the entire image, most visible in the sky and flat-toned areas"
+          "location": "across the entire image, most visible in the sky and flat-toned areas",
+          "manual_review": "uncertain"
         },
         {
           "type": "semantic",
           "reasoning": "Background crowd exhibits inconsistent scale and posture relationships (some torsos/heads appear mismatched in proportion relative to nearby bodies and the coffin).",
-          "location": "mid-to-far background, especially center to center-right behind the coffin"
+          "location": "mid-to-far background, especially center to center-right behind the coffin",
+          "manual_review": "uncertain"
         }
       ]
     },
@@ -695,7 +724,7 @@
           "type": "stylistic",
           "reasoning": "Overall scene has a polished, studio-like look with unusually even skin texture and high-frequency detail that feels synthetic (AI-like denoising/sharpening).",
           "location": "Across both faces and clothing, especially mid-right (right person’s face) and mid-left (left person’s face).",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         },
         {
           "type": "semantic",
@@ -736,7 +765,8 @@
         {
           "type": "stylistic",
           "reasoning": "Overall lighting and skin texture look overly smooth and uniformly cinematic, with a slightly plastic sheen and reduced micro-detail typical of generative imagery.",
-          "location": "Faces and exposed skin areas across all subjects, most noticeable on the patient and right woman"
+          "location": "Faces and exposed skin areas across all subjects, most noticeable on the patient and right woman",
+          "manual_review": "uncertain"
         }
       ]
     },
@@ -747,13 +777,14 @@
         {
           "type": "structural",
           "reasoning": "The bow/hand interaction is anatomically inconsistent: the right hand appears to have muddled finger separations and an unclear grip on the bow frog, with finger shapes blending into each other.",
-          "location": "Center-left, around the musician’s right hand at the bottom end of the bow (near the frog)"
+          "location": "Center-left, around the musician’s right hand at the bottom end of the bow (near the frog)",
+          "manual_review": "valid"
         },
         {
           "type": "structural",
           "reasoning": "Violin geometry/details look off: the bridge/f-hole/string region appears simplified and slightly inconsistent, with strings not clearly resolving to the tailpiece/bridge with realistic crispness.",
           "location": "Center, on the violin body under the bow hair",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         },
         {
           "type": "stylistic",
@@ -782,13 +813,13 @@
           "type": "structural",
           "reasoning": "Teeth appear overly uniform and smooth with slightly blended edges typical of generative rendering rather than natural tooth variation.",
           "location": "All three visible smiles (left woman, right boy, lower-center child)",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         },
         {
           "type": "structural",
           "reasoning": "Hair/hat boundary looks slightly smeared and inconsistent, with curls blending into the hat knit texture.",
           "location": "Left side of image: woman’s hairline around the beanie edge",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         },
         {
           "type": "structural",
@@ -799,7 +830,8 @@
         {
           "type": "structural",
           "reasoning": "Jacket zipper/fastener details look soft and partially fused, with ambiguous geometry where the zipper meets the collar.",
-          "location": "Right side: boy’s jacket front near the zipper and collar"
+          "location": "Right side: boy’s jacket front near the zipper and collar",
+          "manual_review": "invalid"
         },
         {
           "type": "stylistic",
@@ -810,7 +842,8 @@
         {
           "type": "semantic",
           "reasoning": "Background landmark appears like a well-known onion-dome church, but architectural details are incoherent: window/trim alignments and ornamentation don’t resolve cleanly when viewed closely.",
-          "location": "Upper-right background: domes and facade behind the man’s head and the boy’s hat"
+          "location": "Upper-right background: domes and facade behind the man’s head and the boy’s hat",
+          "manual_review": "valid"
         }
       ]
     },
@@ -821,7 +854,8 @@
         {
           "type": "semantic",
           "reasoning": "Implausible action/scene: a clinician is pressing a wristwatch against the patient's forehead as if it were a medical instrument; this is contextually inconsistent with a clinical exam.",
-          "location": "upper-right quadrant, doctor’s hand holding a metal wristwatch against the woman’s forehead"
+          "location": "upper-right quadrant, doctor’s hand holding a metal wristwatch against the woman’s forehead",
+          "manual_review": "valid"
         },
         {
           "type": "structural",
@@ -855,24 +889,26 @@
         {
           "type": "stylistic",
           "reasoning": "Skin has a uniform, waxy/plastic smoothness with an airbrushed look and minimal natural pore variation.",
-          "location": "Across the cheeks, nose bridge, and forehead (center-left to upper-right)"
+          "location": "Across the cheeks, nose bridge, and forehead (center-left to upper-right)",
+          "manual_review": "valid"
         },
         {
           "type": "structural",
           "reasoning": "Eye anatomy appears doll-like: iris/limbal ring looks overly crisp and saturated with an unnatural, glassy gradient.",
           "location": "Both irises (left eye mid-left; right eye mid-right)",
-          "manual_review": "valid, added glossy eyes artifact"
+          "manual_review": "valid and new artifact: overly glossy eyes"
         },
         {
           "type": "semantic",
           "reasoning": "Catchlights/reflections in the eyes look like a stylized scene rather than a coherent single light source, inconsistent between the two eyes.",
-          "location": "Within both pupils/irises (left eye mid-left; right eye mid-right)"
+          "location": "Within both pupils/irises (left eye mid-left; right eye mid-right)",
+          "manual_review": "uncertain"
         },
         {
           "type": "structural",
           "reasoning": "Eyelid/eyelash details are inconsistent: lashes appear painted-on/over-smoothed with irregular definition and blending into the lid.",
           "location": "Upper eyelids, especially left eye (mid-left) and right eye (mid-right)",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         },
         {
           "type": "structural",
@@ -883,7 +919,8 @@
         {
           "type": "semantic",
           "reasoning": "Overall facial proportions/read (very large eyes, porcelain skin) resembles a 3D-rendered doll more than a natural photo portrait.",
-          "location": "Entire face (full frame)"
+          "location": "Entire face (full frame)",
+          "manual_review": "partially valid: eye size looks normal"
         }
       ]
     },
@@ -894,13 +931,14 @@
         {
           "type": "semantic",
           "reasoning": "The right-side boxer’s face appears to depict a recognizable real public figure placed into a boxing scene, suggesting a composited/deepfake-style generation rather than a candid sports photo.",
-          "location": "right side, fighter’s head/face"
+          "location": "right side, fighter’s head/face",
+          "manual_review": "valid"
         },
         {
           "type": "structural",
           "reasoning": "The right-side boxer’s blue glove shows malformed/unclear branding; the text/logo looks garbled and not cleanly legible as a real glove print would be.",
           "location": "lower-right quadrant, blue glove",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         },
         {
           "type": "structural",
@@ -959,22 +997,26 @@
         {
           "type": "structural",
           "reasoning": "Hands show irregular finger structure/counting cues: inconsistent finger lengths and awkward digit separation typical of generation errors.",
-          "location": "Both hands, left and right sides of the subject (mid-frame, near shoulder height)"
+          "location": "Both hands, left and right sides of the subject (mid-frame, near shoulder height)",
+          "manual_review": "valid"
         },
         {
           "type": "structural",
           "reasoning": "Right hand has malformed thumb/index relationship and unnaturally bent/merged fingers, with ambiguous joint placement.",
-          "location": "Subject’s right hand (viewer’s left), mid-left of frame"
+          "location": "Subject’s right hand (viewer’s left), mid-left of frame",
+          "manual_review": "valid"
         },
         {
           "type": "structural",
           "reasoning": "Left hand shows extra/unclear finger segments and odd spacing between fingers, with poorly defined knuckles.",
-          "location": "Subject’s left hand (viewer’s right), mid-right of frame"
+          "location": "Subject’s left hand (viewer’s right), mid-right of frame",
+          "manual_review": "valid"
         },
         {
           "type": "semantic",
           "reasoning": "Background whiteboard writing appears like incoherent pseudo-text rather than legible handwriting.",
-          "location": "Whiteboard on the left side of the room (left background)"
+          "location": "Whiteboard on the left side of the room (left background)",
+          "manual_review": "valid"
         },
         {
           "type": "semantic",
@@ -985,7 +1027,8 @@
         {
           "type": "structural",
           "reasoning": "Some chair/desk geometry looks inconsistent: legs and supports do not align cleanly and edges blur/warp into each other.",
-          "location": "Right foreground/midground desks and chairs (lower-right quadrant)"
+          "location": "Right foreground/midground desks and chairs (lower-right quadrant)",
+          "manual_review": "valid"
         }
       ]
     },
@@ -1025,7 +1068,7 @@
           "type": "semantic",
           "reasoning": "Facial proportions have an uncanny, doll-like quality (overly large, glassy eyes with very smooth skin and minimal micro-texture), inconsistent with the rest of the scene’s realism.",
           "location": "girl in the foreground, right side (face/eyes)",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         },
         {
           "type": "stylistic",
@@ -1037,7 +1080,7 @@
           "type": "structural",
           "reasoning": "Background figures and objects show smeared/indistinct edges that don’t resolve into coherent details (especially the left-rear child and surrounding office items).",
           "location": "left side and rear background behind the glass (blurred boy and desk area)",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         }
       ]
     },
@@ -1095,7 +1138,7 @@
           "type": "semantic",
           "reasoning": "Background storefront signage contains garbled/implausible text (appears like nonsensical lettering rather than a readable real sign).",
           "location": "Upper center-left, large sign above the street",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         },
         {
           "type": "structural",
@@ -1107,13 +1150,13 @@
           "type": "structural",
           "reasoning": "Bus/vehicle details are incoherent (windows/edges and interior shapes blend unnaturally, lacking consistent structure).",
           "location": "Center-right background, behind pedestrians",
-          "manual_review": "valid, looks like a train"
+          "manual_review": "new artifact: looks like a train"
         },
         {
           "type": "stylistic",
           "reasoning": "Overall image exhibits heavy 'vintage film' patina (uniform dust/scratches and edge wear) that appears algorithmically overlaid rather than naturally varying with scene content.",
           "location": "Across entire frame, especially edges and corners",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         },
         {
           "type": "structural",
@@ -1131,13 +1174,13 @@
           "type": "structural",
           "reasoning": "Background passengers and objects lose coherent detail and form, with faces and bodies smearing into indistinct shapes inconsistent with depth-of-field alone.",
           "location": "mid-right and far-right background (behind the main subject) and mid-left background (behind the man)",
-          "manual_review": "valid, person on the left"
+          "manual_review": "new artifact: person on the left"
         },
         {
           "type": "structural",
           "reasoning": "Overhead hand straps show inconsistent geometry and attachment points; some appear warped or not clearly connected to the rail.",
           "location": "top center and top-right",
-          "manual_review": "invalid, hand straps are connected and consistent"
+          "manual_review": "invalid: hand straps are connected and consistent"
         },
         {
           "type": "semantic",
@@ -1148,17 +1191,20 @@
         {
           "type": "stylistic",
           "reasoning": "Skin appears unusually smooth with a slightly airbrushed, uniform texture while retaining sharp edges in places, a common generative look.",
-          "location": "center (woman’s face)"
+          "location": "center (woman’s face)",
+          "manual_review": "uncertain"
         },
         {
           "type": "stylistic",
           "reasoning": "Hair contains fine stray strands that blend into the background with unnatural wispy continuity and inconsistent strand definition.",
-          "location": "center (around the woman’s head, especially upper-left and upper-right hair edges)"
+          "location": "center (around the woman’s head, especially upper-left and upper-right hair edges)",
+          "manual_review": "uncertain"
         },
         {
           "type": "structural",
           "reasoning": "Clothing details (zippers/stitching) show minor incoherence and soft, non-functional-looking hardware shapes.",
-          "location": "lower center and lower-right (woman’s jacket front/zipper area)"
+          "location": "lower center and lower-right (woman’s jacket front/zipper area)",
+          "manual_review": "valid"
         }
       ]
     },
@@ -1174,12 +1220,14 @@
         {
           "type": "semantic",
           "reasoning": "Overhead signage contains garbled/illegible text and inconsistent typography that resembles pseudo-letters rather than readable words.",
-          "location": "top-right area on the hanging sign"
+          "location": "top-right area on the hanging sign",
+          "manual_review": "new artifact"
         },
         {
           "type": "structural",
           "reasoning": "Wall/poster clock has malformed/unclear numerals and face details; the design looks smeared and non-specific rather than a crisp clock print.",
-          "location": "upper-right corner (clock/poster)"
+          "location": "upper-right corner (clock/poster)",
+          "manual_review": "valid"
         }
       ]
     },
@@ -1190,7 +1238,8 @@
         {
           "type": "semantic",
           "reasoning": "Firefighter appears to be pouring from a red fuel can onto flames, which is functionally implausible for firefighting behavior (would intensify fire).",
-          "location": "Center-right foreground (firefighter holding red can and stream aimed at fire)"
+          "location": "Center-right foreground (firefighter holding red can and stream aimed at fire)",
+          "manual_review": "valid"
         },
         {
           "type": "structural",
@@ -1201,7 +1250,8 @@
         {
           "type": "semantic",
           "reasoning": "The container resembles a gasoline can rather than standard firefighting equipment (e.g., hose/nozzle/foam applicator), inconsistent with the surrounding scene (other firefighter holding a hose).",
-          "location": "Center-right foreground (red can in firefighter’s hands)"
+          "location": "Center-right foreground (red can in firefighter’s hands)",
+          "manual_review": "valid"
         },
         {
           "type": "structural",
@@ -1219,12 +1269,13 @@
           "type": "structural",
           "reasoning": "Background pedestrian’s legs/feet appear poorly formed and blurred with unclear shoe geometry, inconsistent with the rest of the scene’s sharpness.",
           "location": "left side, mid-ground sidewalk (woman in white top/blue shorts)",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         },
         {
           "type": "semantic",
           "reasoning": "Several storefront signs contain unreadable or nonsensical text-like shapes that resemble letters but don’t form coherent words.",
-          "location": "left side building facades and hanging signs; also right side signage in mid-ground"
+          "location": "left side building facades and hanging signs; also right side signage in mid-ground",
+          "manual_review": "new artifact"
         },
         {
           "type": "structural",
@@ -1248,18 +1299,19 @@
           "type": "structural",
           "reasoning": "Pizza slice edges and toppings appear smeared/warped, with cheese/pepperoni shapes lacking crisp boundaries typical of a real photo.",
           "location": "Lower center-right, in the slice held by the right woman (near her hands).",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         },
         {
           "type": "structural",
           "reasoning": "Fingers/hand anatomy looks slightly deformed: inconsistent finger lengths and an ambiguous separation between fingers as they grip the slice.",
-          "location": "Lower right-center, right woman’s hands holding the slice."
+          "location": "Lower right-center, right woman’s hands holding the slice.",
+          "manual_review": "valid"
         },
         {
           "type": "structural",
           "reasoning": "Pizza in the box has irregular, unnatural topping geometry and low-detail texture; some toppings look partially melted into the surface in a non-photographic way.",
           "location": "Lower left-center, pizza inside the open box on the left woman’s lap.",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         },
         {
           "type": "semantic",
@@ -1271,7 +1323,7 @@
           "type": "structural",
           "reasoning": "Bench/table edges show slight warping and inconsistent straight lines, typical of generative distortions in repeating man-made geometry.",
           "location": "Mid to lower background, wooden benches and table surfaces behind the subjects.",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         },
         {
           "type": "stylistic",
@@ -1288,18 +1340,20 @@
         {
           "type": "stylistic",
           "reasoning": "Skin appears unusually smooth and uniformly airbrushed with minimal natural pores/blemishes, resembling generative/retouched rendering rather than a typical photograph.",
-          "location": "Face (center), especially cheeks and forehead"
+          "location": "Face (center), especially cheeks and forehead",
+          "manual_review": "valid"
         },
         {
           "type": "structural",
           "reasoning": "Teeth show overly regular spacing/shape and a uniformly bright tone with limited natural micro-variation; edges look slightly too clean for a candid portrait.",
           "location": "Mouth/teeth (center-lower of face)",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         },
         {
           "type": "structural",
           "reasoning": "Iris/catchlight detail looks slightly synthetic: very crisp, centered highlights and uniform iris texture lacking subtle asymmetries typical in real eyes.",
-          "location": "Eyes/irises (upper-center of face)"
+          "location": "Eyes/irises (upper-center of face)",
+          "manual_review": "valid"
         },
         {
           "type": "structural",
