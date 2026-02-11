@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "model": "kimi-2.5",
+    "prompt_id": 3,
+    "reasoning": false
+  },
+  "image_count": 4,
+  "total_fakes": 0,
+  "total_real": 0,
+  "results": [
+    {
+      "filename": "2ddf7a07da956c375d9d512cf876bd871f5a3150db7b68b7ef25c1c91a694238_r4.jpeg",
+      "is_ai_generated": true,
+      "artifacts": [
+        {
+          "type": "structural",
+          "description": "Woman's left hand (holding the boy) exhibits thumb deformity - the thumb appears elongated, positioned unnaturally high on the hand, and lacks proper anatomical connection to the palm",
+          "location": "Woman's left hand at boy's thigh, coordinates approximately [0.620, 0.710]"
+        },
+        {
+          "type": "structural",
+          "description": "Boy's left hand (resting on woman's arm) shows finger fusion and incorrect digit count - fingers appear merged together with unnatural spacing and flat, paddle-like appearance lacking individual finger definition",
+          "location": "Boy's left hand on woman's right arm, coordinates approximately [0.630, 0.630]"
+        },
+        {
+          "type": "structural",
+          "description": "Interlocking hands between children show anatomical inconsistency - the girl's right hand gripping the boy's hand/foot exhibits incorrect wrist rotation and the extremity being held has ambiguous anatomy (hand appears foot-like with distorted proportions)",
+          "location": "Girl's right hand holding boy's left extremity, coordinates approximately [0.390, 0.890]"
+        },
+        {
+          "type": "structural",
+          "description": "Neck ring interior shows irregular texture pattern with smeared, non-uniform surface details that lack the mechanical precision expected of actual spacesuit hardware",
+          "location": "Blue interior collar of spacesuit, coordinates approximately [0.485, 0.380]"
+        }
+      ]
+    },
+    {
+      "filename": "2ed5f853e9c2b6a92bca20cfcf5a9fe85d353d5ece606d57dba8a024dd1887db.jpeg",
+      "ai_generated": true,
+      "artifacts": [
+        {
+          "type": "structural",
+          "description": "Background runner in blue shirt exhibits severe anatomical distortion with impossible body proportions, twisted torso, and malformed limbs",
+          "location": "far right background"
+        },
+        {
+          "type": "structural",
+          "description": "Background runner in black attire displays severely distorted legs with incorrect anatomical structure and impossible joint configuration",
+          "location": "background, right of center"
+        },
+        {
+          "type": "structural",
+          "description": "Background trees and vegetation display unnatural smeared texture with incorrect botanical structure and detail coherence",
+          "location": "left and right background periphery"
+        },
+        {
+          "type": "semantic",
+          "description": "Race bib on background runner contains garbled, illegible text/numbers inconsistent with functional race identification",
+          "location": "chest area of blue-shirted background figure, far right"
+        }
+      ]
+    },
+    {
+      "filename": "3fa232ceac1b8827f71f6d6c4c617dd7.jpeg",
+      "ai_generated": true,
+      "artifacts": [
+        {
+          "type": "structural",
+          "description": "Malformed pinky finger with abnormal thinness and unnatural curling/positioning",
+          "location": "Left hand (viewer's left), fifth digit"
+        },
+        {
+          "type": "structural",
+          "description": "Unnatural finger articulation and grip structure with incorrect joint positioning",
+          "location": "Right hand (viewer's right), fingers gripping toothbrush handle"
+        }
+      ]
+    },
+    {
+      "filename": "1c5a36da63d77c6a529d14f6ede897e28406569e3e471361f4282d10a1c7442b_r12.jpeg",
+      "ai_generated": true,
+      "artifacts": [
+        {
+          "type": "structural",
+          "description": "Stethoscope tubing shows improper structural rendering with unnatural thickness variations and suspicious connection points between rubber tubing and metal components",
+          "location": "Left side of image, stethoscope tubing over shoulder and upper chest area"
+        },
+        {
+          "type": "stylistic",
+          "description": "Skin exhibits unnaturally smooth, wax-like texture lacking natural pores, blemishes, and micro-texture variations typical of real human skin",
+          "location": "Facial region, particularly cheeks, forehead, and nose"
+        },
+        {
+          "type": "structural",
+          "description": "Shirt fabric displays artificial algorithmic pattern with unnatural geometric repetition and improper rendering of textile weave structure",
+          "location": "Shirt collar and visible portion of shirt beneath lab coat"
+        },
+        {
+          "type": "semantic",
+          "description": "Stethoscope positioning and drape violates natural physics, appearing to float rather than conform to body contours and gravity",
+          "location": "Neck and shoulder area where stethoscope rests"
+        }
+      ]
+    }
+  ]
+}

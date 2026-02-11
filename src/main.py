@@ -21,7 +21,7 @@ def main():
     writer = ResultWriter(
         image_folder=args.image_folder,
         model_name=args.model,
-        temp=model.temp,
+        #temp=model.temp,
         reasoning=model.reasoning,
         prompt_id=args.prompt_id,
         resume=args.resume
@@ -70,12 +70,12 @@ python3 main.py -i real_train -m qwen3-vl -p
 python3 main.py -i fake_test -m qwen3-vl -p 
 python3 main.py -i real_test -m qwen3-vl -p  
 
-llava
-python3 main.py -i fake_train -m llava -p 
-python3 main.py -i real_train -m llava -p 
+kimi-2.5
+python3 main.py -i fake_train -m kimi-2.5 -p 
+python3 main.py -i real_train -m kimi-2.5 -p 
 
-python3 main.py -i fake_test -m llava -p 
-python3 main.py -i real_test -m llava -p 
+python3 main.py -i fake_test -m kimi-2.5 -p 
+python3 main.py -i real_test -m kimi-2.5 -p 
 
 gemma3
 python3 main.py -i fake_train -m gemma3 -p 

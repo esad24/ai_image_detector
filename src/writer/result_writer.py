@@ -1,10 +1,11 @@
 import json
+import re
 import os
 from datetime import datetime
 
 class ResultWriter:
 
-    def __init__(self, image_folder, model_name, temp, reasoning, prompt_id, resume=False):
+    def __init__(self, image_folder, model_name, reasoning, prompt_id, resume=False):
         """
         resume: if True, try to resume the latest previous run for this folder/model/prompt_id
         """
@@ -46,7 +47,7 @@ class ResultWriter:
         self.meta = {
             "model": model_name,
             "prompt_id": prompt_id,
-            "temperature": temp,
+            #"temperature": temp,
             "reasoning": reasoning
         }
 
@@ -86,11 +87,26 @@ class ResultWriter:
         return set(r["filename"] for r in data.get("results", []))
 
     def write(self, image_path, result):
+        # --- Sicherstellen, dass result ein Dict ist ---
         if isinstance(result, str):
-            result = json.loads(result)
+            # Extrahiere nur den JSON-Teil zwischen { und }
+            match = re.search(r"\{.*\}", result, re.DOTALL)
+            if match:
+                try:
+                    result = json.loads(match.group(0))
+                except json.JSONDecodeError as e:
+                    print(f"JSON parse error for {image_path}: {e}")
+                    return
+            else:
+                print(f"No JSON found in result for {image_path}")
+                return
 
-        if isinstance(result, dict):
-            result = {"filename": os.path.basename(image_path), **result}
+        elif not isinstance(result, dict):
+            print(f"Invalid result type for {image_path}: {type(result)}")
+            return
+
+        # Füge Dateiname hinzu
+        result = {"filename": os.path.basename(image_path), **result}
 
         classification = result.get("classification")
         if classification == "fake":

@@ -6,8 +6,8 @@ def get_model(model_name: str):
         return OpenAIModel()
     if model_name == "qwen3-vl":
         return OllamaModel("qwen3-vl:8b")
-    if model_name == ("llava"):
-        return OllamaModel("llava:7b")
+    if model_name == ("kimi-2.5"):
+        return OllamaModel("kimi-2.5")
     if model_name== ("gemma3"):
         return OllamaModel("gemma3:4b")
 

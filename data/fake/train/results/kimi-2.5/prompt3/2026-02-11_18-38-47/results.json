@@ -1,0 +1,11 @@
+{
+  "meta": {
+    "model": "kimi-2.5",
+    "prompt_id": 3,
+    "reasoning": false
+  },
+  "image_count": 0,
+  "total_fakes": 0,
+  "total_real": 0,
+  "results": []
+}
