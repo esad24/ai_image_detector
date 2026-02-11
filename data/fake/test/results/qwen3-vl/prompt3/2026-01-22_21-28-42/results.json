@@ -15,14 +15,17 @@
         {
           "type": "stylistic",
           "reasoning": "Hair texture lacks natural variation, appears overly smooth. Location: Head and neck hair area.",
-          "location": "Head"
+          "location": "Head",
+          "manual_review": "valid"
         },
         {
           "type": "stylistic",
           "reasoning": "Skin texture appears too uniform with insufficient detail (missing natural pores and fine lines). Location: Face, neck.",
-          "location": "Face, neck"
+          "location": "Face, neck",
+          "manual_review": "valid"
         }
-      ]
+      ],
+      "manual_review": "wrong classification but valid artifacts"
     },
     {
       "filename": "7isuvh7isuvh7isu.jpeg",
@@ -32,7 +35,7 @@
           "type": "structural",
           "reasoning": "Hands are positioned in a way that is anatomically impossible. In a normal handshake, fingers should be interlaced with palms slightly facing, but here the hands are fused in a manner that does not match human anatomy (e.g., fingers too close, overlapping in a way that cannot occur in reality).",
           "location": "Center of the image, involving the handshake between the two individuals.",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         },
         {
           "type": "semantic",
@@ -46,7 +49,7 @@
       "filename": "1e4cc5c247a3bdf572d4969c07992b34.jpeg",
       "classification": "fake",
       "artifacts": [],
-      "manual_review": "no reviews"
+      "manual_review": "no artifacts"
     },
     {
       "filename": "h1gpeyh1gpeyh1gp.jpeg",
@@ -55,13 +58,14 @@
         {
           "type": "semantic",
           "reasoning": "Funeral setting (grave site, somber context) with celebratory actions (champagne, laughter, selfies) is semantically implausible as funerals are typically somber events.",
-          "location": "Entire image context (group at grave site)"
+          "location": "Entire image context (group at grave site)",
+          "manual_review": "valid"
         },
         {
           "type": "physical",
           "reasoning": "Champagne bottle's bubble stream is depicted as a uniform, straight vertical line, violating natural behavior of gas bubbles in liquid (which would rise organically and be less uniform).",
           "location": "Center of the image, near the champagne bottle held by the man in the middle",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         },
         {
           "type": "structural",
@@ -78,15 +82,17 @@
         {
           "type": "semantic",
           "reasoning": "An alligator is present in an urban environment (New York City sidewalk) which is semantically implausible as alligators do not inhabit city streets. The spatial location of the anomaly is the alligator positioned on the sidewalk in the lower center of the image.",
-          "location": "the alligator on the sidewalk (lower center of the image)"
+          "location": "the alligator on the sidewalk (lower center of the image)",
+          "manual_review": "valid"
         },
         {
           "type": "stylistic",
           "reasoning": "The alligator's skin texture appears overly smooth and uniform, lacking the detailed scale patterns and natural texture variation of a real alligator, a common stylistic artifact in AI-generated images. The spatial location of the anomaly is the alligator's body, particularly around the head and torso.",
-          "location": "the alligator's body (head and torso)"
+          "location": "the alligator's body (head and torso)",
+          "manual_review": "uncertain"
         }
       ],
-      "manual_review": "wrong classification, but right artifacts"
+      "manual_review": "wrong classification but valid artifacts"
     },
     {
       "filename": "86ae36214222e367f9bc162308095ada_r12.jpeg",
@@ -95,27 +101,32 @@
         {
           "type": "physical",
           "reasoning": "The ant is depicted as being several centimeters long, but real ants are only 1-10 mm in length, making the scale physically implausible.",
-          "location": "[0, 125, 600, 998]"
+          "location": "[0, 125, 600, 998]",
+          "manual_review": "valid"
         },
         {
           "type": "structural",
           "reasoning": "The ant's head and thorax are unnaturally large relative to the body, and the legs have incorrect jointing and proportions.",
-          "location": "[0, 125, 600, 998]"
+          "location": "[0, 125, 600, 998]",
+          "manual_review": "valid"
         },
         {
           "type": "semantic",
           "reasoning": "The scenario of a giant ant interacting with a human face is functionally implausible in reality.",
-          "location": "[0, 125, 600, 998]"
+          "location": "[0, 125, 600, 998]",
+          "manual_review": "valid"
         },
         {
           "type": "stylistic",
           "reasoning": "The ant's exoskeleton lacks the fine texture and fine hairs typical of real ants, appearing unnaturally smooth, and coloration is overly uniform.",
-          "location": "[0, 125, 600, 998]"
+          "location": "[0, 125, 600, 998]",
+          "manual_review": "uncertain"
         },
         {
           "type": "structural",
           "reasoning": "The ant's eye is depicted as a single large black spot, whereas real ants have compound eyes with multiple facets.",
-          "location": "[60, 600, 80, 700]"
+          "location": "[60, 600, 80, 700]",
+          "manual_review": "invalid"
         }
       ]
     },
@@ -156,7 +167,7 @@
           "type": "semantic",
           "reasoning": "Conjunctiva (white part of eye) has uniform red color without visible blood vessel network. Real conjunctiva displays a fine, irregular network of blood vessels.",
           "location": "lower eyelid conjunctiva",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         },
         {
           "type": "stylistic",
@@ -180,7 +191,8 @@
           "reasoning": "The image shows a realistic human figure in a natural setting. The skin texture is detailed and consistent with a photograph, and the lighting appears to be natural and consistent with outdoor conditions. The figure's posture and movement (e.g., the natural flow of the dress) are realistic, indicating a photo rather than a generated image.",
           "location": "entire image"
         }
-      ]
+      ],
+      "manual_review": "hallucination"
     },
     {
       "filename": "2ddf7a07da956c375d9d512cf876bd871f5a3150db7b68b7ef25c1c91a694238_r6.jpeg",
@@ -201,12 +213,14 @@
           "reasoning": "The article claims that 'refugees in the UK are growing by 6.8% per year', but this is not accurate. The actual growth rate is much lower. The article is wrong about the growth rate.",
           "location": "general"
         }
-      ]
+      ],
+      "manual_review": "hallucination"
     },
     {
       "filename": "fe7ovxfe7ovxfe7o.jpeg",
       "classification": "fake",
-      "artifacts": []
+      "artifacts": [],
+      "manual_review": "no artifacts"
     },
     {
       "filename": "2aa0e54b4dc251420a3679b501dc8a06.jpeg",
@@ -222,7 +236,8 @@
           "reasoning": "The object is a physical entity that can be touched or held, such as a stone or a rock. The text mentions \"rock\" and \"stone\" and describes its physical attributes like texture, weight, and temperature. The context is about a stone that is warm, has a rough surface, and is heavy. This is a physical artifact.",
           "location": "stone"
         }
-      ]
+      ],
+      "manual_review": "hallucination"
     },
     {
       "filename": "09edc782a2e242c0840d3b8a3960420d.jpeg",
@@ -231,17 +246,20 @@
         {
           "type": "structural",
           "reasoning": "The tennis racket's string grid has irregular spacing and missing strings, inconsistent with real tennis racket construction.",
-          "location": "String bed of the racket"
+          "location": "String bed of the racket",
+          "manual_review": "invalid"
         },
         {
           "type": "stylistic",
           "reasoning": "Hair texture appears overly smooth with uniform curls lacking natural depth, a common AI artifact in human hair.",
-          "location": "Hair, top and sides of head"
+          "location": "Hair, top and sides of head",
+          "manual_review": "uncertain"
         },
         {
           "type": "semantic",
           "reasoning": "Athletic shirt's mesh pattern is too regular, lacking organic imperfections typical of real athletic fabric.",
-          "location": "Outer dark shirt, chest/shoulders"
+          "location": "Outer dark shirt, chest/shoulders",
+          "manual_review": "invalid"
         }
       ]
     },
@@ -252,14 +270,16 @@
         {
           "type": "semantic",
           "reasoning": "Presence of a smartphone, a modern technological device, in the historical context of Malcolm X (1960s-1970s) is implausible as smartphones did not exist during his lifetime.",
-          "location": "smartphone in the hands of the figure"
+          "location": "smartphone in the hands of the figure",
+          "manual_review": "valid"
         }
       ]
     },
     {
       "filename": "3de04fb6e7a042632a00f765cdb60e39224156c3a9d7055951f5a0298feb2dba.jpeg",
       "classification": "fake",
-      "artifacts": []
+      "artifacts": [],
+      "manual_review": "no artifacts"
     },
     {
       "filename": "3b1558eefcb3008a00a5e863ce729092.jpeg",
@@ -285,7 +305,8 @@
         {
           "type": "semantic",
           "reasoning": "Use of eating utensils (forks, knives) as surgical instruments is implausible in a real surgical setting. Surgical procedures require specialized sterile instruments, not common household dining tools.",
-          "location": "Surgical field around the patient's body on the operating table"
+          "location": "Surgical field around the patient's body on the operating table",
+          "manual_review": "valid"
         }
       ]
     },
@@ -301,7 +322,8 @@
         {
           "type": "structural",
           "reasoning": "Hands exhibit unnatural finger proportions and positions, including misaligned joints and incorrect finger counts.",
-          "location": "Lower-left area (Obama's hands) and lower-right area (Kate Middleton's hands)"
+          "location": "Lower-left area (Obama's hands) and lower-right area (Kate Middleton's hands)",
+          "manual_review": "valid"
         }
       ]
     },
@@ -312,13 +334,14 @@
         {
           "type": "structural",
           "reasoning": "Left hand (viewer's right) has fingers with inconsistent proportions (e.g., index finger overly long, joints misaligned), a common AI artifact.",
-          "location": "Left hand (right side of image)"
+          "location": "Left hand (right side of image)",
+          "manual_review": "valid"
         },
         {
           "type": "physical",
           "reasoning": "Shadow on right foot (viewer's left) is positioned to the left, while light source (top left) should cast shadow to the right, violating light/shadow physics.",
           "location": "Right foot (left side of image)",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         }
       ]
     },
@@ -329,7 +352,8 @@
         {
           "type": "semantic",
           "reasoning": "Cemeteries are solemn sites for funerals and burials, not for public gatherings wearing swimwear. The presence of multiple individuals in swimwear (including one in a one-piece swimsuit with a floral pattern and another with a bikini top) in a cemetery setting is functionally implausible and contextually inconsistent with typical funeral or burial site norms.",
-          "location": "entire scene"
+          "location": "entire scene",
+          "manual_review": "valid"
         }
       ]
     },
@@ -340,17 +364,20 @@
         {
           "type": "semantic",
           "reasoning": "The scenario depicts two prominent political figures, Vladimir Putin and Volodymyr Zelenskyy, in a friendly interaction (clinking beer mugs) which contradicts their known public relationship of animosity. Such a meeting is highly implausible given their political histories.",
-          "location": "entire scene"
+          "location": "entire scene",
+          "manual_review": "valid"
         },
         {
           "type": "structural",
           "reasoning": "The right hand of the left person shows inconsistent anatomy: the fingers are not aligning properly with the mug, and the thumb position appears unnatural, suggesting AI-generated hand structure issues.",
-          "location": "left person's right hand"
+          "location": "left person's right hand",
+          "manual_review": "invalid"
         },
         {
           "type": "stylistic",
           "reasoning": "The facial features of the right person (Zelenskyy) exhibit subtle distortions in the beard texture and the alignment of the mustache, indicating potential AI-generated face artifacts.",
-          "location": "right person's face"
+          "location": "right person's face",
+          "manual_review": "invalid"
         }
       ]
     },
@@ -380,7 +407,8 @@
           "reasoning": "the document is physical, it has physical paper",
           "location": "page 1"
         }
-      ]
+      ],
+      "manual_review": "hallucination"
     },
     {
       "filename": "e566b28a9429f693defb306c191d05a6.jpeg",
@@ -389,27 +417,32 @@
         {
           "type": "semantic",
           "reasoning": "The child's left eye has an anatomically implausible iris, with a disproportionate pupil size and unnatural texture pattern, which violates the known physical principles of human eyes.",
-          "location": "child's left eye (viewer's left of child's face)"
+          "location": "child's left eye (viewer's left of child's face)",
+          "manual_review": "valid"
         },
         {
           "type": "stylistic",
           "reasoning": "The woman's knitted scarf exhibits a uniform, repetitive texture pattern that lacks the natural irregularities and organic variations typical of real-world knitted fabric.",
-          "location": "woman's scarf (left side of image, around neck)"
+          "location": "woman's scarf (left side of image, around neck)",
+          "manual_review": "uncertain"
         },
         {
           "type": "stylistic",
           "reasoning": "The child's jacket displays a smooth, digital texture with no subtle wrinkles, folds, or imperfections that would be expected from real fabric, indicating synthetic generation.",
-          "location": "child's jacket (bottom right corner of image)"
+          "location": "child's jacket (bottom right corner of image)",
+          "manual_review": "uncertain"
         },
         {
           "type": "structural",
           "reasoning": "The man's hairline shows a missing strand or inconsistent pattern, disrupting the natural hair structure with a noticeable discontinuity.",
-          "location": "man's hair (top center of image, near forehead and hairline)"
+          "location": "man's hair (top center of image, near forehead and hairline)",
+          "manual_review": "invalid"
         },
         {
           "type": "semantic",
           "reasoning": "The child's right eye (viewer's right) has a mismatched iris pattern with inconsistent texture, contradicting the natural variation in human eye patterns.",
-          "location": "child's right eye (viewer's right of child's face)"
+          "location": "child's right eye (viewer's right of child's face)",
+          "manual_review": "valid"
         }
       ]
     },
@@ -421,23 +454,25 @@
           "type": "semantic",
           "reasoning": "Woman's face has overly smooth skin with no visible pores or wrinkles, which is implausible for a human face. Natural human skin exhibits fine details like pores, fine lines, and subtle texture variations which are absent here.",
           "location": "[0, 100, 300, 600]",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         },
         {
           "type": "semantic",
           "reasoning": "Man's beard displays inconsistent texture, appearing too smooth and lacking natural hair strands. The beard should have individual strands and a more organic texture, which is missing here.",
-          "location": "[350, 40, 650, 400]"
+          "location": "[350, 40, 650, 400]",
+          "manual_review": "uncertain"
         },
         {
           "type": "semantic",
           "reasoning": "Middle child's face has a slightly off appearance of the mouth, with the teeth gap looking unnatural. Natural human mouths typically have a more balanced spacing and texture between teeth.",
-          "location": "[350, 450, 600, 850]"
+          "location": "[350, 450, 600, 850]",
+          "manual_review": "valid"
         },
         {
           "type": "semantic",
           "reasoning": "Right child's face has eyes that appear overly uniform and lack realistic detail. Human eyes typically have nuanced textures, subtle reflections, and varied pupil shapes which are missing here.",
           "location": "[600, 300, 900, 650]",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         }
       ]
     },
@@ -454,7 +489,8 @@
         {
           "type": "semantic",
           "reasoning": "Medical scenario of a doctor using a wristwatch on a patient's head is implausible as a standard medical procedure",
-          "location": "patient's forehead"
+          "location": "patient's forehead",
+          "manual_review": "valid"
         }
       ]
     },
@@ -487,7 +523,8 @@
           "reasoning": "The consistent use of ASCII characters to form the image, without any visible digital artifacts or irregularities, suggests that it was created intentionally as an ASCII art piece rather than a digital photograph or scanned image.",
           "location": "Entire image"
         }
-      ]
+      ],
+    "manual_review": "hallucination"
     },
     {
       "filename": "ozrpf8ozrpf8ozrp.jpeg",
@@ -502,17 +539,20 @@
         {
           "type": "semantic",
           "reasoning": "Right boxer's blue gloves show incorrect branding: 'JUST' instead of 'Everlast' (wrong letters).",
-          "location": "Right boxer's blue gloves, both hands"
+          "location": "Right boxer's blue gloves, both hands",
+          "manual_review": "invalid"
         },
         {
           "type": "physical",
           "reasoning": "Shadow direction inconsistent with lighting. If lights are above, shadows should be downward, but left boxer's shadow appears misplaced.",
-          "location": "Left boxer's body"
+          "location": "Left boxer's body",
+          "manual_review": "uncertain"
         },
         {
           "type": "stylistic",
           "reasoning": "Overall image too clean and sharp with no realistic texture or imperfections, typical of AI-generated images.",
-          "location": "entire image"
+          "location": "entire image",
+          "manual_review": "uncertain"
         }
       ]
     },
@@ -523,17 +563,20 @@
         {
           "type": "structural",
           "reasoning": "Fingers not correctly aligned with sandwich edges (e.g., index finger positioning or finger length inconsistent with anatomy), ",
-          "location": "hands"
+          "location": "hands",
+          "manual_review": "invalid"
         },
         {
           "type": "semantic",
           "reasoning": "Inconsistent hand positions with sandwich, e.g., fingers not wrapping around the sandwich properly",
-          "location": "hands"
+          "location": "hands",
+          "manual_review": "valid"
         },
         {
           "type": "semantic",
           "reasoning": "Possible inconsistency with sandwich construction (e.g., structural elements of bread or filling not aligned correctly)",
-          "location": "sandwich"
+          "location": "sandwich",
+          "manual_review": "invalid"
         }
       ]
     },
@@ -544,7 +587,8 @@
         {
           "type": "structural",
           "reasoning": "Anatomical inconsistencies in the hands, such as unnatural finger proportions and joint misalignment, are typical of AI-generated images where hand rendering is a common failure mode.",
-          "location": "Hands positioned near the torso (center of the image)"
+          "location": "Hands positioned near the torso (center of the image)",
+          "manual_review": "valid"
         }
       ]
     },
@@ -555,7 +599,8 @@
         {
           "type": "structural",
           "reasoning": "AI-generated images often have inconsistent hand anatomy, such as distorted finger joints or unnatural proportions, which are common artifacts in synthetic generation. This image likely contains such errors in the right hand (bracelet side), where the fingers appear misaligned or fused in a way that deviates from real human anatomy.",
-          "location": "Right hand (bracelet side), lower central region of the image."
+          "location": "Right hand (bracelet side), lower central region of the image.",
+          "manual_review": "valid"
         }
       ]
     },
@@ -578,7 +623,8 @@
           "reasoning": "The paper should be held by the hand, but it's not being held",
           "location": "frame 602"
         }
-      ]
+      ],
+      "manual_review": "hallucination"
     },
     {
       "filename": "04ed7ba99198264f5405056b941a4d3c.jpeg",
@@ -591,10 +637,11 @@
         },
         {
           "type": "semantic",
-          "reasoning": "The background of the image shows the text 'DALL\u00b7E 2' repeated multiple times across the screen, which is consistent with the typical output format of DALL\u00b7E 2, a generative AI model by OpenAI. However, the presence of the 'DALL\u00b7E 2' text overlay is not typical for an actual iPhone screenshot, as real iPhone screenshots would not display this text. DALL\u00b7E 2 is designed to generate images, not to produce screenshots of itself. The repeated 'DALL\u00b7E 2' text is a clear indicator of the image being synthetic or AI-generated.",
+          "reasoning": "The background of the image shows the text 'DALL-E 2' repeated multiple times across the screen, which is consistent with the typical output format of DALL\u00b7E 2, a generative AI model by OpenAI. However, the presence of the 'DALL\u00b7E 2' text overlay is not typical for an actual iPhone screenshot, as real iPhone screenshots would not display this text. DALL\u00b7E 2 is designed to generate images, not to produce screenshots of itself. The repeated 'DALL\u00b7E 2' text is a clear indicator of the image being synthetic or AI-generated.",
           "location": "background"
         }
-      ]
+      ],
+      "manual_review": "hallucination"
     },
     {
       "filename": "04e61d9506ffe1d8ac6c48e8b091cc48.jpeg",
@@ -610,7 +657,8 @@
           "reasoning": "The word 'the' is a common article in English, and it is present in the original query which is not a fabricated or AI-generated sentence. The absence of 'the' in the JSON output does not indicate AI generation; it is simply a grammatical choice.",
           "location": "json"
         }
-      ]
+      ],
+      "manual_review": "hallucination"
     },
     {
       "filename": "7xld4y7xld4y7xld.jpeg",
@@ -661,7 +709,8 @@
           "reasoning": "The image contains clear physical elements such as the red and white checkered flag, which is a well-known symbol of motor racing. The flag is depicted with realistic texture and details, including the wave of the fabric and subtle variations in color. Additionally, the flag is held by a hand, which shows realistic skin texture and natural movement, indicating that the image is based on real-world elements. The background is blurred but contains realistic elements like trees and buildings, further suggesting a real-world setting.",
           "location": "center"
         }
-      ]
+      ],
+      "manual_review": "hallucination"
     },
     {
       "filename": "me07oqme07oqme07.jpeg",
@@ -679,7 +728,7 @@
         },
         {
           "type": "stylistic",
-          "reasoning": "The presence of specific visual elements such as the Disney logo (e.g., '\u00a9 2024 Disney') and the characteristic design of the characters (e as the protagonist) are indicative of Disney's branded content.",
+          "reasoning": "The presence of specific visual elements such as the Disney logo (e.g., '© 2024 Disney') and the characteristic design of the characters (e as the protagonist) are indicative of Disney's branded content.",
           "location": "entire video"
         },
         {
@@ -687,7 +736,8 @@
           "reasoning": "The video has a consistent color palette with vibrant hues and soft gradients that are typical of Disney's animation style, contributing to a visually appealing and cohesive aesthetic.",
           "location": "entire video"
         }
-      ]
+      ],
+      "manual_review": "hallucination"
     },
     {
       "filename": "5bd35cd9932265235fd90b3daf32c65d.jpeg",
@@ -696,12 +746,14 @@
         {
           "type": "semantic",
           "reasoning": "Sign spelling is incorrect ('Juefje' vs likely intended 'Luefje')",
-          "location": "Background sign, center-top"
+          "location": "Background sign, center-top",
+          "manual_review": "valid"
         },
         {
           "type": "structural",
           "reasoning": "Text 'Juefje' is not a standard word; it's semantically implausible in a historical context",
-          "location": "Background sign, center-top"
+          "location": "Background sign, center-top",
+          "manual_review": "valid"
         }
       ]
     },
@@ -712,12 +764,14 @@
         {
           "type": "stylistic",
           "reasoning": "The woman's hair shows unnatural uniformity in strand texture and direction, typical of AI-generated hair.",
-          "location": "head"
+          "location": "head",
+          "manual_review": "valid"
         },
         {
           "type": "stylistic",
           "reasoning": "The man's skin texture is overly smooth, lacking natural pores and imperfections.",
-          "location": "face"
+          "location": "face",
+          "manual_review": "valid"
         },
         {
           "type": "structural",
@@ -743,13 +797,15 @@
       "artifacts": [
         {
           "type": "physical",
-          "reasoning": "Pouring gasoline (from a container labeled \"GASOLINE\") onto a fire to extinguish it violates physics, as gasoline is flammable and would intensify the fire rather than extinguish it.",
-          "location": "Red gas can and water stream near the house"
+          "reasoning": "Pouring gasoline (from a container labeled 'GASOLINE') onto a fire to extinguish it violates physics, as gasoline is flammable and would intensify the fire rather than extinguish it.",
+          "location": "Red gas can and water stream near the house",
+          "manual_review": "valid"
         },
         {
           "type": "semantic",
-          "reasoning": "A container labeled \"GASOLINE\" is used to pour liquid for fire extinguishment, which is functionally implausible as gasoline is flammable and not suitable for this purpose.",
-          "location": "Red gas can labeled \"GASOLINE\""
+          "reasoning": "A container labeled 'GASOLINE' is used to pour liquid for fire extinguishment, which is functionally implausible as gasoline is flammable and not suitable for this purpose.",
+          "location": "Red gas can labeled 'GASOLINE'",
+          "manual_review": "valid"
         }
       ]
     },
@@ -759,30 +815,31 @@
       "artifacts": [
         {
           "type": "stylistic",
-          "reasoning": "The use of \"holy\" in the prompt is inconsistent with the historical context. Jesus Christ is not referred to as \"holy\" in the Bible; he is referred to as \"holy\" in the Bible as \"holy spirit\". Jesus Christ is known as \"Christ\" or \"Son of God\" in the Bible, not \"holy\". The phrase \"holy Christ\" is a modern-day misinterpretation of the phrase \"Christ Jesus\" from the Bible, and it is not a biblical term. This is a stylistic inconsistency.",
+          "reasoning": "The use of 'holy' in the prompt is inconsistent with the historical context. Jesus Christ is not referred to as \"holy\" in the Bible; he is referred to as \"holy\" in the Bible as \"holy spirit\". Jesus Christ is known as \"Christ\" or \"Son of God\" in the Bible, not \"holy\". The phrase \"holy Christ\" is a modern-day misinterpretation of the phrase \"Christ Jesus\" from the Bible, and it is not a biblical term. This is a stylistic inconsistency.",
           "location": "in the prompt"
         },
         {
           "type": "stylistic",
-          "reasoning": "The use of \"holy\" in the prompt is inconsistent with the historical context. Jesus Christ is not referred to as \"holy\" in the Bibl e; he is referred to as \"holy\" in the Bible as \"holy spirit\". Jesus Christ is known as \"Christ\" or \"Son of God\" in the Bible, not \"holy\". The phrase \"holy Christ\" is a modern-day misinterpretation of the phrase \"Christ Jesus\" from the Bible, and it is not a biblical term. This is a stylistic inconsistency.",
+          "reasoning": "The use of 'holy' in the prompt is inconsistent with the historical context. Jesus Christ is not referred to as \"holy\" in the Bibl e; he is referred to as \"holy\" in the Bible as \"holy spirit\". Jesus Christ is known as \"Christ\" or \"Son of God\" in the Bible, not \"holy\". The phrase \"holy Christ\" is a modern-day misinterpretation of the phrase \"Christ Jesus\" from the Bible, and it is not a biblical term. This is a stylistic inconsistency.",
           "location": "in the prompt"
         },
         {
           "type": "stylistic",
-          "reasoning": "The use of \"holy\" in the prompt is inconsistent with the historical context. Jesus Christ is not referred to as \"holy\" in the Bible; he is referred to as \"holy\" in the Bible as \"holy spirit\". Jesus Christ is known as \"Christ\" or \"Son of God\" in the Bible, not \"holy\". The phrase \"holy Christ\" is a modern-day misinterpretation of the phrase \"Christ Jesus\" from the Bible, and it is not a biblical term. This is a stylistic inconsistency.",
+          "reasoning": "The use of 'holy' in the prompt is inconsistent with the historical context. Jesus Christ is not referred to as \"holy\" in the Bible; he is referred to as \"holy\" in the Bible as \"holy spirit\". Jesus Christ is known as \"Christ\" or \"Son of God\" in the Bible, not \"holy\". The phrase \"holy Christ\" is a modern-day misinterpretation of the phrase \"Christ Jesus\" from the Bible, and it is not a biblical term. This is a stylistic inconsistency.",
           "location": "in the prompt"
         },
         {
           "type": "stylistic",
-          "reasoning": "The use of \"holy\" in the prompt is inconsistent with the historical context. Jesus Christ is not referred to as \"holy\" in the Bible; he is referred to as \"holy\" in the Bible as \"holy spirit\". Jesus Christ is known as \"Christ\" or \"Son of God\" in the Bible, not \"holy\". The phrase \"holy Christ\" is a modern-day misinterpretation of the phrase \"Christ Jesus\" from the Bible, and it is not a biblical term. This is a stylistic inconsistency.",
+          "reasoning": "The use of 'holy' in the prompt is inconsistent with the historical context. Jesus Christ is not referred to as \"holy\" in the Bible; he is referred to as \"holy\" in the Bible as \"holy spirit\". Jesus Christ is known as \"Christ\" or \"Son of God\" in the Bible, not \"holy\". The phrase \"holy Christ\" is a modern-day misinterpretation of the phrase \"Christ Jesus\" from the Bible, and it is not a biblical term. This is a stylistic inconsistency.",
           "location": "in the prompt"
         },
         {
           "type": "stylistic",
-          "reasoning": "The use of \"holy\" in the JSON response itself is also an inconsistency. The phrase \"holy\" is used in the JSON response in the context of the classification result, where it refers to the classification result itself. This is a stylistic inconsistency.",
+          "reasoning": "The use of 'holy' in the JSON response itself is also an inconsistency. The phrase \"holy\" is used in the JSON response in the context of the classification result, where it refers to the classification result itself. This is a stylistic inconsistency.",
           "location": "in the JSON response"
         }
-      ]
+      ],
+      "manual_review": "hallucination"
     },
     {
       "filename": "2ebd5194c37a818d1805082c34065c30.jpeg",
@@ -791,22 +848,26 @@
         {
           "type": "stylistic",
           "reasoning": "Hands are rendered with unnatural anatomy, such as incorrect finger proportions or misalignment.",
-          "location": "woman on the left/right"
+          "location": "woman on the left/right",
+          "manual_review": "valid"
         },
         {
           "type": "stylistic",
           "reasoning": "Pizza slice being held with fingers that don't match the natural curvature of the slice (e.g., thumb position or finger thickness).",
-          "location": "woman holding pizza slice"
+          "location": "woman holding pizza slice",
+          "manual_review": "uncertain"
         },
         {
           "type": "semantic",
           "reasoning": "Boxed pizza has an irregular crust or mismatched toppings with the slice held, which is not common in real life (slices should match the box contents).",
-          "location": "pizza in box vs slice in hand"
+          "location": "pizza in box vs slice in hand",
+          "manual_review": "valid"
         },
         {
           "type": "physical",
           "reasoning": "The woman on the left is holding the pizza box with fingers that seem too thin or the position is unnatural for a pizza box (e.g., lack of grip or thumb position).",
-          "location": "pizza box holding"
+          "location": "pizza box holding",
+          "manual_review": "invalid"
         }
       ]
     },
@@ -817,7 +878,8 @@
         {
           "type": "structural",
           "reasoning": "The collar of the shirt exhibits an unnatural fold. In a real photograph, the collar should follow the natural contour of the neck with smooth, consistent fabric alignment. Here, the collar appears stiff and misaligned, suggesting AI generation where the algorithm failed to accurately model the interaction between the fabric and the neck.",
-          "location": "collar, left side (from viewer's perspective)"
+          "location": "collar, left side (from viewer's perspective)",
+          "manual_review": "uncertain"
         }
       ]
     },
@@ -835,7 +897,8 @@
           "reasoning": "The physical artifacts (the white paper, the black paper) are described in the text, and the paper is a common object. The text mentions that the paper is \"white\" and \"black\" and the content on it is not specified. The text does not describe the paper as fragile or delicate. The text does not describe the paper as being made of an unusual material. The text does not describe the paper as being in a state of disintegration or disarray. The text does not describe the paper as being in the process of being written on or printed on. The text does not describe the paper as being in the process of being destroyed or altered. The text does not describe the AI as being in a physical state. The text does not describe the AI as being a physical object. The text does as not describe the AI as being a physical object. The text does not mention the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the ",
           "location": "unknown"
         }
-      ]
+      ],
+      "manual_review": "hallucination"
     }
   ]
 }
