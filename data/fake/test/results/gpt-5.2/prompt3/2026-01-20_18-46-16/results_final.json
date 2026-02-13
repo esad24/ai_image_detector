@@ -4,9 +4,6 @@
     "prompt_id": 3,
     "reasoning": "none"
   },
-  "image_count": 50,
-  "total_fakes": 35,
-  "total_real": 15,
   "results": [
     {
       "filename": "ccbcb5187879ea5f9ef2871e59b94651.jpeg",
@@ -1385,5 +1382,25 @@
       "classification": "real",
       "artifacts": []
     }
-  ]
+  ],
+  "stats": {
+    "image_count": 50,
+    "total_fakes": 35,
+    "total_real": 15,
+    "total_artifacts": 182,
+    "artifact_types": {
+      "structural": 99,
+      "stylistic": 40,
+      "physical": 1,
+      "semantic": 42
+    },
+    "artifact_evaluation": {
+      "valid": 38,
+      "valid and new artifacts": 2,
+      "new artifacts": 44,
+      "partially valid": 6,
+      "uncertain": 51,
+      "invalid": 41
+    }
+  }
 }

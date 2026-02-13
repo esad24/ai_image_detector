@@ -3,10 +3,8 @@
     "model": "qwen3-vl",
     "prompt_id": 3,
     "reasoning": false
+    
   },
-  "image_count": 50,
-  "total_fakes": 33,
-  "total_real": 17,
   "results": [
     {
       "filename": "ccbcb5187879ea5f9ef2871e59b94651.jpeg",
@@ -182,12 +180,12 @@
       "classification": "real",
       "artifacts": [
         {
-          "type": "semantic",
+          "type": "-semantic",
           "reasoning": "The image contains a detailed and realistic depiction of a human figure (a young woman with long hair, wearing a blue dress), which is consistent with what one would expect in a photo. The figure is well-proportioned, with realistic details such as the texture of the fabric and the natural lighting on the skin. The background, including the wooden fence, is also rendered with realistic textures and depth, suggesting a photo rather than a generated image.",
           "location": "entire image"
         },
         {
-          "type": "semantic",
+          "type": "-semantic",
           "reasoning": "The image shows a realistic human figure in a natural setting. The skin texture is detailed and consistent with a photograph, and the lighting appears to be natural and consistent with outdoor conditions. The figure's posture and movement (e.g., the natural flow of the dress) are realistic, indicating a photo rather than a generated image.",
           "location": "entire image"
         }
@@ -199,17 +197,17 @@
       "classification": "fake",
       "artifacts": [
         {
-          "type": "semantic",
+          "type": "-semantic",
           "reasoning": "The claim in the article is that the number of refugees in the UK is growing at 6.8% per annum, which implies a large number of new refugees. However, the actual number of refugees in the UK as of late 2023/early 2024 is less than 200,000, and they are not growing at 6.8% per annum. The growth rate for refugees in the UK is much lower. The article is wrong about the number and the growth rate.",
           "location": "general"
         },
         {
-          "type": "semantic",
+          "type": "-semantic",
           "reasoning": "The article states that the UK has received 'more than 16,000 refugees' in the past year, but the actual data shows that the UK received only 1,159 refugees from June to December 2023. The article is incorrect about this figure.",
           "location": "general"
         },
         {
-          "type": "semantic",
+          "type": "-semantic",
           "reasoning": "The article claims that 'refugees in the UK are growing by 6.8% per year', but this is not accurate. The actual growth rate is much lower. The article is wrong about the growth rate.",
           "location": "general"
         }
@@ -227,12 +225,12 @@
       "classification": "real",
       "artifacts": [
         {
-          "type": "physical",
+          "type": "-physical",
           "reasoning": "The object is a physical entity that can be touched or held, such as a stone or a rock. The text mentions \"rock\" and \"stone\" and describes its physical attributes like texture, weight, and temperature. The context is about a stone that is warm, has a rough surface, and is heavy. This is a physical artifact.",
           "location": "stone"
         },
         {
-          "type": "physical",
+          "type": "-physical",
           "reasoning": "The object is a physical entity that can be touched or held, such as a stone or a rock. The text mentions \"rock\" and \"stone\" and describes its physical attributes like texture, weight, and temperature. The context is about a stone that is warm, has a rough surface, and is heavy. This is a physical artifact.",
           "location": "stone"
         }
@@ -398,12 +396,12 @@
       "classification": "real",
       "artifacts": [
         {
-          "type": "physical",
+          "type": "-physical",
           "reasoning": "the document is physical, it has physical paper",
           "location": "page 1"
         },
         {
-          "type": "physical",
+          "type": "-physical",
           "reasoning": "the document is physical, it has physical paper",
           "location": "page 1"
         }
@@ -504,27 +502,27 @@
       "classification": "real",
       "artifacts": [
         {
-          "type": "stylistic",
+          "type": "-stylistic",
           "reasoning": "The image is composed of a grid of small squares, each containing a character, which is a common technique in ASCII art. The characters are uniformly sized and placed in a precise grid, indicating intentional design rather than random generation.",
           "location": "Entire image"
         },
         {
-          "type": "stylistic",
+          "type": "-stylistic",
           "reasoning": "The characters used to form the image are monospaced, consistent with the nature of ASCII art where each character occupies a fixed width. This uniformity supports the idea of a deliberate artistic creation.",
           "location": "Entire image"
         },
         {
-          "type": "stylistic",
+          "type": "-stylistic",
           "reasoning": "The image appears to represent a character (such as a person or an animal) through a grid of characters, which is a typical approach in ASCII art for creating detailed illustrations.",
           "location": "Entire image"
         },
         {
-          "type": "stylistic",
+          "type": "-stylistic",
           "reasoning": "The consistent use of ASCII characters to form the image, without any visible digital artifacts or irregularities, suggests that it was created intentionally as an ASCII art piece rather than a digital photograph or scanned image.",
           "location": "Entire image"
         }
       ],
-    "manual_review": "hallucination"
+      "manual_review": "hallucination"
     },
     {
       "filename": "ozrpf8ozrpf8ozrp.jpeg",
@@ -609,17 +607,17 @@
       "classification": "fake",
       "artifacts": [
         {
-          "type": "physical",
+          "type": "-physical",
           "reasoning": "The video shows the person's hand holding the paper, but the paper is not held by the hand in the frame",
           "location": "frame 599"
         },
         {
-          "type": "physical",
+          "type": "-physical",
           "reasoning": "The person's hand is not visible in the frame, yet the paper is visible",
           "location": "frame 600"
         },
         {
-          "type": "physical",
+          "type": "-physical",
           "reasoning": "The paper should be held by the hand, but it's not being held",
           "location": "frame 602"
         }
@@ -631,12 +629,12 @@
       "classification": "fake",
       "artifacts": [
         {
-          "type": "semantic",
+          "type": "-semantic",
           "reasoning": "The image appears to be a screenshot from an iPhone (specifically, an iPhone 15 Pro, as indicated by the notch design and camera system). The text \"iPhone 15 Pro\" is displayed at the top left corner of the image.",
           "location": "top left corner"
         },
         {
-          "type": "semantic",
+          "type": "-semantic",
           "reasoning": "The background of the image shows the text 'DALL-E 2' repeated multiple times across the screen, which is consistent with the typical output format of DALL\u00b7E 2, a generative AI model by OpenAI. However, the presence of the 'DALL\u00b7E 2' text overlay is not typical for an actual iPhone screenshot, as real iPhone screenshots would not display this text. DALL\u00b7E 2 is designed to generate images, not to produce screenshots of itself. The repeated 'DALL\u00b7E 2' text is a clear indicator of the image being synthetic or AI-generated.",
           "location": "background"
         }
@@ -648,12 +646,12 @@
       "classification": "real",
       "artifacts": [
         {
-          "type": "semantic",
+          "type": "-semantic",
           "reasoning": "The word 'the' is a common article in English, and it is present in the original query which is not a fabricated or AI-generated sentence. The absence of 'the' in the generated response does not indicate AI generation; it is simply a grammatical choice.",
           "location": "query"
         },
         {
-          "type": "semantic",
+          "type": "-semantic",
           "reasoning": "The word 'the' is a common article in English, and it is present in the original query which is not a fabricated or AI-generated sentence. The absence of 'the' in the JSON output does not indicate AI generation; it is simply a grammatical choice.",
           "location": "json"
         }
@@ -665,47 +663,47 @@
       "classification": "real",
       "artifacts": [
         {
-          "type": "physical",
+          "type": "-physical",
           "reasoning": "The image contains clear physical elements such as the red and white checkered flag, which is a well-known symbol of motor racing. The flag is depicted with realistic texture and details, including the weave of the fabric and subtle variations in color. Additionally, the flag is held by a hand, which shows realistic skin texture and natural movement, indicating that the image is based on real-world elements. The background is blurred but contains realistic elements like trees and buildings, further suggesting a real-world setting.",
           "location": "center"
         },
         {
-          "type": "physical",
+          "type": "-physical",
           "reasoning": "The image contains clear physical elements such as the red and white checkered flag, which is a well-known symbol of motor racing. The flag is depicted with realistic texture and details, including the wave of the fabric and subtle variations in color. Additionally, the flag is held by a hand, which shows realistic skin texture and natural movement, indicating that the image is based on real-world elements. The background is blurred but contains realistic elements like trees and buildings, further suggesting a real-world setting.",
           "location": "center"
         },
         {
-          "type": "physical",
+          "type": "-physical",
           "reasoning": "The image contains clear physical elements such as the red and white checkered flag, which is a well-known symbol of motor racing. The flag is depicted with realistic texture and details, including the wave of the fabric and subtle variations in color. Additionally, the flag is held by a hand, which shows realistic skin texture and natural movement, indicating that the image is based on real-world elements. The background is blurred but contains realistic elements like trees and buildings, further suggesting a real-world setting.",
           "location": "center"
         },
         {
-          "type": "physical",
+          "type": "-physical",
           "reasoning": "The image contains clear physical elements such as the red and white checkered flag, which is a well-known symbol of motor racing. The background is blurred but contains realistic elements like trees and buildings, further suggesting a real-world setting. The flag is depicted with realistic texture and details, including the wave of the fabric and subtle variations in color. Additionally, the flag is held by a hand, which shows realistic skin texture and natural movement, indicating that the image is based on real-world elements.",
           "location": "center"
         },
         {
-          "type": "physical",
+          "type": "-physical",
           "reasoning": "The image contains clear physical elements such as the red and white checkered flag, which is a well-known symbol of motor racing. The flag is depicted with realistic texture and details, including the wave of the fabric and subtle variations in color. The background is blurred but contains realistic elements like trees and buildings, further suggesting a real-world setting. Additionally, the flag is held by a hand, which shows realistic skin texture and natural movement, indicating that the image is based on real-world elements.",
           "location": "center"
         },
         {
-          "type": "physical",
+          "type": "-physical",
           "reasoning": "The image contains clear physical elements such as the red and white checkered flag, which is a well-known symbol of motor racing. The flag is depicted with realistic texture and details, including the wave of the fabric and subtle variations in color. Additionally, the flag is held by a hand, which shows realistic skin texture and natural movement, indicating that the image is based on real-world elements. The background is blurred but contains realistic elements like trees and buildings, further suggesting a real-world setting.",
           "location": "center"
         },
         {
-          "type": "physical",
+          "type": "-physical",
           "reasoning": "The image contains clear physical elements such as the red and white checkered flag, which is a well-known symbol of motor racing. The flag is depicted with realistic texture and details, including the wave of the fabric and subtle variations in color. Additionally, the flag is held by a hand, which shows realistic skin texture and natural movement, indicating that the image is based on real-world elements. The background is blurred but contains realistic elements like trees and buildings, further suggesting a real-world setting.",
           "location": "center"
         },
         {
-          "type": "physical",
+          "type": "-physical",
           "reasoning": "The image contains clear physical elements such as the red and white checkered flag, which is a well-known symbol of motor racing. The flag is depicted with realistic texture and details, including the wave of the fabric and subtle variations in color. Additionally, the flag is held by a hand, which shows realistic skin texture and natural movement, indicating that the image is based on real-world elements. The background is blurred but contains realistic elements like trees and buildings, further suggesting a real-world setting.",
           "location": "center"
         },
         {
-          "type": "physical",
+          "type": "-physical",
           "reasoning": "The image contains clear physical elements such as the red and white checkered flag, which is a well-known symbol of motor racing. The flag is depicted with realistic texture and details, including the wave of the fabric and subtle variations in color. Additionally, the flag is held by a hand, which shows realistic skin texture and natural movement, indicating that the image is based on real-world elements. The background is blurred but contains realistic elements like trees and buildings, further suggesting a real-world setting.",
           "location": "center"
         }
@@ -717,22 +715,22 @@
       "classification": "real",
       "artifacts": [
         {
-          "type": "stylistic",
+          "type": "-stylistic",
           "reasoning": "The video features a highly stylized animation with distinct character designs and visual effects that match the typical aesthetic of an animated feature or short film. The characters have exaggerated features, vibrant colors, and consistent visual style. The animation quality is smooth with no visible frame drops or artifacts, indicating it was likely created using professional animation software. The visual elements are cohesive and designed for an artistic purpose, not for a live-action recording.",
           "location": "entire video"
         },
         {
-          "type": "stylistic",
+          "type": "-stylistic",
           "reasoning": "The video's aesthetic is clearly aligned with the established visual style of the Disney animation studio. The character designs, color palettes, and motion dynamics are consistent with Disney's approach to animation, including the use of cel shading and traditional animation techniques.",
           "location": "entire video"
         },
         {
-          "type": "stylistic",
+          "type": "-stylistic",
           "reasoning": "The presence of specific visual elements such as the Disney logo (e.g., '© 2024 Disney') and the characteristic design of the characters (e as the protagonist) are indicative of Disney's branded content.",
           "location": "entire video"
         },
         {
-          "type": "stylistic",
+          "type": "-stylistic",
           "reasoning": "The video has a consistent color palette with vibrant hues and soft gradients that are typical of Disney's animation style, contributing to a visually appealing and cohesive aesthetic.",
           "location": "entire video"
         }
@@ -747,13 +745,13 @@
           "type": "semantic",
           "reasoning": "Sign spelling is incorrect ('Juefje' vs likely intended 'Luefje')",
           "location": "Background sign, center-top",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         },
         {
           "type": "structural",
           "reasoning": "Text 'Juefje' is not a standard word; it's semantically implausible in a historical context",
           "location": "Background sign, center-top",
-          "manual_review": "valid"
+          "manual_review": "new artifact"
         }
       ]
     },
@@ -814,27 +812,27 @@
       "classification": "fake",
       "artifacts": [
         {
-          "type": "stylistic",
+          "type": "-stylistic",
           "reasoning": "The use of 'holy' in the prompt is inconsistent with the historical context. Jesus Christ is not referred to as \"holy\" in the Bible; he is referred to as \"holy\" in the Bible as \"holy spirit\". Jesus Christ is known as \"Christ\" or \"Son of God\" in the Bible, not \"holy\". The phrase \"holy Christ\" is a modern-day misinterpretation of the phrase \"Christ Jesus\" from the Bible, and it is not a biblical term. This is a stylistic inconsistency.",
           "location": "in the prompt"
         },
         {
-          "type": "stylistic",
+          "type": "-stylistic",
           "reasoning": "The use of 'holy' in the prompt is inconsistent with the historical context. Jesus Christ is not referred to as \"holy\" in the Bibl e; he is referred to as \"holy\" in the Bible as \"holy spirit\". Jesus Christ is known as \"Christ\" or \"Son of God\" in the Bible, not \"holy\". The phrase \"holy Christ\" is a modern-day misinterpretation of the phrase \"Christ Jesus\" from the Bible, and it is not a biblical term. This is a stylistic inconsistency.",
           "location": "in the prompt"
         },
         {
-          "type": "stylistic",
+          "type": "-stylistic",
           "reasoning": "The use of 'holy' in the prompt is inconsistent with the historical context. Jesus Christ is not referred to as \"holy\" in the Bible; he is referred to as \"holy\" in the Bible as \"holy spirit\". Jesus Christ is known as \"Christ\" or \"Son of God\" in the Bible, not \"holy\". The phrase \"holy Christ\" is a modern-day misinterpretation of the phrase \"Christ Jesus\" from the Bible, and it is not a biblical term. This is a stylistic inconsistency.",
           "location": "in the prompt"
         },
         {
-          "type": "stylistic",
+          "type": "-stylistic",
           "reasoning": "The use of 'holy' in the prompt is inconsistent with the historical context. Jesus Christ is not referred to as \"holy\" in the Bible; he is referred to as \"holy\" in the Bible as \"holy spirit\". Jesus Christ is known as \"Christ\" or \"Son of God\" in the Bible, not \"holy\". The phrase \"holy Christ\" is a modern-day misinterpretation of the phrase \"Christ Jesus\" from the Bible, and it is not a biblical term. This is a stylistic inconsistency.",
           "location": "in the prompt"
         },
         {
-          "type": "stylistic",
+          "type": "-stylistic",
           "reasoning": "The use of 'holy' in the JSON response itself is also an inconsistency. The phrase \"holy\" is used in the JSON response in the context of the classification result, where it refers to the classification result itself. This is a stylistic inconsistency.",
           "location": "in the JSON response"
         }
@@ -861,7 +859,7 @@
           "type": "semantic",
           "reasoning": "Boxed pizza has an irregular crust or mismatched toppings with the slice held, which is not common in real life (slices should match the box contents).",
           "location": "pizza in box vs slice in hand",
-          "manual_review": "valid"
+          "manual_review": "invalid"
         },
         {
           "type": "physical",
@@ -893,12 +891,34 @@
       "classification": "real",
       "artifacts": [
         {
-          "type": "physical",
+          "type": "-physical",
           "reasoning": "The physical artifacts (the white paper, the black paper) are described in the text, and the paper is a common object. The text mentions that the paper is \"white\" and \"black\" and the content on it is not specified. The text does not describe the paper as fragile or delicate. The text does not describe the paper as being made of an unusual material. The text does not describe the paper as being in a state of disintegration or disarray. The text does not describe the paper as being in the process of being written on or printed on. The text does not describe the paper as being in the process of being destroyed or altered. The text does not describe the AI as being in a physical state. The text does not describe the AI as being a physical object. The text does as not describe the AI as being a physical object. The text does not mention the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the ",
           "location": "unknown"
         }
       ],
       "manual_review": "hallucination"
     }
-  ]
+  ],
+    "stats": {
+    "image_count": 50,
+    "total_fakes": 33,
+    "total_real": 17,
+    "total_artifacts": 65,
+    "artifact_types": {
+      "structural": 19,
+      "stylistic": 14,
+      "physical": 8,
+      "semantic": 24
+    },
+    "artifact_evaluation": {
+      "valid": 25,
+      "new_artifact": 8,
+      "partially_valid": 0,
+      "uncertain": 11,
+      "invalid": 21,
+      "total_files_with_wrong_classification_but_valid_artifacts": 2,
+      "total_files_with_right_classification_but_no_artifacts": 3,
+      "total_hallucinations": 12
+    }
+  }
 }
