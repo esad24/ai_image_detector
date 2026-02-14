@@ -12,13 +12,19 @@ warnings.filterwarnings("ignore")
 hf_logging.set_verbosity_error()
 
 # Paths
-result = "/home/usluesyr/ai_image_detector/data/fake/test/results/gpt-5.2/prompt4/2026-01-23_08-50-39/results.json"
-ground_truth = "/home/usluesyr/ai_image_detector/data/fake/test/results/gpt-5.2/prompt3/2026-01-20_18-46-16/results_final.json"
+result = "/home/usluesyr/ai_image_detector/data/fake/test/results/gpt-5.2/prompt3/2026-01-20_18-46-16/results_final.json"
+
+GT = "gt_1"
+ground_truth = "/home/usluesyr/ai_image_detector/data/ground_truth/gt_1/gt_1.json"
 # Load SBERT model
-model = SentenceTransformer("all-MiniLM-L6-v2")
+MODELS = ["all-MiniLM-L6-v2", "paraphrase-MiniLM-L12-v2", "all-mpnet-base-v2"]
+
+MODEL_NAME = MODELS[2]
+
+model = SentenceTransformer(MODEL_NAME)
 
 # Threshold for matching
-THRESHOLD = 0.5
+THRESHOLD = 0.6
 
 
 # def artifact_to_text(artifact):
@@ -51,6 +57,9 @@ def compute_semantic_matches(result_artifacts, gt_artifacts, threshold=THRESHOLD
             "mean_cosine": 1.0,
             "max_cosine": 1.0,
             "min_cosine": 1.0,
+            "mean_cosine_non_zero": 1.0,
+            "max_cosine_non_zero": 1.0,
+            "min_cosine_non_zero": 1.0,
             "matches": []
         }
 
@@ -64,6 +73,9 @@ def compute_semantic_matches(result_artifacts, gt_artifacts, threshold=THRESHOLD
             "mean_cosine": 0.0,
             "max_cosine": 0.0,
             "min_cosine": 0.0,
+            "mean_cosine_non_zero": 0.0,
+            "max_cosine_non_zero": 0.0,
+            "min_cosine_non_zero": 0.0,
             "matches": matches
         }
 
@@ -103,18 +115,30 @@ def compute_semantic_matches(result_artifacts, gt_artifacts, threshold=THRESHOLD
                 "cosine_score": 0.0
             })
 
-    all_scores = [m["cosine_score"] for m in matches] #if m["cosine_score"] > 0]
+
+    all_scores = [m["cosine_score"] for m in matches]
+    non_zero_scores = [s for s in all_scores if s > 0.0]  # ignore 0.0 scores
 
     mean_cosine = float(np.mean(all_scores)) if all_scores else 0.0
     max_cosine = float(np.max(all_scores)) if all_scores else 0.0
     min_cosine = float(np.min(all_scores)) if all_scores else 0.0
 
+    # New metrics ignoring 0.0s
+    mean_cosine_non_zero = float(np.mean(non_zero_scores)) if non_zero_scores else 0.0
+    max_cosine_non_zero = float(np.max(non_zero_scores)) if non_zero_scores else 0.0
+    min_cosine_non_zero = float(np.min(non_zero_scores)) if non_zero_scores else 0.0
+
+
     return {
         "mean_cosine": mean_cosine,
         "max_cosine": max_cosine,
         "min_cosine": min_cosine,
+        "mean_cosine_non_zero": mean_cosine_non_zero,
+        "max_cosine_non_zero": max_cosine_non_zero,
+        "min_cosine_non_zero": min_cosine_non_zero,
         "matches": matches
-    }
+}
+
 
 
 
@@ -149,22 +173,31 @@ for image in tqdm(result_json["results"], desc="Evaluating images"):
         "mean_cosine_similarity": semantic_result["mean_cosine"],
         "max_cosine_similarity": semantic_result["max_cosine"],
         "min_cosine_similarity": semantic_result["min_cosine"],
+        "mean_cosine_similarity_non_zero": semantic_result["mean_cosine_non_zero"],
+        "max_cosine_similarity_non_zero": semantic_result["max_cosine_non_zero"],
+        "min_cosine_similarity_non_zero": semantic_result["min_cosine_non_zero"],
         "num_result_artifacts": len(image["artifacts"]),
         "num_gt_artifacts": len(gt_item["artifacts"]),
         "matched_artifacts": semantic_result["matches"]
     })
 
 
+
 # Summary
 summary = {
     "mean_cosine_similarity_avg": float(np.mean([f["mean_cosine_similarity"] for f in file_scores])),
     "max_cosine_similarity_avg": float(np.mean([f["max_cosine_similarity"] for f in file_scores])),
+    "mean_cosine_similarity_non_zero_avg": float(np.mean([f["mean_cosine_similarity_non_zero"] for f in file_scores])),
+    "max_cosine_similarity_non_zero_avg": float(np.mean([f["max_cosine_similarity_non_zero"] for f in file_scores])),
 }
+
 
 
 # Final output
 output = {
     "meta": result_json.get("meta", {}),
+    "semantic_model": MODEL_NAME,
+    "comparison": ground_truth,
     "threshold": THRESHOLD,
     "image_count": result_json.get("image_count", len(result_json["results"])),
     "total_fakes": result_json.get("total_fakes", 0),
@@ -175,7 +208,7 @@ output = {
 
 # Save JSON
 results_dir = os.path.dirname(result)
-output_path = os.path.join(results_dir, "semantic_evaluation_gpt_prompt4_and_prompt3.json")
+output_path = os.path.join(results_dir, f"semantic_evaluation_{GT}_{MODEL_NAME}_{THRESHOLD}.json")
 with open(output_path, "w", encoding="utf-8") as f:
     json.dump(output, f, indent=2, ensure_ascii=False)
 

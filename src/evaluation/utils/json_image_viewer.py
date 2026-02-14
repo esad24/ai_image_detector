@@ -3,7 +3,7 @@ import os
 import subprocess
 
 IMAGE_DIR = "/home/usluesyr/ai_image_detector/data/ground_truth/gt_2/labled_test_second_round"
-JSON_PATH = "data/fake/test/results/qwen3-vl/prompt3/2026-01-22_21-28-42/results.json"
+JSON_PATH = "/home/usluesyr/ai_image_detector/labeled3.json"
 EDITOR = "code"
 
 def open_image(path):
@@ -16,7 +16,8 @@ def open_json(path):
 with open(JSON_PATH, "r", encoding="utf-8") as f:
     data = json.load(f)
 
-results = data.get("results", [])
+results = data
+#results = data.get("results", [])
 #results = data.get("image_scores", [])
 
 open_json(JSON_PATH)

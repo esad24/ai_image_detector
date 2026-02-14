@@ -1,0 +1,4324 @@
+{
+  "meta": {
+    "model": "gpt-5.2",
+    "prompt_id": 3,
+    "reasoning": "none"
+  },
+  "evaluation_method": "llm_as_judge",
+  "llm_model": "gpt-5.2",
+  "comparison": "/home/usluesyr/ai_image_detector/data/ground_truth/gt_1/gt_1.json",
+  "match_threshold": 0.6,
+  "image_count": 50,
+  "total_fakes": 0,
+  "total_real": 0,
+  "image_scores": [
+    {
+      "filename": "ccbcb5187879ea5f9ef2871e59b94651.jpeg",
+      "classification": "real",
+      "mean_match_score": 0.0,
+      "max_match_score": 0.0,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.0,
+      "max_match_score_non_zero": 0.0,
+      "min_match_score_non_zero": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "num_result_artifacts": 0,
+      "num_gt_artifacts": 1,
+      "matched_artifacts": [
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "stylistic",
+            "reasoning": "The skin and hair appear overly smooth.",
+            "location": "Center of the image, on the subject's face and hair."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "7isuvh7isuvh7isu.jpeg",
+      "classification": "fake",
+      "mean_match_score": 0.97,
+      "max_match_score": 0.97,
+      "min_match_score": 0.97,
+      "mean_match_score_non_zero": 0.97,
+      "max_match_score_non_zero": 0.97,
+      "min_match_score_non_zero": 0.97,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "true_positives": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "num_result_artifacts": 5,
+      "num_gt_artifacts": 1,
+      "matched_artifacts": [
+        {
+          "result_artifact": {
+            "type": "semantic",
+            "reasoning": "Depicts a highly implausible public scenario (two heads of state kissing) staged directly in front of the White House; content reads as a fabricated/composite political image rather than a documentary photo.",
+            "location": "center foreground (two men kissing), with the White House in the background",
+            "manual_review": "valid"
+          },
+          "matched_gt_artifact": {
+            "type": "semantic",
+            "reasoning": "Implausible scenario of Trump and Putin kissing in front of the White House.",
+            "location": "Center of the image, in front of the White House."
+          },
+          "match_score": 0.97,
+          "llm_judgment": {
+            "is_match": true,
+            "confidence": 0.97,
+            "reasoning": "Both descriptions flag the same semantic implausibility: Trump and Putin (two heads of state) kissing in front of the White House, centered in the image. Type, scenario, and location align closely.",
+            "type_match": true,
+            "semantic_similarity": 0.98,
+            "location_similarity": 0.95
+          }
+        }
+      ]
+    },
+    {
+      "filename": "1e4cc5c247a3bdf572d4969c07992b34.jpeg",
+      "classification": "fake",
+      "mean_match_score": 0.1285714285714286,
+      "max_match_score": 0.9,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.9,
+      "max_match_score_non_zero": 0.9,
+      "min_match_score_non_zero": 0.9,
+      "precision": 0.25,
+      "recall": 0.25,
+      "f1_score": 0.25,
+      "true_positives": 1,
+      "false_positives": 3,
+      "false_negatives": 3,
+      "num_result_artifacts": 7,
+      "num_gt_artifacts": 4,
+      "matched_artifacts": [
+        {
+          "result_artifact": {
+            "type": "stylistic",
+            "reasoning": "Subjects appear cut out and composited onto the background; edges look overly clean with slight haloing and different sharpness compared to the landscape.",
+            "location": "Around the family’s silhouettes (woman’s hair/shoulders, man’s shoulders, child’s outline) in the central foreground",
+            "manual_review": "new artifact"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.9,
+            "reasoning": "The result artifact flags compositing/cutout haloing and edge sharpness mismatches around the family silhouettes, while the ground truth flags unnatural/inconsistent lighting on the couple’s faces. These are different artifact types, phenomena, and locations.",
+            "type_match": false,
+            "semantic_similarity": 0.15,
+            "location_similarity": 0.2
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "semantic",
+            "reasoning": "Lighting on the people (soft, studio-like frontal illumination) does not match the background’s directional, low-angle mountain sunlight; shadows and highlights feel inconsistent with the scene.",
+            "location": "Faces and torsos of all three people in the central foreground compared to sunlit hills on right side background",
+            "manual_review": "valid"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.95,
+            "reasoning": "The result artifact flags inconsistent lighting between the foreground people and the background sunlight, while the ground truth flags a physical plausibility issue (the child floating). These are different phenomena and focus on different cues, even though both involve the child/foreground area.",
+            "type_match": false,
+            "semantic_similarity": 0.1,
+            "location_similarity": 0.35
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Child’s legs/feet placement looks anatomically inconsistent with stance; one foot appears oddly shaped/flattened and the pose reads unstable for the given support.",
+            "location": "Lower center foreground: child’s right leg and both feet",
+            "manual_review": "valid"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.72,
+            "reasoning": "Both are structural issues involving legs/feet in the lower center, but the ground truth specifically flags an extra (third) leg plus a deformed foot, while the result describes unstable/anatomically inconsistent stance and an oddly flattened foot without indicating an additional leg. The core phenomenon differs (extra limb vs. pose/placement).",
+            "type_match": true,
+            "semantic_similarity": 0.45,
+            "location_similarity": 0.7
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Hands appear unnaturally formed/merged at the grip point; finger definition is unclear and the grasp looks ambiguous.",
+            "location": "Center-lower foreground: woman’s hands holding the child’s hand",
+            "manual_review": "valid"
+          },
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The hands show anatomical errors.",
+            "location": "Center of the image, on the adult hands near the child."
+          },
+          "match_score": 0.9,
+          "llm_judgment": {
+            "is_match": true,
+            "confidence": 0.9,
+            "reasoning": "Both artifacts describe structural/anatomical issues with the adult/woman’s hands where they are holding/near the child’s hand. The result gives more detail (merged/unclear fingers at the grip), which aligns with the ground truth’s general claim of anatomical errors in the same region.",
+            "type_match": true,
+            "semantic_similarity": 0.9,
+            "location_similarity": 0.85
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "physical",
+            "reasoning": "The lighting appears unnatural and inconsistent.",
+            "location": "Upper center of the image, on the couple's faces."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "physical",
+            "reasoning": "The child appears to be floating unnaturally.",
+            "location": "Center of the image, around the child's body."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "There appears to be a third leg and a deformed foot.",
+            "location": "Lower center of the image, on the adults' and child's legs and feet."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "h1gpeyh1gpeyh1gp.jpeg",
+      "classification": "fake",
+      "mean_match_score": 0.3,
+      "max_match_score": 0.9,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.9,
+      "max_match_score_non_zero": 0.9,
+      "min_match_score_non_zero": 0.9,
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1_score": 0.5,
+      "true_positives": 1,
+      "false_positives": 1,
+      "false_negatives": 1,
+      "num_result_artifacts": 5,
+      "num_gt_artifacts": 2,
+      "matched_artifacts": [
+        {
+          "result_artifact": {
+            "type": "semantic",
+            "reasoning": "Group is posing for cheerful selfies while standing at an open grave in a cemetery next to a fresh dirt pile and funeral flowers—contextually implausible behavior for a funeral scene.",
+            "location": "Foreground center/bottom (open grave), left foreground (dirt mound and flowers), entire group center/right",
+            "manual_review": "valid"
+          },
+          "matched_gt_artifact": {
+            "type": "semantic",
+            "reasoning": "The scene depicts people celebrating at a funeral.",
+            "location": "Center of the image, in the foreground with graves visible in the background."
+          },
+          "match_score": 0.9,
+          "llm_judgment": {
+            "is_match": true,
+            "confidence": 0.9,
+            "reasoning": "Both artifacts flag the same semantic implausibility: people behaving cheerfully/celebrating in a funeral/graveyard context. The described regions overlap around the group and the grave area, with only minor differences in specificity (open grave and flowers vs. general graves).",
+            "type_match": true,
+            "semantic_similarity": 0.92,
+            "location_similarity": 0.75
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Champagne spray appears as an unnaturally uniform vertical dotted stream with inconsistent droplet shapes and spacing, lacking realistic dispersion and motion blur.",
+            "location": "Center foreground from bottle down into the grave",
+            "manual_review": "new artifact"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.96,
+            "reasoning": "Both are labeled structural, but they describe different phenomena and different regions: the result flags an unnatural champagne spray stream in the center foreground, while the ground truth flags unusual eyes on faces in the upper-center/right.",
+            "type_match": true,
+            "semantic_similarity": 0.05,
+            "location_similarity": 0.0
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The eyes appear unusual.",
+            "location": "Upper-center and right side of the image, on the faces of the man with champagne and the bald men."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "149af80e3cf3af0e46ab47863eb7b03e.jpeg",
+      "classification": "fake",
+      "mean_match_score": 0.19,
+      "max_match_score": 0.95,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.95,
+      "max_match_score_non_zero": 0.95,
+      "min_match_score_non_zero": 0.95,
+      "precision": 0.3333333333333333,
+      "recall": 0.3333333333333333,
+      "f1_score": 0.3333333333333333,
+      "true_positives": 1,
+      "false_positives": 2,
+      "false_negatives": 2,
+      "num_result_artifacts": 6,
+      "num_gt_artifacts": 3,
+      "matched_artifacts": [
+        {
+          "result_artifact": {
+            "type": "semantic",
+            "reasoning": "A full-sized alligator/crocodile is improbably present on a busy city sidewalk with no visible containment, handler equipment, or bystander reaction consistent with such danger.",
+            "location": "bottom center foreground on the sidewalk",
+            "manual_review": "valid"
+          },
+          "matched_gt_artifact": {
+            "type": "semantic",
+            "reasoning": "A crocodile appearing on a city sidewalk is unrealistic.",
+            "location": "Bottom side of the image, on the sidewalk where the crocodile is located."
+          },
+          "match_score": 0.95,
+          "llm_judgment": {
+            "is_match": true,
+            "confidence": 0.95,
+            "reasoning": "Both artifacts flag the same semantic implausibility: a crocodile/alligator unrealistically present on a city sidewalk. The described location aligns to the bottom/foreground sidewalk area where the animal appears.",
+            "type_match": true,
+            "semantic_similarity": 0.95,
+            "location_similarity": 0.9
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "semantic",
+            "reasoning": "Bystanders appear oddly unconcerned/posed despite close proximity to a large dangerous animal; their attention is not clearly focused on it.",
+            "location": "midground center-left group of people",
+            "manual_review": "new artifact"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.93,
+            "reasoning": "The result artifact flags an implausible/posed behavior of a group of bystanders near a dangerous animal (a semantic inconsistency), while the ground truth flags a deformed face (a structural/anatomical distortion) on a background person. They describe different phenomena in different regions.",
+            "type_match": false,
+            "semantic_similarity": 0.08,
+            "location_similarity": 0.2
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "The animal’s contact with the ground looks inconsistent: the body/legs appear to rest without clear weight-bearing deformation or consistent shadowing around the feet/claws.",
+            "location": "bottom center foreground around the alligator’s legs and belly",
+            "manual_review": "invalid"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.86,
+            "reasoning": "The result artifact focuses on inconsistent ground contact/weight-bearing around an alligator’s legs and belly, while the ground truth flags shadows falling in different directions around people’s legs on the lower left sidewalk. They describe different subjects and different regions, with only a loose connection via shadow inconsistency.",
+            "type_match": false,
+            "semantic_similarity": 0.28,
+            "location_similarity": 0.12
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The face appears deformed.",
+            "location": "Upper center of the image, on the person's face in the background."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "physical",
+            "reasoning": "The shadows fall in different directions.",
+            "location": "Lower left of the image, on the sidewalk and around the people's legs."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "86ae36214222e367f9bc162308095ada_r12.jpeg",
+      "classification": "fake",
+      "mean_match_score": 0.186,
+      "max_match_score": 0.93,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.93,
+      "max_match_score_non_zero": 0.93,
+      "min_match_score_non_zero": 0.93,
+      "precision": 0.3333333333333333,
+      "recall": 0.3333333333333333,
+      "f1_score": 0.3333333333333333,
+      "true_positives": 1,
+      "false_positives": 2,
+      "false_negatives": 2,
+      "num_result_artifacts": 5,
+      "num_gt_artifacts": 3,
+      "matched_artifacts": [
+        {
+          "result_artifact": {
+            "type": "semantic",
+            "reasoning": "Implausible scale/interaction: an ant is depicted at a size comparable to the person’s face, perched on the nose with no realistic context (would imply an ant many centimeters long).",
+            "location": "Lower-left foreground ant and its contact point on the nose (center-right).",
+            "manual_review": "valid"
+          },
+          "matched_gt_artifact": {
+            "type": "semantic",
+            "reasoning": "The ant appears to be an impossible size relative to the person's face.",
+            "location": "Left side of the image, where the ant is positioned next to the person's face."
+          },
+          "match_score": 0.93,
+          "llm_judgment": {
+            "is_match": true,
+            "confidence": 0.93,
+            "reasoning": "Both artifacts flag the same semantic issue: an ant depicted at an implausibly large scale relative to the person’s face. The described locations overlap (ant on/next to the face), with only minor differences in specificity about the exact contact point.",
+            "type_match": true,
+            "semantic_similarity": 0.95,
+            "location_similarity": 0.85
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Appendage geometry issues: some legs appear to merge into each other or into the background, with unclear joints/segments and inconsistent thickness.",
+            "location": "Ant legs across the lower center and lower-right (near the person’s upper lip and chin area).",
+            "manual_review": "new artifact"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.9,
+            "reasoning": "Both are structural issues on the ant, but they describe different phenomena and different regions: the result flags malformed/merging legs near the lower center/right by the person’s lip/chin, while the ground truth flags an extra antenna near the ant’s head on the person’s nose.",
+            "type_match": true,
+            "semantic_similarity": 0.2,
+            "location_similarity": 0.1
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Antenna segmentation and alignment look irregular: bead-like segments vary inconsistently and the antenna seems to kink unnaturally near the face contact.",
+            "location": "Ant antenna touching the nose tip (center) and the long antenna arcing into the upper-left quadrant.",
+            "manual_review": "valid"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.93,
+            "reasoning": "Both are structural issues, but they describe different phenomena and regions: the result flags irregular antenna segmentation/kinking near the face and upper-left arc, while the ground truth flags extra limbs around the legs in the lower part of the image.",
+            "type_match": true,
+            "semantic_similarity": 0.12,
+            "location_similarity": 0.08
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "There is an extra antenna.",
+            "location": "Center of the image, near the ant's head and on the person's nose."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The ant has extra limbs.",
+            "location": "Lower side of the image, around the ant's legs."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "616ba73f50088eb13244a807076248f7.jpeg",
+      "classification": "fake",
+      "mean_match_score": 0.0,
+      "max_match_score": 0.0,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.0,
+      "max_match_score_non_zero": 0.0,
+      "min_match_score_non_zero": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "true_positives": 0,
+      "false_positives": 2,
+      "false_negatives": 2,
+      "num_result_artifacts": 6,
+      "num_gt_artifacts": 2,
+      "matched_artifacts": [
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Tennis racket stringbed shows irregular/warped grid spacing and inconsistent alignment (some strings appear to fade or bend unnaturally rather than remaining straight and evenly tensioned).",
+            "location": "Left side of image, inside the racket head",
+            "manual_review": "invalid: looks normal"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.97,
+            "reasoning": "Both are labeled structural, but they describe different phenomena in different regions: one concerns warped/irregular tennis racket strings on the left, while the other concerns a flat-looking eye and unusual eyelashes in the upper center on the subject’s right eye.",
+            "type_match": true,
+            "semantic_similarity": 0.05,
+            "location_similarity": 0.0
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Racket frame/neck geometry looks slightly inconsistent where the throat meets the head (subtle asymmetry and shape blending that doesn’t match typical molded frames).",
+            "location": "Left side, lower portion of the racket head near the throat",
+            "manual_review": "invalid: looks normal"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.98,
+            "reasoning": "Both are labeled structural, but they describe different phenomena and different objects: one is about inconsistent racket frame geometry near the throat, while the other is about a disproportionately large upper arm. The locations (left lower racket head vs center-right upper arm) do not align.",
+            "type_match": true,
+            "semantic_similarity": 0.05,
+            "location_similarity": 0.0
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The eye appears flat and the eyelashes appear unusual.",
+            "location": "Upper center of the image, on the subject's right eye area."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The upper arm is disproportionately large.",
+            "location": "Center-right of the image, on the subject's upper arm."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "2df3e5ecf2315ee61ffe3c566e125c8a.jpeg",
+      "classification": "fake",
+      "mean_match_score": 0.0,
+      "max_match_score": 0.0,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.0,
+      "max_match_score_non_zero": 0.0,
+      "min_match_score_non_zero": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "true_positives": 0,
+      "false_positives": 1,
+      "false_negatives": 3,
+      "num_result_artifacts": 1,
+      "num_gt_artifacts": 3,
+      "matched_artifacts": [
+        {
+          "result_artifact": {
+            "type": "semantic",
+            "reasoning": "Two different people appear to have nearly identical faces, hair color, hairstyle, and overall appearance (twin-like duplication beyond typical coincidence), suggesting generative cloning.",
+            "location": "Center-left and center-right (both women’s faces and hair)",
+            "manual_review": "invalid: the two women don't look identical"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.95,
+            "reasoning": "The result artifact flags duplicated/near-identical faces and hair between two women (a semantic cloning issue) localized to the two faces, while the ground truth flags an overall painterly rendering style affecting many elements across the whole image. These are different phenomena and locations.",
+            "type_match": false,
+            "semantic_similarity": 0.05,
+            "location_similarity": 0.1
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "stylistic",
+            "reasoning": "The background, clothes, dogs, and hands appear overly painterly.",
+            "location": "Across the entire image."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "semantic",
+            "reasoning": "There is an unusual button structure.",
+            "location": "Right side of the image, on the person's sweater."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "A hand is missing.",
+            "location": "Center-right of the image, around the right subject's hand holding the leash."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "5d04c3a88fe8c5d2d7c7a8877e7880fe.jpeg",
+      "classification": "real",
+      "mean_match_score": 0.0,
+      "max_match_score": 0.0,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.0,
+      "max_match_score_non_zero": 0.0,
+      "min_match_score_non_zero": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 2,
+      "num_result_artifacts": 0,
+      "num_gt_artifacts": 2,
+      "matched_artifacts": [
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The eyebrow hair structure appears unnatural.",
+            "location": "Upper-right of the image, on the eyebrow area."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The eyelash structure appears unnatural.",
+            "location": "Center of the image, on the eyelid/eyelash area."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "3dbe741ec8da19e60d694783dada6491.jpeg",
+      "classification": "fake",
+      "mean_match_score": 0.4625,
+      "max_match_score": 0.95,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.925,
+      "max_match_score_non_zero": 0.95,
+      "min_match_score_non_zero": 0.9,
+      "precision": 0.6666666666666666,
+      "recall": 0.6666666666666666,
+      "f1_score": 0.6666666666666666,
+      "true_positives": 2,
+      "false_positives": 1,
+      "false_negatives": 1,
+      "num_result_artifacts": 6,
+      "num_gt_artifacts": 3,
+      "matched_artifacts": [
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Hand anatomy appears malformed: the foreground clasped hands lack clear separation of fingers and show an unnatural merged/rounded shape inconsistent with a typical handshake.",
+            "location": "bottom center (hands in the foreground)",
+            "manual_review": "valid"
+          },
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The hands appear deformed.",
+            "location": "Lower center of the image, on the clasped hands."
+          },
+          "match_score": 0.95,
+          "llm_judgment": {
+            "is_match": true,
+            "confidence": 0.95,
+            "reasoning": "Both artifacts flag the same structural issue: deformed/malformed clasped hands in the lower/bottom center foreground. The result adds detail (merged fingers/rounded shape) but refers to the same underlying hand deformation noted in the ground truth.",
+            "type_match": true,
+            "semantic_similarity": 0.93,
+            "location_similarity": 0.97
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "semantic",
+            "reasoning": "Repeated near-identical facial features/age/hair styling across multiple individuals suggests identity cloning rather than a natural group photo.",
+            "location": "across all five faces, especially the two central figures and the far-right figure",
+            "manual_review": "new artifact"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.86,
+            "reasoning": "The result artifact flags repeated, near-identical faces across multiple people (identity cloning) spanning all five faces, while the ground truth flags unnatural-looking eyes localized to the upper-center men. These describe different phenomena and different regions of emphasis.",
+            "type_match": false,
+            "semantic_similarity": 0.22,
+            "location_similarity": 0.28
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "stylistic",
+            "reasoning": "Lighting and skin rendering look overly uniform and airbrushed (waxy highlights, minimal skin micro-texture) compared to the fabric detail, a common generative look.",
+            "location": "faces throughout the image",
+            "manual_review": "valid"
+          },
+          "matched_gt_artifact": {
+            "type": "stylistic",
+            "reasoning": "The skin appears overly smooth and plastic-looking.",
+            "location": "Upper center of the image, on the men's faces."
+          },
+          "match_score": 0.9,
+          "llm_judgment": {
+            "is_match": true,
+            "confidence": 0.9,
+            "reasoning": "Both artifacts describe the same stylistic generative effect: overly smooth/airbrushed, plastic-looking skin with reduced micro-texture on the faces. The locations align on the men's faces (upper center) and the result's broader 'faces throughout' is consistent with that region.",
+            "type_match": true,
+            "semantic_similarity": 0.92,
+            "location_similarity": 0.8
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The eyes appear unnatural.",
+            "location": "Upper center of the image, on the men's faces."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "2ddf7a07da956c375d9d512cf876bd871f5a3150db7b68b7ef25c1c91a694238_r6.jpeg",
+      "classification": "fake",
+      "mean_match_score": 0.08,
+      "max_match_score": 0.72,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.72,
+      "max_match_score_non_zero": 0.72,
+      "min_match_score_non_zero": 0.72,
+      "precision": 0.2,
+      "recall": 0.2,
+      "f1_score": 0.20000000000000004,
+      "true_positives": 1,
+      "false_positives": 4,
+      "false_negatives": 4,
+      "num_result_artifacts": 6,
+      "num_gt_artifacts": 5,
+      "matched_artifacts": [
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "The adult man’s hand supporting the girl’s legs looks anatomically off (irregular thumb/finger shapes and unnatural grip contour).",
+            "location": "Man’s right hand under the girl’s legs (lower-left center)",
+            "manual_review": "new artifact"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.9,
+            "reasoning": "Both are structural issues, but they describe different anatomical problems in different subjects/regions: the result flags the man's hand under the girl's legs, while the ground truth flags deformities in the girl's right armpit area on the left side of the image.",
+            "type_match": true,
+            "semantic_similarity": 0.2,
+            "location_similarity": 0.1
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "The boy’s arm/hand (gloved/striped cuff area) blends strangely into the mother’s sweater and appears oddly segmented, with unclear wrist/hand structure.",
+            "location": "Boy being held on the right—his near arm/hand resting across the mother’s torso (center-right)",
+            "manual_review": "partially valid"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.95,
+            "reasoning": "The result artifact describes a structural/anatomical blending issue involving the boy’s arm/hand merging into the mother’s sweater on the center-right. The ground truth describes a semantic pattern/line discontinuity on the girl's striped shirt near the waist on the left. They differ in type, subject, and location, indicating different underlying issues.",
+            "type_match": false,
+            "semantic_similarity": 0.1,
+            "location_similarity": 0.0
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Edges where the boy’s clothing meets the mother’s arm and torso show blending/warping, as if the layers are not cleanly separated.",
+            "location": "Contact area between mother’s forearm and boy’s outfit (right-center)",
+            "manual_review": "invalid"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.92,
+            "reasoning": "The result artifact describes blending/warping at the boundary where the boy’s clothing overlaps the mother’s arm/torso (a layering/edge structural issue). The ground truth describes an unusual semantic element (gloves) on the boy’s hands. They are different phenomena and occur in different regions.",
+            "type_match": false,
+            "semantic_similarity": 0.12,
+            "location_similarity": 0.18
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "stylistic",
+            "reasoning": "Skin appears overly smooth and uniformly lit with a ‘plastic’ retouched look, especially on adult faces, inconsistent with natural portrait texture.",
+            "location": "Faces of the man and woman (upper center)",
+            "manual_review": "new artifact"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.98,
+            "reasoning": "The result artifact flags overly smooth, plastic-looking facial skin texture/lighting on the adults’ faces, while the ground truth flags a structural merging between the girl's pants and the man's jacket in the lower center-left. They are different artifact types, different visual phenomena, and occur in different regions.",
+            "type_match": false,
+            "semantic_similarity": 0.02,
+            "location_similarity": 0.0
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "stylistic",
+            "reasoning": "Background architectural elements (window frames/panels) look overly clean and slightly inconsistent in perspective and detail, typical of generative smoothing.",
+            "location": "Window/frame area behind the family (upper half background)",
+            "manual_review": "valid"
+          },
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "There are deformities in the background structure.",
+            "location": "Top center of the image, in the background above the family."
+          },
+          "match_score": 0.72,
+          "llm_judgment": {
+            "is_match": true,
+            "confidence": 0.72,
+            "reasoning": "Both descriptions point to issues in the background architecture above/behind the family, specifically structural/perspective/detail inconsistencies in window/frame elements. The result calls it stylistic smoothing, while the ground truth calls it structural deformities, but they likely refer to the same underlying background distortion.",
+            "type_match": false,
+            "semantic_similarity": 0.75,
+            "location_similarity": 0.85
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "There are deformities in the armpit area.",
+            "location": "Left side of the image, on the girl's right armpit area."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "semantic",
+            "reasoning": "A line on the shirt does not connect properly.",
+            "location": "Left side of the image, on the girl's striped shirt near the waist."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "semantic",
+            "reasoning": "The boy appears to be wearing unusual gloves.",
+            "location": "Right side of the image, on the boy's hands."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The girl's pants appear to merge with the man's jacket.",
+            "location": "Lower center-left of the image, where the girl's pants meet the man's jacket."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "fe7ovxfe7ovxfe7o.jpeg",
+      "classification": "fake",
+      "mean_match_score": 0.0,
+      "max_match_score": 0.0,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.0,
+      "max_match_score_non_zero": 0.0,
+      "min_match_score_non_zero": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "true_positives": 0,
+      "false_positives": 1,
+      "false_negatives": 1,
+      "num_result_artifacts": 5,
+      "num_gt_artifacts": 1,
+      "matched_artifacts": [
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Fork appears malformed/unnaturally blended with the pizza slice; tines and handle edges look inconsistent and partially fused with the food.",
+            "location": "Lower center-right, in the right woman's hand above the right pizza",
+            "manual_review": "uncertain"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.98,
+            "reasoning": "The result artifact flags a malformed fork fused with a pizza slice in the lower center-right foreground, while the ground truth flags illogical chair placement in the background right/center. They differ in type, visual phenomenon, and location.",
+            "type_match": false,
+            "semantic_similarity": 0.0,
+            "location_similarity": 0.1
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "semantic",
+            "reasoning": "The chair placement is illogical.",
+            "location": "Right side and center of the image, on the chairs behind the woman and the second table."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "2aa0e54b4dc251420a3679b501dc8a06.jpeg",
+      "classification": "fake",
+      "mean_match_score": 0.0,
+      "max_match_score": 0.0,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.0,
+      "max_match_score_non_zero": 0.0,
+      "min_match_score_non_zero": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "true_positives": 0,
+      "false_positives": 3,
+      "false_negatives": 3,
+      "num_result_artifacts": 8,
+      "num_gt_artifacts": 3,
+      "matched_artifacts": [
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Left woman's hand shows deformed/merged fingers and unclear knuckle structure while holding the strap/cup area.",
+            "location": "left side, mid-lower area near the brunette woman's hand/forearm",
+            "manual_review": "valid"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.93,
+            "reasoning": "Both are structural/anatomical issues, but they refer to different features and regions: the result flags deformed fingers/hand near the lower-left, while the ground truth flags anatomical errors in multiple subjects' eyes near the center.",
+            "type_match": true,
+            "semantic_similarity": 0.2,
+            "location_similarity": 0.05
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Object being held (appears like a cup/strap) has ambiguous geometry and blending into the hand and clothing edges.",
+            "location": "left-center, between the left woman and the man, near the hand",
+            "manual_review": "valid and new artifact"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.96,
+            "reasoning": "Both are labeled structural, but they describe different issues: one is ambiguous geometry/blending of a held object near the left-center hand area, while the other is an anatomical proportion error (unnaturally long neck) on the right side. The phenomena and locations do not align.",
+            "type_match": true,
+            "semantic_similarity": 0.08,
+            "location_similarity": 0.0
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Right woman's hand on the front woman's shoulder has unnatural finger shape/spacing and inconsistent joint definition; the grip looks partially fused with the sleeve/shoulder.",
+            "location": "right-center, over the front woman's right shoulder",
+            "manual_review": "valid"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.78,
+            "reasoning": "Both mention structural/anatomical issues with hands, but the result artifact targets a specific hand placement on the front woman's right shoulder with fused/odd fingers, while the ground truth describes hand errors on both sides (left woman's hand holding an object and the right woman's hand/wrist area). The overlap is partial (right-hand anatomy), but the locations and scope do not align closely enough to be the same single artifact.",
+            "type_match": true,
+            "semantic_similarity": 0.55,
+            "location_similarity": 0.35
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The eyes show anatomical errors.",
+            "location": "Center of the image, on the eyes of the left woman, man in the back, and center woman."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The neck is unnaturally long.",
+            "location": "Right side of the image, on the woman's neck."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The hands show anatomical errors.",
+            "location": "Left and right sides of the image, on the left woman's hand holding an object and the right woman's hand/wrist area."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "09edc782a2e242c0840d3b8a3960420d.jpeg",
+      "classification": "fake",
+      "mean_match_score": 0.172,
+      "max_match_score": 0.86,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.86,
+      "max_match_score_non_zero": 0.86,
+      "min_match_score_non_zero": 0.86,
+      "precision": 0.3333333333333333,
+      "recall": 0.3333333333333333,
+      "f1_score": 0.3333333333333333,
+      "true_positives": 1,
+      "false_positives": 2,
+      "false_negatives": 2,
+      "num_result_artifacts": 3,
+      "num_gt_artifacts": 3,
+      "matched_artifacts": [
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Tennis racket strings show inconsistent/warped grid spacing and moiré-like irregularity rather than a clean, uniform string bed.",
+            "location": "upper-right quadrant, inside the racket head behind the subject's head",
+            "manual_review": "invalid"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.98,
+            "reasoning": "Both are labeled structural, but they describe different phenomena in different objects: warped/moiré racket strings in the upper-right versus a distorted iris in the subject’s left eye at the center.",
+            "type_match": true,
+            "semantic_similarity": 0.05,
+            "location_similarity": 0.0
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Racket frame geometry appears subtly uneven/soft, with an implausible transition around the throat/shaft area as it passes behind the shoulder.",
+            "location": "right side, mid-to-lower area where the racket narrows toward the handle",
+            "manual_review": "invalid"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.96,
+            "reasoning": "The result artifact flags uneven racket frame geometry near the throat/shaft on the right side, while the ground truth flags an unusual hole pattern on the subject's shirt at the bottom. They differ in type, visual phenomenon, and location.",
+            "type_match": false,
+            "semantic_similarity": 0.05,
+            "location_similarity": 0.0
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "stylistic",
+            "reasoning": "Skin texture appears overly uniform and 'plastic' with exaggerated micro-contrast and sharpening, especially on forehead/cheek, resembling synthetic enhancement.",
+            "location": "center, across forehead, nose bridge, and right cheek (viewer’s left/right depending on face)",
+            "manual_review": "valid"
+          },
+          "matched_gt_artifact": {
+            "type": "stylistic",
+            "reasoning": "The skin texture looks unnatural.",
+            "location": "Center of the image, on the subject's face."
+          },
+          "match_score": 0.86,
+          "llm_judgment": {
+            "is_match": true,
+            "confidence": 0.86,
+            "reasoning": "Both artifacts describe an unnatural/stylized skin texture on the subject’s face. The result adds detail about plastic/uniform texture and sharpening, but it aligns with the ground truth’s broader claim of unnatural skin texture in the same general facial region.",
+            "type_match": true,
+            "semantic_similarity": 0.84,
+            "location_similarity": 0.88
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The iris appears distorted.",
+            "location": "Center of the image, in the subject's left eye."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "semantic",
+            "reasoning": "There is an unusual hole pattern.",
+            "location": "Bottom of the image, on the subject's shirt."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "6f9t1r6f9t1r6f9t.jpeg",
+      "classification": "fake",
+      "mean_match_score": 0.95,
+      "max_match_score": 0.95,
+      "min_match_score": 0.95,
+      "mean_match_score_non_zero": 0.95,
+      "max_match_score_non_zero": 0.95,
+      "min_match_score_non_zero": 0.95,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "true_positives": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "num_result_artifacts": 6,
+      "num_gt_artifacts": 1,
+      "matched_artifacts": [
+        {
+          "result_artifact": {
+            "type": "semantic",
+            "reasoning": "Anachronistic object: a modern smartphone with a bright screen is being used at a historical-style podium speech setting (mid-20th-century attire and scene).",
+            "location": "lower-right quadrant, in the speaker's hands",
+            "manual_review": "valid"
+          },
+          "matched_gt_artifact": {
+            "type": "semantic",
+            "reasoning": "Martin Luther King is shown using a modern phone, which did not exist in that time period.",
+            "location": "Lower-right of the image, in Martin Luther King's left hand."
+          },
+          "match_score": 0.95,
+          "llm_judgment": {
+            "is_match": true,
+            "confidence": 0.95,
+            "reasoning": "Both descriptions flag the same semantic anachronism: a modern smartphone/phone appearing in a historical MLK-era podium speech scene, located in the lower-right area in the speaker/MLK's hand.",
+            "type_match": true,
+            "semantic_similarity": 0.96,
+            "location_similarity": 0.93
+          }
+        }
+      ]
+    },
+    {
+      "filename": "3de04fb6e7a042632a00f765cdb60e39224156c3a9d7055951f5a0298feb2dba.jpeg",
+      "classification": "fake",
+      "mean_match_score": 0.0,
+      "max_match_score": 0.0,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.0,
+      "max_match_score_non_zero": 0.0,
+      "min_match_score_non_zero": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "true_positives": 0,
+      "false_positives": 3,
+      "false_negatives": 3,
+      "num_result_artifacts": 5,
+      "num_gt_artifacts": 3,
+      "matched_artifacts": [
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Right hand/fingers gripping the glass show irregular anatomy: fingers blend together with ambiguous knuckle/joint definition and slightly mismatched proportions against the rim.",
+            "location": "Lower center, on the hand holding the glass",
+            "manual_review": "invalid"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.93,
+            "reasoning": "Both are labeled structural, but they describe different phenomena in different regions: the result flags irregular hand/finger anatomy gripping the glass (lower center), while the ground truth flags illogical orange pieces on top of the glass (upper center).",
+            "type_match": true,
+            "semantic_similarity": 0.12,
+            "location_similarity": 0.05
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Tattoo on the forearm appears smeared/ill-defined with uncertain linework and shape coherence, typical of generative texture artifacts rather than crisp ink edges.",
+            "location": "Lower right, on the visible forearm near the wrist",
+            "manual_review": "new artifact"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.98,
+            "reasoning": "The result artifact flags a smeared/ill-defined tattoo texture on a forearm near the wrist, while the ground truth flags an illogical reflection on a glossy bar counter. They are different phenomena in different regions of the image.",
+            "type_match": false,
+            "semantic_similarity": 0.05,
+            "location_similarity": 0.0
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Hair strands around the crown/left side form wispy, looping shapes that don’t resolve into consistent individual strands and fade oddly into the background.",
+            "location": "Upper center-left around the top of the head",
+            "manual_review": "invalid: hair looks normal"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.98,
+            "reasoning": "The result artifact flags inconsistent, wispy hair strand structure near the crown/upper left of the head, while the ground truth flags a soft/flat rendering of the woman's left hand in the lower-right. They differ in type, visual phenomenon, and location.",
+            "type_match": false,
+            "semantic_similarity": 0.05,
+            "location_similarity": 0.0
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The orange pieces appear illogical.",
+            "location": "Upper center of the image, on top of the glass."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "physical",
+            "reasoning": "The reflection is not logical.",
+            "location": "Lower-left of the image, on the glossy bar counter surface."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "stylistic",
+            "reasoning": "The hand appears too soft and flat.",
+            "location": "Lower-right of the image, on the woman's left hand."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "3b1558eefcb3008a00a5e863ce729092.jpeg",
+      "classification": "real",
+      "mean_match_score": 0.0,
+      "max_match_score": 0.0,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.0,
+      "max_match_score_non_zero": 0.0,
+      "min_match_score_non_zero": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "num_result_artifacts": 0,
+      "num_gt_artifacts": 3,
+      "matched_artifacts": [
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The eyes are deformed.",
+            "location": "Center of the image, on the person's eyes."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "semantic",
+            "reasoning": "The person is biting with a closed mouth.",
+            "location": "Center of the image, on the mouth area."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "stylistic",
+            "reasoning": "The pizza ingredients appear flat and two-dimensional.",
+            "location": "Lower-right of the image, on the pizza on the plate."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "2aee09d253a4606d2b5b4a630fbd6b834074ae2a91a3dd28e361eb8dadafad24_r2.jpeg",
+      "classification": "real",
+      "mean_match_score": 0.0,
+      "max_match_score": 0.0,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.0,
+      "max_match_score_non_zero": 0.0,
+      "min_match_score_non_zero": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 5,
+      "num_result_artifacts": 0,
+      "num_gt_artifacts": 5,
+      "matched_artifacts": [
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "There are deformities around the glasses.",
+            "location": "Upper center of the image, on the subject's face around the glasses."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The picture frame is incomplete.",
+            "location": "Right side of the image, on the wall behind the subject."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "stylistic",
+            "reasoning": "The suit and tie area appears overly sharp.",
+            "location": "Center of the image, on the subject's chest and tie."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "Some objects appear unrealistic.",
+            "location": "Bottom-left of the image, on the desk."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The hands show anatomical errors.",
+            "location": "Bottom center of the image, on the subject's clasped hands."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "kv57cgkv57cgkv57.jpeg",
+      "classification": "fake",
+      "mean_match_score": 0.3,
+      "max_match_score": 0.9,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.9,
+      "max_match_score_non_zero": 0.9,
+      "min_match_score_non_zero": 0.9,
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1_score": 0.5,
+      "true_positives": 1,
+      "false_positives": 1,
+      "false_negatives": 1,
+      "num_result_artifacts": 5,
+      "num_gt_artifacts": 2,
+      "matched_artifacts": [
+        {
+          "result_artifact": {
+            "type": "semantic",
+            "reasoning": "Multiple eating utensils (forks/spoons) are being used/placed as if they were surgical instruments, which is functionally implausible in an operating room.",
+            "location": "Operating field center-right (forks held over incision), and draped patient area lower-center (spoon and fork on drape), plus instrument table left-lower quadrant (mix of cutlery).",
+            "manual_review": "valid"
+          },
+          "matched_gt_artifact": {
+            "type": "semantic",
+            "reasoning": "The team appears to be operating using kitchen knives and forks instead of proper surgical instruments.",
+            "location": "Center of the image, over the patient and on the instrument tray on the left side."
+          },
+          "match_score": 0.9,
+          "llm_judgment": {
+            "is_match": true,
+            "confidence": 0.9,
+            "reasoning": "Both descriptions flag the same semantic implausibility: kitchen cutlery (forks/knives/spoons) being used as surgical tools in an operating room, including over the patient and on the left-side instrument tray. The result adds extra detail (spoon/fork on drape, center-right), but it aligns with the ground truth’s central and left-tray locations.",
+            "type_match": true,
+            "semantic_similarity": 0.9,
+            "location_similarity": 0.8
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Utensil geometry appears inconsistent with real surgical tools: fork tines and spoon bowls show slightly malformed/soft edges and odd specular reflections typical of generative artifacts.",
+            "location": "Center-right (forks near incision) and lower-center (spoon on drape).",
+            "manual_review": "new artifact"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.96,
+            "reasoning": "Both are labeled structural, but they describe different phenomena and different regions: the result flags malformed utensil geometry/specular artifacts near the incision and drape, while the ground truth flags disfigured/unclear numbers on the patient monitor in the top-left.",
+            "type_match": true,
+            "semantic_similarity": 0.12,
+            "location_similarity": 0.0
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The numbers on the patient monitor are disfigured and unclear.",
+            "location": "Top-left of the image, on the patient monitor display."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "1a7a5fe1c457806cb6d9fb17649b923a.jpeg",
+      "classification": "real",
+      "mean_match_score": 0.0,
+      "max_match_score": 0.0,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.0,
+      "max_match_score_non_zero": 0.0,
+      "min_match_score_non_zero": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "num_result_artifacts": 0,
+      "num_gt_artifacts": 3,
+      "matched_artifacts": [
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The dumbbell has component defects.",
+            "location": "Left side of the image, on the dumbbell in the person's right hand."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "stylistic",
+            "reasoning": "There is a smudged area.",
+            "location": "Center of the image, on the shoulder strap area of the top."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The fingers have unnatural marks.",
+            "location": "Lower right of the image, on the fingers of the left hand."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "62ddb30f859923e2231a777f55de69c7.jpeg",
+      "classification": "fake",
+      "mean_match_score": 0.22,
+      "max_match_score": 0.9,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.88,
+      "max_match_score_non_zero": 0.9,
+      "min_match_score_non_zero": 0.86,
+      "precision": 0.4,
+      "recall": 0.4,
+      "f1_score": 0.4000000000000001,
+      "true_positives": 2,
+      "false_positives": 3,
+      "false_negatives": 3,
+      "num_result_artifacts": 7,
+      "num_gt_artifacts": 5,
+      "matched_artifacts": [
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Hands/fingers show malformed geometry and inconsistent digit shapes (some fingers appear fused/oddly bent) on the man seated at left.",
+            "location": "Lower-left quadrant, man’s hands resting near his lap",
+            "manual_review": "valid"
+          },
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The fingers appear deformed.",
+            "location": "Bottom center of the image, on the left seated person's hands."
+          },
+          "match_score": 0.9,
+          "llm_judgment": {
+            "is_match": true,
+            "confidence": 0.9,
+            "reasoning": "Both artifacts describe structural deformation of the left seated man's fingers/hands in the lower portion of the image. The result is more detailed (fused/bent digits), but it matches the ground truth's deformed fingers in the same subject and region.",
+            "type_match": true,
+            "semantic_similarity": 0.9,
+            "location_similarity": 0.85
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Jaw/neck transition and ear contour look smeared and anatomically inconsistent, with overly smooth blending typical of generative artifacts.",
+            "location": "Left subject’s head/neck/ear area (left-center)",
+            "manual_review": "new artifact"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.9,
+            "reasoning": "Both are structural issues, but they describe different phenomena and regions: the result flags smeared jaw/neck/ear anatomy on the left subject, while the ground truth flags deformed eyes on the faces near the center.",
+            "type_match": true,
+            "semantic_similarity": 0.2,
+            "location_similarity": 0.2
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Lamp base and its central stem show warped symmetry and implausible detailing where parts blend together.",
+            "location": "Center of image, table lamp base beneath the shade",
+            "manual_review": "invalid"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.98,
+            "reasoning": "The result artifact flags warped/implausible geometry in the lamp base and stem, while the ground truth flags incorrect identity/appearance of the two people’s faces. They concern different subjects, different artifact types, and different locations.",
+            "type_match": false,
+            "semantic_similarity": 0.05,
+            "location_similarity": 0.1
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Background portrait face is indistinct and distorted, lacking coherent facial features at normal viewing distance.",
+            "location": "Upper-right quadrant, framed portrait",
+            "manual_review": "uncertain"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.96,
+            "reasoning": "Both are labeled structural, but they describe different phenomena in different regions: one is a distorted face in an upper-right framed portrait, the other is an arm/elbow merging with a chair armrest on the left side.",
+            "type_match": true,
+            "semantic_similarity": 0.08,
+            "location_similarity": 0.0
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "stylistic",
+            "reasoning": "Depth-of-field and surface textures are unnaturally uniform and waxy (especially skin and fabric), with a ‘painterly’ smoothness inconsistent with a real photo.",
+            "location": "Across the entire image, most noticeable on both subjects’ faces and clothing",
+            "manual_review": "valid"
+          },
+          "matched_gt_artifact": {
+            "type": "stylistic",
+            "reasoning": "The skin appears overly smooth.",
+            "location": "Center of the image, on the two seated people's faces."
+          },
+          "match_score": 0.86,
+          "llm_judgment": {
+            "is_match": true,
+            "confidence": 0.86,
+            "reasoning": "Both describe a stylistic artifact of overly smooth, waxy/painterly rendering, most evident on the subjects' faces. The result artifact is broader (also mentions clothing and overall uniformity), but it includes the same core issue as the ground truth: unnaturally smooth skin on the two people’s faces.",
+            "type_match": true,
+            "semantic_similarity": 0.85,
+            "location_similarity": 0.78
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The eyes appear deformed.",
+            "location": "Center of the image, on the two seated people's faces."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "semantic",
+            "reasoning": "The faces differ from Obama and Catherine.",
+            "location": "Center of the image, on the two seated people's faces."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The elbow appears to merge with the chair rest.",
+            "location": "Left side of the image, where the left seated person's right arm meets the chair armrest."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "59de5a40846ba0dca00d56c21c43afd17c4592b3ba6cbffbc73a985b061fb4a4.jpeg",
+      "classification": "real",
+      "mean_match_score": 0.0,
+      "max_match_score": 0.0,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.0,
+      "max_match_score_non_zero": 0.0,
+      "min_match_score_non_zero": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "num_result_artifacts": 0,
+      "num_gt_artifacts": 3,
+      "matched_artifacts": [
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The eyes appear deformed.",
+            "location": "Upper-center of the image, on the face."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "semantic",
+            "reasoning": "The face differs from Obama.",
+            "location": "Upper-center of the image, on the face."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "stylistic",
+            "reasoning": "The skin and clothes appear plastic.",
+            "location": "Center of the image, on the person's skin and suit."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "64294f3a2adb2e48ac82d6f65ea9d52c.jpeg",
+      "classification": "fake",
+      "mean_match_score": 0.0,
+      "max_match_score": 0.0,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.0,
+      "max_match_score_non_zero": 0.0,
+      "min_match_score_non_zero": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "true_positives": 0,
+      "false_positives": 2,
+      "false_negatives": 2,
+      "num_result_artifacts": 7,
+      "num_gt_artifacts": 2,
+      "matched_artifacts": [
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Repeated/duplicated-looking facial/head shapes with smeared features and inconsistent detail compared to bodies (typical generative face degradation in crowds).",
+            "location": "mid-background group around the center-left to center (people behind the central figure), and right-background near the white-haired person",
+            "manual_review": "new artifact"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.98,
+            "reasoning": "The result artifact flags generative structural face degradation/duplication in background crowd regions, while the ground truth flags a semantic/social-context inconsistency (funeral attendees in swimwear) affecting the whole scene. They differ in type, phenomenon, and location scope.",
+            "type_match": false,
+            "semantic_similarity": 0.02,
+            "location_similarity": 0.05
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Hand/arm anatomy appears fused/ambiguous with unclear fingers and unnatural overlaps where people are interacting around the coffin area.",
+            "location": "center-left midground near the blonde person leaning forward; center midground around the coffin edge",
+            "manual_review": "new artifact"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.9,
+            "reasoning": "Both are structural issues, but they describe different phenomena: the result flags fused/ambiguous hand/arm anatomy around the coffin interaction, while the ground truth flags a deformed face on the woman in the green top. The locations only partially overlap (center-left), but the specific regions (hands/arms vs face) do not align.",
+            "type_match": true,
+            "semantic_similarity": 0.2,
+            "location_similarity": 0.3
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "semantic",
+            "reasoning": "A funeral where attendees are wearing swimwear is not socially accepted.",
+            "location": "Across the entire image."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The face appears deformed.",
+            "location": "Center-left of the image, on the woman in the green top."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "4pwf294pwf294pwf.jpeg",
+      "classification": "fake",
+      "mean_match_score": 0.0,
+      "max_match_score": 0.0,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.0,
+      "max_match_score_non_zero": 0.0,
+      "min_match_score_non_zero": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "true_positives": 0,
+      "false_positives": 1,
+      "false_negatives": 1,
+      "num_result_artifacts": 5,
+      "num_gt_artifacts": 1,
+      "matched_artifacts": [
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Beer mug geometry/handles look inconsistent and slightly malformed where the fingers wrap around, with unclear separation between fingers and glass edges.",
+            "location": "Center of image, both hands holding the two beer mugs (mid-frame).",
+            "manual_review": "uncertain"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.95,
+            "reasoning": "The result artifact flags a structural/geometry issue with the beer mugs/hand interaction (malformed handles and unclear finger-glass separation). The ground truth flags a semantic implausibility of the depicted scenario (Putin and Zelensky being friendly and drinking together). While both are centered around the beer mugs/subjects, they refer to different types of issues and different underlying reasons.",
+            "type_match": false,
+            "semantic_similarity": 0.1,
+            "location_similarity": 0.6
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "semantic",
+            "reasoning": "Unplausible scenario of Putin and Zelensky depicted as being friendly and drinking beer together.",
+            "location": "Center of the image, on the couch where the two men are clinking beer mugs."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "4c27a50c2f1d7755efe281ea88758885.jpeg",
+      "classification": "fake",
+      "mean_match_score": 0.0,
+      "max_match_score": 0.0,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.0,
+      "max_match_score_non_zero": 0.0,
+      "min_match_score_non_zero": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "true_positives": 0,
+      "false_positives": 5,
+      "false_negatives": 6,
+      "num_result_artifacts": 5,
+      "num_gt_artifacts": 6,
+      "matched_artifacts": [
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "The patient’s near hand (resting on the blanket) shows irregular finger anatomy: fingers appear fused/flattened with indistinct joints and an unnaturally shaped thumb area.",
+            "location": "Lower center-right, on top of the blue blanket near the boy’s hands",
+            "manual_review": "uncertain"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.97,
+            "reasoning": "Both are labeled structural, but they describe different phenomena in different regions: one is irregular hand/finger anatomy on the blanket, the other is a deformed window frame in the background.",
+            "type_match": true,
+            "semantic_similarity": 0.05,
+            "location_similarity": 0.0
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "The boy’s hands appear poorly defined, with ambiguous finger separation and unnatural overlap where his hands meet the blanket and the patient’s hand.",
+            "location": "Right-center, at the boy’s forearms/hands atop the blanket",
+            "manual_review": "invalid"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.98,
+            "reasoning": "The result artifact flags a structural/anatomical issue with the boy’s hands and finger definition on the right-center of the image, while the ground truth flags a stylistic/painterly rendering of the man’s hair on the center-left. They differ in type, visual phenomenon, and location.",
+            "type_match": false,
+            "semantic_similarity": 0.02,
+            "location_similarity": 0.0
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "The right woman’s forearm/hand region shows smeared detail and unclear wrist/hand boundaries, as if the hand is partially missing or blended into the blanket and her clothing.",
+            "location": "Lower right, where the woman leans in toward the bed",
+            "manual_review": "uncertain"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.98,
+            "reasoning": "The result artifact describes a structural/anatomical smear in the right woman's forearm/hand area on the lower right, while the ground truth describes an unusual hairband on the left side of the image. They differ in type, visual phenomenon, and location.",
+            "type_match": false,
+            "semantic_similarity": 0.0,
+            "location_similarity": 0.0
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "semantic",
+            "reasoning": "Hospital bedding/blanket geometry looks inconsistent: folds and edges do not align with body contours, creating a ‘draped but floating’ look rather than being pulled taut by gravity and contact points.",
+            "location": "Across the lower half of the image, especially center-right over the patient and boy",
+            "manual_review": "invalid"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.98,
+            "reasoning": "The result artifact flags inconsistent blanket/bedding geometry over the patient area, while the ground truth flags unnatural hair/hairline on the girl's head. They are different artifact types, different visual phenomena, and occur in different regions of the image.",
+            "type_match": false,
+            "semantic_similarity": 0.05,
+            "location_similarity": 0.0
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "stylistic",
+            "reasoning": "Overall lighting and skin texture look overly smooth and uniformly cinematic, with a slightly plastic sheen and reduced micro-detail typical of generative imagery.",
+            "location": "Faces and exposed skin areas across all subjects, most noticeable on the patient and right woman",
+            "manual_review": "uncertain"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.95,
+            "reasoning": "The result artifact describes a global stylistic issue (overly smooth, plastic-looking skin/lighting across faces and exposed skin), while the ground truth flags a localized structural/anatomical deformation (eyes and teeth) on the right-center woman's face. These are different artifact types and visual phenomena, with only partial location overlap.",
+            "type_match": false,
+            "semantic_similarity": 0.1,
+            "location_similarity": 0.3
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The window frame appears deformed.",
+            "location": "Upper center of the image, near the window behind the subjects."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "stylistic",
+            "reasoning": "The hair appears flat and painterly.",
+            "location": "Center-left of the image, on the man's hair."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "semantic",
+            "reasoning": "The hairband appears unusual.",
+            "location": "Left side of the image, on the girl's hair."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The hair and hairline appear unnatural.",
+            "location": "Lower-left of the image, on the back of the girl's head."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The eyes and teeth are deformed.",
+            "location": "Right-center of the image, on the woman's face."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The boy's position is not anatomically possible.",
+            "location": "Center-right of the image, where the boy is leaning near the woman."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "0e65a4e5adc50344a43ffbd1f9ff84ea_r1.jpeg",
+      "classification": "fake",
+      "mean_match_score": 0.0,
+      "max_match_score": 0.0,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.0,
+      "max_match_score_non_zero": 0.0,
+      "min_match_score_non_zero": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "true_positives": 0,
+      "false_positives": 2,
+      "false_negatives": 2,
+      "num_result_artifacts": 4,
+      "num_gt_artifacts": 2,
+      "matched_artifacts": [
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "The bow/hand interaction is anatomically inconsistent: the right hand appears to have muddled finger separations and an unclear grip on the bow frog, with finger shapes blending into each other.",
+            "location": "Center-left, around the musician’s right hand at the bottom end of the bow (near the frog)",
+            "manual_review": "valid"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.72,
+            "reasoning": "Both mention structural/anatomical issues with hands, but the result artifact is specific to the right hand’s grip on the bow near the frog, while the ground truth flags anatomical errors on both hands in the center. The overlap is partial (hands), but the scope and location do not align closely enough to be considered the same single artifact.",
+            "type_match": true,
+            "semantic_similarity": 0.55,
+            "location_similarity": 0.4
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Violin geometry/details look off: the bridge/f-hole/string region appears simplified and slightly inconsistent, with strings not clearly resolving to the tailpiece/bridge with realistic crispness.",
+            "location": "Center, on the violin body under the bow hair",
+            "manual_review": "new artifact"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.93,
+            "reasoning": "Both are labeled structural, but they describe different phenomena and different regions: the result flags simplified/inconsistent violin bridge/f-hole/string details in the center, while the ground truth flags distorted shapes on a tall vertical structure at the right edge.",
+            "type_match": true,
+            "semantic_similarity": 0.2,
+            "location_similarity": 0.0
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The hands show anatomical errors.",
+            "location": "Center of the image, on both hands of the violin player."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "There are distorted shapes.",
+            "location": "Right edge of the image, on the tall vertical structure."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "e566b28a9429f693defb306c191d05a6.jpeg",
+      "classification": "real",
+      "mean_match_score": 0.0,
+      "max_match_score": 0.0,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.0,
+      "max_match_score_non_zero": 0.0,
+      "min_match_score_non_zero": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "num_result_artifacts": 0,
+      "num_gt_artifacts": 3,
+      "matched_artifacts": [
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "semantic",
+            "reasoning": "The background structure deviates from the original.",
+            "location": "Top-left of the image, on the building in the background."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The hair flow appears unnatural.",
+            "location": "Center-right of the image, on the child's hair."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The eyes appear unnatural.",
+            "location": "Lower center-right of the image, on the child's eyes."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "3ae4bd2508eb036a3df769348af8e8e8.jpeg",
+      "classification": "fake",
+      "mean_match_score": 0.156,
+      "max_match_score": 0.78,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.78,
+      "max_match_score_non_zero": 0.78,
+      "min_match_score_non_zero": 0.78,
+      "precision": 0.3333333333333333,
+      "recall": 0.3333333333333333,
+      "f1_score": 0.3333333333333333,
+      "true_positives": 1,
+      "false_positives": 2,
+      "false_negatives": 2,
+      "num_result_artifacts": 6,
+      "num_gt_artifacts": 3,
+      "matched_artifacts": [
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Teeth appear overly uniform and smooth with slightly blended edges typical of generative rendering rather than natural tooth variation.",
+            "location": "All three visible smiles (left woman, right boy, lower-center child)",
+            "manual_review": "new artifact"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.95,
+            "reasoning": "Both are labeled structural, but they describe different phenomena and different regions: the result flags overly uniform, smooth teeth across three smiles, while the ground truth flags unnatural facial wrinkles near the woman's eye.",
+            "type_match": true,
+            "semantic_similarity": 0.05,
+            "location_similarity": 0.1
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Knit patterns show irregular, non-repeating stitching and ‘melted’ yarn detail, especially where different colors meet, suggesting synthesized texture.",
+            "location": "Hats: left woman’s beanie; lower-center child’s yellow/gray beanie; right boy’s striped beanie",
+            "manual_review": "uncertain"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.98,
+            "reasoning": "The result artifact flags irregular, melted-looking knit stitching on multiple hats (texture/structure issue), while the ground truth flags overly smooth skin on the child's face (stylistic/skin rendering issue). They concern different visual phenomena in different regions.",
+            "type_match": false,
+            "semantic_similarity": 0.05,
+            "location_similarity": 0.1
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "semantic",
+            "reasoning": "Background landmark appears like a well-known onion-dome church, but architectural details are incoherent: window/trim alignments and ornamentation don’t resolve cleanly when viewed closely.",
+            "location": "Upper-right background: domes and facade behind the man’s head and the boy’s hat",
+            "manual_review": "valid"
+          },
+          "matched_gt_artifact": {
+            "type": "semantic",
+            "reasoning": "The background structure deviates from the original.",
+            "location": "Top-right of the image, in the building background."
+          },
+          "match_score": 0.78,
+          "llm_judgment": {
+            "is_match": true,
+            "confidence": 0.78,
+            "reasoning": "Both artifacts flag a semantic issue with the same background building in the top-right: the structure/landmark is incorrect or deviates, with the result giving more detail about incoherent architectural elements. They refer to the same manipulated feature and region.",
+            "type_match": true,
+            "semantic_similarity": 0.74,
+            "location_similarity": 0.9
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "There are unnatural wrinkles on the face.",
+            "location": "Left-center of the image, on the woman's face around the eye area."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "stylistic",
+            "reasoning": "The skin appears overly smooth.",
+            "location": "Bottom-center of the image, on the child's face."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "v7ghcav7ghcav7gh.jpeg",
+      "classification": "fake",
+      "mean_match_score": 0.95,
+      "max_match_score": 0.95,
+      "min_match_score": 0.95,
+      "mean_match_score_non_zero": 0.95,
+      "max_match_score_non_zero": 0.95,
+      "min_match_score_non_zero": 0.95,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "true_positives": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "num_result_artifacts": 4,
+      "num_gt_artifacts": 1,
+      "matched_artifacts": [
+        {
+          "result_artifact": {
+            "type": "semantic",
+            "reasoning": "Implausible action/scene: a clinician is pressing a wristwatch against the patient's forehead as if it were a medical instrument; this is contextually inconsistent with a clinical exam.",
+            "location": "upper-right quadrant, doctor’s hand holding a metal wristwatch against the woman’s forehead",
+            "manual_review": "valid"
+          },
+          "matched_gt_artifact": {
+            "type": "semantic",
+            "reasoning": "A doctor is shown checking a patient's temperature with a watch, which is implausible.",
+            "location": "Right center of the image, where the watch is pressed against the patient's forehead."
+          },
+          "match_score": 0.95,
+          "llm_judgment": {
+            "is_match": true,
+            "confidence": 0.95,
+            "reasoning": "Both descriptions flag the same semantic implausibility: a clinician using a wristwatch as if it were a thermometer by pressing it to the patient’s forehead, in the same region of the image.",
+            "type_match": true,
+            "semantic_similarity": 0.96,
+            "location_similarity": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "filename": "637d149bc1ccd8dedacdf37530cf408e.jpeg",
+      "classification": "real",
+      "mean_match_score": 0.0,
+      "max_match_score": 0.0,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.0,
+      "max_match_score_non_zero": 0.0,
+      "min_match_score_non_zero": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 2,
+      "num_result_artifacts": 0,
+      "num_gt_artifacts": 2,
+      "matched_artifacts": [
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The teeth have no gap.",
+            "location": "Upper Center of the image, on the woman's mouth and teeth area."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The fingers are disproportionally long.",
+            "location": "Lower side of the image, on the woman's left hand."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "0d003053cff1c844a1a733b02ea73606.jpeg",
+      "classification": "fake",
+      "mean_match_score": 0.87,
+      "max_match_score": 0.9,
+      "min_match_score": 0.84,
+      "mean_match_score_non_zero": 0.87,
+      "max_match_score_non_zero": 0.9,
+      "min_match_score_non_zero": 0.84,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "true_positives": 2,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "num_result_artifacts": 6,
+      "num_gt_artifacts": 2,
+      "matched_artifacts": [
+        {
+          "result_artifact": {
+            "type": "stylistic",
+            "reasoning": "Skin has a uniform, waxy/plastic smoothness with an airbrushed look and minimal natural pore variation.",
+            "location": "Across the cheeks, nose bridge, and forehead (center-left to upper-right)",
+            "manual_review": "valid"
+          },
+          "matched_gt_artifact": {
+            "type": "stylistic",
+            "reasoning": "The image has an overly smooth and plastic appearance.",
+            "location": "Center of the image, on the face."
+          },
+          "match_score": 0.9,
+          "llm_judgment": {
+            "is_match": true,
+            "confidence": 0.9,
+            "reasoning": "Both artifacts describe the same stylistic issue: an overly smooth, plastic/airbrushed skin rendering on the face. The specified regions overlap substantially (face center including cheeks/nose/forehead).",
+            "type_match": true,
+            "semantic_similarity": 0.92,
+            "location_similarity": 0.85
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Eye anatomy appears doll-like: iris/limbal ring looks overly crisp and saturated with an unnatural, glassy gradient.",
+            "location": "Both irises (left eye mid-left; right eye mid-right)",
+            "manual_review": "valid and new artifact: overly glossy eyes"
+          },
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The irises have unnatural coloring.",
+            "location": "Upper center of the image, on the eyes, especially the subject's left eye."
+          },
+          "match_score": 0.84,
+          "llm_judgment": {
+            "is_match": true,
+            "confidence": 0.84,
+            "reasoning": "Both artifacts flag a structural issue with the irises/eye appearance, specifically unnatural iris coloring/appearance. The result is more detailed (crisp limbal ring, saturated/glassy gradient) but aligns with the ground truth's 'unnatural coloring' on the eyes, with partial location overlap (especially left eye).",
+            "type_match": true,
+            "semantic_similarity": 0.85,
+            "location_similarity": 0.72
+          }
+        }
+      ]
+    },
+    {
+      "filename": "ozrpf8ozrpf8ozrp.jpeg",
+      "classification": "fake",
+      "mean_match_score": 0.78,
+      "max_match_score": 0.78,
+      "min_match_score": 0.78,
+      "mean_match_score_non_zero": 0.78,
+      "max_match_score_non_zero": 0.78,
+      "min_match_score_non_zero": 0.78,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "true_positives": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "num_result_artifacts": 5,
+      "num_gt_artifacts": 1,
+      "matched_artifacts": [
+        {
+          "result_artifact": {
+            "type": "semantic",
+            "reasoning": "The right-side boxer’s face appears to depict a recognizable real public figure placed into a boxing scene, suggesting a composited/deepfake-style generation rather than a candid sports photo.",
+            "location": "right side, fighter’s head/face",
+            "manual_review": "valid"
+          },
+          "matched_gt_artifact": {
+            "type": "semantic",
+            "reasoning": "The image depicts Putin and Zelensky participating in a boxing match, which is unrealistic.",
+            "location": "Center of the image, inside the boxing ring."
+          },
+          "match_score": 0.78,
+          "llm_judgment": {
+            "is_match": true,
+            "confidence": 0.78,
+            "reasoning": "Both artifacts flag the same semantic manipulation: recognizable real-world political figures depicted as boxers in a boxing match, implying an unrealistic/composited scene. The result focuses on the right boxer’s face as a deepfake/composite cue, while the ground truth describes the overall unrealistic depiction of Putin and Zelensky boxing. Locations overlap partially (one specific face vs the central ring scene).",
+            "type_match": true,
+            "semantic_similarity": 0.82,
+            "location_similarity": 0.55
+          }
+        }
+      ]
+    },
+    {
+      "filename": "eaef1ce47d4afebf42b1a93fcf502386.jpeg",
+      "classification": "fake",
+      "mean_match_score": 0.0,
+      "max_match_score": 0.0,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.0,
+      "max_match_score_non_zero": 0.0,
+      "min_match_score_non_zero": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "true_positives": 0,
+      "false_positives": 2,
+      "false_negatives": 2,
+      "num_result_artifacts": 4,
+      "num_gt_artifacts": 2,
+      "matched_artifacts": [
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Fingers show subtle shape inconsistencies and unnatural tapering/contours around the sandwich grip, with slightly ambiguous joint definition typical of generative hand errors.",
+            "location": "Lower center, both hands around the sandwich",
+            "manual_review": "invalid"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.9,
+            "reasoning": "The result artifact flags structural/anatomical hand issues (finger shape/joint definition) around the sandwich grip, while the ground truth flags a stylistic rendering issue (overly smooth/waxy skin) on the face and hands. They differ in type and underlying visual phenomenon, with only partial location overlap on the hands.",
+            "type_match": false,
+            "semantic_similarity": 0.2,
+            "location_similarity": 0.4
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "The ring appears fused/embedded unnaturally into the finger with an odd edge transition and inconsistent occlusion/shadowing.",
+            "location": "Lower right, ring on the right hand",
+            "manual_review": "invalid"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.95,
+            "reasoning": "The result artifact flags a structural rendering issue with a ring appearing fused into a finger (lower right). The ground truth flags an impractical hand/sandwich holding pose (center). They differ in type, visual phenomenon, and location.",
+            "type_match": false,
+            "semantic_similarity": 0.1,
+            "location_similarity": 0.2
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "stylistic",
+            "reasoning": "The skin appears overly smooth and waxy.",
+            "location": "Center of the image, on the woman's face and hands."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "semantic",
+            "reasoning": "The person is holding the sandwich in an impractical way.",
+            "location": "Center of the image, on the hands and sandwich."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "2c4c0b171577884f5c0991cacb5c5ebc_r1.jpeg",
+      "classification": "fake",
+      "mean_match_score": 0.2922222222222222,
+      "max_match_score": 0.95,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.8766666666666666,
+      "max_match_score_non_zero": 0.95,
+      "min_match_score_non_zero": 0.78,
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1_score": 0.5,
+      "true_positives": 3,
+      "false_positives": 3,
+      "false_negatives": 3,
+      "num_result_artifacts": 6,
+      "num_gt_artifacts": 6,
+      "matched_artifacts": [
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Hands show irregular finger structure/counting cues: inconsistent finger lengths and awkward digit separation typical of generation errors.",
+            "location": "Both hands, left and right sides of the subject (mid-frame, near shoulder height)",
+            "manual_review": "valid"
+          },
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The hands show anatomical errors.",
+            "location": "Center of the image, on both of the person's hands."
+          },
+          "match_score": 0.9,
+          "llm_judgment": {
+            "is_match": true,
+            "confidence": 0.9,
+            "reasoning": "Both descriptions flag the same structural/anatomical issues in the subject's hands (irregular finger structure) and place the artifact on both hands in the central/mid-frame area.",
+            "type_match": true,
+            "semantic_similarity": 0.9,
+            "location_similarity": 0.85
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Right hand has malformed thumb/index relationship and unnaturally bent/merged fingers, with ambiguous joint placement.",
+            "location": "Subject’s right hand (viewer’s left), mid-left of frame",
+            "manual_review": "valid"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.98,
+            "reasoning": "Both are labeled structural, but they describe different phenomena in different regions: the result flags malformed fingers on the right hand, while the ground truth flags unnatural eyes and teeth on the face.",
+            "type_match": true,
+            "semantic_similarity": 0.05,
+            "location_similarity": 0.0
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Left hand shows extra/unclear finger segments and odd spacing between fingers, with poorly defined knuckles.",
+            "location": "Subject’s left hand (viewer’s right), mid-right of frame",
+            "manual_review": "valid"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.98,
+            "reasoning": "The result artifact flags an anatomical/structural issue in the subject’s left hand (finger/knuckle irregularities) located mid-right, while the ground truth flags an illogical placement of ceiling lights in the upper-right. They concern different phenomena and different regions.",
+            "type_match": false,
+            "semantic_similarity": 0.02,
+            "location_similarity": 0.05
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "semantic",
+            "reasoning": "Background whiteboard writing appears like incoherent pseudo-text rather than legible handwriting.",
+            "location": "Whiteboard on the left side of the room (left background)",
+            "manual_review": "valid"
+          },
+          "matched_gt_artifact": {
+            "type": "semantic",
+            "reasoning": "The letters on the board are illegible.",
+            "location": "Left side of the image, on the whiteboard."
+          },
+          "match_score": 0.95,
+          "llm_judgment": {
+            "is_match": true,
+            "confidence": 0.95,
+            "reasoning": "Both artifacts describe illegible/incoherent text on the left-side whiteboard, indicating the same semantic pseudo-text issue in the same region.",
+            "type_match": true,
+            "semantic_similarity": 0.95,
+            "location_similarity": 0.95
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "semantic",
+            "reasoning": "Projected screen content is indistinct and resembles meaningless text/shapes rather than a coherent slide.",
+            "location": "Projection screen on the right background",
+            "manual_review": "invalid, projection is too transparent to make a clear judgement"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.98,
+            "reasoning": "The result artifact concerns indistinct/meaningless projected content on a screen in the right background, while the ground truth concerns a missing coat button on the person's coat in the lower center. They describe different phenomena and different locations.",
+            "type_match": true,
+            "semantic_similarity": 0.05,
+            "location_similarity": 0.0
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Some chair/desk geometry looks inconsistent: legs and supports do not align cleanly and edges blur/warp into each other.",
+            "location": "Right foreground/midground desks and chairs (lower-right quadrant)",
+            "manual_review": "valid"
+          },
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The chair legs appear extended and deformed.",
+            "location": "Lower-right of the image, on the chair."
+          },
+          "match_score": 0.78,
+          "llm_judgment": {
+            "is_match": true,
+            "confidence": 0.78,
+            "reasoning": "Both artifacts describe a structural geometry issue affecting chair legs in the lower-right area. The result artifact is broader (chairs/desks and general misalignment/warping), but it includes the same deformed chair-leg phenomenon described in the ground truth.",
+            "type_match": true,
+            "semantic_similarity": 0.72,
+            "location_similarity": 0.85
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The eyes and teeth appear unnatural.",
+            "location": "Upper Center of the image, on the person's face."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "semantic",
+            "reasoning": "The ceiling lights are placed illogically.",
+            "location": "Upper-right of the image, on the ceiling."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "semantic",
+            "reasoning": "The coat appears to have no button.",
+            "location": "Lower center of the image, on the front of the person's coat."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "0bce6c35c24ec5ce8ae8ad5bb4f67d59_r2.jpeg",
+      "classification": "real",
+      "mean_match_score": 0.0,
+      "max_match_score": 0.0,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.0,
+      "max_match_score_non_zero": 0.0,
+      "min_match_score_non_zero": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "num_result_artifacts": 0,
+      "num_gt_artifacts": 3,
+      "matched_artifacts": [
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The background faces appear smudged and lack clear detail.",
+            "location": "Right side of the image, in the background near the tree."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The hands show anatomical errors.",
+            "location": "Bottom center of the image, on the subject's clasped hands."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "semantic",
+            "reasoning": "The bench backrest stops abruptly.",
+            "location": "Left side of the image, on the bench backrest."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "b289c80bdf2d5092fffe0e53d927af2c.jpeg",
+      "classification": "real",
+      "mean_match_score": 0.0,
+      "max_match_score": 0.0,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.0,
+      "max_match_score_non_zero": 0.0,
+      "min_match_score_non_zero": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "num_result_artifacts": 0,
+      "num_gt_artifacts": 3,
+      "matched_artifacts": [
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The mouth, hands, and cup appear deformed.",
+            "location": "Center of the image, on the person's face and hands holding the cup."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "physical",
+            "reasoning": "The shadow of the cap does not make sense.",
+            "location": "Lower-left of the image, near the shadow of the man's head."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "physical",
+            "reasoning": "The dog's shadow is too long in relation to the man's shadow.",
+            "location": "Center of the image, on the ground beneath the dog."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "04ed7ba99198264f5405056b941a4d3c.jpeg",
+      "classification": "fake",
+      "mean_match_score": 0.0,
+      "max_match_score": 0.0,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.0,
+      "max_match_score_non_zero": 0.0,
+      "min_match_score_non_zero": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "true_positives": 0,
+      "false_positives": 4,
+      "false_negatives": 4,
+      "num_result_artifacts": 6,
+      "num_gt_artifacts": 4,
+      "matched_artifacts": [
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Hand/finger anatomy appears malformed: the visible right hand has an unusual, fused-looking finger shape and ambiguous knuckle structure.",
+            "location": "bottom-right corner on the wooden counter (girl in vest’s right hand)",
+            "manual_review": "invalid"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.96,
+            "reasoning": "The result artifact flags a malformed hand/finger anatomy in the bottom-right, while the ground truth flags an unusual object near a hanging chain in the top-left. They differ in type, visual phenomenon, and location.",
+            "type_match": false,
+            "semantic_similarity": 0.05,
+            "location_similarity": 0.0
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Ear shape looks irregular/underdefined with unnatural contours and attachment to the head.",
+            "location": "right side of the girl’s head (frame right), around the ear area",
+            "manual_review": "uncertain"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.93,
+            "reasoning": "The result artifact flags an anatomical/structural issue with the girl's ear shape and attachment, while the ground truth flags an inaccurate reflection near the standing boy. They concern different phenomena and different regions of the image.",
+            "type_match": false,
+            "semantic_similarity": 0.05,
+            "location_similarity": 0.1
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Clothing geometry is inconsistent: the vest’s lower edge/buttons and the shirt cuff/forearm region blend with the background and lose clear seams, creating a smeared boundary.",
+            "location": "lower-right quadrant on the girl’s torso/arms (vest edge and right sleeve/cuff area)",
+            "manual_review": "uncertain"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.96,
+            "reasoning": "Both are labeled structural, but they describe different phenomena and regions: the result artifact concerns smeared clothing/arm boundaries on the torso/lower-right, while the ground truth concerns deformed eyes on the girl's face (center-right).",
+            "type_match": true,
+            "semantic_similarity": 0.08,
+            "location_similarity": 0.1
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "semantic",
+            "reasoning": "Facial proportions have an uncanny, doll-like quality (overly large, glassy eyes with very smooth skin and minimal micro-texture), inconsistent with the rest of the scene’s realism.",
+            "location": "girl in the foreground, right side (face/eyes)",
+            "manual_review": "new artifact"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.78,
+            "reasoning": "Both mention an issue with a child's eyes, but they differ in described phenomenon (doll-like oversized/glassy eyes with overly smooth skin vs explicitly deformed eyes) and the locations do not align (foreground right-side girl vs bottom-left seated child). This suggests they are not referring to the same underlying artifact.",
+            "type_match": false,
+            "semantic_similarity": 0.4,
+            "location_similarity": 0.15
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "semantic",
+            "reasoning": "There is an unusual object present.",
+            "location": "Top-left of the image, near the hanging chain."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "physical",
+            "reasoning": "The reflection appears inaccurate.",
+            "location": "Upper-right of the image, around the standing boy."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The eyes appear deformed.",
+            "location": "Center-right of the image, on the standing girl's face."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The eyes appear deformed.",
+            "location": "Bottom-left of the image, on the seated child's face."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "04e61d9506ffe1d8ac6c48e8b091cc48.jpeg",
+      "classification": "real",
+      "mean_match_score": 0.0,
+      "max_match_score": 0.0,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.0,
+      "max_match_score_non_zero": 0.0,
+      "min_match_score_non_zero": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 4,
+      "num_result_artifacts": 0,
+      "num_gt_artifacts": 4,
+      "matched_artifacts": [
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The faces appear unnatural.",
+            "location": "Center of the image, on both faces."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "semantic",
+            "reasoning": "The two people do not appear to be making eye contact.",
+            "location": "Center of the image, between the two faces."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The hands appear deformed.",
+            "location": "Lower center of the image, on the hands on the table."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "semantic",
+            "reasoning": "The windows appear to be below ground level.",
+            "location": "Mid-right of the image, on the building windows visible through the large window."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "7xld4y7xld4y7xld.jpeg",
+      "classification": "real",
+      "mean_match_score": 0.0,
+      "max_match_score": 0.0,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.0,
+      "max_match_score_non_zero": 0.0,
+      "min_match_score_non_zero": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 2,
+      "num_result_artifacts": 0,
+      "num_gt_artifacts": 2,
+      "matched_artifacts": [
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "physical",
+            "reasoning": "The reflection of the bricks is not accurate.",
+            "location": "Left side of the image, in the window area."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "stylistic",
+            "reasoning": "The beard hair appears painterly.",
+            "location": "Center of the image, on the man's beard."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "me07oqme07oqme07.jpeg",
+      "classification": "fake",
+      "mean_match_score": 0.0,
+      "max_match_score": 0.0,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.0,
+      "max_match_score_non_zero": 0.0,
+      "min_match_score_non_zero": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "true_positives": 0,
+      "false_positives": 1,
+      "false_negatives": 1,
+      "num_result_artifacts": 5,
+      "num_gt_artifacts": 1,
+      "matched_artifacts": [
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Irregular, partially missing/mangled vehicle lettering; only a fragment like 'OLI' is visible where 'POLICE' would be expected, with edge distortions typical of generative text rendering.",
+            "location": "right side, on the police vehicle door panel",
+            "manual_review": "invalid"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.98,
+            "reasoning": "The result artifact flags malformed/generated text on a police vehicle door (structural text rendering issue), while the ground truth flags a fabricated event/scene depicting Trump's arrest (semantic misinformation) in the center. They concern different phenomena and different locations.",
+            "type_match": false,
+            "semantic_similarity": 0.0,
+            "location_similarity": 0.0
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "semantic",
+            "reasoning": "The image depicts an arrest of Trump that never took place.",
+            "location": "Center of the image, where Trump is shown being escorted by police officers."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "5bd35cd9932265235fd90b3daf32c65d.jpeg",
+      "classification": "fake",
+      "mean_match_score": 0.0,
+      "max_match_score": 0.0,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.0,
+      "max_match_score_non_zero": 0.0,
+      "min_match_score_non_zero": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "true_positives": 0,
+      "false_positives": 2,
+      "false_negatives": 2,
+      "num_result_artifacts": 5,
+      "num_gt_artifacts": 2,
+      "matched_artifacts": [
+        {
+          "result_artifact": {
+            "type": "semantic",
+            "reasoning": "Background storefront signage contains garbled/implausible text (appears like nonsensical lettering rather than a readable real sign).",
+            "location": "Upper center-left, large sign above the street",
+            "manual_review": "new artifact"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.95,
+            "reasoning": "The result artifact flags garbled/implausible text on a storefront sign (a semantic/text rendering issue) in the upper center-left. The ground truth flags a disappearing body (a structural/anatomical/occlusion issue) on the left near the storefront. These describe different phenomena and only loosely overlap in general area.",
+            "type_match": false,
+            "semantic_similarity": 0.05,
+            "location_similarity": 0.3
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Some background pedestrians have indistinct, smeared faces and poorly defined limbs consistent with generative blending rather than optical blur alone.",
+            "location": "Mid-right to far-right background sidewalk crowd",
+            "manual_review": "partially valid, right side looks normal, but person on the left has no upper body"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.98,
+            "reasoning": "The result artifact flags smeared/indistinct background pedestrians (faces/limbs) on the right side, while the ground truth flags an illogical coat button arrangement on the man at center-left. They differ in type, visual phenomenon, and location.",
+            "type_match": false,
+            "semantic_similarity": 0.05,
+            "location_similarity": 0.0
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "A body appears to be disappearing.",
+            "location": "Left side of the image, near the storefront."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "semantic",
+            "reasoning": "The button arrangement on the coat is illogical.",
+            "location": "Center-left of the image, on the front of the man's coat."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "4ca91e737979369e37478c4f4ec6e84e_r9.jpeg",
+      "classification": "fake",
+      "mean_match_score": 0.25666666666666665,
+      "max_match_score": 0.82,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.77,
+      "max_match_score_non_zero": 0.82,
+      "min_match_score_non_zero": 0.72,
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1_score": 0.5,
+      "true_positives": 2,
+      "false_positives": 2,
+      "false_negatives": 2,
+      "num_result_artifacts": 6,
+      "num_gt_artifacts": 4,
+      "matched_artifacts": [
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Overhead hand straps show inconsistent geometry and attachment points; some appear warped or not clearly connected to the rail.",
+            "location": "top center and top-right",
+            "manual_review": "invalid: hand straps are connected and consistent"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.98,
+            "reasoning": "The result artifact flags warped/inconsistent geometry of overhead hand straps near the top center/right, while the ground truth flags a painterly hair style in the upper-left on the man's hair. They differ in type, visual phenomenon, and location.",
+            "type_match": false,
+            "semantic_similarity": 0.0,
+            "location_similarity": 0.05
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "semantic",
+            "reasoning": "Advertisement/signage areas contain text-like patterns that are not legible and resemble random glyphs rather than real printed text.",
+            "location": "top-right along the carriage wall/ceiling line",
+            "manual_review": "invalid"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.98,
+            "reasoning": "The result artifact flags illegible, glyph-like pseudo-text in signage near the top-right of the carriage, while the ground truth flags unnatural skin texture on a man's face at center-left. They differ in type, visual phenomenon, and location.",
+            "type_match": false,
+            "semantic_similarity": 0.0,
+            "location_similarity": 0.0
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "stylistic",
+            "reasoning": "Hair contains fine stray strands that blend into the background with unnatural wispy continuity and inconsistent strand definition.",
+            "location": "center (around the woman’s head, especially upper-left and upper-right hair edges)",
+            "manual_review": "uncertain"
+          },
+          "matched_gt_artifact": {
+            "type": "stylistic",
+            "reasoning": "The hair appears painterly.",
+            "location": "Center of the image, on the woman's hair."
+          },
+          "match_score": 0.72,
+          "llm_judgment": {
+            "is_match": true,
+            "confidence": 0.72,
+            "reasoning": "Both artifacts flag a stylistic issue in the woman’s hair. The result describes wispy, poorly defined strands blending into the background, which is consistent with a painterly/illustrative hair rendering. Locations overlap on the hair around the head, though the result is more specific about the edges.",
+            "type_match": true,
+            "semantic_similarity": 0.7,
+            "location_similarity": 0.85
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Clothing details (zippers/stitching) show minor incoherence and soft, non-functional-looking hardware shapes.",
+            "location": "lower center and lower-right (woman’s jacket front/zipper area)",
+            "manual_review": "valid"
+          },
+          "matched_gt_artifact": {
+            "type": "semantic",
+            "reasoning": "The zipper is inconsistent.",
+            "location": "Lower-right of the image, on the jacket zipper area."
+          },
+          "match_score": 0.82,
+          "llm_judgment": {
+            "is_match": true,
+            "confidence": 0.82,
+            "reasoning": "Both descriptions flag an issue with the jacket zipper area: the ground truth notes an inconsistent zipper, while the result describes incoherent zipper/stitching and non-functional-looking hardware in the same jacket front region. Despite differing type labels, the underlying visual problem and location substantially overlap.",
+            "type_match": false,
+            "semantic_similarity": 0.8,
+            "location_similarity": 0.85
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "stylistic",
+            "reasoning": "The hair appears painterly.",
+            "location": "Upper-left of the image, on the man's hair."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "stylistic",
+            "reasoning": "The skin texture appears unnatural.",
+            "location": "Center-left of the image, on the man's face."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "2ad2e05330051435a8976d2f72819b57.jpeg",
+      "classification": "real",
+      "mean_match_score": 0.0,
+      "max_match_score": 0.0,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.0,
+      "max_match_score_non_zero": 0.0,
+      "min_match_score_non_zero": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "num_result_artifacts": 0,
+      "num_gt_artifacts": 3,
+      "matched_artifacts": [
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "stylistic",
+            "reasoning": "There are smudges on the shirt.",
+            "location": "Upper right of the image, on the runner's shirt near the right shoulder area."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The watch, wrist, and fingers are deformed.",
+            "location": "Center of the image, on the runner's right hand and left wrist and hand."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The shoe is deformed.",
+            "location": "Bottom center of the image, on the runner's front foot."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "4ca91e737979369e37478c4f4ec6e84e_r4.jpeg",
+      "classification": "fake",
+      "mean_match_score": 0.0,
+      "max_match_score": 0.0,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.0,
+      "max_match_score_non_zero": 0.0,
+      "min_match_score_non_zero": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "true_positives": 0,
+      "false_positives": 2,
+      "false_negatives": 2,
+      "num_result_artifacts": 2,
+      "num_gt_artifacts": 2,
+      "matched_artifacts": [
+        {
+          "result_artifact": {
+            "type": "semantic",
+            "reasoning": "Overhead signage contains garbled/illegible text and inconsistent typography that resembles pseudo-letters rather than readable words.",
+            "location": "top-right area on the hanging sign",
+            "manual_review": "new artifact"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.93,
+            "reasoning": "Both are in the top-right area, but they describe different objects and issues: the result flags illegible/garbled text on a hanging sign, while the ground truth flags misaligned clock hands on a clock face. The underlying visual phenomena and reasoning do not overlap.",
+            "type_match": true,
+            "semantic_similarity": 0.1,
+            "location_similarity": 0.35
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Wall/poster clock has malformed/unclear numerals and face details; the design looks smeared and non-specific rather than a crisp clock print.",
+            "location": "upper-right corner (clock/poster)",
+            "manual_review": "valid"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.96,
+            "reasoning": "Both are labeled structural, but they describe different phenomena in different regions: one is a smeared/malformed clock face in the upper-right, the other is a deformed eye on the main subject at center-left.",
+            "type_match": true,
+            "semantic_similarity": 0.08,
+            "location_similarity": 0.0
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "semantic",
+            "reasoning": "The clock hands are not centered.",
+            "location": "Top-right of the image, on the clock face."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The eye appears deformed.",
+            "location": "Center-left of the image, on the main subject's right eye."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "mnj16pmnj16pmnj1.jpeg",
+      "classification": "fake",
+      "mean_match_score": 0.93,
+      "max_match_score": 0.93,
+      "min_match_score": 0.93,
+      "mean_match_score_non_zero": 0.93,
+      "max_match_score_non_zero": 0.93,
+      "min_match_score_non_zero": 0.93,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "true_positives": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "num_result_artifacts": 4,
+      "num_gt_artifacts": 1,
+      "matched_artifacts": [
+        {
+          "result_artifact": {
+            "type": "semantic",
+            "reasoning": "Firefighter appears to be pouring from a red fuel can onto flames, which is functionally implausible for firefighting behavior (would intensify fire).",
+            "location": "Center-right foreground (firefighter holding red can and stream aimed at fire)",
+            "manual_review": "valid"
+          },
+          "matched_gt_artifact": {
+            "type": "semantic",
+            "reasoning": "A firefighter is shown adding gasoline to the fire, which is implausible.",
+            "location": "Lower center of the image, where the firefighter is pouring liquid from a gasoline can onto the flames."
+          },
+          "match_score": 0.93,
+          "llm_judgment": {
+            "is_match": true,
+            "confidence": 0.93,
+            "reasoning": "Both descriptions flag the same semantic implausibility: a firefighter pouring fuel/gasoline from a red can onto active flames, effectively intensifying the fire. The locations align to the firefighter and pouring stream directed at the fire in the central/lower-central area.",
+            "type_match": true,
+            "semantic_similarity": 0.95,
+            "location_similarity": 0.85
+          }
+        }
+      ]
+    },
+    {
+      "filename": "53805809adf9a3d8d0d33c71253fe7eb.jpeg",
+      "classification": "fake",
+      "mean_match_score": 0.0,
+      "max_match_score": 0.0,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.0,
+      "max_match_score_non_zero": 0.0,
+      "min_match_score_non_zero": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "true_positives": 0,
+      "false_positives": 3,
+      "false_negatives": 3,
+      "num_result_artifacts": 4,
+      "num_gt_artifacts": 3,
+      "matched_artifacts": [
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Background pedestrian’s legs/feet appear poorly formed and blurred with unclear shoe geometry, inconsistent with the rest of the scene’s sharpness.",
+            "location": "left side, mid-ground sidewalk (woman in white top/blue shorts)",
+            "manual_review": "new artifact"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.86,
+            "reasoning": "The result artifact flags malformed/blurred anatomy (legs/feet and shoe geometry) on a background pedestrian, while the ground truth flags an illogical shadow near the pedestrian. These are different artifact types and visual phenomena, even though both are on the left sidewalk area.",
+            "type_match": false,
+            "semantic_similarity": 0.18,
+            "location_similarity": 0.62
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "semantic",
+            "reasoning": "Several storefront signs contain unreadable or nonsensical text-like shapes that resemble letters but don’t form coherent words.",
+            "location": "left side building facades and hanging signs; also right side signage in mid-ground",
+            "manual_review": "new artifact"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.98,
+            "reasoning": "The result artifact flags illegible/nonsensical text on storefront signage, while the ground truth flags deformed hands. These are different artifact types, different visual phenomena, and occur in different regions of the image.",
+            "type_match": false,
+            "semantic_similarity": 0.0,
+            "location_similarity": 0.0
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Street fixtures/signposts show slight warping/misalignment and ambiguous attachment points (edges and brackets look melted or fused).",
+            "location": "upper left and upper right along the street (lamp/sign poles near tree canopy)",
+            "manual_review": "uncertain"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.95,
+            "reasoning": "The result artifact describes warped/melted street fixtures/signposts near the top of the image, while the ground truth describes inconsistent shadow directions on the ground in the lower half. They are different artifact types, different visual phenomena, and occur in different regions.",
+            "type_match": false,
+            "semantic_similarity": 0.05,
+            "location_similarity": 0.0
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "physical",
+            "reasoning": "There is an illogical shadow.",
+            "location": "Left side of the image, on the sidewalk near the pedestrian."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The hands appear deformed.",
+            "location": "Center of the image, on the women's hands."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "physical",
+            "reasoning": "The shadows fall in different directions.",
+            "location": "Lower half of the image, on the ground near the women's feet and the tree shadow."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "2ebd5194c37a818d1805082c34065c30.jpeg",
+      "classification": "fake",
+      "mean_match_score": 0.08666666666666667,
+      "max_match_score": 0.78,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.78,
+      "max_match_score_non_zero": 0.78,
+      "min_match_score_non_zero": 0.78,
+      "precision": 0.2,
+      "recall": 0.2,
+      "f1_score": 0.20000000000000004,
+      "true_positives": 1,
+      "false_positives": 4,
+      "false_negatives": 4,
+      "num_result_artifacts": 6,
+      "num_gt_artifacts": 5,
+      "matched_artifacts": [
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Pizza slice edges and toppings appear smeared/warped, with cheese/pepperoni shapes lacking crisp boundaries typical of a real photo.",
+            "location": "Lower center-right, in the slice held by the right woman (near her hands).",
+            "manual_review": "new artifact"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.96,
+            "reasoning": "Both are labeled structural, but they describe different phenomena in different regions: the result flags smeared/warped pizza slice toppings near the right woman's hands, while the ground truth flags a deformed face on a background pedestrian on the left.",
+            "type_match": true,
+            "semantic_similarity": 0.1,
+            "location_similarity": 0.0
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Fingers/hand anatomy looks slightly deformed: inconsistent finger lengths and an ambiguous separation between fingers as they grip the slice.",
+            "location": "Lower right-center, right woman’s hands holding the slice.",
+            "manual_review": "valid"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.96,
+            "reasoning": "Both are labeled structural, but they describe different phenomena and different regions: the result flags deformed hand/finger anatomy in the lower right-center, while the ground truth flags unnatural faces in the upper center.",
+            "type_match": true,
+            "semantic_similarity": 0.1,
+            "location_similarity": 0.0
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Pizza in the box has irregular, unnatural topping geometry and low-detail texture; some toppings look partially melted into the surface in a non-photographic way.",
+            "location": "Lower left-center, pizza inside the open box on the left woman’s lap.",
+            "manual_review": "new artifact"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.96,
+            "reasoning": "Both are labeled structural, but they describe different phenomena and different regions: the result flags unnatural pizza topping geometry/texture in the box, while the ground truth flags clothing (sports bra) merging with skin at the neckline.",
+            "type_match": true,
+            "semantic_similarity": 0.08,
+            "location_similarity": 0.12
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "semantic",
+            "reasoning": "The pizza box/tray arrangement is implausible: the pizza appears to sit in a thin paper-lined tray without clear structural support, yet remains flat and stable on the lap.",
+            "location": "Lower left, around the pizza box/tray and paper liner.",
+            "manual_review": "invalid"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.96,
+            "reasoning": "The result artifact flags an implausible pizza box/tray structure in the lower-left area, while the ground truth flags deformed hands in the center. They concern different phenomena (object support/structure vs anatomical deformation) and different locations.",
+            "type_match": false,
+            "semantic_similarity": 0.08,
+            "location_similarity": 0.1
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Bench/table edges show slight warping and inconsistent straight lines, typical of generative distortions in repeating man-made geometry.",
+            "location": "Mid to lower background, wooden benches and table surfaces behind the subjects.",
+            "manual_review": "new artifact"
+          },
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The bench does not continue logically.",
+            "location": "Lower left of the image, on the bench edge."
+          },
+          "match_score": 0.78,
+          "llm_judgment": {
+            "is_match": true,
+            "confidence": 0.78,
+            "reasoning": "Both artifacts describe a structural distortion affecting the bench geometry/edges, where the bench lines/continuation are inconsistent. The result is broader (benches and table edges mid-to-lower background), while the ground truth is specific to the lower-left bench edge, but they plausibly refer to the same underlying bench warping/continuity error.",
+            "type_match": true,
+            "semantic_similarity": 0.8,
+            "location_similarity": 0.65
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The face appears deformed.",
+            "location": "Left side of the image, on the background pedestrian's face."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The faces appear unnatural.",
+            "location": "Upper center of the image, on the two women's faces."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The sports bra appears to merge with the skin.",
+            "location": "Center-left of the image, on the left woman's sports bra neckline area."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The hands appear deformed.",
+            "location": "Center of the image, on the hands holding the pizza slice and the left woman's right hand."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "0b5a6fe395e6652f45b8bdab691c28adc961287d6ecc86ca1f739abcfe584ed2.jpeg",
+      "classification": "fake",
+      "mean_match_score": 0.31,
+      "max_match_score": 0.93,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.93,
+      "max_match_score_non_zero": 0.93,
+      "min_match_score_non_zero": 0.93,
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1_score": 0.5,
+      "true_positives": 1,
+      "false_positives": 1,
+      "false_negatives": 1,
+      "num_result_artifacts": 6,
+      "num_gt_artifacts": 2,
+      "matched_artifacts": [
+        {
+          "result_artifact": {
+            "type": "stylistic",
+            "reasoning": "Skin appears unusually smooth and uniformly airbrushed with minimal natural pores/blemishes, resembling generative/retouched rendering rather than a typical photograph.",
+            "location": "Face (center), especially cheeks and forehead",
+            "manual_review": "valid"
+          },
+          "matched_gt_artifact": {
+            "type": "stylistic",
+            "reasoning": "The image has an overly smooth and plastic appearance.",
+            "location": "Upper center of the image, on the subject's face and skin."
+          },
+          "match_score": 0.93,
+          "llm_judgment": {
+            "is_match": true,
+            "confidence": 0.93,
+            "reasoning": "Both artifacts describe the same stylistic issue: unnaturally smooth, airbrushed/plastic-looking skin on the subject’s face. The locations align on the face/skin in the upper/center region.",
+            "type_match": true,
+            "semantic_similarity": 0.94,
+            "location_similarity": 0.9
+          }
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Teeth show overly regular spacing/shape and a uniformly bright tone with limited natural micro-variation; edges look slightly too clean for a candid portrait.",
+            "location": "Mouth/teeth (center-lower of face)",
+            "manual_review": "new artifact"
+          },
+          "matched_gt_artifact": null,
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.96,
+            "reasoning": "Both are labeled structural, but they describe different visual issues in different facial regions: one concerns unnaturally uniform teeth in the mouth, while the other concerns distorted/unusually colored irises in the eyes (right iris).",
+            "type_match": true,
+            "semantic_similarity": 0.08,
+            "location_similarity": 0.0
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The irises are distorted with unnatural coloring.",
+            "location": "Upper center of the image, on the subject's eyes, particularly the right iris."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact matched"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "2aee09d253a4606d2b5b4a630fbd6b834074ae2a91a3dd28e361eb8dadafad24_r11.jpeg",
+      "classification": "real",
+      "mean_match_score": 0.0,
+      "max_match_score": 0.0,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.0,
+      "max_match_score_non_zero": 0.0,
+      "min_match_score_non_zero": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "num_result_artifacts": 0,
+      "num_gt_artifacts": 3,
+      "matched_artifacts": [
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "stylistic",
+            "reasoning": "There are smudges and painterly textures.",
+            "location": "Right side of the image, on the person's right suit sleeve."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "stylistic",
+            "reasoning": "There are smudges and painterly textures.",
+            "location": "Center of the image, on the tie."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "stylistic",
+            "reasoning": "There are smudges and painterly textures.",
+            "location": "Left side of the image, on the person's left suit sleeve."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "0bce6c35c24ec5ce8ae8ad5bb4f67d59_r1.jpeg",
+      "classification": "real",
+      "mean_match_score": 0.0,
+      "max_match_score": 0.0,
+      "min_match_score": 0.0,
+      "mean_match_score_non_zero": 0.0,
+      "max_match_score_non_zero": 0.0,
+      "min_match_score_non_zero": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "num_result_artifacts": 0,
+      "num_gt_artifacts": 3,
+      "matched_artifacts": [
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The eyes appear unnatural.",
+            "location": "Upper center of the image, on the man's eyes."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "semantic",
+            "reasoning": "There is an unusual object present.",
+            "location": "Right side of the image, in the background near the bench."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        },
+        {
+          "result_artifact": null,
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The watch appears deformed.",
+            "location": "Lower center-left of the image, on the man's right wrist."
+          },
+          "match_score": 0.0,
+          "llm_judgment": {
+            "is_match": false,
+            "confidence": 0.0,
+            "reasoning": "No result artifact to compare"
+          }
+        }
+      ]
+    }
+  ],
+  "dataset_average": {
+    "mean_match_score_avg": 0.1718125396825397,
+    "max_match_score_avg": 0.355,
+    "mean_match_score_non_zero_avg": 0.3510333333333333,
+    "max_match_score_non_zero_avg": 0.355,
+    "avg_precision": 0.23099999999999998,
+    "avg_recall": 0.23099999999999998,
+    "avg_f1_score": 0.23099999999999998,
+    "total_true_positives": 26,
+    "total_false_positives": 65,
+    "total_false_negatives": 111
+  }
+}

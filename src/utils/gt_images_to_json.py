@@ -44,6 +44,8 @@ def analyze_image(base64_image):
                                 The explanations are bullet points. Turn them into grammatically
                                 sentences, but don't add any new information, 
                                 besides the location of the artifact, if it is missing.
+                                describe the location in this format: 
+                                e.g. "Lower center of the image, on the adults' and child's legs and feet."
                                 Create a JSON in the following structure:
                                 {
                                     "filename": "04e61d9506ffe1d8ac6c48e8b091cc48.jpeg",
@@ -103,7 +105,7 @@ def main():
         # if i == 2: break
 
     # OUTPUT_JSON = "train.json"
-    OUTPUT_JSON = "labeled2.json"
+    OUTPUT_JSON = "labeled3.json"
 
 
     # Convert results to serializable format
