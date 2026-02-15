@@ -1,7 +1,7 @@
 import json
 
-json1 = "/home/usluesyr/ai_image_detector/data/ground_truth/gt_1/fake_test_labeled_1.json"
-json2 = "/home/usluesyr/ai_image_detector/data/ground_truth/gt_1/new_artifacts.json"
+json1 = "/home/usluesyr/ai_image_detector/data/ground_truth/gt_1/json/gt_1.json"
+json2 = "/home/usluesyr/ai_image_detector/data/ground_truth/gt_1/json/new_artifacts.json"
 
 with open(json1, "r", encoding="utf-8") as f:
     json1 = json.load(f)
@@ -29,9 +29,4 @@ for item in json2:
 
 
 with open("json1_updated.json", "w", encoding="utf-8") as f:
-    json.dump(
-        json1,
-        f,
-        indent=4,
-        ensure_ascii=True   # ← forces ASCII escaping
-    )
+    json.dump(json1, f, indent=2, ensure_ascii=True)
