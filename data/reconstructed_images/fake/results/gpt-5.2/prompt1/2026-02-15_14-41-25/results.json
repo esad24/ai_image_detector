@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "model": "gpt-5.2",
+    "prompt_id": 1,
+    "reasoning": "none"
+  },
+  "image_count": 20,
+  "total_fakes": 4,
+  "total_real": 16,
+  "results": [
+    {
+      "filename": "kypazgkypazgkypa.jpeg",
+      "classification": "real"
+    },
+    {
+      "filename": "bg337mbg337mbg33.jpeg",
+      "classification": "real"
+    },
+    {
+      "filename": "ptlgqjptlgqjptlg.jpeg",
+      "classification": "real"
+    },
+    {
+      "filename": "8i6w6n8i6w6n8i6w.jpeg",
+      "classification": "real"
+    },
+    {
+      "filename": "az2913az2913az29.jpeg",
+      "classification": "real"
+    },
+    {
+      "filename": "psfyyxpsfyyxpsfy.jpeg",
+      "classification": "real"
+    },
+    {
+      "filename": "r64htwr64htwr64h.jpeg",
+      "classification": "real"
+    },
+    {
+      "filename": "tcfmk8tcfmk8tcfm.jpeg",
+      "classification": "fake"
+    },
+    {
+      "filename": "9td0pt9td0pt9td0.jpeg",
+      "classification": "real"
+    },
+    {
+      "filename": "w0jm8aw0jm8aw0jm.jpeg",
+      "classification": "real"
+    },
+    {
+      "filename": "4a9fmy4a9fmy4a9f.jpeg",
+      "classification": "fake"
+    },
+    {
+      "filename": "y291p8y291p8y291.jpeg",
+      "classification": "real"
+    },
+    {
+      "filename": "p5lu6zp5lu6zp5lu.jpeg",
+      "classification": "real"
+    },
+    {
+      "filename": "c6cggsc6cggsc6cg.jpeg",
+      "classification": "real"
+    },
+    {
+      "filename": "f14w40f14w40f14w.jpeg",
+      "classification": "real"
+    },
+    {
+      "filename": "xo6qhfxo6qhfxo6q.jpeg",
+      "classification": "real"
+    },
+    {
+      "filename": "g5uscfg5uscfg5us.jpeg",
+      "classification": "fake"
+    },
+    {
+      "filename": "yr5c1iyr5c1iyr5c.jpeg",
+      "classification": "real"
+    },
+    {
+      "filename": "1w3lff1w3lff1w3l.jpeg",
+      "classification": "fake"
+    },
+    {
+      "filename": "o9ino5o9ino5o9in.jpeg",
+      "classification": "real"
+    }
+  ]
+}

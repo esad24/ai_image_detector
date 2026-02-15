@@ -1,0 +1,260 @@
+{
+  "model": "AIDE (GenImage_train)",
+  "source_folder": "/home/usluesyr/ai_image_detector/detection_models/AIDE/AIDE/my_images/test/1_fake",
+  "total_images": 50,
+  "detected_fake": 25,
+  "detected_real": 25,
+  "fake_rate": 50.0,
+  "images": [
+    {
+      "filename": "04e61d9506ffe1d8ac6c48e8b091cc48.jpeg",
+      "classification": "fake",
+      "probability": 0.9476
+    },
+    {
+      "filename": "04ed7ba99198264f5405056b941a4d3c.jpeg",
+      "classification": "fake",
+      "probability": 0.8857
+    },
+    {
+      "filename": "09edc782a2e242c0840d3b8a3960420d.jpeg",
+      "classification": "fake",
+      "probability": 0.9519
+    },
+    {
+      "filename": "0b5a6fe395e6652f45b8bdab691c28adc961287d6ecc86ca1f739abcfe584ed2.jpeg",
+      "classification": "fake",
+      "probability": 0.9033
+    },
+    {
+      "filename": "0bce6c35c24ec5ce8ae8ad5bb4f67d59_r1.jpeg",
+      "classification": "real",
+      "probability": 0.0503
+    },
+    {
+      "filename": "0bce6c35c24ec5ce8ae8ad5bb4f67d59_r2.jpeg",
+      "classification": "real",
+      "probability": 0.4383
+    },
+    {
+      "filename": "0d003053cff1c844a1a733b02ea73606.jpeg",
+      "classification": "fake",
+      "probability": 0.9568
+    },
+    {
+      "filename": "0e65a4e5adc50344a43ffbd1f9ff84ea_r1.jpeg",
+      "classification": "fake",
+      "probability": 0.5262
+    },
+    {
+      "filename": "149af80e3cf3af0e46ab47863eb7b03e.jpeg",
+      "classification": "fake",
+      "probability": 0.8601
+    },
+    {
+      "filename": "1a7a5fe1c457806cb6d9fb17649b923a.jpeg",
+      "classification": "real",
+      "probability": 0.2796
+    },
+    {
+      "filename": "1e4cc5c247a3bdf572d4969c07992b34.jpeg",
+      "classification": "real",
+      "probability": 0.0607
+    },
+    {
+      "filename": "2aa0e54b4dc251420a3679b501dc8a06.jpeg",
+      "classification": "real",
+      "probability": 0.0506
+    },
+    {
+      "filename": "2ad2e05330051435a8976d2f72819b57.jpeg",
+      "classification": "fake",
+      "probability": 0.7357
+    },
+    {
+      "filename": "2aee09d253a4606d2b5b4a630fbd6b834074ae2a91a3dd28e361eb8dadafad24_r11.jpeg",
+      "classification": "fake",
+      "probability": 0.7793
+    },
+    {
+      "filename": "2aee09d253a4606d2b5b4a630fbd6b834074ae2a91a3dd28e361eb8dadafad24_r2.jpeg",
+      "classification": "real",
+      "probability": 0.1155
+    },
+    {
+      "filename": "2c4c0b171577884f5c0991cacb5c5ebc_r1.jpeg",
+      "classification": "real",
+      "probability": 0.06
+    },
+    {
+      "filename": "2ddf7a07da956c375d9d512cf876bd871f5a3150db7b68b7ef25c1c91a694238_r6.jpeg",
+      "classification": "real",
+      "probability": 0.1312
+    },
+    {
+      "filename": "2df3e5ecf2315ee61ffe3c566e125c8a.jpeg",
+      "classification": "real",
+      "probability": 0.081
+    },
+    {
+      "filename": "2ebd5194c37a818d1805082c34065c30.jpeg",
+      "classification": "fake",
+      "probability": 0.9422
+    },
+    {
+      "filename": "3ae4bd2508eb036a3df769348af8e8e8.jpeg",
+      "classification": "fake",
+      "probability": 0.9418
+    },
+    {
+      "filename": "3b1558eefcb3008a00a5e863ce729092.jpeg",
+      "classification": "real",
+      "probability": 0.0539
+    },
+    {
+      "filename": "3dbe741ec8da19e60d694783dada6491.jpeg",
+      "classification": "real",
+      "probability": 0.4269
+    },
+    {
+      "filename": "3de04fb6e7a042632a00f765cdb60e39224156c3a9d7055951f5a0298feb2dba.jpeg",
+      "classification": "fake",
+      "probability": 0.9433
+    },
+    {
+      "filename": "4c27a50c2f1d7755efe281ea88758885.jpeg",
+      "classification": "real",
+      "probability": 0.1164
+    },
+    {
+      "filename": "4ca91e737979369e37478c4f4ec6e84e_r4.jpeg",
+      "classification": "fake",
+      "probability": 0.968
+    },
+    {
+      "filename": "4ca91e737979369e37478c4f4ec6e84e_r9.jpeg",
+      "classification": "fake",
+      "probability": 0.7905
+    },
+    {
+      "filename": "4pwf294pwf294pwf.jpeg",
+      "classification": "real",
+      "probability": 0.4832
+    },
+    {
+      "filename": "53805809adf9a3d8d0d33c71253fe7eb.jpeg",
+      "classification": "real",
+      "probability": 0.0553
+    },
+    {
+      "filename": "59de5a40846ba0dca00d56c21c43afd17c4592b3ba6cbffbc73a985b061fb4a4.jpeg",
+      "classification": "fake",
+      "probability": 0.9187
+    },
+    {
+      "filename": "5bd35cd9932265235fd90b3daf32c65d.jpeg",
+      "classification": "fake",
+      "probability": 0.9481
+    },
+    {
+      "filename": "5d04c3a88fe8c5d2d7c7a8877e7880fe.jpeg",
+      "classification": "real",
+      "probability": 0.0544
+    },
+    {
+      "filename": "616ba73f50088eb13244a807076248f7.jpeg",
+      "classification": "real",
+      "probability": 0.2335
+    },
+    {
+      "filename": "62ddb30f859923e2231a777f55de69c7.jpeg",
+      "classification": "fake",
+      "probability": 0.9366
+    },
+    {
+      "filename": "637d149bc1ccd8dedacdf37530cf408e.jpeg",
+      "classification": "fake",
+      "probability": 0.9845
+    },
+    {
+      "filename": "64294f3a2adb2e48ac82d6f65ea9d52c.jpeg",
+      "classification": "fake",
+      "probability": 0.926
+    },
+    {
+      "filename": "6f9t1r6f9t1r6f9t.jpeg",
+      "classification": "fake",
+      "probability": 0.5785
+    },
+    {
+      "filename": "7isuvh7isuvh7isu.jpeg",
+      "classification": "fake",
+      "probability": 0.7549
+    },
+    {
+      "filename": "7xld4y7xld4y7xld.jpeg",
+      "classification": "real",
+      "probability": 0.1295
+    },
+    {
+      "filename": "86ae36214222e367f9bc162308095ada_r12.jpeg",
+      "classification": "fake",
+      "probability": 0.9465
+    },
+    {
+      "filename": "b289c80bdf2d5092fffe0e53d927af2c.jpeg",
+      "classification": "real",
+      "probability": 0.2541
+    },
+    {
+      "filename": "ccbcb5187879ea5f9ef2871e59b94651.jpeg",
+      "classification": "fake",
+      "probability": 0.9228
+    },
+    {
+      "filename": "e566b28a9429f693defb306c191d05a6.jpeg",
+      "classification": "fake",
+      "probability": 0.9446
+    },
+    {
+      "filename": "eaef1ce47d4afebf42b1a93fcf502386.jpeg",
+      "classification": "fake",
+      "probability": 0.9426
+    },
+    {
+      "filename": "fe7ovxfe7ovxfe7o.jpeg",
+      "classification": "real",
+      "probability": 0.1492
+    },
+    {
+      "filename": "h1gpeyh1gpeyh1gp.jpeg",
+      "classification": "real",
+      "probability": 0.0295
+    },
+    {
+      "filename": "kv57cgkv57cgkv57.jpeg",
+      "classification": "real",
+      "probability": 0.0446
+    },
+    {
+      "filename": "me07oqme07oqme07.jpeg",
+      "classification": "real",
+      "probability": 0.0667
+    },
+    {
+      "filename": "mnj16pmnj16pmnj1.jpeg",
+      "classification": "real",
+      "probability": 0.1539
+    },
+    {
+      "filename": "ozrpf8ozrpf8ozrp.jpeg",
+      "classification": "real",
+      "probability": 0.0885
+    },
+    {
+      "filename": "v7ghcav7ghcav7gh.jpeg",
+      "classification": "real",
+      "probability": 0.0184
+    }
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "meta": {
+    "model": "gpt-5.2",
+    "prompt_id": 3,
+    "reasoning": "none"
+  },
+  "image_count": 20,
+  "total_fakes": 6,
+  "total_real": 14,
+  "results": [
+    {
+      "filename": "kypazgkypazgkypa.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "bg337mbg337mbg33.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "ptlgqjptlgqjptlg.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "8i6w6n8i6w6n8i6w.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "az2913az2913az29.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "Right child’s hand/fingers show malformed anatomy: fingers appear fused/misaligned and lack clear joints around the pizza grip.",
+          "location": "lower-right quadrant, in front of the right child’s face/torso"
+        },
+        {
+          "type": "structural",
+          "reasoning": "Pizza slice shape is distorted/unrealistic with an oddly stretched, curling tip and inconsistent crust thickness.",
+          "location": "lower-right quadrant, pizza slice held by the right child"
+        },
+        {
+          "type": "structural",
+          "reasoning": "Center child’s hand gripping the pizza shows unclear finger separation and unnatural thumb placement relative to the slice.",
+          "location": "center-lower area, in front of the center child’s green shirt"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "Depth/blur and texture look overly smoothed with a stock-photo-like softness; fine details (skin pores, hair strands) are smeared compared to edges.",
+          "location": "across faces and hands, most noticeable on the center child’s face and the foreground hands"
+        }
+      ]
+    },
+    {
+      "filename": "psfyyxpsfyyxpsfy.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "r64htwr64htwr64h.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "tcfmk8tcfmk8tcfm.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "The raised hand/thumb area appears overly smooth and lacks clear finger segmentation; the glove shape looks malformed and blob-like rather than showing distinct knuckle/finger contours.",
+          "location": "foreground, center-left (raised gloved hand giving thumbs-up)"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The wristwatch details (dial/markers) look smeared and indistinct, with inconsistent edge definition typical of synthetic rendering.",
+          "location": "foreground, lower center-right (watch on the raised arm/wrist)"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The lower arm/hand resting at the bottom has an unnatural, poorly defined glove/hand shape with blurred boundaries and ambiguous anatomy.",
+          "location": "foreground, bottom center (resting gloved hand/forearm)"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "Background medical/dental equipment has overly uniform blur and simplified geometry, creating a generic, synthetic stock-photo look with indistinct components.",
+          "location": "background, left and center (clinic chair/equipment area behind subject)"
+        }
+      ]
+    },
+    {
+      "filename": "9td0pt9td0pt9td0.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "w0jm8aw0jm8aw0jm.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "4a9fmy4a9fmy4a9f.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "Hand anatomy appears inconsistent: finger lengths/thicknesses look uneven and some fingertips lack clear joints/nail definition, giving a malformed look.",
+          "location": "left side of image, raised hand near the glass"
+        },
+        {
+          "type": "structural",
+          "reasoning": "Edge interaction between the hand and the glass/vertical divider is odd: parts of the hand outline look smeared/blurred as if fused with the pane, with unclear contact/refraction boundaries.",
+          "location": "left side, along the vertical glass divider adjacent to the raised hand"
+        },
+        {
+          "type": "structural",
+          "reasoning": "Hair strands merge into broad, paint-like clumps with repetitive texture and overly smooth boundaries rather than distinct strands.",
+          "location": "center-right, hair over both shoulders and down the chest"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "Skin has an overly airbrushed, plastic-smooth quality with minimal pores and simplified shading, typical of synthetic portrait rendering.",
+          "location": "center, face and neck"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "Background bokeh and scene detail look excessively uniform and painterly, with indistinct shapes that don’t resolve into plausible objects despite being relatively close.",
+          "location": "entire background, especially upper left and upper right"
+        }
+      ]
+    },
+    {
+      "filename": "y291p8y291p8y291.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "p5lu6zp5lu6zp5lu.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "c6cggsc6cggsc6cg.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "f14w40f14w40f14w.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "xo6qhfxo6qhfxo6q.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "The leash/lead lines near the left person appear to merge and change thickness unnaturally, with unclear attachment points to the dogs/harnesses.",
+          "location": "left third of image, around the standing person and the two small dogs"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The central walker’s right hand area shows an odd loop/handle shape and ambiguous grip, with the leash connection not clearly defined.",
+          "location": "center of image, at the turquoise-jacket person’s right hand"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The white dog’s harness/leash junction looks inconsistent, with straps and connection points blending into the fur and not aligning cleanly around the torso.",
+          "location": "center-bottom, on the white dog being walked"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The right-side walker’s camera/strap region appears muddled, with straps and gear edges blending into the jacket and lacking crisp, coherent structure.",
+          "location": "right edge, mid-height around the person’s torso/hand"
+        }
+      ]
+    },
+    {
+      "filename": "g5uscfg5uscfg5us.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "Left hand/fingers appear malformed and fused, with unclear finger separation and an unnatural silhouette while gripping the stick.",
+          "location": "lower-left quadrant, at the end of the left arm where the hand holds the stick"
+        },
+        {
+          "type": "structural",
+          "reasoning": "Right hand shows irregular finger shapes/count and smeared detail; the palm/finger joints look deformed.",
+          "location": "right-middle edge, at the outstretched right hand"
+        },
+        {
+          "type": "structural",
+          "reasoning": "Feet/toes lack clear anatomical definition; toes look smoothed/merged and the lifted foot shape is ambiguous.",
+          "location": "bottom-center, both feet (especially the lifted trailing foot)"
+        }
+      ]
+    },
+    {
+      "filename": "yr5c1iyr5c1iyr5c.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "1w3lff1w3lff1w3l.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "Hands/fingers appear malformed and fused; finger joints and fingertip shapes are inconsistent, with an unclear grip on the window bar.",
+          "location": "center-left, child’s hands on the horizontal window bar"
+        },
+        {
+          "type": "structural",
+          "reasoning": "Eye rendering looks inconsistent: irises/pupils are poorly defined and slightly misaligned, giving an unnatural gaze.",
+          "location": "center, child’s eyes/face"
+        },
+        {
+          "type": "semantic",
+          "reasoning": "Window hardware/geometry is inconsistent: the horizontal bars and frame connections don’t align cleanly, suggesting an implausible window mechanism.",
+          "location": "left side, bus window frame and horizontal bars"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "Overall image has a CGI/AI-painted look with overly smooth skin texture and painterly shading compared to the sharper, photographic metal edges.",
+          "location": "entire image, most noticeable on the child’s face and clothing"
+        }
+      ]
+    },
+    {
+      "filename": "o9ino5o9ino5o9in.jpeg",
+      "classification": "real",
+      "artifacts": []
+    }
+  ]
+}

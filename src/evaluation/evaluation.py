@@ -1,3 +1,5 @@
+# Authot: Claude Opus 4.6
+
 import json
 import os
 import warnings
