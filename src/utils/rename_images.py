@@ -1,6 +1,6 @@
 import os
 
-FOLDER_PATH = "/home/usluesyr/ai_image_detector/data/real/test/images"
+FOLDER_PATH = "/home/usluesyr/ai_image_detector/data/reconstructed_images/real"
 
 for filename in os.listdir(FOLDER_PATH):
     old_path = os.path.join(FOLDER_PATH, filename)

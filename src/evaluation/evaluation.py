@@ -10,13 +10,13 @@ from scipy.optimize import linear_sum_assignment
 warnings.filterwarnings("ignore")
 hf_logging.set_verbosity_error()
 
-RESULT_JSON = "/home/usluesyr/ai_image_detector/data/fake/test/results/gpt-5.2/prompt3/2026-01-20_18-46-16/results_final.json"
+RESULT_JSON = "/home/usluesyr/ai_image_detector/data/fake/test/results/qwen3-vl/prompt6/2026-01-24_15-59-12/results.json"
 
 GT = "gt_2"
 GT_JSON = f"/home/usluesyr/ai_image_detector/data/ground_truth/{GT}/json/{GT}.json"
 
 MODEL_NAME = "all-mpnet-base-v2"
-THRESHOLD = 0.5
+THRESHOLD = 0.6
 
 OUTPUT_FILE = os.path.join(
     os.path.dirname(RESULT_JSON),
@@ -404,8 +404,6 @@ output = {
     "comparison": GT_JSON,
     "threshold": THRESHOLD,
     "image_count": result_json.get("image_count", len(result_json["results"])),
-    "total_fakes": result_json.get("total_fakes", 0),
-    "total_real": result_json.get("total_real", 0),
     "image_scores": file_scores,
     "dataset_average": dataset_average
 }

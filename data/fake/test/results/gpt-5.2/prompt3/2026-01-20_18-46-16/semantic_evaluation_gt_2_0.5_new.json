@@ -8,8 +8,6 @@
   "comparison": "/home/usluesyr/ai_image_detector/data/ground_truth/gt_2/json/gt_2.json",
   "threshold": 0.5,
   "image_count": 50,
-  "total_fakes": 35,
-  "total_real": 15,
   "image_scores": [
     {
       "filename": "ccbcb5187879ea5f9ef2871e59b94651.jpeg",
@@ -1624,11 +1622,11 @@
     {
       "filename": "4pwf294pwf294pwf.jpeg",
       "classification": "fake",
-      "mean_cosine_all": 0.07309706807136536,
-      "mean_cosine_matched": 0.3654853403568268,
-      "mean_cosine_valid": 0.0,
+      "mean_cosine_all": 0.20954764485359192,
+      "mean_cosine_matched": 0.5238691121339798,
+      "mean_cosine_valid": 0.6822527647018433,
       "num_result_artifacts": 5,
-      "num_gt_artifacts": 1,
+      "num_gt_artifacts": 2,
       "matched_artifacts": [
         {
           "result_artifact": {
@@ -1642,11 +1640,26 @@
             "reasoning": "Unplausible scenario of Putin and Zelensky depicted as being friendly and drinking beer together.",
             "location": "Center of the image, on the couch where the two men are clinking beer mugs."
           },
-          "cosine_score": 0.3654853403568268,
+          "cosine_score": 0.36548545956611633,
           "valid_match": false
+        },
+        {
+          "result_artifact": {
+            "type": "stylistic",
+            "reasoning": "Overall scene has a polished, studio-like look with unusually even skin texture and high-frequency detail that feels synthetic (AI-like denoising/sharpening).",
+            "location": "Across both faces and clothing, especially mid-right (right person’s face) and mid-left (left person’s face).",
+            "manual_review": "new artifact"
+          },
+          "matched_gt_artifact": {
+            "type": "stylistic",
+            "reasoning": "The texture, especially on the skin, looks very noisy and flat.",
+            "location": "Center of the image, on the two men's faces and exposed skin."
+          },
+          "cosine_score": 0.6822527647018433,
+          "valid_match": true
         }
       ],
-      "artifact_type_acc": null,
+      "artifact_type_acc": 1.0,
       "unmatched_gt_artifacts": [],
       "unmatched_result_artifacts": [
         {
@@ -1660,12 +1673,6 @@
           "reasoning": "Foam heads on both beers appear unnaturally uniform and “capped,” with overly smooth, identical shapes and an abrupt edge where foam meets glass.",
           "location": "Center of image, top of both beer mugs.",
           "manual_review": "invalid"
-        },
-        {
-          "type": "stylistic",
-          "reasoning": "Overall scene has a polished, studio-like look with unusually even skin texture and high-frequency detail that feels synthetic (AI-like denoising/sharpening).",
-          "location": "Across both faces and clothing, especially mid-right (right person’s face) and mid-left (left person’s face).",
-          "manual_review": "new artifact"
         },
         {
           "type": "semantic",
@@ -1869,11 +1876,11 @@
     {
       "filename": "3ae4bd2508eb036a3df769348af8e8e8.jpeg",
       "classification": "fake",
-      "mean_cosine_all": 0.2356568177541097,
-      "mean_cosine_matched": 0.4713136355082194,
-      "mean_cosine_valid": 0.5025390982627869,
+      "mean_cosine_all": 0.4346782735415867,
+      "mean_cosine_matched": 0.5071246524651846,
+      "mean_cosine_valid": 0.6847979029019674,
       "num_result_artifacts": 6,
-      "num_gt_artifacts": 3,
+      "num_gt_artifacts": 7,
       "matched_artifacts": [
         {
           "result_artifact": {
@@ -1883,12 +1890,12 @@
             "manual_review": "new artifact"
           },
           "matched_gt_artifact": {
-            "type": "stylistic",
-            "reasoning": "The skin appears overly smooth.",
-            "location": "Bottom-center of the image, on the child's face."
+            "type": "structural",
+            "reasoning": "The teeth look overly smooth and uniform.",
+            "location": "Lower-center of the image, on the childrens’s teeth."
           },
-          "cosine_score": 0.49576684832572937,
-          "valid_match": false
+          "cosine_score": 0.8501679301261902,
+          "valid_match": true
         },
         {
           "result_artifact": {
@@ -1899,10 +1906,55 @@
           },
           "matched_gt_artifact": {
             "type": "structural",
+            "reasoning": "The hair looks smeared.",
+            "location": "Left-center of the image, on the adult woman's hair near her left temple and hat edge."
+          },
+          "cosine_score": 0.7016865611076355,
+          "valid_match": true
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Knit patterns show irregular, non-repeating stitching and ‘melted’ yarn detail, especially where different colors meet, suggesting synthesized texture.",
+            "location": "Hats: left woman’s beanie; lower-center child’s yellow/gray beanie; right boy’s striped beanie",
+            "manual_review": "uncertain"
+          },
+          "matched_gt_artifact": {
+            "type": "structural",
             "reasoning": "There are unnatural wrinkles on the face.",
             "location": "Left-center of the image, on the woman's face around the eye area."
           },
-          "cosine_score": 0.41563495993614197,
+          "cosine_score": 0.33883631229400635,
+          "valid_match": false
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Jacket zipper/fastener details look soft and partially fused, with ambiguous geometry where the zipper meets the collar.",
+            "location": "Right side: boy’s jacket front near the zipper and collar",
+            "manual_review": "invalid"
+          },
+          "matched_gt_artifact": {
+            "type": "stylistic",
+            "reasoning": "The skin appears overly smooth.",
+            "location": "Bottom-center of the image, on the child's face."
+          },
+          "cosine_score": 0.33635133504867554,
+          "valid_match": false
+        },
+        {
+          "result_artifact": {
+            "type": "stylistic",
+            "reasoning": "Portrait has an exaggerated shallow depth-of-field and uniformly clean subject separation, giving a slightly “studio-like” look despite an outdoor tourist setting.",
+            "location": "Overall image; especially the transition between subjects and blurred background architecture",
+            "manual_review": "uncertain"
+          },
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The teeth look overly smooth and uniform.",
+            "location": "Center-left of the image, on the adult woman's mouth and teeth."
+          },
+          "cosine_score": 0.3131665587425232,
           "valid_match": false
         },
         {
@@ -1917,32 +1969,19 @@
             "reasoning": "The background structure deviates from the original.",
             "location": "Top-right of the image, in the building background."
           },
-          "cosine_score": 0.5025390982627869,
+          "cosine_score": 0.5025392174720764,
           "valid_match": true
         }
       ],
       "artifact_type_acc": 1.0,
-      "unmatched_gt_artifacts": [],
-      "unmatched_result_artifacts": [
+      "unmatched_gt_artifacts": [
         {
           "type": "structural",
-          "reasoning": "Knit patterns show irregular, non-repeating stitching and ‘melted’ yarn detail, especially where different colors meet, suggesting synthesized texture.",
-          "location": "Hats: left woman’s beanie; lower-center child’s yellow/gray beanie; right boy’s striped beanie",
-          "manual_review": "uncertain"
-        },
-        {
-          "type": "structural",
-          "reasoning": "Jacket zipper/fastener details look soft and partially fused, with ambiguous geometry where the zipper meets the collar.",
-          "location": "Right side: boy’s jacket front near the zipper and collar",
-          "manual_review": "invalid"
-        },
-        {
-          "type": "stylistic",
-          "reasoning": "Portrait has an exaggerated shallow depth-of-field and uniformly clean subject separation, giving a slightly “studio-like” look despite an outdoor tourist setting.",
-          "location": "Overall image; especially the transition between subjects and blurred background architecture",
-          "manual_review": "uncertain"
+          "reasoning": "The iris appears flat and lacks details.",
+          "location": "Right-center of the image, on the right child’s eye."
         }
-      ]
+      ],
+      "unmatched_result_artifacts": []
     },
     {
       "filename": "v7ghcav7ghcav7gh.jpeg",
@@ -2936,11 +2975,11 @@
     {
       "filename": "53805809adf9a3d8d0d33c71253fe7eb.jpeg",
       "classification": "fake",
-      "mean_cosine_all": 0.2995014563202858,
-      "mean_cosine_matched": 0.3993352750937144,
-      "mean_cosine_valid": 0.5912876129150391,
+      "mean_cosine_all": 0.4005216956138611,
+      "mean_cosine_matched": 0.5006521195173264,
+      "mean_cosine_valid": 0.7102108299732208,
       "num_result_artifacts": 4,
-      "num_gt_artifacts": 3,
+      "num_gt_artifacts": 5,
       "matched_artifacts": [
         {
           "result_artifact": {
@@ -2950,11 +2989,11 @@
             "manual_review": "new artifact"
           },
           "matched_gt_artifact": {
-            "type": "physical",
-            "reasoning": "There is an illogical shadow.",
-            "location": "Left side of the image, on the sidewalk near the pedestrian."
+            "type": "structural",
+            "reasoning": "A foot is missing from the pedestrian in the background.",
+            "location": "Left side of the image, on the background pedestrian’s feet."
           },
-          "cosine_score": 0.5912876129150391,
+          "cosine_score": 0.6638641953468323,
           "valid_match": true
         },
         {
@@ -2965,11 +3004,26 @@
             "manual_review": "new artifact"
           },
           "matched_gt_artifact": {
+            "type": "semantic",
+            "reasoning": "The letters on the storefront sign are illegible.",
+            "location": "Upper left of the image, on the storefront sign."
+          },
+          "cosine_score": 0.7565574645996094,
+          "valid_match": true
+        },
+        {
+          "result_artifact": {
+            "type": "structural",
+            "reasoning": "Street fixtures/signposts show slight warping/misalignment and ambiguous attachment points (edges and brackets look melted or fused).",
+            "location": "upper left and upper right along the street (lamp/sign poles near tree canopy)",
+            "manual_review": "uncertain"
+          },
+          "matched_gt_artifact": {
             "type": "structural",
             "reasoning": "The hands appear deformed.",
             "location": "Center of the image, on the women's hands."
           },
-          "cosine_score": 0.3163481652736664,
+          "cosine_score": 0.29181668162345886,
           "valid_match": false
         },
         {
@@ -2984,20 +3038,19 @@
             "reasoning": "The shadows fall in different directions.",
             "location": "Lower half of the image, on the ground near the women's feet and the tree shadow."
           },
-          "cosine_score": 0.29037004709243774,
+          "cosine_score": 0.2903701364994049,
           "valid_match": false
         }
       ],
-      "artifact_type_acc": 0.0,
-      "unmatched_gt_artifacts": [],
-      "unmatched_result_artifacts": [
+      "artifact_type_acc": 1.0,
+      "unmatched_gt_artifacts": [
         {
-          "type": "structural",
-          "reasoning": "Street fixtures/signposts show slight warping/misalignment and ambiguous attachment points (edges and brackets look melted or fused).",
-          "location": "upper left and upper right along the street (lamp/sign poles near tree canopy)",
-          "manual_review": "uncertain"
+          "type": "physical",
+          "reasoning": "There is an illogical shadow.",
+          "location": "Left side of the image, on the sidewalk near the pedestrian."
         }
-      ]
+      ],
+      "unmatched_result_artifacts": []
     },
     {
       "filename": "2ebd5194c37a818d1805082c34065c30.jpeg",
@@ -3248,42 +3301,42 @@
   ],
   "dataset_average": {
     "all_files": {
-      "all_mean_cosine_all": 0.24745665353891397,
-      "all_std_cosine_all": 0.19355063302286743,
+      "all_mean_cosine_all": 0.2561864989761795,
+      "all_std_cosine_all": 0.19472804828711895,
       "all_count_all": 50,
-      "all_mean_cosine_matched": 0.3765090445223309,
-      "all_std_cosine_matched": 0.26597803038804685,
+      "all_mean_cosine_matched": 0.3824192771854855,
+      "all_std_cosine_matched": 0.2675827180613496,
       "all_count_matched": 50,
-      "all_mean_cosine_valid": 0.404454957207044,
-      "all_std_cosine_valid": 0.32087454013182615,
+      "all_mean_cosine_valid": 0.4241236529350281,
+      "all_std_cosine_valid": 0.3215531164851144,
       "all_count_valid": 50
     },
     "fake_classified_only": {
-      "fake_mean_cosine_all": 0.35350950505559126,
-      "fake_std_cosine_all": 0.12659476297550146,
+      "fake_mean_cosine_all": 0.36598071282311356,
+      "fake_std_cosine_all": 0.1182685656607906,
       "fake_count_all": 35,
-      "fake_mean_cosine_matched": 0.5378700636033298,
-      "fake_std_cosine_matched": 0.11946565275526015,
+      "fake_mean_cosine_matched": 0.5463132531221221,
+      "fake_std_cosine_matched": 0.11291143933161422,
       "fake_count_matched": 35,
-      "fake_mean_cosine_valid": 0.6523467051726515,
-      "fake_std_cosine_valid": 0.06598416463748026,
-      "fake_count_valid": 31
+      "fake_mean_cosine_valid": 0.6626932077109814,
+      "fake_std_cosine_valid": 0.058808689709581356,
+      "fake_count_valid": 32
     },
     "artifact_type_acc": {
-      "mean_artifact_type_acc_per_image": 0.8194444444444444,
-      "mean_artifact_type_acc_per_image_std": 0.29193109706247256,
-      "mean_artifact_type_acc_per_image_count": 30,
-      "mean_artifact_type_acc_global": 0.8194444444444444,
-      "mean_artifact_type_acc_global_count": 72
+      "mean_artifact_type_acc_per_image": 0.8575268817204301,
+      "mean_artifact_type_acc_per_image_std": 0.2479246731219103,
+      "mean_artifact_type_acc_per_image_count": 31,
+      "mean_artifact_type_acc_global": 0.8421052631578947,
+      "mean_artifact_type_acc_global_count": 76
     },
-    "total_unmatched_gt_artifacts": 52,
-    "total_unmatched_result_artifacts": 55,
-    "artifact_assignment_recall": 0.7094972067039106,
-    "valid_match_recall": 0.4022346368715084,
-    "valid_match_precision": 0.3956043956043956,
-    "valid_match_f1": 0.39889196675900285,
-    "total_valid_matches": 72,
-    "total_gt_artifacts": 179,
+    "total_unmatched_gt_artifacts": 54,
+    "total_unmatched_result_artifacts": 50,
+    "artifact_assignment_recall": 0.7096774193548387,
+    "valid_match_recall": 0.40860215053763443,
+    "valid_match_precision": 0.4175824175824176,
+    "valid_match_f1": 0.4130434782608696,
+    "total_valid_matches": 76,
+    "total_gt_artifacts": 186,
     "total_result_artifacts": 182,
     "mismatches": 8
   }
