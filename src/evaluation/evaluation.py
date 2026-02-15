@@ -7,9 +7,6 @@ from transformers import logging as hf_logging
 from sentence_transformers import SentenceTransformer, util
 from scipy.optimize import linear_sum_assignment
 
-# -----------------------------
-# SETTINGS
-# -----------------------------
 warnings.filterwarnings("ignore")
 hf_logging.set_verbosity_error()
 
@@ -19,18 +16,18 @@ GT = "gt_2"
 GT_JSON = f"/home/usluesyr/ai_image_detector/data/ground_truth/{GT}/json/{GT}.json"
 
 MODEL_NAME = "all-mpnet-base-v2"
-THRESHOLD = 0.5
+THRESHOLD = 0.6
 
 OUTPUT_FILE = os.path.join(
     os.path.dirname(RESULT_JSON),
-    f"semantic_evaluation_hungarian_{GT}_{THRESHOLD}.json"
+    f"semantic_evaluation_hungarian_{GT}_{THRESHOLD}_new.json"
 )
+
 
 model = SentenceTransformer(MODEL_NAME)
 
-# -----------------------------
-# HELPER
-# -----------------------------
+
+
 def artifact_to_text(artifact):
     parts = []
     if artifact.get("reasoning"):
@@ -47,43 +44,29 @@ def compute_semantic_matches(result_artifacts, gt_artifacts, threshold=THRESHOLD
     # Edge case: both empty
     if not r_texts and not g_texts:
         return {
-            "mean_cosine": None,          
-            "max_cosine": None,           
-            "min_cosine": None,           
-            "mean_cosine_non_zero": None, 
-            "max_cosine_non_zero": None,  
-            "min_cosine_non_zero": None,  
+            "mean_cosine_all": 0.0,
+            "mean_cosine_matched": 0.0,
+            "mean_cosine_valid": 0.0,
             "matches": [],
-            "conditional_type_acc": None,
+            "artifact_type_acc": None,
             "unmatched_gt_artifacts": [],
+            "unmatched_result_artifacts": []
         }
 
     # Edge case: one empty
     if not r_texts or not g_texts:
         matches = []
-        for r in result_artifacts:
-            matches.append({
-                "result_artifact": r,
-                "matched_gt_artifact": None,
-                "cosine_score": 0.0
-            })
         unmatched_gt = gt_artifacts.copy()
-        for g in unmatched_gt:
-            matches.append({
-                "result_artifact": None,
-                "matched_gt_artifact": g,
-                "cosine_score": 0.0
-            })
+        unmatched_results = result_artifacts.copy()
+        # Don't add unmatched to matches list anymore
         return {
-            "mean_cosine": 0.0,
-            "max_cosine": 0.0,
-            "min_cosine": 0.0,
-            "mean_cosine_non_zero": 0.0,
-            "max_cosine_non_zero": 0.0,
-            "min_cosine_non_zero": 0.0,
+            "mean_cosine_all": 0.0,
+            "mean_cosine_matched": 0.0,
+            "mean_cosine_valid": 0.0,
             "matches": matches,
             "artifact_type_acc": None,
-            "unmatched_gt_artifacts": unmatched_gt
+            "unmatched_gt_artifacts": unmatched_gt,
+            "unmatched_result_artifacts": unmatched_results
         }
 
     # Encode embeddings
@@ -104,66 +87,86 @@ def compute_semantic_matches(result_artifacts, gt_artifacts, threshold=THRESHOLD
     for r_idx, g_idx in zip(row_ind, col_ind):
         score_val = cos_sim_matrix[r_idx, g_idx]
 
-        if score_val >= threshold:
-            used_r.add(r_idx)
-            used_g.add(g_idx)
+        # CHANGED: Always mark as used regardless of threshold
+        # Previously: only marked as used if score_val >= threshold
+        # This caused artifacts below threshold to be treated as unmatched with 0.0 scores
+        used_r.add(r_idx)
+        used_g.add(g_idx)
 
-            match_entry = {
-                "result_artifact": result_artifacts[r_idx],
-                "matched_gt_artifact": gt_artifacts[g_idx],
-                "cosine_score": float(score_val)
-            }
+        # Manual review mismatch flag
+        manual_review = result_artifacts[r_idx].get("manual_review", "")
+        is_invalid = False
+        
+        if isinstance(manual_review, str):
+            review_lower = manual_review.lower()
+            if "invalid" in review_lower: # or "new artifact" in review_lower:
+                is_invalid = True
 
-            # Manual review mismatch flag
-            manual_review = result_artifacts[r_idx].get("manual_review", "")
+        match_entry = {
+            "result_artifact": result_artifacts[r_idx],
+            "matched_gt_artifact": gt_artifacts[g_idx],
+            "cosine_score": float(score_val),
+            # CHANGED: is_match is true only if score >= threshold AND not manually flagged as invalid
+            "valid_match": bool(score_val >= threshold)
+        }
 
-            if isinstance(manual_review, str):
-                review_lower = manual_review.lower()
-                if "invalid" in review_lower or "uncertain" in review_lower: #or "new artifact" in review_lower and "valid" not in review_lower:
-                    match_entry["mismatch"] = True
+        # CHANGED: Only add mismatch flag if it's actually invalid
+        if is_invalid and bool(score_val >= threshold):
+            match_entry["mismatch"] = True
 
+        matches.append(match_entry)
 
-            matches.append(match_entry)
-
-            # Artifact type accuracy
+        # CHANGED: Only count artifact type accuracy for valid matches (above threshold and not invalid)
+        # Previously: counted all Hungarian assignments
+        if score_val >= threshold and not is_invalid:  # ADDED not is_invalid CONDITION
             r_type = result_artifacts[r_idx].get("type")
             g_type = gt_artifacts[g_idx].get("type")
             if r_type is not None and g_type is not None:
                 type_scores.append(int(r_type == g_type))
 
 
-    # Add unmatched result artifacts
-    for i in range(len(result_artifacts)):
-        if i not in used_r:
-            matches.append({
-                "result_artifact": result_artifacts[i],
-                "matched_gt_artifact": None,
-                "cosine_score": 0.0
-            })
-
-    # Add unmatched GT artifacts
+    # Add unmatched GT artifacts (but NOT to matches list)
     unmatched_gt = []
     for j in range(len(gt_artifacts)):
         if j not in used_g:
             unmatched_gt.append(gt_artifacts[j])
-            matches.append({
-                "result_artifact": None,
-                "matched_gt_artifact": gt_artifacts[j],
-                "cosine_score": 0.0
-            })
+    
+    # Add unmatched result artifacts (hallucinations/extra detections)
+    unmatched_results = []
+    for i in range(len(result_artifacts)):
+        if i not in used_r:
+            unmatched_results.append(result_artifacts[i])
 
-    # Cosine statistics
+    # CHANGED: Cosine statistics calculation - Three distinct metrics
+    # Note: matches now only contains actual Hungarian-assigned pairs (both result and GT exist)
+    # Unmatched artifacts are in separate lists: unmatched_results and unmatched_gt
+    
+    # All matched pair scores (all have actual cosine values, no 0.0 from unmatched)
     all_scores = [m["cosine_score"] for m in matches]
-    non_zero_scores = [s for s in all_scores if s > 0.0]
+    
+    # Scores only for matches that pass the threshold (and not manually invalid)
+    valid_match_scores = [
+        m["cosine_score"] for m in matches 
+        if m.get("valid_match", False)
+    ]
+    
+    # For mean_cosine_all, we need to include unmatched artifacts as 0.0
+    # Total pairs = matched pairs + unmatched results + unmatched GTs
+    total_scores = all_scores + [0.0] * (len(unmatched_results) + len(unmatched_gt))
 
     artifact_type_acc = float(np.mean(type_scores)) if type_scores else None
 
     return {
-        "mean_cosine": float(np.mean(all_scores)) if all_scores else 0.0,
-        "mean_cosine_non_zero": float(np.mean(non_zero_scores)) if non_zero_scores else 0.0,
+        # 1. Mean of ALL pairs including unmatched (0.0)
+        "mean_cosine_all": float(np.mean(total_scores)) if total_scores else 0.0,
+        # 2. Mean of matched pairs only (excludes unmatched)
+        "mean_cosine_matched": float(np.mean(all_scores)) if all_scores else 0.0,
+        # 3. Mean of only valid matches (above threshold and not invalid)
+        "mean_cosine_valid": float(np.mean(valid_match_scores)) if valid_match_scores else 0.0,
         "matches": matches,
         "artifact_type_acc": artifact_type_acc,
-        "unmatched_gt_artifacts": unmatched_gt
+        "unmatched_gt_artifacts": unmatched_gt,
+        "unmatched_result_artifacts": unmatched_results
     }
 
 
@@ -199,13 +202,18 @@ for image in tqdm(result_json["results"], desc="Evaluating images"):
     file_scores.append({
         "filename": filename,
         "classification": classification,
-        "mean_cosine_similarity": semantic_result["mean_cosine"],
-        "mean_cosine_similarity_non_zero": semantic_result["mean_cosine_non_zero"],
+        # 1. Mean of all pairs including unmatched (0.0)
+        "mean_cosine_all": semantic_result["mean_cosine_all"],
+        # 2. Mean of matched pairs only (excludes unmatched)
+        "mean_cosine_matched": semantic_result["mean_cosine_matched"],
+        # 3. Mean of valid matches only (above threshold)
+        "mean_cosine_valid": semantic_result["mean_cosine_valid"],
         "num_result_artifacts": len(image["artifacts"]),
         "num_gt_artifacts": len(gt_item["artifacts"]),
         "matched_artifacts": semantic_result["matches"],
         "artifact_type_acc": semantic_result["artifact_type_acc"],
-        "unmatched_gt_artifacts": semantic_result["unmatched_gt_artifacts"]
+        "unmatched_gt_artifacts": semantic_result["unmatched_gt_artifacts"],
+        "unmatched_result_artifacts": semantic_result["unmatched_result_artifacts"]
     })
 
 
@@ -213,65 +221,143 @@ for image in tqdm(result_json["results"], desc="Evaluating images"):
 # DATASET AVERAGE (ROBUST)
 # -----------------------------
 if file_scores:
-    # 1. ALL FILES
-    all_per_image_means = [f["mean_cosine_similarity"] for f in file_scores]
+    # CHANGED: Updated to calculate three distinct metrics across the dataset
+    # 1. ALL pairs (including unmatched with 0.0)
+    # 2. MATCHED pairs only (excludes unmatched, includes below-threshold)
+    # 3. VALID matches only (above threshold)
     
-    # 2. FAKE-CLASSIFIED FILES ONLY
-    fake_per_image_means = [
-        f["mean_cosine_similarity"] 
-        for f in file_scores 
-        if f["classification"] == "fake"
-    ]
+    # === ALL FILES ===
+    all_mean_all = [f["mean_cosine_all"] for f in file_scores]
+    all_mean_matched = [f["mean_cosine_matched"] for f in file_scores]
+    all_mean_valid = [f["mean_cosine_valid"] for f in file_scores]
     
-    # 3. FAKE-CLASSIFIED FILES WITH NON-ZERO SCORES
-    fake_nonzero_per_image_means = [
-        f["mean_cosine_similarity_non_zero"]  # This already excludes 0.0 matches
-        for f in file_scores 
-        if f["classification"] == "fake" 
-        and f["mean_cosine_similarity_non_zero"] > 0.0  # Extra safety check
-    ]
+    # === FAKE-CLASSIFIED FILES ONLY ===
+    # 1. All pairs including unmatched
+    fake_mean_all = [f["mean_cosine_all"] for f in file_scores if f["classification"] == "fake"]
+    # 2. Matched pairs only
+    fake_mean_matched = [f["mean_cosine_matched"] for f in file_scores if f["classification"] == "fake" and f["mean_cosine_matched"] > 0.0]
+    # 3. Valid matches only
+    fake_mean_valid = [f["mean_cosine_valid"] for f in file_scores if f["classification"] == "fake" and f["mean_cosine_valid"] > 0.0]
     
-    dataset_average = {
-        # 1. All files
-        "all_mean_cosine": float(np.mean(all_per_image_means)) if all_per_image_means else 0.0,
-        "all_std_cosine": float(np.std(all_per_image_means)) if all_per_image_means else 0.0,
-        "all_count": len(all_per_image_means),
-        
-        # 2. Fake-classified only
-        "fake_mean_cosine": float(np.mean(fake_per_image_means)) if fake_per_image_means else 0.0,
-        "fake_std_cosine": float(np.std(fake_per_image_means)) if fake_per_image_means else 0.0,
-        "fake_count": len(fake_per_image_means),
-        
-        # 3. Fake with non-zero matches only
-        "fake_nonzero_mean_cosine": float(np.mean(fake_nonzero_per_image_means)) if fake_nonzero_per_image_means else 0.0,
-        "fake_nonzero_std_cosine": float(np.std(fake_nonzero_per_image_means)) if fake_nonzero_per_image_means else 0.0,
-        "fake_nonzero_count": len(fake_nonzero_per_image_means),
-    }
-
+    # artifact type accuracy per image
     type_acc_values = [
         f["artifact_type_acc"]
         for f in file_scores
         if f["artifact_type_acc"] is not None
     ]
 
-    dataset_average["mean_artifact_type_acc"] = (
-        float(np.mean(type_acc_values)) if type_acc_values else None
+    # artifact type accuracy global weighted
+    total_type_correct = 0
+    total_type_eligible = 0
+
+    for f in file_scores:
+        for m in f["matched_artifacts"]:
+            if m.get("valid_match") and not m.get("mismatch"):
+                r_type = m["result_artifact"].get("type")
+                g_type = m["matched_gt_artifact"].get("type")
+                if r_type is not None and g_type is not None:
+                    total_type_eligible += 1
+                    if r_type == g_type:
+                        total_type_correct += 1
+    
+    
+    dataset_average = {
+        # ALL FILES
+        "all_files": {
+            # 1. All pairs (including unmatched)
+            "all_mean_cosine_all": float(np.mean(all_mean_all)) if all_mean_all else 0.0,
+            "all_std_cosine_all": float(np.std(all_mean_all)) if all_mean_all else 0.0,
+            "all_count_all": len(all_mean_all),
+            
+            # 2. Matched pairs only
+            "all_mean_cosine_matched": float(np.mean(all_mean_matched)) if all_mean_matched else 0.0,
+            "all_std_cosine_matched": float(np.std(all_mean_matched)) if all_mean_matched else 0.0,
+            "all_count_matched": len(all_mean_matched),
+            
+            # 3. Valid matches only
+            "all_mean_cosine_valid": float(np.mean(all_mean_valid)) if all_mean_valid else 0.0,
+            "all_std_cosine_valid": float(np.std(all_mean_valid)) if all_mean_valid else 0.0,
+            "all_count_valid": len(all_mean_valid),
+        },
+        # FAKE-CLASSIFIED FILES ONLY
+        "fake_classified_only": {
+            # 1. All pairs (including unmatched)
+            "fake_mean_cosine_all": float(np.mean(fake_mean_all)) if fake_mean_all else 0.0,
+            "fake_std_cosine_all": float(np.std(fake_mean_all)) if fake_mean_all else 0.0,
+            "fake_count_all": len(fake_mean_all),
+            
+            # 2. Matched pairs only
+            "fake_mean_cosine_matched": float(np.mean(fake_mean_matched)) if fake_mean_matched else 0.0,
+            "fake_std_cosine_matched": float(np.std(fake_mean_matched)) if fake_mean_matched else 0.0,
+            "fake_count_matched": len(fake_mean_matched),
+            
+            # 3. Valid matches only
+            "fake_mean_cosine_valid": float(np.mean(fake_mean_valid)) if fake_mean_valid else 0.0,
+            "fake_std_cosine_valid": float(np.std(fake_mean_valid)) if fake_mean_valid else 0.0,
+            "fake_count_valid": len(fake_mean_valid),
+        },
+
+        "artifact_type_acc": {    
+            "mean_artifact_type_acc_per_image": float(np.mean(type_acc_values)) if type_acc_values else None,
+            "mean_artifact_type_acc_per_image_std": float(np.std(type_acc_values)) if type_acc_values else None,
+            "mean_artifact_type_acc_per_image_count": len(type_acc_values),
+            "mean_artifact_type_acc_global": total_type_correct / total_type_eligible if total_type_eligible > 0 else None,
+            "mean_artifact_type_acc_global_count": total_type_eligible
+        },
+
+
+        "total_unmatched_gt_artifacts": sum(len(f["unmatched_gt_artifacts"]) for f in file_scores),
+            
+        "total_unmatched_result_artifacts": sum(len(f["unmatched_result_artifacts"]) for f in file_scores)
+    }
+
+    # Add to dataset_average computation
+    total_gt = sum(f["num_gt_artifacts"] for f in file_scores)
+    total_unmatched_gt = dataset_average["total_unmatched_gt_artifacts"]
+    total_valid_matches = sum(
+        sum(1 for m in f["matched_artifacts"] if m.get("valid_match") and not m.get("mismatch"))
+        for f in file_scores
     )
 
-    dataset_average["total_unmatched_gt_artifacts"] = sum(
-        len(f["unmatched_gt_artifacts"]) for f in file_scores
+    # Rename to reflect what it actually measures
+    dataset_average["artifact_assignment_recall"] = (    # any Hungarian assignment, including below-threshold
+        (total_gt - total_unmatched_gt) / total_gt if total_gt > 0 else 0.0
+    )
+    dataset_average["valid_match_recall"] = (            # only above-threshold, non-invalid matches
+        total_valid_matches / total_gt if total_gt > 0 else 0.0
     )
 
 else:
     dataset_average = {
-        "all_mean_cosine": 0.0,
-        "all_std_cosine": 0.0,
-        "fake_mean_cosine": 0.0,
-        "fake_std_cosine": 0.0,
-        "fake_nonzero_mean_cosine": 0.0,
-        "fake_nonzero_std_cosine": 0.0,
-        "mean_artifact_type_acc": None,
-        "total_unmatched_gt_artifacts": 0
+        # All files -> in case a model classified an image as real but still has valid artifacts
+        "all_files": {
+            "all_mean_cosine_all": 0.0,
+            "all_std_cosine_all": 0.0,
+            "all_mean_cosine_matched": 0.0,
+            "all_std_cosine_matched": 0.0,
+            "all_mean_cosine_valid": 0.0,
+            "all_std_cosine_valid": 0.0,
+        },
+        # Fake-classified files -> onyl if the model classified the image as fake 
+        "fake_classified_only": {
+            "fake_mean_cosine_all": 0.0,
+            "fake_std_cosine_all": 0.0,
+            "fake_mean_cosine_matched": 0.0,
+            "fake_std_cosine_matched": 0.0,
+            "fake_mean_cosine_valid": 0.0,
+            "fake_std_cosine_valid": 0.0,
+        },
+        "artifact_type_acc": {
+            "mean_artifact_type_acc_per_image": 0.8194444444444444,
+            "mean_artifact_type_acc_per_image_std": 0.29193109706247256,
+            "mean_artifact_type_acc_per_image_count": 30,
+            "mean_artifact_type_acc_global": 0.8194444444444444,
+            "mean_artifact_type_acc_global_count": 72,
+        },
+        "total_unmatched_gt_artifacts": 52,
+        "total_unmatched_result_artifacts": 55,
+        "artifact_assignment_recall": 0.7094972067039106,
+        "valid_match_recall": 0.4022346368715084
     }
 
 
