@@ -1,1 +1,26 @@
 .env
+
+# Model weights
+*.pth
+*.bin
+*.pt
+*.ckpt
+
+# Pretrained weights folders
+**/pretrained_ckpts/
+**/pretrained_weights/
+**/AIDE_checkpoints/
+
+# Virtual environments
+**/venv/
+
+# Python cache
+**/__pycache__/
+
+# Core dumps
+core.*
+
+# Large files
+*.tar.gz
+*.zip
+EOF
