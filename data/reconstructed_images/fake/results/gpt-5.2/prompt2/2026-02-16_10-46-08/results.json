@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "model": "gpt-5.2",
+    "prompt_id": 2,
+    "reasoning": "none"
+  },
+  "image_count": 20,
+  "detected_fake": 5,
+  "detected_real": 15,
+  "acc": 0.25,
+  "results": [
+    {
+      "filename": "kypazgkypazgkypa.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "bg337mbg337mbg33.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "ptlgqjptlgqjptlg.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "8i6w6n8i6w6n8i6w.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "az2913az2913az29.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural"
+        },
+        {
+          "type": "semantic"
+        }
+      ]
+    },
+    {
+      "filename": "psfyyxpsfyyxpsfy.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "r64htwr64htwr64h.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "tcfmk8tcfmk8tcfm.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "9td0pt9td0pt9td0.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "w0jm8aw0jm8aw0jm.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural"
+        },
+        {
+          "type": "stylistic"
+        }
+      ]
+    },
+    {
+      "filename": "4a9fmy4a9fmy4a9f.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural"
+        },
+        {
+          "type": "stylistic"
+        }
+      ]
+    },
+    {
+      "filename": "y291p8y291p8y291.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "p5lu6zp5lu6zp5lu.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "c6cggsc6cggsc6cg.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "f14w40f14w40f14w.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "xo6qhfxo6qhfxo6q.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "g5uscfg5uscfg5us.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural"
+        },
+        {
+          "type": "semantic"
+        }
+      ]
+    },
+    {
+      "filename": "yr5c1iyr5c1iyr5c.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "1w3lff1w3lff1w3l.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural"
+        },
+        {
+          "type": "stylistic"
+        }
+      ]
+    },
+    {
+      "filename": "o9ino5o9ino5o9in.jpeg",
+      "classification": "real",
+      "artifacts": []
+    }
+  ]
+}

@@ -23,6 +23,12 @@ class ResultWriter:
         elif image_folder.startswith("fake_test"):
             base_dir = f"/home/usluesyr/ai_image_detector/data/fake/test/results/{model_name}/prompt{prompt_id}"
             self.mode = "fake"
+        elif image_folder.startswith("reconstruct_fake"):
+            base_dir = f"/home/usluesyr/ai_image_detector/data/reconstructed_images/fake/results/{model_name}/prompt{prompt_id}"
+            self.mode = "fake"
+        elif image_folder.startswith("reconstruct_real"):
+            base_dir = f"/home/usluesyr/ai_image_detector/data/reconstructed_images/real/results/{model_name}/prompt{prompt_id}"
+            self.mode = "real"
         else:
             base_dir = f"{image_folder}/results/{model_name}/prompt{prompt_id}"
 

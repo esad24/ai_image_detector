@@ -12,7 +12,7 @@ from scipy.optimize import linear_sum_assignment
 warnings.filterwarnings("ignore")
 hf_logging.set_verbosity_error()
 
-RESULT_JSON = "/home/usluesyr/ai_image_detector/data/fake/test/results/qwen3-vl/prompt6/2026-01-24_15-59-12/results.json"
+RESULT_JSON = "/home/usluesyr/ai_image_detector/data/fake/test/results/gpt-5.2/prompt3/2026-01-20_18-46-16/results.json"
 
 GT = "gt_2"
 GT_JSON = f"/home/usluesyr/ai_image_detector/data/ground_truth/{GT}/json/{GT}.json"
@@ -22,7 +22,7 @@ THRESHOLD = 0.6
 
 OUTPUT_FILE = os.path.join(
     os.path.dirname(RESULT_JSON),
-    f"semantic_evaluation_{GT}_{THRESHOLD}_new.json"
+    f"semantic_similarity_evaluation_{GT}_{THRESHOLD}.json"
 )
 
 
@@ -406,6 +406,10 @@ output = {
     "comparison": GT_JSON,
     "threshold": THRESHOLD,
     "image_count": result_json.get("image_count", len(result_json["results"])),
+    "detected_fake": result_json["detected_fake"],
+    "detected_real": result_json["detected_real"],
+    "acc": result_json["acc"],
+
     "image_scores": file_scores,
     "dataset_average": dataset_average
 }

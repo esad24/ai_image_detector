@@ -1,0 +1,111 @@
+{
+  "model": "UniversalFakeDetect (CLIP:ViT-L/14)",
+  "source_folder": "/home/usluesyr/ai_image_detector/data/reconstructed_images/fake/images",
+  "total_images": 20,
+  "detected_fake": 1,
+  "detected_real": 19,
+  "fake_rate": 5.0,
+  "acc": 0.05,
+  "images": [
+    {
+      "filename": "1w3lff1w3lff1w3l.jpeg",
+      "classification": "real",
+      "probability": 0.0118
+    },
+    {
+      "filename": "4a9fmy4a9fmy4a9f.jpeg",
+      "classification": "real",
+      "probability": 0.0008
+    },
+    {
+      "filename": "8i6w6n8i6w6n8i6w.jpeg",
+      "classification": "real",
+      "probability": 0.0515
+    },
+    {
+      "filename": "9td0pt9td0pt9td0.jpeg",
+      "classification": "real",
+      "probability": 0.3677
+    },
+    {
+      "filename": "az2913az2913az29.jpeg",
+      "classification": "real",
+      "probability": 0.0008
+    },
+    {
+      "filename": "bg337mbg337mbg33.jpeg",
+      "classification": "real",
+      "probability": 0.0008
+    },
+    {
+      "filename": "c6cggsc6cggsc6cg.jpeg",
+      "classification": "real",
+      "probability": 0.4413
+    },
+    {
+      "filename": "f14w40f14w40f14w.jpeg",
+      "classification": "real",
+      "probability": 0.0116
+    },
+    {
+      "filename": "g5uscfg5uscfg5us.jpeg",
+      "classification": "real",
+      "probability": 0.0001
+    },
+    {
+      "filename": "kypazgkypazgkypa.jpeg",
+      "classification": "real",
+      "probability": 0.0285
+    },
+    {
+      "filename": "o9ino5o9ino5o9in.jpeg",
+      "classification": "real",
+      "probability": 0.0135
+    },
+    {
+      "filename": "p5lu6zp5lu6zp5lu.jpeg",
+      "classification": "real",
+      "probability": 0.0074
+    },
+    {
+      "filename": "psfyyxpsfyyxpsfy.jpeg",
+      "classification": "real",
+      "probability": 0.1382
+    },
+    {
+      "filename": "ptlgqjptlgqjptlg.jpeg",
+      "classification": "real",
+      "probability": 0.0001
+    },
+    {
+      "filename": "r64htwr64htwr64h.jpeg",
+      "classification": "real",
+      "probability": 0.0235
+    },
+    {
+      "filename": "tcfmk8tcfmk8tcfm.jpeg",
+      "classification": "real",
+      "probability": 0.1258
+    },
+    {
+      "filename": "w0jm8aw0jm8aw0jm.jpeg",
+      "classification": "real",
+      "probability": 0.0315
+    },
+    {
+      "filename": "xo6qhfxo6qhfxo6q.jpeg",
+      "classification": "real",
+      "probability": 0.0615
+    },
+    {
+      "filename": "y291p8y291p8y291.jpeg",
+      "classification": "fake",
+      "probability": 0.9766
+    },
+    {
+      "filename": "yr5c1iyr5c1iyr5c.jpeg",
+      "classification": "real",
+      "probability": 0.0318
+    }
+  ]
+}

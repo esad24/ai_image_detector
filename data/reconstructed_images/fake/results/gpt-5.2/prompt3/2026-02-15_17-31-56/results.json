@@ -5,8 +5,10 @@
     "reasoning": "none"
   },
   "image_count": 20,
-  "total_fakes": 6,
-  "total_real": 14,
+  "detected_fake": 6,
+  "detected_real": 14,
+  "acc": 0.3,
+
   "results": [
     {
       "filename": "kypazgkypazgkypa.jpeg",

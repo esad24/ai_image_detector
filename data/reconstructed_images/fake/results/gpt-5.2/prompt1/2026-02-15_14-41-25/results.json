@@ -5,8 +5,7 @@
     "reasoning": "none"
   },
   "image_count": 20,
-  "total_fakes": 4,
-  "total_real": 16,
+
   "results": [
     {
       "filename": "kypazgkypazgkypa.jpeg",
@@ -88,5 +87,8 @@
       "filename": "o9ino5o9ino5o9in.jpeg",
       "classification": "real"
     }
-  ]
+  ],
+  "detected_fake": 4,
+  "detected_real": 16,
+  "acc": 0.2
 }

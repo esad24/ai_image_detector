@@ -11,6 +11,10 @@ def load_images(image_folder):
         folder_path = "/home/usluesyr/ai_image_detector/data/real/train/images"
     elif(image_folder == "real_test"):
         folder_path = "/home/usluesyr/ai_image_detector/data/real/test/images"
+    elif(image_folder == "reconstruct_fake"):
+        folder_path = "/home/usluesyr/ai_image_detector/data/reconstructed_images/fake/images"
+    elif(image_folder == "reconstruct_real"):
+        folder_path = "/home/usluesyr/ai_image_detector/data/reconstructed_images/real/images"
     else:
         if not os.path.isdir(image_folder):
             raise ValueError("Image folder does not exist")
