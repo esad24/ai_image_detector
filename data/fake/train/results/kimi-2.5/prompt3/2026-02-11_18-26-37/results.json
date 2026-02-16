@@ -5,7 +5,7 @@
     "reasoning": false
   },
   "image_count": 0,
-  "total_fakes": 0,
-  "total_real": 0,
-  "results": []
+  "results": [],
+  "detected_fake": 0,
+  "detected_real": 0
 }

@@ -6,8 +6,7 @@
     "reasoning": false
   },
   "image_count": 50,
-  "detected_fake": 3,
-  "detected_real": 47,
+
   "results": [
     {
       "filename": "d7f62506968b2101234d06827fc7f959bd2e09c98c21e28d86ef8a4b6c7f9ca7_real.jpeg",
@@ -189,7 +188,7 @@
       "classification": "real",
       "artifacts": [
         {
-          "reasoning": " (the the wrong? The right, right. Is a right? The right. What is in the hand: the 1. The image is it the 1. If it's not. The right? Wait. It's 4. Wait the 2. I'm right? No. (right. The right hand? The question: The user: The right, that I'm. What about the left. What a bit in a real. The right. I see? I think: the right. The right is real? Wait\u2014right hand the 2, the hand the 00. It's so left hand. Let's a real. Is it: The right, maybe the. Wait: the phone the phone: right, 1. The problem. 0, the hand is a ",
+          "reasoning": " (the the wrong? The right, right. Is a right? The right. What is in the hand: the 1. The image is it the 1. If it's not. The right? Wait. It's 4. Wait the 2. I'm right? No. (right. The right hand? The question: The user: The right, that I'm. What about the left. What a bit in a real. The right. I see? I think: the right. The right is real? Wait—right hand the 2, the hand the 00. It's so left hand. Let's a real. Is it: The right, maybe the. Wait: the phone the phone: right, 1. The problem. 0, the hand is a ",
           "location": "the 4. Let's left. Wait, the (wait. Wait, but not the woman's the right? the hand? Let it's real. Is it. The problem. Wait, so the left. "
         },
         {
@@ -314,7 +313,7 @@
           "location": " 1. the 5. 200"
         },
         {
-          "reasoning": " ( 5. The 1. \u2022 ",
+          "reasoning": " ( 5. The 1. • ",
           "location": ") 3. the    "
         },
         {
@@ -426,5 +425,8 @@
       "classification": "real",
       "artifacts": []
     }
-  ]
+  ],
+  "detected_fake": 3,
+  "detected_real": 47,
+  "acc": 0.94
 }

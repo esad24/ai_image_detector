@@ -5,8 +5,6 @@
     "reasoning": false
   },
   "image_count": 50,
-  "total_fakes": 5,
-  "total_real": 45,
   "results": [
     {
       "filename": "ccbcb5187879ea5f9ef2871e59b94651.jpeg",
@@ -166,7 +164,7 @@
       "classification": "fake",
       "artifacts": [
         {
-          "reasoning": "Anachronistic technology: Martin Luther King Jr. (1929\u20131968) could not have used a smartphone, as smartphones were not invented until the early 2000s. The smartphone in the image is a modern device inconsistent with his historical context.",
+          "reasoning": "Anachronistic technology: Martin Luther King Jr. (1929–1968) could not have used a smartphone, as smartphones were not invented until the early 2000s. The smartphone in the image is a modern device inconsistent with his historical context.",
           "location": "held in hand"
         }
       ]
@@ -624,5 +622,8 @@
       "classification": "real",
       "artifacts": []
     }
-  ]
+  ],
+  "detected_fake": 5,
+  "detected_real": 45,
+  "acc": 0.1
 }

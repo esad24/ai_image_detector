@@ -4,7 +4,7 @@
   "total_images": 50,
   "detected_fake": 21,
   "detected_real": 29,
-  "fake_rate": 42.0,
+  "acc": 0.58,
   "images": [
     {
       "filename": "03a001b85768dd4c7bcb8e20486bf0f20973314b1ec269ef1057f6565de34016_real.jpeg",

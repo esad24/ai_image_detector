@@ -5,8 +5,6 @@
     "reasoning": "none"
   },
   "image_count": 5,
-  "total_fakes": 3,
-  "total_real": 2,
   "results": [
     {
       "filename": "7784c7d9d0ff5eec84cf377888af309f0b2e1af6f5a5b3f89ae7b4de591de9a5.jpeg",
@@ -28,5 +26,8 @@
       "filename": "1c5a36da63d77c6a529d14f6ede897e28406569e3e471361f4282d10a1c7442b_r12.jpeg",
       "classification": "fake"
     }
-  ]
+  ],
+  "detected_fake": 3,
+  "detected_real": 2,
+  "acc": 0.6
 }

@@ -119,19 +119,22 @@ class ResultWriter:
             self.fake += 1
         elif classification == "real":
             self.real += 1
-        if self.mode == "fake":
-            self.acc = self.fake / len(data["results"])
-        elif self.mode == "real": 
-            self.real / len(data["results"])
-        else: 
-            self.acc = "undefined"
-
-        
-
+    
         # load current results
         data = self._load()
+
         data["results"].append(result)
-        data["image_count"] = len(data["results"])
+        total = len(data["results"])
+
+        #  Accuracy
+        if self.mode == "fake":
+            self.acc = self.fake / total
+        elif self.mode == "real":
+            self.acc = self.real / total
+        else:
+            self.acc = "undefined"
+
+        data["image_count"] = total
         data["detected_fake"] = self.fake
         data["detected_real"] = self.real
         data["acc"] = self.acc

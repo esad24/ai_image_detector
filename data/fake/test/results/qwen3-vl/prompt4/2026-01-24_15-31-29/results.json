@@ -5,8 +5,6 @@
     "reasoning": false
   },
   "image_count": 50,
-  "total_fakes": 16,
-  "total_real": 34,
   "results": [
     {
       "filename": "ccbcb5187879ea5f9ef2871e59b94651.jpeg",
@@ -288,7 +286,7 @@
       "classification": "real",
       "artifacts": [
         {
-          "reasoning": "Hands appear anatomically correct with proper finger count and positioning relative to the sandwich. No visible. Wait, no\u2014I'm confusing myself. The key is to decide if this image has any synthesis artifacts. After thorough analysis, it appears there are no obvious artifacts. The hands, face, and background all look realistic. Therefore, the image is real. The JSON should reflect that, with the classification as real and no artifacts listed (or perhaps some minor details, but in this case, there are none obvious). Wait, but maybe I'm missing something. Wait, another check: the person's hair. Long, wavy hair. The hair strands are natural, no double strands or unnatural patterns. The face: freckles are visible, and the lighting on the face matches the restaurant lighting. No inconsistencies. Therefore, the image is real. So the classification is real. The artifacts array should be empty, or perhaps there are no specific artifacts listed. Wait, the instruction says: ",
+          "reasoning": "Hands appear anatomically correct with proper finger count and positioning relative to the sandwich. No visible. Wait, no—I'm confusing myself. The key is to decide if this image has any synthesis artifacts. After thorough analysis, it appears there are no obvious artifacts. The hands, face, and background all look realistic. Therefore, the image is real. The JSON should reflect that, with the classification as real and no artifacts listed (or perhaps some minor details, but in this case, there are none obvious). Wait, but maybe I'm missing something. Wait, another check: the person's hair. Long, wavy hair. The hair strands are natural, no double strands or unnatural patterns. The face: freckles are visible, and the lighting on the face matches the restaurant lighting. No inconsistencies. Therefore, the image is real. So the classification is real. The artifacts array should be empty, or perhaps there are no specific artifacts listed. Wait, the instruction says: ",
           "location": "image"
         }
       ]
@@ -436,5 +434,8 @@
       "classification": "real",
       "artifacts": []
     }
-  ]
+  ],
+  "detected_fake": 16,
+  "detected_real": 34,
+  "acc": 0.32
 }

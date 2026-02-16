@@ -4,7 +4,7 @@ import json
 # ==========================
 # SET YOUR ROOT FOLDER HERE
 # ==========================
-ROOT_FOLDER = "/path/to/your/folder"
+ROOT_FOLDER = "/home/usluesyr/ai_image_detector/data/real"
 
 
 def update_results_json(file_path):
