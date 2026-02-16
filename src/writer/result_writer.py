@@ -10,14 +10,19 @@ class ResultWriter:
         resume: if True, try to resume the latest previous run for this folder/model/prompt_id
         """
         base_dir = ""
+        self.mode = None
         if image_folder.startswith("real_train"):
             base_dir = f"/home/usluesyr/ai_image_detector/data/real/train/results/{model_name}/prompt{prompt_id}"
+            self.mode = "real"
         elif image_folder.startswith("real_test"):
             base_dir = f"/home/usluesyr/ai_image_detector/data/real/test/results/{model_name}/prompt{prompt_id}"
+            self.mode = "real"
         elif image_folder.startswith("fake_train"):
             base_dir = f"/home/usluesyr/ai_image_detector/data/fake/train/results/{model_name}/prompt{prompt_id}"
+            self.mode = "fake"
         elif image_folder.startswith("fake_test"):
             base_dir = f"/home/usluesyr/ai_image_detector/data/fake/test/results/{model_name}/prompt{prompt_id}"
+            self.mode = "fake"
         else:
             base_dir = f"{image_folder}/results/{model_name}/prompt{prompt_id}"
 
@@ -44,10 +49,10 @@ class ResultWriter:
 
         self.fake = 0
         self.real = 0
+        self.acc = 0
         self.meta = {
             "model": model_name,
             "prompt_id": prompt_id,
-            #"temperature": temp,
             "reasoning": reasoning
         }
 
@@ -60,8 +65,9 @@ class ResultWriter:
         base = {
             "meta": self.meta,
             "image_count": 0,
-            "total_fakes": 0,
-            "total_real": 0,
+            "detected_fake": 0,
+            "detected_real": 0,
+            "acc": 0,
             "results": []
         }
         with open(self.file_path, "w") as f:
@@ -77,8 +83,8 @@ class ResultWriter:
 
     def _load_counters(self):
         data = self._load()
-        self.fake = data.get("total_fakes", 0)
-        self.real = data.get("total_real", 0)
+        self.fake = data.get("detected_fake", 0)
+        self.real = data.get("detected_real", 0)
 
     def get_processed_filenames(self):
         if not os.path.exists(self.file_path):
@@ -113,13 +119,22 @@ class ResultWriter:
             self.fake += 1
         elif classification == "real":
             self.real += 1
+        if self.mode == "fake":
+            self.acc = self.fake / len(data["results"])
+        elif self.mode == "real": 
+            self.real / len(data["results"])
+        else: 
+            self.acc = "undefined"
+
+        
 
         # load current results
         data = self._load()
         data["results"].append(result)
         data["image_count"] = len(data["results"])
-        data["total_fakes"] = self.fake
-        data["total_real"] = self.real
+        data["detected_fake"] = self.fake
+        data["detected_real"] = self.real
+        data["acc"] = self.acc
 
         self._save(data)
 

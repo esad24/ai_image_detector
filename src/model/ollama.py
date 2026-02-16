@@ -6,7 +6,7 @@ models = ["qwen3-vl:8b", "llava:7b", 'gemma3:4b', 'kimi-k2.5:cloud']
 class OllamaModel():
 
     def __init__(self, model_name : str, temp = 0.1, reasoning = False):
-        self.model_name = 'kimi-k2.5:cloud'
+        self.model_name = model_name
         #self.temp = temp
         self.reasoning = reasoning
 
