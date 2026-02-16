@@ -5,7 +5,7 @@
   "detected_fake": 21,
   "detected_real": 29,
   "acc": 0.58,
-  "images": [
+  "results": [
     {
       "filename": "03a001b85768dd4c7bcb8e20486bf0f20973314b1ec269ef1057f6565de34016_real.jpeg",
       "classification": "real",

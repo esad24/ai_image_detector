@@ -1386,22 +1386,34 @@
   ],
   "stats": {
     "image_count": 50,
-    "total_fakes": 35,
-    "total_real": 15,
+    "detected_fake": 35,
+    "detected_real": 15,
     "total_artifacts": 182,
+
     "artifact_types": {
       "structural": 99,
+      "structural_relative": 0.54396,
       "stylistic": 40,
+      "stylistic_relative": 0.21978,
       "physical": 1,
-      "semantic": 42
+      "physical_relative": 0.00549,
+      "semantic": 42,
+      "semantic_relative": 0.23077
     },
-    "artifact_evaluation": {
+
+    "manual_evaluation": {
       "valid": 38,
-      "valid and new artifacts": 2,
-      "new artifacts": 44,
-      "partially valid": 6,
+      "valid_relative": 0.20879,
+      "valid_and_new_artifacts": 2,
+      "valid_and_new_artifacts_relative": 0.01099,
+      "new_artifacts": 44,
+      "new_artifacts_relative": 0.24176,
+      "partially_valid": 6,
+      "partially_valid_relative": 0.03297,
       "uncertain": 51,
-      "invalid": 41
+      "uncertain_relative": 0.28022,
+      "invalid": 41,
+      "invalid_relative": 0.22527
     }
   },
   "detected_fake": 35,

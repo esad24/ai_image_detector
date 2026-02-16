@@ -6,7 +6,7 @@
   "detected_real": 16,
   "fake_rate": 20.0,
   "acc": 0.8,
-  "images": [
+  "results": [
     {
       "filename": "07033864d4889d76cabaf716194d08b1.jpeg",
       "classification": "real",

@@ -18,7 +18,7 @@ import os
 # ═══════════════════════════════════════════════════════════════
 MODE = "fake"  # "fake" or "real"
 
-RESULT_JSON = "/home/usluesyr/ai_image_detector/data/fake/test/results/gpt-5.2/prompt1/2026-01-18_20-39-12/results.json"
+RESULT_JSON = "/home/usluesyr/ai_image_detector/data/fake/test/results/AIDE/results.json"
 OUTPUT_FILE = os.path.join(
     os.path.dirname(RESULT_JSON),
     f"classification_evaluation.json"
