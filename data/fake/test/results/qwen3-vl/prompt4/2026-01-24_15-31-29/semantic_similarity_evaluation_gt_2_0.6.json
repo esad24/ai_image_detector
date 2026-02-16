@@ -8,6 +8,9 @@
   "comparison": "/home/usluesyr/ai_image_detector/data/ground_truth/gt_2/json/gt_2.json",
   "threshold": 0.6,
   "image_count": 50,
+  "detected_fake": 16,
+  "detected_real": 34,
+  "acc": 0.32,
   "image_scores": [
     {
       "filename": "ccbcb5187879ea5f9ef2871e59b94651.jpeg",

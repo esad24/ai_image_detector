@@ -12,8 +12,7 @@ from scipy.optimize import linear_sum_assignment
 warnings.filterwarnings("ignore")
 hf_logging.set_verbosity_error()
 
-RESULT_JSON = "/home/usluesyr/ai_image_detector/data/fake/test/results/gpt-5.2/prompt3/2026-01-20_18-46-16/results.json"
-
+RESULT_JSON = "/home/usluesyr/ai_image_detector/data/fake/test/results/qwen3-vl/prompt6/2026-01-24_15-59-12/results.json"
 GT = "gt_2"
 GT_JSON = f"/home/usluesyr/ai_image_detector/data/ground_truth/{GT}/json/{GT}.json"
 

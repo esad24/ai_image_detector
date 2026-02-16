@@ -5,6 +5,10 @@
     "reasoning": false
     
   },
+  "image_count": 50,
+  "detected_fake": 33,
+  "detected_real": 17,
+  "acc": 0.66,
   "results": [
     {
       "filename": "ccbcb5187879ea5f9ef2871e59b94651.jpeg",
