@@ -1,0 +1,887 @@
+{
+  "meta": {
+    "model": "claude-sonnet-4.5",
+    "prompt_id": 5,
+    "reasoning": "none"
+  },
+  "image_count": 50,
+  "total_fakes": 29,
+  "total_real": 21,
+  "results": [
+    {
+      "filename": "d7f62506968b2101234d06827fc7f959bd2e09c98c21e28d86ef8a4b6c7f9ca7_real.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The runner's lower legs appear unnaturally elongated and distorted, with inconsistent proportions compared to the upper body. The shin and calf areas show abnormal stretching that is inconsistent with human anatomy.",
+          "location": "Lower legs from knees to ankles"
+        },
+        {
+          "reasoning": "The feet and ankles show morphological inconsistencies, with unnatural angles and distorted shapes. The connection between the shoes and legs appears warped and anatomically incorrect.",
+          "location": "Feet and ankle area"
+        },
+        {
+          "reasoning": "The road surface beneath and around the runner's feet shows blurring and distortion patterns typical of AI generation, with inconsistent texture and unclear pavement markings.",
+          "location": "Road surface directly under the runner"
+        },
+        {
+          "reasoning": "The runner's knees and thigh area show unusual anatomical proportions and unnatural muscle definition that doesn't match realistic human physiology during running motion.",
+          "location": "Knee and upper leg region"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-canan-altan-2152293568-32121769.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The checkered pattern on the floor shows severe warping and distortion beneath and around the table legs. The perspective and geometry of the checkerboard squares are inconsistent and physically impossible in this area.",
+          "location": "Floor area directly under and around the wooden table legs"
+        },
+        {
+          "reasoning": "The table legs show unnatural blending and warping where they meet the checkered floor. The wood grain and edges appear to melt or merge unnaturally with the floor pattern.",
+          "location": "Base of all four table legs where they contact the floor"
+        },
+        {
+          "reasoning": "The person's lower body and the area where they would be sitting shows impossible geometry. There is no visible chair or seating, and the body appears to be floating or improperly integrated with the scene.",
+          "location": "Lower body area of the person behind the table"
+        },
+        {
+          "reasoning": "The checkered pattern on the walls shows inconsistent perspective and warping, particularly in the corner areas. The pattern distorts in ways that don't follow proper three-point perspective rules.",
+          "location": "Corner junction of the walls behind the person, especially the upper center area"
+        },
+        {
+          "reasoning": "The person's hands and arms show AI-typical smoothing and lack of fine detail. The fingers appear slightly merged or unclear in their definition.",
+          "location": "Person's hands resting on or near the table"
+        }
+      ]
+    },
+    {
+      "filename": "1baf3f78a5ea367863f70e867819f795ca6bcf73a331f741ba00f484aed98b61_real.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The woman's hand holding the pizza slice shows unnatural finger positions and blurred, merged digits that lack proper anatomical structure, typical of AI generation errors",
+          "location": "Right woman's right hand holding pizza slice"
+        },
+        {
+          "reasoning": "The pizza slice being held appears to merge unnaturally with the hand, with inconsistent edges and texture transitions that don't follow physical logic",
+          "location": "Pizza slice in right woman's hand"
+        },
+        {
+          "reasoning": "The left woman's hand position and fingers show anatomical impossibilities with distorted proportions and unclear finger separation",
+          "location": "Left woman's hands near pizza"
+        },
+        {
+          "reasoning": "The background figures are heavily blurred with amorphous shapes that lack coherent human forms, showing typical AI generation artifacts in non-focal areas",
+          "location": "Background pedestrians on street"
+        },
+        {
+          "reasoning": "The pizza textures show inconsistent detail levels and unnatural patterns, particularly where toppings transition, with some areas appearing melted or fused incorrectly",
+          "location": "Pizza surfaces on both plates"
+        },
+        {
+          "reasoning": "The clothing straps and edges show warping and unnatural curves, particularly around the shoulder and chest areas, with inconsistent fabric physics",
+          "location": "Both women's tank top straps and necklines"
+        },
+        {
+          "reasoning": "Hair strands show unnatural blending and lack of individual strand definition, with some areas appearing painted rather than photographed",
+          "location": "Both women's hair, especially around the edges"
+        }
+      ]
+    },
+    {
+      "filename": "ebecd99d83795b2053728fef55e17c896376cf242474f246aea909fde054717c_real.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The eyes show asymmetry and unnatural rendering, with the right eye appearing distorted and lacking proper anatomical structure. The iris patterns are inconsistent between the two eyes.",
+          "location": "Eyes, particularly the right eye"
+        },
+        {
+          "reasoning": "The teeth display artificial uniformity and unnatural blending with the lips. The spacing and texture of the teeth appear synthetic with overly smooth surfaces.",
+          "location": "Mouth and teeth area"
+        },
+        {
+          "reasoning": "The hair shows inconsistent strands and unnatural texture transitions, particularly where it meets the forehead. Individual hair strands appear to fade or blur unnaturally.",
+          "location": "Hairline and hair strands on the left side of the head"
+        },
+        {
+          "reasoning": "The skin texture appears overly smoothed with loss of natural pore detail, while simultaneously showing inconsistent patches of detail. This is characteristic of AI-generated faces.",
+          "location": "Facial skin, especially cheeks and forehead"
+        },
+        {
+          "reasoning": "The background bokeh has irregular and repetitive patterns that don't follow natural optical blur characteristics. Some areas show unusual geometric distortions.",
+          "location": "Blurred background areas"
+        },
+        {
+          "reasoning": "The collar and turtleneck area show fabric texture inconsistencies and unnatural folds that don't follow proper cloth physics.",
+          "location": "Clothing neckline and collar area"
+        }
+      ]
+    },
+    {
+      "filename": "b9836f50be0bc4098534bf668a8d68209c3708e6574595f492faeff454fcba7f_real.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The stethoscope shows unnatural bending and warping in its tubing, with inconsistent thickness and physically impossible curves that suggest AI generation errors",
+          "location": "Stethoscope tubing around the neck and chest area"
+        },
+        {
+          "reasoning": "The white coat shows unnatural texture transitions and smoothing, particularly where fabric folds should create natural shadows and creases but instead appears artificially blurred",
+          "location": "White medical coat, especially the lower torso and arm areas"
+        },
+        {
+          "reasoning": "The hands and crossed arms display anatomical inconsistencies with fingers that appear merged or indistinct, lacking proper definition and natural hand structure",
+          "location": "Crossed arms and hands in the lower portion of the image"
+        },
+        {
+          "reasoning": "The background shows characteristic AI blur patterns with inconsistent depth of field and unnatural bokeh effects, particularly in the architectural elements",
+          "location": "Background area behind the subject, including the curtains and walls"
+        },
+        {
+          "reasoning": "The facial features, while generally coherent, show subtle signs of AI generation including unnaturally smooth skin texture and slightly asymmetric facial hair patterns",
+          "location": "Face and beard area"
+        }
+      ]
+    },
+    {
+      "filename": "b12ad54e54c8cece38e862c6b11edf66f1f15459d504b5107c3af796aec8c334_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "f87823469991b7b1704ff9e4d4c7d05674097995db209a8e20dbcafdbc5cece9_real.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The man's right hand holding the tennis racket shows unnatural smoothing and blurring, with fingers that lack proper anatomical definition and appear to merge unnaturally with the racket handle",
+          "location": "Right hand holding the tennis racket"
+        },
+        {
+          "reasoning": "The left hand resting on the net displays abnormal texture and coloring, with an unnatural reddish tint on one fingernail that doesn't match the others, and the hand position appears anatomically awkward",
+          "location": "Left hand on the tennis net"
+        },
+        {
+          "reasoning": "The tennis racket strings show inconsistent patterns and irregular geometry, with the string grid appearing warped and not maintaining proper perspective or tension patterns typical of real rackets",
+          "location": "Tennis racket strings and frame"
+        },
+        {
+          "reasoning": "The background shows unnatural blurring patterns that don't follow proper depth of field physics, with some areas appearing artificially smoothed and lacking coherent detail",
+          "location": "Background trees and court structures"
+        },
+        {
+          "reasoning": "The tennis net shows inconsistent texture and weaving pattern, with areas where the mesh appears to blur or distort unnaturally, particularly where it meets the frame edges",
+          "location": "Tennis net mesh in foreground"
+        },
+        {
+          "reasoning": "The shirt fabric shows unnatural smoothness and lacks realistic wrinkles or texture variation expected from a cotton t-shirt on a person in this pose",
+          "location": "White t-shirt fabric"
+        }
+      ]
+    },
+    {
+      "filename": "b4f77b64ace4bd0e275f9189bb4dda9f_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "blood-church-258948_1280.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The ornate decorative patterns on the domes and architectural details show unnatural repetition and AI-generated inconsistencies. The mosaic patterns on the multicolored dome lack proper geometric consistency and show warping typical of AI image generation.",
+          "location": "Upper domes and cupolas, particularly the left multicolored mosaic dome"
+        },
+        {
+          "reasoning": "The architectural details and ornamental moldings show irregular patterns and blurring that don't follow consistent perspective or structural logic. Lines that should be parallel or follow architectural rules appear warped or merge unnaturally.",
+          "location": "Mid-section architectural details, window frames, and decorative trim work"
+        },
+        {
+          "reasoning": "The brick and stonework texture patterns exhibit AI-typical repetition artifacts with inconsistent lighting and shadow details that don't match the overall directional lighting of the scene.",
+          "location": "Lower section walls and foundation areas"
+        },
+        {
+          "reasoning": "The crosses atop the domes show inconsistent detail levels and some appear to have distorted or impossible geometries, with elements that blur or merge unnaturally into the sky background.",
+          "location": "Top of the spires and crosses against the sky"
+        },
+        {
+          "reasoning": "The window reflections and glass surfaces show inconsistent reflections and lack proper perspective distortion. Some windows appear flat or have impossible reflection angles.",
+          "location": "Window surfaces throughout the building, particularly the tall arched windows"
+        }
+      ]
+    },
+    {
+      "filename": "e4fd0b7c8c7d3dca42aab01618224fabc57cb8690ec4f3566b3335f83c8ab0ff_real.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The left leg shows unnatural blurring and distortion where the calf meets the ankle, with inconsistent texture transitions between the stocking and skin that suggest AI generation errors",
+          "location": "Lower left leg and ankle area"
+        },
+        {
+          "reasoning": "The right foot and shoe exhibit warped geometry with an unnaturally twisted ankle position and blurred edges that merge incorrectly with the floor surface",
+          "location": "Right foot and high heel shoe"
+        },
+        {
+          "reasoning": "The hair on the right side of the head shows inconsistent strands with unnatural blending into the background and lacks coherent hair structure typical of AI generation",
+          "location": "Right side of head and hair"
+        },
+        {
+          "reasoning": "The hands positioned on the belly show anatomical irregularities with fingers that appear merged or have unclear definition, and unnatural skin texture gradients",
+          "location": "Both hands on stomach area"
+        },
+        {
+          "reasoning": "The shadow cast on the wall is inconsistent with the lighting direction and shows unnatural soft edges with irregular density that doesn't match the subject's position",
+          "location": "Shadow on the wall behind the subject"
+        }
+      ]
+    },
+    {
+      "filename": "ce8af8f993f2ac560f968fe64c1a887b_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "c38189c54230e478e366311946620a3a_real.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The baby's head appears unnaturally large and disproportionate to the body, with an unusual shape and overly smooth texture that suggests AI generation or manipulation",
+          "location": "Baby's head and forehead area"
+        },
+        {
+          "reasoning": "The facial features show typical AI artifacts with an uncanny valley appearance - the smile and expression appear slightly unnatural and the skin texture is too perfect and lacks realistic detail",
+          "location": "Baby's face, particularly around the mouth and cheek areas"
+        },
+        {
+          "reasoning": "The water interaction around the baby's body shows inconsistent physics and blending, with unnatural transitions between the baby and water surface that don't follow realistic water behavior",
+          "location": "Water line around the baby's torso and shoulders"
+        },
+        {
+          "reasoning": "The swimsuit pattern shows irregular distortion and the fabric doesn't properly conform to body contours as it should, with the pattern appearing painted on rather than following natural wrinkles and folds",
+          "location": "Leopard print swimsuit"
+        },
+        {
+          "reasoning": "The reflection in the water is missing or inconsistent with what should be visible given the baby's position, and the water surface shows unnatural smoothness in some areas",
+          "location": "Water surface and reflection area below the baby"
+        }
+      ]
+    },
+    {
+      "filename": "282422ac298c060155c2cc4312119bd0_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-markarronsmith-2168356.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-cottonbro-10485417.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The child's left leg shows unnatural texture and blending issues where it meets the shoe, with distorted anatomy and irregular skin tone transitions typical of AI generation",
+          "location": "Child's lower left leg and ankle area"
+        },
+        {
+          "reasoning": "The woman's left hand resting on the child's head displays anatomical irregularities with fingers that appear to merge unnaturally and lack proper joint definition",
+          "location": "Woman's left hand on child's head"
+        },
+        {
+          "reasoning": "The teddy bear held by the child shows inconsistent texture and undefined features, with blurry edges that blend unnaturally into the child's clothing",
+          "location": "Teddy bear in child's arms"
+        },
+        {
+          "reasoning": "The older man on the right has facial features that appear slightly warped and asymmetrical, particularly around the nose and mouth area, with unnatural skin texture",
+          "location": "Right side elderly man's face"
+        },
+        {
+          "reasoning": "The ground vegetation shows repetitive and inconsistent patterns with leaves and plants that have unnaturally similar shapes and lack botanical accuracy",
+          "location": "Forest floor vegetation throughout lower portion"
+        },
+        {
+          "reasoning": "The background trees exhibit blurred and morphed textures with trunks that fade unnaturally and lack consistent perspective",
+          "location": "Background forest trees"
+        }
+      ]
+    },
+    {
+      "filename": "c65987f9418f465555948957aa66dced2c94386ef70da3809c09ba7a7fd8dd8b_real.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The man on the right has unnaturally smooth and waxy skin texture with inconsistent lighting and shadow patterns on his face, typical of AI-generated faces",
+          "location": "Face of the man in white shirt on the right side"
+        },
+        {
+          "reasoning": "The cigarette being held appears to merge unnaturally with the fingers, with unclear boundaries and distorted hand anatomy",
+          "location": "Right hand of the man in white shirt holding cigarette"
+        },
+        {
+          "reasoning": "The gun visible on the right side has inconsistent perspective and details that blur or merge unnaturally with surrounding elements",
+          "location": "Gun/weapon in lower right portion of image"
+        },
+        {
+          "reasoning": "The woman's facial features show AI generation artifacts with unnatural symmetry and texture inconsistencies, particularly around the eyes and glasses",
+          "location": "Center woman's face"
+        },
+        {
+          "reasoning": "The checkered tablecloth pattern becomes distorted and loses consistent geometry, particularly where it drapes, showing irregular warping typical of AI generation",
+          "location": "Red and white checkered tablecloth pattern"
+        },
+        {
+          "reasoning": "The background shows inconsistent texture and impossible architectural details with blurry, merged elements that lack coherent structure",
+          "location": "Wall and background area behind the subjects"
+        }
+      ]
+    },
+    {
+      "filename": "415c0714987b4920f194b5f2053152b8bdaa8f4185583c984f32b950506be724_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "be43d363ea6ba1e080580d3a2a74c6a000041940d0f27dd9af71faca66afd4ec_real.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The faces of multiple women show signs of AI generation with unnatural smoothness, repetitive facial features, and unusual symmetry. Several faces appear nearly identical with only slight variations, which is characteristic of AI-generated images.",
+          "location": "Faces of the women, particularly the second, fourth, and seventh person from the left"
+        },
+        {
+          "reasoning": "The hands holding the bouquets show anatomical inconsistencies, with fingers that appear merged, distorted, or in unnatural positions. Some hands have unclear digit counts or strange proportions.",
+          "location": "Hands of multiple bridesmaids, especially visible on the women on the left and right sides"
+        },
+        {
+          "reasoning": "The fabric of the dresses shows inconsistent texture and unnatural flow patterns. The pleating and draping appear artificial with repetitive patterns that don't follow natural physics or lighting.",
+          "location": "The bridesmaid dresses, particularly in the lower sections and pleated areas"
+        },
+        {
+          "reasoning": "The bouquets show irregular flower patterns with blurred or melted-together petals. The white flowers lack individual definition and appear as amorphous white masses rather than distinct blooms.",
+          "location": "All white bouquets held by the wedding party"
+        },
+        {
+          "reasoning": "The background foliage shows characteristic AI generation artifacts with unclear definition, repeated patterns, and inconsistent depth of field that doesn't match natural photography.",
+          "location": "Trees and greenery in the background"
+        }
+      ]
+    },
+    {
+      "filename": "35ed44c64fa9ebe57b0f51a055d1b56a_real.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The floor shows an impossible transparent view into complex machinery and circuitry below, which would not exist in a real subway car. Subway floors are solid and opaque.",
+          "location": "Floor of the subway car, center area between the standing passengers"
+        },
+        {
+          "reasoning": "The transparent floor effect has unrealistic clarity and lighting, showing detailed electronics and mechanical components that appear artificially composited rather than naturally visible through transparent material.",
+          "location": "Entire floor section from foreground to background"
+        },
+        {
+          "reasoning": "The standing passengers' feet and legs interact awkwardly with the transparent floor overlay, with some areas showing inconsistent shadows and positioning that suggest digital manipulation.",
+          "location": "Around the feet of the standing passengers in the middle of the car"
+        },
+        {
+          "reasoning": "The machinery visible through the floor appears to be a generic stock image of circuit boards and mechanical components that don't match what would actually be under a subway car (tracks, wheels, suspension systems).",
+          "location": "Throughout the visible 'transparent' floor area"
+        }
+      ]
+    },
+    {
+      "filename": "the-magician-2817077_1280.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-mizunokozuki-13929969.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The left woman's hand holding the phone shows unnatural finger positioning and morphology, with fingers appearing to merge or have inconsistent joint structure typical of AI-generated images",
+          "location": "Center of image, the hand holding the smartphone between the two women"
+        },
+        {
+          "reasoning": "The hair of the woman on the left shows inconsistent texture and unnatural flow patterns, particularly where it transitions near her shoulder and chest area, with strands appearing to blend unnaturally",
+          "location": "Left woman's hair, particularly around the shoulder and chest area"
+        },
+        {
+          "reasoning": "The woman on the right's left arm shows anatomical inconsistencies in positioning and proportion relative to her body, with an unnatural angle at the elbow",
+          "location": "Right woman's left arm extending downward"
+        },
+        {
+          "reasoning": "The background elements, particularly around the pole and traffic signal, show characteristic AI generation blur patterns and inconsistent detail levels that don't match natural depth of field",
+          "location": "Background area around the traffic pole and crosswalk signal"
+        },
+        {
+          "reasoning": "The woman on the left's midriff area shows unnatural skin texture and lighting transitions that are inconsistent with the surrounding clothing and body",
+          "location": "Left woman's exposed midriff area"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-koolshooters-9944253.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-victorfreitas-865711.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "b31a7713cbbb921686f0f1cb14e3f0d011c90b361d2899642eeca804e7b9e7ff_real.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The facial features show unnatural smoothness and AI-generated texture patterns, particularly visible in the transition between skin tones and the unnaturally perfect symmetry of the smile. The teeth display an artificial uniformity characteristic of AI generation.",
+          "location": "Face, especially around the mouth, teeth, and cheek areas"
+        },
+        {
+          "reasoning": "The hair exhibits telltale AI generation patterns with unnatural texture repetition and lacks the individual strand definition seen in real photographs. The hairline shows irregular blending artifacts.",
+          "location": "Hair and hairline area at the top of the head"
+        },
+        {
+          "reasoning": "The background shows inconsistent blur patterns and the curtains display repetitive texture artifacts that don't follow natural fabric folds. The bokeh effect appears artificially generated.",
+          "location": "Background curtains and shelving behind the subject"
+        },
+        {
+          "reasoning": "The suit fabric shows unnaturally uniform texture without proper light reflection or realistic wrinkle patterns expected in fabric photography. The collar and lapel edges have soft, inconsistent boundaries.",
+          "location": "Suit jacket, particularly the shoulders and lapels"
+        },
+        {
+          "reasoning": "The hands and fingers show anatomical irregularities and unnatural positioning with artificial smoothness typical of AI-generated images. The watch appears to blend unnaturally with the wrist.",
+          "location": "Hands and watch area where arms are crossed"
+        }
+      ]
+    },
+    {
+      "filename": "6fb659766b7b27ffcd747e63703b1844aabc1e3a72ebfdfee2c1fe66ca25f15f_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "ea4e8c5d30ee38844257b18989107682474d269dfbec4930f4dac730b0ea9cda_real.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The person's left hand and wrist area show unnatural blurring and morphing, with fingers that appear distorted and lack proper anatomical structure. The hand seems to blend unnaturally with the sleeve.",
+          "location": "Left hand and wrist area of the person in the foreground"
+        },
+        {
+          "reasoning": "The feet and lower legs show AI generation artifacts with unnatural positioning and distorted shoe/foot anatomy. The footwear appears warped and doesn't follow realistic perspective.",
+          "location": "Both feet and lower leg area"
+        },
+        {
+          "reasoning": "The reflection in the glass door doesn't match the person's actual position and pose accurately. The second figure appears ghostly and inconsistent with how a proper reflection would appear.",
+          "location": "Glass door reflection"
+        },
+        {
+          "reasoning": "The jacket zipper and clothing texture show inconsistent detail and unnatural blending, with areas that appear to merge or distort in ways that don't follow fabric physics.",
+          "location": "Torso area, particularly around the hoodie and jacket"
+        },
+        {
+          "reasoning": "The overall image has characteristic AI-generated softness and blur patterns, particularly around edges and transition areas between the subject and background.",
+          "location": "Throughout the entire image, especially at object boundaries"
+        }
+      ]
+    },
+    {
+      "filename": "fb1eff5acdf20dd6aa902af046c1837a_real.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The polar bear is clearly a person in a costume, evidenced by the unnatural proportions, visible costume seams, and artificial-looking fur texture that doesn't match real polar bear anatomy",
+          "location": "Center of image, between the two people"
+        },
+        {
+          "reasoning": "The polar bear costume head shows obvious artificial features with a fixed smile, button-like eyes, and a rigid structure inconsistent with a living animal",
+          "location": "Top center, the head of the polar bear costume"
+        },
+        {
+          "reasoning": "The costume body appears to be standing upright in an unnatural bipedal human posture rather than the quadrupedal stance of an actual polar bear, with visible human body proportions underneath",
+          "location": "Central figure, torso and stance of the costumed figure"
+        }
+      ]
+    },
+    {
+      "filename": "d07a9e73914dad147383eb40cb21a296_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "b472b7624e736851155da6ece8d096ed1d6ffb74cd3710667a4e956d0812cfc9_real.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The woman's left hand position and fingers appear unnaturally blurred and distorted where they meet the laptop keyboard, with inconsistent anatomy and merging of fingers typical of AI generation errors",
+          "location": "Woman's left hand on the laptop keyboard"
+        },
+        {
+          "reasoning": "The tattoos on the woman's arms show inconsistent detail levels and patterns that appear to morph or lose coherent design elements, characteristic of AI-generated imagery struggling with complex patterns",
+          "location": "Tattoos on both forearms"
+        },
+        {
+          "reasoning": "The phone screen displays 'BUY' and 'SELL' buttons with unnaturally perfect composition and lighting that appears artificially composited, with text that seems too perfectly aligned and lit for the scene's lighting conditions",
+          "location": "Mobile phone screen on the desk"
+        },
+        {
+          "reasoning": "The financial charts and data on the glass windows behind the woman show inconsistent perspective and distortion patterns that don't match the glass reflection physics, with numbers and graphs that appear nonsensical upon close inspection",
+          "location": "Glass window displays with financial data in background"
+        },
+        {
+          "reasoning": "The laptop screen displays financial charts with unrealistic clarity and perspective given the viewing angle, and the screen content appears artificially sharp compared to the surrounding elements",
+          "location": "Laptop screen content"
+        }
+      ]
+    },
+    {
+      "filename": "6d8fba24ae67e57a85da5aa46b49dce4_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "97cb4675b218ffb0f3902bf9af1c4660a6ec7268f5c08641a605e6d073e0c246_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "bb940e5b5eb4667fa106086a3ddd34ce_real.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The hand positions and anatomy appear unnatural, particularly the hands placed on the seated man's shoulders showing inconsistent lighting, blending, and anatomical proportions typical of AI-generated images",
+          "location": "Multiple hands on shoulders of the seated figure in the center-bottom of the image"
+        },
+        {
+          "reasoning": "The blonde woman's hair shows irregular texture transitions and unnatural color gradients with poor detail consistency, characteristic of AI generation artifacts",
+          "location": "Hair of the blonde woman in the center-left area behind the seated figure"
+        },
+        {
+          "reasoning": "Several faces in the background show asymmetrical features, blurred details, and inconsistent focus that doesn't match the depth of field expected in a professional photograph",
+          "location": "Background faces of multiple people standing behind the main subjects"
+        },
+        {
+          "reasoning": "The lighting on different subjects is inconsistent, with some people appearing to have different light sources and shadow directions that wouldn't occur naturally in a single room setting",
+          "location": "Throughout the image, particularly comparing the seated figure to standing figures"
+        },
+        {
+          "reasoning": "The fabric textures, particularly on the red sequined dress on the left, show repetitive patterns and unrealistic reflection properties typical of AI-generated materials",
+          "location": "Red sequined dress on the woman at the left side of the image"
+        }
+      ]
+    },
+    {
+      "filename": "06086a7210d32ee6f6d7afdf64e95c67_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-damianruitenga-4127694.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "03a001b85768dd4c7bcb8e20486bf0f20973314b1ec269ef1057f6565de34016_real.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The astronaut gloves show unnatural textures and inconsistent material properties, with poor definition between fingers and unrealistic bulkiness that appears AI-generated rather than photographed",
+          "location": "White astronaut gloves in the lower center portion of the image"
+        },
+        {
+          "reasoning": "The spacesuit helmet area shows distorted reflections and impossible geometric properties, with unclear boundaries between the helmet and background elements",
+          "location": "Upper right area around the helmet portion of the spacesuit"
+        },
+        {
+          "reasoning": "The child in the blue dress has facial features that appear slightly asymmetric and unnatural, with skin texture that lacks realistic pore detail and shows AI smoothing artifacts",
+          "location": "Face of the child in blue dress in the center of the image"
+        },
+        {
+          "reasoning": "The transition between the astronaut suit and the woman's body shows anatomical impossibilities and blending artifacts, with unclear spatial relationships",
+          "location": "Torso area where the spacesuit connects to the body on the right side"
+        },
+        {
+          "reasoning": "The man's shirt collar and neckline show inconsistent fabric folds and unnatural material behavior typical of AI generation",
+          "location": "Collar area of the blue shirt on the left side of the image"
+        }
+      ]
+    },
+    {
+      "filename": "7d95deb6a1fc9795a849e2eab10f49b6_real.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The hairline and hair texture show unnatural blending with blurred edges and inconsistent detail levels typical of AI generation",
+          "location": "Upper forehead and hair region"
+        },
+        {
+          "reasoning": "The neck area displays asymmetrical shading and unnatural smoothing, with the left side showing inconsistent skin texture compared to the right",
+          "location": "Neck and lower jaw area"
+        },
+        {
+          "reasoning": "The ears show different levels of detail and slightly asymmetric positioning that appears unnatural, with the right ear having less definition",
+          "location": "Both ears"
+        },
+        {
+          "reasoning": "The background shows uniform gray coloring with suspicious smoothness and lack of natural grain or texture variation",
+          "location": "Background area"
+        },
+        {
+          "reasoning": "Skin texture appears overly smooth with AI-typical waxy appearance in certain areas, particularly on the cheeks and forehead, lacking natural pore detail",
+          "location": "Facial skin, especially cheeks and forehead"
+        },
+        {
+          "reasoning": "The t-shirt collar shows unnatural fabric rendering with inconsistent wrinkles and edges that blend unnaturally with the neck",
+          "location": "Shirt collar area"
+        }
+      ]
+    },
+    {
+      "filename": "caabe61d5e181b8da352b0e7b73dfeb4_real.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The facial skin texture appears unnaturally smooth and plastic-like with an artificial airbrushed quality typical of AI-generated images. There is inconsistent pore detail and an overly perfect complexion that lacks realistic skin variation.",
+          "location": "Face, particularly cheeks, forehead, and nose area"
+        },
+        {
+          "reasoning": "The hair strands show inconsistent flow patterns and some strands appear to merge unnaturally or fade into the background without proper definition. There are areas where individual hair strands lack coherent direction and realistic texture.",
+          "location": "Hair, especially on the left side and top of the head"
+        },
+        {
+          "reasoning": "The eyes have an unnaturally perfect symmetry and the iris details appear overly sharp and artificial compared to the rest of the face. The catchlights in the eyes are identical in both eyes, which is unusual for natural photography.",
+          "location": "Both eyes, particularly the iris and pupil regions"
+        },
+        {
+          "reasoning": "The transition between the hair and background shows soft, blurred edges that lack the crisp separation expected in a professional portrait. Some hair strands appear to blend into or dematerialize at the edges.",
+          "location": "Hair-background boundary, particularly on the right side"
+        },
+        {
+          "reasoning": "The clothing text and logo appear slightly distorted with inconsistent perspective and the fabric texture lacks realistic wrinkle patterns and material detail expected from a real photograph.",
+          "location": "Red/orange shirt, particularly the 'TEAM D' text and Olympic rings logo"
+        }
+      ]
+    },
+    {
+      "filename": "765078d524b481fbb30b8acc1a7adf6926c79df9a914c4bd94fc97418e090acc_real.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The blue armbands on both arms have an unnatural glowing quality with artificial-looking white線 patterns that appear digitally generated rather than being real fabric. The patterns are too uniform and have an AI-generated aesthetic.",
+          "location": "Blue armbands on both upper arms"
+        },
+        {
+          "reasoning": "The transition between the helmet and the person's face shows inconsistent lighting and unnatural blending. The skin texture appears overly smoothed and lacks realistic pore detail typical of AI-generated faces.",
+          "location": "Face area, particularly around forehead and cheeks"
+        },
+        {
+          "reasoning": "The military vest and tactical gear show inconsistent texture rendering with some areas appearing unnaturally sharp while others are blurred. The camouflage pattern has irregular transitions typical of AI generation.",
+          "location": "Tactical vest and chest area"
+        },
+        {
+          "reasoning": "The background has that characteristic AI-generated soft focus with ambiguous details. The buildings and environment lack the sharp detail and natural depth of field expected from a real photograph.",
+          "location": "Background environment behind the subject"
+        }
+      ]
+    },
+    {
+      "filename": "35bdc7578de33e60547e7c87cb903275aed53c3119ae9bf034f455f8c171b6ce_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "56eb13f536b858a48ea41076c246a1f2_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "a78602fa52fe9377759a2df17a8a09cdbf52a21626a202b4c2a11460312104f5_real.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The right hand of the man eating the burger shows unnatural finger positioning and blurred, malformed digits that don't properly wrap around the burger in an anatomically correct way",
+          "location": "Right side of image, hands holding the burger of the man in the white shirt"
+        },
+        {
+          "reasoning": "The burger being held by the man on the right has inconsistent lighting and texture, with the lettuce appearing artificially bright green and the burger components showing unrealistic layering",
+          "location": "Center-right of image, the burger being eaten"
+        },
+        {
+          "reasoning": "The watch on the right wrist appears to have distorted geometry and the band doesn't follow the natural curve of the wrist properly",
+          "location": "Right forearm of the man in white shirt eating the burger"
+        },
+        {
+          "reasoning": "The background figures show unnatural blur patterns and one person's face in the back appears partially morphed or incomplete",
+          "location": "Upper center background, behind the main subjects"
+        },
+        {
+          "reasoning": "The condiment bottles on the table show warped labels and inconsistent perspective, particularly the A1 sauce bottle which has distorted text",
+          "location": "Lower center of image, on the table among the condiments"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-maryiaplashchynskaya-3400764.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The hair strands show unnatural merging and blending patterns, particularly where different subjects' hair overlaps. The hair textures lack consistent detail and show AI-typical smoothing and impossible strand arrangements.",
+          "location": "Throughout all three subjects' hair, especially where the back subject's hair meets the middle subject's head, and along the left side of the front subject's hair"
+        },
+        {
+          "reasoning": "The skin texture is overly smooth and plastic-like with an airbrushed quality typical of AI generation. There is unnaturally uniform lighting across all faces without proper subsurface scattering or pore detail.",
+          "location": "All three faces, particularly noticeable on cheeks, foreheads, and neck areas"
+        },
+        {
+          "reasoning": "The eyes show inconsistent detail levels and slightly asymmetric pupils. The catchlights in the eyes are identical across subjects in an unnatural way, and the iris patterns lack realistic complexity.",
+          "location": "Eyes of all three subjects, most evident in the front subject's blue eyes"
+        },
+        {
+          "reasoning": "The spatial relationship and positioning of the three heads shows anatomically questionable neck and shoulder positions. The way the subjects are stacked defies natural posing physics.",
+          "location": "The overall composition and positioning of the three subjects relative to each other"
+        },
+        {
+          "reasoning": "The background has an artificial bokeh effect with unnatural uniformity. The transition between subjects and background shows typical AI generation artifacts with inconsistent edge definition.",
+          "location": "Background and edges around all subjects' hair and shoulders"
+        }
+      ]
+    },
+    {
+      "filename": "0ae750b9ec4bd9ceaaab393a928b77ac_real.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The creature's head appears unnaturally smooth and has an AI-generated quality with inconsistent texture transitions between the white fluffy head area and the shaggy body. The facial features show typical AI generation artifacts with blurred, indistinct details.",
+          "location": "Upper portion of the large creature, specifically the head and face area"
+        },
+        {
+          "reasoning": "The creature's body proportions are anatomically impossible - the massive bipedal stance, human-like posture, and the way the costume/body drapes defies natural animal anatomy. This appears to be an AI attempt at creating a vintage photo of a costumed figure.",
+          "location": "The entire body structure of the large white creature behind the child"
+        },
+        {
+          "reasoning": "The child's face shows characteristic AI generation smoothness with loss of fine detail that would be present even in aged photographs. The facial features lack the natural imperfections of genuine vintage photography.",
+          "location": "Child's face in the center-bottom portion of the image"
+        },
+        {
+          "reasoning": "The texturing and wear patterns of the 'aged photograph' effect are too uniform and digitally applied. Real vintage photo deterioration shows more random, organic patterns rather than this artificial aging overlay.",
+          "location": "Throughout the borders and surface of the entire photograph, particularly the brown spots and edge wear"
+        },
+        {
+          "reasoning": "The lighting and shadows are inconsistent, particularly where the creature meets the background wall. The shadow patterns don't align properly with a single light source.",
+          "location": "Background brick wall area and the interface between the creature and the wall"
+        }
+      ]
+    },
+    {
+      "filename": "d6cf6f6e189a0e2a890f90e0cba185c2_real.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The beard contains unnatural objects including what appears to be cigarettes, a small bottle, and other items unnaturally embedded within the facial hair, which is not possible in a real photograph",
+          "location": "Throughout the beard area, particularly in the middle and lower sections"
+        },
+        {
+          "reasoning": "The left ear shows abnormal morphology and appears partially transparent or merged with the background, with unclear edges and unnatural coloring",
+          "location": "Left side of the head where the ear should be clearly defined"
+        },
+        {
+          "reasoning": "The hair shows inconsistent texture and unnatural patterns with some strands appearing painted or digitally generated rather than photographed, particularly visible in the highlighting and strand definition",
+          "location": "Top and sides of the head in the hair region"
+        },
+        {
+          "reasoning": "The transition between the face and beard shows unnatural blending with inconsistent skin texture and lighting that doesn't match the rest of the facial features",
+          "location": "Cheek and jaw area where beard meets skin"
+        },
+        {
+          "reasoning": "The graphic design on the t-shirt appears distorted and shows signs of AI generation with unclear details and inconsistent perspective",
+          "location": "Center of the chest area on the dark t-shirt"
+        }
+      ]
+    },
+    {
+      "filename": "99c5f61aa990fcbcaff73a63fdaef4cd_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "4fa5905a0ca903730ed82db21f56a81acec7efe5a0a5eb54a18235ab42f97cd6_real.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The woman's face shows unnatural skin texture with an overly smooth, waxy appearance typical of AI-generated faces. The facial features lack natural pores and fine details.",
+          "location": "Woman's face on the right side of the image"
+        },
+        {
+          "reasoning": "The man's left hand shows anatomical inconsistencies with fingers that appear to blend together unnaturally and lack proper joint definition.",
+          "location": "Left hand of the man in the foreground"
+        },
+        {
+          "reasoning": "The woman's hand position and structure appear distorted with unclear finger boundaries and unnatural positioning relative to her body.",
+          "location": "Woman's hands in the lower right portion of the image"
+        },
+        {
+          "reasoning": "The hair emerging from under the woman's white beanie shows inconsistent textures and unnatural transitions, with strands that don't follow realistic hair physics.",
+          "location": "Woman's hair visible below the white beanie"
+        },
+        {
+          "reasoning": "The background faces are excessively blurred with loss of facial structure consistency, more extreme than typical photographic depth of field would produce.",
+          "location": "Background crowd behind the main subjects"
+        },
+        {
+          "reasoning": "The red scarves worn by both subjects show unrealistic fabric behavior with overly smooth surfaces and lack of natural wrinkles or texture variation.",
+          "location": "Red scarves on both the man and woman"
+        }
+      ]
+    },
+    {
+      "filename": "1c3eb9f1ee43097df710c3c2842fd1689b20102bf3404b000b5d3f28f782c33d_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "c362188ff928cf10b6cb734ba674c8f91af2ab48af337ebc873cd06769b429a1_real.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The bartender's left hand holding the bottle shows unnatural finger positioning and blending, with fingers appearing to merge unnaturally with the bottle",
+          "location": "Left hand gripping the blue bottle"
+        },
+        {
+          "reasoning": "The pouring liquid stream from the bottle appears inconsistent and lacks realistic physics, with an unnatural appearance and connection to the glass",
+          "location": "Liquid stream between bottle and cocktail shaker"
+        },
+        {
+          "reasoning": "The bartender's right hand and arm show anatomical inconsistencies with unnatural positioning and unclear definition of the wrist and hand structure",
+          "location": "Right hand/wrist area near the cocktail shakers"
+        },
+        {
+          "reasoning": "The bow tie area shows irregular patterns and blurring that is inconsistent with fabric texture, suggesting AI generation artifacts",
+          "location": "Neck and bow tie region"
+        },
+        {
+          "reasoning": "The background bottles on the bar shelf show repetitive patterns and lack distinct individual detail, appearing as a blurred amalgamation typical of AI-generated backgrounds",
+          "location": "Bar shelf with bottles in background"
+        },
+        {
+          "reasoning": "The cocktail shakers on the bar show inconsistent reflections and lighting that don't match the environment properly",
+          "location": "Multiple cocktail shakers arranged on the bar counter"
+        }
+      ]
+    },
+    {
+      "filename": "0b96dd5fd38f6c18236dcec8df90c549_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-orestsv-1821699.jpeg",
+      "classification": "real",
+      "artifacts": []
+    }
+  ]
+}

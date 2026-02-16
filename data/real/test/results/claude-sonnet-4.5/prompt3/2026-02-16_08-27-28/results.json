@@ -1,0 +1,673 @@
+{
+  "meta": {
+    "model": "claude-sonnet-4.5",
+    "prompt_id": 3,
+    "reasoning": "none"
+  },
+  "image_count": 50,
+  "total_fakes": 16,
+  "total_real": 34,
+  "results": [
+    {
+      "filename": "d7f62506968b2101234d06827fc7f959bd2e09c98c21e28d86ef8a4b6c7f9ca7_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-canan-altan-2152293568-32121769.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "1baf3f78a5ea367863f70e867819f795ca6bcf73a331f741ba00f484aed98b61_real.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "The woman on the right has a distorted hand holding the pizza slice with abnormal finger proportions and unnatural positioning",
+          "location": "Right woman's hand holding pizza slice in center-right of image"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The woman on the left has anatomical issues with her arm and hand placement appearing unnaturally positioned and merged with her torso",
+          "location": "Left woman's right arm and hand area, lower center-left"
+        },
+        {
+          "type": "structural",
+          "reasoning": "Both women's faces show typical AI generation artifacts with overly smooth skin texture and unnaturally perfect symmetry",
+          "location": "Facial features of both women in upper portion of image"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The pizza slice being held by the right woman has inconsistent texture and the cheese/toppings blend unnaturally with blurred edges",
+          "location": "Pizza slice held by right woman, center-right area"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "The background shows characteristic AI blur with indistinct figures and architectural elements that lack coherent detail",
+          "location": "Background area behind both women, upper third of image"
+        }
+      ]
+    },
+    {
+      "filename": "ebecd99d83795b2053728fef55e17c896376cf242474f246aea909fde054717c_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "b9836f50be0bc4098534bf668a8d68209c3708e6574595f492faeff454fcba7f_real.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "The stethoscope tubing shows unnatural warping and discontinuity where it meets the doctor's coat, with inconsistent depth and impossible angles",
+          "location": "Lower right portion of the stethoscope, near the subject's waist area"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The left hand/wrist area shows anatomical distortion with fingers appearing to merge unnaturally into the coat sleeve",
+          "location": "Subject's left arm crossing over the torso"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "Unnatural skin texture smoothness and uniformity across the face, characteristic of AI-generated portraits, with overly perfect gradients",
+          "location": "Facial area, particularly cheeks and forehead"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The white coat collar and lapel show irregular geometry and inconsistent fold patterns that don't follow natural fabric behavior",
+          "location": "Upper chest area, coat collar region"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "The background shows typical AI blur artifacts with inconsistent bokeh and unnatural transitions between the curtain and wall elements",
+          "location": "Background area behind the subject"
+        }
+      ]
+    },
+    {
+      "filename": "b12ad54e54c8cece38e862c6b11edf66f1f15459d504b5107c3af796aec8c334_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "f87823469991b7b1704ff9e4d4c7d05674097995db209a8e20dbcafdbc5cece9_real.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "The left hand holding the tennis racket has malformed fingers with unnatural proportions and positioning. The fingers appear fused and lack proper joint definition.",
+          "location": "Left hand gripping the tennis racket handle, upper left portion of the image"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The right hand resting near the net has distorted fingers with irregular spacing and anatomically incorrect structure. The pinky finger appears particularly deformed.",
+          "location": "Right hand at the bottom center of the image, near the tennis net"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The tennis racket strings show an irregular and inconsistent pattern that doesn't follow standard racket string geometry. The strings appear to blur and merge unnaturally.",
+          "location": "Tennis racket head over the left shoulder"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The transition between the forearm and wrist on the right arm shows anatomical inconsistencies with unnatural smoothing and blending of features.",
+          "location": "Right forearm and wrist area, lower right portion of the subject"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "The texture and detail level varies inconsistently across the image, with some areas appearing overly smooth while others maintain realistic texture, characteristic of AI generation.",
+          "location": "Throughout the image, particularly noticeable on the white t-shirt and skin surfaces"
+        }
+      ]
+    },
+    {
+      "filename": "b4f77b64ace4bd0e275f9189bb4dda9f_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "blood-church-258948_1280.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "e4fd0b7c8c7d3dca42aab01618224fabc57cb8690ec4f3566b3335f83c8ab0ff_real.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "The left foot and ankle area show abnormal distortion and blurring where the leg meets the high heel shoe, with unclear anatomical boundaries",
+          "location": "Lower left leg and left foot area"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The right hand appears malformed with fingers that lack proper definition and structure, showing typical AI generation artifacts in hand rendering",
+          "location": "Right hand resting on abdomen"
+        },
+        {
+          "type": "physical",
+          "reasoning": "The shadow cast on the wall behind the subject appears inconsistent with the lighting direction and lacks proper depth gradation",
+          "location": "Wall behind the subject, particularly to the right side"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The transition between the black dress fabric and the sheer stockings shows unnatural blending and lacks crisp material boundaries",
+          "location": "Mid-thigh area where dress hem meets stockings"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "Overall smoothness and plastic-like quality to the skin texture, particularly on the face, which is characteristic of AI-generated portraits",
+          "location": "Face and visible skin areas"
+        }
+      ]
+    },
+    {
+      "filename": "ce8af8f993f2ac560f968fe64c1a887b_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "c38189c54230e478e366311946620a3a_real.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "The baby's head appears disproportionately large and unnaturally rounded with an odd skin texture that appears overly smooth and artificial, particularly on the crown of the head where there are strange highlights and texture inconsistencies",
+          "location": "Top and upper portion of the baby's head"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The facial features, particularly around the eyes and nose, show inconsistent detail levels and unnatural smoothness typical of AI generation. The eyes appear slightly asymmetrical and lack the fine detail expected in a real photograph",
+          "location": "Central face area, particularly eyes and nose bridge"
+        },
+        {
+          "type": "physical",
+          "reasoning": "The water interaction around the baby's body appears inconsistent - the water surface and ripples don't properly conform to the body's position and there's an unnatural boundary between the baby and water",
+          "location": "Lower portion of image where the baby's body meets the water surface"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The swimsuit pattern shows irregular and inconsistent leopard print spots that appear to merge and distort unnaturally, particularly where the fabric would naturally fold or curve",
+          "location": "Baby's swimsuit on the chest and shoulder area"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "The background shows unnatural blur gradient and lacks coherent geographic features - the mountains and shoreline have an artificial, overly smoothed quality inconsistent with natural landscape photography",
+          "location": "Background landscape and water area behind the baby"
+        }
+      ]
+    },
+    {
+      "filename": "282422ac298c060155c2cc4312119bd0_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-markarronsmith-2168356.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-cottonbro-10485417.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "The child's lower legs and feet show anatomical distortions with unnatural proportions and unclear foot structure that doesn't match realistic human anatomy",
+          "location": "Lower body of the child in the center-front of the image, particularly the legs and feet area"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The man's hand on the right side appears distorted with unclear finger definition and unnatural positioning",
+          "location": "Right side of the image, lower area where the elderly man's hands are clasped"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "Inconsistent focus and blur patterns throughout the image that don't follow natural depth of field, with some areas unnaturally sharp or soft",
+          "location": "Background forest area and transitions between subjects"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The woman's hand placement on the child's head shows irregular finger anatomy with unclear joint definition",
+          "location": "Center-left of image, where the woman in black places her hand on the child"
+        }
+      ]
+    },
+    {
+      "filename": "c65987f9418f465555948957aa66dced2c94386ef70da3809c09ba7a7fd8dd8b_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "415c0714987b4920f194b5f2053152b8bdaa8f4185583c984f32b950506be724_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "be43d363ea6ba1e080580d3a2a74c6a000041940d0f27dd9af71faca66afd4ec_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "35ed44c64fa9ebe57b0f51a055d1b56a_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "the-magician-2817077_1280.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-mizunokozuki-13929969.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "The left hand of the woman on the right holding the phone has malformed fingers with unnatural positioning and unclear finger separation, characteristic of AI generation failures with hands",
+          "location": "Center of image, hand holding the phone"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The woman on the left's left arm appears to have anatomically incorrect proportions and an unclear connection between the shoulder and arm",
+          "location": "Left side of image, left woman's left arm"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The woman on the right's right hand shows unclear finger structure with fingers appearing to blend together unnaturally",
+          "location": "Right side of image, right woman's right hand"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "Inconsistent depth of field blur pattern - some background elements are sharply defined while others at similar distances show different blur levels, suggesting artificial bokeh application",
+          "location": "Background throughout the image, particularly noticeable around the pole and street signs"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The hair of the woman on the left shows unnatural texture transitions and strand patterns that lack realistic flow physics",
+          "location": "Left woman's hair, particularly the lower portions"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-koolshooters-9944253.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-victorfreitas-865711.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "b31a7713cbbb921686f0f1cb14e3f0d011c90b361d2899642eeca804e7b9e7ff_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "6fb659766b7b27ffcd747e63703b1844aabc1e3a72ebfdfee2c1fe66ca25f15f_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "ea4e8c5d30ee38844257b18989107682474d269dfbec4930f4dac730b0ea9cda_real.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "The person's left hand appears malformed with irregular finger structure and unnatural blending into the sleeve area",
+          "location": "Left hand/wrist area of the person in the foreground"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The feet show anatomical irregularities with distorted proportions and unclear shoe-to-foot transitions",
+          "location": "Bottom of the image, both feet of the foreground person"
+        },
+        {
+          "type": "physical",
+          "reasoning": "The reflection in the glass door does not accurately match the position and pose of the person, showing inconsistent body positioning",
+          "location": "Glass door reflection in the center-right of the image"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The right arm shows unnatural proportions and unclear joint articulation at the elbow area",
+          "location": "Right arm of the foreground person, mid-section"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "Overall image quality shows characteristic AI generation patterns with inconsistent detail levels and slight blurriness in specific areas while other parts remain sharp",
+          "location": "Throughout the entire image, particularly noticeable in texture transitions"
+        }
+      ]
+    },
+    {
+      "filename": "fb1eff5acdf20dd6aa902af046c1837a_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "d07a9e73914dad147383eb40cb21a296_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "b472b7624e736851155da6ece8d096ed1d6ffb74cd3710667a4e956d0812cfc9_real.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "The tattoo on the woman's left forearm shows anatomical inconsistencies with distorted shapes and irregular patterns that don't follow the natural contours of the arm properly",
+          "location": "Left forearm of the woman, between elbow and wrist"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The hand positioning on the keyboard appears unnatural with fingers in an awkward, non-functional typing position that doesn't align properly with the keyboard",
+          "location": "Woman's right hand on the laptop keyboard"
+        },
+        {
+          "type": "semantic",
+          "reasoning": "The phone display shows oversimplified 'BUY' and 'SELL' buttons in bright green and red that appear unrealistic for actual trading applications, suggesting artificial composition",
+          "location": "Phone screen in the lower right portion of the image on the desk"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The reflection and transparency effects on the glass panels behind the woman show inconsistent perspectives and overlapping elements that don't align with realistic glass reflections",
+          "location": "Glass panels/windows in the background behind the woman"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "The overall image has characteristic AI-generated smoothing and texture inconsistencies, particularly visible in the facial features and skin texture which show telltale signs of algorithmic generation",
+          "location": "Woman's face and neck area"
+        }
+      ]
+    },
+    {
+      "filename": "6d8fba24ae67e57a85da5aa46b49dce4_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "97cb4675b218ffb0f3902bf9af1c4660a6ec7268f5c08641a605e6d073e0c246_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "bb940e5b5eb4667fa106086a3ddd34ce_real.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "The hand of the woman in the red sequined dress on the left appears distorted with unnatural finger positioning and proportions",
+          "location": "Lower left quadrant, hand extending toward the seated figure"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The blonde woman's hair shows inconsistent texture and unnatural transitions, with some areas appearing overly smooth while others show artificial-looking strands",
+          "location": "Center-left area, blonde hair of woman in black"
+        },
+        {
+          "type": "structural",
+          "reasoning": "Multiple hands appearing to touch the seated figure show anatomical inconsistencies, with some fingers appearing merged or with unclear joint definition",
+          "location": "Center of image, around the shoulders and back of the seated figure"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "Inconsistent lighting and skin texture rendering across different faces, with some appearing overly smoothed while others show more detail",
+          "location": "Throughout the group of people, particularly noticeable on faces in the background"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The American flag in the background shows irregular pattern distortion and unclear star placement",
+          "location": "Upper right corner of the image"
+        }
+      ]
+    },
+    {
+      "filename": "06086a7210d32ee6f6d7afdf64e95c67_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-damianruitenga-4127694.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "03a001b85768dd4c7bcb8e20486bf0f20973314b1ec269ef1057f6565de34016_real.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "The child in the yellow shirt has an unnaturally malformed hand with fingers that appear fused or incorrectly rendered, lacking proper definition and anatomical structure",
+          "location": "Lower center area, where the child in yellow is positioned, specifically the visible hand"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The astronaut glove on the woman's hand shows inconsistent detail and appears to merge unnaturally with the suit, with unclear boundaries and distorted finger structure",
+          "location": "Right side of image, on the astronaut suit worn by the woman"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The man's left hand and arm area show anatomical inconsistencies where they interact with the child, with unclear positioning and unnatural blending",
+          "location": "Left side of image, man's arm/hand area near the child in yellow"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The helmet or space suit equipment at the bottom of frame shows distorted geometry and unclear structural coherence, with warped surfaces",
+          "location": "Bottom center of image, below the family group"
+        },
+        {
+          "type": "semantic",
+          "reasoning": "The child in blue's hand and arm position appears physically improbable given their posture and the spatial relationship to the astronaut suit",
+          "location": "Center of image, child in blue dress interacting with astronaut suit"
+        }
+      ]
+    },
+    {
+      "filename": "7d95deb6a1fc9795a849e2eab10f49b6_real.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "The hairline and hair texture show unnatural transitions and inconsistent detail levels, with some areas appearing artificially smooth while others show synthetic-looking strand patterns",
+          "location": "Top of head and forehead area"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The neck area shows anatomical irregularities with unnatural blending between the neck and shirt collar, lacking proper shadow definition and natural skin texture transitions",
+          "location": "Lower neck and collar junction"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The right side of the face (viewer's left) shows asymmetrical features with inconsistent skin texture and unnatural smoothness compared to the left side",
+          "location": "Right cheek and jawline area"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "The background shows characteristic AI-generated gradient with unnatural uniformity and lack of authentic photographic noise or grain patterns",
+          "location": "Entire background area"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The ears show asymmetry and lack of fine anatomical detail typical of AI generation, with the right ear appearing less defined than expected",
+          "location": "Both ears, particularly the right ear"
+        }
+      ]
+    },
+    {
+      "filename": "caabe61d5e181b8da352b0e7b73dfeb4_real.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "The hair strands show unnatural merging and blending patterns, particularly where blonde and darker tones meet without proper individual strand definition",
+          "location": "Left side of the hair, from upper portion flowing downward"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The facial features show typical AI smoothing with loss of natural skin texture and pore detail, appearing overly airbrushed and plastic-like",
+          "location": "Entire face, particularly the cheeks and forehead"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The eyes exhibit slight asymmetry in iris detail and unnatural sharpness inconsistent with the rest of the image, with overly perfect highlight placement",
+          "location": "Both eyes, particularly the iris regions"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The hair transitions show impossible color gradients that don't follow natural hair pigmentation patterns, with abrupt changes in tone",
+          "location": "Throughout the hair, especially the right side where blonde meets darker tones"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "Inconsistent detail levels between hyperrealistic facial features and softer background elements, typical of AI generation compression artifacts",
+          "location": "Transition areas between subject and gray background"
+        }
+      ]
+    },
+    {
+      "filename": "765078d524b481fbb30b8acc1a7adf6926c79df9a914c4bd94fc97418e090acc_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "35bdc7578de33e60547e7c87cb903275aed53c3119ae9bf034f455f8c171b6ce_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "56eb13f536b858a48ea41076c246a1f2_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "a78602fa52fe9377759a2df17a8a09cdbf52a21626a202b4c2a11460312104f5_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-maryiaplashchynskaya-3400764.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "The hair of the middle-left person shows unnatural merging and blending patterns where individual strands lack coherent structure and flow, particularly where hair overlaps between subjects",
+          "location": "Left side of image, hair area of the middle-left person"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The eyes across all three subjects show signs of AI generation with overly symmetric and artificially smoothed iris patterns, particularly noticeable in the unnatural catch light reflections",
+          "location": "Eyes of all three subjects, most prominent in the front subject with blue eyes"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "The skin texture shows an unnaturally uniform and overly smoothed appearance across all three faces, lacking natural pores, fine lines, and texture variation typical of real photography",
+          "location": "Facial skin of all three subjects"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The hair boundaries and transitions between the three subjects show impossible overlapping and merging, with hair strands that don't follow natural physics or clear spatial separation",
+          "location": "Background and overlapping areas between all three subjects' hair"
+        },
+        {
+          "type": "semantic",
+          "reasoning": "The overall composition shows anatomically improbable head positioning and spatial relationships between the three subjects, with unclear depth and body positioning",
+          "location": "Overall composition and spatial arrangement of the three subjects"
+        }
+      ]
+    },
+    {
+      "filename": "0ae750b9ec4bd9ceaaab393a928b77ac_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "d6cf6f6e189a0e2a890f90e0cba185c2_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "99c5f61aa990fcbcaff73a63fdaef4cd_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "4fa5905a0ca903730ed82db21f56a81acec7efe5a0a5eb54a18235ab42f97cd6_real.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "The man's left hand shows anatomical irregularities with fingers that appear merged or improperly defined, lacking clear separation between digits",
+          "location": "Bottom left portion of the image, the left hand of the man in the red scarf"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The woman's right hand exhibits unnatural finger positioning and unclear digit boundaries, with fingers appearing to blend together unnaturally",
+          "location": "Bottom center-right of the image, the woman's right hand in the foreground"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The hair texture and edges around the woman's white cap show inconsistent rendering with unnatural transitions between the cap and hair",
+          "location": "Right side of the image, around the woman's head and white cap"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "Background faces show inconsistent detail levels and AI-typical smoothing artifacts, particularly in facial features that lack the sharpness of the foreground subjects",
+          "location": "Background center, behind the two main subjects"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The red scarves on both subjects show unnaturally smooth fabric rendering with inconsistent folds and physics-defying draping patterns",
+          "location": "Red scarves worn by both the man on the left and woman on the right"
+        }
+      ]
+    },
+    {
+      "filename": "1c3eb9f1ee43097df710c3c2842fd1689b20102bf3404b000b5d3f28f782c33d_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "c362188ff928cf10b6cb734ba674c8f91af2ab48af337ebc873cd06769b429a1_real.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "The bartender's left hand holding the bottle shows anatomical irregularities with fingers that appear malformed and unnaturally positioned, lacking proper joint definition",
+          "location": "Left side of image, hand gripping the blue bottle"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The bartender's right hand appears distorted with ambiguous finger structure and unnatural blending with the cocktail shaker",
+          "location": "Center-right of image, hand near the metallic shaker"
+        },
+        {
+          "type": "semantic",
+          "reasoning": "The pouring action shows liquid stream that appears to be going into multiple directions inconsistently, and the physics of the pour doesn't align properly with the receiving glass",
+          "location": "Center of image, between bottle and glasses"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The bow tie area shows inconsistent fabric rendering with unclear attachment points and irregular pattern distortion",
+          "location": "Upper center, at the bartender's neck area"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "The background bottles show unnatural blur patterns with some bottles having impossible label details and inconsistent lighting that doesn't match the foreground illumination",
+          "location": "Upper portion of image, shelf behind bartender"
+        }
+      ]
+    },
+    {
+      "filename": "0b96dd5fd38f6c18236dcec8df90c549_real.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-orestsv-1821699.jpeg",
+      "classification": "real",
+      "artifacts": []
+    }
+  ]
+}

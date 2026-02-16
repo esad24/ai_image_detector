@@ -62,6 +62,14 @@ python3 main.py -i real_test -m gpt-5.2 -p
 python3 main.py -i "/home/usluesyr/ai_image_detector/data/reconstructed_images/fake/images" -m gpt-5.2 -p
 python3 main.py -i "/home/usluesyr/ai_image_detector/data/reconstructed_images/real/images" -m gpt-5.2 -p
 
+claude sonnet 4.5
+python3 main.py -i fake_train -m claude-sonnet-4.5 -p 
+python3 main.py -i real_train -m claude-sonnet-4.5 -p 
+
+python3 main.py -i fake_test -m claude-sonnet-4.5 -p 
+python3 main.py -i real_test -m claude-sonnet-4.5 -p 
+
+
 
 qwen3
 python3 main.py -i fake_train -m qwen3-vl -p 

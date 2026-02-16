@@ -1,0 +1,1099 @@
+{
+  "meta": {
+    "model": "claude-sonnet-4.5",
+    "prompt_id": 6,
+    "reasoning": "none"
+  },
+  "image_count": 50,
+  "total_fakes": 4,
+  "total_real": 46,
+  "results": [
+    {
+      "filename": "ccbcb5187879ea5f9ef2871e59b94651.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "The skin texture shows natural pores, fine lines, and realistic imperfections consistent with real human skin. There are no signs of AI-generated smoothing or artificial texture patterns.",
+          "location": "Face and neck area"
+        },
+        {
+          "reasoning": "Individual hair strands are visible with natural variation in thickness, direction, and lighting. The hair shows realistic flyaways and natural movement with proper backlighting from the sun.",
+          "location": "Hair, particularly around the edges and top of head"
+        },
+        {
+          "reasoning": "The background bokeh shows natural optical characteristics of a real camera lens with authentic depth of field falloff. The out-of-focus areas have organic, circular bokeh patterns typical of professional photography.",
+          "location": "Background foliage"
+        },
+        {
+          "reasoning": "The eyes show proper light reflection (catchlights), natural iris detail, and realistic color variation. The slightly asymmetric gaze is natural and not artificially perfect.",
+          "location": "Eyes"
+        },
+        {
+          "reasoning": "The fabric texture of the cardigan shows realistic knit patterns with natural wrinkles, shadows, and material properties consistent with real clothing.",
+          "location": "Gray cardigan"
+        }
+      ]
+    },
+    {
+      "filename": "1e4cc5c247a3bdf572d4969c07992b34.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The family subjects appear to be composited onto the mountain background with inconsistent lighting. The subjects have studio-style front lighting while the background shows natural golden hour mountain lighting from a different angle and quality.",
+          "location": "Overall image composition, particularly noticeable around the edges of the subjects against the background"
+        },
+        {
+          "reasoning": "The ground beneath the family's feet shows an unnatural transition. The immediate foreground vegetation and terrain appear disconnected from the dramatic mountain landscape behind them, suggesting different source images were combined.",
+          "location": "Bottom portion of image where subjects meet the ground"
+        },
+        {
+          "reasoning": "The depth of field and focus are inconsistent. The subjects are sharply in focus with a different quality than the background mountains, which would naturally have similar sharpness at that distance if photographed together.",
+          "location": "Throughout the image, comparing subject sharpness to background detail"
+        },
+        {
+          "reasoning": "The atmospheric perspective and haze layers in the mountains don't match the clarity and lighting on the subjects, indicating they were not photographed in the same location or conditions.",
+          "location": "Middle ground mountain layers compared to the foreground subjects"
+        }
+      ]
+    },
+    {
+      "filename": "149af80e3cf3af0e46ab47863eb7b03e.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "This appears to be a street performer with a live alligator or crocodile in an urban setting, which is an actual documented practice in some cities. The animal shows realistic texture, scaling, and natural posture. The lighting, shadows, and interaction between the person and animal are consistent with a genuine photograph.",
+          "location": "The alligator/crocodile on the sidewalk in the foreground"
+        },
+        {
+          "reasoning": "The pedestrians in the background show natural body language and positioning typical of candid street photography. Their clothing, shadows, and spatial relationships are consistent with a real urban scene.",
+          "location": "Group of people standing on the sidewalk in the background"
+        },
+        {
+          "reasoning": "The urban environment shows consistent lighting, natural depth of field, realistic bokeh in the background, and authentic street details including signage, buildings, and vehicles that are consistent with real documentary photography.",
+          "location": "Overall scene composition and background elements"
+        }
+      ]
+    },
+    {
+      "filename": "86ae36214222e367f9bc162308095ada_r12.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The ant is disproportionately large compared to the child's face, with impossibly detailed features and unrealistic lighting that matches the face too perfectly. Real macro photography would show different focus planes.",
+          "location": "Large ant in foreground touching child's nose"
+        },
+        {
+          "reasoning": "The child's skin has an unnaturally smooth, plastic-like quality with overly perfect texture rendering typical of AI-generated images. The skin lacks natural pores and imperfections.",
+          "location": "Child's face throughout"
+        },
+        {
+          "reasoning": "The hair strands show inconsistent physics and unnatural blending with the background, with some strands appearing to merge or disappear unnaturally.",
+          "location": "Hair on left side and top of frame"
+        },
+        {
+          "reasoning": "The depth of field is inconsistent - both the giant ant and the child's face are in sharp focus despite being at different distances, which violates natural optical physics.",
+          "location": "Overall focus throughout the image"
+        },
+        {
+          "reasoning": "The ant's compound eye structure is overly perfect and symmetrical with artificial-looking reflections that don't match the lighting environment realistically.",
+          "location": "Ant's eye in left-center of image"
+        }
+      ]
+    },
+    {
+      "filename": "616ba73f50088eb13244a807076248f7.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "The image shows natural skin texture with visible pores, fine lines, and realistic light interaction on the subject's face and arms. The depth of field, lighting, and shadows are consistent with professional photography rather than AI generation.",
+          "location": "Subject's face and arms"
+        },
+        {
+          "reasoning": "The hair strands show natural variation, flyaways, and realistic interaction with the headband. Individual hair strands are visible and follow natural physics rather than the merged or repetitive patterns common in AI-generated images.",
+          "location": "Subject's hair and headband area"
+        },
+        {
+          "reasoning": "The tennis racket strings display proper perspective distortion and accurate geometry. The Wilson logo and racket details are clear and correctly rendered, which AI often struggles with for text and brand logos.",
+          "location": "Tennis racket"
+        },
+        {
+          "reasoning": "The background shows authentic weathering patterns, peeling paint, and rust with natural randomness and complexity. The decay patterns are irregular and realistic, not showing the artificial symmetry or repetition typical of AI generation.",
+          "location": "Background wall"
+        },
+        {
+          "reasoning": "The fabric texture of the clothing shows realistic wrinkles, compression marks, and light interaction. The ribbed texture of the sports top is consistently rendered with proper perspective.",
+          "location": "Subject's athletic wear"
+        }
+      ]
+    },
+    {
+      "filename": "2df3e5ecf2315ee61ffe3c566e125c8a.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "The image shows consistent natural lighting with appropriate shadows cast by the subjects and dogs on the pavement. The lighting direction is coherent across all elements in the scene, including the trees, buildings, and people.",
+          "location": "Throughout the entire image, particularly visible on the ground and subjects"
+        },
+        {
+          "reasoning": "The dogs exhibit natural fur texture and anatomy with realistic variations in color and proper proportions. Their poses and expressions are natural, with authentic tongue and facial features visible.",
+          "location": "Both dogs in the foreground of the image"
+        },
+        {
+          "reasoning": "The background shows realistic depth of field with appropriate focus falloff. The buildings, trees, and distant figures display natural perspective and atmospheric effects consistent with outdoor photography.",
+          "location": "Background area behind the two subjects"
+        },
+        {
+          "reasoning": "Clothing textures, particularly the quilted pattern on the blue jacket and the cable knit pattern on the gray cardigan, show realistic fabric behavior with natural folds, shadows, and material properties.",
+          "location": "Upper body area of both subjects"
+        },
+        {
+          "reasoning": "The wooden plank walkway shows natural weathering, gaps between planks with moss/vegetation growth, and realistic texture variation consistent with outdoor pedestrian paths.",
+          "location": "Ground surface throughout the lower portion of the image"
+        }
+      ]
+    },
+    {
+      "filename": "5d04c3a88fe8c5d2d7c7a8877e7880fe.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Natural skin texture with visible pores and fine lines around the eye area shows realistic aging patterns and surface detail that is characteristic of actual human skin rather than AI-generated smoothness",
+          "location": "Skin surrounding the eye, particularly visible in the upper eyelid and around the orbital area"
+        },
+        {
+          "reasoning": "Individual eyelash strands show natural variation in length, thickness, and direction with some clumping from mascara application. The lashes have realistic root placement and natural curvature",
+          "location": "Upper and lower eyelashes"
+        },
+        {
+          "reasoning": "The iris displays genuine human eye characteristics including natural color variation with a brownish-green heterochromia pattern, visible crypts, and authentic collarette structure. Light reflections in the pupil show actual environmental lighting conditions",
+          "location": "Iris and pupil of the eye"
+        },
+        {
+          "reasoning": "Visible blood vessels in the sclera appear natural and organic, with realistic redness patterns. The moisture and tear film on the eye surface shows authentic optical properties",
+          "location": "White of the eye (sclera) and eye surface"
+        },
+        {
+          "reasoning": "Eyebrow hairs show natural growth patterns with individual strands visible, varying in thickness and direction, consistent with real human hair",
+          "location": "Eyebrow area above the eye"
+        }
+      ]
+    },
+    {
+      "filename": "3dbe741ec8da19e60d694783dada6491.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Natural variation in skin texture and facial features consistent with real photography. The lighting creates realistic highlights and shadows on faces.",
+          "location": "Faces of all subjects"
+        },
+        {
+          "reasoning": "Authentic fabric texture with natural wrinkles and folds in the suits, consistent with real formal wear. No AI-generated smoothness or repetitive patterns.",
+          "location": "Business suits worn by all five men"
+        },
+        {
+          "reasoning": "Natural asymmetry in smiles and facial expressions. Each person has unique dental characteristics and expression lines consistent with genuine human faces.",
+          "location": "Mouths and smile expressions"
+        },
+        {
+          "reasoning": "Realistic gray hair with natural color variation and individual strand detail. Hair shows authentic aging patterns without AI generation artifacts.",
+          "location": "Hair of the four older men on the left and right"
+        },
+        {
+          "reasoning": "Proper perspective and depth of field with the person in the back slightly out of focus, consistent with real camera optics.",
+          "location": "Person in the center background"
+        },
+        {
+          "reasoning": "Natural background blur and lighting consistent with professional event photography using real camera equipment.",
+          "location": "Dark background area"
+        }
+      ]
+    },
+    {
+      "filename": "2ddf7a07da956c375d9d512cf876bd871f5a3150db7b68b7ef25c1c91a694238_r6.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "kv57cgkv57cgkv57.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "The image shows a genuine medical operating room environment with consistent lighting, realistic shadows, proper depth of field, and natural positioning of medical staff. The surgical equipment, monitoring devices, and sterile field appear authentic with appropriate medical protocols being followed. The image quality, grain, and color balance are consistent with a real photograph taken in an operating theater.",
+          "location": "Overall image composition and scene"
+        }
+      ]
+    },
+    {
+      "filename": "2aa0e54b4dc251420a3679b501dc8a06.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Natural skin texture with realistic age-appropriate features including fine lines, pores, and varied complexion tones visible on all subjects",
+          "location": "All faces in the image"
+        },
+        {
+          "reasoning": "Authentic depth of field with proper bokeh on the background building, showing realistic camera optics and focus gradation",
+          "location": "Background architecture"
+        },
+        {
+          "reasoning": "Natural lighting with consistent shadows and highlights across all subjects, appropriate for outdoor photography conditions",
+          "location": "Overall lighting across the group"
+        },
+        {
+          "reasoning": "Realistic hair rendering with individual strands visible, natural highlights, and varied textures consistent with real human hair",
+          "location": "Hair of all four subjects"
+        },
+        {
+          "reasoning": "Proper fabric texture and draping on clothing with natural folds, wrinkles, and material characteristics including the lace pattern on purple dress",
+          "location": "Clothing worn by all subjects"
+        },
+        {
+          "reasoning": "Natural hand positioning and skin texture on visible hands, including realistic jewelry rendering",
+          "location": "Hands and jewelry visible in frame"
+        }
+      ]
+    },
+    {
+      "filename": "09edc782a2e242c0840d3b8a3960420d.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Natural skin texture with visible pores, realistic sweat, and authentic facial hair growth patterns. The lighting creates natural shadows and highlights consistent with outdoor photography.",
+          "location": "Face and skin"
+        },
+        {
+          "reasoning": "Hair shows realistic individual strands with natural movement and authentic texture. The curly hair has proper light interaction and natural flyaways.",
+          "location": "Hair"
+        },
+        {
+          "reasoning": "The background shows proper depth of field bokeh consistent with professional photography using a wide aperture. The out-of-focus elements appear natural.",
+          "location": "Background"
+        },
+        {
+          "reasoning": "The tennis racket strings show proper perspective, realistic shadows, and authentic detail in the grip and frame construction.",
+          "location": "Tennis racket"
+        },
+        {
+          "reasoning": "Natural lighting from the sun creates consistent shadows and highlights across the subject and environment, typical of outdoor sports photography.",
+          "location": "Overall lighting"
+        }
+      ]
+    },
+    {
+      "filename": "3de04fb6e7a042632a00f765cdb60e39224156c3a9d7055951f5a0298feb2dba.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "The photograph exhibits natural depth of field with proper bokeh in the background bar shelves, consistent with real camera optics. The lighting shows realistic gradation and natural color temperature from the bar's ambient lighting.",
+          "location": "Background shelving and overall lighting"
+        },
+        {
+          "reasoning": "Skin texture, pores, and subtle imperfections are visible and naturally rendered. Hair strands show realistic flyaways and natural movement rather than the overly smooth or inconsistent texture typical of AI generation.",
+          "location": "Subject's face and hair"
+        },
+        {
+          "reasoning": "The glass shows proper refraction, realistic ice cubes with natural imperfections, and accurate liquid physics. The reflection on the bar surface is geometrically correct and shows appropriate distortion.",
+          "location": "Drink glass and bar counter reflection"
+        },
+        {
+          "reasoning": "The tattoo on the forearm appears naturally embedded in the skin with proper aging and realistic ink characteristics rather than appearing pasted or unnaturally perfect.",
+          "location": "Subject's left forearm"
+        }
+      ]
+    },
+    {
+      "filename": "3b1558eefcb3008a00a5e863ce729092.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "The image shows natural lighting, shadows, and depth of field consistent with outdoor photography. The person's skin texture, hair detail, and facial features appear realistic with natural imperfections. The pizza toppings show authentic texture and irregular placement typical of real food. The background grass shows natural variation in color and lighting with realistic bokeh effect.",
+          "location": "Overall image composition"
+        },
+        {
+          "reasoning": "The hand holding the pizza slice shows natural finger positioning, skin creases, and realistic interaction with the food. The bite taken from the pizza shows authentic torn edges and cheese stretching that would be difficult to artificially generate.",
+          "location": "Hand and pizza slice interaction"
+        },
+        {
+          "reasoning": "The fabric texture of the blue/gray shirt shows natural wrinkles and folds consistent with real clothing. The collar and button details are clearly defined and properly structured.",
+          "location": "Clothing details"
+        }
+      ]
+    },
+    {
+      "filename": "2aee09d253a4606d2b5b4a630fbd6b834074ae2a91a3dd28e361eb8dadafad24_r2.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "The image shows natural lighting with consistent shadows, realistic skin texture and pores, natural fabric wrinkles in the suit, proper depth of field with background blur, and anatomically correct hand positioning. The office environment has realistic perspective and the photograph exhibits qualities typical of professional portrait photography with proper exposure and focus.",
+          "location": "Overall image composition"
+        }
+      ]
+    },
+    {
+      "filename": "1a7a5fe1c457806cb6d9fb17649b923a.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Natural skin texture and pores are visible on the subject's face and arms, consistent with real photography rather than AI-generated smoothness",
+          "location": "Face and arms of the woman"
+        },
+        {
+          "reasoning": "Realistic depth of field with proper bokeh effect in the background, showing natural camera lens characteristics",
+          "location": "Background gym equipment and windows"
+        },
+        {
+          "reasoning": "Accurate lighting behavior with natural sun flare through windows, proper shadows, and realistic highlights on skin and equipment",
+          "location": "Windows in background and lighting throughout the scene"
+        },
+        {
+          "reasoning": "Proper anatomical proportions and natural hand positioning on hip and dumbbell with correct finger placement",
+          "location": "Hands and body posture"
+        },
+        {
+          "reasoning": "Realistic fabric texture and wrinkles in the workout clothing that responds naturally to body position",
+          "location": "Tank top and workout clothes"
+        },
+        {
+          "reasoning": "Gym equipment shows proper mechanical detail, wear patterns, and realistic reflections consistent with real photography",
+          "location": "Dumbbell and gym equipment throughout the scene"
+        }
+      ]
+    },
+    {
+      "filename": "6f9t1r6f9t1r6f9t.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "This is a genuine historical photograph from the 1960s showing Dr. Martin Luther King Jr. at a public speech. The image exhibits authentic characteristics of period photography including natural film grain, appropriate depth of field, consistent lighting, and proper proportions. The Washington Monument is visible in the background, consistent with his famous 1963 March on Washington. The black and white film quality, facial features, crowd composition, and microphone setup all show natural photographic properties without digital manipulation artifacts.",
+          "location": "Entire image"
+        }
+      ]
+    },
+    {
+      "filename": "62ddb30f859923e2231a777f55de69c7.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "This is an official photograph from a diplomatic meeting between President Barack Obama and Catherine, Duchess of Cambridge, at Buckingham Palace in April 2016. The image shows consistent lighting, natural shadows, proper depth of field, and realistic texture details throughout. The formal setting with period furniture, portrait painting, and ornate decorations is consistent with the White Drawing Room at Buckingham Palace. Both subjects show natural skin texture, realistic hair details, and proper proportions. The photograph exhibits the quality and composition expected from official royal photography.",
+          "location": "entire image"
+        }
+      ]
+    },
+    {
+      "filename": "59de5a40846ba0dca00d56c21c43afd17c4592b3ba6cbffbc73a985b061fb4a4.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "The facial features show natural skin texture, pores, and realistic lighting gradients consistent with outdoor photography. The shadows and highlights on the face follow natural light physics.",
+          "location": "Face and neck area"
+        },
+        {
+          "reasoning": "The suit fabric shows realistic wrinkles, folds, and natural draping that responds appropriately to body movement and gravity. The texture and sheen of the material are consistent with professional photography.",
+          "location": "Suit jacket and pants"
+        },
+        {
+          "reasoning": "The background has natural bokeh effect with realistic depth of field, showing authentic outdoor foliage with natural color gradation and organic blur patterns typical of professional camera lenses.",
+          "location": "Background trees and grass"
+        },
+        {
+          "reasoning": "The lighting is consistent throughout the image with natural outdoor characteristics - soft shadows, appropriate color temperature, and realistic interaction between subject and environment.",
+          "location": "Overall lighting across entire image"
+        },
+        {
+          "reasoning": "The hands show natural skin detail, anatomically correct proportions, and realistic positioning. No distortions or AI artifacts are present in the fingers or hand structure.",
+          "location": "Both hands"
+        }
+      ]
+    },
+    {
+      "filename": "mnj16pmnj16pmnj1.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "This is a controlled burn training exercise, which is a standard practice in firefighter training. The firefighter is demonstrating what NOT to do by pouring gasoline on a fire, which would be extremely dangerous in a real emergency. The staging, professional photography quality, and deliberate nature of the action indicate this is a legitimate training scenario captured by a photographer.",
+          "location": "Overall scene showing training exercise"
+        },
+        {
+          "reasoning": "The image shows realistic fire behavior, proper smoke patterns, and accurate lighting effects on the building materials. The flames show natural turbulence and the characteristic orange-yellow color of burning structural materials.",
+          "location": "Fire on building and ground"
+        },
+        {
+          "reasoning": "The firefighters are wearing authentic turnout gear with proper reflective striping. The equipment, including helmets and fire truck visible in background, matches standard firefighting equipment used in training exercises.",
+          "location": "Firefighter gear and equipment"
+        },
+        {
+          "reasoning": "The smoke dispersal, atmospheric conditions, and interaction of light with smoke particles appear natural and physically accurate for an outdoor fire scene.",
+          "location": "Smoke and atmospheric effects throughout image"
+        }
+      ]
+    },
+    {
+      "filename": "64294f3a2adb2e48ac82d6f65ea9d52c.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "The image shows natural film grain, authentic lighting with realistic shadows, proper depth of field with natural background blur, and genuine human body proportions and postures. The scene has organic composition with realistic color grading typical of analog photography. Skin tones show natural variation and texture. The overall aesthetic is consistent with documentary-style film photography.",
+          "location": "Throughout entire image"
+        }
+      ]
+    },
+    {
+      "filename": "4c27a50c2f1d7755efe281ea88758885.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Natural skin texture, pores, and imperfections are visible on all faces, consistent with real photography rather than AI generation",
+          "location": "Faces of all four people in the image"
+        },
+        {
+          "reasoning": "Authentic lighting with proper shadow gradients and natural window light creating realistic highlights and ambient illumination typical of hospital room photography",
+          "location": "Throughout the scene, particularly visible on the subjects and bed rails"
+        },
+        {
+          "reasoning": "Hospital equipment shows realistic wear, proper medical-grade mounting, authentic cable management, and correct proportions consistent with real medical devices",
+          "location": "Upper left corner showing IV equipment and wall-mounted medical panels"
+        },
+        {
+          "reasoning": "Natural depth of field and bokeh in the background through the window, with proper focal plane characteristics of professional photography",
+          "location": "Window area in the background"
+        },
+        {
+          "reasoning": "Fabric textures on clothing and bedding show realistic wrinkles, folds, and material properties with proper light interaction",
+          "location": "Hospital gown, children's clothing, and bed linens"
+        },
+        {
+          "reasoning": "Hand positions and body proportions are anatomically correct with natural posing typical of staged but real photography",
+          "location": "All subjects' hands and body positions"
+        }
+      ]
+    },
+    {
+      "filename": "0e65a4e5adc50344a43ffbd1f9ff84ea_r1.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "The lighting is professionally done with natural falloff and consistent shadows. The depth of field shows proper optical bokeh with the background bookshelves gradually blurring in a natural way. The subject's hands and violin show proper anatomical positioning and realistic interaction between fingers and instrument.",
+          "location": "Overall image composition"
+        },
+        {
+          "reasoning": "The fabric of the suit shows natural wrinkles, creases, and texture variations consistent with real material. The way light reflects off the fabric demonstrates physically accurate behavior.",
+          "location": "Subject's suit jacket and clothing"
+        },
+        {
+          "reasoning": "The books on the shelves show natural wear, varied spine colors and textures, realistic depth variation, and proper perspective distortion. Individual books are distinct with natural aging patterns.",
+          "location": "Background bookshelves"
+        },
+        {
+          "reasoning": "Skin texture shows natural pores, proper subsurface scattering of light, and realistic shadowing on facial features. Hair shows individual strands with natural light interaction.",
+          "location": "Subject's face and skin"
+        }
+      ]
+    },
+    {
+      "filename": "e566b28a9429f693defb306c191d05a6.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "The image shows natural skin texture, wrinkles, and pores on all subjects with realistic aging patterns. The elderly woman's facial features show authentic age-related characteristics including natural skin sagging and realistic wrinkle depth.",
+          "location": "Faces of the elderly woman and man in foreground"
+        },
+        {
+          "reasoning": "The depth of field shows proper optical bokeh with the background architecture naturally blurred while maintaining realistic blur characteristics. The Church of the Savior on Spilled Blood in St. Petersburg is accurately rendered with correct architectural details.",
+          "location": "Background architecture"
+        },
+        {
+          "reasoning": "Natural lighting and shadows are consistent across all subjects, with proper ambient light from an overcast day creating soft, even illumination without harsh shadows. The lighting ratio between subjects and background is physically accurate.",
+          "location": "Overall lighting across the scene"
+        },
+        {
+          "reasoning": "Fabric textures on the knitted hat, scarf, and jackets show realistic weaving patterns with proper material physics. The scarf shows natural draping and fold patterns consistent with knitted textiles.",
+          "location": "Clothing and accessories on all three subjects"
+        },
+        {
+          "reasoning": "The child's face shows authentic skin texture, natural eye clarity with proper catchlights, and realistic hair strands with no signs of AI-generated smoothing or artificial enhancement.",
+          "location": "Child's face in lower right"
+        }
+      ]
+    },
+    {
+      "filename": "3ae4bd2508eb036a3df769348af8e8e8.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "This is a real photograph of a family at what appears to be the Church of the Savior on Spilled Blood in St. Petersburg, Russia. The image shows natural lighting, proper depth of field with background blur, realistic facial features and expressions, natural skin textures including pores and wrinkles, proper clothing fabric rendering, and consistent photographic grain throughout. The perspective and composition are typical of a tourist selfie photo.",
+          "location": "entire image"
+        }
+      ]
+    },
+    {
+      "filename": "637d149bc1ccd8dedacdf37530cf408e.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "The image shows natural depth of field with realistic bokeh in the background, consistent lighting across the scene, and proper focal falloff typical of professional photography with a wide aperture lens",
+          "location": "Background and overall image"
+        },
+        {
+          "reasoning": "The subject's hair shows natural texture, individual strands, and realistic light interaction with proper highlights and shadows that would be difficult for AI to generate consistently",
+          "location": "Hair and hair strands"
+        },
+        {
+          "reasoning": "The skin texture displays natural pores, subtle imperfections, and realistic subsurface scattering of light, with consistent fine details across different facial areas",
+          "location": "Face and skin"
+        },
+        {
+          "reasoning": "The fabric of the shirt shows realistic wrinkles, creases, and material texture with proper shadow casting and natural draping that follows body contours accurately",
+          "location": "Clothing and fabric"
+        },
+        {
+          "reasoning": "The teeth display natural variation in shape and color with realistic translucency and proper interaction with ambient light",
+          "location": "Smile and teeth"
+        }
+      ]
+    },
+    {
+      "filename": "0d003053cff1c844a1a733b02ea73606.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "This is a real photograph of a doll or toy face. The glossy, perfectly smooth plastic surface texture, the unnaturally large and uniformly colored eyes with visible light reflections characteristic of glass or acrylic eyes, the simplified facial features, and the molded plastic appearance all indicate this is a genuine photograph of a manufactured doll rather than an AI-generated image.",
+          "location": "Entire face, particularly the eyes and skin texture"
+        }
+      ]
+    },
+    {
+      "filename": "eaef1ce47d4afebf42b1a93fcf502386.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "The image shows natural skin texture with pores, fine lines, and realistic lighting gradients across the face. The hair has individual strands with natural highlights and realistic flow patterns.",
+          "location": "Face and hair of the subject"
+        },
+        {
+          "reasoning": "The background shows natural bokeh with realistic depth of field, proper light diffusion from hanging lamps, and authentic cafe atmosphere with blurred patrons and windows.",
+          "location": "Background of the image"
+        },
+        {
+          "reasoning": "The hands show natural finger positioning, realistic skin creases, proper lighting and shadows, and natural interaction with the sandwich. The sandwich itself has realistic bread texture and visible vegetable layers.",
+          "location": "Hands holding the sandwich"
+        },
+        {
+          "reasoning": "The clothing shows natural fabric texture with visible weave patterns and realistic draping consistent with real textile behavior.",
+          "location": "Subject's cardigan/sweater"
+        }
+      ]
+    },
+    {
+      "filename": "v7ghcav7ghcav7gh.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Natural skin texture with consistent pore detail, appropriate lighting, and realistic wrinkles around the eyes and face showing proper depth and shadows",
+          "location": "Faces of both subjects"
+        },
+        {
+          "reasoning": "Hair shows natural individual strand variation, proper light interaction, and realistic gray tones with no artificial smoothing or cloning patterns",
+          "location": "Hair of the male doctor"
+        },
+        {
+          "reasoning": "The stethoscope shows realistic material properties with proper reflections and shadows, natural draping physics, and correct interaction with the clothing",
+          "location": "Stethoscope around doctor's neck"
+        },
+        {
+          "reasoning": "The wristwatch displays proper metallic reflections, realistic band links, and natural wear consistent with an actual timepiece",
+          "location": "Watch on doctor's wrist"
+        },
+        {
+          "reasoning": "Background shows natural depth of field with appropriate bokeh, consistent lighting throughout the scene, and realistic medical equipment blur",
+          "location": "Background medical office setting"
+        }
+      ]
+    },
+    {
+      "filename": "2c4c0b171577884f5c0991cacb5c5ebc_r1.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "The image shows natural lighting variations, realistic skin texture with visible pores and natural imperfections, consistent shadows cast by the person and objects in the room, and proper perspective throughout the classroom setting. The whiteboard text appears naturally hand-written with typical marker characteristics, and the clothing shows realistic fabric wrinkles and folds.",
+          "location": "Throughout the entire image"
+        },
+        {
+          "reasoning": "The classroom environment displays authentic characteristics including fluorescent ceiling lights with natural light dispersion, realistic furniture arrangement with proper shadows, and a projector screen showing typical display properties. All elements maintain consistent spatial relationships and lighting conditions.",
+          "location": "Background elements including ceiling, whiteboard, projector screen, and classroom furniture"
+        },
+        {
+          "reasoning": "The person's hands show natural anatomical structure, appropriate motion blur for a gesture pose, and realistic skin tone variation. The jewelry, watch, and clothing accessories all appear with proper material properties and lighting interactions.",
+          "location": "Person's hands, accessories, and clothing details"
+        }
+      ]
+    },
+    {
+      "filename": "4pwf294pwf294pwf.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The beer mugs appear to be merging or overlapping in an unnatural way, with inconsistent transparency and physics that don't match real glass objects clinking together",
+          "location": "Center of image where the two beer mugs meet"
+        },
+        {
+          "reasoning": "The hands holding the beer mugs show anatomical inconsistencies and unnatural positioning, with fingers that don't properly grip the handles in a realistic manner",
+          "location": "Both hands gripping the beer mugs"
+        },
+        {
+          "reasoning": "The lighting on the faces and the background window scene show inconsistent light sources and unrealistic ambient lighting typical of AI-generated images",
+          "location": "Faces and window background"
+        },
+        {
+          "reasoning": "The beer bottles on the table have unclear or distorted labels and show signs of AI generation artifacts with inconsistent details",
+          "location": "Beer bottles on the coffee table in foreground"
+        }
+      ]
+    },
+    {
+      "filename": "0bce6c35c24ec5ce8ae8ad5bb4f67d59_r2.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Natural depth of field with realistic bokeh in the background. The trees and people in the distance show proper optical blur characteristics consistent with a real camera lens, not AI-generated smoothing.",
+          "location": "Background trees and park area"
+        },
+        {
+          "reasoning": "Skin texture shows natural pores, fine lines, and realistic facial hair growth patterns including individual stubble hairs and natural skin imperfections that AI typically struggles to replicate accurately.",
+          "location": "Face and neck area"
+        },
+        {
+          "reasoning": "Fabric wrinkles and folds in the white t-shirt follow natural physics and body contours with proper shadowing. The shirt shows realistic texture and compression points where it meets the body.",
+          "location": "White t-shirt"
+        },
+        {
+          "reasoning": "The denim jeans display authentic wear patterns, natural fabric texture, and realistic stitching details. The way the fabric stretches and folds around the knees and thighs is consistent with real denim material.",
+          "location": "Jeans"
+        },
+        {
+          "reasoning": "The wooden bench shows natural wood grain, realistic hardware details with visible bolts, and authentic weathering patterns consistent with outdoor park furniture.",
+          "location": "Park bench"
+        },
+        {
+          "reasoning": "Hair exhibits natural variation in strand direction, realistic highlights from sunlight, and proper edge definition that lacks the overly smooth or synthetic quality often seen in AI-generated images.",
+          "location": "Hair"
+        }
+      ]
+    },
+    {
+      "filename": "b289c80bdf2d5092fffe0e53d927af2c.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "The shadows cast by the person, dog, and photographer are all consistent with a single light source (the sun) at the same angle, showing proper directionality and length proportional to the subjects",
+          "location": "Ground surface showing shadows of all subjects"
+        },
+        {
+          "reasoning": "The concrete surface shows authentic weathering, natural cracks, stains, and wear patterns that would be extremely difficult to generate artificially",
+          "location": "Concrete pavement throughout the entire frame"
+        },
+        {
+          "reasoning": "The dog's fur shows natural texture variation, realistic lighting gradients, and authentic movement blur consistent with real photography",
+          "location": "Brown/orange dog on right side of image"
+        },
+        {
+          "reasoning": "The clothing wrinkles and folds on the jacket and pants show natural fabric behavior with realistic shading and highlights",
+          "location": "Person's olive jacket and pants"
+        },
+        {
+          "reasoning": "The aerial perspective and lens distortion are consistent with a real camera mounted above the subjects, showing natural wide-angle characteristics",
+          "location": "Overall composition and viewing angle"
+        }
+      ]
+    },
+    {
+      "filename": "04ed7ba99198264f5405056b941a4d3c.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "This is a professionally composed photograph with natural lighting, realistic skin tones, and proper depth of field. The image shows consistent grain throughout, typical of film or high-quality digital photography. The children's expressions and poses are natural and authentic. The reflections in the glass partition show proper perspective and lighting consistency. All details including fabric textures, hair strands, and facial features are rendered naturally without AI artifacts.",
+          "location": "entire image"
+        }
+      ]
+    },
+    {
+      "filename": "04e61d9506ffe1d8ac6c48e8b091cc48.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "The image exhibits natural lighting with realistic shadows and highlights. The window reflections show proper transparency and layering of the street scene beyond. The subjects' hair shows natural texture and individual strands with realistic light interaction.",
+          "location": "Throughout the image, particularly visible in hair texture and window reflections"
+        },
+        {
+          "reasoning": "The depth of field is consistent with professional photography, with the foreground subjects in focus while the background buildings through the window show appropriate blur. The bokeh and focus fall-off appear natural.",
+          "location": "Entire frame, comparing foreground subjects to background buildings"
+        },
+        {
+          "reasoning": "Skin tones and textures appear natural with appropriate pore detail and realistic lighting. No signs of AI-generated smoothing or uncanny valley effects. Facial proportions and features are anatomically correct.",
+          "location": "Faces and visible skin of both subjects"
+        },
+        {
+          "reasoning": "The architectural elements visible through the window show realistic weathering, varied building materials, and authentic urban decay patterns consistent with European architecture. The perspective and geometry are correct.",
+          "location": "Buildings visible through the window behind the subjects"
+        },
+        {
+          "reasoning": "Glassware and beverages show proper transparency, refraction, and liquid behavior. The condensation and foam in the beer glass appear realistic.",
+          "location": "Drinks on the table between the two people"
+        }
+      ]
+    },
+    {
+      "filename": "ozrpf8ozrpf8ozrp.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Natural motion blur is present on the extended arm of the boxer on the left, consistent with the fast movement of a punch. The blur is realistic and shows proper directional consistency.",
+          "location": "Left boxer's extended right arm and red glove"
+        },
+        {
+          "reasoning": "The lighting shows authentic stage lighting with proper lens flare, light dispersion, and realistic shadows on the boxers' bodies. The overhead truss lighting and colored gels create natural illumination patterns.",
+          "location": "Overhead stage lights and truss system at top of image"
+        },
+        {
+          "reasoning": "The crowd in the background shows natural depth of field blur appropriate for the camera's focal length being on the boxers. Individual audience members are distinguishable with realistic detail degradation.",
+          "location": "Background audience seating area"
+        },
+        {
+          "reasoning": "Skin texture, muscle definition, sweat, and body hair on both fighters appear completely natural with proper subsurface scattering and realistic physical proportions.",
+          "location": "Both boxers' torsos and skin surfaces"
+        },
+        {
+          "reasoning": "The boxing equipment shows authentic wear, proper brand markings (Everlast visible), correct wrapping technique on hands, and realistic material properties of the gloves and headgear.",
+          "location": "Boxing gloves, hand wraps, shorts, and protective headgear"
+        }
+      ]
+    },
+    {
+      "filename": "me07oqme07oqme07.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "This is a real photograph showing natural lighting, consistent shadows, and proper perspective throughout the scene. The architectural details of the classical building with columns are sharp and accurate. The crowd of press photographers on the left shows natural variety in poses and equipment. The police officers' uniforms have authentic detail including visible badges, equipment belts, and proper insignia. The overcast sky creates even, diffused lighting consistent across all subjects. The pavement texture and weathering appears natural. All human features show proper proportions and realistic skin textures without AI-typical artifacts or distortions.",
+          "location": "entire image"
+        }
+      ]
+    },
+    {
+      "filename": "fe7ovxfe7ovxfe7o.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "The image shows natural lighting with realistic shadows, proper perspective, and authentic outdoor café atmosphere. The subjects display genuine expressions and natural body language. The background pedestrians are appropriately blurred with correct depth of field. The textures of the food, tablecloth, and architecture all appear authentic with no signs of AI generation artifacts.",
+          "location": "Overall composition"
+        },
+        {
+          "reasoning": "The hands holding the pizza slices show correct anatomy with natural finger positioning and realistic skin texture. There are no distortions or extra fingers, which are common issues in AI-generated images.",
+          "location": "Hands of both subjects"
+        },
+        {
+          "reasoning": "The pizzas display realistic cheese melting patterns, natural crust texture, and authentic topping distribution. The lighting on the food is consistent with the ambient outdoor lighting.",
+          "location": "Pizza on plates"
+        },
+        {
+          "reasoning": "The background shows proper architectural details of a European-style street with consistent perspective. The awnings, building facades, and pedestrians all maintain realistic proportions and natural blur appropriate for the depth of field.",
+          "location": "Background street scene"
+        }
+      ]
+    },
+    {
+      "filename": "5bd35cd9932265235fd90b3daf32c65d.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "The image shows natural film grain, authentic color degradation, and age-appropriate wear patterns consistent with vintage color film photography from the 1960s era. The lighting, depth of field, and optical characteristics match period camera equipment.",
+          "location": "Throughout entire image"
+        },
+        {
+          "reasoning": "The subject's skin tones, facial features, and clothing texture display natural variations and authentic photographic rendering without digital manipulation artifacts. Details like fabric weave and natural shadows are consistent with analog photography.",
+          "location": "Subject's face and coat"
+        },
+        {
+          "reasoning": "Background elements including signage, architecture, and pedestrians show appropriate motion blur and depth-of-field characteristics of a real photograph taken with a medium format or 35mm camera with shallow depth of field.",
+          "location": "Background street scene"
+        },
+        {
+          "reasoning": "The overall image exhibits authentic vintage photograph characteristics including edge vignetting, natural color palette of period film stock, and physical aging marks that would be extremely difficult to replicate artificially.",
+          "location": "Image edges and overall tonality"
+        }
+      ]
+    },
+    {
+      "filename": "4ca91e737979369e37478c4f4ec6e84e_r9.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "The image shows natural film grain and subtle motion blur consistent with photography in low-light subway conditions. The depth of field, bokeh, and chromatic characteristics match real camera optics rather than AI-generated smoothness.",
+          "location": "Throughout the entire image"
+        },
+        {
+          "reasoning": "Hair strands show natural, realistic texture with individual wisps and flyaways that follow physics. The woman's hair has natural highlights and shadows with proper subsurface scattering, not the waxy or overly perfect appearance common in AI-generated images.",
+          "location": "Woman's hair in center of frame"
+        },
+        {
+          "reasoning": "Skin texture appears natural with visible pores, subtle imperfections, and realistic light interaction. There is no AI-typical artificial smoothing or uncanny valley effect.",
+          "location": "Faces of both subjects"
+        },
+        {
+          "reasoning": "The subway handrails, poles, and interior details show consistent perspective, proper metallic reflections, and realistic wear patterns. Background blur follows natural optical laws.",
+          "location": "Background subway interior and handrails"
+        },
+        {
+          "reasoning": "Fabric texture on the winter jackets shows realistic folds, compression, and material properties with proper lighting interaction. The fur trim has natural variation.",
+          "location": "Clothing worn by subjects"
+        }
+      ]
+    },
+    {
+      "filename": "2ad2e05330051435a8976d2f72819b57.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Natural motion blur is present in the runner's limbs and body, consistent with movement during photography. The blur shows realistic directionality and gradation that would be difficult to artificially generate.",
+          "location": "Arms and legs of the running subject"
+        },
+        {
+          "reasoning": "The depth of field shows natural bokeh with realistic falloff from the sharp foreground subject to the progressively blurred background. The atmospheric haze in the distance appears authentic to outdoor photography conditions.",
+          "location": "Background landscape and foliage"
+        },
+        {
+          "reasoning": "Lighting is consistent across the scene with natural shadows and highlights. The overcast sky creates even, diffused lighting on the subject that matches the environmental conditions visible in the background.",
+          "location": "Overall lighting across subject and environment"
+        },
+        {
+          "reasoning": "Details like fabric texture, skin texture, the smartwatch on the wrist, and road surface imperfections are all naturally rendered with appropriate levels of sharpness and grain consistent with real photography.",
+          "location": "Clothing texture, skin, watch, and road surface"
+        }
+      ]
+    },
+    {
+      "filename": "4ca91e737979369e37478c4f4ec6e84e_r4.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Natural film grain and sensor noise consistent with black and white photography are visible throughout the image, particularly in darker areas and shadows, which is characteristic of real photographs rather than AI-generated images",
+          "location": "Throughout entire image, especially visible in dark areas of ceiling and shadows"
+        },
+        {
+          "reasoning": "The hair strands show natural, random flyaway patterns with realistic lighting and individual strand detail that would be extremely difficult for AI to generate accurately",
+          "location": "Woman's hair, particularly the flyaway strands at the top of her head"
+        },
+        {
+          "reasoning": "The background shows natural bokeh and depth of field blur consistent with camera optics, with subway signage and other passengers gradually losing focus in a photographically accurate manner",
+          "location": "Background of image, including blurred subway signs and other passengers"
+        },
+        {
+          "reasoning": "Skin texture shows natural pores, subtle imperfections, and realistic light reflection patterns that are characteristic of real human skin captured by a camera",
+          "location": "Woman's face, particularly cheek and forehead area"
+        },
+        {
+          "reasoning": "The fabric of the winter jacket shows realistic texture, creasing, and light absorption patterns consistent with actual material photography",
+          "location": "Woman's winter jacket in the foreground"
+        }
+      ]
+    },
+    {
+      "filename": "53805809adf9a3d8d0d33c71253fe7eb.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Natural shadows cast by the three women are consistent with overhead sunlight, showing proper directionality and gradient falloff on the pavement",
+          "location": "Ground beneath all three subjects"
+        },
+        {
+          "reasoning": "The background shows realistic depth of field with natural bokeh, proper atmospheric perspective, and consistent lighting across the street scene",
+          "location": "Background street scene with trees and buildings"
+        },
+        {
+          "reasoning": "Clothing texture and fabric details appear natural with realistic wrinkles, folds, and material properties. The white tops show appropriate translucency and natural shadows",
+          "location": "All three subjects' clothing"
+        },
+        {
+          "reasoning": "Skin tones and textures are consistent and natural across all subjects with realistic lighting, natural pores, and proper subsurface scattering",
+          "location": "Faces and exposed skin of all subjects"
+        },
+        {
+          "reasoning": "The pavement shows natural wear patterns, proper perspective lines, and realistic texture with organic spacing between tiles",
+          "location": "Sidewalk/street pavement throughout foreground"
+        }
+      ]
+    },
+    {
+      "filename": "h1gpeyh1gpeyh1gp.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "The image shows natural lighting with realistic shadows cast by people and objects, consistent with overcast outdoor conditions. The trees in the background have proper depth of field blur and natural color gradation.",
+          "location": "Throughout the image, particularly visible in background trees and sky"
+        },
+        {
+          "reasoning": "All individuals show realistic skin textures, natural facial expressions with appropriate muscle movement during laughter, and proper anatomical proportions. Hands holding phones and champagne glasses appear natural with correct finger positioning.",
+          "location": "All people in the group, particularly visible on faces and hands"
+        },
+        {
+          "reasoning": "The clothing shows natural fabric wrinkles, folds, and draping consistent with real formal attire. The suits and black clothing have realistic texture and shading.",
+          "location": "Suits and formal wear worn by all individuals"
+        },
+        {
+          "reasoning": "The champagne spray shows realistic fluid dynamics with natural droplet formation, trajectory, and dispersion pattern consistent with actual champagne being sprayed from a bottle.",
+          "location": "Center of image, champagne spraying from bottle held by central figure"
+        },
+        {
+          "reasoning": "The cemetery setting shows authentic weathered gravestones with natural moss, realistic soil texture in the fresh grave, and genuine floral arrangement with natural flower detail and coloration.",
+          "location": "Background gravestones and foreground grave with flowers"
+        }
+      ]
+    },
+    {
+      "filename": "7xld4y7xld4y7xld.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Natural skin texture with visible pores, fine lines, and age-appropriate wrinkles around the eyes and forehead. The skin shows realistic imperfections and natural color variation.",
+          "location": "Face and forehead area"
+        },
+        {
+          "reasoning": "The beard shows natural gray and white hair distribution with individual strands visible and realistic texture variation. Hair grows in natural, slightly irregular patterns.",
+          "location": "Facial hair and beard"
+        },
+        {
+          "reasoning": "The brick wall background shows authentic weathering, mortar texture, and natural variations in color and surface imperfections consistent with real masonry.",
+          "location": "Background brick wall"
+        },
+        {
+          "reasoning": "The jacket fabric shows realistic wear patterns, natural folds, and authentic material texture including visible zipper teeth and button details.",
+          "location": "Tan jacket clothing"
+        },
+        {
+          "reasoning": "Natural lighting creates consistent shadows under the nose, chin, and jacket collar. The lighting shows appropriate fall-off and no unnatural uniformity.",
+          "location": "Overall lighting and shadows"
+        },
+        {
+          "reasoning": "Eyes show natural reflections, realistic iris detail, and authentic catchlights. The whites of the eyes have subtle natural coloring and blood vessels.",
+          "location": "Eyes"
+        }
+      ]
+    },
+    {
+      "filename": "2ebd5194c37a818d1805082c34065c30.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "The image shows natural lighting consistency across all subjects and background elements, with realistic shadows and highlights. The depth of field creates natural bokeh in the background while keeping the subjects in sharp focus.",
+          "location": "Overall image lighting and focus"
+        },
+        {
+          "reasoning": "Skin textures on both subjects show natural pores, fine lines, and realistic complexion variations that are characteristic of real photographs rather than AI-generated images.",
+          "location": "Faces and arms of both subjects"
+        },
+        {
+          "reasoning": "The pizza shows realistic cheese stretch, proper topping placement, and authentic texture that would be difficult for AI to replicate accurately. The cardboard pizza box also has natural wear and realistic material properties.",
+          "location": "Pizza slice being held and pizza box"
+        },
+        {
+          "reasoning": "Background architecture shows consistent perspective with proper geometric alignment of windows, balconies, and building features. People in the background are naturally positioned and properly scaled.",
+          "location": "Building facades and background figures"
+        },
+        {
+          "reasoning": "Fabric textures on the athletic wear show realistic wrinkles, stretching, and material properties. The jewelry necklace has proper metallic reflections and consistent chain links.",
+          "location": "Clothing and necklace on right subject"
+        }
+      ]
+    },
+    {
+      "filename": "7isuvh7isuvh7isu.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The two figures are positioned in an intimate pose that would never occur in official White House photography. This is clearly a composite or digitally manipulated image combining elements from different photos.",
+          "location": "Center of image showing the two men"
+        },
+        {
+          "reasoning": "The lighting and perspective on the two figures don't match perfectly with the White House background. The subjects appear to be composited onto the background scene.",
+          "location": "Overall composition and lighting inconsistencies between foreground subjects and background"
+        },
+        {
+          "reasoning": "This depicts a scenario that never occurred in reality - these two world leaders meeting in this specific manner at the White House. The image is a political satire or manipulated photograph.",
+          "location": "Entire scene composition"
+        }
+      ]
+    },
+    {
+      "filename": "0b5a6fe395e6652f45b8bdab691c28adc961287d6ecc86ca1f739abcfe584ed2.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "The image shows natural skin texture with visible pores, fine lines, and realistic variations in tone and pigmentation consistent with a genuine photograph",
+          "location": "facial skin throughout, particularly visible on forehead and cheeks"
+        },
+        {
+          "reasoning": "The hair displays natural individual strand separation, realistic highlights and shadows, and authentic flyaway hairs with proper light interaction",
+          "location": "hair throughout, especially visible at the edges and top"
+        },
+        {
+          "reasoning": "The teeth show natural variations in color and shape with realistic shadows and translucency at the edges, not the perfectly uniform appearance typical of AI generation",
+          "location": "smile/teeth area"
+        },
+        {
+          "reasoning": "The eyes contain authentic catchlights, proper iris detail with natural color variation, and realistic reflection patterns consistent with professional photography lighting",
+          "location": "both eyes"
+        },
+        {
+          "reasoning": "The fabric of the white shirt shows natural wrinkles, folds, and light interaction with realistic shadow depth and proper material texture",
+          "location": "white shirt/blouse"
+        }
+      ]
+    },
+    {
+      "filename": "2aee09d253a4606d2b5b4a630fbd6b834074ae2a91a3dd28e361eb8dadafad24_r11.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Natural skin texture with visible pores, natural shine, and realistic facial hair growth patterns. The beard shows individual hair strands with natural variation in density and direction.",
+          "location": "Face and facial hair"
+        },
+        {
+          "reasoning": "Proper depth of field with natural bokeh effect. The background is appropriately blurred while maintaining realistic optical characteristics. The framed artwork and plants show natural out-of-focus qualities.",
+          "location": "Background elements"
+        },
+        {
+          "reasoning": "Natural fabric texture and appropriate light interaction with the suit material. Realistic wrinkles and creases in the jacket consistent with body posture. The tie shows proper striped pattern alignment and natural fabric behavior.",
+          "location": "Clothing and suit"
+        },
+        {
+          "reasoning": "Consistent and realistic lighting across the entire scene. Natural shadows under the chin and proper light falloff. Catchlights in the eyes are consistent with the environment lighting setup.",
+          "location": "Overall lighting"
+        },
+        {
+          "reasoning": "Teeth show natural variation in shade and shape. Gums have realistic texture and color. The smile creates natural facial muscle movement and skin deformation patterns.",
+          "location": "Teeth and mouth"
+        }
+      ]
+    },
+    {
+      "filename": "0bce6c35c24ec5ce8ae8ad5bb4f67d59_r1.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "The image shows natural lighting consistency across the scene with realistic shadows cast by the person and trees. The depth of field produces natural bokeh in the background with trees and people at varying distances showing appropriate focus falloff.",
+          "location": "Overall scene lighting and background"
+        },
+        {
+          "reasoning": "The person's facial features, skin texture, and hair show natural detail and realistic rendering without signs of AI generation artifacts. The eyes have natural reflections and the skin shows appropriate pores and texture variation.",
+          "location": "Subject's face and skin"
+        },
+        {
+          "reasoning": "The white t-shirt shows natural fabric wrinkles, folds, and shadows that follow the body's contours realistically. The clothing has appropriate texture and compression where it contacts the body.",
+          "location": "Subject's clothing"
+        },
+        {
+          "reasoning": "The park environment shows natural imperfections including patchy grass, realistic tree bark texture, and authentic wear on the wooden bench. Background elements like distant people and fencing maintain proper perspective and scale.",
+          "location": "Park setting and bench"
+        }
+      ]
+    }
+  ]
+}
