@@ -29,7 +29,7 @@ MODE = "fake"  # "fake" or "real"
 GT = "gt_2"
 
 GT_JSON = f"/home/usluesyr/ai_image_detector/data/ground_truth/{GT}/json/{GT}.json"
-RESULT_JSON  = "/home/usluesyr/ai_image_detector/data/fake/test/results/gpt-5.2/prompt2/2026-01-19_18-41-02/results.json"
+RESULT_JSON  = "/home/usluesyr/ai_image_detector/data/fake/test/results/qwen3-vl/prompt2/2026-01-24_13-54-27/results.json"
 OUTPUT_FILE = os.path.join(
     os.path.dirname(RESULT_JSON),
     f"artifact_type_evaluation_{GT}.json"

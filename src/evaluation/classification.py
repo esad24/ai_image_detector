@@ -18,7 +18,7 @@ import os
 # ═══════════════════════════════════════════════════════════════
 MODE = "fake"  # "fake" or "real"
 
-RESULT_JSON = "/home/usluesyr/ai_image_detector/data/fake/test/results/AIDE/results.json"
+RESULT_JSON = "/home/usluesyr/ai_image_detector/data/fake/test/results/qwen3-vl/prompt1/2026-01-22_21-17-46/results.json"
 OUTPUT_FILE = os.path.join(
     os.path.dirname(RESULT_JSON),
     f"classification_evaluation.json"

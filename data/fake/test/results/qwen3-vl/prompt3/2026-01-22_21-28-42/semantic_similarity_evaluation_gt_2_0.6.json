@@ -7,10 +7,78 @@
   "semantic_model": "all-mpnet-base-v2",
   "comparison": "/home/usluesyr/ai_image_detector/data/ground_truth/gt_2/json/gt_2.json",
   "threshold": 0.6,
+  "split": "fake",
   "image_count": 50,
   "detected_fake": 33,
   "detected_real": 17,
   "acc": 0.66,
+  "classification_metrics": {
+    "total_images": 50,
+    "true_positives": 33,
+    "false_negatives": 17,
+    "recall_sensitivity": 0.66,
+    "false_negative_rate": 0.34,
+    "false_negative_files": [
+      "ccbcb5187879ea5f9ef2871e59b94651.jpeg",
+      "149af80e3cf3af0e46ab47863eb7b03e.jpeg",
+      "2df3e5ecf2315ee61ffe3c566e125c8a.jpeg",
+      "3dbe741ec8da19e60d694783dada6491.jpeg",
+      "2aa0e54b4dc251420a3679b501dc8a06.jpeg",
+      "09edc782a2e242c0840d3b8a3960420d.jpeg",
+      "2aee09d253a4606d2b5b4a630fbd6b834074ae2a91a3dd28e361eb8dadafad24_r2.jpeg",
+      "1a7a5fe1c457806cb6d9fb17649b923a.jpeg",
+      "0e65a4e5adc50344a43ffbd1f9ff84ea_r1.jpeg",
+      "637d149bc1ccd8dedacdf37530cf408e.jpeg",
+      "0d003053cff1c844a1a733b02ea73606.jpeg",
+      "04e61d9506ffe1d8ac6c48e8b091cc48.jpeg",
+      "7xld4y7xld4y7xld.jpeg",
+      "me07oqme07oqme07.jpeg",
+      "4ca91e737979369e37478c4f4ec6e84e_r4.jpeg",
+      "2aee09d253a4606d2b5b4a630fbd6b834074ae2a91a3dd28e361eb8dadafad24_r11.jpeg",
+      "0bce6c35c24ec5ce8ae8ad5bb4f67d59_r1.jpeg"
+    ]
+  },
+  "dataset_average": {
+    "all_files": {
+      "all_mean_cosine_all": 0.19553730574386224,
+      "all_std_cosine_all": 0.1540790492150937,
+      "all_count_all": 50,
+      "all_mean_cosine_matched": 0.3786534918745359,
+      "all_std_cosine_matched": 0.24962820264231692,
+      "all_count_matched": 50,
+      "all_mean_cosine_valid": 0.28004377245903017,
+      "all_std_cosine_valid": 0.34427022021901865,
+      "all_count_valid": 50
+    },
+    "fake_classified_only": {
+      "fake_mean_cosine_all": 0.23478491772611287,
+      "fake_std_cosine_all": 0.15372520853636232,
+      "fake_count_all": 33,
+      "fake_mean_cosine_matched": 0.5247984926590974,
+      "fake_std_cosine_matched": 0.1622133910552951,
+      "fake_count_matched": 29,
+      "fake_mean_cosine_valid": 0.7025183658850821,
+      "fake_std_cosine_valid": 0.04704729546719126,
+      "fake_count_valid": 19
+    },
+    "artifact_type_acc": {
+      "mean_artifact_type_acc_per_image": 0.7222222222222222,
+      "mean_artifact_type_acc_per_image_std": 0.41573970964154905,
+      "mean_artifact_type_acc_per_image_count": 18,
+      "mean_artifact_type_acc_global": 0.6521739130434783,
+      "mean_artifact_type_acc_global_count": 23
+    },
+    "total_gt_artifacts": 186,
+    "total_result_artifacts": 104,
+    "total_valid_matches": 23,
+    "total_unmatched_gt_artifacts": 100,
+    "total_unmatched_result_artifacts": 18,
+    "artifact_assignment_recall": 0.46236559139784944,
+    "valid_match_recall": 0.12365591397849462,
+    "valid_match_precision": 0.22115384615384615,
+    "valid_match_f1": 0.1586206896551724,
+    "mismatches": 4
+  },
   "image_scores": [
     {
       "filename": "ccbcb5187879ea5f9ef2871e59b94651.jpeg",
@@ -2609,46 +2677,5 @@
       ],
       "unmatched_result_artifacts": []
     }
-  ],
-  "dataset_average": {
-    "all_files": {
-      "all_mean_cosine_all": 0.19553730574386224,
-      "all_std_cosine_all": 0.1540790492150937,
-      "all_count_all": 50,
-      "all_mean_cosine_matched": 0.3786534918745359,
-      "all_std_cosine_matched": 0.24962820264231692,
-      "all_count_matched": 50,
-      "all_mean_cosine_valid": 0.28004377245903017,
-      "all_std_cosine_valid": 0.34427022021901865,
-      "all_count_valid": 50
-    },
-    "fake_classified_only": {
-      "fake_mean_cosine_all": 0.23478491772611287,
-      "fake_std_cosine_all": 0.15372520853636232,
-      "fake_count_all": 33,
-      "fake_mean_cosine_matched": 0.5247984926590974,
-      "fake_std_cosine_matched": 0.1622133910552951,
-      "fake_count_matched": 29,
-      "fake_mean_cosine_valid": 0.7025183658850821,
-      "fake_std_cosine_valid": 0.04704729546719126,
-      "fake_count_valid": 19
-    },
-    "artifact_type_acc": {
-      "mean_artifact_type_acc_per_image": 0.7222222222222222,
-      "mean_artifact_type_acc_per_image_std": 0.41573970964154905,
-      "mean_artifact_type_acc_per_image_count": 18,
-      "mean_artifact_type_acc_global": 0.6521739130434783,
-      "mean_artifact_type_acc_global_count": 23
-    },
-    "total_unmatched_gt_artifacts": 100,
-    "total_unmatched_result_artifacts": 18,
-    "artifact_assignment_recall": 0.46236559139784944,
-    "valid_match_recall": 0.12365591397849462,
-    "valid_match_precision": 0.22115384615384615,
-    "valid_match_f1": 0.1586206896551724,
-    "total_valid_matches": 23,
-    "total_gt_artifacts": 186,
-    "total_result_artifacts": 104,
-    "mismatches": 4
-  }
+  ]
 }

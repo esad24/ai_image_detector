@@ -5,12 +5,80 @@
     "reasoning": false
   },
   "semantic_model": "all-mpnet-base-v2",
-  "comparison": "/home/usluesyr/ai_image_detector/data/ground_truth/gt_2/json/gt_2.json",
-  "threshold": 0.5,
+  "comparison": "/home/usluesyr/ai_image_detector/data/ground_truth/gt_1/json/gt_1.json",
+  "threshold": 0.6,
+  "split": "fake",
   "image_count": 50,
   "detected_fake": 33,
   "detected_real": 17,
   "acc": 0.66,
+  "classification_metrics": {
+    "total_images": 50,
+    "true_positives": 33,
+    "false_negatives": 17,
+    "recall_sensitivity": 0.66,
+    "false_negative_rate": 0.34,
+    "false_negative_files": [
+      "ccbcb5187879ea5f9ef2871e59b94651.jpeg",
+      "149af80e3cf3af0e46ab47863eb7b03e.jpeg",
+      "2df3e5ecf2315ee61ffe3c566e125c8a.jpeg",
+      "3dbe741ec8da19e60d694783dada6491.jpeg",
+      "2aa0e54b4dc251420a3679b501dc8a06.jpeg",
+      "09edc782a2e242c0840d3b8a3960420d.jpeg",
+      "2aee09d253a4606d2b5b4a630fbd6b834074ae2a91a3dd28e361eb8dadafad24_r2.jpeg",
+      "1a7a5fe1c457806cb6d9fb17649b923a.jpeg",
+      "0e65a4e5adc50344a43ffbd1f9ff84ea_r1.jpeg",
+      "637d149bc1ccd8dedacdf37530cf408e.jpeg",
+      "0d003053cff1c844a1a733b02ea73606.jpeg",
+      "04e61d9506ffe1d8ac6c48e8b091cc48.jpeg",
+      "7xld4y7xld4y7xld.jpg",
+      "me07oqme07oqme07.jpg",
+      "4ca91e737979369e37478c4f4ec6e84e_r4.jpeg",
+      "2aee09d253a4606d2b5b4a630fbd6b834074ae2a91a3dd28e361eb8dadafad24_r11.jpeg",
+      "0bce6c35c24ec5ce8ae8ad5bb4f67d59_r1.jpeg"
+    ]
+  },
+  "dataset_average": {
+    "all_files": {
+      "all_mean_cosine_all": 0.17922237801373514,
+      "all_std_cosine_all": 0.14012099862838862,
+      "all_count_all": 39,
+      "all_mean_cosine_matched": 0.32909697717708397,
+      "all_std_cosine_matched": 0.248398338786411,
+      "all_count_matched": 39,
+      "all_mean_cosine_valid": 0.19476420604265654,
+      "all_std_cosine_valid": 0.31132699745497333,
+      "all_count_valid": 39
+    },
+    "fake_classified_only": {
+      "fake_mean_cosine_all": 0.21357160676270723,
+      "fake_std_cosine_all": 0.13335987143114308,
+      "fake_count_all": 24,
+      "fake_mean_cosine_matched": 0.47128444714915185,
+      "fake_std_cosine_matched": 0.1859016869158044,
+      "fake_count_matched": 21,
+      "fake_mean_cosine_valid": 0.6941464364528656,
+      "fake_std_cosine_valid": 0.035906906114762126,
+      "fake_count_valid": 10
+    },
+    "artifact_type_acc": {
+      "mean_artifact_type_acc_per_image": 0.7272727272727273,
+      "mean_artifact_type_acc_per_image_std": 0.39101478486557395,
+      "mean_artifact_type_acc_per_image_count": 11,
+      "mean_artifact_type_acc_global": 0.7142857142857143,
+      "mean_artifact_type_acc_global_count": 14
+    },
+    "total_gt_artifacts": 123,
+    "total_result_artifacts": 73,
+    "total_valid_matches": 14,
+    "total_unmatched_gt_artifacts": 63,
+    "total_unmatched_result_artifacts": 13,
+    "artifact_assignment_recall": 0.4878048780487805,
+    "valid_match_recall": 0.11382113821138211,
+    "valid_match_precision": 0.1917808219178082,
+    "valid_match_f1": 0.14285714285714285,
+    "mismatches": "unknown"
+  },
   "image_scores": [
     {
       "filename": "ccbcb5187879ea5f9ef2871e59b94651.jpeg",
@@ -25,8 +93,7 @@
           "result_artifact": {
             "type": "stylistic",
             "reasoning": "Hair texture lacks natural variation, appears overly smooth. Location: Head and neck hair area.",
-            "location": "Head",
-            "manual_review": "valid"
+            "location": "Head"
           },
           "matched_gt_artifact": {
             "type": "stylistic",
@@ -43,60 +110,9 @@
         {
           "type": "stylistic",
           "reasoning": "Skin texture appears too uniform with insufficient detail (missing natural pores and fine lines). Location: Face, neck.",
-          "location": "Face, neck",
-          "manual_review": "valid"
+          "location": "Face, neck"
         }
       ]
-    },
-    {
-      "filename": "7isuvh7isuvh7isu.jpeg",
-      "classification": "fake",
-      "mean_cosine_all": 0.38513778646787006,
-      "mean_cosine_matched": 0.5777066797018051,
-      "mean_cosine_valid": 0.7662943005561829,
-      "num_result_artifacts": 2,
-      "num_gt_artifacts": 3,
-      "matched_artifacts": [
-        {
-          "result_artifact": {
-            "type": "structural",
-            "reasoning": "Hands are positioned in a way that is anatomically impossible. In a normal handshake, fingers should be interlaced with palms slightly facing, but here the hands are fused in a manner that does not match human anatomy (e.g., fingers too close, overlapping in a way that cannot occur in reality).",
-            "location": "Center of the image, involving the handshake between the two individuals.",
-            "manual_review": "new artifact"
-          },
-          "matched_gt_artifact": {
-            "type": "structural",
-            "reasoning": "The hand grip is anatomically incorrect.",
-            "location": "Lower center of the image, on the subjects' clasped hands."
-          },
-          "cosine_score": 0.7662943005561829,
-          "valid_match": true
-        },
-        {
-          "result_artifact": {
-            "type": "semantic",
-            "reasoning": "The simultaneous act of kissing and shaking hands is semantically implausible, as these two actions cannot occur concurrently in a natural interaction. A kiss requires close facial contact, while a handshake typically involves a grip without such proximity.",
-            "location": "Center of the image, where the two individuals are interacting.",
-            "manual_review": "invalid"
-          },
-          "matched_gt_artifact": {
-            "type": "semantic",
-            "reasoning": "Implausible scenario of Trump and Putin kissing in front of the White House.",
-            "location": "Center of the image, in front of the White House."
-          },
-          "cosine_score": 0.38911905884742737,
-          "valid_match": false
-        }
-      ],
-      "artifact_type_acc": 1.0,
-      "unmatched_gt_artifacts": [
-        {
-          "type": "semantic",
-          "reasoning": "The building is not identical to the White House.",
-          "location": "Upper middle of the image, on the building facade behind the subjects."
-        }
-      ],
-      "unmatched_result_artifacts": []
     },
     {
       "filename": "1e4cc5c247a3bdf572d4969c07992b34.jpeg",
@@ -105,7 +121,7 @@
       "mean_cosine_matched": 0.0,
       "mean_cosine_valid": 0.0,
       "num_result_artifacts": 0,
-      "num_gt_artifacts": 6,
+      "num_gt_artifacts": 4,
       "matched_artifacts": [],
       "artifact_type_acc": null,
       "unmatched_gt_artifacts": [
@@ -128,135 +144,54 @@
           "type": "structural",
           "reasoning": "There appears to be a third leg and a deformed foot.",
           "location": "Lower center of the image, on the adults' and child's legs and feet."
-        },
-        {
-          "type": "stylistic",
-          "reasoning": "The edges are overly sharp.",
-          "location": "Upper center of the image, around the adults’ heads, hair, and shoulders."
-        },
-        {
-          "type": "stylistic",
-          "reasoning": "The subjects are too crisp compared to the background and seem to be added to it.",
-          "location": "Upper center of the image, around the adults against the mountain background."
         }
       ],
-      "unmatched_result_artifacts": []
-    },
-    {
-      "filename": "h1gpeyh1gpeyh1gp.jpeg",
-      "classification": "fake",
-      "mean_cosine_all": 0.5776318510373434,
-      "mean_cosine_matched": 0.5776318510373434,
-      "mean_cosine_valid": 0.698761373758316,
-      "num_result_artifacts": 3,
-      "num_gt_artifacts": 3,
-      "matched_artifacts": [
-        {
-          "result_artifact": {
-            "type": "semantic",
-            "reasoning": "Funeral setting (grave site, somber context) with celebratory actions (champagne, laughter, selfies) is semantically implausible as funerals are typically somber events.",
-            "location": "Entire image context (group at grave site)",
-            "manual_review": "valid"
-          },
-          "matched_gt_artifact": {
-            "type": "semantic",
-            "reasoning": "The scene depicts people celebrating at a funeral.",
-            "location": "Center of the image, in the foreground with graves visible in the background."
-          },
-          "cosine_score": 0.6370306611061096,
-          "valid_match": true
-        },
-        {
-          "result_artifact": {
-            "type": "physical",
-            "reasoning": "Champagne bottle's bubble stream is depicted as a uniform, straight vertical line, violating natural behavior of gas bubbles in liquid (which would rise organically and be less uniform).",
-            "location": "Center of the image, near the champagne bottle held by the man in the middle",
-            "manual_review": "new artifact"
-          },
-          "matched_gt_artifact": {
-            "type": "structural",
-            "reasoning": "The champagne spray appears unnaturally uniform.",
-            "location": "Lower center-left of the image, in front of the woman holding the champagne bottle and along the vertical stream of droplets."
-          },
-          "cosine_score": 0.7604920864105225,
-          "valid_match": true
-        },
-        {
-          "result_artifact": {
-            "type": "structural",
-            "reasoning": "Flower arrangement is overly uniform and lacks natural variations (e.g., asymmetry, imperfections) typical of real floral displays.",
-            "location": "Left side of the image, near the grave mound and flowers",
-            "manual_review": "invalid"
-          },
-          "matched_gt_artifact": {
-            "type": "structural",
-            "reasoning": "The eyes appear unusual.",
-            "location": "Upper-center and right side of the image, on the faces of the man with champagne and the bald men."
-          },
-          "cosine_score": 0.33537280559539795,
-          "valid_match": false
-        }
-      ],
-      "artifact_type_acc": 0.5,
-      "unmatched_gt_artifacts": [],
       "unmatched_result_artifacts": []
     },
     {
       "filename": "149af80e3cf3af0e46ab47863eb7b03e.jpeg",
       "classification": "real",
-      "mean_cosine_all": 0.21523088216781616,
-      "mean_cosine_matched": 0.5380772054195404,
-      "mean_cosine_valid": 0.5838837027549744,
+      "mean_cosine_all": 0.32224254806836444,
+      "mean_cosine_matched": 0.4833638221025467,
+      "mean_cosine_valid": 0.0,
       "num_result_artifacts": 2,
-      "num_gt_artifacts": 5,
+      "num_gt_artifacts": 3,
       "matched_artifacts": [
         {
           "result_artifact": {
             "type": "semantic",
             "reasoning": "An alligator is present in an urban environment (New York City sidewalk) which is semantically implausible as alligators do not inhabit city streets. The spatial location of the anomaly is the alligator positioned on the sidewalk in the lower center of the image.",
-            "location": "the alligator on the sidewalk (lower center of the image)",
-            "manual_review": "valid"
+            "location": "the alligator on the sidewalk (lower center of the image)"
           },
           "matched_gt_artifact": {
             "type": "semantic",
             "reasoning": "A crocodile appearing on a city sidewalk is unrealistic.",
             "location": "Bottom side of the image, on the sidewalk where the crocodile is located."
           },
-          "cosine_score": 0.5838837027549744,
-          "valid_match": true
+          "cosine_score": 0.5838838219642639,
+          "valid_match": false
         },
         {
           "result_artifact": {
             "type": "stylistic",
             "reasoning": "The alligator's skin texture appears overly smooth and uniform, lacking the detailed scale patterns and natural texture variation of a real alligator, a common stylistic artifact in AI-generated images. The spatial location of the anomaly is the alligator's body, particularly around the head and torso.",
-            "location": "the alligator's body (head and torso)",
-            "manual_review": "uncertain"
+            "location": "the alligator's body (head and torso)"
           },
           "matched_gt_artifact": {
-            "type": "stylistic",
-            "reasoning": "The crocodile looks sharper than the surrounding scene.",
-            "location": "Lower center of the image, on the crocodile."
+            "type": "structural",
+            "reasoning": "The face appears deformed.",
+            "location": "Upper center of the image, on the person's face in the background."
           },
-          "cosine_score": 0.49227070808410645,
+          "cosine_score": 0.38284382224082947,
           "valid_match": false
         }
       ],
-      "artifact_type_acc": 1.0,
+      "artifact_type_acc": null,
       "unmatched_gt_artifacts": [
-        {
-          "type": "structural",
-          "reasoning": "The face appears deformed.",
-          "location": "Upper center of the image, on the person's face in the background."
-        },
         {
           "type": "physical",
           "reasoning": "The shadows fall in different directions.",
           "location": "Lower left of the image, on the sidewalk and around the people's legs."
-        },
-        {
-          "type": "semantic",
-          "reasoning": "Bystanders seem unconcerned by the crocodile.",
-          "location": "Upper left to upper middle of the image, on the group of bystanders standing on the sidewalk."
         }
       ],
       "unmatched_result_artifacts": []
@@ -264,18 +199,17 @@
     {
       "filename": "86ae36214222e367f9bc162308095ada_r12.jpeg",
       "classification": "fake",
-      "mean_cosine_all": 0.4363191068172455,
-      "mean_cosine_matched": 0.5453988835215569,
-      "mean_cosine_valid": 0.7015954256057739,
+      "mean_cosine_all": 0.39342705011367796,
+      "mean_cosine_matched": 0.6557117501894633,
+      "mean_cosine_valid": 0.7015953958034515,
       "num_result_artifacts": 5,
-      "num_gt_artifacts": 4,
+      "num_gt_artifacts": 3,
       "matched_artifacts": [
         {
           "result_artifact": {
             "type": "physical",
             "reasoning": "The ant is depicted as being several centimeters long, but real ants are only 1-10 mm in length, making the scale physically implausible.",
-            "location": "[0, 125, 600, 998]",
-            "manual_review": "valid"
+            "location": "[0, 125, 600, 998]"
           },
           "matched_gt_artifact": {
             "type": "semantic",
@@ -289,45 +223,28 @@
           "result_artifact": {
             "type": "structural",
             "reasoning": "The ant's head and thorax are unnaturally large relative to the body, and the legs have incorrect jointing and proportions.",
-            "location": "[0, 125, 600, 998]",
-            "manual_review": "valid"
+            "location": "[0, 125, 600, 998]"
           },
           "matched_gt_artifact": {
             "type": "structural",
             "reasoning": "The ant has extra limbs.",
             "location": "Lower side of the image, around the ant's legs."
           },
-          "cosine_score": 0.6916847825050354,
+          "cosine_score": 0.6916847229003906,
           "valid_match": true
         },
         {
           "result_artifact": {
-            "type": "semantic",
-            "reasoning": "The scenario of a giant ant interacting with a human face is functionally implausible in reality.",
-            "location": "[0, 125, 600, 998]",
-            "manual_review": "valid"
+            "type": "structural",
+            "reasoning": "The ant's eye is depicted as a single large black spot, whereas real ants have compound eyes with multiple facets.",
+            "location": "[60, 600, 80, 700]"
           },
           "matched_gt_artifact": {
             "type": "structural",
             "reasoning": "There is an extra antenna.",
             "location": "Center of the image, near the ant's head and on the person's nose."
           },
-          "cosine_score": 0.4891436994075775,
-          "valid_match": false
-        },
-        {
-          "result_artifact": {
-            "type": "structural",
-            "reasoning": "The ant's eye is depicted as a single large black spot, whereas real ants have compound eyes with multiple facets.",
-            "location": "[60, 600, 80, 700]",
-            "manual_review": "invalid"
-          },
-          "matched_gt_artifact": {
-            "type": "stylistic",
-            "reasoning": "The image has a hyperreal and cinematic look.",
-            "location": "Across the image, affecting the overall visual style and rendering."
-          },
-          "cosine_score": 0.28926098346710205,
+          "cosine_score": 0.5639444589614868,
           "valid_match": false
         }
       ],
@@ -335,10 +252,14 @@
       "unmatched_gt_artifacts": [],
       "unmatched_result_artifacts": [
         {
+          "type": "semantic",
+          "reasoning": "The scenario of a giant ant interacting with a human face is functionally implausible in reality.",
+          "location": "[0, 125, 600, 998]"
+        },
+        {
           "type": "stylistic",
           "reasoning": "The ant's exoskeleton lacks the fine texture and fine hairs typical of real ants, appearing unnaturally smooth, and coloration is overly uniform.",
-          "location": "[0, 125, 600, 998]",
-          "manual_review": "uncertain"
+          "location": "[0, 125, 600, 998]"
         }
       ]
     },
@@ -347,7 +268,7 @@
       "classification": "fake",
       "mean_cosine_all": 0.2520162761211395,
       "mean_cosine_matched": 0.504032552242279,
-      "mean_cosine_valid": 0.504032552242279,
+      "mean_cosine_valid": 0.0,
       "num_result_artifacts": 1,
       "num_gt_artifacts": 2,
       "matched_artifacts": [
@@ -355,8 +276,7 @@
           "result_artifact": {
             "type": "structural",
             "reasoning": "The hand holding the tennis racket frame has anatomically incorrect finger proportions. For example, the fingers appear to be too long or positioned in a way that is unnatural for gripping the frame. This is a common issue in AI generation artifacts. So the conclusion is that the image is AI-generated, and the key artifact is in the hand with structural defects. So the answer should be: {",
-            "location": "hand holding the frame (viewer's perspective left side of the image)",
-            "manual_review": "invalid"
+            "location": "hand holding the frame (viewer's perspective left side of the image)"
           },
           "matched_gt_artifact": {
             "type": "structural",
@@ -364,8 +284,7 @@
             "location": "Center-right of the image, on the subject's upper arm."
           },
           "cosine_score": 0.504032552242279,
-          "valid_match": true,
-          "mismatch": true
+          "valid_match": false
         }
       ],
       "artifact_type_acc": null,
@@ -410,18 +329,17 @@
     {
       "filename": "5d04c3a88fe8c5d2d7c7a8877e7880fe.jpeg",
       "classification": "fake",
-      "mean_cosine_all": 0.44806431978940964,
-      "mean_cosine_matched": 0.5974190930525461,
-      "mean_cosine_valid": 0.650183767080307,
+      "mean_cosine_all": 0.2836076393723488,
+      "mean_cosine_matched": 0.5672152787446976,
+      "mean_cosine_valid": 0.6425408124923706,
       "num_result_artifacts": 4,
-      "num_gt_artifacts": 3,
+      "num_gt_artifacts": 2,
       "matched_artifacts": [
         {
           "result_artifact": {
             "type": "structural",
             "reasoning": "Eyelashes are too uniform and dense; upper and lower lashes lack natural variation in length and thickness. In real eyes, eyelashes have individual variations.",
-            "location": "upper and lower eyelid areas",
-            "manual_review": "invalid, looks like eyelash extensions"
+            "location": "upper and lower eyelid areas"
           },
           "matched_gt_artifact": {
             "type": "structural",
@@ -429,30 +347,13 @@
             "location": "Center of the image, on the eyelid/eyelash area."
           },
           "cosine_score": 0.6425408124923706,
-          "valid_match": true,
-          "mismatch": true
-        },
-        {
-          "result_artifact": {
-            "type": "semantic",
-            "reasoning": "Conjunctiva (white part of eye) has uniform red color without visible blood vessel network. Real conjunctiva displays a fine, irregular network of blood vessels.",
-            "location": "lower eyelid conjunctiva",
-            "manual_review": "new artifact"
-          },
-          "matched_gt_artifact": {
-            "type": "structural",
-            "reasoning": "There are red dots that don't look like blood vessels.",
-            "location": "Left-center of the image, on the white part of the eye (sclera) near the inner corner."
-          },
-          "cosine_score": 0.6578267216682434,
           "valid_match": true
         },
         {
           "result_artifact": {
             "type": "stylistic",
             "reasoning": "Skin texture around eye is overly smooth with minimal pore variation, lacking natural skin details (e.g., pores, fine lines).",
-            "location": "surrounding skin (upper and lower eyelid areas)",
-            "manual_review": "invalid"
+            "location": "surrounding skin (upper and lower eyelid areas)"
           },
           "matched_gt_artifact": {
             "type": "structural",
@@ -463,29 +364,33 @@
           "valid_match": false
         }
       ],
-      "artifact_type_acc": 0.0,
+      "artifact_type_acc": 1.0,
       "unmatched_gt_artifacts": [],
       "unmatched_result_artifacts": [
         {
           "type": "physical",
           "reasoning": "Reflection in pupil appears to come from multiple sources or has unnatural patterns. Real eyes reflect light from a single source, creating a single point reflection.",
-          "location": "pupil",
-          "manual_review": "invalid, looks like two windows"
+          "location": "pupil"
+        },
+        {
+          "type": "semantic",
+          "reasoning": "Conjunctiva (white part of eye) has uniform red color without visible blood vessel network. Real conjunctiva displays a fine, irregular network of blood vessels.",
+          "location": "lower eyelid conjunctiva"
         }
       ]
     },
     {
       "filename": "3dbe741ec8da19e60d694783dada6491.jpeg",
       "classification": "real",
-      "mean_cosine_all": 0.18924881219863893,
-      "mean_cosine_matched": 0.4731220304965973,
-      "mean_cosine_valid": 0.5151585936546326,
+      "mean_cosine_all": 0.3154146671295166,
+      "mean_cosine_matched": 0.4731220006942749,
+      "mean_cosine_valid": 0.0,
       "num_result_artifacts": 2,
-      "num_gt_artifacts": 5,
+      "num_gt_artifacts": 3,
       "matched_artifacts": [
         {
           "result_artifact": {
-            "type": "-semantic",
+            "type": "semantic",
             "reasoning": "The image contains a detailed and realistic depiction of a human figure (a young woman with long hair, wearing a blue dress), which is consistent with what one would expect in a photo. The figure is well-proportioned, with realistic details such as the texture of the fabric and the natural lighting on the skin. The background, including the wooden fence, is also rendered with realistic textures and depth, suggesting a photo rather than a generated image.",
             "location": "entire image"
           },
@@ -494,12 +399,12 @@
             "reasoning": "The eyes appear unnatural.",
             "location": "Upper center of the image, on the men's faces."
           },
-          "cosine_score": 0.431085467338562,
+          "cosine_score": 0.43108540773391724,
           "valid_match": false
         },
         {
           "result_artifact": {
-            "type": "-semantic",
+            "type": "semantic",
             "reasoning": "The image shows a realistic human figure in a natural setting. The skin texture is detailed and consistent with a photograph, and the lighting appears to be natural and consistent with outdoor conditions. The figure's posture and movement (e.g., the natural flow of the dress) are realistic, indicating a photo rather than a generated image.",
             "location": "entire image"
           },
@@ -509,78 +414,6 @@
             "location": "Upper center of the image, on the men's faces."
           },
           "cosine_score": 0.5151585936546326,
-          "valid_match": true
-        }
-      ],
-      "artifact_type_acc": 0.0,
-      "unmatched_gt_artifacts": [
-        {
-          "type": "structural",
-          "reasoning": "The hands appear deformed.",
-          "location": "Lower center of the image, on the clasped hands."
-        },
-        {
-          "type": "semantic",
-          "reasoning": "The background seems unnaturally dark.",
-          "location": "Top of the image, in the dark background above the people."
-        },
-        {
-          "type": "semantic",
-          "reasoning": "The people have similar faces, hair, and outfits (ties).",
-          "location": "Center to lower-center of the image, across the group of men and their clothing."
-        }
-      ],
-      "unmatched_result_artifacts": []
-    },
-    {
-      "filename": "2ddf7a07da956c375d9d512cf876bd871f5a3150db7b68b7ef25c1c91a694238_r6.jpeg",
-      "classification": "fake",
-      "mean_cosine_all": 0.04518884886056185,
-      "mean_cosine_matched": 0.12050359696149826,
-      "mean_cosine_valid": 0.0,
-      "num_result_artifacts": 3,
-      "num_gt_artifacts": 8,
-      "matched_artifacts": [
-        {
-          "result_artifact": {
-            "type": "-semantic",
-            "reasoning": "The claim in the article is that the number of refugees in the UK is growing at 6.8% per annum, which implies a large number of new refugees. However, the actual number of refugees in the UK as of late 2023/early 2024 is less than 200,000, and they are not growing at 6.8% per annum. The growth rate for refugees in the UK is much lower. The article is wrong about the number and the growth rate.",
-            "location": "general"
-          },
-          "matched_gt_artifact": {
-            "type": "stylistic",
-            "reasoning": "The woman’s skin looks overly smooth and plastic.",
-            "location": "Upper center-right of the image, on the woman’s face."
-          },
-          "cosine_score": 0.10736007243394852,
-          "valid_match": false
-        },
-        {
-          "result_artifact": {
-            "type": "-semantic",
-            "reasoning": "The article states that the UK has received 'more than 16,000 refugees' in the past year, but the actual data shows that the UK received only 1,159 refugees from June to December 2023. The article is incorrect about this figure.",
-            "location": "general"
-          },
-          "matched_gt_artifact": {
-            "type": "structural",
-            "reasoning": "The thumb looks unusual.",
-            "location": "Lower center-left of the image, on the man’s hand holding the child."
-          },
-          "cosine_score": 0.12711775302886963,
-          "valid_match": false
-        },
-        {
-          "result_artifact": {
-            "type": "-semantic",
-            "reasoning": "The article claims that 'refugees in the UK are growing by 6.8% per year', but this is not accurate. The actual growth rate is much lower. The article is wrong about the growth rate.",
-            "location": "general"
-          },
-          "matched_gt_artifact": {
-            "type": "structural",
-            "reasoning": "The fingers appear deformed.",
-            "location": "Lower left of the image, on the child's hand."
-          },
-          "cosine_score": 0.12703296542167664,
           "valid_match": false
         }
       ],
@@ -588,23 +421,70 @@
       "unmatched_gt_artifacts": [
         {
           "type": "structural",
-          "reasoning": "There are deformities in the background structure.",
-          "location": "Top center of the image, in the background above the family."
+          "reasoning": "The hands appear deformed.",
+          "location": "Lower center of the image, on the clasped hands."
+        }
+      ],
+      "unmatched_result_artifacts": []
+    },
+    {
+      "filename": "2ddf7a07da956c375d9d512cf876bd871f5a3150db7b68b7ef25c1c91a694238_r6.jpeg",
+      "classification": "fake",
+      "mean_cosine_all": 0.05187642872333527,
+      "mean_cosine_matched": 0.0864607145388921,
+      "mean_cosine_valid": 0.0,
+      "num_result_artifacts": 3,
+      "num_gt_artifacts": 5,
+      "matched_artifacts": [
+        {
+          "result_artifact": {
+            "type": "semantic",
+            "reasoning": "The claim in the article is that the number of refugees in the UK is growing at 6.8% per annum, which implies a large number of new refugees. However, the actual number of refugees in the UK as of late 2023/early 2024 is less than 200,000, and they are not growing at 6.8% per annum. The growth rate for refugees in the UK is much lower. The article is wrong about the number and the growth rate.",
+            "location": "general"
+          },
+          "matched_gt_artifact": {
+            "type": "semantic",
+            "reasoning": "The boy appears to be wearing unusual gloves.",
+            "location": "Right side of the image, on the boy's hands."
+          },
+          "cosine_score": 0.06887993216514587,
+          "valid_match": false
         },
         {
-          "type": "structural",
-          "reasoning": "There are deformities in the armpit area.",
-          "location": "Left side of the image, on the girl's right armpit area."
+          "result_artifact": {
+            "type": "semantic",
+            "reasoning": "The article states that the UK has received 'more than 16,000 refugees' in the past year, but the actual data shows that the UK received only 1,159 refugees from June to December 2023. The article is incorrect about this figure.",
+            "location": "general"
+          },
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "There are deformities in the armpit area.",
+            "location": "Left side of the image, on the girl's right armpit area."
+          },
+          "cosine_score": 0.10296252369880676,
+          "valid_match": false
         },
+        {
+          "result_artifact": {
+            "type": "semantic",
+            "reasoning": "The article claims that 'refugees in the UK are growing by 6.8% per year', but this is not accurate. The actual growth rate is much lower. The article is wrong about the growth rate.",
+            "location": "general"
+          },
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "There are deformities in the background structure.",
+            "location": "Top center of the image, in the background above the family."
+          },
+          "cosine_score": 0.0875396877527237,
+          "valid_match": false
+        }
+      ],
+      "artifact_type_acc": null,
+      "unmatched_gt_artifacts": [
         {
           "type": "semantic",
           "reasoning": "A line on the shirt does not connect properly.",
           "location": "Left side of the image, on the girl's striped shirt near the waist."
-        },
-        {
-          "type": "semantic",
-          "reasoning": "The boy appears to be wearing unusual gloves.",
-          "location": "Right side of the image, on the boy's hands."
         },
         {
           "type": "structural",
@@ -615,50 +495,17 @@
       "unmatched_result_artifacts": []
     },
     {
-      "filename": "fe7ovxfe7ovxfe7o.jpeg",
-      "classification": "fake",
-      "mean_cosine_all": 0.0,
-      "mean_cosine_matched": 0.0,
-      "mean_cosine_valid": 0.0,
-      "num_result_artifacts": 0,
-      "num_gt_artifacts": 1,
-      "matched_artifacts": [],
-      "artifact_type_acc": null,
-      "unmatched_gt_artifacts": [
-        {
-          "type": "semantic",
-          "reasoning": "The chair placement is illogical.",
-          "location": "Right side and center of the image, on the chairs behind the woman and the second table."
-        }
-      ],
-      "unmatched_result_artifacts": []
-    },
-    {
       "filename": "2aa0e54b4dc251420a3679b501dc8a06.jpeg",
       "classification": "real",
-      "mean_cosine_all": 0.09290876388549804,
-      "mean_cosine_matched": 0.23227190971374512,
+      "mean_cosine_all": 0.11008435984452565,
+      "mean_cosine_matched": 0.16512653976678848,
       "mean_cosine_valid": 0.0,
       "num_result_artifacts": 2,
-      "num_gt_artifacts": 5,
+      "num_gt_artifacts": 3,
       "matched_artifacts": [
         {
           "result_artifact": {
-            "type": "-physical",
-            "reasoning": "The object is a physical entity that can be touched or held, such as a stone or a rock. The text mentions \"rock\" and \"stone\" and describes its physical attributes like texture, weight, and temperature. The context is about a stone that is warm, has a rough surface, and is heavy. This is a physical artifact.",
-            "location": "stone"
-          },
-          "matched_gt_artifact": {
-            "type": "structural",
-            "reasoning": "The person is holding a deformed cup.",
-            "location": "Lower-left of the image, around the left woman’s hand and the cup she is holding."
-          },
-          "cosine_score": 0.274674654006958,
-          "valid_match": false
-        },
-        {
-          "result_artifact": {
-            "type": "-physical",
+            "type": "physical",
             "reasoning": "The object is a physical entity that can be touched or held, such as a stone or a rock. The text mentions \"rock\" and \"stone\" and describes its physical attributes like texture, weight, and temperature. The context is about a stone that is warm, has a rough surface, and is heavy. This is a physical artifact.",
             "location": "stone"
           },
@@ -667,7 +514,21 @@
             "reasoning": "The hands show anatomical errors.",
             "location": "Left and right sides of the image, on the left woman's hand holding an object and the right woman's hand/wrist area."
           },
-          "cosine_score": 0.18986916542053223,
+          "cosine_score": 0.18986919522285461,
+          "valid_match": false
+        },
+        {
+          "result_artifact": {
+            "type": "physical",
+            "reasoning": "The object is a physical entity that can be touched or held, such as a stone or a rock. The text mentions \"rock\" and \"stone\" and describes its physical attributes like texture, weight, and temperature. The context is about a stone that is warm, has a rough surface, and is heavy. This is a physical artifact.",
+            "location": "stone"
+          },
+          "matched_gt_artifact": {
+            "type": "structural",
+            "reasoning": "The neck is unnaturally long.",
+            "location": "Right side of the image, on the woman's neck."
+          },
+          "cosine_score": 0.14038388431072235,
           "valid_match": false
         }
       ],
@@ -677,16 +538,6 @@
           "type": "structural",
           "reasoning": "The eyes show anatomical errors.",
           "location": "Center of the image, on the eyes of the left woman, man in the back, and center woman."
-        },
-        {
-          "type": "structural",
-          "reasoning": "The neck is unnaturally long.",
-          "location": "Right side of the image, on the woman's neck."
-        },
-        {
-          "type": "structural",
-          "reasoning": "The teeth appear deformed.",
-          "location": "Left-center of the image, on the left woman’s mouth/teeth."
         }
       ],
       "unmatched_result_artifacts": []
@@ -704,8 +555,7 @@
           "result_artifact": {
             "type": "structural",
             "reasoning": "The tennis racket's string grid has irregular spacing and missing strings, inconsistent with real tennis racket construction.",
-            "location": "String bed of the racket",
-            "manual_review": "invalid"
+            "location": "String bed of the racket"
           },
           "matched_gt_artifact": {
             "type": "structural",
@@ -719,8 +569,7 @@
           "result_artifact": {
             "type": "stylistic",
             "reasoning": "Hair texture appears overly smooth with uniform curls lacking natural depth, a common AI artifact in human hair.",
-            "location": "Hair, top and sides of head",
-            "manual_review": "uncertain"
+            "location": "Hair, top and sides of head"
           },
           "matched_gt_artifact": {
             "type": "stylistic",
@@ -734,8 +583,7 @@
           "result_artifact": {
             "type": "semantic",
             "reasoning": "Athletic shirt's mesh pattern is too regular, lacking organic imperfections typical of real athletic fabric.",
-            "location": "Outer dark shirt, chest/shoulders",
-            "manual_review": "invalid"
+            "location": "Outer dark shirt, chest/shoulders"
           },
           "matched_gt_artifact": {
             "type": "semantic",
@@ -751,53 +599,13 @@
       "unmatched_result_artifacts": []
     },
     {
-      "filename": "6f9t1r6f9t1r6f9t.jpeg",
-      "classification": "fake",
-      "mean_cosine_all": 0.2001067797342936,
-      "mean_cosine_matched": 0.6003203392028809,
-      "mean_cosine_valid": 0.6003203392028809,
-      "num_result_artifacts": 1,
-      "num_gt_artifacts": 3,
-      "matched_artifacts": [
-        {
-          "result_artifact": {
-            "type": "semantic",
-            "reasoning": "Presence of a smartphone, a modern technological device, in the historical context of Malcolm X (1960s-1970s) is implausible as smartphones did not exist during his lifetime.",
-            "location": "smartphone in the hands of the figure",
-            "manual_review": "valid"
-          },
-          "matched_gt_artifact": {
-            "type": "semantic",
-            "reasoning": "Martin Luther King is shown using a modern phone, which did not exist in that time period.",
-            "location": "Lower-right of the image, in Martin Luther King's left hand."
-          },
-          "cosine_score": 0.6003203392028809,
-          "valid_match": true
-        }
-      ],
-      "artifact_type_acc": 1.0,
-      "unmatched_gt_artifacts": [
-        {
-          "type": "structural",
-          "reasoning": "The bottom microphone has no head.",
-          "location": "Right side of the image, on the lower microphone near the podium."
-        },
-        {
-          "type": "structural",
-          "reasoning": "The text on the phone is illegible. It is supposed to say 'I have a dream",
-          "location": "Right side of the image, on the phone screen."
-        }
-      ],
-      "unmatched_result_artifacts": []
-    },
-    {
       "filename": "3de04fb6e7a042632a00f765cdb60e39224156c3a9d7055951f5a0298feb2dba.jpeg",
       "classification": "fake",
       "mean_cosine_all": 0.0,
       "mean_cosine_matched": 0.0,
       "mean_cosine_valid": 0.0,
       "num_result_artifacts": 0,
-      "num_gt_artifacts": 4,
+      "num_gt_artifacts": 3,
       "matched_artifacts": [],
       "artifact_type_acc": null,
       "unmatched_gt_artifacts": [
@@ -815,11 +623,6 @@
           "type": "stylistic",
           "reasoning": "The hand appears too soft and flat.",
           "location": "Lower-right of the image, on the woman's left hand."
-        },
-        {
-          "type": "stylistic",
-          "reasoning": "The tattoo looks smeared and unusual.",
-          "location": "Lower right of the image, on the person’s inner forearm near the wrist."
         }
       ],
       "unmatched_result_artifacts": []
@@ -829,7 +632,7 @@
       "classification": "fake",
       "mean_cosine_all": 0.199098269144694,
       "mean_cosine_matched": 0.597294807434082,
-      "mean_cosine_valid": 0.597294807434082,
+      "mean_cosine_valid": 0.0,
       "num_result_artifacts": 1,
       "num_gt_artifacts": 3,
       "matched_artifacts": [
@@ -837,8 +640,7 @@
           "result_artifact": {
             "type": "structural",
             "reasoning": "The hand holding the pizza slice has fingers with unnatural proportions (e.g., too thin, incorrect joint angles) and improper alignment with the pizza slice.",
-            "location": "Left hand holding the pizza slice near the mouth",
-            "manual_review": "invalid"
+            "location": "Left hand holding the pizza slice near the mouth"
           },
           "matched_gt_artifact": {
             "type": "stylistic",
@@ -846,8 +648,7 @@
             "location": "Lower-right of the image, on the pizza on the plate."
           },
           "cosine_score": 0.597294807434082,
-          "valid_match": true,
-          "mismatch": true
+          "valid_match": false
         }
       ],
       "artifact_type_acc": null,
@@ -905,46 +706,6 @@
       "unmatched_result_artifacts": []
     },
     {
-      "filename": "kv57cgkv57cgkv57.jpeg",
-      "classification": "fake",
-      "mean_cosine_all": 0.24329491456349692,
-      "mean_cosine_matched": 0.7298847436904907,
-      "mean_cosine_valid": 0.7298847436904907,
-      "num_result_artifacts": 1,
-      "num_gt_artifacts": 3,
-      "matched_artifacts": [
-        {
-          "result_artifact": {
-            "type": "semantic",
-            "reasoning": "Use of eating utensils (forks, knives) as surgical instruments is implausible in a real surgical setting. Surgical procedures require specialized sterile instruments, not common household dining tools.",
-            "location": "Surgical field around the patient's body on the operating table",
-            "manual_review": "valid"
-          },
-          "matched_gt_artifact": {
-            "type": "semantic",
-            "reasoning": "The team appears to be operating using kitchen knives and forks instead of proper surgical instruments.",
-            "location": "Center of the image, over the patient and on the instrument tray on the left side."
-          },
-          "cosine_score": 0.7298847436904907,
-          "valid_match": true
-        }
-      ],
-      "artifact_type_acc": 1.0,
-      "unmatched_gt_artifacts": [
-        {
-          "type": "structural",
-          "reasoning": "The numbers on the patient monitor are disfigured and unclear.",
-          "location": "Top-left of the image, on the patient monitor display."
-        },
-        {
-          "type": "structural",
-          "reasoning": "The utensils have an unrealistic reflection.",
-          "location": "Left-center of the image, on the utensil tray on the table."
-        }
-      ],
-      "unmatched_result_artifacts": []
-    },
-    {
       "filename": "1a7a5fe1c457806cb6d9fb17649b923a.jpeg",
       "classification": "real",
       "mean_cosine_all": 0.0,
@@ -976,25 +737,24 @@
     {
       "filename": "62ddb30f859923e2231a777f55de69c7.jpeg",
       "classification": "fake",
-      "mean_cosine_all": 0.1046767064503261,
-      "mean_cosine_matched": 0.7327369451522827,
-      "mean_cosine_valid": 0.7327369451522827,
+      "mean_cosine_all": 0.1465473771095276,
+      "mean_cosine_matched": 0.7327368855476379,
+      "mean_cosine_valid": 0.7327368855476379,
       "num_result_artifacts": 1,
-      "num_gt_artifacts": 7,
+      "num_gt_artifacts": 5,
       "matched_artifacts": [
         {
           "result_artifact": {
             "type": "structural",
             "reasoning": "Hands exhibit unnatural finger proportions and positions, including misaligned joints and incorrect finger counts.",
-            "location": "Lower-left area (Obama's hands) and lower-right area (Kate Middleton's hands)",
-            "manual_review": "valid"
+            "location": "Lower-left area (Obama's hands) and lower-right area (Kate Middleton's hands)"
           },
           "matched_gt_artifact": {
             "type": "structural",
             "reasoning": "The fingers appear deformed.",
             "location": "Bottom center of the image, on the left seated person's hands."
           },
-          "cosine_score": 0.7327369451522827,
+          "cosine_score": 0.7327368855476379,
           "valid_match": true
         }
       ],
@@ -1019,16 +779,6 @@
           "type": "structural",
           "reasoning": "The elbow appears to merge with the chair rest.",
           "location": "Left side of the image, where the left seated person's right arm meets the chair armrest."
-        },
-        {
-          "type": "structural",
-          "reasoning": "The man’s ear appears deformed.",
-          "location": "Left-center of the image, on the man’s visible ear."
-        },
-        {
-          "type": "structural",
-          "reasoning": "The woman’s fingers appear deformed.",
-          "location": "Lower-right of the image, on the woman’s hands resting on her lap."
         }
       ],
       "unmatched_result_artifacts": []
@@ -1036,50 +786,43 @@
     {
       "filename": "59de5a40846ba0dca00d56c21c43afd17c4592b3ba6cbffbc73a985b061fb4a4.jpeg",
       "classification": "fake",
-      "mean_cosine_all": 0.2842366024851799,
-      "mean_cosine_matched": 0.5684732049703598,
-      "mean_cosine_valid": 0.6418755054473877,
+      "mean_cosine_all": 0.23825065791606903,
+      "mean_cosine_matched": 0.35737598687410355,
+      "mean_cosine_valid": 0.0,
       "num_result_artifacts": 2,
-      "num_gt_artifacts": 4,
+      "num_gt_artifacts": 3,
       "matched_artifacts": [
         {
           "result_artifact": {
             "type": "structural",
             "reasoning": "Left hand (viewer's right) has fingers with inconsistent proportions (e.g., index finger overly long, joints misaligned), a common AI artifact.",
-            "location": "Left hand (right side of image)",
-            "manual_review": "valid"
+            "location": "Left hand (right side of image)"
           },
           "matched_gt_artifact": {
             "type": "structural",
             "reasoning": "The eyes appear deformed.",
             "location": "Upper-center of the image, on the face."
           },
-          "cosine_score": 0.4950709044933319,
+          "cosine_score": 0.4950709342956543,
           "valid_match": false
         },
         {
           "result_artifact": {
             "type": "physical",
             "reasoning": "Shadow on right foot (viewer's left) is positioned to the left, while light source (top left) should cast shadow to the right, violating light/shadow physics.",
-            "location": "Right foot (left side of image)",
-            "manual_review": "new artifact"
+            "location": "Right foot (left side of image)"
           },
           "matched_gt_artifact": {
-            "type": "physical",
-            "reasoning": "The shadow points in a different direction than the light source.",
-            "location": "Lower center of the image, around the man's lower legs and feet on the grass."
+            "type": "semantic",
+            "reasoning": "The face differs from Obama.",
+            "location": "Upper-center of the image, on the face."
           },
-          "cosine_score": 0.6418755054473877,
-          "valid_match": true
+          "cosine_score": 0.2196810394525528,
+          "valid_match": false
         }
       ],
-      "artifact_type_acc": 1.0,
+      "artifact_type_acc": null,
       "unmatched_gt_artifacts": [
-        {
-          "type": "semantic",
-          "reasoning": "The face differs from Obama.",
-          "location": "Upper-center of the image, on the face."
-        },
         {
           "type": "stylistic",
           "reasoning": "The skin and clothes appear plastic.",
@@ -1091,18 +834,17 @@
     {
       "filename": "64294f3a2adb2e48ac82d6f65ea9d52c.jpeg",
       "classification": "fake",
-      "mean_cosine_all": 0.13479113578796387,
+      "mean_cosine_all": 0.33697783946990967,
       "mean_cosine_matched": 0.6739556789398193,
       "mean_cosine_valid": 0.6739556789398193,
       "num_result_artifacts": 1,
-      "num_gt_artifacts": 5,
+      "num_gt_artifacts": 2,
       "matched_artifacts": [
         {
           "result_artifact": {
             "type": "semantic",
             "reasoning": "Cemeteries are solemn sites for funerals and burials, not for public gatherings wearing swimwear. The presence of multiple individuals in swimwear (including one in a one-piece swimsuit with a floral pattern and another with a bikini top) in a cemetery setting is functionally implausible and contextually inconsistent with typical funeral or burial site norms.",
-            "location": "entire scene",
-            "manual_review": "valid"
+            "location": "entire scene"
           },
           "matched_gt_artifact": {
             "type": "semantic",
@@ -1119,75 +861,9 @@
           "type": "structural",
           "reasoning": "The face appears deformed.",
           "location": "Center-left of the image, on the woman in the green top."
-        },
-        {
-          "type": "structural",
-          "reasoning": "The woman's arm/hand area has anatomical errors.",
-          "location": "Left side of the image, on the foreground woman’s arm/hand area."
-        },
-        {
-          "type": "structural",
-          "reasoning": "The faces appear smeared.",
-          "location": "Upper middle of the image, on the people’s faces in the crowd."
-        },
-        {
-          "type": "structural",
-          "reasoning": "The straps look like they blend into the skin.",
-          "location": "Lower left of the image, on the swimsuit straps of the foreground woman."
         }
       ],
       "unmatched_result_artifacts": []
-    },
-    {
-      "filename": "4pwf294pwf294pwf.jpeg",
-      "classification": "fake",
-      "mean_cosine_all": 0.4154316484928131,
-      "mean_cosine_matched": 0.6231474727392197,
-      "mean_cosine_valid": 0.8118513822555542,
-      "num_result_artifacts": 3,
-      "num_gt_artifacts": 2,
-      "matched_artifacts": [
-        {
-          "result_artifact": {
-            "type": "semantic",
-            "reasoning": "The scenario depicts two prominent political figures, Vladimir Putin and Volodymyr Zelenskyy, in a friendly interaction (clinking beer mugs) which contradicts their known public relationship of animosity. Such a meeting is highly implausible given their political histories.",
-            "location": "entire scene",
-            "manual_review": "valid"
-          },
-          "matched_gt_artifact": {
-            "type": "semantic",
-            "reasoning": "Unplausible scenario of Putin and Zelensky depicted as being friendly and drinking beer together.",
-            "location": "Center of the image, on the couch where the two men are clinking beer mugs."
-          },
-          "cosine_score": 0.8118513822555542,
-          "valid_match": true
-        },
-        {
-          "result_artifact": {
-            "type": "stylistic",
-            "reasoning": "The facial features of the right person (Zelenskyy) exhibit subtle distortions in the beard texture and the alignment of the mustache, indicating potential AI-generated face artifacts.",
-            "location": "right person's face",
-            "manual_review": "invalid"
-          },
-          "matched_gt_artifact": {
-            "type": "stylistic",
-            "reasoning": "The texture, especially on the skin, looks very noisy and flat.",
-            "location": "Center of the image, on the two men's faces and exposed skin."
-          },
-          "cosine_score": 0.43444356322288513,
-          "valid_match": false
-        }
-      ],
-      "artifact_type_acc": 1.0,
-      "unmatched_gt_artifacts": [],
-      "unmatched_result_artifacts": [
-        {
-          "type": "structural",
-          "reasoning": "The right hand of the left person shows inconsistent anatomy: the fingers are not aligning properly with the mug, and the thumb position appears unnatural, suggesting AI-generated hand structure issues.",
-          "location": "left person's right hand",
-          "manual_review": "invalid"
-        }
-      ]
     },
     {
       "filename": "4c27a50c2f1d7755efe281ea88758885.jpeg",
@@ -1202,8 +878,7 @@
           "result_artifact": {
             "type": "structural",
             "reasoning": "Man's left hand (viewer's perspective) on bed has unnatural thumb position: the thumb appears to be floating or not properly attached to the fingers, which is a common AI-generated artifact.",
-            "location": "Left hand on bed",
-            "manual_review": "invalid"
+            "location": "Left hand on bed"
           },
           "matched_gt_artifact": {
             "type": "structural",
@@ -1247,15 +922,15 @@
     {
       "filename": "0e65a4e5adc50344a43ffbd1f9ff84ea_r1.jpeg",
       "classification": "real",
-      "mean_cosine_all": 0.13122767210006714,
-      "mean_cosine_matched": 0.1968415081501007,
+      "mean_cosine_all": 0.17530114203691483,
+      "mean_cosine_matched": 0.17530114203691483,
       "mean_cosine_valid": 0.0,
       "num_result_artifacts": 2,
-      "num_gt_artifacts": 3,
+      "num_gt_artifacts": 2,
       "matched_artifacts": [
         {
           "result_artifact": {
-            "type": "-physical",
+            "type": "physical",
             "reasoning": "the document is physical, it has physical paper",
             "location": "page 1"
           },
@@ -1264,32 +939,26 @@
             "reasoning": "The hands show anatomical errors.",
             "location": "Center of the image, on both hands of the violin player."
           },
-          "cosine_score": 0.19846577942371368,
+          "cosine_score": 0.1984657496213913,
           "valid_match": false
         },
         {
           "result_artifact": {
-            "type": "-physical",
+            "type": "physical",
             "reasoning": "the document is physical, it has physical paper",
             "location": "page 1"
           },
           "matched_gt_artifact": {
             "type": "structural",
-            "reasoning": "The violin shows some deformations at the pegbox and chinrest.",
-            "location": "Upper center-right of the image, on the violin’s pegbox and chinrest."
+            "reasoning": "There are distorted shapes.",
+            "location": "Right edge of the image, on the tall vertical structure."
           },
-          "cosine_score": 0.19521723687648773,
+          "cosine_score": 0.15213653445243835,
           "valid_match": false
         }
       ],
       "artifact_type_acc": null,
-      "unmatched_gt_artifacts": [
-        {
-          "type": "structural",
-          "reasoning": "There are distorted shapes.",
-          "location": "Right edge of the image, on the tall vertical structure."
-        }
-      ],
+      "unmatched_gt_artifacts": [],
       "unmatched_result_artifacts": []
     },
     {
@@ -1305,8 +974,7 @@
           "result_artifact": {
             "type": "semantic",
             "reasoning": "The child's left eye has an anatomically implausible iris, with a disproportionate pupil size and unnatural texture pattern, which violates the known physical principles of human eyes.",
-            "location": "child's left eye (viewer's left of child's face)",
-            "manual_review": "valid"
+            "location": "child's left eye (viewer's left of child's face)"
           },
           "matched_gt_artifact": {
             "type": "structural",
@@ -1320,8 +988,7 @@
           "result_artifact": {
             "type": "structural",
             "reasoning": "The man's hairline shows a missing strand or inconsistent pattern, disrupting the natural hair structure with a noticeable discontinuity.",
-            "location": "man's hair (top center of image, near forehead and hairline)",
-            "manual_review": "invalid"
+            "location": "man's hair (top center of image, near forehead and hairline)"
           },
           "matched_gt_artifact": {
             "type": "structural",
@@ -1329,15 +996,13 @@
             "location": "Center-right of the image, on the child's hair."
           },
           "cosine_score": 0.6181549429893494,
-          "valid_match": true,
-          "mismatch": true
+          "valid_match": true
         },
         {
           "result_artifact": {
             "type": "semantic",
             "reasoning": "The child's right eye (viewer's right) has a mismatched iris pattern with inconsistent texture, contradicting the natural variation in human eye patterns.",
-            "location": "child's right eye (viewer's right of child's face)",
-            "manual_review": "valid"
+            "location": "child's right eye (viewer's right of child's face)"
           },
           "matched_gt_artifact": {
             "type": "semantic",
@@ -1348,38 +1013,35 @@
           "valid_match": false
         }
       ],
-      "artifact_type_acc": 0.0,
+      "artifact_type_acc": 0.5,
       "unmatched_gt_artifacts": [],
       "unmatched_result_artifacts": [
         {
           "type": "stylistic",
           "reasoning": "The woman's knitted scarf exhibits a uniform, repetitive texture pattern that lacks the natural irregularities and organic variations typical of real-world knitted fabric.",
-          "location": "woman's scarf (left side of image, around neck)",
-          "manual_review": "uncertain"
+          "location": "woman's scarf (left side of image, around neck)"
         },
         {
           "type": "stylistic",
           "reasoning": "The child's jacket displays a smooth, digital texture with no subtle wrinkles, folds, or imperfections that would be expected from real fabric, indicating synthetic generation.",
-          "location": "child's jacket (bottom right corner of image)",
-          "manual_review": "uncertain"
+          "location": "child's jacket (bottom right corner of image)"
         }
       ]
     },
     {
       "filename": "3ae4bd2508eb036a3df769348af8e8e8.jpeg",
       "classification": "fake",
-      "mean_cosine_all": 0.37193579758916584,
-      "mean_cosine_matched": 0.6508876457810402,
-      "mean_cosine_valid": 0.7015857696533203,
+      "mean_cosine_all": 0.381011463701725,
+      "mean_cosine_matched": 0.5080152849356333,
+      "mean_cosine_valid": 0.6358047127723694,
       "num_result_artifacts": 4,
-      "num_gt_artifacts": 7,
+      "num_gt_artifacts": 3,
       "matched_artifacts": [
         {
           "result_artifact": {
             "type": "semantic",
             "reasoning": "Woman's face has overly smooth skin with no visible pores or wrinkles, which is implausible for a human face. Natural human skin exhibits fine details like pores, fine lines, and subtle texture variations which are absent here.",
-            "location": "[0, 100, 300, 600]",
-            "manual_review": "new artifact"
+            "location": "[0, 100, 300, 600]"
           },
           "matched_gt_artifact": {
             "type": "structural",
@@ -1392,112 +1054,41 @@
         {
           "result_artifact": {
             "type": "semantic",
-            "reasoning": "Man's beard displays inconsistent texture, appearing too smooth and lacking natural hair strands. The beard should have individual strands and a more organic texture, which is missing here.",
-            "location": "[350, 40, 650, 400]",
-            "manual_review": "uncertain"
-          },
-          "matched_gt_artifact": {
-            "type": "structural",
-            "reasoning": "The hair looks smeared.",
-            "location": "Left-center of the image, on the adult woman's hair near her left temple and hat edge."
-          },
-          "cosine_score": 0.49879327416419983,
-          "valid_match": false
-        },
-        {
-          "result_artifact": {
-            "type": "semantic",
             "reasoning": "Middle child's face has a slightly off appearance of the mouth, with the teeth gap looking unnatural. Natural human mouths typically have a more balanced spacing and texture between teeth.",
-            "location": "[350, 450, 600, 850]",
-            "manual_review": "valid"
+            "location": "[350, 450, 600, 850]"
           },
           "matched_gt_artifact": {
-            "type": "structural",
-            "reasoning": "The teeth look overly smooth and uniform.",
-            "location": "Lower-center of the image, on the childrens’s teeth."
+            "type": "semantic",
+            "reasoning": "The background structure deviates from the original.",
+            "location": "Top-right of the image, in the building background."
           },
-          "cosine_score": 0.7327303886413574,
-          "valid_match": true
+          "cosine_score": 0.2938930094242096,
+          "valid_match": false
         },
         {
           "result_artifact": {
             "type": "semantic",
             "reasoning": "Right child's face has eyes that appear overly uniform and lack realistic detail. Human eyes typically have nuanced textures, subtle reflections, and varied pupil shapes which are missing here.",
-            "location": "[600, 300, 900, 650]",
-            "manual_review": "new artifact"
-          },
-          "matched_gt_artifact": {
-            "type": "structural",
-            "reasoning": "The iris appears flat and lacks details.",
-            "location": "Right-center of the image, on the right child’s eye."
-          },
-          "cosine_score": 0.7362222075462341,
-          "valid_match": true
-        }
-      ],
-      "artifact_type_acc": 0.0,
-      "unmatched_gt_artifacts": [
-        {
-          "type": "semantic",
-          "reasoning": "The background structure deviates from the original.",
-          "location": "Top-right of the image, in the building background."
-        },
-        {
-          "type": "stylistic",
-          "reasoning": "The skin appears overly smooth.",
-          "location": "Bottom-center of the image, on the child's face."
-        },
-        {
-          "type": "structural",
-          "reasoning": "The teeth look overly smooth and uniform.",
-          "location": "Center-left of the image, on the adult woman's mouth and teeth."
-        }
-      ],
-      "unmatched_result_artifacts": []
-    },
-    {
-      "filename": "v7ghcav7ghcav7gh.jpeg",
-      "classification": "fake",
-      "mean_cosine_all": 0.4880933314561844,
-      "mean_cosine_matched": 0.4880933314561844,
-      "mean_cosine_valid": 0.723854660987854,
-      "num_result_artifacts": 2,
-      "num_gt_artifacts": 2,
-      "matched_artifacts": [
-        {
-          "result_artifact": {
-            "type": "physical",
-            "reasoning": "The wristwatch is positioned on the patient's forehead, which is an impossible placement for a wristwatch (designed for wrist, not head), violating laws of physics regarding intended use and physical interaction",
-            "location": "patient's forehead",
-            "manual_review": "invalid"
+            "location": "[600, 300, 900, 650]"
           },
           "matched_gt_artifact": {
             "type": "stylistic",
-            "reasoning": "The skin texture is noisy and patchy.",
-            "location": "Upper left and right center of the image, on the doctor's and patient's visible skin"
+            "reasoning": "The skin appears overly smooth.",
+            "location": "Bottom-center of the image, on the child's face."
           },
-          "cosine_score": 0.25233200192451477,
+          "cosine_score": 0.594348132610321,
           "valid_match": false
-        },
-        {
-          "result_artifact": {
-            "type": "semantic",
-            "reasoning": "Medical scenario of a doctor using a wristwatch on a patient's head is implausible as a standard medical procedure",
-            "location": "patient's forehead",
-            "manual_review": "valid"
-          },
-          "matched_gt_artifact": {
-            "type": "semantic",
-            "reasoning": "A doctor is shown checking a patient's temperature with a watch, which is implausible.",
-            "location": "Right center of the image, where the watch is pressed against the patient's forehead."
-          },
-          "cosine_score": 0.723854660987854,
-          "valid_match": true
         }
       ],
-      "artifact_type_acc": 1.0,
+      "artifact_type_acc": 0.0,
       "unmatched_gt_artifacts": [],
-      "unmatched_result_artifacts": []
+      "unmatched_result_artifacts": [
+        {
+          "type": "semantic",
+          "reasoning": "Man's beard displays inconsistent texture, appearing too smooth and lacking natural hair strands. The beard should have individual strands and a more organic texture, which is missing here.",
+          "location": "[350, 40, 650, 400]"
+        }
+      ]
     },
     {
       "filename": "637d149bc1ccd8dedacdf37530cf408e.jpeg",
@@ -1526,29 +1117,15 @@
     {
       "filename": "0d003053cff1c844a1a733b02ea73606.jpeg",
       "classification": "real",
-      "mean_cosine_all": 0.3538466915488243,
-      "mean_cosine_matched": 0.3538466915488243,
+      "mean_cosine_all": 0.18042580783367157,
+      "mean_cosine_matched": 0.36085161566734314,
       "mean_cosine_valid": 0.0,
       "num_result_artifacts": 4,
-      "num_gt_artifacts": 4,
+      "num_gt_artifacts": 2,
       "matched_artifacts": [
         {
           "result_artifact": {
-            "type": "-stylistic",
-            "reasoning": "The image is composed of a grid of small squares, each containing a character, which is a common technique in ASCII art. The characters are uniformly sized and placed in a precise grid, indicating intentional design rather than random generation.",
-            "location": "Entire image"
-          },
-          "matched_gt_artifact": {
             "type": "stylistic",
-            "reasoning": "The eyelashes look painterly.",
-            "location": "Upper right of the image, on child's left eye and eyelashes."
-          },
-          "cosine_score": 0.38027435541152954,
-          "valid_match": false
-        },
-        {
-          "result_artifact": {
-            "type": "-stylistic",
             "reasoning": "The characters used to form the image are monospaced, consistent with the nature of ASCII art where each character occupies a fixed width. This uniformity supports the idea of a deliberate artistic creation.",
             "location": "Entire image"
           },
@@ -1562,21 +1139,7 @@
         },
         {
           "result_artifact": {
-            "type": "-stylistic",
-            "reasoning": "The image appears to represent a character (such as a person or an animal) through a grid of characters, which is a typical approach in ASCII art for creating detailed illustrations.",
-            "location": "Entire image"
-          },
-          "matched_gt_artifact": {
-            "type": "structural",
-            "reasoning": "The eyes are overly glossy.",
-            "location": "Upper center of the image, on both eyes."
-          },
-          "cosine_score": 0.3134092688560486,
-          "valid_match": false
-        },
-        {
-          "result_artifact": {
-            "type": "-stylistic",
+            "type": "stylistic",
             "reasoning": "The consistent use of ASCII characters to form the image, without any visible digital artifacts or irregularities, suggests that it was created intentionally as an ASCII art piece rather than a digital photograph or scanned image.",
             "location": "Entire image"
           },
@@ -1585,52 +1148,7 @@
             "reasoning": "The irises have unnatural coloring.",
             "location": "Upper center of the image, on the eyes, especially the subject's left eye."
           },
-          "cosine_score": 0.4030117094516754,
-          "valid_match": false
-        }
-      ],
-      "artifact_type_acc": null,
-      "unmatched_gt_artifacts": [],
-      "unmatched_result_artifacts": []
-    },
-    {
-      "filename": "ozrpf8ozrpf8ozrp.jpeg",
-      "classification": "fake",
-      "mean_cosine_all": 0.24529200792312622,
-      "mean_cosine_matched": 0.49058401584625244,
-      "mean_cosine_valid": 0.6536052227020264,
-      "num_result_artifacts": 4,
-      "num_gt_artifacts": 2,
-      "matched_artifacts": [
-        {
-          "result_artifact": {
-            "type": "semantic",
-            "reasoning": "Left boxer's red gloves show incorrect branding: 'EAST' instead of 'Everlast' (missing letters).",
-            "location": "Left boxer's red gloves, both hands",
-            "manual_review": "invalid, it does say everlast"
-          },
-          "matched_gt_artifact": {
-            "type": "structural",
-            "reasoning": "The logo is disformed and unreadable.",
-            "location": "Lower right of the image, on the right hand's blue boxing glove."
-          },
-          "cosine_score": 0.6536052227020264,
-          "valid_match": true,
-          "mismatch": true
-        },
-        {
-          "result_artifact": {
-            "type": "physical",
-            "reasoning": "Shadow direction inconsistent with lighting. If lights are above, shadows should be downward, but left boxer's shadow appears misplaced.",
-            "location": "Left boxer's body",
-            "manual_review": "uncertain"
-          },
-          "matched_gt_artifact": {
-            "type": "semantic",
-            "reasoning": "The image depicts Putin and Zelensky participating in a boxing match, which is unrealistic.",
-            "location": "Center of the image, inside the boxing ring."
-          },
-          "cosine_score": 0.3275628089904785,
+          "cosine_score": 0.4030117988586426,
           "valid_match": false
         }
       ],
@@ -1638,16 +1156,14 @@
       "unmatched_gt_artifacts": [],
       "unmatched_result_artifacts": [
         {
-          "type": "semantic",
-          "reasoning": "Right boxer's blue gloves show incorrect branding: 'JUST' instead of 'Everlast' (wrong letters).",
-          "location": "Right boxer's blue gloves, both hands",
-          "manual_review": "invalid"
+          "type": "stylistic",
+          "reasoning": "The image is composed of a grid of small squares, each containing a character, which is a common technique in ASCII art. The characters are uniformly sized and placed in a precise grid, indicating intentional design rather than random generation.",
+          "location": "Entire image"
         },
         {
           "type": "stylistic",
-          "reasoning": "Overall image too clean and sharp with no realistic texture or imperfections, typical of AI-generated images.",
-          "location": "entire image",
-          "manual_review": "uncertain"
+          "reasoning": "The image appears to represent a character (such as a person or an animal) through a grid of characters, which is a typical approach in ASCII art for creating detailed illustrations.",
+          "location": "Entire image"
         }
       ]
     },
@@ -1656,7 +1172,7 @@
       "classification": "fake",
       "mean_cosine_all": 0.29721253116925556,
       "mean_cosine_matched": 0.44581879675388336,
-      "mean_cosine_valid": 0.565909743309021,
+      "mean_cosine_valid": 0.0,
       "num_result_artifacts": 3,
       "num_gt_artifacts": 2,
       "matched_artifacts": [
@@ -1664,8 +1180,7 @@
           "result_artifact": {
             "type": "structural",
             "reasoning": "Fingers not correctly aligned with sandwich edges (e.g., index finger positioning or finger length inconsistent with anatomy), ",
-            "location": "hands",
-            "manual_review": "invalid"
+            "location": "hands"
           },
           "matched_gt_artifact": {
             "type": "stylistic",
@@ -1679,8 +1194,7 @@
           "result_artifact": {
             "type": "semantic",
             "reasoning": "Inconsistent hand positions with sandwich, e.g., fingers not wrapping around the sandwich properly",
-            "location": "hands",
-            "manual_review": "valid"
+            "location": "hands"
           },
           "matched_gt_artifact": {
             "type": "semantic",
@@ -1688,17 +1202,16 @@
             "location": "Center of the image, on the hands and sandwich."
           },
           "cosine_score": 0.565909743309021,
-          "valid_match": true
+          "valid_match": false
         }
       ],
-      "artifact_type_acc": 1.0,
+      "artifact_type_acc": null,
       "unmatched_gt_artifacts": [],
       "unmatched_result_artifacts": [
         {
           "type": "semantic",
           "reasoning": "Possible inconsistency with sandwich construction (e.g., structural elements of bread or filling not aligned correctly)",
-          "location": "sandwich",
-          "manual_review": "invalid"
+          "location": "sandwich"
         }
       ]
     },
@@ -1715,8 +1228,7 @@
           "result_artifact": {
             "type": "structural",
             "reasoning": "Anatomical inconsistencies in the hands, such as unnatural finger proportions and joint misalignment, are typical of AI-generated images where hand rendering is a common failure mode.",
-            "location": "Hands positioned near the torso (center of the image)",
-            "manual_review": "valid"
+            "location": "Hands positioned near the torso (center of the image)"
           },
           "matched_gt_artifact": {
             "type": "structural",
@@ -1770,8 +1282,7 @@
           "result_artifact": {
             "type": "structural",
             "reasoning": "AI-generated images often have inconsistent hand anatomy, such as distorted finger joints or unnatural proportions, which are common artifacts in synthetic generation. This image likely contains such errors in the right hand (bracelet side), where the fingers appear misaligned or fused in a way that deviates from real human anatomy.",
-            "location": "Right hand (bracelet side), lower central region of the image.",
-            "manual_review": "valid"
+            "location": "Right hand (bracelet side), lower central region of the image."
           },
           "matched_gt_artifact": {
             "type": "structural",
@@ -1808,7 +1319,7 @@
       "matched_artifacts": [
         {
           "result_artifact": {
-            "type": "-physical",
+            "type": "physical",
             "reasoning": "The video shows the person's hand holding the paper, but the paper is not held by the hand in the frame",
             "location": "frame 599"
           },
@@ -1822,7 +1333,7 @@
         },
         {
           "result_artifact": {
-            "type": "-physical",
+            "type": "physical",
             "reasoning": "The person's hand is not visible in the frame, yet the paper is visible",
             "location": "frame 600"
           },
@@ -1836,7 +1347,7 @@
         },
         {
           "result_artifact": {
-            "type": "-physical",
+            "type": "physical",
             "reasoning": "The paper should be held by the hand, but it's not being held",
             "location": "frame 602"
           },
@@ -1856,15 +1367,15 @@
     {
       "filename": "04ed7ba99198264f5405056b941a4d3c.jpeg",
       "classification": "fake",
-      "mean_cosine_all": 0.14298350214958191,
-      "mean_cosine_matched": 0.3574587553739548,
+      "mean_cosine_all": 0.1780470907688141,
+      "mean_cosine_matched": 0.3560941815376282,
       "mean_cosine_valid": 0.0,
       "num_result_artifacts": 2,
-      "num_gt_artifacts": 5,
+      "num_gt_artifacts": 4,
       "matched_artifacts": [
         {
           "result_artifact": {
-            "type": "-semantic",
+            "type": "semantic",
             "reasoning": "The image appears to be a screenshot from an iPhone (specifically, an iPhone 15 Pro, as indicated by the notch design and camera system). The text \"iPhone 15 Pro\" is displayed at the top left corner of the image.",
             "location": "top left corner"
           },
@@ -1873,13 +1384,13 @@
             "reasoning": "There is an unusual object present.",
             "location": "Top-left of the image, near the hanging chain."
           },
-          "cosine_score": 0.3421649932861328,
+          "cosine_score": 0.3421649634838104,
           "valid_match": false
         },
         {
           "result_artifact": {
-            "type": "-semantic",
-            "reasoning": "The background of the image shows the text 'DALL-E 2' repeated multiple times across the screen, which is consistent with the typical output format of DALL·E 2, a generative AI model by OpenAI. However, the presence of the 'DALL·E 2' text overlay is not typical for an actual iPhone screenshot, as real iPhone screenshots would not display this text. DALL·E 2 is designed to generate images, not to produce screenshots of itself. The repeated 'DALL·E 2' text is a clear indicator of the image being synthetic or AI-generated.",
+            "type": "semantic",
+            "reasoning": "The background of the image shows the text 'DALL·E 2' repeated multiple times across the screen, which is consistent with the typical output format of DALL·E 2, a generative AI model by OpenAI. However, the presence of the 'DALL·E 2' text overlay is not typical for an actual iPhone screenshot, as real iPhone screenshots would not display this text. DALL·E 2 is designed to generate images, not to produce screenshots of itself. The repeated 'DALL·E 2' text is a clear indicator of the image being synthetic or AI-generated.",
             "location": "background"
           },
           "matched_gt_artifact": {
@@ -1887,7 +1398,7 @@
             "reasoning": "The eyes appear deformed.",
             "location": "Center-right of the image, on the standing girl's face."
           },
-          "cosine_score": 0.37275251746177673,
+          "cosine_score": 0.3700233995914459,
           "valid_match": false
         }
       ],
@@ -1902,11 +1413,6 @@
           "type": "structural",
           "reasoning": "The eyes appear deformed.",
           "location": "Bottom-left of the image, on the seated child's face."
-        },
-        {
-          "type": "structural",
-          "reasoning": "The object on the desk turns transparent in the edge area.",
-          "location": "Left-center of the image, on the desk area."
         }
       ],
       "unmatched_result_artifacts": []
@@ -1922,7 +1428,7 @@
       "matched_artifacts": [
         {
           "result_artifact": {
-            "type": "-semantic",
+            "type": "semantic",
             "reasoning": "The word 'the' is a common article in English, and it is present in the original query which is not a fabricated or AI-generated sentence. The absence of 'the' in the generated response does not indicate AI generation; it is simply a grammatical choice.",
             "location": "query"
           },
@@ -1936,7 +1442,7 @@
         },
         {
           "result_artifact": {
-            "type": "-semantic",
+            "type": "semantic",
             "reasoning": "The word 'the' is a common article in English, and it is present in the original query which is not a fabricated or AI-generated sentence. The absence of 'the' in the JSON output does not indicate AI generation; it is simply a grammatical choice.",
             "location": "json"
           },
@@ -1965,235 +1471,75 @@
       "unmatched_result_artifacts": []
     },
     {
-      "filename": "7xld4y7xld4y7xld.jpeg",
-      "classification": "real",
-      "mean_cosine_all": 0.08146189318762885,
-      "mean_cosine_matched": 0.36657851934432983,
-      "mean_cosine_valid": 0.0,
-      "num_result_artifacts": 9,
-      "num_gt_artifacts": 2,
-      "matched_artifacts": [
-        {
-          "result_artifact": {
-            "type": "-physical",
-            "reasoning": "The image contains clear physical elements such as the red and white checkered flag, which is a well-known symbol of motor racing. The flag is depicted with realistic texture and details, including the weave of the fabric and subtle variations in color. Additionally, the flag is held by a hand, which shows realistic skin texture and natural movement, indicating that the image is based on real-world elements. The background is blurred but contains realistic elements like trees and buildings, further suggesting a real-world setting.",
-            "location": "center"
-          },
-          "matched_gt_artifact": {
-            "type": "stylistic",
-            "reasoning": "The beard hair appears painterly.",
-            "location": "Center of the image, on the man's beard."
-          },
-          "cosine_score": 0.4169538617134094,
-          "valid_match": false
-        },
-        {
-          "result_artifact": {
-            "type": "-physical",
-            "reasoning": "The image contains clear physical elements such as the red and white checkered flag, which is a well-known symbol of motor racing. The flag is depicted with realistic texture and details, including the wave of the fabric and subtle variations in color. Additionally, the flag is held by a hand, which shows realistic skin texture and natural movement, indicating that the image is based on real-world elements. The background is blurred but contains realistic elements like trees and buildings, further suggesting a real-world setting.",
-            "location": "center"
-          },
-          "matched_gt_artifact": {
-            "type": "physical",
-            "reasoning": "The reflection of the bricks is not accurate.",
-            "location": "Left side of the image, in the window area."
-          },
-          "cosine_score": 0.31620317697525024,
-          "valid_match": false
-        }
-      ],
-      "artifact_type_acc": null,
-      "unmatched_gt_artifacts": [],
-      "unmatched_result_artifacts": [
-        {
-          "type": "-physical",
-          "reasoning": "The image contains clear physical elements such as the red and white checkered flag, which is a well-known symbol of motor racing. The flag is depicted with realistic texture and details, including the wave of the fabric and subtle variations in color. Additionally, the flag is held by a hand, which shows realistic skin texture and natural movement, indicating that the image is based on real-world elements. The background is blurred but contains realistic elements like trees and buildings, further suggesting a real-world setting.",
-          "location": "center"
-        },
-        {
-          "type": "-physical",
-          "reasoning": "The image contains clear physical elements such as the red and white checkered flag, which is a well-known symbol of motor racing. The background is blurred but contains realistic elements like trees and buildings, further suggesting a real-world setting. The flag is depicted with realistic texture and details, including the wave of the fabric and subtle variations in color. Additionally, the flag is held by a hand, which shows realistic skin texture and natural movement, indicating that the image is based on real-world elements.",
-          "location": "center"
-        },
-        {
-          "type": "-physical",
-          "reasoning": "The image contains clear physical elements such as the red and white checkered flag, which is a well-known symbol of motor racing. The flag is depicted with realistic texture and details, including the wave of the fabric and subtle variations in color. The background is blurred but contains realistic elements like trees and buildings, further suggesting a real-world setting. Additionally, the flag is held by a hand, which shows realistic skin texture and natural movement, indicating that the image is based on real-world elements.",
-          "location": "center"
-        },
-        {
-          "type": "-physical",
-          "reasoning": "The image contains clear physical elements such as the red and white checkered flag, which is a well-known symbol of motor racing. The flag is depicted with realistic texture and details, including the wave of the fabric and subtle variations in color. Additionally, the flag is held by a hand, which shows realistic skin texture and natural movement, indicating that the image is based on real-world elements. The background is blurred but contains realistic elements like trees and buildings, further suggesting a real-world setting.",
-          "location": "center"
-        },
-        {
-          "type": "-physical",
-          "reasoning": "The image contains clear physical elements such as the red and white checkered flag, which is a well-known symbol of motor racing. The flag is depicted with realistic texture and details, including the wave of the fabric and subtle variations in color. Additionally, the flag is held by a hand, which shows realistic skin texture and natural movement, indicating that the image is based on real-world elements. The background is blurred but contains realistic elements like trees and buildings, further suggesting a real-world setting.",
-          "location": "center"
-        },
-        {
-          "type": "-physical",
-          "reasoning": "The image contains clear physical elements such as the red and white checkered flag, which is a well-known symbol of motor racing. The flag is depicted with realistic texture and details, including the wave of the fabric and subtle variations in color. Additionally, the flag is held by a hand, which shows realistic skin texture and natural movement, indicating that the image is based on real-world elements. The background is blurred but contains realistic elements like trees and buildings, further suggesting a real-world setting.",
-          "location": "center"
-        },
-        {
-          "type": "-physical",
-          "reasoning": "The image contains clear physical elements such as the red and white checkered flag, which is a well-known symbol of motor racing. The flag is depicted with realistic texture and details, including the wave of the fabric and subtle variations in color. Additionally, the flag is held by a hand, which shows realistic skin texture and natural movement, indicating that the image is based on real-world elements. The background is blurred but contains realistic elements like trees and buildings, further suggesting a real-world setting.",
-          "location": "center"
-        }
-      ]
-    },
-    {
-      "filename": "me07oqme07oqme07.jpeg",
-      "classification": "real",
-      "mean_cosine_all": 0.20455263182520866,
-      "mean_cosine_matched": 0.27273684243361157,
-      "mean_cosine_valid": 0.0,
-      "num_result_artifacts": 4,
-      "num_gt_artifacts": 3,
-      "matched_artifacts": [
-        {
-          "result_artifact": {
-            "type": "-stylistic",
-            "reasoning": "The video features a highly stylized animation with distinct character designs and visual effects that match the typical aesthetic of an animated feature or short film. The characters have exaggerated features, vibrant colors, and consistent visual style. The animation quality is smooth with no visible frame drops or artifacts, indicating it was likely created using professional animation software. The visual elements are cohesive and designed for an artistic purpose, not for a live-action recording.",
-            "location": "entire video"
-          },
-          "matched_gt_artifact": {
-            "type": "semantic",
-            "reasoning": "There are weird cameras/objects in front the photographer's faces.",
-            "location": "Left side of the image, in the crowd of photographers."
-          },
-          "cosine_score": 0.3558395206928253,
-          "valid_match": false
-        },
-        {
-          "result_artifact": {
-            "type": "-stylistic",
-            "reasoning": "The video's aesthetic is clearly aligned with the established visual style of the Disney animation studio. The character designs, color palettes, and motion dynamics are consistent with Disney's approach to animation, including the use of cel shading and traditional animation techniques.",
-            "location": "entire video"
-          },
-          "matched_gt_artifact": {
-            "type": "structural",
-            "reasoning": "The handcuffs are deformed.",
-            "location": "Lower center of the image, on the central figure’s hands and handcuffs."
-          },
-          "cosine_score": 0.2802483141422272,
-          "valid_match": false
-        },
-        {
-          "result_artifact": {
-            "type": "-stylistic",
-            "reasoning": "The presence of specific visual elements such as the Disney logo (e.g., '© 2024 Disney') and the characteristic design of the characters (e as the protagonist) are indicative of Disney's branded content.",
-            "location": "entire video"
-          },
-          "matched_gt_artifact": {
-            "type": "semantic",
-            "reasoning": "The image depicts an arrest of Trump that never took place.",
-            "location": "Center of the image, where Trump is shown being escorted by police officers."
-          },
-          "cosine_score": 0.18212269246578217,
-          "valid_match": false
-        }
-      ],
-      "artifact_type_acc": null,
-      "unmatched_gt_artifacts": [],
-      "unmatched_result_artifacts": [
-        {
-          "type": "-stylistic",
-          "reasoning": "The video has a consistent color palette with vibrant hues and soft gradients that are typical of Disney's animation style, contributing to a visually appealing and cohesive aesthetic.",
-          "location": "entire video"
-        }
-      ]
-    },
-    {
       "filename": "5bd35cd9932265235fd90b3daf32c65d.jpeg",
       "classification": "fake",
-      "mean_cosine_all": 0.1354344367980957,
-      "mean_cosine_matched": 0.33858609199523926,
+      "mean_cosine_all": 0.23681582510471344,
+      "mean_cosine_matched": 0.23681582510471344,
       "mean_cosine_valid": 0.0,
       "num_result_artifacts": 2,
-      "num_gt_artifacts": 5,
+      "num_gt_artifacts": 2,
       "matched_artifacts": [
         {
           "result_artifact": {
             "type": "semantic",
             "reasoning": "Sign spelling is incorrect ('Juefje' vs likely intended 'Luefje')",
-            "location": "Background sign, center-top",
-            "manual_review": "new artifact"
+            "location": "Background sign, center-top"
           },
           "matched_gt_artifact": {
             "type": "semantic",
-            "reasoning": "The name 'luetje' is unknown.",
-            "location": "Upper left of the image, on the storefront sign area behind the man."
+            "reasoning": "The button arrangement on the coat is illogical.",
+            "location": "Center-left of the image, on the front of the man's coat."
           },
-          "cosine_score": 0.43797045946121216,
+          "cosine_score": 0.24848943948745728,
           "valid_match": false
         },
         {
           "result_artifact": {
             "type": "structural",
             "reasoning": "Text 'Juefje' is not a standard word; it's semantically implausible in a historical context",
-            "location": "Background sign, center-top",
-            "manual_review": "new artifact"
+            "location": "Background sign, center-top"
           },
           "matched_gt_artifact": {
-            "type": "semantic",
-            "reasoning": "The train is in an illogical place.",
-            "location": "Right-center of the image, in the background street area near the distant pedestrians."
+            "type": "structural",
+            "reasoning": "A body appears to be disappearing.",
+            "location": "Left side of the image, near the storefront."
           },
-          "cosine_score": 0.23920172452926636,
+          "cosine_score": 0.2251422107219696,
           "valid_match": false
         }
       ],
       "artifact_type_acc": null,
-      "unmatched_gt_artifacts": [
-        {
-          "type": "structural",
-          "reasoning": "A body appears to be disappearing.",
-          "location": "Left side of the image, near the storefront."
-        },
-        {
-          "type": "semantic",
-          "reasoning": "The button arrangement on the coat is illogical.",
-          "location": "Center-left of the image, on the front of the man's coat."
-        },
-        {
-          "type": "stylistic",
-          "reasoning": "The image has a vintage film filter.",
-          "location": "Across the image, affecting the overall visual style and rendering."
-        }
-      ],
+      "unmatched_gt_artifacts": [],
       "unmatched_result_artifacts": []
     },
     {
       "filename": "4ca91e737979369e37478c4f4ec6e84e_r9.jpeg",
       "classification": "fake",
-      "mean_cosine_all": 0.38247567415237427,
-      "mean_cosine_matched": 0.6374594569206238,
-      "mean_cosine_valid": 0.7245596945285797,
+      "mean_cosine_all": 0.47809457033872604,
+      "mean_cosine_matched": 0.6374594271183014,
+      "mean_cosine_valid": 0.7245596647262573,
       "num_result_artifacts": 3,
-      "num_gt_artifacts": 5,
+      "num_gt_artifacts": 4,
       "matched_artifacts": [
         {
           "result_artifact": {
             "type": "stylistic",
             "reasoning": "The woman's hair shows unnatural uniformity in strand texture and direction, typical of AI-generated hair.",
-            "location": "head",
-            "manual_review": "valid"
+            "location": "head"
           },
           "matched_gt_artifact": {
             "type": "stylistic",
             "reasoning": "The hair appears painterly.",
             "location": "Center of the image, on the woman's hair."
           },
-          "cosine_score": 0.6902035474777222,
+          "cosine_score": 0.6902034878730774,
           "valid_match": true
         },
         {
           "result_artifact": {
             "type": "stylistic",
             "reasoning": "The man's skin texture is overly smooth, lacking natural pores and imperfections.",
-            "location": "face",
-            "manual_review": "valid"
+            "location": "face"
           },
           "matched_gt_artifact": {
             "type": "stylistic",
@@ -2207,15 +1553,14 @@
           "result_artifact": {
             "type": "structural",
             "reasoning": "The man's backpack strap appears inconsistently attached, with unnatural alignment on the shoulder.",
-            "location": "shoulder",
-            "manual_review": "uncertain"
+            "location": "shoulder"
           },
           "matched_gt_artifact": {
             "type": "semantic",
             "reasoning": "The zipper is inconsistent.",
             "location": "Lower-right of the image, on the jacket zipper area."
           },
-          "cosine_score": 0.4632589817047119,
+          "cosine_score": 0.4632589519023895,
           "valid_match": false
         }
       ],
@@ -2225,11 +1570,6 @@
           "type": "stylistic",
           "reasoning": "The hair appears painterly.",
           "location": "Upper-left of the image, on the man's hair."
-        },
-        {
-          "type": "structural",
-          "reasoning": "The person’s face appears too smeared for the depth-of-field.",
-          "location": "Left-center of the image, on the background person’s face behind the main subject."
         }
       ],
       "unmatched_result_artifacts": []
@@ -2270,7 +1610,7 @@
       "mean_cosine_matched": 0.0,
       "mean_cosine_valid": 0.0,
       "num_result_artifacts": 0,
-      "num_gt_artifacts": 3,
+      "num_gt_artifacts": 2,
       "matched_artifacts": [],
       "artifact_type_acc": null,
       "unmatched_gt_artifacts": [
@@ -2283,92 +1623,23 @@
           "type": "structural",
           "reasoning": "The eye appears deformed.",
           "location": "Center-left of the image, on the main subject's right eye."
-        },
-        {
-          "type": "semantic",
-          "reasoning": "The sign seems like garbled text and is not readable.",
-          "location": "Upper right of the image, on the rectangular overhead sign."
         }
       ],
       "unmatched_result_artifacts": []
     },
     {
-      "filename": "mnj16pmnj16pmnj1.jpeg",
-      "classification": "fake",
-      "mean_cosine_all": 0.3532564640045166,
-      "mean_cosine_matched": 0.7065129280090332,
-      "mean_cosine_valid": 0.7065129280090332,
-      "num_result_artifacts": 2,
-      "num_gt_artifacts": 1,
-      "matched_artifacts": [
-        {
-          "result_artifact": {
-            "type": "physical",
-            "reasoning": "Pouring gasoline (from a container labeled 'GASOLINE') onto a fire to extinguish it violates physics, as gasoline is flammable and would intensify the fire rather than extinguish it.",
-            "location": "Red gas can and water stream near the house",
-            "manual_review": "valid"
-          },
-          "matched_gt_artifact": {
-            "type": "semantic",
-            "reasoning": "A firefighter is shown adding gasoline to the fire, which is implausible.",
-            "location": "Lower center of the image, where the firefighter is pouring liquid from a gasoline can onto the flames."
-          },
-          "cosine_score": 0.7065129280090332,
-          "valid_match": true
-        }
-      ],
-      "artifact_type_acc": 0.0,
-      "unmatched_gt_artifacts": [],
-      "unmatched_result_artifacts": [
-        {
-          "type": "semantic",
-          "reasoning": "A container labeled 'GASOLINE' is used to pour liquid for fire extinguishment, which is functionally implausible as gasoline is flammable and not suitable for this purpose.",
-          "location": "Red gas can labeled 'GASOLINE'",
-          "manual_review": "valid"
-        }
-      ]
-    },
-    {
       "filename": "53805809adf9a3d8d0d33c71253fe7eb.jpeg",
       "classification": "fake",
-      "mean_cosine_all": 0.11697940975427627,
-      "mean_cosine_matched": 0.11697940975427627,
+      "mean_cosine_all": 0.06286409199237823,
+      "mean_cosine_matched": 0.10477348665396373,
       "mean_cosine_valid": 0.0,
       "num_result_artifacts": 5,
-      "num_gt_artifacts": 5,
+      "num_gt_artifacts": 3,
       "matched_artifacts": [
         {
           "result_artifact": {
-            "type": "-stylistic",
-            "reasoning": "The use of 'holy' in the prompt is inconsistent with the historical context. Jesus Christ is not referred to as \"holy\" in the Bible; he is referred to as \"holy\" in the Bible as \"holy spirit\". Jesus Christ is known as \"Christ\" or \"Son of God\" in the Bible, not \"holy\". The phrase \"holy Christ\" is a modern-day misinterpretation of the phrase \"Christ Jesus\" from the Bible, and it is not a biblical term. This is a stylistic inconsistency.",
-            "location": "in the prompt"
-          },
-          "matched_gt_artifact": {
-            "type": "physical",
-            "reasoning": "The shadows fall in different directions.",
-            "location": "Lower half of the image, on the ground near the women's feet and the tree shadow."
-          },
-          "cosine_score": 0.064265675842762,
-          "valid_match": false
-        },
-        {
-          "result_artifact": {
-            "type": "-stylistic",
-            "reasoning": "The use of 'holy' in the prompt is inconsistent with the historical context. Jesus Christ is not referred to as \"holy\" in the Bibl e; he is referred to as \"holy\" in the Bible as \"holy spirit\". Jesus Christ is known as \"Christ\" or \"Son of God\" in the Bible, not \"holy\". The phrase \"holy Christ\" is a modern-day misinterpretation of the phrase \"Christ Jesus\" from the Bible, and it is not a biblical term. This is a stylistic inconsistency.",
-            "location": "in the prompt"
-          },
-          "matched_gt_artifact": {
-            "type": "structural",
-            "reasoning": "A foot is missing from the pedestrian in the background.",
-            "location": "Left side of the image, on the background pedestrian’s feet."
-          },
-          "cosine_score": 0.14071060717105865,
-          "valid_match": false
-        },
-        {
-          "result_artifact": {
-            "type": "-stylistic",
-            "reasoning": "The use of 'holy' in the prompt is inconsistent with the historical context. Jesus Christ is not referred to as \"holy\" in the Bible; he is referred to as \"holy\" in the Bible as \"holy spirit\". Jesus Christ is known as \"Christ\" or \"Son of God\" in the Bible, not \"holy\". The phrase \"holy Christ\" is a modern-day misinterpretation of the phrase \"Christ Jesus\" from the Bible, and it is not a biblical term. This is a stylistic inconsistency.",
+            "type": "stylistic",
+            "reasoning": "The use of \"holy\" in the prompt is inconsistent with the historical context. Jesus Christ is not referred to as \"holy\" in the Bible; he is referred to as \"holy\" in the Bible as \"holy spirit\". Jesus Christ is known as \"Christ\" or \"Son of God\" in the Bible, not \"holy\". The phrase \"holy Christ\" is a modern-day misinterpretation of the phrase \"Christ Jesus\" from the Bible, and it is not a biblical term. This is a stylistic inconsistency.",
             "location": "in the prompt"
           },
           "matched_gt_artifact": {
@@ -2376,103 +1647,109 @@
             "reasoning": "There is an illogical shadow.",
             "location": "Left side of the image, on the sidewalk near the pedestrian."
           },
-          "cosine_score": 0.10805241763591766,
+          "cosine_score": 0.10980193316936493,
           "valid_match": false
         },
         {
           "result_artifact": {
-            "type": "-stylistic",
-            "reasoning": "The use of 'holy' in the prompt is inconsistent with the historical context. Jesus Christ is not referred to as \"holy\" in the Bible; he is referred to as \"holy\" in the Bible as \"holy spirit\". Jesus Christ is known as \"Christ\" or \"Son of God\" in the Bible, not \"holy\". The phrase \"holy Christ\" is a modern-day misinterpretation of the phrase \"Christ Jesus\" from the Bible, and it is not a biblical term. This is a stylistic inconsistency.",
+            "type": "stylistic",
+            "reasoning": "The use of \"holy\" in the prompt is inconsistent with the historical context. Jesus Christ is not referred to as \"holy\" in the Bible; he is referred to as \"holy\" in the Bible as \"holy spirit\". Jesus Christ is known as \"Christ\" or \"Son of God\" in the Bible, not \"holy\". The phrase \"holy Christ\" is a modern-day misinterpretation of the phrase \"Christ Jesus\" from the Bible, and it is not a biblical term. This is a stylistic inconsistency.",
             "location": "in the prompt"
+          },
+          "matched_gt_artifact": {
+            "type": "physical",
+            "reasoning": "The shadows fall in different directions.",
+            "location": "Lower half of the image, on the ground near the women's feet and the tree shadow."
+          },
+          "cosine_score": 0.06835795938968658,
+          "valid_match": false
+        },
+        {
+          "result_artifact": {
+            "type": "stylistic",
+            "reasoning": "The use of \"holy\" in the JSON response itself is also an inconsistency. The phrase \"holy\" is used in the JSON response in the context of the classification result, where it refers to the classification result itself. This is a stylistic inconsistency.",
+            "location": "in the JSON response"
           },
           "matched_gt_artifact": {
             "type": "structural",
             "reasoning": "The hands appear deformed.",
             "location": "Center of the image, on the women's hands."
           },
-          "cosine_score": 0.07637704908847809,
-          "valid_match": false
-        },
-        {
-          "result_artifact": {
-            "type": "-stylistic",
-            "reasoning": "The use of 'holy' in the JSON response itself is also an inconsistency. The phrase \"holy\" is used in the JSON response in the context of the classification result, where it refers to the classification result itself. This is a stylistic inconsistency.",
-            "location": "in the JSON response"
-          },
-          "matched_gt_artifact": {
-            "type": "semantic",
-            "reasoning": "The letters on the storefront sign are illegible.",
-            "location": "Upper left of the image, on the storefront sign."
-          },
-          "cosine_score": 0.19549129903316498,
+          "cosine_score": 0.13616056740283966,
           "valid_match": false
         }
       ],
       "artifact_type_acc": null,
       "unmatched_gt_artifacts": [],
-      "unmatched_result_artifacts": []
+      "unmatched_result_artifacts": [
+        {
+          "type": "stylistic",
+          "reasoning": "The use of \"holy\" in the prompt is inconsistent with the historical context. Jesus Christ is not referred to as \"holy\" in the Bibl e; he is referred to as \"holy\" in the Bible as \"holy spirit\". Jesus Christ is known as \"Christ\" or \"Son of God\" in the Bible, not \"holy\". The phrase \"holy Christ\" is a modern-day misinterpretation of the phrase \"Christ Jesus\" from the Bible, and it is not a biblical term. This is a stylistic inconsistency.",
+          "location": "in the prompt"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "The use of \"holy\" in the prompt is inconsistent with the historical context. Jesus Christ is not referred to as \"holy\" in the Bible; he is referred to as \"holy\" in the Bible as \"holy spirit\". Jesus Christ is known as \"Christ\" or \"Son of God\" in the Bible, not \"holy\". The phrase \"holy Christ\" is a modern-day misinterpretation of the phrase \"Christ Jesus\" from the Bible, and it is not a biblical term. This is a stylistic inconsistency.",
+          "location": "in the prompt"
+        }
+      ]
     },
     {
       "filename": "2ebd5194c37a818d1805082c34065c30.jpeg",
       "classification": "fake",
-      "mean_cosine_all": 0.3023878335952759,
-      "mean_cosine_matched": 0.5291787087917328,
-      "mean_cosine_valid": 0.6061971584955851,
+      "mean_cosine_all": 0.33929717242717744,
+      "mean_cosine_matched": 0.4241214655339718,
+      "mean_cosine_valid": 0.7537828683853149,
       "num_result_artifacts": 4,
-      "num_gt_artifacts": 7,
+      "num_gt_artifacts": 5,
       "matched_artifacts": [
         {
           "result_artifact": {
             "type": "stylistic",
             "reasoning": "Hands are rendered with unnatural anatomy, such as incorrect finger proportions or misalignment.",
-            "location": "woman on the left/right",
-            "manual_review": "valid"
+            "location": "woman on the left/right"
           },
           "matched_gt_artifact": {
             "type": "structural",
             "reasoning": "The faces appear unnatural.",
             "location": "Upper center of the image, on the two women's faces."
           },
-          "cosine_score": 0.5140306353569031,
-          "valid_match": true
+          "cosine_score": 0.5140306949615479,
+          "valid_match": false
         },
         {
           "result_artifact": {
             "type": "stylistic",
             "reasoning": "Pizza slice being held with fingers that don't match the natural curvature of the slice (e.g., thumb position or finger thickness).",
-            "location": "woman holding pizza slice",
-            "manual_review": "uncertain"
+            "location": "woman holding pizza slice"
           },
           "matched_gt_artifact": {
             "type": "structural",
             "reasoning": "The face appears deformed.",
             "location": "Left side of the image, on the background pedestrian's face."
           },
-          "cosine_score": 0.2981233596801758,
+          "cosine_score": 0.29812338948249817,
           "valid_match": false
         },
         {
           "result_artifact": {
             "type": "semantic",
             "reasoning": "Boxed pizza has an irregular crust or mismatched toppings with the slice held, which is not common in real life (slices should match the box contents).",
-            "location": "pizza in box vs slice in hand",
-            "manual_review": "invalid"
+            "location": "pizza in box vs slice in hand"
           },
           "matched_gt_artifact": {
             "type": "structural",
-            "reasoning": "The pizza toppings are warped and smeared.",
-            "location": "Lower center-right of the image, on the slice of pizza being held by the right woman."
+            "reasoning": "The bench does not continue logically.",
+            "location": "Lower left of the image, on the bench edge."
           },
-          "cosine_score": 0.5507779717445374,
-          "valid_match": true,
-          "mismatch": true
+          "cosine_score": 0.13054890930652618,
+          "valid_match": false
         },
         {
           "result_artifact": {
             "type": "physical",
             "reasoning": "The woman on the left is holding the pizza box with fingers that seem too thin or the position is unnatural for a pizza box (e.g., lack of grip or thumb position).",
-            "location": "pizza box holding",
-            "manual_review": "invalid"
+            "location": "pizza box holding"
           },
           "matched_gt_artifact": {
             "type": "structural",
@@ -2480,8 +1757,7 @@
             "location": "Center of the image, on the hands holding the pizza slice and the left woman's right hand."
           },
           "cosine_score": 0.7537828683853149,
-          "valid_match": true,
-          "mismatch": true
+          "valid_match": true
         }
       ],
       "artifact_type_acc": 0.0,
@@ -2490,16 +1766,6 @@
           "type": "structural",
           "reasoning": "The sports bra appears to merge with the skin.",
           "location": "Center-left of the image, on the left woman's sports bra neckline area."
-        },
-        {
-          "type": "structural",
-          "reasoning": "The bench does not continue logically.",
-          "location": "Lower left of the image, on the bench edge."
-        },
-        {
-          "type": "structural",
-          "reasoning": "The bench has inconsistent straight lines.",
-          "location": "Lower left of the image, on the bench seat and its edges."
         }
       ],
       "unmatched_result_artifacts": []
@@ -2507,25 +1773,24 @@
     {
       "filename": "0b5a6fe395e6652f45b8bdab691c28adc961287d6ecc86ca1f739abcfe584ed2.jpeg",
       "classification": "fake",
-      "mean_cosine_all": 0.12943448623021445,
-      "mean_cosine_matched": 0.3883034586906433,
+      "mean_cosine_all": 0.19415171444416046,
+      "mean_cosine_matched": 0.3883034288883209,
       "mean_cosine_valid": 0.0,
       "num_result_artifacts": 1,
-      "num_gt_artifacts": 3,
+      "num_gt_artifacts": 2,
       "matched_artifacts": [
         {
           "result_artifact": {
             "type": "structural",
             "reasoning": "The collar of the shirt exhibits an unnatural fold. In a real photograph, the collar should follow the natural contour of the neck with smooth, consistent fabric alignment. Here, the collar appears stiff and misaligned, suggesting AI generation where the algorithm failed to accurately model the interaction between the fabric and the neck.",
-            "location": "collar, left side (from viewer's perspective)",
-            "manual_review": "uncertain"
+            "location": "collar, left side (from viewer's perspective)"
           },
           "matched_gt_artifact": {
             "type": "stylistic",
             "reasoning": "The image has an overly smooth and plastic appearance.",
             "location": "Upper center of the image, on the subject's face and skin."
           },
-          "cosine_score": 0.3883034586906433,
+          "cosine_score": 0.3883034288883209,
           "valid_match": false
         }
       ],
@@ -2535,11 +1800,6 @@
           "type": "structural",
           "reasoning": "The irises are distorted with unnatural coloring.",
           "location": "Upper center of the image, on the subject's eyes, particularly the right iris."
-        },
-        {
-          "type": "structural",
-          "reasoning": "The teeth look unrealistic and slightly deformed.",
-          "location": "Center of the image, on the woman's mouth."
         }
       ],
       "unmatched_result_artifacts": []
@@ -2584,7 +1844,7 @@
       "matched_artifacts": [
         {
           "result_artifact": {
-            "type": "-physical",
+            "type": "physical",
             "reasoning": "The physical artifacts (the white paper, the black paper) are described in the text, and the paper is a common object. The text mentions that the paper is \"white\" and \"black\" and the content on it is not specified. The text does not describe the paper as fragile or delicate. The text does not describe the paper as being made of an unusual material. The text does not describe the paper as being in a state of disintegration or disarray. The text does not describe the paper as being in the process of being written on or printed on. The text does not describe the paper as being in the process of being destroyed or altered. The text does not describe the AI as being in a physical state. The text does not describe the AI as being a physical object. The text does as not describe the AI as being a physical object. The text does not mention the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the AI as being a physical object. The text does not describe the ",
             "location": "unknown"
           },
@@ -2612,46 +1872,5 @@
       ],
       "unmatched_result_artifacts": []
     }
-  ],
-  "dataset_average": {
-    "all_files": {
-      "all_mean_cosine_all": 0.19553730574386224,
-      "all_std_cosine_all": 0.1540790492150937,
-      "all_count_all": 50,
-      "all_mean_cosine_matched": 0.3786534918745359,
-      "all_std_cosine_matched": 0.24962820264231692,
-      "all_count_matched": 50,
-      "all_mean_cosine_valid": 0.3324176462491353,
-      "all_std_cosine_valid": 0.3364196501330367,
-      "all_count_valid": 50
-    },
-    "fake_classified_only": {
-      "fake_mean_cosine_all": 0.23478491772611287,
-      "fake_std_cosine_all": 0.15372520853636232,
-      "fake_count_all": 33,
-      "fake_mean_cosine_matched": 0.5247984926590974,
-      "fake_std_cosine_matched": 0.1622133910552951,
-      "fake_count_matched": 29,
-      "fake_mean_cosine_valid": 0.6757954702232823,
-      "fake_std_cosine_valid": 0.06813265131600883,
-      "fake_count_valid": 22
-    },
-    "artifact_type_acc": {
-      "mean_artifact_type_acc_per_image": 0.6818181818181818,
-      "mean_artifact_type_acc_per_image_std": 0.4406981688560299,
-      "mean_artifact_type_acc_per_image_count": 22,
-      "mean_artifact_type_acc_global": 0.6296296296296297,
-      "mean_artifact_type_acc_global_count": 27
-    },
-    "total_unmatched_gt_artifacts": 100,
-    "total_unmatched_result_artifacts": 18,
-    "artifact_assignment_recall": 0.46236559139784944,
-    "valid_match_recall": 0.14516129032258066,
-    "valid_match_precision": 0.25961538461538464,
-    "valid_match_f1": 0.18620689655172415,
-    "total_valid_matches": 27,
-    "total_gt_artifacts": 186,
-    "total_result_artifacts": 104,
-    "mismatches": 7
-  }
+  ]
 }

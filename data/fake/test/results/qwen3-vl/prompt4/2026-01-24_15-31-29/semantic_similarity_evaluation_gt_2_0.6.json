@@ -7,10 +7,95 @@
   "semantic_model": "all-mpnet-base-v2",
   "comparison": "/home/usluesyr/ai_image_detector/data/ground_truth/gt_2/json/gt_2.json",
   "threshold": 0.6,
+  "split": "fake",
   "image_count": 50,
   "detected_fake": 16,
   "detected_real": 34,
   "acc": 0.32,
+  "classification_metrics": {
+    "total_images": 50,
+    "true_positives": 16,
+    "false_negatives": 34,
+    "recall_sensitivity": 0.32,
+    "false_negative_rate": 0.68,
+    "false_negative_files": [
+      "ccbcb5187879ea5f9ef2871e59b94651.jpeg",
+      "1e4cc5c247a3bdf572d4969c07992b34.jpeg",
+      "h1gpeyh1gpeyh1gp.jpg",
+      "5d04c3a88fe8c5d2d7c7a8877e7880fe.jpeg",
+      "3dbe741ec8da19e60d694783dada6491.jpeg",
+      "2ddf7a07da956c375d9d512cf876bd871f5a3150db7b68b7ef25c1c91a694238_r6.jpeg",
+      "fe7ovxfe7ovxfe7o.jpg",
+      "2aa0e54b4dc251420a3679b501dc8a06.jpeg",
+      "09edc782a2e242c0840d3b8a3960420d.jpeg",
+      "3de04fb6e7a042632a00f765cdb60e39224156c3a9d7055951f5a0298feb2dba.jpeg",
+      "3b1558eefcb3008a00a5e863ce729092.jpeg",
+      "2aee09d253a4606d2b5b4a630fbd6b834074ae2a91a3dd28e361eb8dadafad24_r2.jpeg",
+      "59de5a40846ba0dca00d56c21c43afd17c4592b3ba6cbffbc73a985b061fb4a4.jpeg",
+      "64294f3a2adb2e48ac82d6f65ea9d52c.jpeg",
+      "4c27a50c2f1d7755efe281ea88758885.jpeg",
+      "0e65a4e5adc50344a43ffbd1f9ff84ea_r1.jpeg",
+      "e566b28a9429f693defb306c191d05a6.jpeg",
+      "3ae4bd2508eb036a3df769348af8e8e8.jpeg",
+      "637d149bc1ccd8dedacdf37530cf408e.jpeg",
+      "ozrpf8ozrpf8ozrp.jpg",
+      "eaef1ce47d4afebf42b1a93fcf502386.jpeg",
+      "2c4c0b171577884f5c0991cacb5c5ebc_r1.jpeg",
+      "0bce6c35c24ec5ce8ae8ad5bb4f67d59_r2.jpeg",
+      "b289c80bdf2d5092fffe0e53d927af2c.jpeg",
+      "04ed7ba99198264f5405056b941a4d3c.jpeg",
+      "04e61d9506ffe1d8ac6c48e8b091cc48.jpeg",
+      "7xld4y7xld4y7xld.jpg",
+      "5bd35cd9932265235fd90b3daf32c65d.jpeg",
+      "2ad2e05330051435a8976d2f72819b57.jpeg",
+      "4ca91e737979369e37478c4f4ec6e84e_r4.jpeg",
+      "53805809adf9a3d8d0d33c71253fe7eb.jpeg",
+      "0b5a6fe395e6652f45b8bdab691c28adc961287d6ecc86ca1f739abcfe584ed2.jpeg",
+      "2aee09d253a4606d2b5b4a630fbd6b834074ae2a91a3dd28e361eb8dadafad24_r11.jpeg",
+      "0bce6c35c24ec5ce8ae8ad5bb4f67d59_r1.jpeg"
+    ]
+  },
+  "dataset_average": {
+    "all_files": {
+      "all_mean_cosine_all": 0.051221440150260346,
+      "all_std_cosine_all": 0.07475098407441207,
+      "all_count_all": 39,
+      "all_mean_cosine_matched": 0.15967033418197918,
+      "all_std_cosine_matched": 0.2311777080443589,
+      "all_count_matched": 39,
+      "all_mean_cosine_valid": 0.04917833132621569,
+      "all_std_cosine_valid": 0.17070427758171047,
+      "all_count_valid": 39
+    },
+    "fake_classified_only": {
+      "fake_mean_cosine_all": 0.07740715507752997,
+      "fake_std_cosine_all": 0.08198338745591788,
+      "fake_count_all": 9,
+      "fake_mean_cosine_matched": 0.3791648503392935,
+      "fake_std_cosine_matched": 0.23417273259577248,
+      "fake_count_matched": 6,
+      "fake_mean_cosine_valid": 0.6520265936851501,
+      "fake_std_cosine_valid": 0.042586326599121094,
+      "fake_count_valid": 2
+    },
+    "artifact_type_acc": {
+      "mean_artifact_type_acc_per_image": null,
+      "mean_artifact_type_acc_per_image_std": null,
+      "mean_artifact_type_acc_per_image_count": 0,
+      "mean_artifact_type_acc_global": null,
+      "mean_artifact_type_acc_global_count": 0
+    },
+    "total_gt_artifacts": 161,
+    "total_result_artifacts": 30,
+    "total_valid_matches": 3,
+    "total_unmatched_gt_artifacts": 136,
+    "total_unmatched_result_artifacts": 5,
+    "artifact_assignment_recall": 0.15527950310559005,
+    "valid_match_recall": 0.018633540372670808,
+    "valid_match_precision": 0.1,
+    "valid_match_f1": 0.031413612565445025,
+    "mismatches": "unknown"
+  },
   "image_scores": [
     {
       "filename": "ccbcb5187879ea5f9ef2871e59b94651.jpeg",
@@ -1598,46 +1683,5 @@
       ],
       "unmatched_result_artifacts": []
     }
-  ],
-  "dataset_average": {
-    "all_files": {
-      "all_mean_cosine_all": 0.051221440150260346,
-      "all_std_cosine_all": 0.07475098407441207,
-      "all_count_all": 39,
-      "all_mean_cosine_matched": 0.15967033418197918,
-      "all_std_cosine_matched": 0.2311777080443589,
-      "all_count_matched": 39,
-      "all_mean_cosine_valid": 0.04917833132621569,
-      "all_std_cosine_valid": 0.17070427758171047,
-      "all_count_valid": 39
-    },
-    "fake_classified_only": {
-      "fake_mean_cosine_all": 0.07740715507752997,
-      "fake_std_cosine_all": 0.08198338745591788,
-      "fake_count_all": 9,
-      "fake_mean_cosine_matched": 0.3791648503392935,
-      "fake_std_cosine_matched": 0.23417273259577248,
-      "fake_count_matched": 6,
-      "fake_mean_cosine_valid": 0.6520265936851501,
-      "fake_std_cosine_valid": 0.042586326599121094,
-      "fake_count_valid": 2
-    },
-    "artifact_type_acc": {
-      "mean_artifact_type_acc_per_image": null,
-      "mean_artifact_type_acc_per_image_std": null,
-      "mean_artifact_type_acc_per_image_count": 0,
-      "mean_artifact_type_acc_global": null,
-      "mean_artifact_type_acc_global_count": 0
-    },
-    "total_unmatched_gt_artifacts": 136,
-    "total_unmatched_result_artifacts": 5,
-    "artifact_assignment_recall": 0.15527950310559005,
-    "valid_match_recall": 0.018633540372670808,
-    "valid_match_precision": 0.1,
-    "valid_match_f1": 0.031413612565445025,
-    "total_valid_matches": 3,
-    "total_gt_artifacts": 161,
-    "total_result_artifacts": 30,
-    "mismatches": 0
-  }
+  ]
 }

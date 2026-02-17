@@ -7,10 +7,78 @@
   "semantic_model": "all-mpnet-base-v2",
   "comparison": "/home/usluesyr/ai_image_detector/data/ground_truth/gt_2/json/gt_2.json",
   "threshold": 0.6,
+  "split": "fake",
   "image_count": 50,
   "detected_fake": 33,
   "detected_real": 17,
   "acc": 0.66,
+  "classification_metrics": {
+    "total_images": 50,
+    "true_positives": 33,
+    "false_negatives": 17,
+    "recall_sensitivity": 0.66,
+    "false_negative_rate": 0.34,
+    "false_negative_files": [
+      "ccbcb5187879ea5f9ef2871e59b94651.jpeg",
+      "2df3e5ecf2315ee61ffe3c566e125c8a.jpeg",
+      "5d04c3a88fe8c5d2d7c7a8877e7880fe.jpeg",
+      "2aee09d253a4606d2b5b4a630fbd6b834074ae2a91a3dd28e361eb8dadafad24_r2.jpeg",
+      "kv57cgkv57cgkv57.jpeg",
+      "1a7a5fe1c457806cb6d9fb17649b923a.jpeg",
+      "3ae4bd2508eb036a3df769348af8e8e8.jpeg",
+      "v7ghcav7ghcav7gh.jpeg",
+      "637d149bc1ccd8dedacdf37530cf408e.jpeg",
+      "ozrpf8ozrpf8ozrp.jpeg",
+      "0bce6c35c24ec5ce8ae8ad5bb4f67d59_r2.jpeg",
+      "b289c80bdf2d5092fffe0e53d927af2c.jpeg",
+      "04e61d9506ffe1d8ac6c48e8b091cc48.jpeg",
+      "7xld4y7xld4y7xld.jpeg",
+      "2ad2e05330051435a8976d2f72819b57.jpeg",
+      "2aee09d253a4606d2b5b4a630fbd6b834074ae2a91a3dd28e361eb8dadafad24_r11.jpeg",
+      "0bce6c35c24ec5ce8ae8ad5bb4f67d59_r1.jpeg"
+    ]
+  },
+  "dataset_average": {
+    "all_files": {
+      "all_mean_cosine_all": 0.2728422465409551,
+      "all_std_cosine_all": 0.17709375832768967,
+      "all_count_all": 50,
+      "all_mean_cosine_matched": 0.3784548639257748,
+      "all_std_cosine_matched": 0.20676397198325386,
+      "all_count_matched": 50,
+      "all_mean_cosine_valid": 0.3376962387561798,
+      "all_std_cosine_valid": 0.3540481354211301,
+      "all_count_valid": 50
+    },
+    "fake_classified_only": {
+      "fake_mean_cosine_all": 0.3514036053788954,
+      "fake_std_cosine_all": 0.12128654730982301,
+      "fake_count_all": 33,
+      "fake_mean_cosine_matched": 0.4786626938918624,
+      "fake_std_cosine_matched": 0.09558782701306907,
+      "fake_count_matched": 33,
+      "fake_mean_cosine_valid": 0.7049701939458433,
+      "fake_std_cosine_valid": 0.06229882978487514,
+      "fake_count_valid": 23
+    },
+    "artifact_type_acc": {
+      "mean_artifact_type_acc_per_image": null,
+      "mean_artifact_type_acc_per_image_std": null,
+      "mean_artifact_type_acc_per_image_count": 0,
+      "mean_artifact_type_acc_global": null,
+      "mean_artifact_type_acc_global_count": 0
+    },
+    "total_gt_artifacts": 186,
+    "total_result_artifacts": 121,
+    "total_valid_matches": 30,
+    "total_unmatched_gt_artifacts": 74,
+    "total_unmatched_result_artifacts": 9,
+    "artifact_assignment_recall": 0.6021505376344086,
+    "valid_match_recall": 0.16129032258064516,
+    "valid_match_precision": 0.24793388429752067,
+    "valid_match_f1": 0.19543973941368076,
+    "mismatches": "unknown"
+  },
   "image_scores": [
     {
       "filename": "ccbcb5187879ea5f9ef2871e59b94651.jpeg",
@@ -2601,46 +2669,5 @@
       ],
       "unmatched_result_artifacts": []
     }
-  ],
-  "dataset_average": {
-    "all_files": {
-      "all_mean_cosine_all": 0.2728422465409551,
-      "all_std_cosine_all": 0.17709375832768967,
-      "all_count_all": 50,
-      "all_mean_cosine_matched": 0.3784548639257748,
-      "all_std_cosine_matched": 0.20676397198325386,
-      "all_count_matched": 50,
-      "all_mean_cosine_valid": 0.3376962387561798,
-      "all_std_cosine_valid": 0.3540481354211301,
-      "all_count_valid": 50
-    },
-    "fake_classified_only": {
-      "fake_mean_cosine_all": 0.3514036053788954,
-      "fake_std_cosine_all": 0.12128654730982301,
-      "fake_count_all": 33,
-      "fake_mean_cosine_matched": 0.4786626938918624,
-      "fake_std_cosine_matched": 0.09558782701306907,
-      "fake_count_matched": 33,
-      "fake_mean_cosine_valid": 0.7049701939458433,
-      "fake_std_cosine_valid": 0.06229882978487514,
-      "fake_count_valid": 23
-    },
-    "artifact_type_acc": {
-      "mean_artifact_type_acc_per_image": null,
-      "mean_artifact_type_acc_per_image_std": null,
-      "mean_artifact_type_acc_per_image_count": 0,
-      "mean_artifact_type_acc_global": null,
-      "mean_artifact_type_acc_global_count": 0
-    },
-    "total_unmatched_gt_artifacts": 74,
-    "total_unmatched_result_artifacts": 9,
-    "artifact_assignment_recall": 0.6021505376344086,
-    "valid_match_recall": 0.16129032258064516,
-    "valid_match_precision": 0.24793388429752067,
-    "valid_match_f1": 0.19543973941368076,
-    "total_valid_matches": 30,
-    "total_gt_artifacts": 186,
-    "total_result_artifacts": 121,
-    "mismatches": 0
-  }
+  ]
 }

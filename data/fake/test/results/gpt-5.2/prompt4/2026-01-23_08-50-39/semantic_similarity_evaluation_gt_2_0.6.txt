@@ -1,0 +1,32 @@
+============================================================
+FAKE IMAGES — SEMANTIC SIMILARITY EVALUATION
+============================================================
+
+Classification:
+  TP (correctly detected fake): 33
+  FN (missed fakes):            17
+  Recall / Sensitivity:         0.66
+  False Negative Rate:          0.34
+
+Semantic Matching (threshold=0.6):
+  Valid matches:    30
+  Unmatched GT:     74
+  Unmatched pred:   9
+  Mismatches:       unknown
+  Precision:        0.2479
+  Recall:           0.1613
+  F1:               0.1954
+
+Cosine Similarity (all files):
+  Mean (all pairs):     0.2728 ± 0.1771
+  Mean (matched only):  0.3785 ± 0.2068
+  Mean (valid only):    0.3377 ± 0.3540
+
+Cosine Similarity (fake-classified only):
+  Mean (all pairs):     0.3514 ± 0.1213
+  Mean (matched only):  0.4787 ± 0.0956
+  Mean (valid only):    0.7050 ± 0.0623
+
+Artifact Type Accuracy (on valid matches):
+  Per-image mean:  N/A
+  Global weighted: N/A
