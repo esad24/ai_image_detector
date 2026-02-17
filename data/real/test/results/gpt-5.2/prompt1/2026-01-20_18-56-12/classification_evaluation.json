@@ -1,0 +1,33 @@
+{
+  "meta": {
+    "model": "gpt-5.2",
+    "prompt_id": 1,
+    "reasoning": "none"
+  },
+  "split": "real",
+  "image_count": 50,
+  "detected_fake": 12,
+  "detected_real": 38,
+  "acc": 0.76,
+  "classification_metrics": {
+    "total_images": 50,
+    "true_negatives": 38,
+    "false_positives": 12,
+    "specificity_true_negative_rate": 0.76,
+    "false_positive_rate": 0.24,
+    "false_positive_files": [
+      "1baf3f78a5ea367863f70e867819f795ca6bcf73a331f741ba00f484aed98b61_real.jpeg",
+      "b9836f50be0bc4098534bf668a8d68209c3708e6574595f492faeff454fcba7f_real.jpeg",
+      "pexels-maryiaplashchynskaya-3400764.jpg",
+      "c38189c54230e478e366311946620a3a_real.jpeg",
+      "pexels-cottonbro-10485417.jpg",
+      "b472b7624e736851155da6ece8d096ed1d6ffb74cd3710667a4e956d0812cfc9_real.jpeg",
+      "6d8fba24ae67e57a85da5aa46b49dce4_real.jpeg",
+      "bb940e5b5eb4667fa106086a3ddd34ce_real.jpeg",
+      "03a001b85768dd4c7bcb8e20486bf0f20973314b1ec269ef1057f6565de34016_real.jpeg",
+      "caabe61d5e181b8da352b0e7b73dfeb4_real.jpeg",
+      "c362188ff928cf10b6cb734ba674c8f91af2ab48af337ebc873cd06769b429a1_real.jpeg",
+      "0b96dd5fd38f6c18236dcec8df90c549_real.jpeg"
+    ]
+  }
+}

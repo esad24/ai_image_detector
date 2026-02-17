@@ -16,9 +16,9 @@ import os
 # ═══════════════════════════════════════════════════════════════
 # CONFIGURATION
 # ═══════════════════════════════════════════════════════════════
-MODE = "fake"  # "fake" or "real"
+MODE = "real"  # "fake" or "real"
 
-RESULT_JSON = "/home/usluesyr/ai_image_detector/data/fake/test/results/qwen3-vl/prompt1/2026-01-22_21-17-46/results.json"
+RESULT_JSON = "/home/usluesyr/ai_image_detector/data/real/test/results/qwen3-vl/prompt5/2026-02-16_09-08-13/results.json"
 OUTPUT_FILE = os.path.join(
     os.path.dirname(RESULT_JSON),
     f"classification_evaluation.json"
@@ -157,8 +157,8 @@ def evaluate_real(predictions, output_path):
     #printer(f"\nFalse Positives ({fp} files):")
     #for fname in fp_files:
     #    printer(f"    {fname}")
-    printer(f"\nWrote {output_path}")
-    printer(f"TXT report written to {txt_output_path}")
+    print(f"\nWrote {output_path}")
+    print(f"TXT report written to {txt_output_path}")
     f_txt.close()
 
 

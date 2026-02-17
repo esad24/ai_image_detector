@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "model": "qwen3-vl",
+    "prompt_id": 4,
+    "temperature": 0.1,
+    "reasoning": false
+  },
+  "split": "real",
+  "image_count": 50,
+  "detected_fake": 3,
+  "detected_real": 47,
+  "acc": 0.94,
+  "classification_metrics": {
+    "total_images": 50,
+    "true_negatives": 47,
+    "false_positives": 3,
+    "specificity_true_negative_rate": 0.94,
+    "false_positive_rate": 0.06,
+    "false_positive_files": [
+      "1baf3f78a5ea367863f70e867819f795ca6bcf73a331f741ba00f484aed98b61_real.jpeg",
+      "e4fd0b7c8c7d3dca42aab01618224fabc57cb8690ec4f3566b3335f83c8ab0ff_real.jpeg",
+      "pexels-canan-altan-2152293568-32121769.jpg"
+    ]
+  }
+}

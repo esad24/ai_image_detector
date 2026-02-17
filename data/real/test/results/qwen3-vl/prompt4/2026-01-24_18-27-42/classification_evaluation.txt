@@ -1,0 +1,9 @@
+============================================================
+REAL IMAGES — CLASSIFICATION EVALUATION
+============================================================
+
+Classification:
+  TN (correctly identified real): 47
+  FP (real wrongly called fake):  3
+  Specificity / TNR:              0.94
+  False Positive Rate:            0.06

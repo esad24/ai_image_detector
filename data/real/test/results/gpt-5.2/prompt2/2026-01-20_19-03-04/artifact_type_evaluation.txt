@@ -1,0 +1,22 @@
+============================================================
+REAL IMAGES EVALUATION
+============================================================
+
+Classification:
+  TN (correctly identified real): 32
+  FP (real wrongly called fake):  18
+  Specificity / TNR:              0.64
+  False Positive Rate:            0.36
+
+False Positive Analysis:
+  Total hallucinated artifacts: 46
+  Avg per false positive:       2.56
+
+  Hallucinated type distribution:
+    structural    17  (94.4% of FPs contain this type)
+    semantic      14  (77.8% of FPs contain this type)
+    stylistic     15  (83.3% of FPs contain this type)
+    physical       0  (0.0% of FPs contain this type)
+
+Wrote /home/usluesyr/ai_image_detector/data/real/test/results/gpt-5.2/prompt2/2026-01-20_19-03-04/artifact_type_evaluation_gt_2.json
+TXT report written to /home/usluesyr/ai_image_detector/data/real/test/results/gpt-5.2/prompt2/2026-01-20_19-03-04/artifact_type_evaluation_gt_2.txt

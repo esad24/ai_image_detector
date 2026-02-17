@@ -24,16 +24,23 @@ ALL_TYPES = ["structural", "semantic", "stylistic", "physical"]
 # ═══════════════════════════════════════════════════════════════
 # CONFIGURATION
 # ═══════════════════════════════════════════════════════════════
-MODE = "fake"  # "fake" or "real"
+MODE = "real"  # "fake" or "real"
 
 GT = "gt_2"
 
 GT_JSON = f"/home/usluesyr/ai_image_detector/data/ground_truth/{GT}/json/{GT}.json"
-RESULT_JSON  = "/home/usluesyr/ai_image_detector/data/fake/test/results/qwen3-vl/prompt2/2026-01-24_13-54-27/results.json"
-OUTPUT_FILE = os.path.join(
-    os.path.dirname(RESULT_JSON),
-    f"artifact_type_evaluation_{GT}.json"
-)
+RESULT_JSON  = "/home/usluesyr/ai_image_detector/data/real/test/results/qwen3-vl/prompt3/2026-01-24_16-37-23/results.json"
+
+if MODE == "fake":
+    OUTPUT_FILE = os.path.join(
+        os.path.dirname(RESULT_JSON),
+        f"artifact_type_evaluation_{GT}.json"
+    )
+else:
+    OUTPUT_FILE = os.path.join(
+        os.path.dirname(RESULT_JSON),
+        f"artifact_type_evaluation.json"
+    )
 
 
 
@@ -328,8 +335,8 @@ def evaluate_real(predictions, output_path):
         pct = safe_div(count, fp) * 100
         printer(f"    {t:<12} {count:>3}  ({pct:.1f}% of FPs contain this type)")
 
-    printer(f"\nWrote {output_path}")
-    printer(f"TXT report written to {txt_output_path}")
+    print(f"\nWrote {output_path}")
+    print(f"TXT report written to {txt_output_path}")
 
     f.close()
 

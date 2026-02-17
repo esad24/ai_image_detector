@@ -1,0 +1,38 @@
+{
+  "meta": {},
+  "split": "real",
+  "image_count": 50,
+  "detected_fake": 21,
+  "detected_real": 29,
+  "acc": 0.58,
+  "classification_metrics": {
+    "total_images": 50,
+    "true_negatives": 29,
+    "false_positives": 21,
+    "specificity_true_negative_rate": 0.58,
+    "false_positive_rate": 0.42,
+    "false_positive_files": [
+      "06086a7210d32ee6f6d7afdf64e95c67_real.jpeg",
+      "1baf3f78a5ea367863f70e867819f795ca6bcf73a331f741ba00f484aed98b61_real.jpeg",
+      "282422ac298c060155c2cc4312119bd0_real.jpeg",
+      "35bdc7578de33e60547e7c87cb903275aed53c3119ae9bf034f455f8c171b6ce_real.jpeg",
+      "35ed44c64fa9ebe57b0f51a055d1b56a_real.jpeg",
+      "6fb659766b7b27ffcd747e63703b1844aabc1e3a72ebfdfee2c1fe66ca25f15f_real.jpeg",
+      "b31a7713cbbb921686f0f1cb14e3f0d011c90b361d2899642eeca804e7b9e7ff_real.jpeg",
+      "b472b7624e736851155da6ece8d096ed1d6ffb74cd3710667a4e956d0812cfc9_real.jpeg",
+      "b9836f50be0bc4098534bf668a8d68209c3708e6574595f492faeff454fcba7f_real.jpeg",
+      "be43d363ea6ba1e080580d3a2a74c6a000041940d0f27dd9af71faca66afd4ec_real.jpeg",
+      "c38189c54230e478e366311946620a3a_real.jpeg",
+      "c65987f9418f465555948957aa66dced2c94386ef70da3809c09ba7a7fd8dd8b_real.jpeg",
+      "ce8af8f993f2ac560f968fe64c1a887b_real.jpeg",
+      "d6cf6f6e189a0e2a890f90e0cba185c2_real.jpeg",
+      "d7f62506968b2101234d06827fc7f959bd2e09c98c21e28d86ef8a4b6c7f9ca7_real.jpeg",
+      "e4fd0b7c8c7d3dca42aab01618224fabc57cb8690ec4f3566b3335f83c8ab0ff_real.jpeg",
+      "ea4e8c5d30ee38844257b18989107682474d269dfbec4930f4dac730b0ea9cda_real.jpeg",
+      "f87823469991b7b1704ff9e4d4c7d05674097995db209a8e20dbcafdbc5cece9_real.jpeg",
+      "pexels-markarronsmith-2168356.jpeg",
+      "pexels-maryiaplashchynskaya-3400764.jpeg",
+      "pexels-orestsv-1821699.jpeg"
+    ]
+  }
+}

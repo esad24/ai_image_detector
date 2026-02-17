@@ -1,0 +1,24 @@
+{
+  "meta": {},
+  "split": "real",
+  "image_count": 50,
+  "detected_fake": 7,
+  "detected_real": 43,
+  "acc": 0.86,
+  "classification_metrics": {
+    "total_images": 50,
+    "true_negatives": 43,
+    "false_positives": 7,
+    "specificity_true_negative_rate": 0.86,
+    "false_positive_rate": 0.14,
+    "false_positive_files": [
+      "d7f62506968b2101234d06827fc7f959bd2e09c98c21e28d86ef8a4b6c7f9ca7_real.jpeg",
+      "e4fd0b7c8c7d3dca42aab01618224fabc57cb8690ec4f3566b3335f83c8ab0ff_real.jpeg",
+      "f87823469991b7b1704ff9e4d4c7d05674097995db209a8e20dbcafdbc5cece9_real.jpeg",
+      "pexels-koolshooters-9944253.jpeg",
+      "pexels-markarronsmith-2168356.jpeg",
+      "pexels-maryiaplashchynskaya-3400764.jpeg",
+      "pexels-victorfreitas-865711.jpeg"
+    ]
+  }
+}

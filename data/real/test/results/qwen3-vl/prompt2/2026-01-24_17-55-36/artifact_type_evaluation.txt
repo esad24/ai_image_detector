@@ -1,0 +1,19 @@
+============================================================
+REAL IMAGES EVALUATION
+============================================================
+
+Classification:
+  TN (correctly identified real): 22
+  FP (real wrongly called fake):  28
+  Specificity / TNR:              0.44
+  False Positive Rate:            0.56
+
+False Positive Analysis:
+  Total hallucinated artifacts: 34
+  Avg per false positive:       1.21
+
+  Hallucinated type distribution:
+    structural     9  (32.1% of FPs contain this type)
+    semantic       9  (32.1% of FPs contain this type)
+    stylistic     11  (39.3% of FPs contain this type)
+    physical       5  (17.9% of FPs contain this type)
