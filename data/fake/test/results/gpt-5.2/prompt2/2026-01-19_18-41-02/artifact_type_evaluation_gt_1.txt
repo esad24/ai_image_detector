@@ -1,0 +1,23 @@
+============================================================
+FAKE IMAGES EVALUATION
+============================================================
+
+Classification:
+  TP (correctly detected fake): 37
+  FN (missed fakes):            13
+  Recall / Sensitivity:         0.74
+  False Negative Rate:          0.26
+
+Artifact Type Detection (set-level):
+  Exact type-set matches: 6/50 (12.0%)
+  Matched / Hallucinated / Missed type instances: 57 / 29 / 37
+
+  Type           TP   FP   FN   Prec    Rec     F1
+  --------------------------------------------
+  structural     26    8   11   0.76   0.70   0.73
+  semantic       20    4   11   0.83   0.65   0.73
+  stylistic      11   17    8   0.39   0.58   0.47
+  physical        0    0    7   0.00   0.00   0.00
+
+  Avg GT artifacts/image:   2.74
+  Avg pred artifacts/image: 1.72

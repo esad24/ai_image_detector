@@ -24,24 +24,40 @@ ALL_TYPES = ["structural", "semantic", "stylistic", "physical"]
 # ═══════════════════════════════════════════════════════════════
 # CONFIGURATION
 # ═══════════════════════════════════════════════════════════════
-MODE = "real"  # "fake" or "real"
+MODE = "fake"  # "fake" or "real"
 
-GT_JSON = "/home/usluesyr/ai_image_detector/data/ground_truth/gt_2/json/gt_2.json"
-RESULT_JSON  = "/home/usluesyr/ai_image_detector/data/real/test/results/gpt-5.2/prompt3/2026-01-20_20-09-43/results.json"
+GT = "gt_2"
+
+GT_JSON = f"/home/usluesyr/ai_image_detector/data/ground_truth/{GT}/json/{GT}.json"
+RESULT_JSON  = "/home/usluesyr/ai_image_detector/data/fake/test/results/gpt-5.2/prompt2/2026-01-19_18-41-02/results.json"
 OUTPUT_FILE = os.path.join(
     os.path.dirname(RESULT_JSON),
-    f"artifact_type_evaluation.json"
+    f"artifact_type_evaluation_{GT}.json"
 )
 
-# Example for real mode:
-# MODE = "real"
-# PREDICTIONS_PATH  = "pred_real.json"
-# OUTPUT_PATH       = "result_real_images.json"
+
 
 
 # ═══════════════════════════════════════════════════════════════
 # HELPERS
 # ═══════════════════════════════════════════════════════════════
+
+
+def print_header(title, printer):
+    printer("=" * 60)
+    printer(title)
+    printer("=" * 60)
+
+def redirect_print_to_file(output_path):
+    """Redirects prints to a .txt file next to the JSON output."""
+    txt_output_path = os.path.splitext(output_path)[0] + ".txt"
+    f = open(txt_output_path, "w", encoding="utf-8")
+    def printer(*args, **kwargs):
+        print(*args, **kwargs, file=f)
+    return f, printer, txt_output_path
+
+
+
 def get_type_set(artifacts):
     """Extract the unique set of artifact types from a list of artifacts."""
     return set(a["type"] for a in artifacts)
@@ -67,13 +83,6 @@ def compute_per_type_metrics(type_tp, type_fp, type_fn):
             "f1":        round(f1, 4),
         }
     return per_type
-
-
-def print_header(title):
-    print("=" * 60)
-    print(title)
-    print("=" * 60)
-
 
 # ═══════════════════════════════════════════════════════════════
 # FAKE MODE
@@ -179,6 +188,7 @@ def evaluate_fake(predictions, ground_truth, output_path):
             "split":       "fake",
             "total_images": total,
         },
+        "comparison": GT_JSON,
         "classification_metrics": classification_metrics,
         "artifact_type_metrics":  artifact_type_metrics,
         "per_image_results":      per_image_results,
@@ -187,30 +197,37 @@ def evaluate_fake(predictions, ground_truth, output_path):
     with open(output_path, "w") as f:
         json.dump(result, f, indent=2)
 
-    # ── Print summary ──
-    print_header("FAKE IMAGES EVALUATION")
-    print(f"\nClassification:")
-    print(f"  TP (correctly detected fake): {tp}")
-    print(f"  FN (missed fakes):            {fn}")
-    print(f"  Recall / Sensitivity:         {classification_metrics['recall_sensitivity']}")
-    print(f"  False Negative Rate:          {classification_metrics['false_negative_rate']}")
 
-    print(f"\nArtifact Type Detection (set-level):")
-    print(f"  Exact type-set matches: {exact_matches}/{total} "
-          f"({artifact_type_metrics['exact_type_set_match_rate']*100:.1f}%)")
-    print(f"  Matched / Hallucinated / Missed type instances: "
-          f"{total_matched_types} / {total_hallucinated} / {total_missed}")
+    f, printer, txt_output_path = redirect_print_to_file(output_path)
 
-    print(f"\n  {'Type':<12} {'TP':>4} {'FP':>4} {'FN':>4} {'Prec':>6} {'Rec':>6} {'F1':>6}")
-    print(f"  {'-'*44}")
+
+    # ── Print summary to TXT ──
+    print_header("FAKE IMAGES EVALUATION", printer)
+    printer(f"\nClassification:")
+    printer(f"  TP (correctly detected fake): {tp}")
+    printer(f"  FN (missed fakes):            {fn}")
+    printer(f"  Recall / Sensitivity:         {classification_metrics['recall_sensitivity']}")
+    printer(f"  False Negative Rate:          {classification_metrics['false_negative_rate']}")
+
+    printer(f"\nArtifact Type Detection (set-level):")
+    printer(f"  Exact type-set matches: {exact_matches}/{total} "
+            f"({artifact_type_metrics['exact_type_set_match_rate']*100:.1f}%)")
+    printer(f"  Matched / Hallucinated / Missed type instances: "
+            f"{total_matched_types} / {total_hallucinated} / {total_missed}")
+
+    printer(f"\n  {'Type':<12} {'TP':>4} {'FP':>4} {'FN':>4} {'Prec':>6} {'Rec':>6} {'F1':>6}")
+    printer(f"  {'-'*44}")
     for t in ALL_TYPES:
         d = per_type[t]
-        print(f"  {t:<12} {d['true_positives']:>4} {d['false_positives']:>4} "
-              f"{d['false_negatives']:>4} {d['precision']:>6.2f} {d['recall']:>6.2f} {d['f1']:>6.2f}")
+        printer(f"  {t:<12} {d['true_positives']:>4} {d['false_positives']:>4} "
+                f"{d['false_negatives']:>4} {d['precision']:>6.2f} {d['recall']:>6.2f} {d['f1']:>6.2f}")
 
-    print(f"\n  Avg GT artifacts/image:   {artifact_type_metrics['avg_gt_artifacts_per_image']}")
-    print(f"  Avg pred artifacts/image: {artifact_type_metrics['avg_pred_artifacts_per_image']}")
+    printer(f"\n  Avg GT artifacts/image:   {artifact_type_metrics['avg_gt_artifacts_per_image']}")
+    printer(f"  Avg pred artifacts/image: {artifact_type_metrics['avg_pred_artifacts_per_image']}")
     print(f"\nWrote {output_path}")
+    print(f"TXT report written to {txt_output_path}")
+
+    f.close()
 
 
 # ═══════════════════════════════════════════════════════════════
@@ -283,6 +300,7 @@ def evaluate_real(predictions, output_path):
             "split":       "real",
             "total_images": total,
         },
+        "comparison": GT_JSON,
         "classification_metrics":  classification_metrics,
         "false_positive_analysis": false_positive_analysis,
         "per_image_results":       per_image_results,
@@ -290,24 +308,30 @@ def evaluate_real(predictions, output_path):
 
     with open(output_path, "w") as f:
         json.dump(result, f, indent=2)
+    
+    f, printer, txt_output_path = redirect_print_to_file(output_path)
 
-    # ── Print summary ──
-    print_header("REAL IMAGES EVALUATION")
-    print(f"\nClassification:")
-    print(f"  TN (correctly identified real): {tn}")
-    print(f"  FP (real wrongly called fake):  {fp}")
-    print(f"  Specificity / TNR:              {classification_metrics['specificity_true_negative_rate']}")
-    print(f"  False Positive Rate:            {classification_metrics['false_positive_rate']}")
 
-    print(f"\nFalse Positive Analysis:")
-    print(f"  Total hallucinated artifacts: {fp_total_artifacts}")
-    print(f"  Avg per false positive:       {false_positive_analysis['avg_hallucinated_artifacts_per_fp']}")
-    print(f"\n  Hallucinated type distribution:")
+    print_header("REAL IMAGES EVALUATION", printer)
+    printer(f"\nClassification:")
+    printer(f"  TN (correctly identified real): {tn}")
+    printer(f"  FP (real wrongly called fake):  {fp}")
+    printer(f"  Specificity / TNR:              {classification_metrics['specificity_true_negative_rate']}")
+    printer(f"  False Positive Rate:            {classification_metrics['false_positive_rate']}")
+
+    printer(f"\nFalse Positive Analysis:")
+    printer(f"  Total hallucinated artifacts: {fp_total_artifacts}")
+    printer(f"  Avg per false positive:       {false_positive_analysis['avg_hallucinated_artifacts_per_fp']}")
+    printer(f"\n  Hallucinated type distribution:")
     for t in ALL_TYPES:
         count = fp_type_distribution[t]
         pct = safe_div(count, fp) * 100
-        print(f"    {t:<12} {count:>3}  ({pct:.1f}% of FPs contain this type)")
-    print(f"\nWrote {output_path}")
+        printer(f"    {t:<12} {count:>3}  ({pct:.1f}% of FPs contain this type)")
+
+    printer(f"\nWrote {output_path}")
+    printer(f"TXT report written to {txt_output_path}")
+
+    f.close()
 
 
 # ═══════════════════════════════════════════════════════════════

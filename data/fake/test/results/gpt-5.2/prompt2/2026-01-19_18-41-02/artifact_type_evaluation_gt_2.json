@@ -6,6 +6,7 @@
     "split": "fake",
     "total_images": 50
   },
+  "comparison": "/home/usluesyr/ai_image_detector/data/ground_truth/gt_2/json/gt_2.json",
   "classification_metrics": {
     "total_images": 50,
     "true_positives": 37,

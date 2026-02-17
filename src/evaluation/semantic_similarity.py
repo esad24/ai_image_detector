@@ -25,7 +25,7 @@ hf_logging.set_verbosity_error()
 # ═══════════════════════════════════════════════════════════════
 # CONFIGURATION
 # ═══════════════════════════════════════════════════════════════
-RESULT_JSON = "/home/usluesyr/ai_image_detector/data/fake/test/results/gpt-5.2/prompt3/2026-01-20_18-46-16/results.json"
+RESULT_JSON = "/home/usluesyr/ai_image_detector/data/fake/test/results/gpt-5.2/prompt3/2026-01-20_18-46-16/results_manual_review.json"
 GT = "gt_2"
 GT_JSON = f"/home/usluesyr/ai_image_detector/data/ground_truth/{GT}/json/{GT}.json"
 
@@ -34,7 +34,7 @@ THRESHOLD = 0.6
 
 OUTPUT_FILE = os.path.join(
     os.path.dirname(RESULT_JSON),
-    f"semantic_similarity_evaluation_testtest{GT}_{THRESHOLD}.json"
+    f"semantic_similarity_evaluation_{GT}_{THRESHOLD}.json"
 )
 
 
@@ -109,7 +109,7 @@ def compute_semantic_matches(model, result_artifacts, gt_artifacts, threshold):
         used_r.add(r_idx)
         used_g.add(g_idx)
 
-        # Manual review mismatch flag
+        #Manual review mismatch flag
         manual_review = result_artifacts[r_idx].get("manual_review", "")
         is_invalid = False
         if isinstance(manual_review, str) and "invalid" in manual_review.lower():
@@ -254,7 +254,7 @@ def evaluate_fake(result_json, gt_json, model, threshold, output_path):
         total_mismatches      = sum(
             sum(1 for m in f["matched_artifacts"] if m.get("mismatch"))
             for f in image_scores
-        ) if has_manual_review else None
+        ) if has_manual_review else "unknown"
 
         # P / R / F1 on valid matches
         _precision = safe_div(total_valid_matches, total_result)
@@ -323,46 +323,56 @@ def evaluate_fake(result_json, gt_json, model, threshold, output_path):
 
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
+    
+    txt_output_path = os.path.splitext(output_path)[0] + ".txt"
 
-    # ── Print report ──
-    print_header("FAKE IMAGES — SEMANTIC SIMILARITY EVALUATION")
+    # Redirect print to TXT file
+    with open(txt_output_path, "w", encoding="utf-8") as f:
+        def printer(*args, **kwargs):
+            print(*args, **kwargs, file=f)
 
-    print(f"\nClassification:")
-    print(f"  TP (correctly detected fake): {tp}")
-    print(f"  FN (missed fakes):            {fn}")
-    print(f"  Recall / Sensitivity:         {classification_metrics['recall_sensitivity']}")
-    print(f"  False Negative Rate:          {classification_metrics['false_negative_rate']}")
+        # ── Print report ──
+        printer("="*60)
+        printer("FAKE IMAGES — SEMANTIC SIMILARITY EVALUATION")
+        printer("="*60)
 
-    print(f"\nSemantic Matching (threshold={threshold}):")
-    print(f"  Valid matches:    {dataset_average['total_valid_matches']}")
-    print(f"  Unmatched GT:     {dataset_average['total_unmatched_gt_artifacts']}")
-    print(f"  Unmatched pred:   {dataset_average['total_unmatched_result_artifacts']}")
-    print(f"  Mismatches:       {dataset_average['mismatches']}" if dataset_average['mismatches'] is not None else "  Mismatches:       N/A (no manual_review in data)")
-    print(f"  Precision:        {dataset_average['valid_match_precision']:.4f}")
-    print(f"  Recall:           {dataset_average['valid_match_recall']:.4f}")
-    print(f"  F1:               {dataset_average['valid_match_f1']:.4f}")
+        printer(f"\nClassification:")
+        printer(f"  TP (correctly detected fake): {tp}")
+        printer(f"  FN (missed fakes):            {fn}")
+        printer(f"  Recall / Sensitivity:         {classification_metrics['recall_sensitivity']}")
+        printer(f"  False Negative Rate:          {classification_metrics['false_negative_rate']}")
 
-    print(f"\nCosine Similarity (all files):")
-    af = dataset_average["all_files"]
-    print(f"  Mean (all pairs):     {af['all_mean_cosine_all']:.4f} ± {af['all_std_cosine_all']:.4f}")
-    print(f"  Mean (matched only):  {af['all_mean_cosine_matched']:.4f} ± {af['all_std_cosine_matched']:.4f}")
-    print(f"  Mean (valid only):    {af['all_mean_cosine_valid']:.4f} ± {af['all_std_cosine_valid']:.4f}")
+        printer(f"\nSemantic Matching (threshold={threshold}):")
+        printer(f"  Valid matches:    {dataset_average['total_valid_matches']}")
+        printer(f"  Unmatched GT:     {dataset_average['total_unmatched_gt_artifacts']}")
+        printer(f"  Unmatched pred:   {dataset_average['total_unmatched_result_artifacts']}")
+        printer(f"  Mismatches:       {dataset_average['mismatches']}" if dataset_average['mismatches'] is not None else "  Mismatches:       N/A (no manual_review in data)")
+        printer(f"  Precision:        {dataset_average['valid_match_precision']:.4f}")
+        printer(f"  Recall:           {dataset_average['valid_match_recall']:.4f}")
+        printer(f"  F1:               {dataset_average['valid_match_f1']:.4f}")
 
-    print(f"\nCosine Similarity (fake-classified only):")
-    ff = dataset_average["fake_classified_only"]
-    print(f"  Mean (all pairs):     {ff['fake_mean_cosine_all']:.4f} ± {ff['fake_std_cosine_all']:.4f}")
-    print(f"  Mean (matched only):  {ff['fake_mean_cosine_matched']:.4f} ± {ff['fake_std_cosine_matched']:.4f}")
-    print(f"  Mean (valid only):    {ff['fake_mean_cosine_valid']:.4f} ± {ff['fake_std_cosine_valid']:.4f}")
+        printer(f"\nCosine Similarity (all files):")
+        af = dataset_average["all_files"]
+        printer(f"  Mean (all pairs):     {af['all_mean_cosine_all']:.4f} ± {af['all_std_cosine_all']:.4f}")
+        printer(f"  Mean (matched only):  {af['all_mean_cosine_matched']:.4f} ± {af['all_std_cosine_matched']:.4f}")
+        printer(f"  Mean (valid only):    {af['all_mean_cosine_valid']:.4f} ± {af['all_std_cosine_valid']:.4f}")
 
-    print(f"\nArtifact Type Accuracy (on valid matches):")
-    ta = dataset_average["artifact_type_acc"]
-    per_img = ta["mean_artifact_type_acc_per_image"]
-    per_img_std = ta["mean_artifact_type_acc_per_image_std"]
-    glob = ta["mean_artifact_type_acc_global"]
-    print(f"  Per-image mean:  {per_img:.4f} ± {per_img_std:.4f} (n={ta['mean_artifact_type_acc_per_image_count']})" if per_img is not None else "  Per-image mean:  N/A")
-    print(f"  Global weighted: {glob:.4f} (n={ta['mean_artifact_type_acc_global_count']})" if glob is not None else "  Global weighted: N/A")
+        printer(f"\nCosine Similarity (fake-classified only):")
+        ff = dataset_average["fake_classified_only"]
+        printer(f"  Mean (all pairs):     {ff['fake_mean_cosine_all']:.4f} ± {ff['fake_std_cosine_all']:.4f}")
+        printer(f"  Mean (matched only):  {ff['fake_mean_cosine_matched']:.4f} ± {ff['fake_std_cosine_matched']:.4f}")
+        printer(f"  Mean (valid only):    {ff['fake_mean_cosine_valid']:.4f} ± {ff['fake_std_cosine_valid']:.4f}")
 
-    print(f"\nWrote {output_path}")
+        printer(f"\nArtifact Type Accuracy (on valid matches):")
+        ta = dataset_average["artifact_type_acc"]
+        per_img = ta["mean_artifact_type_acc_per_image"]
+        per_img_std = ta["mean_artifact_type_acc_per_image_std"]
+        glob = ta["mean_artifact_type_acc_global"]
+        printer(f"  Per-image mean:  {per_img:.4f} ± {per_img_std:.4f} (n={ta['mean_artifact_type_acc_per_image_count']})" if per_img is not None else "  Per-image mean:  N/A")
+        printer(f"  Global weighted: {glob:.4f} (n={ta['mean_artifact_type_acc_global_count']})" if glob is not None else "  Global weighted: N/A")
+
+        print(f"\nWrote {output_path}")
+        print(f"TXT report written to {txt_output_path}")
 
 
 # ═══════════════════════════════════════════════════════════════

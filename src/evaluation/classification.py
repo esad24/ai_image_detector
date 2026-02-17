@@ -33,14 +33,23 @@ OUTPUT_FILE = os.path.join(
 # ═══════════════════════════════════════════════════════════════
 # HELPERS
 # ═══════════════════════════════════════════════════════════════
+
+def print_header(title, printer):
+    printer("=" * 60)
+    printer(title)
+    printer("=" * 60)
+
+def redirect_print_to_file(output_path):
+    """Redirect prints to a .txt file next to the JSON output."""
+    txt_output_path = os.path.splitext(output_path)[0] + ".txt"
+    f = open(txt_output_path, "w", encoding="utf-8")
+    def printer(*args, **kwargs):
+        print(*args, **kwargs, file=f)
+    return f, printer, txt_output_path
+
+
 def safe_div(a, b):
     return a / b if b > 0 else 0.0
-
-
-def print_header(title):
-    print("=" * 60)
-    print(title)
-    print("=" * 60)
 
 
 # ═══════════════════════════════════════════════════════════════
@@ -82,17 +91,20 @@ def evaluate_fake(predictions, output_path):
     with open(output_path, "w") as f:
         json.dump(result, f, indent=2)
 
-    # Print report
-    print_header("FAKE IMAGES — CLASSIFICATION EVALUATION")
-    print(f"\nClassification:")
-    print(f"  TP (correctly detected fake): {tp}")
-    print(f"  FN (missed fakes):            {fn}")
-    print(f"  Recall / Sensitivity:         {classification_metrics['recall_sensitivity']}")
-    print(f"  False Negative Rate:          {classification_metrics['false_negative_rate']}")
-    #print(f"\nFalse Negatives ({fn} files):")
-    #for fname in fn_files:
-    #    print(f"    {fname}")
+    # Print report to TXT
+    f_txt, printer, txt_output_path = redirect_print_to_file(output_path)
+    print_header("FAKE IMAGES — CLASSIFICATION EVALUATION", printer)
+    printer(f"\nClassification:")
+    printer(f"  TP (correctly detected fake): {tp}")
+    printer(f"  FN (missed fakes):            {fn}")
+    printer(f"  Recall / Sensitivity:         {classification_metrics['recall_sensitivity']}")
+    printer(f"  False Negative Rate:          {classification_metrics['false_negative_rate']}")
+    # printer(f"\nFalse Negatives ({fn} files):")
+    # for fname in fn_files:
+    #     printer(f"    {fname}")
     print(f"\nWrote {output_path}")
+    print(f"TXT report written to {txt_output_path}")
+    f_txt.close()
 
 
 # ═══════════════════════════════════════════════════════════════
@@ -134,17 +146,20 @@ def evaluate_real(predictions, output_path):
     with open(output_path, "w") as f:
         json.dump(result, f, indent=2)
 
-    # Print report
-    print_header("REAL IMAGES — CLASSIFICATION EVALUATION")
-    print(f"\nClassification:")
-    print(f"  TN (correctly identified real): {tn}")
-    print(f"  FP (real wrongly called fake):  {fp}")
-    print(f"  Specificity / TNR:              {classification_metrics['specificity_true_negative_rate']}")
-    print(f"  False Positive Rate:            {classification_metrics['false_positive_rate']}")
-    print(f"\nFalse Positives ({fp} files):")
-    for fname in fp_files:
-        print(f"    {fname}")
-    print(f"\nWrote {output_path}")
+    # Print report to TXT
+    f_txt, printer, txt_output_path = redirect_print_to_file(output_path)
+    print_header("REAL IMAGES — CLASSIFICATION EVALUATION", printer)
+    printer(f"\nClassification:")
+    printer(f"  TN (correctly identified real): {tn}")
+    printer(f"  FP (real wrongly called fake):  {fp}")
+    printer(f"  Specificity / TNR:              {classification_metrics['specificity_true_negative_rate']}")
+    printer(f"  False Positive Rate:            {classification_metrics['false_positive_rate']}")
+    #printer(f"\nFalse Positives ({fp} files):")
+    #for fname in fp_files:
+    #    printer(f"    {fname}")
+    printer(f"\nWrote {output_path}")
+    printer(f"TXT report written to {txt_output_path}")
+    f_txt.close()
 
 
 # ═══════════════════════════════════════════════════════════════
