@@ -16,16 +16,16 @@
     "specificity_true_negative_rate": 0.8,
     "false_positive_rate": 0.2,
     "false_positive_files": [
-      "1baf3f78a5ea367863f70e867819f795ca6bcf73a331f741ba00f484aed98b61_real.jpeg",
+      "1baf3f78a5ea367863f70e867819f795ca6bcf73a331f741ba00f484aed98b61.jpeg",
       "pexels-maryiaplashchynskaya-3400764.jpeg",
-      "c38189c54230e478e366311946620a3a_real.jpeg",
-      "b31a7713cbbb921686f0f1cb14e3f0d011c90b361d2899642eeca804e7b9e7ff_real.jpeg",
-      "b472b7624e736851155da6ece8d096ed1d6ffb74cd3710667a4e956d0812cfc9_real.jpeg",
-      "bb940e5b5eb4667fa106086a3ddd34ce_real.jpeg",
-      "03a001b85768dd4c7bcb8e20486bf0f20973314b1ec269ef1057f6565de34016_real.jpeg",
-      "7d95deb6a1fc9795a849e2eab10f49b6_real.jpeg",
-      "caabe61d5e181b8da352b0e7b73dfeb4_real.jpeg",
-      "c362188ff928cf10b6cb734ba674c8f91af2ab48af337ebc873cd06769b429a1_real.jpeg"
+      "c38189c54230e478e366311946620a3a.jpeg",
+      "b31a7713cbbb921686f0f1cb14e3f0d011c90b361d2899642eeca804e7b9e7ff.jpeg",
+      "b472b7624e736851155da6ece8d096ed1d6ffb74cd3710667a4e956d0812cfc9.jpeg",
+      "bb940e5b5eb4667fa106086a3ddd34ce.jpeg",
+      "03a001b85768dd4c7bcb8e20486bf0f20973314b1ec269ef1057f6565de34016.jpeg",
+      "7d95deb6a1fc9795a849e2eab10f49b6.jpeg",
+      "caabe61d5e181b8da352b0e7b73dfeb4.jpeg",
+      "c362188ff928cf10b6cb734ba674c8f91af2ab48af337ebc873cd06769b429a1.jpeg"
     ]
   }
 }

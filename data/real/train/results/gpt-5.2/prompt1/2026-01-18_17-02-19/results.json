@@ -7,23 +7,23 @@
   "image_count": 5,
   "results": [
     {
-      "filename": "5a38a89f06ff8721b32a70e78fe17af3bb6e472d0f54dd3c3b213190914e1b5b_real.jpeg",
+      "filename": "5a38a89f06ff8721b32a70e78fe17af3bb6e472d0f54dd3c3b213190914e1b5b.jpeg",
       "classification": "real"
     },
     {
-      "filename": "1d2856c4cb2dccc727efb0eb05672eb875a661cc2fd6815549f1960e68e77cad_real.jpeg",
+      "filename": "1d2856c4cb2dccc727efb0eb05672eb875a661cc2fd6815549f1960e68e77cad.jpeg",
       "classification": "real"
     },
     {
-      "filename": "1c7d7dcede55634f300b85a4ea16927e_real.jpeg",
+      "filename": "1c7d7dcede55634f300b85a4ea16927e.jpeg",
       "classification": "real"
     },
     {
-      "filename": "0a42722f321c31d600786256cb18c639_real.jpeg",
+      "filename": "0a42722f321c31d600786256cb18c639.jpeg",
       "classification": "real"
     },
     {
-      "filename": "6ced4dbab85b6440a341ea4e190724e9_real.jpeg",
+      "filename": "6ced4dbab85b6440a341ea4e190724e9.jpeg",
       "classification": "real"
     }
   ]
