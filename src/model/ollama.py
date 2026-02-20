@@ -11,6 +11,7 @@ class OllamaModel():
         self.reasoning = reasoning
 
     def send_image(self, image_path: str, prompt: dict) -> dict:
+      print(self.model_name)
       base64_image = encode_image(image_path)
       text_prompt = prompt["text"]
       schema = prompt["schema"]

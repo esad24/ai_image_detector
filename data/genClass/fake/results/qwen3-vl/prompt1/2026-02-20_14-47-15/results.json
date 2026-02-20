@@ -1,0 +1,145 @@
+{
+  "meta": {
+    "model": "qwen3-vl",
+    "prompt_id": 1,
+    "reasoning": false
+  },
+  "image_count": 33,
+  "detected_fake": 22,
+  "detected_real": 11,
+  "acc": 0.6666666666666666,
+  "results": [
+    {
+      "filename": "69d2ed0506ee71fcc965a38305037a016649f482cbbf2b34de430907bb086a37.jpeg",
+      "classification": "fake"
+    },
+    {
+      "filename": "55bf29fb606f25f6640805738772d4e04497c0154f8946f458cfc92c26e1cc63.jpeg",
+      "classification": "real"
+    },
+    {
+      "filename": "24718ab7f2f763e1032f532e301b3395.jpeg",
+      "classification": "fake"
+    },
+    {
+      "filename": "ccbcb5187879ea5f9ef2871e59b94651.jpeg",
+      "classification": "fake"
+    },
+    {
+      "filename": "290f2e6887940c5d08a26396c0813d70.jpeg",
+      "classification": "real"
+    },
+    {
+      "filename": "361bfc7c9724aba424e5eea66871e2b3.jpeg",
+      "classification": "real"
+    },
+    {
+      "filename": "9df27084733d64cb0922e564eb2af4f7.jpeg",
+      "classification": "real"
+    },
+    {
+      "filename": "288b6c8f4fecb2f8f6c0a1f42b39f411.jpeg",
+      "classification": "fake"
+    },
+    {
+      "filename": "31c5e881a1032195128a8611d1555e1f.jpeg",
+      "classification": "fake"
+    },
+    {
+      "filename": "0040a255b90441b04618f491fda5a7f4.jpeg",
+      "classification": "real"
+    },
+    {
+      "filename": "6f22a028a094e6668084ebeb7572e5fd.jpeg",
+      "classification": "fake"
+    },
+    {
+      "filename": "e21e83bdff93fe57408622c2e02ab189.jpeg",
+      "classification": "fake"
+    },
+    {
+      "filename": "c3a9f27c42510854b34e327a6d31c969b28dfad01f8f8cfe257c5e8d17505222.jpeg",
+      "classification": "fake"
+    },
+    {
+      "filename": "55286af23fdde91879b26e3ff8f1bc00.jpeg",
+      "classification": "fake"
+    },
+    {
+      "filename": "425169fd7852908aea4f6b7c14b54e8b.jpeg",
+      "classification": "fake"
+    },
+    {
+      "filename": "a0ff8ac76a990516504cba6df064ad85.jpeg",
+      "classification": "real"
+    },
+    {
+      "filename": "c900d0d2e2a6f09e7b08da7f59d6947f.jpeg",
+      "classification": "real"
+    },
+    {
+      "filename": "40b93654100f9d68cca6c0ee6b587377.jpeg",
+      "classification": "fake"
+    },
+    {
+      "filename": "3b2aef4728425ddd88f17a3f7a7491a0.jpeg",
+      "classification": "real"
+    },
+    {
+      "filename": "3864982a4411666747b2456fe4ea4258.jpeg",
+      "classification": "fake"
+    },
+    {
+      "filename": "6a98dad4de5ce462fd6c8239be0ddfbc.jpeg",
+      "classification": "real"
+    },
+    {
+      "filename": "5c893cb8f10dc0015f7eccf5ca0fec2b02e5263c4fff625fa636f9de3d0bd775.jpeg",
+      "classification": "fake"
+    },
+    {
+      "filename": "9a5c3c6bd4aee7ff5fcaa3c8f7768d4f.jpeg",
+      "classification": "fake"
+    },
+    {
+      "filename": "f84a79e62e6e309deacda28d64ded163.jpeg",
+      "classification": "real"
+    },
+    {
+      "filename": "d874863b830ebb52890a4a4e74d07fb1f8bf50c4f97c0d077862b81041fec037.jpeg",
+      "classification": "fake"
+    },
+    {
+      "filename": "5f08dee99aede978f2acaefff69e9265.jpeg",
+      "classification": "real"
+    },
+    {
+      "filename": "c7f2477fde457608b8469d378d75b4a291d17236c641da049ed0fbb0aff432e2.jpeg",
+      "classification": "fake"
+    },
+    {
+      "filename": "4d23416a599751a846ef50398a9a40d3.jpeg",
+      "classification": "fake"
+    },
+    {
+      "filename": "04b67bdea173a9ed3a44622cf7303a5e.jpeg",
+      "classification": "fake"
+    },
+    {
+      "filename": "34d82e456fe8b5992d7300b631e601dd.jpeg",
+      "classification": "fake"
+    },
+    {
+      "filename": "42e640ba604eb4fccb1dc47ba1c3e2a3d6f94c9466220d447c0356cd3c679524.jpeg",
+      "classification": "fake"
+    },
+    {
+      "filename": "c24423913e83bc665fd57a51c61d6f24.jpeg",
+      "classification": "fake"
+    },
+    {
+      "filename": "5204545de13342cbefdc0e9022d821d2.jpeg",
+      "classification": "fake"
+    }
+  ]
+}

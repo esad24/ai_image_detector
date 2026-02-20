@@ -11,22 +11,22 @@ class ResultWriter:
         """
         base_dir = ""
         self.mode = None
-        if image_folder.startswith("real_train"):
-            base_dir = f"/home/usluesyr/ai_image_detector/data/genArtifact/real/train/results/{model_name}/prompt{prompt_id}"
-            self.mode = "real"
-        elif image_folder.startswith("real_test"):
-            base_dir = f"/home/usluesyr/ai_image_detector/data/genArtifact/real/test/results/{model_name}/prompt{prompt_id}"
-            self.mode = "real"
-        elif image_folder.startswith("fake_train"):
-            base_dir = f"/home/usluesyr/ai_image_detector/data/genArtifact/fake/train/results/{model_name}/prompt{prompt_id}"
+        if image_folder.startswith("genClass_fake"):
+            base_dir = f"/home/usluesyr/ai_image_detector/data/genClass/fake/results/{model_name}/prompt{prompt_id}"
             self.mode = "fake"
-        elif image_folder.startswith("fake_test"):
+        elif image_folder.startswith("genClass_real"):
+            base_dir = f"/home/usluesyr/ai_image_detector/data/genClass/real/results/{model_name}/prompt{prompt_id}"
+            self.mode = "real"
+        elif image_folder.startswith("genArtifact_fake"):
             base_dir = f"/home/usluesyr/ai_image_detector/data/genArtifact/fake/test/results/{model_name}/prompt{prompt_id}"
             self.mode = "fake"
-        elif image_folder.startswith("reconstruct_fake"):
+        elif image_folder.startswith("genArtifact_real"):
+            base_dir = f"/home/usluesyr/ai_image_detector/data/genArtifact/real/test/results/{model_name}/prompt{prompt_id}"
+            self.mode = "real"
+        elif image_folder.startswith("real2gen_fake"):
             base_dir = f"/home/usluesyr/ai_image_detector/data/real2Gen/fake/results/{model_name}/prompt{prompt_id}"
             self.mode = "fake"
-        elif image_folder.startswith("reconstruct_real"):
+        elif image_folder.startswith("real2Gen_real"):
             base_dir = f"/home/usluesyr/ai_image_detector/data/real2Gen/real/results/{model_name}/prompt{prompt_id}"
             self.mode = "real"
         else:
