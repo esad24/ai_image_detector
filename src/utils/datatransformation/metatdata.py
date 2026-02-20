@@ -4,9 +4,9 @@ import pandas as pd
 
 # ====== CONFIG ======
 original_csv_path = "/home/usluesyr/ai_image_detector/src/utils/datatransformation/stimuli_image_metadata.csv"
-real_folder = "/home/usluesyr/ai_image_detector/data/real/test/images"
-fake_folder = "/home/usluesyr/ai_image_detector/data/fake/test/images"
-output_csv_path = "/home/usluesyr/ai_image_detector/src/utils/datatransformation/images_metadata.csv"
+real_folder = "/home/usluesyr/ai_image_detector/data/genClass/real/images"
+fake_folder = "/home/usluesyr/ai_image_detector/data/genClass/fake/images"
+output_csv_path = "/home/usluesyr/ai_image_detector/data/genClass/images_metadata.csv"
 # ====================
 
 # Load original CSV
@@ -58,7 +58,7 @@ def process_folder(folder_path, classification_label):
         rows.append({
             "filename": file,
             "classification": classification_label,
-            "old_filename": old_filename,
+            #"old_filename": old_filename,
             "generator": generator
         })
 
