@@ -4,17 +4,17 @@ ALLOWED_EXTENSIONS = (".jpg", ".jpeg", ".png", ".webp")
 
 def load_images(image_folder):
     if(image_folder == "fake_train"):
-        folder_path = "/home/usluesyr/ai_image_detector/data/fake/train/images"
+        folder_path = "/home/usluesyr/ai_image_detector/data/genArtifact/fake/train/images"
     elif(image_folder == "fake_test"):
-        folder_path = "/home/usluesyr/ai_image_detector/data/fake/test/images"
+        folder_path = "/home/usluesyr/ai_image_detector/data/genArtifact/fake/test/images"
     elif(image_folder == "real_train"):
-        folder_path = "/home/usluesyr/ai_image_detector/data/real/train/images"
+        folder_path = "/home/usluesyr/ai_image_detector/data/genArtifact/real/train/images"
     elif(image_folder == "real_test"):
-        folder_path = "/home/usluesyr/ai_image_detector/data/real/test/images"
+        folder_path = "/home/usluesyr/ai_image_detector/data/genArtifact/real/test/images"
     elif(image_folder == "reconstruct_fake"):
-        folder_path = "/home/usluesyr/ai_image_detector/data/reconstructed_images/fake/images"
+        folder_path = "/home/usluesyr/ai_image_detector/data/genArtifact/reconstructed_images/fake/images"
     elif(image_folder == "reconstruct_real"):
-        folder_path = "/home/usluesyr/ai_image_detector/data/reconstructed_images/real/images"
+        folder_path = "/home/usluesyr/ai_image_detector/data/genArtifact/reconstructed_images/real/images"
     else:
         if not os.path.isdir(image_folder):
             raise ValueError("Image folder does not exist")
