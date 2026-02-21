@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "model": "gpt-5.2",
+    "prompt_id": 1,
+    "reasoning": "none"
+  },
+  "split": "real",
+  "image_count": 149,
+  "detected_fake": 26,
+  "detected_real": 122,
+  "acc": 0.8187919463087249,
+  "classification_metrics": {
+    "total_images": 149,
+    "true_negatives": 123,
+    "false_positives": 26,
+    "specificity_true_negative_rate": 0.8255,
+    "false_positive_rate": 0.1745,
+    "false_positive_files": [
+      "5a38a89f06ff8721b32a70e78fe17af3bb6e472d0f54dd3c3b213190914e1b5b.jpeg",
+      "caabe61d5e181b8da352b0e7b73dfeb4.jpeg",
+      "1c7d7dcede55634f300b85a4ea16927e.jpeg",
+      "b877b292f305aa593ee7a14ecffff708.jpeg",
+      "d2a0b9077cb5d81e04276f228bca36368e0be218e1a04a0701c8e46a4126a42a.jpeg",
+      "c38189c54230e478e366311946620a3a.jpeg",
+      "ccd0fc996e8f251193d7b94417a2e109.jpeg",
+      "e4fd0b7c8c7d3dca42aab01618224fabc57cb8690ec4f3566b3335f83c8ab0ff.jpeg",
+      "70b272fa1e6720074bc46ac2147b7671a380eed3084bf4a246d4a792f350d144.jpeg",
+      "496b696785ad2da1e310e53bb5be541d2ea161424b076eabeb0b1d4a6b6d2f3e.jpeg",
+      "b472b7624e736851155da6ece8d096ed1d6ffb74cd3710667a4e956d0812cfc9.jpeg",
+      "b9836f50be0bc4098534bf668a8d68209c3708e6574595f492faeff454fcba7f.jpeg",
+      "03a001b85768dd4c7bcb8e20486bf0f20973314b1ec269ef1057f6565de34016.jpeg",
+      "bdb193b95d0242f317782eff6c36cc6d.jpeg",
+      "c21c80f72b4cb3582bc8d7a8f936027b.jpeg",
+      "18eb2ad00b472ce6b2f08e304d16402f.jpeg",
+      "e27a20ee799c9f1c6aaf2ed366a77a0037c666fced5ed5d7651625648c9ffc7c.jpeg",
+      "75c47d208befde17a09760eb8b9231cd75a62b22243ec0e71d59f32d8ea60254.jpeg",
+      "bdb32206b51ba1b27eb8dc0de82983df122c00541ff39dde66efef241cd920aa.jpeg",
+      "d844265d78659148842238420ec306fbc2f23822e18d7cfb5a81720831c960a1.jpeg",
+      "0b96dd5fd38f6c18236dcec8df90c549.jpeg",
+      "c362188ff928cf10b6cb734ba674c8f91af2ab48af337ebc873cd06769b429a1.jpeg",
+      "d5bc548d83beeaaf4ef78b0c75bf652dfacaec69b0aa1939b03b0343a6342542.jpeg",
+      "bb940e5b5eb4667fa106086a3ddd34ce.jpeg",
+      "22ba4974b508590e5daadeabe775a344.jpeg",
+      "1baf3f78a5ea367863f70e867819f795ca6bcf73a331f741ba00f484aed98b61.jpeg"
+    ]
+  }
+}

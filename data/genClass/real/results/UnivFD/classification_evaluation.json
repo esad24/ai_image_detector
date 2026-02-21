@@ -1,0 +1,24 @@
+{
+  "meta": {},
+  "split": "real",
+  "image_count": 149,
+  "detected_fake": 7,
+  "detected_real": 142,
+  "acc": null,
+  "classification_metrics": {
+    "total_images": 149,
+    "true_negatives": 142,
+    "false_positives": 7,
+    "specificity_true_negative_rate": 0.953,
+    "false_positive_rate": 0.047,
+    "false_positive_files": [
+      "63b3e7984cd58d477392d4cf52731765c6d8d6878a7d29eecff28fcbdfa20a9b.jpeg",
+      "8b559e81a9f8761a8a03d40ab5ad1d16.jpeg",
+      "bcfd2b29105ae85e9179e13174fc9f41ac50693603f2d770dfbaab4300ee8a58.jpeg",
+      "d09add37365b7335c5f96ceb3f90a7cf64e683643a2a46ce67a213b6554a9369.jpeg",
+      "d7f62506968b2101234d06827fc7f959bd2e09c98c21e28d86ef8a4b6c7f9ca7.jpeg",
+      "e4fd0b7c8c7d3dca42aab01618224fabc57cb8690ec4f3566b3335f83c8ab0ff.jpeg",
+      "f87823469991b7b1704ff9e4d4c7d05674097995db209a8e20dbcafdbc5cece9.jpeg"
+    ]
+  }
+}
