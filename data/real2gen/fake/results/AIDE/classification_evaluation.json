@@ -1,0 +1,27 @@
+{
+  "meta": {},
+  "split": "fake",
+  "image_count": 30,
+  "detected_fake": 20,
+  "detected_real": 10,
+  "acc": null,
+  "classification_metrics": {
+    "total_images": 30,
+    "true_positives": 20,
+    "false_negatives": 10,
+    "recall_sensitivity": 0.6667,
+    "false_negative_rate": 0.3333,
+    "false_negative_files": [
+      "10ff906c25d12371be60cf5f24801fb1_r.jpeg",
+      "3b2df9efaf0e42c3763dfbf3b387e8ac_r.jpeg",
+      "40cdea68f25828d8bfd84a557479400c72bfb6941c1de300a4e10eee4831c421_r.jpeg",
+      "4385a289fa7f32a4400492be839ddf44_r.jpeg",
+      "63b3e7984cd58d477392d4cf52731765c6d8d6878a7d29eecff28fcbdfa20a9b_r.jpeg",
+      "7e5172ad4e622ec6bdffee40c761e54a_r.jpeg",
+      "810bcecc0287f5afe2bc9e1cb2b18ec1144811921d7599d6b2c6fcc5e47a4aa3_r.jpeg",
+      "pexels-elletakesphotos-1680173_r.jpg",
+      "pexels-markarronsmith-2168356_r.jpg",
+      "pexels-simon-robben-55958-614810_r.jpg"
+    ]
+  }
+}

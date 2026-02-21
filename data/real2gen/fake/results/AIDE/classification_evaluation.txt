@@ -1,0 +1,9 @@
+============================================================
+FAKE IMAGES — CLASSIFICATION EVALUATION
+============================================================
+
+Classification:
+  TP (correctly detected fake): 20
+  FN (missed fakes):            10
+  Recall / Sensitivity:         0.6667
+  False Negative Rate:          0.3333

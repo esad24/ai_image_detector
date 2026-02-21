@@ -1,0 +1,18 @@
+{
+  "meta": {},
+  "split": "real",
+  "image_count": 30,
+  "detected_fake": 1,
+  "detected_real": 29,
+  "acc": null,
+  "classification_metrics": {
+    "total_images": 30,
+    "true_negatives": 29,
+    "false_positives": 1,
+    "specificity_true_negative_rate": 0.9667,
+    "false_positive_rate": 0.0333,
+    "false_positive_files": [
+      "63b3e7984cd58d477392d4cf52731765c6d8d6878a7d29eecff28fcbdfa20a9b.jpeg"
+    ]
+  }
+}
