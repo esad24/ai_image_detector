@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "model": "qwen3-vl",
+    "prompt_id": 1,
+    "reasoning": false
+  },
+  "split": "fake",
+  "image_count": 30,
+  "detected_fake": 13,
+  "detected_real": 17,
+  "acc": 0.43333333333333335,
+  "classification_metrics": {
+    "total_images": 30,
+    "true_positives": 13,
+    "false_negatives": 17,
+    "recall_sensitivity": 0.4333,
+    "false_negative_rate": 0.5667,
+    "false_negative_files": [
+      "91f6d7c058d344cac284e32c7528ad52227190b95375ae261c10e8fb7d94425b_r.jpeg",
+      "pexels-simon-robben-55958-614810_r.jpg",
+      "10ff906c25d12371be60cf5f24801fb1_r.jpeg",
+      "3b2df9efaf0e42c3763dfbf3b387e8ac_r.jpeg",
+      "pexels-kampus-6763716_r.jpg",
+      "b44f76c982e61da75229c6c579a44c3ead8144f558b4381cd30e4d6df14b6028_r.jpeg",
+      "pexels-thgusstavo-1933873_r.jpg",
+      "pexels-elletakesphotos-1680173_r.jpg",
+      "pexels-markarronsmith-2168356_r.jpg",
+      "pexels-rebrand-cities-581004-1367269_r.jpg",
+      "pexels-hannah-nelson-390257-1456951_r.jpg",
+      "35df25c3d2f57c32c2be722b51b16cd2_r.jpeg",
+      "7e5172ad4e622ec6bdffee40c761e54a_r.jpeg",
+      "63b3e7984cd58d477392d4cf52731765c6d8d6878a7d29eecff28fcbdfa20a9b_r.jpeg",
+      "7ab599405cf71cba21eecd46b7305058_r.jpeg",
+      "4385a289fa7f32a4400492be839ddf44_r.jpeg",
+      "19c88e43e58f7e3b52041ac204ee5717_r.jpeg"
+    ]
+  }
+}

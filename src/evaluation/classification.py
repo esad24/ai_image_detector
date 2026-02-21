@@ -16,9 +16,9 @@ import os
 # ═══════════════════════════════════════════════════════════════
 # CONFIGURATION
 # ═══════════════════════════════════════════════════════════════
-MODE = "real"  # "fake" or "real"
+MODE = "fake"  # "fake" or "real"
 
-RESULT_JSON = "/home/usluesyr/ai_image_detector/data/real2gen/real/results/qwen3-vl/prompt5/2026-02-21_13-43-45/results.json"
+RESULT_JSON = "/home/usluesyr/ai_image_detector/data/real2gen/fake/results/qwen3-vl/prompt1/2026-02-21_15-15-19/results.json"
 OUTPUT_FILE = os.path.join(
     os.path.dirname(RESULT_JSON),
     f"classification_evaluation.json"
