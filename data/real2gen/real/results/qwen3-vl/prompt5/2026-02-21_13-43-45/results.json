@@ -1,0 +1,397 @@
+{
+  "meta": {
+    "model": "qwen3-vl",
+    "prompt_id": 5,
+    "reasoning": false
+  },
+  "image_count": 30,
+  "detected_fake": 30,
+  "detected_real": 0,
+  "acc": 0.0,
+  "results": [
+    {
+      "filename": "10ff906c25d12371be60cf5f24801fb1.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "Fingers passing through the cone's opening is physically impossible; the cone is a hollow structure and fingers should be on the exterior, not passing through the top where ice cream is placed.",
+          "location": "Woman on the left holding the ice cream cone, right hand"
+        }
+      ]
+    },
+    {
+      "filename": "cf33ccfee6f7eb1725eaa67ab3de4476.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "Text on the woman's shirt is misspelled as 'DALLA' instead of 'DALLAS' and 'MAVERIC' instead of 'MAVERICKS', which is inconsistent with the official Dallas Mavericks branding",
+          "location": "Woman's shirt"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-simon-robben-55958-614810.jpg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "Eyes lack realistic iris texture and highlight consistency, common in AI generation",
+          "location": "Eyes"
+        },
+        {
+          "reasoning": "Background bokeh contains unnatural light artifacts and inconsistent depth",
+          "location": "Background"
+        },
+        {
+          "reasoning": "Hair texture appears overly uniform with unnatural strand separation",
+          "location": "Hair"
+        },
+        {
+          "reasoning": "Skin texture shows inconsistent pore detail and smooth transitions",
+          "location": "Face"
+        },
+        {
+          "reasoning": "Collar edge lacks natural blending with neck skin, indicating synthetic generation",
+          "location": "Collar"
+        }
+      ]
+    },
+    {
+      "filename": "6eb2e789526629ed382be35a4192fc25.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "Curtain incorrectly placed on door (should be on window)",
+          "location": "Door area in center background"
+        },
+        {
+          "reasoning": "Window frame/curtain alignment mismatch with brick wall",
+          "location": "Right window/door area"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-kampus-6763716.jpg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "Backboard logo appears distorted or incorrectly positioned (e.g., 'SPALDING' branding is not standard or misaligned)",
+          "location": "Backboard in background"
+        },
+        {
+          "reasoning": "Court floor lines and textures show inconsistencies, with some areas appearing unnaturally flat or misaligned with perspective",
+          "location": "Basketball court floor"
+        },
+        {
+          "reasoning": "Lighting inconsistencies, such as unnatural brightness or shadowing on structural elements (e.g., ceiling beams, walls)",
+          "location": "Ceiling and wall areas"
+        }
+      ]
+    },
+    {
+      "filename": "19c88e43e58f7e3b52041ac204ee5717.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The middle person's hair appears unnaturally smooth and lacks the fine details typical of real hair, suggesting digital manipulation such as retouching or compositing",
+          "location": "Middle person's hair"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-ash-valiente-1680519-3533228.jpg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "Inconsistent emoji placement on balloons does not align with spherical curvature, creating unnatural edges and missing texture details",
+          "location": "balloons"
+        },
+        {
+          "reasoning": "Overly smooth texture and uniform lighting on balloons lack natural imperfections and realistic light reflections",
+          "location": "balloons"
+        }
+      ]
+    },
+    {
+      "filename": "40cdea68f25828d8bfd84a557479400c72bfb6941c1de300a4e10eee4831c421.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The hand of the child in the green shirt (middle) is holding the pizza slice with fingers that do not align correctly, specifically showing an extra digit or mismatched placement.",
+          "location": "Middle child's hand holding the pizza slice"
+        }
+      ]
+    },
+    {
+      "filename": "9abbb21f98f0aa977beaf958243cc342.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "Inconsistent fabric alignment between the pink waistband and the blue striped shorts, with visible stitching or texture discontinuity",
+          "location": "Dress (pink waistband and blue shorts section)"
+        }
+      ]
+    },
+    {
+      "filename": "7ab599405cf71cba21eecd46b7305058.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The stone staircase lacks correct perspective; steps are parallel (not converging) as they recede, which is inconsistent with real-world perspective for a staircase",
+          "location": "Stone steps in the background"
+        }
+      ]
+    },
+    {
+      "filename": "496b696785ad2da1e310e53bb5be541d2ea161424b076eabeb0b1d4a6b6d2f3e.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "Unnatural skin texture and facial features (e.g., eyes, nose shape) inconsistent with real human anatomy",
+          "location": "face"
+        },
+        {
+          "reasoning": "Hands appear distorted with unnatural proportions and lack of detail, inconsistent with a child's anatomy",
+          "location": "hands"
+        },
+        {
+          "reasoning": "Inconsistent shadowing and lighting across the face and hands, violating natural light behavior",
+          "location": "face and hands"
+        }
+      ]
+    },
+    {
+      "filename": "35df25c3d2f57c32c2be722b51b16cd2.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The name tag text 'Tim Holeda' contains a misspelling of the correct name 'Tim Holida'",
+          "location": "on the man's shirt"
+        }
+      ]
+    },
+    {
+      "filename": "810bcecc0287f5afe2bc9e1cb2b18ec1144811921d7599d6b2c6fcc5e47a4aa3.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "Background elements show inconsistent patterns and repeated sections, typical of AI-generated imagery where background details lack coherence. The blue chair and vertical white structures exhibit unnatural repetition and misalignment.",
+          "location": "Background elements, specifically the blue chair and vertical white structures behind the subject"
+        }
+      ]
+    },
+    {
+      "filename": "7e5172ad4e622ec6bdffee40c761e54a.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "Incorrect rendering of the conical hat (nón lá) structure; brim has uniform width and lacks natural woven texture details.",
+          "location": "Hat's brim"
+        },
+        {
+          "reasoning": "Stitching details on the hat do not match traditional Vietnamese craftsmanship, showing artificial consistency.",
+          "location": "Hat's stitching"
+        }
+      ]
+    },
+    {
+      "filename": "22ba4974b508590e5daadeabe775a344.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "Hand artifacts: fingers exhibit unnatural proportions and lack realistic curvature when pressed against glass; skin texture is overly smooth without natural pores or wrinkles",
+          "location": "Hand"
+        },
+        {
+          "reasoning": "Face artifacts: eyes have uniform texture and color without realistic iris variations; skin texture is unnaturally smooth with minimal imperfections",
+          "location": "Face"
+        }
+      ]
+    },
+    {
+      "filename": "3b2df9efaf0e42c3763dfbf3b387e8ac.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The bus stop's glass panels are rendered as opaque or with inconsistent reflections, whereas real bus stop glass enclosures should be transparent to allow visibility of the surroundings. The reflections within the glass panels show people and structures that do not correspond to the actual scene, indicating an artificial manipulation.",
+          "location": "Bus stop glass enclosure"
+        }
+      ]
+    },
+    {
+      "filename": "6f94f65c954eaa1a7d722dff848810ac.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The child's body appears digitally generated, with unnatural skin texture and inconsistent lighting compared to the wooden structure in the background.",
+          "location": "Torso and arms of the child"
+        }
+      ]
+    },
+    {
+      "filename": "07033864d4889d76cabaf716194d08b1.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "Inconsistent shadow directions: the left and middle figures cast shadows to the right, indicating the sun is on the left, but the right figure's shadow is cast to the left, which would require the sun to be on the right, creating a contradiction in lighting direction",
+          "location": "Shadow of the person in the gray jacket on the right side of the image"
+        }
+      ]
+    },
+    {
+      "filename": "63b3e7984cd58d477392d4cf52731765c6d8d6878a7d29eecff28fcbdfa20a9b.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The shoulder patch on the right soldier's uniform is incorrect for Ukrainian military standards. Ukrainian military patches for the army feature the Ukrainian flag (blue and yellow) in a specific format, whereas this patch has a design consistent with Russian military insignia.",
+          "location": "Right soldier's shoulder patch"
+        },
+        {
+          "reasoning": "The camouflage pattern on the right soldier's uniform does not match Ukrainian military standards. Ukrainian military primarily uses the 'Prymorska' digital camo pattern, which is not accurately represented here.",
+          "location": "Right soldier's uniform"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-thgusstavo-1933873.jpg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The cigarette in the man's mouth is an AI-generated artifact with unnatural texture and missing realistic details such as smoke or ash, indicating inconsistency with real-world physics.",
+          "location": "Man's mouth"
+        }
+      ]
+    },
+    {
+      "filename": "91f6d7c058d344cac284e32c7528ad52227190b95375ae261c10e8fb7d94425b.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "Ear anatomy is distorted: left ear (subject's right) lacks natural contours (e.g., earlobe shape, cartilage), with earring placement inconsistent with head structure.",
+          "location": "Left ear (subject's right side)"
+        },
+        {
+          "reasoning": "Headscarf texture is unnatural: folds are too uniform with sharp edges, lacking realistic fabric draping and texture variation.",
+          "location": "Black headscarf fabric"
+        },
+        {
+          "reasoning": "Skin texture lacks natural imperfections: overly smooth surface with minimal pores or blemishes, common in AI-generated faces.",
+          "location": "Facial skin"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-rebrand-cities-581004-1367269.jpg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The background window reflections show inconsistent architectural details that do not align with the actual buildings visible outside, indicating a synthesized or digitally altered background.",
+          "location": "Windows in the background, particularly the left and rightmost windows"
+        },
+        {
+          "reasoning": "Lighting inconsistencies are evident in the shadows cast on the subjects and the surrounding environment, where the direction of light does not match the natural illumination expected from the large windows.",
+          "location": "General lighting on the subjects and the interior ceiling"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-hannah-nelson-390257-1456951.jpg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The child's fingers are unnaturally thick and distorted, indicating image editing artifacts.",
+          "location": "Child's hands (fingers)"
+        }
+      ]
+    },
+    {
+      "filename": "b44f76c982e61da75229c6c579a44c3ead8144f558b4381cd30e4d6df14b6028.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "Motion blur artifacts are evident. The blue jersey player shows ghosting/double exposure, a result of inconsistent motion blur processing. Realistic motion blur in basketball would have uniform blur direction and intensity without overlapping figures. The ball's blur also appears inconsistent with the player's motion.",
+          "location": "Blue jersey player (right side of image) and ball area"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-dennisshotit-10415856.jpg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "Inconsistent background blur: The background features (e.g., the blurred figure with an orange helmet) lack natural depth variation, appearing overly uniform and smooth.",
+          "location": "Background, especially the blurred figures and bokeh areas"
+        },
+        {
+          "reasoning": "Unnatural figure details: The blurred background figures (e.g., the person with an orange helmet) have edges that do not match realistic human form, indicating AI generation artifacts.",
+          "location": "Background figures"
+        },
+        {
+          "reasoning": "Texture inconsistency: The ground area in the background exhibits unnatural texture and lighting, failing to reflect a real outdoor environment.",
+          "location": "Background ground area"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-ollivves-1122462.jpg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "Ghosting/motion blur artifact on the jumping man's body (duplicated figure)",
+          "location": "Jumping man"
+        },
+        {
+          "reasoning": "Blurred outline on the man standing on the boat (inconsistent motion blur)",
+          "location": "Man on the boat"
+        }
+      ]
+    },
+    {
+      "filename": "5ba040f1b7aa293dc915e40f0e39b3f8.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "Anatomically incorrect hand positioning: fingers do not properly wrap around or interact with the tablet",
+          "location": "Woman's right hand holding tablet"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-markarronsmith-2168356.jpg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "Overly uniform eyelash density with unnatural spacing and inconsistent direction",
+          "location": "Eyelash region"
+        },
+        {
+          "reasoning": "Repetitive iris pattern lacking organic variation",
+          "location": "Iris"
+        },
+        {
+          "reasoning": "Excessive skin smoothness and blurred texture around lower eyelid",
+          "location": "Lower eyelid skin"
+        }
+      ]
+    },
+    {
+      "filename": "4385a289fa7f32a4400492be839ddf44.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The yellow taxi is a Ford Escape, which is not a standard taxi model used in New York City. NYC taxis are primarily Ford Crown Victoria or Toyota Prius (hybrid) models.",
+          "location": "taxi body"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-elletakesphotos-1680173.jpg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The Sydney Harbour Bridge in the background has a distorted arch curvature and misaligned towers, which deviate from its actual structure.",
+          "location": "Background bridge structure"
+        }
+      ]
+    }
+  ]
+}

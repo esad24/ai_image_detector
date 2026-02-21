@@ -1,0 +1,223 @@
+{
+  "meta": {
+    "model": "qwen3-vl",
+    "prompt_id": 4,
+    "reasoning": false
+  },
+  "image_count": 30,
+  "detected_fake": 1,
+  "detected_real": 29,
+  "acc": 0.9666666666666667,
+  "results": [
+    {
+      "filename": "10ff906c25d12371be60cf5f24801fb1.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "cf33ccfee6f7eb1725eaa67ab3de4476.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-simon-robben-55958-614810.jpg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "6eb2e789526629ed382be35a4192fc25.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-kampus-6763716.jpg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "19c88e43e58f7e3b52041ac204ee5717.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-ash-valiente-1680519-3533228.jpg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "The image shows a realistic photograph with natural details: the person's hands are positioned naturally, the balloons have consistent printed emoji faces without misalignment, the background (metal gate) has logical structure, and lighting is consistent with a real-world scene. No signs of typical AI-generated artifacts such as unnatural hand anatomy, inconsistent textures, or misaligned elements are present.",
+          "location": "No synthesis artifacts exist."
+        }
+      ]
+    },
+    {
+      "filename": "40cdea68f25828d8bfd84a557479400c72bfb6941c1de300a4e10eee4831c421.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "No visible signs of synthesis artifacts; details such as skin texture, hair, pizza slices, and background elements appear natural and consistent with a real photograph.",
+          "location": "entire image"
+        }
+      ]
+    },
+    {
+      "filename": "9abbb21f98f0aa977beaf958243cc342.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "No visible signs of common AI synthesis artifacts such as inconsistent textures, unnatural edges, duplicated pixels, or distorted features. The image details (e.g., clothing, sand texture, stick, hair) appear consistent with real photography.",
+          "location": "Entire image appears natural with no discernible artifacts."
+        }
+      ]
+    },
+    {
+      "filename": "7ab599405cf71cba21eecd46b7305058.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "The image appears to be a photograph with consistent natural details and no obvious signs of AI-generated inconsistencies such as unnatural anatomy, inconsistent textures, or mismatched lighting. The subject's posture, clothing details, and environmental elements align naturally.",
+          "location": "The entire image shows no identifiable synthesis artifacts."
+        }
+      ]
+    },
+    {
+      "filename": "496b696785ad2da1e310e53bb5be541d2ea161424b076eabeb0b1d4a6b6d2f3e.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "The image depicts a realistic scene with natural lighting, consistent textures, and anatomically accurate features (e.g., the boy's hands gripping the rail and his facial structure), indicating it is a photograph rather than an AI-generated synthesis.",
+          "location": "Overall image quality and details (e.g., natural skin texture, coherent background elements)"
+        }
+      ]
+    },
+    {
+      "filename": "35df25c3d2f57c32c2be722b51b16cd2.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "No visible signs of artificial generation; natural lighting, consistent details in clothing, facial features, and background elements (e.g., room furniture, name tag placement) are coherent and realistic without telltale AI artifacts such as unnatural blurring, mismatched textures, or inconsistent proportions.",
+          "location": "entire image"
+        }
+      ]
+    },
+    {
+      "filename": "810bcecc0287f5afe2bc9e1cb2b18ec1144811921d7599d6b2c6fcc5e47a4aa3.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "7e5172ad4e622ec6bdffee40c761e54a.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "No synthesis artifacts detected. The image exhibits realistic details consistent with a traditional portrait photograph, including natural textures in the clothing, hat, and facial features. The composition and lighting align with photographic realism, indicating the image is likely a genuine photograph.",
+          "location": "No artifacts present"
+        }
+      ]
+    },
+    {
+      "filename": "22ba4974b508590e5daadeabe775a344.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "No visible synthesis artifacts detected. The image exhibits natural textures, consistent lighting, and realistic details (e.g., hand on glass, fabric of coat, background blur). The elements align with typical photographic characteristics without signs of AI-generated inconsistencies or distortions.",
+          "location": "None"
+        }
+      ]
+    },
+    {
+      "filename": "3b2df9efaf0e42c3763dfbf3b387e8ac.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "6f94f65c954eaa1a7d722dff848810ac.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "07033864d4889d76cabaf716194d08b1.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "63b3e7984cd58d477392d4cf52731765c6d8d6878a7d29eecff28fcbdfa20a9b.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-thgusstavo-1933873.jpg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "The image shows realistic details such as natural skin texture, consistent fabric texture on the shirt, and plausible background elements (e.g., blurred people and cars) that align with real-world photography. There are no indicators of artificial generation like unnatural patterns, inconsistencies in lighting, or distorted features typical of AI synthesis artifacts.",
+          "location": "None"
+        }
+      ]
+    },
+    {
+      "filename": "91f6d7c058d344cac284e32c7528ad52227190b95375ae261c10e8fb7d94425b.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-rebrand-cities-581004-1367269.jpg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "No evident synthesis artifacts detected. The image exhibits consistent details, natural lighting, and realistic textures in clothing and environment. Common AI-generated artifacts (e.g., unnatural hand proportions, inconsistent facial features, or odd textures) are absent.",
+          "location": "None"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-hannah-nelson-390257-1456951.jpg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "The image appears to be a genuine photograph with realistic details in human anatomy, lighting, and natural poses. There are no obvious signs of AI-generated artifacts such as unnatural hand anatomy, distorted facial features, or inconsistent shadows.",
+          "location": "N/A (no artifacts detected)"
+        }
+      ]
+    },
+    {
+      "filename": "b44f76c982e61da75229c6c579a44c3ead8144f558b4381cd30e4d6df14b6028.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-dennisshotit-10415856.jpg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-ollivves-1122462.jpg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "Incorrect text on the boat: 'HAYAARIMARINE' is a fabricated brand name, and the outboard engine is labeled 'MERQURY' (a misspelling of 'MERCURY'). These are common artifacts in AI-generated images where text is incorrect or nonsensical.",
+          "location": "Boat (brand text and engine label)"
+        }
+      ]
+    },
+    {
+      "filename": "5ba040f1b7aa293dc915e40f0e39b3f8.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-markarronsmith-2168356.jpg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "4385a289fa7f32a4400492be839ddf44.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-elletakesphotos-1680173.jpg",
+      "classification": "real",
+      "artifacts": []
+    }
+  ]
+}

@@ -4,13 +4,212 @@
     "prompt_id": 4,
     "reasoning": false
   },
-  "image_count": 1,
-  "detected_fake": 0,
-  "detected_real": 1,
-  "acc": 0.0,
+  "image_count": 30,
+  "detected_fake": 3,
+  "detected_real": 27,
+  "acc": 0.1,
   "results": [
     {
       "filename": "91f6d7c058d344cac284e32c7528ad52227190b95375ae261c10e8fb7d94425b_r.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "9abbb21f98f0aa977beaf958243cc342_r.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The left hand (extended) displays unnatural finger structure and inconsistent articulation, a common artifact in AI-generated images where hands are frequently misrepresented.",
+          "location": "left hand"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-markarronsmith-2168356_r.jpg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "07033864d4889d76cabaf716194d08b1_r.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "The image appears to be a realistic photograph with consistent lighting, natural poses for people and dogs, and no obvious digital artifacts such as mismatched hands, unnatural textures, or impossible physics. The details of the people, dogs, and environment align with real-world expectations.",
+          "location": "None"
+        }
+      ]
+    },
+    {
+      "filename": "10ff906c25d12371be60cf5f24801fb1_r.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-kampus-6763716_r.jpg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-hannah-nelson-390257-1456951_r.jpg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "19c88e43e58f7e3b52041ac204ee5717_r.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "cf33ccfee6f7eb1725eaa67ab3de4476_r.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-dennisshotit-10415856_r.jpg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "No visible synthesis artifacts detected in the image. The details of the clothing, facial features, backpack, and background blur are consistent with a real photograph. The texture of the hat, shirt, and backpack straps, along with natural lighting and depth of field, indicate a genuine photo without digital artifacts.",
+          "location": "No artifacts identified."
+        }
+      ]
+    },
+    {
+      "filename": "pexels-rebrand-cities-581004-1367269_r.jpg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-ollivves-1122462_r.jpg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "The image appears to be a photograph with realistic details such as natural lighting, consistent anatomy (e.g., human limbs and posture), and authentic elements like the Mercury outboard engine and the ocean setting. There are no visible synthesis artifacts such as distorted features, inconsistent textures, or impossible elements.",
+          "location": "No artifacts exist in the image."
+        }
+      ]
+    },
+    {
+      "filename": "810bcecc0287f5afe2bc9e1cb2b18ec1144811921d7599d6b2c6fcc5e47a4aa3_r.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-simon-robben-55958-614810_r.jpg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "7ab599405cf71cba21eecd46b7305058_r.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-thgusstavo-1933873_r.jpg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "5ba040f1b7aa293dc915e40f0e39b3f8_r.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "40cdea68f25828d8bfd84a557479400c72bfb6941c1de300a4e10eee4831c421_r.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "The hands of the children, particularly those of the middle and right kids, show unnatural texture, inconsistent proportions, and unrealistic grip on the pizza slices. This is a common artifact in AI-generated images where hand details are often poorly rendered or inconsistent with real-world anatomy.",
+          "location": "Hands of the children"
+        }
+      ]
+    },
+    {
+      "filename": "7e5172ad4e622ec6bdffee40c761e54a_r.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "4385a289fa7f32a4400492be839ddf44_r.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "63b3e7984cd58d477392d4cf52731765c6d8d6878a7d29eecff28fcbdfa20a9b_r.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "22ba4974b508590e5daadeabe775a344_r.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "No synthesis artifacts present",
+          "location": "No artifacts exist in this image"
+        }
+      ]
+    },
+    {
+      "filename": "6eb2e789526629ed382be35a4192fc25_r.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "35df25c3d2f57c32c2be722b51b16cd2_r.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "6f94f65c954eaa1a7d722dff848810ac_r.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "3b2df9efaf0e42c3763dfbf3b387e8ac_r.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "No synthesis artifacts detected; the scene appears consistent with real-world photography (e.g., natural lighting, consistent shadows, realistic human features and environment).",
+          "location": "No artifacts present"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-ash-valiente-1680519-3533228_r.jpg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "No synthesis artifacts detected. The image shows realistic details: natural hand anatomy with five fingers per hand, consistent lighting on the balloons, and a coherent background with the metal shutter. The emojis on the balloons are artistically integrated without signs of AI generation errors (e.g., unnatural texture, inconsistent proportions).",
+          "location": "No artifacts present"
+        }
+      ]
+    },
+    {
+      "filename": "b44f76c982e61da75229c6c579a44c3ead8144f558b4381cd30e4d6df14b6028_r.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "No visible synthesis artifacts. Motion blur is consistent with a real photograph capturing dynamic movement. Details like clothing, tattoos, and basketball texture appear realistic without inconsistencies typical of AI-generated images (e.g., distorted features, impossible anatomy). The gym environment elements (court lines, walls, doors) are coherent and natural.",
+          "location": "Entire image appears free of artifacts"
+        }
+      ]
+    },
+    {
+      "filename": "496b696785ad2da1e310e53bb5be541d2ea161424b076eabeb0b1d4a6b6d2f3e_r.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "Unnatural hand details: fingers appear overly smooth or proportionally inconsistent when gripping the rail",
+          "location": "Hands"
+        },
+        {
+          "reasoning": "Slight inconsistency in skin texture and lighting details, particularly around the face and cap",
+          "location": "Face and headwear"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-elletakesphotos-1680173_r.jpg",
       "classification": "real",
       "artifacts": []
     }

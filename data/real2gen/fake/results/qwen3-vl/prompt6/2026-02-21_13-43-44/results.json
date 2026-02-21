@@ -1,0 +1,411 @@
+{
+  "meta": {
+    "model": "qwen3-vl",
+    "prompt_id": 6,
+    "reasoning": false
+  },
+  "image_count": 30,
+  "detected_fake": 0,
+  "detected_real": 30,
+  "acc": 0.0,
+  "results": [
+    {
+      "filename": "9abbb21f98f0aa977beaf958243cc342_r.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-markarronsmith-2168356_r.jpg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Natural eye anatomy with precise iris radiating patterns, individual eyelash strands with varying thickness, realistic skin texture including subtle pores and natural skin variations, organic lighting with soft reflections and background bokeh consistent with photographic capture. Generated images typically exhibit overly uniform textures, synthetic patterns in iris, or artificial lighting.",
+          "location": "iris, eyelashes, skin, background"
+        }
+      ]
+    },
+    {
+      "filename": "07033864d4889d76cabaf716194d08b1_r.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "10ff906c25d12371be60cf5f24801fb1_r.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Natural skin textures and wrinkles show aging without artificial digital alteration",
+          "location": "faces"
+        },
+        {
+          "reasoning": "Realistic ice cream cone details (e.g., waffle pattern, melting texture) with hands positioned naturally",
+          "location": "hands and cones"
+        },
+        {
+          "reasoning": "Background blur exhibits natural bokeh with varied lighting and human figures in casual poses",
+          "location": "background"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-kampus-6763716_r.jpg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-hannah-nelson-390257-1456951_r.jpg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "19c88e43e58f7e3b52041ac204ee5717_r.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "cf33ccfee6f7eb1725eaa67ab3de4476_r.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Natural lighting consistent with stadium environment",
+          "location": "background"
+        },
+        {
+          "reasoning": "Realistic human poses and clothing details (e.g., woman's 'DALLA' shirt with logo, man's suit)",
+          "location": "foreground"
+        },
+        {
+          "reasoning": "Authentic stadium elements (seating arrangement, advertisements like 'Albertsons' and 'Download Bypass App')",
+          "location": "background"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-dennisshotit-10415856_r.jpg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "natural lighting with soft shadows and highlights",
+          "location": "entire image"
+        },
+        {
+          "reasoning": "realistic fabric textures on clothing and hat",
+          "location": "hat, shirt"
+        },
+        {
+          "reasoning": "authentic human features (skin texture, facial hair, expression)",
+          "location": "face"
+        },
+        {
+          "reasoning": "realistic background bokeh with blurred elements",
+          "location": "background"
+        },
+        {
+          "reasoning": "consistent detail on backpack straps and fasteners",
+          "location": "backpack"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-rebrand-cities-581004-1367269_r.jpg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-ollivves-1122462_r.jpg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "810bcecc0287f5afe2bc9e1cb2b18ec1144811921d7599d6b2c6fcc5e47a4aa3_r.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Natural skin texture with subtle imperfections (e.g., fine lines, natural lighting on facial features)",
+          "location": "face"
+        },
+        {
+          "reasoning": "Gloves show realistic creases and slight variations in texture (not overly uniform like AI-generated)",
+          "location": "hands"
+        },
+        {
+          "reasoning": "Background features (medical equipment, lighting, depth of field) exhibit natural blurring and consistent perspective with real-world photography",
+          "location": "background"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-simon-robben-55958-614810_r.jpg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "7ab599405cf71cba21eecd46b7305058_r.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Natural lighting with soft shadows consistent with outdoor daylight conditions",
+          "location": "Stone steps show realistic weathering, moss, and texture variations"
+        },
+        {
+          "reasoning": "Clothing details (e.g., fabric folds, color transitions on the pants) appear authentic",
+          "location": "Background elements (trees, building) exhibit natural depth and detail"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-thgusstavo-1933873_r.jpg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Natural lighting and shadows with realistic depth perception (e.g., subtle shadows on face, fabric textures) are consistent with real-world photography.",
+          "location": "entire image"
+        },
+        {
+          "reasoning": "Fine details such as skin texture (wrinkles, pores), cigarette ash, and fabric weave of clothing exhibit realistic imperfections common in real photographs.",
+          "location": "face, shirt, cigarette"
+        },
+        {
+          "reasoning": "Background elements (blurred pedestrians, vehicles, striped awning) demonstrate natural depth of field and contextual consistency typical of candid street photography.",
+          "location": "background"
+        }
+      ]
+    },
+    {
+      "filename": "5ba040f1b7aa293dc915e40f0e39b3f8_r.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "40cdea68f25828d8bfd84a557479400c72bfb6941c1de300a4e10eee4831c421_r.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "7e5172ad4e622ec6bdffee40c761e54a_r.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Natural skin textures with visible wrinkles and pores, showing organic human characteristics.",
+          "location": "face"
+        },
+        {
+          "reasoning": "Authentic cultural attire (handwoven hat, embroidered blouse) with intricate traditional patterns that align with real-world ethnic dress.",
+          "location": "garment"
+        },
+        {
+          "reasoning": "Realistic lighting with soft, natural shadows and highlights, matching typical photographic techniques.",
+          "location": "overall"
+        },
+        {
+          "reasoning": "Imperfections such as subtle hair strands and minor fabric details, which are common in real photographs.",
+          "location": "entire image"
+        }
+      ]
+    },
+    {
+      "filename": "4385a289fa7f32a4400492be839ddf44_r.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "63b3e7984cd58d477392d4cf52731765c6d8d6878a7d29eecff28fcbdfa20a9b_r.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Authentic military uniforms with realistic wear and insignia",
+          "location": "Soldiers' attire"
+        },
+        {
+          "reasoning": "Realistic food packaging (e.g., 'Kremniy' Ukrainian brand, 'Oat' boxes)",
+          "location": "Tabletop items"
+        },
+        {
+          "reasoning": "Naturalistic lighting and composition mimicking field conditions",
+          "location": "Overall scene illumination"
+        },
+        {
+          "reasoning": "Detailed background elements (shelves with supplies, tree trunk, hanging items)",
+          "location": "Environmental context"
+        }
+      ]
+    },
+    {
+      "filename": "22ba4974b508590e5daadeabe775a344_r.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Natural skin texture with subtle imperfections and color variations on the hand",
+          "location": "Hand"
+        },
+        {
+          "reasoning": "Authentic fabric textures (fuzzy coat, wool beanie, metallic chain)",
+          "location": "Clothing"
+        },
+        {
+          "reasoning": "Realistic reflections and bokeh in the background (city lights)",
+          "location": "Background"
+        },
+        {
+          "reasoning": "Natural lighting with soft shadows and highlights on the face and clothing",
+          "location": "Overall lighting"
+        }
+      ]
+    },
+    {
+      "filename": "6eb2e789526629ed382be35a4192fc25_r.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Natural lighting with subtle shadows and highlights, inconsistent with typical AI-generated uniform lighting.",
+          "location": "entire image"
+        },
+        {
+          "reasoning": "Imperfections in food arrangement (e.g., crumbs on plates, slightly messy eating), inconsistent with perfectly staged AI-generated food.",
+          "location": "tableware"
+        },
+        {
+          "reasoning": "Natural human expressions and postures (e.g., one child laughing widely, relaxed poses) with minor inconsistencies like slight blurring in motion.",
+          "location": "people"
+        },
+        {
+          "reasoning": "Real-world background details (e.g., brick wall texture, flowers with realistic petals, condiment bottle labels) with natural wear (e.g., slight dirt on the table).",
+          "location": "background"
+        }
+      ]
+    },
+    {
+      "filename": "35df25c3d2f57c32c2be722b51b16cd2_r.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "6f94f65c954eaa1a7d722dff848810ac_r.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Natural skin texture with visible pores and organic imperfections",
+          "location": "Child's face"
+        },
+        {
+          "reasoning": "Authentic wood grain and weathering on the structural element",
+          "location": "Wooden structure"
+        },
+        {
+          "reasoning": "Realistic lighting and shadows with soft transitions",
+          "location": "Overall scene"
+        }
+      ]
+    },
+    {
+      "filename": "91f6d7c058d344cac284e32c7528ad52227190b95375ae261c10e8fb7d94425b_r.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Realistic textural details in clothing (e.g., fabric weave of headscarf and sweater)",
+          "location": "headwear and shoulders"
+        },
+        {
+          "reasoning": "Natural skin imperfections and lighting",
+          "location": "face"
+        },
+        {
+          "reasoning": "Authentic jewelry with subtle wear (e.g., earrings' detailed structure)",
+          "location": "ears"
+        },
+        {
+          "reasoning": "Background bokeh with natural color variation",
+          "location": "background"
+        }
+      ]
+    },
+    {
+      "filename": "3b2df9efaf0e42c3763dfbf3b387e8ac_r.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "natural_lighting",
+          "location": "soft_overcast_lighting_with_realistic_shadows"
+        },
+        {
+          "reasoning": "photorealistic_details",
+          "location": "textured_clothing_and_buildings"
+        },
+        {
+          "reasoning": "environmental_accuracy",
+          "location": "winter_snow_and_bare_trees_align_with_season"
+        },
+        {
+          "reasoning": "reflection_realism",
+          "location": "glass_bus_stop_showing_realistic_reflections"
+        },
+        {
+          "reasoning": "human_behavior_accuracy",
+          "location": "diverse_natural_postures_and_interactions"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-ash-valiente-1680519-3533228_r.jpg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "b44f76c982e61da75229c6c579a44c3ead8144f558b4381cd30e4d6df14b6028_r.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Motion blur present in dynamic action, typical of real-life photography capturing movement.",
+          "location": "players and ball"
+        },
+        {
+          "reasoning": "Natural indoor lighting with consistent color temperature and realistic shadows.",
+          "location": "gym environment"
+        },
+        {
+          "reasoning": "Authentic fabric textures and details on clothing (e.g., jersey seams, shorts fabric) with realistic wear.",
+          "location": "players' attire"
+        },
+        {
+          "reasoning": "Depth perception via perspective in gym floor lines, walls, and background elements.",
+          "location": "gym setting"
+        },
+        {
+          "reasoning": "Natural skin tones and realistic human postures in athletic motion.",
+          "location": "players' physiques"
+        }
+      ]
+    },
+    {
+      "filename": "496b696785ad2da1e310e53bb5be541d2ea161424b076eabeb0b1d4a6b6d2f3e_r.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-elletakesphotos-1680173_r.jpg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Natural lighting with soft shadows and subtle highlights consistent with outdoor photography",
+          "location": "entire scene"
+        },
+        {
+          "reasoning": "Realistic skin texture, visible hair strands, and natural facial expressions on subjects",
+          "location": "subjects"
+        },
+        {
+          "reasoning": "Authentic details in background elements (water ripples, boat structures, bridge construction)",
+          "location": "background"
+        },
+        {
+          "reasoning": "Natural depth of field with consistent bokeh effects on distant objects",
+          "location": "background"
+        },
+        {
+          "reasoning": "Realistic textures on clothing (e.g., fabric of shirts, texture of shorts) and accessories (e.g., tattoo details, sunglasses reflections)",
+          "location": "subjects"
+        }
+      ]
+    }
+  ]
+}

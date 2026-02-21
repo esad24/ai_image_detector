@@ -4,10 +4,10 @@
     "prompt_id": 3,
     "reasoning": false
   },
-  "image_count": 12,
-  "detected_fake": 9,
-  "detected_real": 3,
-  "acc": 0.25,
+  "image_count": 30,
+  "detected_fake": 23,
+  "detected_real": 7,
+  "acc": 0.23333333333333334,
   "results": [
     {
       "filename": "40cdea68f25828d8bfd84a557479400c72bfb6941c1de300a4e10eee4831c421.jpeg",
@@ -130,6 +130,260 @@
           "type": "stylistic",
           "reasoning": "Inconsistent finger proportions and unnatural skin texture in the hands of both women, which is a common artifact in AI-generated images where hand rendering fails to match real-world anatomy.",
           "location": "Left woman's hands holding ice cream cone, Right woman's hands holding ice cream cone"
+        }
+      ]
+    },
+    {
+      "filename": "cf33ccfee6f7eb1725eaa67ab3de4476.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "semantic",
+          "reasoning": "The woman's shirt displays a wolf logo, but the Dallas Mavericks team logo is a stylized star, indicating an incorrect representation of the team's branding.",
+          "location": "woman's torso, shirt"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The man's right hand (holding the card) shows unnatural finger proportions and joint alignment, inconsistent with human anatomy.",
+          "location": "man's right hand, near the card"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-simon-robben-55958-614810.jpg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "6eb2e789526629ed382be35a4192fc25.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "Brick wall on left side displays vertical alignment without staggered pattern (running bond), deviating from standard bricklaying practices",
+          "location": "left brick wall"
+        },
+        {
+          "type": "semantic",
+          "reasoning": "Text on purple shirt reads \"KAD YEW\" with apparent misspelling (likely intended as \"KAD YEW\" or similar)",
+          "location": "purple shirt (second from right)"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "Rightmost child's hand shows unnatural finger count/proportion (common AI-generated hand defect)",
+          "location": "rightmost child's hand"
+        }
+      ]
+    },
+    {
+      "filename": "19c88e43e58f7e3b52041ac204ee5717.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "Fingers of the middle person's hand on the right person's shoulder are not rendered with detailed anatomy and appear unnaturally smooth or missing",
+          "location": "middle person's hand on right person's shoulder"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-ash-valiente-1680519-3533228.jpg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "The emoji prints on the yellow balloons are rendered with flat, non-curved edges that do not conform to the spherical shape of the balloons. This creates an inconsistency where the printed elements appear as if they exist on a flat surface rather than a rounded object, which is a common structural defect in AI-generated images when attempting to render textures on curved surfaces.",
+          "location": "Top-right balloon in the cluster (containing the red heart and black eye emoji)"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "The fingers of the left hand (viewer's right side) exhibit unnaturally smooth skin texture with an absence of realistic fine details such as pores, subtle shadows, and natural skin variation. This is a typical stylistic issue in AI-generated imagery where hand details lack the nuanced textural realism expected in photographs.",
+          "location": "Left hand (viewer's right side of the image)"
+        }
+      ]
+    },
+    {
+      "filename": "35df25c3d2f57c32c2be722b51b16cd2.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "semantic",
+          "reasoning": "The name tag on the man's shirt displays 'Tim Holeda', which contains a misspelling (likely intended to be 'Hoida' or another correct spelling but written incorrectly). This is implausible for a real name tag in a real-world context.",
+          "location": "man's chest"
+        }
+      ]
+    },
+    {
+      "filename": "7e5172ad4e622ec6bdffee40c761e54a.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "The hat's brim has an unnatural, smooth texture with consistent weave patterns that lack the irregularities of real straw, indicating AI generation.",
+          "location": "Brim of the hat, around the top edge"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "The embroidery on the collar shows excessive uniformity and repetitive patterns with no natural variations, typical of AI-generated textures.",
+          "location": "Collar area, upper chest"
+        }
+      ]
+    },
+    {
+      "filename": "22ba4974b508590e5daadeabe775a344.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "stylistic",
+          "reasoning": "The hand's skin texture appears unnaturally smooth, lacking subtle details such as pores or fine wrinkles. This is a common artifact in AI-generated images where skin texture is overly uniform.",
+          "location": "left hand"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "The hair lacks individual strands and appears as a flat, uniform texture, lacking the natural variation of real hair.",
+          "location": "hair region"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "The coat's texture is overly uniform, with no visible variation in the fur-like pattern, indicating an artificial texture generation.",
+          "location": "beige coat"
+        }
+      ]
+    },
+    {
+      "filename": "07033864d4889d76cabaf716194d08b1.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "stylistic",
+          "reasoning": "The left hand of the person in the blue jacket is rendered with an incorrect number of fingers, specifically missing one finger.",
+          "location": "Center of the image, on the person wearing the blue jacket"
+        }
+      ]
+    },
+    {
+      "filename": "63b3e7984cd58d477392d4cf52731765c6d8d6878a7d29eecff28fcbdfa20a9b.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "stylistic",
+          "reasoning": "Anatomically incorrect finger proportions and joint alignment in the right hand of the individual on the right side of the image (holding food)",
+          "location": "Right hand of the individual on the right side of the image (holding food)"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "Anatomically incorrect finger proportions and joint alignment in the left hand of the individual on the left side of the image (holding spoon)",
+          "location": "Left hand of the individual on the left side of the image (holding spoon)"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-thgusstavo-1933873.jpg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "91f6d7c058d344cac284e32c7528ad52227190b95375ae261c10e8fb7d94425b.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-hannah-nelson-390257-1456951.jpg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "No structural defects found.",
+          "location": "N/A"
+        },
+        {
+          "type": "physical",
+          "reasoning": "The child is seated on the man's shoulders without the man supporting the child with either hand, which would cause the child to fall due to gravity.",
+          "location": "man's hands"
+        },
+        {
+          "type": "semantic",
+          "reasoning": "No semantic implausibilities.",
+          "location": "N/A"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "The child's hands (both) have unnatural finger proportions or misaligned joints when forming the heart shape.",
+          "location": "child's hands"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-ollivves-1122462.jpg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "physical",
+          "reasoning": "The jumper's position and height relative to the boat are unrealistic; the trajectory does not conform to the laws of physics (e.g., gravity and expected motion of a jump from a boat).",
+          "location": "mid-air position of the jumping individual"
+        },
+        {
+          "type": "semantic",
+          "reasoning": "The text 'HAKARIMARINE' on the boat's hull is a misspelling; it does not correspond to a real brand name (e.g., 'HAKA MARINE' is a plausible correction).",
+          "location": "text on the boat's hull"
+        }
+      ]
+    },
+    {
+      "filename": "5ba040f1b7aa293dc915e40f0e39b3f8.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "semantic",
+          "reasoning": "The sign in the background displays 'Chuchil', which is a misspelling of 'Churchill'. This is a semantic implausibility as it represents incorrect text for a recognizable building or business name.",
+          "location": "background, near the building with a blue sign and white text"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-markarronsmith-2168356.jpg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "4385a289fa7f32a4400492be839ddf44.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "semantic",
+          "reasoning": "The truck's yellow sign displays a Canadian area code '905' (Toronto, Canada) within a New York City context, which is implausible as NYC vehicles typically use US area codes.",
+          "location": "Truck's yellow sign"
+        },
+        {
+          "type": "semantic",
+          "reasoning": "The 'CAUTION' sign on the truck has incomplete text: 'To Conserve Fuel This Vehicle Does Not' (missing words), which is atypical for real-world signage.",
+          "location": "Truck's 'CAUTION' sign"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-elletakesphotos-1680173.jpg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "stylistic",
+          "reasoning": "The woman's hair bun exhibits unnatural strand placement and texture with visible pixelation in the hair strands, lacking the organic flow of real hair.",
+          "location": "[650, 300, 750, 400]"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "The man's left arm tattoo has overly crisp edges and uniform coloration, inconsistent with the natural texture variations of a real tattoo.",
+          "location": "[75, 700, 180, 900]"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "The water surface near the concrete ledge shows repetitive ripple patterns with minimal variation, deviating from the organic flow of natural water.",
+          "location": "[0, 490, 1000, 550]"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "The white sleeveless shirt displays a uniform texture without subtle folds or shading variations typical of real fabric.",
+          "location": "[550, 500, 750, 850]"
         }
       ]
     }
