@@ -4,10 +4,10 @@
     "prompt_id": 3,
     "reasoning": false
   },
-  "image_count": 7,
-  "detected_fake": 5,
-  "detected_real": 2,
-  "acc": 0.7142857142857143,
+  "image_count": 30,
+  "detected_fake": 22,
+  "detected_real": 8,
+  "acc": 0.7333333333333333,
   "results": [
     {
       "filename": "91f6d7c058d344cac284e32c7528ad52227190b95375ae261c10e8fb7d94425b_r.jpeg",
@@ -91,6 +91,298 @@
           "type": "stylistic",
           "reasoning": "Inconsistent skin texture across the hand, resulting in a uniform, overly smooth appearance without natural variation or fine details typical of human skin.",
           "location": "The hand pressed against the glass on the left side of the image"
+        }
+      ]
+    },
+    {
+      "filename": "3b2df9efaf0e42c3763dfbf3b387e8ac_r.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "stylistic",
+          "reasoning": "Unnatural hand anatomy and proportions, such as distorted fingers or inconsistent limb alignment, observed in multiple individuals near the bus stop shelter.",
+          "location": "Foreground and middle ground individuals near the bus stop shelter"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-kampus-6763716_r.jpg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "stylistic",
+          "reasoning": "The basketball's surface lacks the typical dimpled texture of a real basketball, appearing overly smooth which is a common artifact in AI-generated images.",
+          "location": "the basketball held by the person in the blue shirt"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-ash-valiente-1680519-3533228_r.jpg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "stylistic",
+          "reasoning": "Hands exhibit unnatural smoothness and lack of anatomical details (e.g., missing knuckles, creases), making them appear robotic.",
+          "location": "Left hand holding balloons (upper left of the image)"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "Hands exhibit unnatural smoothness and lack of anatomical details (e.g., missing knuckles, creases), making them appear robotic.",
+          "location": "Right hand holding balloons (upper right of the image)"
+        }
+      ]
+    },
+    {
+      "filename": "b44f76c982e61da75229c6c579a44c3ead8144f558b4381cd30e4d6df14b6028_r.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "semantic",
+          "reasoning": "Center player's right hand is positioned to grip the ball but appears flat and lacks defined fingers, which is impossible in a basketball dribble where fingers must be visible to control the ball.",
+          "location": "Center player's right hand"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "Basketball has inconsistent texture; it should be uniformly textured with a slightly rough surface but appears overly smooth and lacks the realistic imperfections of a real basketball.",
+          "location": "Basketball"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-thgusstavo-1933873_r.jpg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "5ba040f1b7aa293dc915e40f0e39b3f8_r.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "semantic",
+          "reasoning": "The woman's hands are holding a tablet and phone in a manner that is implausible for human anatomy; specifically, the fingers on the right hand do not properly align with the tablet's edges, suggesting an inconsistent hand-object interaction.",
+          "location": "The woman's right hand and the tablet she is holding"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-dennisshotit-10415856_r.jpg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "9abbb21f98f0aa977beaf958243cc342_r.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "The hood of the jacket is draped over the shoulder instead of covering the head, which is inconsistent with typical hood construction for a hoodie.",
+          "location": "The hood area around the girl's head (positioned on the right shoulder)"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The jacket's sleeves exhibit inconsistent length; the right sleeve is significantly longer than the left sleeve, which is not possible in real-world garment construction.",
+          "location": "The jacket's sleeves around the girl's arms"
+        },
+        {
+          "type": "physical",
+          "reasoning": "The sand displaced by the girl's running foot is positioned in a direction inconsistent with forward motion; sand should be kicked up behind the moving foot.",
+          "location": "The sand near the girl's right foot"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-elletakesphotos-1680173_r.jpg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-markarronsmith-2168356_r.jpg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "07033864d4889d76cabaf716194d08b1_r.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "semantic",
+          "reasoning": "The woman in red (left) is holding a leash with two dogs, but the leash appears to be attached to the dogs' bodies without visible collars, which is implausible as leashes typically attach to collars.",
+          "location": "Left side, near the woman in red"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The man on the right (gray jacket) has a camera strap that is incorrectly positioned; the strap is attached at the shoulder but appears to be pulled too tightly, causing unnatural tension in the fabric.",
+          "location": "Right side, on the man in gray jacket"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "The cloud formations have an overly uniform texture and lack natural depth and variation, which is stylistically inconsistent with real clouds.",
+          "location": "Background, covering the sky"
+        },
+        {
+          "type": "semantic",
+          "reasoning": "The red harness on the second brown dog (left) lacks realistic fabric details and appears too smooth, making it implausible as a real harness.",
+          "location": "Left side, on the second brown dog"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-rebrand-cities-581004-1367269_r.jpg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "stylistic",
+          "reasoning": "The man's blue suit jacket displays an unnaturally uniform texture with no discernible fabric weave or subtle imperfections typical of physical garments.",
+          "location": "Left side of the image, covering the man's torso"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "The woman's light gray blazer has an overly smooth surface lacking realistic textural details and wrinkles commonly present in actual fabric.",
+          "location": "Right side of the image, covering the woman's torso"
+        },
+        {
+          "type": "semantic",
+          "reasoning": "The reflections visible in the background windows do not consistently align with the interior lighting and subject positioning, creating implausible visual cues.",
+          "location": "Background windows across the entire image"
+        }
+      ]
+    },
+    {
+      "filename": "6f94f65c954eaa1a7d722dff848810ac_r.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "stylistic",
+          "reasoning": "Skin texture is unnaturally smooth, lacking natural imperfections such as pores and subtle texture variations",
+          "location": "child's face (forehead, cheeks)"
+        }
+      ]
+    },
+    {
+      "filename": "496b696785ad2da1e310e53bb5be541d2ea161424b076eabeb0b1d4a6b6d2f3e_r.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "physical",
+          "reasoning": "The shadow direction on the child's face is inconsistent with the window's position. The window is on the left side of the image, so light should illuminate the left side of the child's face (closer to the window), but the shadow is cast toward the right side, indicating the light source is from the right, which contradicts the window's position.",
+          "location": "child's face"
+        },
+        {
+          "type": "semantic",
+          "reasoning": "The background trees outside the window exhibit unnaturally smooth textures and lack the detailed foliage typical of a real-world scene, making them implausible.",
+          "location": "background outside the window"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "The child's facial skin has an unnaturally smooth texture with minimal natural imperfections (such as pores or subtle skin variations), which is characteristic of AI-generated imagery.",
+          "location": "child's face"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-hannah-nelson-390257-1456951_r.jpg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "AI-generated images often have hand anomalies, such as incorrect joint structure or finger alignment. In this image, the adult's left hand (viewer's right) exhibits an unnatural number of joints and misaligned fingers, which is a common artifact in AI generation.",
+          "location": "adult's left hand (viewer's right side of the image)"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-ollivves-1122462_r.jpg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "physical",
+          "reasoning": "The jump height is unrealistically high for a person jumping from a typical speedboat; a speedboat's deck height is low, making such a high jump physically impossible according to standard physics.",
+          "location": "the airborne person (center of the image)"
+        }
+      ]
+    },
+    {
+      "filename": "35df25c3d2f57c32c2be722b51b16cd2_r.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "7e5172ad4e622ec6bdffee40c761e54a_r.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "The hat has an internal circular structure that is not present in real traditional conical hats, which should be a single conical piece without nested components.",
+          "location": "Hat area, specifically the inner circular structure visible beneath the main hat (top of head)"
+        }
+      ]
+    },
+    {
+      "filename": "810bcecc0287f5afe2bc9e1cb2b18ec1144811921d7599d6b2c6fcc5e47a4aa3_r.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "stylistic",
+          "reasoning": "The medical gloves exhibit an unnatural smooth texture with no realistic wrinkles or creases, which is a common artifact in AI-generated images where texture details are oversimplified.",
+          "location": "both hands"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The gloves do not conform to the natural contours of the hands, resulting in unnaturally stiff and straight fingers, indicating a component defect in the AI-generated model.",
+          "location": "both hands"
+        }
+      ]
+    },
+    {
+      "filename": "63b3e7984cd58d477392d4cf52731765c6d8d6878a7d29eecff28fcbdfa20a9b_r.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "physical",
+          "reasoning": "Portion of the image lacks coherent physics. The portable gas stove is shown without a visible flame, which is inconsistent with the context of cooking food (items on the table suggest active use).",
+          "location": "Center of the table (portable gas stove)"
+        },
+        {
+          "type": "structural",
+          "reasoning": "Inconsistent finger rendering on the right soldier's hands. The fingers appear unnatural and misshapen, typical of AI-generated imagery errors.",
+          "location": "Right soldier's hands (holding food)"
+        },
+        {
+          "type": "semantic",
+          "reasoning": "Yellow tape on the wall is implausible for a military setting. While yellow tape may exist, it appears overly bright and unnatural for typical military environments.",
+          "location": "Yellow tape on the wall (left background)"
+        }
+      ]
+    },
+    {
+      "filename": "7ab599405cf71cba21eecd46b7305058_r.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "physical",
+          "reasoning": "The left leg (extending along the stone steps) is straight, which violates the physical principle that a person sitting on stairs would have bent knees to maintain balance and support their body weight. The person's body position, leaning against the wall with one hand, requires the legs to be positioned with bent knees to avoid falling or losing balance.",
+          "location": "The left leg, extending from the person's body along the stone steps towards the right side of the image."
+        }
+      ]
+    },
+    {
+      "filename": "4385a289fa7f32a4400492be839ddf44_r.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "19c88e43e58f7e3b52041ac204ee5717_r.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "Hand on the right person's shoulder has inconsistent finger count (four fingers instead of five) which violates human anatomy",
+          "location": "Right side of the image, on the shoulder of the person with curly hair"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "Skin texture of all three individuals appears unnaturally smooth, lacking natural skin imperfections such as pores or fine lines",
+          "location": "Faces of all three individuals"
         }
       ]
     }

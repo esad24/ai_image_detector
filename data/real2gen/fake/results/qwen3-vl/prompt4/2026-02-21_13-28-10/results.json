@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "model": "qwen3-vl",
+    "prompt_id": 4,
+    "reasoning": false
+  },
+  "image_count": 1,
+  "detected_fake": 0,
+  "detected_real": 1,
+  "acc": 0.0,
+  "results": [
+    {
+      "filename": "91f6d7c058d344cac284e32c7528ad52227190b95375ae261c10e8fb7d94425b_r.jpeg",
+      "classification": "real",
+      "artifacts": []
+    }
+  ]
+}

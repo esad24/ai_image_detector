@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "model": "qwen3-vl",
+    "prompt_id": 3,
+    "reasoning": false
+  },
+  "image_count": 12,
+  "detected_fake": 9,
+  "detected_real": 3,
+  "acc": 0.25,
+  "results": [
+    {
+      "filename": "40cdea68f25828d8bfd84a557479400c72bfb6941c1de300a4e10eee4831c421.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "Pizza slices exhibit inconsistent texture with crusts lacking natural browning and irregularities. The crust of the slice held by the child in the green shirt appears overly smooth, not reflecting the typical uneven texture of real pizza crust.",
+          "location": "Pizza slice held by child in green shirt (center of image)"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "Children's skin texture appears unnaturally smooth, missing subtle variations present in real skin. This lack of texture detail is characteristic of AI-generated images struggling to render realistic skin.",
+          "location": "Faces of all three children"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-rebrand-cities-581004-1367269.jpg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "3b2df9efaf0e42c3763dfbf3b387e8ac.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "stylistic",
+          "reasoning": "The hand of the individual in the gray coat and brown beanie displays inconsistencies such as extra fingers and incorrect finger positioning, which is a common artifact in AI-generated images.",
+          "location": "Center of the image, on the person wearing a gray coat and brown beanie"
+        }
+      ]
+    },
+    {
+      "filename": "6f94f65c954eaa1a7d722dff848810ac.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "810bcecc0287f5afe2bc9e1cb2b18ec1144811921d7599d6b2c6fcc5e47a4aa3.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "stylistic",
+          "reasoning": "Gloves exhibit unnatural smoothness and lack of realistic creases/folds, particularly visible on the right hand's thumb and the left hand's fingers. This inconsistency in texture and detailing is a common artifact in AI-generated images where physical objects (like gloves) are rendered without sufficient attention to realistic surface properties.",
+          "location": "Both hands, with the right hand (thumbs up) and left hand (resting) showing the anomaly"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-kampus-6763716.jpg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "496b696785ad2da1e310e53bb5be541d2ea161424b076eabeb0b1d4a6b6d2f3e.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "stylistic",
+          "reasoning": "The child's face exhibits unnatural smoothness and lack of natural skin texture details, a common artifact in AI-generated imagery where human facial features are synthesized without realistic imperfections.",
+          "location": "child's face"
+        }
+      ]
+    },
+    {
+      "filename": "7ab599405cf71cba21eecd46b7305058.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "stylistic",
+          "reasoning": "Hands in AI-generated images often exhibit unnatural smoothness and lack of detailed textures. The hand resting on the stone wall in this image has overly smooth fingers with no visible creases or skin texture, which is inconsistent with real-world hand details.",
+          "location": "Left side of the image (hand resting on stone wall)"
+        }
+      ]
+    },
+    {
+      "filename": "9abbb21f98f0aa977beaf958243cc342.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "physical",
+          "reasoning": "The shadow of the stick is longer than expected given the sun's position (which should be high, leading to shorter shadows).",
+          "location": "the shadow of the stick on the sandy ground"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "The sand texture is overly uniform with no natural variation.",
+          "location": "the sandy ground area"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-dennisshotit-10415856.jpg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "Backpack straps appear unnaturally straight and do not follow the natural curvature of the shoulder joint, which would result in a more relaxed and anatomically plausible attachment. The straps are positioned too rigidly without the expected softness or curve associated with real-world backpack usage.",
+          "location": "Shoulder straps"
+        }
+      ]
+    },
+    {
+      "filename": "b44f76c982e61da75229c6c579a44c3ead8144f558b4381cd30e4d6df14b6028.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "The player in the blue jersey (right) appears to have a distorted limb, with the arm and leg proportions inconsistent with human anatomy, particularly in the context of motion blur where the image should maintain plausible proportions.",
+          "location": "Right arm and left leg of the player in blue jersey (right)"
+        }
+      ]
+    },
+    {
+      "filename": "10ff906c25d12371be60cf5f24801fb1.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "stylistic",
+          "reasoning": "Inconsistent finger proportions and unnatural skin texture in the hands of both women, which is a common artifact in AI-generated images where hand rendering fails to match real-world anatomy.",
+          "location": "Left woman's hands holding ice cream cone, Right woman's hands holding ice cream cone"
+        }
+      ]
+    }
+  ]
+}
