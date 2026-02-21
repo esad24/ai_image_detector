@@ -28,9 +28,8 @@ MODE = "real"  # "fake" or "real"
 
 GT = "gt_2"
 
-GT_JSON = f"/home/usluesyr/ai_image_detector/data/ground_truth/{GT}/json/{GT}.json"
-RESULT_JSON  = "/home/usluesyr/ai_image_detector/data/real/test/results/qwen3-vl/prompt3/2026-01-24_16-37-23/results.json"
-
+GT_JSON = None
+RESULT_JSON  = "/home/usluesyr/ai_image_detector/data/real2gen/real/results/qwen3-vl/prompt3/2026-02-21_13-15-29/results.json"
 if MODE == "fake":
     OUTPUT_FILE = os.path.join(
         os.path.dirname(RESULT_JSON),
@@ -237,6 +236,106 @@ def evaluate_fake(predictions, ground_truth, output_path):
     f.close()
 
 
+
+def evaluate_fake_no_gt(predictions, output_path):
+    total = len(predictions["results"])
+
+    tp = 0
+    fn = 0
+    fn_files = []
+
+    for p in predictions["results"]:
+        if p["classification"] == "fake":
+            tp += 1
+        else:
+            fn += 1
+            fn_files.append(p["filename"])
+
+    classification_metrics = {
+        "total_images":        total,
+        "true_positives":      tp,
+        "false_negatives":     fn,
+        "recall_sensitivity":  round(safe_div(tp, total), 4),
+        "false_negative_rate": round(safe_div(fn, total), 4),
+        "false_negative_files": fn_files,
+    }
+
+    # ── Detected artifact type distribution (no GT to compare against) ──
+    detected_type_distribution = {t: 0 for t in ALL_TYPES}
+    total_artifacts = 0
+    per_image_results = []
+
+    for p in predictions["results"]:
+        if p["classification"] == "fake":
+            types = get_type_set(p["artifacts"])
+            num_artifacts = len(p["artifacts"])
+            total_artifacts += num_artifacts
+            for t in types:
+                detected_type_distribution[t] += 1
+            per_image_results.append({
+                "filename":                 p["filename"],
+                "predicted_classification": "fake",
+                "correct":                  True,
+                "detected_types":           sorted(types),
+                "num_detected_artifacts":   num_artifacts,
+            })
+        else:
+            per_image_results.append({
+                "filename":                 p["filename"],
+                "predicted_classification": "real",
+                "correct":                  False,
+                "detected_types":           [],
+            })
+
+    detected_artifact_analysis = {
+        "note": "No ground truth available. Type distribution reflects predictions only.",
+        "total_detected_artifacts":      total_artifacts,
+        "avg_artifacts_per_tp":          round(safe_div(total_artifacts, tp), 2),
+        "detected_type_distribution":    detected_type_distribution,
+    }
+
+    result = {
+        "meta": {
+            "model":        predictions["meta"]["model"],
+            "prompt_id":    predictions["meta"]["prompt_id"],
+            "reasoning":    predictions["meta"]["reasoning"],
+            "split":        "fake_no_gt",
+            "total_images": total,
+        },
+        "comparison": None,
+        "classification_metrics":    classification_metrics,
+        "detected_artifact_analysis": detected_artifact_analysis,
+        "per_image_results":          per_image_results,
+    }
+
+    with open(output_path, "w") as f:
+        json.dump(result, f, indent=2)
+
+    f, printer, txt_output_path = redirect_print_to_file(output_path)
+
+    print_header("FAKE IMAGES EVALUATION (NO GROUND TRUTH)", printer)
+    printer(f"\nClassification:")
+    printer(f"  TP (correctly detected fake): {tp}")
+    printer(f"  FN (missed fakes):            {fn}")
+    printer(f"  Recall / Sensitivity:         {classification_metrics['recall_sensitivity']}")
+    printer(f"  False Negative Rate:          {classification_metrics['false_negative_rate']}")
+
+    printer(f"\nDetected Artifact Type Distribution (TPs only):")
+    printer(f"  Total detected artifacts: {total_artifacts}")
+    printer(f"  Avg per TP:               {detected_artifact_analysis['avg_artifacts_per_tp']}")
+    for t in ALL_TYPES:
+        count = detected_type_distribution[t]
+        pct = safe_div(count, tp) * 100
+        printer(f"    {t:<12} {count:>3}  ({pct:.1f}% of TPs contain this type)")
+
+    print(f"\nWrote {output_path}")
+    print(f"TXT report written to {txt_output_path}")
+
+    f.close()
+
+
+
+
 # ═══════════════════════════════════════════════════════════════
 # REAL MODE
 # ═══════════════════════════════════════════════════════════════
@@ -349,9 +448,12 @@ def main():
         predictions = json.load(f)
 
     if MODE == "fake":
-        with open(GT_JSON) as f:
-            ground_truth = json.load(f)
-        evaluate_fake(predictions, ground_truth, OUTPUT_FILE)
+        if GT_JSON is not None:
+            with open(GT_JSON) as f:
+                ground_truth = json.load(f)
+            evaluate_fake(predictions, ground_truth, OUTPUT_FILE)
+        else:
+            evaluate_fake_no_gt(predictions, OUTPUT_FILE)
     elif MODE == "real":
         evaluate_real(predictions, OUTPUT_FILE)
     else:

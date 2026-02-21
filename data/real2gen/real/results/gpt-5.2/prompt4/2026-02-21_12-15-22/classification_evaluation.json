@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "model": "gpt-5.2",
+    "prompt_id": 4,
+    "reasoning": "none"
+  },
+  "split": "real",
+  "image_count": 30,
+  "detected_fake": 5,
+  "detected_real": 25,
+  "acc": 0.8333333333333334,
+  "classification_metrics": {
+    "total_images": 30,
+    "true_negatives": 25,
+    "false_positives": 5,
+    "specificity_true_negative_rate": 0.8333,
+    "false_positive_rate": 0.1667,
+    "false_positive_files": [
+      "810bcecc0287f5afe2bc9e1cb2b18ec1144811921d7599d6b2c6fcc5e47a4aa3.jpeg",
+      "496b696785ad2da1e310e53bb5be541d2ea161424b076eabeb0b1d4a6b6d2f3e.jpeg",
+      "pexels-simon-robben-55958-614810.jpg",
+      "pexels-thgusstavo-1933873.jpg",
+      "22ba4974b508590e5daadeabe775a344.jpeg"
+    ]
+  }
+}

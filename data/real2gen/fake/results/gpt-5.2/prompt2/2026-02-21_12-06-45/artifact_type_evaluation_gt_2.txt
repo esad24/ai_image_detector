@@ -1,0 +1,17 @@
+============================================================
+FAKE IMAGES EVALUATION (NO GROUND TRUTH)
+============================================================
+
+Classification:
+  TP (correctly detected fake): 7
+  FN (missed fakes):            23
+  Recall / Sensitivity:         0.2333
+  False Negative Rate:          0.7667
+
+Detected Artifact Type Distribution (TPs only):
+  Total detected artifacts: 16
+  Avg per TP:               2.29
+    structural     7  (100.0% of TPs contain this type)
+    semantic       4  (57.1% of TPs contain this type)
+    stylistic      5  (71.4% of TPs contain this type)
+    physical       0  (0.0% of TPs contain this type)

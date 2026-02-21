@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "model": "gpt-5.2",
+    "prompt_id": 5,
+    "reasoning": "none"
+  },
+  "split": "real",
+  "image_count": 30,
+  "detected_fake": 20,
+  "detected_real": 10,
+  "acc": 0.3333333333333333,
+  "classification_metrics": {
+    "total_images": 30,
+    "true_negatives": 10,
+    "false_positives": 20,
+    "specificity_true_negative_rate": 0.3333,
+    "false_positive_rate": 0.6667,
+    "false_positive_files": [
+      "pexels-rebrand-cities-581004-1367269.jpg",
+      "810bcecc0287f5afe2bc9e1cb2b18ec1144811921d7599d6b2c6fcc5e47a4aa3.jpeg",
+      "pexels-kampus-6763716.jpg",
+      "496b696785ad2da1e310e53bb5be541d2ea161424b076eabeb0b1d4a6b6d2f3e.jpeg",
+      "9abbb21f98f0aa977beaf958243cc342.jpeg",
+      "pexels-dennisshotit-10415856.jpg",
+      "10ff906c25d12371be60cf5f24801fb1.jpeg",
+      "07033864d4889d76cabaf716194d08b1.jpeg",
+      "63b3e7984cd58d477392d4cf52731765c6d8d6878a7d29eecff28fcbdfa20a9b.jpeg",
+      "pexels-ollivves-1122462.jpg",
+      "pexels-hannah-nelson-390257-1456951.jpg",
+      "pexels-simon-robben-55958-614810.jpg",
+      "pexels-markarronsmith-2168356.jpg",
+      "pexels-thgusstavo-1933873.jpg",
+      "7e5172ad4e622ec6bdffee40c761e54a.jpeg",
+      "pexels-ash-valiente-1680519-3533228.jpg",
+      "91f6d7c058d344cac284e32c7528ad52227190b95375ae261c10e8fb7d94425b.jpeg",
+      "19c88e43e58f7e3b52041ac204ee5717.jpeg",
+      "6eb2e789526629ed382be35a4192fc25.jpeg",
+      "22ba4974b508590e5daadeabe775a344.jpeg"
+    ]
+  }
+}

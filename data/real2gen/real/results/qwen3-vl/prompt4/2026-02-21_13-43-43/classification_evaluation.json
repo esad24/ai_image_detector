@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "model": "qwen3-vl",
+    "prompt_id": 4,
+    "reasoning": false
+  },
+  "split": "real",
+  "image_count": 30,
+  "detected_fake": 1,
+  "detected_real": 29,
+  "acc": 0.9666666666666667,
+  "classification_metrics": {
+    "total_images": 30,
+    "true_negatives": 29,
+    "false_positives": 1,
+    "specificity_true_negative_rate": 0.9667,
+    "false_positive_rate": 0.0333,
+    "false_positive_files": [
+      "pexels-ollivves-1122462.jpg"
+    ]
+  }
+}

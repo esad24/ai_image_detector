@@ -1,0 +1,30 @@
+{
+  "meta": {
+    "model": "qwen3-vl",
+    "prompt_id": 1,
+    "reasoning": false
+  },
+  "split": "real",
+  "image_count": 30,
+  "detected_fake": 9,
+  "detected_real": 21,
+  "acc": 0.7,
+  "classification_metrics": {
+    "total_images": 30,
+    "true_negatives": 21,
+    "false_positives": 9,
+    "specificity_true_negative_rate": 0.7,
+    "false_positive_rate": 0.3,
+    "false_positive_files": [
+      "6f94f65c954eaa1a7d722dff848810ac.jpeg",
+      "496b696785ad2da1e310e53bb5be541d2ea161424b076eabeb0b1d4a6b6d2f3e.jpeg",
+      "10ff906c25d12371be60cf5f24801fb1.jpeg",
+      "07033864d4889d76cabaf716194d08b1.jpeg",
+      "63b3e7984cd58d477392d4cf52731765c6d8d6878a7d29eecff28fcbdfa20a9b.jpeg",
+      "pexels-ollivves-1122462.jpg",
+      "5ba040f1b7aa293dc915e40f0e39b3f8.jpeg",
+      "7e5172ad4e622ec6bdffee40c761e54a.jpeg",
+      "pexels-ash-valiente-1680519-3533228.jpg"
+    ]
+  }
+}
