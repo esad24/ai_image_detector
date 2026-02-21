@@ -24,10 +24,10 @@ class ResultWriter:
             base_dir = f"/home/usluesyr/ai_image_detector/data/genArtifact/real/test/results/{model_name}/prompt{prompt_id}"
             self.mode = "real"
         elif image_folder.startswith("real2gen_fake"):
-            base_dir = f"/home/usluesyr/ai_image_detector/data/real2Gen/fake/results/{model_name}/prompt{prompt_id}"
+            base_dir = f"/home/usluesyr/ai_image_detector/data/real2gen/fake/results/{model_name}/prompt{prompt_id}"
             self.mode = "fake"
-        elif image_folder.startswith("real2Gen_real"):
-            base_dir = f"/home/usluesyr/ai_image_detector/data/real2Gen/real/results/{model_name}/prompt{prompt_id}"
+        elif image_folder.startswith("real2gen_real"):
+            base_dir = f"/home/usluesyr/ai_image_detector/data/real2gen/real/results/{model_name}/prompt{prompt_id}"
             self.mode = "real"
         else:
             base_dir = f"{image_folder}/results/{model_name}/prompt{prompt_id}"

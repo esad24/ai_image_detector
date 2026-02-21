@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "model": "qwen3-vl",
+    "prompt_id": 3,
+    "reasoning": false
+  },
+  "image_count": 7,
+  "detected_fake": 5,
+  "detected_real": 2,
+  "acc": 0.7142857142857143,
+  "results": [
+    {
+      "filename": "91f6d7c058d344cac284e32c7528ad52227190b95375ae261c10e8fb7d94425b_r.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "semantic",
+          "reasoning": "Earring positioned on the cheek rather than the ear, which is anatomically incorrect for earring placement.",
+          "location": "left cheek region (viewer's left side of the image)"
+        }
+      ]
+    },
+    {
+      "filename": "40cdea68f25828d8bfd84a557479400c72bfb6941c1de300a4e10eee4831c421_r.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "The hand of the child in the green shirt (middle) displays distorted finger proportions and incorrect joint angles. Anatomically, fingers should have consistent thickness and natural curvature, but in this image, the fingers appear unnaturally long and the thumb is not positioned correctly relative to the other fingers.",
+          "location": "hand of the child in the green shirt holding the pizza slice (center of the image)"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The hand of the child in the white shirt (right) shows fingers with inconsistent thickness and improper alignment with the pizza slice. The anatomical structure of the hand does not match human physiology, with fingers appearing too thin or mispositioned relative to the slice.",
+          "location": "hand of the child in the white shirt holding the pizza slice (right side of the image)"
+        },
+        {
+          "type": "semantic",
+          "reasoning": "The pizza slices exhibit inconsistent toppings and texture, which is implausible for real-world pizza. The crust appears uniformly smooth in some areas while the cheese is unevenly distributed, suggesting artificial generation.",
+          "location": "entire pizza slices held by the children"
+        }
+      ]
+    },
+    {
+      "filename": "cf33ccfee6f7eb1725eaa67ab3de4476_r.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "semantic",
+          "reasoning": "The text on the woman's shirt reads 'DALLA' instead of the expected 'DALLAS' (e.g., for the Dallas Stars hockey team), which is a semantically implausible omissions in a context where proper team names are expected.",
+          "location": "Woman's shirt (center of the image)"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The man's right hand (holding the card) shows signs of structural defects, such as unnatural finger spacing or proportions, which is common in AI-generated images where hands are not accurately rendered.",
+          "location": "Man's right hand (upper right side of the image)"
+        }
+      ]
+    },
+    {
+      "filename": "6eb2e789526629ed382be35a4192fc25_r.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-simon-robben-55958-614810_r.jpg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "10ff906c25d12371be60cf5f24801fb1_r.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "stylistic",
+          "reasoning": "The skin texture on both women's hands is unnaturally smooth, lacking the fine wrinkles, pores, and natural imperfections typically present in real human skin. This is a common artifact in AI-generated images where generative models struggle to render detailed skin textures accurately, especially on hands, which require high complexity due to fine anatomical details.",
+          "location": "Left woman's right hand and right woman's left hand"
+        }
+      ]
+    },
+    {
+      "filename": "22ba4974b508590e5daadeabe775a344_r.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "Hand appears to lack anatomical detail and natural texture (e.g., skin texture, wrinkles), which is inconsistent with human hand anatomy, indicating a structural defect in the generated image.",
+          "location": "The hand pressed against the glass on the left side of the image"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "Inconsistent skin texture across the hand, resulting in a uniform, overly smooth appearance without natural variation or fine details typical of human skin.",
+          "location": "The hand pressed against the glass on the left side of the image"
+        }
+      ]
+    }
+  ]
+}

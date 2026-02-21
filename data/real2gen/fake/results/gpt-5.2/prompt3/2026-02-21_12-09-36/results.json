@@ -1,0 +1,357 @@
+{
+  "meta": {
+    "model": "gpt-5.2",
+    "prompt_id": 3,
+    "reasoning": "none"
+  },
+  "image_count": 30,
+  "detected_fake": 9,
+  "detected_real": 21,
+  "acc": 0.3,
+  "results": [
+    {
+      "filename": "91f6d7c058d344cac284e32c7528ad52227190b95375ae261c10e8fb7d94425b_r.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "40cdea68f25828d8bfd84a557479400c72bfb6941c1de300a4e10eee4831c421_r.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "The girl on the right shows an anatomically inconsistent hand: fingers appear fused/indistinct with an unclear thumb and unnatural joint definition while holding the pizza slice.",
+          "location": "Right side of image, foreground: the right girl’s hand grasping the pizza slice near the lower-right quadrant."
+        },
+        {
+          "type": "structural",
+          "reasoning": "The pizza slice held near the center-right has an implausible, warped geometry: the crust and tip look distorted and thickness changes abruptly, suggesting blending artifacts.",
+          "location": "Center-right foreground: slice closest to the boy in the green shirt and the right girl."
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "Skin texture on the children appears overly smooth/plastic with blurred micro-detail compared to edges (hair, pizza crust), consistent with generative smoothing.",
+          "location": "Faces across the image, most noticeable on the boy in the green shirt (center) and the right girl (right)."
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "Edge blending/haloing around hairlines looks slightly smeared and lacks crisp strand detail, a common synthesis artifact.",
+          "location": "Top-left hair of the left child and around the boy’s hairline at top-center."
+        }
+      ]
+    },
+    {
+      "filename": "cf33ccfee6f7eb1725eaa67ab3de4476_r.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "6eb2e789526629ed382be35a4192fc25_r.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-simon-robben-55958-614810_r.jpg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "Ear geometry is poorly defined and partially smeared/merged into the side of the head, lacking clear inner-ear structure.",
+          "location": "Left side of head (image left), around the ear"
+        },
+        {
+          "type": "structural",
+          "reasoning": "Hairline and individual strands near the top/left appear painterly and clumped, with unnatural edge transitions against the background.",
+          "location": "Top of head, especially upper-left hairline"
+        },
+        {
+          "type": "structural",
+          "reasoning": "Beard/stubble texture looks airbrushed and inconsistent, with patchy, low-detail areas that don't follow natural follicle distribution.",
+          "location": "Lower face—chin and jawline, especially image-left jaw"
+        },
+        {
+          "type": "structural",
+          "reasoning": "Eye details (iris/sclera boundaries) appear overly uniform and glossy with subtly inconsistent catchlight/reflection structure, suggesting synthetic rendering.",
+          "location": "Both eyes, centered in the face"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "Skin has an overly smooth, plastic-like retouching with reduced pore detail and slightly 'painted' gradients typical of AI portrait generation.",
+          "location": "Cheeks and forehead"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "Background shows unnatural soft bokeh-like blotches/noise that read as generated texture rather than a real photographed backdrop.",
+          "location": "Background, especially right side (image right)"
+        }
+      ]
+    },
+    {
+      "filename": "10ff906c25d12371be60cf5f24801fb1_r.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "22ba4974b508590e5daadeabe775a344_r.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "Left hand shows inconsistent finger anatomy: fingers appear uneven in thickness/length with slightly malformed tips and unclear joint definition, typical of generative errors.",
+          "location": "Left side of image, mid-left: raised hand near the glass panel"
+        },
+        {
+          "type": "structural",
+          "reasoning": "Glass interaction looks incorrect: the hand appears behind/through the glass with a hazy duplicated/ghosted area near the wrist/forearm, and the contact/occlusion along the vertical glass edge is inconsistent.",
+          "location": "Left third of image: vertical glass line and the area around the wrist/forearm below the raised hand"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "Face has overly smooth, airbrushed skin texture with reduced pore detail and slightly 'painted' transitions around nose/mouth compared to surrounding elements.",
+          "location": "Center: face (cheeks, nose bridge, area around lips)"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "Background bokeh and lighting look unnaturally uniform and smeared, with a synthetic depth-of-field separation that doesn't match the subject edges consistently.",
+          "location": "Upper half and right side: out-of-focus city lights/background"
+        },
+        {
+          "type": "structural",
+          "reasoning": "Hair strands merge into broad, repetitive clumps with ambiguous strand boundaries, especially where hair overlaps the coat; some edges look melted/blurred rather than naturally detailed.",
+          "location": "Center-lower: hair over shoulders and where it overlaps the coat lapels"
+        },
+        {
+          "type": "semantic",
+          "reasoning": "Necklace/chain lacks a clear, coherent attachment and drape behavior; the chain appears to emerge without a visible clasp/pendant and has an inconsistent curve relative to gravity and clothing folds.",
+          "location": "Lower center: gold chain over the black top"
+        }
+      ]
+    },
+    {
+      "filename": "3b2df9efaf0e42c3763dfbf3b387e8ac_r.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-kampus-6763716_r.jpg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-ash-valiente-1680519-3533228_r.jpg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "b44f76c982e61da75229c6c579a44c3ead8144f558b4381cd30e4d6df14b6028_r.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-thgusstavo-1933873_r.jpg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "Cigarette geometry is inconsistent: the filter-to-paper transition and tip shape look malformed/warped, with an unnaturally uniform, 'melted' edge.",
+          "location": "Center-lower face at the mouth (cigarette)"
+        },
+        {
+          "type": "structural",
+          "reasoning": "Lip/teeth contact around the cigarette appears smeared and lacks clear occlusion boundaries, as if the cigarette is not convincingly held between lips.",
+          "location": "Center-lower face (mouth area)"
+        },
+        {
+          "type": "structural",
+          "reasoning": "Mustache hairs blend into the skin with patchy, paint-like texture; individual strands and natural directionality are inconsistent, especially near the philtrum and corners of the mouth.",
+          "location": "Upper lip / mustache region (center)"
+        },
+        {
+          "type": "structural",
+          "reasoning": "Hat weave pattern becomes irregular and unnaturally uniform in places, with repeating texture that doesn't follow the hat’s curvature consistently.",
+          "location": "Top-center (hat crown and brim)"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "Overly strong local contrast and sharpening on facial wrinkles compared to the softer, more cinematic background blur, creating an uneven, AI-portrait look.",
+          "location": "Entire face (most noticeable on forehead and cheeks)"
+        }
+      ]
+    },
+    {
+      "filename": "5ba040f1b7aa293dc915e40f0e39b3f8_r.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-dennisshotit-10415856_r.jpg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "9abbb21f98f0aa977beaf958243cc342_r.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "Right arm/hand anatomy appears distorted: the forearm sleeve and wrist transition looks smeared, and the fingers lack clear separation/consistent joint structure.",
+          "location": "right side of subject, mid-right of image (extended arm and hand)"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-elletakesphotos-1680173_r.jpg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-markarronsmith-2168356_r.jpg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "07033864d4889d76cabaf716194d08b1_r.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-rebrand-cities-581004-1367269_r.jpg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "6f94f65c954eaa1a7d722dff848810ac_r.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "496b696785ad2da1e310e53bb5be541d2ea161424b076eabeb0b1d4a6b6d2f3e_r.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "Facial anatomy looks synthesized: unusually smooth skin with clay-like shading and subtly warped proportions around the eyes/cheeks.",
+          "location": "Center-right, on the child's face"
+        },
+        {
+          "type": "structural",
+          "reasoning": "Eyes appear unnaturally uniform and glassy with ambiguous iris/sclera boundaries, giving a doll-like look.",
+          "location": "Center-right, child's eyes"
+        },
+        {
+          "type": "structural",
+          "reasoning": "Hands/fingers show deformation and inconsistent joint definition; grip on the metal bar looks anatomically uncertain.",
+          "location": "Center, child's hands on the horizontal bar"
+        },
+        {
+          "type": "structural",
+          "reasoning": "Headwear edge blends oddly into the hairline with smeared transition and unclear hair detail.",
+          "location": "Upper-center, where the red cap meets the forehead/hairline"
+        },
+        {
+          "type": "semantic",
+          "reasoning": "Lighting/shadow pattern across the face resembles window-bar shadows but appears inconsistently aligned with the window geometry and facial contours.",
+          "location": "Center-right, shadow bands across the child's forehead and nose"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "Overall image has a CGI/illustrative rendering quality (over-smoothed textures, cinematic shallow depth of field) inconsistent with a natural photo.",
+          "location": "Whole image, especially skin/clothing textures and background blur"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-hannah-nelson-390257-1456951_r.jpg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "pexels-ollivves-1122462_r.jpg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "The jumping person's lower body shows a malformed/blurred leg with an indistinct foot, suggesting missing or distorted anatomy rather than motion blur consistent with the rest of the subject.",
+          "location": "Upper-middle of image, on the airborne man’s lower left leg/foot area (left side of his body)"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The standing man’s face/head region is smeared and lacks coherent facial features compared to the rest of his body, indicating generative detail failure.",
+          "location": "Right-middle of image, on the standing man’s head/face"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The small flag/banner near the boat’s center appears oddly shaped and partially translucent with unclear attachment to the frame, as if fused with the surrounding structure.",
+          "location": "Center of image, above the boat’s console/roof area"
+        },
+        {
+          "type": "semantic",
+          "reasoning": "The text/logo on the boat hull is not cleanly readable and looks like garbled lettering rather than a plausible brand decal.",
+          "location": "Lower-middle of image, along the boat’s side/hull"
+        }
+      ]
+    },
+    {
+      "filename": "35df25c3d2f57c32c2be722b51b16cd2_r.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "7e5172ad4e622ec6bdffee40c761e54a_r.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "810bcecc0287f5afe2bc9e1cb2b18ec1144811921d7599d6b2c6fcc5e47a4aa3_r.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "The gloved hand giving a thumbs-up has smeared/blurred finger geometry and indistinct thumb edges, lacking clear knuckle/finger separations typical of a real glove.",
+          "location": "Lower center-left foreground (raised hand)"
+        },
+        {
+          "type": "structural",
+          "reasoning": "The wristwatch band and case blend into the glove/sleeve with muddled boundaries and inconsistent strap structure (details appear melted/indeterminate).",
+          "location": "Lower center-right (watch on raised-hand wrist)"
+        },
+        {
+          "type": "stylistic",
+          "reasoning": "Background dental equipment and chair areas show overly smooth, simplified shapes with low-detail, painterly blur inconsistent with the sharp subject, suggesting synthetic depth blur.",
+          "location": "Left and right background (dental chair/equipment)"
+        },
+        {
+          "type": "semantic",
+          "reasoning": "Clinical attire is inconsistent: wearing disposable exam gloves while also wearing a metal wristwatch over/adjacent to the glove is atypical for medical/dental hygiene protocols.",
+          "location": "Lower center-right (wrist area)"
+        }
+      ]
+    },
+    {
+      "filename": "63b3e7984cd58d477392d4cf52731765c6d8d6878a7d29eecff28fcbdfa20a9b_r.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "type": "structural",
+          "reasoning": "Lower-left person’s hand/utensil geometry looks inconsistent: the spoon/handle appears to blend into the fingers with an unnatural connection and odd finger shapes.",
+          "location": "bottom-left quadrant (person holding a spoon)"
+        }
+      ]
+    },
+    {
+      "filename": "7ab599405cf71cba21eecd46b7305058_r.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "4385a289fa7f32a4400492be839ddf44_r.jpeg",
+      "classification": "real",
+      "artifacts": []
+    },
+    {
+      "filename": "19c88e43e58f7e3b52041ac204ee5717_r.jpeg",
+      "classification": "real",
+      "artifacts": []
+    }
+  ]
+}

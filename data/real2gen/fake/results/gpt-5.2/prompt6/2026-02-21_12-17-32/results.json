@@ -1,0 +1,829 @@
+{
+  "meta": {
+    "model": "gpt-5.2",
+    "prompt_id": 6,
+    "reasoning": "none"
+  },
+  "image_count": 30,
+  "detected_fake": 1,
+  "detected_real": 29,
+  "acc": 0.03333333333333333,
+  "results": [
+    {
+      "filename": "91f6d7c058d344cac284e32c7528ad52227190b95375ae261c10e8fb7d94425b_r.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Natural skin texture and pores with uneven specular highlights on the cheeks and nose consistent with camera capture rather than synthetic smoothing.",
+          "location": "Face (cheeks, nose, forehead)"
+        },
+        {
+          "reasoning": "Fine stray hairs and wispy hairline strands with realistic thickness variation and slight motion/blur; no obvious generation artifacts around edges.",
+          "location": "Hairline and temple area"
+        },
+        {
+          "reasoning": "Consistent lighting and shadows across facial features and the headscarf folds; shadow directions match a single plausible light source.",
+          "location": "Face and headscarf folds"
+        },
+        {
+          "reasoning": "Headscarf fabric shows realistic weave, wrinkles, and fold gradients without repeated or melted patterns typical of some generative images.",
+          "location": "Black headscarf"
+        },
+        {
+          "reasoning": "Jewelry geometry and reflections look physically plausible (metallic specular highlights, consistent perspective) with clean attachment to the ear.",
+          "location": "Earrings and earlobe"
+        },
+        {
+          "reasoning": "Background blur appears like optical bokeh/depth-of-field from a camera lens, with smooth falloff and no inconsistent cutout edges around the subject.",
+          "location": "Background and subject outline"
+        }
+      ]
+    },
+    {
+      "filename": "40cdea68f25828d8bfd84a557479400c72bfb6941c1de300a4e10eee4831c421_r.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Hands and fingers show consistent anatomy and realistic joints, nails, and skin texture without the common AI artifacts (extra digits, fused fingers, warped knuckles).",
+          "location": "Children’s hands holding pizza slices (center and lower-right)."
+        },
+        {
+          "reasoning": "Lighting is coherent across faces, hands, and pizza: soft indoor illumination with consistent highlights and shadows matching object geometry.",
+          "location": "Faces and hands across the frame; pizza slices in foreground."
+        },
+        {
+          "reasoning": "Depth of field and focus falloff look camera-like: sharp subjects with a naturally blurred background and no inconsistent edge halos.",
+          "location": "Sharp children/pizza in foreground vs. blurred shelves/background."
+        },
+        {
+          "reasoning": "Materials render naturally: pizza crust texture, cheese/pepperoni detail, and cardboard box fibers/crumbs appear photographically plausible rather than procedurally smeared.",
+          "location": "Pizza slices and pizza box at the bottom of the image."
+        },
+        {
+          "reasoning": "Facial features are consistent and symmetric with realistic teeth and eye areas; no distortion around eyelids, mouth corners, or hairline typical of generated images.",
+          "location": "Center child’s face and left child’s face."
+        }
+      ]
+    },
+    {
+      "filename": "cf33ccfee6f7eb1725eaa67ab3de4476_r.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Consistent arena lighting and shadows across both subjects and the seating background; no mismatched highlights typical of compositing.",
+          "location": "Faces, hair, clothing, and seat rows"
+        },
+        {
+          "reasoning": "Natural depth of field and perspective: background seats diminish in size and soften slightly with distance, matching a phone/camera photo in a large venue.",
+          "location": "Seat sections and stair aisle behind subjects"
+        },
+        {
+          "reasoning": "Fine, irregular details (hair strands, skin texture, fabric weave, printed logo wear) appear coherent without AI-like smearing or repeating patterns.",
+          "location": "Man’s hairline/sideburns, woman’s hair, shirt graphic, suit fabric"
+        },
+        {
+          "reasoning": "Straight lines and repeated structures remain geometrically stable (handrails, stairs, seat rows) without warping artifacts common in generated images.",
+          "location": "Central staircase, railings, and seat grid"
+        },
+        {
+          "reasoning": "Readable signage and typography on the scoreboard area looks like standard venue ads with consistent sharpness/no garbled text.",
+          "location": "Top banner/signage area"
+        },
+        {
+          "reasoning": "Occlusions and interactions look physically correct (arms overlapping, clothing folds, phone grip) with consistent edges and motion blur/no haloing.",
+          "location": "Man’s hand holding phone, jacket sleeve edges, overlapping shoulders"
+        }
+      ]
+    },
+    {
+      "filename": "6eb2e789526629ed382be35a4192fc25_r.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Consistent natural lighting and shadows across faces, tableware, and background; highlights on glass and plastic look physically plausible.",
+          "location": "Overall scene (faces, cups, glassware, table surface)"
+        },
+        {
+          "reasoning": "Fine, irregular real-world textures (brick wall mortar, tablecloth weave/print, food surfaces) show non-repeating detail typical of a camera photo rather than generative patterns.",
+          "location": "Brick wall and tablecloth/food areas"
+        },
+        {
+          "reasoning": "Optics and perspective are coherent: wide-angle distortion at edges, depth cues, and scale relationships between plates, bottles, and people match a single camera viewpoint.",
+          "location": "Table edges, foreground plate, subjects at left/right edges"
+        },
+        {
+          "reasoning": "Text and graphics on objects appear naturally imperfect (partial occlusions, wrinkles, curvature on bottles/cups) rather than warped or nonsensical as often seen in synthetic images.",
+          "location": "Condiment bottles and printed tablecloth"
+        },
+        {
+          "reasoning": "No visible AI artifacts such as melted/extra fingers, inconsistent facial features, or impossible object intersections; hands, utensils, and plates align correctly.",
+          "location": "Hands/utensils/plates around the table"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-simon-robben-55958-614810_r.jpg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "The portrait shows consistent, physically plausible lighting: a strong key light from camera-left creates a smooth shadow falloff across the nose, cheek, and right side of the face, with coherent specular highlights in both eyes.",
+          "location": "Face (overall), especially eye catchlights and nose/cheek shading"
+        },
+        {
+          "reasoning": "Fine, irregular skin texture and pores are visible with natural variation; there are no obvious generative artifacts such as smeared textures, repeated patterns, or plastic-like surfaces.",
+          "location": "Forehead, cheeks, and around the nose"
+        },
+        {
+          "reasoning": "Hair and stubble have natural, uneven strand direction and density, including believable soft flyaways and non-uniform beard growth without warping or blending errors.",
+          "location": "Hairline, eyebrows, and beard/stubble region"
+        },
+        {
+          "reasoning": "Facial features and edges look optically consistent: eyelashes, eyelid creases, lip boundaries, and the jaw/ear contours have clean, realistic transitions without the common AI telltales (melting edges, asymmetry glitches, or mismatched detail).",
+          "location": "Eyes/eyelashes, lips, jawline, and ear"
+        }
+      ]
+    },
+    {
+      "filename": "10ff906c25d12371be60cf5f24801fb1_r.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Consistent natural lighting with coherent sun direction and soft shadow transitions across faces, hair, clothing folds, and the ice-cream cones.",
+          "location": "Across both women’s faces and hands; highlights on sunglasses; shadows under chins and in clothing creases"
+        },
+        {
+          "reasoning": "Fine, irregular skin texture (wrinkles, pores, subtle color variation) and realistic hand detail without the smeared or overly uniform surfaces common in generated images.",
+          "location": "Cheeks, neck, hands, and fingers of both women"
+        },
+        {
+          "reasoning": "Optical depth-of-field looks like a real camera: sharp subjects with a smoothly blurred background and plausible bokeh/blur gradients.",
+          "location": "Foreground subjects in focus; background people and objects noticeably out of focus"
+        },
+        {
+          "reasoning": "Materials and reflections behave realistically: sunglass lens reflections and specular highlights, knit/cardigan texture, and waffle-cone patterning are coherent and detailed.",
+          "location": "Sunglasses on the left woman; cardigan fabric; both waffle cones"
+        },
+        {
+          "reasoning": "Small real-world imperfections and asymmetries (slightly uneven lipstick/nail polish, natural hair flyaways, minor stains/crumbs) increase photographic authenticity.",
+          "location": "Fingernails and lips; hair edges; minor marks on clothing and around the cones"
+        }
+      ]
+    },
+    {
+      "filename": "22ba4974b508590e5daadeabe775a344_r.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Consistent optical depth-of-field: the subject is sharp while background lights form natural bokeh with smooth falloff typical of a camera lens.",
+          "location": "Overall image; especially background light blobs and transition around subject edges"
+        },
+        {
+          "reasoning": "Physically plausible reflections/lighting on the glass panel and the hand: highlights align with the scene and the glass edge is continuous without warping.",
+          "location": "Left side vertical glass seam and the raised left hand"
+        },
+        {
+          "reasoning": "Natural skin and hair detail: fine, irregular strands and subtle tonal variation without repeated patterns or synthetic smearing.",
+          "location": "Hair along both shoulders; facial skin around cheeks/forehead"
+        },
+        {
+          "reasoning": "Coherent clothing textures and seams: fabric nap on the coat and knit on the sleeve show realistic microtexture and consistent shading.",
+          "location": "Beige coat and dark sleeve on left arm"
+        },
+        {
+          "reasoning": "No obvious generative artifacts such as distorted anatomy, inconsistent pupils, or malformed edges; proportions and features look photographically consistent.",
+          "location": "Face and hand edges"
+        }
+      ]
+    },
+    {
+      "filename": "3b2df9efaf0e42c3763dfbf3b387e8ac_r.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Consistent, physically plausible lighting and shadows across people, shelter structure, and surrounding buildings; no conflicting light directions or unnatural highlight behavior.",
+          "location": "overall scene (people, bus shelter, building facade)"
+        },
+        {
+          "reasoning": "Natural photographic noise/grain and compression artifacts are uniform across the image, typical of a camera capture rather than generative texture synthesis.",
+          "location": "sky, building walls, darker clothing areas"
+        },
+        {
+          "reasoning": "Fine structural details (tree branches, window frames, brick texture, street cracks) show coherent geometry and continuous edges without the warping/duplicated patterns common in synthetic images.",
+          "location": "tree at left, building windows, brick facade, road surface"
+        },
+        {
+          "reasoning": "Glass reflections and transparency behave realistically: partial reflections of the environment and people align with viewing angle, and text/graphics on the shelter appear correctly occluded by glass and frame elements.",
+          "location": "bus shelter glass panels and printed signage"
+        },
+        {
+          "reasoning": "Depth, perspective, and occlusion are consistent: people overlap each other and the shelter correctly, and scale changes match distance (foreground figures larger than those farther back).",
+          "location": "group of people at the curb and inside/behind the shelter"
+        },
+        {
+          "reasoning": "Readable, correctly formed street signage and shelter branding with consistent typography and alignment, without the typical garbled/unstable text artifacts seen in many AI-generated images.",
+          "location": "pedestrian crossing sign, bus stop sign, shelter branding text"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-kampus-6763716_r.jpg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Consistent global lighting: overhead fixtures and skylights create plausible highlights and soft shadows on the floor, walls, ball, and faces without mismatched directions.",
+          "location": "Ceiling lights/skylights, reflections on court floor, subjects’ shading"
+        },
+        {
+          "reasoning": "Natural optical characteristics: depth of field blur increases toward the foreground edges, with realistic bokeh and lens perspective for a wide indoor shot.",
+          "location": "Blurred foreground wheelchairs and arms; wide view of gym"
+        },
+        {
+          "reasoning": "Fine geometric detail is coherent: wheelchair spokes, frames, and joints align correctly with consistent perspective and no warped or duplicated structures typical of generative artifacts.",
+          "location": "Wheelchair wheels/spokes in foreground and center subject’s chair"
+        },
+        {
+          "reasoning": "Textures look photographic: wood grain on the arched ceiling and court flooring, wall paneling, and fabric weave show irregular, non-repeating detail consistent with a camera capture.",
+          "location": "Ceiling, floorboards, wall paneling, clothing"
+        },
+        {
+          "reasoning": "Scene elements are internally consistent: court markings, hoops, backboards, and support padding are correctly shaped and proportioned, with no nonsensical objects or broken edges.",
+          "location": "Basket hoops/backboards, court lines, padding at far hoop"
+        },
+        {
+          "reasoning": "Motion/pose realism: hands on the basketball and natural body posture match the interaction, with believable contact points and grip without deformation.",
+          "location": "Center subject’s hands and basketball"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-ash-valiente-1680519-3533228_r.jpg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Consistent, physically plausible lighting: specular highlights and soft reflections on the glossy balloons align with a single ambient light environment, and shading on the subject’s arms/face matches the same direction and intensity.",
+          "location": "Balloons and subject’s face/arms"
+        },
+        {
+          "reasoning": "Natural depth-of-field and perspective: the balloons overlap with believable scale changes and occlusions, and the background shows a realistic focus falloff consistent with a real camera lens.",
+          "location": "Balloon cluster and background gate"
+        },
+        {
+          "reasoning": "Fine, coherent texture detail: skin texture, hair strands, and fabric weave/pattern show high-frequency detail without common AI artifacts (waxy skin, smeared microtexture, or inconsistent strand rendering).",
+          "location": "Face, hair, and patterned shirt"
+        },
+        {
+          "reasoning": "Accurate contact and occlusion edges: the hands and balloons have clean, consistent boundaries and realistic deformation/shape continuity of balloons where they press against each other.",
+          "location": "Hands interacting with balloons"
+        },
+        {
+          "reasoning": "Background geometry is consistent: repeating metal gate pattern maintains straight lines and consistent spacing without warping typical of generative distortions.",
+          "location": "Metal gate in the background"
+        }
+      ]
+    },
+    {
+      "filename": "b44f76c982e61da75229c6c579a44c3ead8144f558b4381cd30e4d6df14b6028_r.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Natural motion blur on multiple moving players and the ball, consistent with a longer shutter speed during indoor sports photography; blur direction and intensity vary by subject speed and distance.",
+          "location": "Players in blue/white and the basketball near the center-right"
+        },
+        {
+          "reasoning": "Consistent indoor gym lighting and color cast (warm tones), with plausible shadowing and specular highlights on skin and clothing; no irregular lighting transitions typical of compositing.",
+          "location": "Across the scene, especially on the main player’s arms and jersey"
+        },
+        {
+          "reasoning": "Coherent perspective and geometry: court lines converge correctly, and relative proportions of players match expected depth in a gym setting.",
+          "location": "Floor court markings and players’ relative sizes"
+        },
+        {
+          "reasoning": "Fine, realistic texture detail (fabric folds, shoe edges, skin texture/tattoo) where in focus, with smooth degradation into blur where out of focus—typical of camera optics rather than AI artifacts.",
+          "location": "Main player’s jersey/shorts and shoulder area"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-thgusstavo-1933873_r.jpg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Skin texture shows natural, irregular pore detail, wrinkles, and age spots without the smeared or repeating patterns common in generated faces.",
+          "location": "Face (forehead, cheeks, around eyes) and neck/chest skin"
+        },
+        {
+          "reasoning": "Consistent optical depth-of-field: sharp focus on the subject with smooth, lens-like background blur and realistic bokeh transitions.",
+          "location": "Background street scene behind the subject"
+        },
+        {
+          "reasoning": "Lighting and shadows are coherent across hat brim, nose, mustache, and shirt folds, matching a single directional light source and ambient fill.",
+          "location": "Hat brim shadow on forehead; facial shadows; shirt folds"
+        },
+        {
+          "reasoning": "Fine, physically plausible fabric and weave detail on the straw hat and shirt, with natural variation and crisp edges where in focus.",
+          "location": "Hat texture and shirt collar/shoulder area"
+        },
+        {
+          "reasoning": "Cigarette geometry and ash look consistent with real combustion and handling; edges and shading align with the mouth and mustache contact point.",
+          "location": "Mouth area and cigarette tip"
+        },
+        {
+          "reasoning": "No obvious AI artifacts such as distorted facial features, inconsistent edges, or warped background structures; perspective lines in the awning and vehicles remain coherent.",
+          "location": "Awning stripes above; cars and street elements in the background"
+        }
+      ]
+    },
+    {
+      "filename": "5ba040f1b7aa293dc915e40f0e39b3f8_r.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Lighting and shadows are consistent across the subject and the environment (directional daylight, soft shadowing, and matching contrast on clothing, face, and pavement).",
+          "location": "Subject and ground around her"
+        },
+        {
+          "reasoning": "Fine details look optically natural: hair strands, fabric texture in the suit, and realistic skin shading without the smeared/overly-smooth look common in AI images.",
+          "location": "Hair, blazer/skirt fabric, face"
+        },
+        {
+          "reasoning": "Perspective and depth of field appear camera-like: the foreground subject is sharper while background pedestrians/signage are slightly softer with plausible scale changes and occlusions.",
+          "location": "Whole scene, especially background crowd"
+        },
+        {
+          "reasoning": "No obvious generative artifacts: hands/fingers, eyewear, and edges (bag strap, laptop outline, heels) are coherent without warping, extra limbs, or inconsistent geometry.",
+          "location": "Hands, bag strap, laptop edges, shoes"
+        },
+        {
+          "reasoning": "Background clutter contains plausible real-world complexity (varied people, street signs, trees, and vendor items) without the repeated, nonsensical patterns typical of synthetic imagery.",
+          "location": "Background crowd, signage, street elements"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-dennisshotit-10415856_r.jpg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Natural facial skin texture and fine detail (pores, beard hairs) without the waxy smoothing or inconsistent micro-textures common in generated images.",
+          "location": "Face (cheeks/forehead) and beard area"
+        },
+        {
+          "reasoning": "Consistent, physically plausible lighting and shadows: soft daylight highlights on the face and cap with coherent shadow falloff under the chin and around the nose.",
+          "location": "Face, under-chin shadow, cap shading"
+        },
+        {
+          "reasoning": "Optical depth-of-field looks like a real lens: subject is sharp while the background shows smooth, circular bokeh and gradual blur transitions.",
+          "location": "Background foliage and distant people"
+        },
+        {
+          "reasoning": "Clothing and accessories show crisp, realistic stitching and materials; backpack straps/buckles align correctly and wrap naturally around the shoulders and chest.",
+          "location": "Backpack straps/buckles and shirt embroidery"
+        },
+        {
+          "reasoning": "No obvious generation artifacts such as warped edges, duplicated patterns, or nonsensical textures; edges (cap rim, ears, shoulders) remain coherent.",
+          "location": "Cap edge, ears, shoulder contours"
+        }
+      ]
+    },
+    {
+      "filename": "9abbb21f98f0aa977beaf958243cc342_r.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Lighting and shadows are consistent: the strong sunlight creates a coherent shadow under the subject and on the sand, matching the scene direction.",
+          "location": "Subject and ground (shadow beneath feet and on sand)"
+        },
+        {
+          "reasoning": "Motion cues look natural: sand is kicked up behind the moving foot with irregular particle spread and blur typical of a real photo capture.",
+          "location": "Sand plume behind the lifted/back foot"
+        },
+        {
+          "reasoning": "Fine texture detail appears physically plausible: hair strands, fabric weave, and folds show natural variation without the repeated patterns or smeared artifacts common in generated images.",
+          "location": "Hair, dress fabric, jacket texture"
+        },
+        {
+          "reasoning": "Depth of field and focus falloff are consistent with a camera lens: the subject is sharper than the background, and the background sand is smoothly defocused without unnatural edge halos.",
+          "location": "Edges of subject vs. background sand"
+        },
+        {
+          "reasoning": "Anatomy and object interactions are coherent: limbs, hands, and clothing drape behave realistically, and the stick’s occlusion and perspective align with the scene.",
+          "location": "Arms/hands, jacket drape, stick angle and overlap"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-elletakesphotos-1680173_r.jpg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Consistent, physically plausible lighting: soft back/side sunlight creates natural highlights on faces/arms and matching shadows under the hat brim and along clothing folds.",
+          "location": "Subjects (faces, hat brim, arms, clothing)"
+        },
+        {
+          "reasoning": "Natural depth-of-field and lens rendering: background is smoothly defocused while foreground subjects remain sharp, with realistic bokeh and no abrupt cutout edges.",
+          "location": "Background bridge/boats vs. subjects"
+        },
+        {
+          "reasoning": "Fine-grain sensor noise/film grain and subtle compression artifacts appear uniform across the image, typical of a camera photo rather than AI synthesis.",
+          "location": "Sky gradient and midtone areas on clothing"
+        },
+        {
+          "reasoning": "Coherent, intricate small details that AI often mangles: tattoos follow arm contours, hair flyaways are irregular, jewelry chain and pendant geometry are consistent, and sunglasses reflections/shading look plausible.",
+          "location": "Man’s arms, woman’s hair, necklace, both sunglasses"
+        },
+        {
+          "reasoning": "No obvious generative artifacts: no warped anatomy, duplicated features, inconsistent texturing, or broken perspective lines in the bridge/boats/horizon.",
+          "location": "Overall scene (subjects and background elements)"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-markarronsmith-2168356_r.jpg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "The eyelid skin shows natural micro-texture (pores, fine lines) with irregular, non-repeating detail consistent with a macro photograph rather than synthetic generation.",
+          "location": "Upper and lower eyelid skin around the eye"
+        },
+        {
+          "reasoning": "Eyelashes vary in thickness, direction, and focus, including slight clumping and stray hairs; depth-of-field blur transitions look optically plausible.",
+          "location": "Eyelashes along the upper lid and lower lid"
+        },
+        {
+          "reasoning": "The iris displays complex, radially varying fibers and pigment with subtle asymmetries and natural falloff toward the limbus, without obvious procedural repetition.",
+          "location": "Iris (gold/brown region around the pupil)"
+        },
+        {
+          "reasoning": "Specular highlights and reflections on the cornea are coherent with a curved, wet surface; the highlight edges and brightness roll-off match real lens/lighting behavior.",
+          "location": "Corneal surface over the iris"
+        },
+        {
+          "reasoning": "Moisture/tear film at the inner corner produces small, irregular glints and translucent edges typical of real fluid, not uniform or overly clean.",
+          "location": "Inner corner (right side) near the tear duct"
+        },
+        {
+          "reasoning": "Overall focus plane and bokeh are consistent with a close-up/macro shot: sharpest detail on the iris with rapid falloff to surrounding skin and background.",
+          "location": "Across the frame (iris sharp, surrounding areas progressively blurred)"
+        }
+      ]
+    },
+    {
+      "filename": "07033864d4889d76cabaf716194d08b1_r.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Lighting and exposure are consistent: bright sun on the people and dogs with plausible shadowing, while the clouds show natural gradations and backscatter typical of real atmospherics.",
+          "location": "Across subjects and sky"
+        },
+        {
+          "reasoning": "Fine, irregular detail looks photographic rather than synthesized: hair flyaways, fabric folds, and the dogs’ fur have natural, non-repeating texture without warped edges.",
+          "location": "People’s clothing/hair and dogs’ coats"
+        },
+        {
+          "reasoning": "Depth and optics appear natural: slight atmospheric softness in the distant clouds relative to the sharp foreground ridge, with no obvious compositing seams.",
+          "location": "Foreground ridge vs. background sky"
+        },
+        {
+          "reasoning": "Leashes, straps, and accessories align correctly with hands, harness points, and body posture; no malformed overlaps or impossible geometry.",
+          "location": "Leashes/harnesses and hands"
+        },
+        {
+          "reasoning": "Noise/compression and color response are uniform across the image, consistent with a single camera capture rather than layered AI elements.",
+          "location": "Entire image"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-rebrand-cities-581004-1367269_r.jpg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Lighting and shadows are consistent across faces, clothing folds, and the interior space; highlights align with the large window light source without unnatural glow or mismatched directions.",
+          "location": "Faces, suit fabric, blazer fabric, and window-lit interior"
+        },
+        {
+          "reasoning": "Fine detail appears natural: hair strands, beard texture, skin pores, and fabric weave show camera-like sharpness and depth-of-field rather than AI-smoothed or painterly artifacts.",
+          "location": "Man’s beard and hairline; woman’s hair curls; suit and blazer textures"
+        },
+        {
+          "reasoning": "Geometry and perspective are coherent: window frames, ceiling beams, and track lights converge correctly with no warped lines or impossible angles.",
+          "location": "Background windows, ceiling beams, and light fixtures"
+        },
+        {
+          "reasoning": "Edges and occlusions look correct: clean separation between subjects and background, with natural soft transitions and no obvious blending errors around hair, shoulders, or lapels.",
+          "location": "Around both subjects’ hair, shoulders, and jacket lapels"
+        },
+        {
+          "reasoning": "No typical generative anomalies are visible (e.g., deformed hands, inconsistent facial features, smeared text/logos, or repeating patterns).",
+          "location": "Entire image; especially faces and clothing"
+        }
+      ]
+    },
+    {
+      "filename": "6f94f65c954eaa1a7d722dff848810ac_r.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "The wood shows natural, irregular grain, cracks, splinters, and weathering with non-repeating detail typical of real surfaces rather than generated textures.",
+          "location": "Right side wooden wall/boards"
+        },
+        {
+          "reasoning": "Lighting and shadows are consistent across the face and the wooden wall, with plausible soft falloff and no conflicting highlights.",
+          "location": "Child’s face and adjacent wood edge"
+        },
+        {
+          "reasoning": "The eyes contain coherent catchlights and reflections that match the scene’s lighting, and the eyelids/iris boundaries look anatomically consistent.",
+          "location": "Child’s eyes"
+        },
+        {
+          "reasoning": "Hair strands and flyaways vary naturally in thickness and direction, without smeared or melted artifacts often seen in synthetic images.",
+          "location": "Top of the head/hairline"
+        },
+        {
+          "reasoning": "Depth of field appears camera-like: the face is relatively sharp while the background (door/frame) is smoothly out of focus with natural blur transitions.",
+          "location": "Background left (door/frame) vs. subject"
+        },
+        {
+          "reasoning": "Edge transitions where the face meets the wood are clean and physically plausible, with no warping, double edges, or blending artifacts.",
+          "location": "Boundary between child’s cheek/forehead and the wooden wall"
+        },
+        {
+          "reasoning": "Skin texture and tonal gradients are smooth but not plasticky, with subtle pores/creases and realistic shading around the nose, lips, and cheeks.",
+          "location": "Child’s cheeks, nose, and mouth"
+        }
+      ]
+    },
+    {
+      "filename": "496b696785ad2da1e310e53bb5be541d2ea161424b076eabeb0b1d4a6b6d2f3e_r.jpeg",
+      "classification": "fake",
+      "artifacts": [
+        {
+          "reasoning": "Skin and facial texture appear airbrushed and plasticky with overly smooth gradients and minimal pore-level detail, which is uncommon in a natural photo at this scale.",
+          "location": "Child’s face (cheeks/forehead/nose)"
+        },
+        {
+          "reasoning": "Eyes show an unnatural glassy look with very uniform specular highlights and an intense, stylized iris appearance that reads like rendering rather than camera capture.",
+          "location": "Child’s eyes"
+        },
+        {
+          "reasoning": "Shadow bands across the face look overly clean-edged and uniformly blended, resembling a compositing/CG light pass more than real window-shadow falloff.",
+          "location": "Across the child’s forehead and cheeks from the window bars"
+        },
+        {
+          "reasoning": "Hands/fingers show slightly off anatomy and simplified creases, with a ‘modeled’ look instead of natural skin micro-structure and joint detail.",
+          "location": "Child’s hands gripping the rail"
+        },
+        {
+          "reasoning": "Overall depth-of-field and blur transitions feel synthetic (strong subject isolation with smooth, uniform bokeh-like blur), consistent with rendered or AI-generated imagery.",
+          "location": "Foreground seat bar and background bus interior"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-hannah-nelson-390257-1456951_r.jpg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Consistent outdoor lighting and lens flare: highlights, shadows, and the flare angle match a strong sun source and interact naturally with the scene.",
+          "location": "Across the subjects and the diagonal reddish flare in the upper-right/center area"
+        },
+        {
+          "reasoning": "Natural depth of field and bokeh: background foliage blur has smooth, optical falloff consistent with a camera lens rather than synthetic cutout edges.",
+          "location": "Background trees/bushes behind the man and child"
+        },
+        {
+          "reasoning": "Plausible reflections in sunglasses: mirrored lenses show complex, coherent scene reflections that align with an outdoor environment.",
+          "location": "Man’s sunglasses"
+        },
+        {
+          "reasoning": "Fine, irregular detail in hair/skin/cloth: beard hairs, skin texture, and fabric weave/stripes show non-repeating, high-frequency detail typical of real photography.",
+          "location": "Man’s beard and shirt; child’s striped shirt and face"
+        },
+        {
+          "reasoning": "Anatomy and interaction look physically consistent: the child’s legs wrap around the man’s shoulders with believable contact, pressure points, and posture; hands and fingers are well-formed without common generative distortions.",
+          "location": "Child seated on shoulders; arms/hands near face; man’s hands and thumbs-up"
+        }
+      ]
+    },
+    {
+      "filename": "pexels-ollivves-1122462_r.jpg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Natural motion blur on the airborne subject and splashing/flag movement matches a real camera capture with a fast-moving scene; the blur is directional and consistent with shutter timing rather than synthetic smearing.",
+          "location": "Jumping person above the boat; small flag near the center; standing person has slight blur."
+        },
+        {
+          "reasoning": "Lighting and shadows are coherent: strong sunlight produces consistent highlights on skin, the boat’s surfaces, and the outboard motor, with no conflicting shadow directions.",
+          "location": "Highlights on both people’s shoulders/torso; bright boat deck and motor casing."
+        },
+        {
+          "reasoning": "Water surface shows physically plausible wave geometry, specular reflections, and depth/atmospheric falloff; the waterline perspective (half-above/half-near-water viewpoint) looks like a real near-surface camera position.",
+          "location": "Foreground water and its reflections; horizon area behind the boat."
+        },
+        {
+          "reasoning": "Optics and depth of field appear photographic: distant sky is clean, the boat is relatively sharp, and nearer water is softer, matching typical lens behavior and focus choice.",
+          "location": "Sharpness contrast between boat/subjects and the closer water."
+        },
+        {
+          "reasoning": "Text and branding on the boat and motor look like real-world decals with perspective distortion and partial occlusion; edges are not overly crisp or warped in a way typical of generative artifacts.",
+          "location": "Boat hull lettering and the outboard motor branding on the right."
+        }
+      ]
+    },
+    {
+      "filename": "35df25c3d2f57c32c2be722b51b16cd2_r.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Consistent on-camera flash lighting: strong frontal illumination with natural falloff and believable highlights on skin and fabric, plus soft shadows on the background.",
+          "location": "Faces, clothing, and wall behind subjects"
+        },
+        {
+          "reasoning": "Natural facial detail and skin texture: pores, wrinkles, and subtle color variation appear coherent rather than smoothed or procedurally patterned.",
+          "location": "Both faces and hands"
+        },
+        {
+          "reasoning": "Hair shows realistic strand-level randomness and flyaways without the repeating or melted artifacts common in synthetic images.",
+          "location": "Woman’s hair and man’s hairline"
+        },
+        {
+          "reasoning": "Hands and fingers look anatomically consistent with correct joint shapes and natural creasing; no extra/missing digits or warped geometry.",
+          "location": "Man’s right hand on shoulder and left arm around woman"
+        },
+        {
+          "reasoning": "Readable printed text on the name tag with plausible typography and perspective, without the garbled letterforms typical of many generated images.",
+          "location": "Name tag on man’s chest"
+        },
+        {
+          "reasoning": "Scene geometry and depth cues are coherent: overlapping subjects, chair, paneling, and window blinds align with a single camera viewpoint.",
+          "location": "Background (booth seating, wall panels, blinds) and subject overlap"
+        }
+      ]
+    },
+    {
+      "filename": "7e5172ad4e622ec6bdffee40c761e54a_r.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Fine, non-repeating skin texture and wrinkles with natural variation in pore detail and specular highlights; no smeared or plastic-like regions typical of synthesis.",
+          "location": "Face (forehead, cheeks, around eyes and mouth)"
+        },
+        {
+          "reasoning": "Hair strands and flyaways are irregular and individually resolved, including a few stray fibers catching light; edges look optically sharp rather than algorithmically blended.",
+          "location": "Hairline/temple area and along the hat brim"
+        },
+        {
+          "reasoning": "Textiles show coherent weave/embroidery detail with consistent shading and depth across folds; patterns remain stable without warping artifacts.",
+          "location": "Garment collar/chest embroidery and fabric folds"
+        },
+        {
+          "reasoning": "Lighting and shadows are physically consistent: soft directional light produces believable facial shadowing, under-brim shading, and gradual tonal transitions.",
+          "location": "Under the hat brim, nose/cheek shadows, neck area"
+        },
+        {
+          "reasoning": "Background bokeh and depth-of-field blur look lens-like, with smooth falloff and no cutout halos around the subject outline.",
+          "location": "Background and subject edge around hat and shoulders"
+        },
+        {
+          "reasoning": "Object geometry is consistent: the hat’s circular structure, brim curvature, and rim thickness align across perspective without impossible intersections.",
+          "location": "Hat crown and brim"
+        }
+      ]
+    },
+    {
+      "filename": "810bcecc0287f5afe2bc9e1cb2b18ec1144811921d7599d6b2c6fcc5e47a4aa3_r.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "The scene shows consistent optical depth-of-field: the subject is sharp while the dental equipment and background are smoothly blurred in a natural way, without the patchy or inconsistent focus often seen in AI composites.",
+          "location": "Overall image; especially the transition from the subject’s face to the blurred dental chair and tools in the background."
+        },
+        {
+          "reasoning": "Lighting and shadows are coherent across face, neck, clothing folds, and arms. Highlights on the skin and the soft shadowing under the chin and around the mask match a plausible indoor light setup.",
+          "location": "Face and neck area; under-chin shadow; mask edges."
+        },
+        {
+          "reasoning": "Fine, realistic texture details are present: natural skin pores and tonal variation, believable hair strands, and fabric texture on the scrubs. These details look photographically captured rather than synthesized.",
+          "location": "Cheeks/forehead; hairline; scrub fabric on chest and sleeves."
+        },
+        {
+          "reasoning": "Objects have physically consistent geometry and materials: the wristwatch has plausible reflections and edge definition; the glove shows natural wrinkles and translucency variations; the mask’s folds and ear loops look mechanically consistent.",
+          "location": "Wristwatch on right wrist; glove on raised hand; surgical mask under chin."
+        },
+        {
+          "reasoning": "No obvious generative artifacts such as warped anatomy, irregular teeth patterns, melted edges, or inconsistent background structures are apparent; contours and boundaries remain clean and realistic.",
+          "location": "Teeth and mouth; hand/thumb outline; edges around shoulders and arms; background equipment silhouettes."
+        }
+      ]
+    },
+    {
+      "filename": "63b3e7984cd58d477392d4cf52731765c6d8d6878a7d29eecff28fcbdfa20a9b_r.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Lighting and shadows are consistent across faces, clothing, and objects, with natural falloff typical of a small indoor light source.",
+          "location": "Overall scene (faces, table items, tent interior)"
+        },
+        {
+          "reasoning": "Fine fabric textures and wear patterns on the camouflage uniforms look physically plausible, with consistent stitching, folds, and compression where the fabric bends.",
+          "location": "Uniforms on both people and the hanging jacket"
+        },
+        {
+          "reasoning": "Hands and fingers show natural anatomy and believable contact with objects (bread, spoon), without the distortions or fused digits common in synthetic images.",
+          "location": "Right person’s hands at mouth; left person’s hand holding spoon"
+        },
+        {
+          "reasoning": "Object details (stove components, food packaging, containers) have coherent geometry, legible printed elements, and realistic specular highlights from plastics/metal.",
+          "location": "Center stove and items on the table"
+        },
+        {
+          "reasoning": "Depth, slight motion/softness, and camera noise/grain appear consistent with a real low-light photograph rather than generated textures.",
+          "location": "Background tent fabric and darker areas"
+        }
+      ]
+    },
+    {
+      "filename": "7ab599405cf71cba21eecd46b7305058_r.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Lighting and shadows are consistent across the subject and the stone steps, with natural outdoor diffuse light and no mismatched shadow directions.",
+          "location": "Subject and surrounding steps/wall"
+        },
+        {
+          "reasoning": "Fine textures (stone grain, worn edges, small cracks, moss) show irregular, non-repeating detail typical of a real photograph.",
+          "location": "Stair treads and stone wall"
+        },
+        {
+          "reasoning": "Clothing folds and fabric tension align with the body’s pose (arms braced behind, legs extended), with realistic wrinkles and compression points.",
+          "location": "Red jacket sleeves/torso and black-red pants"
+        },
+        {
+          "reasoning": "Depth of field and focus falloff look lens-like: the subject is sharp while background elements are slightly softer without synthetic edge artifacts.",
+          "location": "Subject vs. upper steps/background"
+        },
+        {
+          "reasoning": "Edges around hair, face profile, and clothing seams appear natural, without common generative artifacts like smearing, double contours, or inconsistent geometry.",
+          "location": "Head/shoulder outline and jacket seams"
+        }
+      ]
+    },
+    {
+      "filename": "4385a289fa7f32a4400492be839ddf44_r.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Lighting and shadows are consistent across the scene: the man, taxi, and street share the same sun direction and similar contrast, with contact shadows under the shoes and vehicle matching the pavement texture.",
+          "location": "Across the man’s legs/shoes and the taxi’s underside/ground area"
+        },
+        {
+          "reasoning": "Fine details look optically natural (hair strands, fabric folds, tie pattern, shoe highlights) without the smeared or warped artifacts common in synthetic images.",
+          "location": "Man’s head/hair, jacket sleeves, pants creases, and shoes"
+        },
+        {
+          "reasoning": "Text and signage appear coherent and correctly placed on real objects, with perspective and reflections matching the camera angle (e.g., license plate, decals, and roof sign).",
+          "location": "Taxi rear: license plate area, decals near the tailgate, and roof sign"
+        },
+        {
+          "reasoning": "Scene geometry and occlusions are physically plausible: the man’s body overlaps the taxi correctly, and edges (briefcase against leg, jacket against background) are clean with natural depth-of-field falloff.",
+          "location": "Man’s torso/briefcase edge and the boundary where he passes the taxi"
+        },
+        {
+          "reasoning": "Background elements show typical real-camera characteristics (slight motion blur/softness on distant subject, realistic noise/compression, and lens perspective), rather than uniformly sharp or inconsistent AI rendering.",
+          "location": "Background pedestrian and truck area"
+        }
+      ]
+    },
+    {
+      "filename": "19c88e43e58f7e3b52041ac204ee5717_r.jpeg",
+      "classification": "real",
+      "artifacts": [
+        {
+          "reasoning": "Consistent, natural lighting and shadows across all three faces, with plausible falloff and no mismatched illumination directions.",
+          "location": "Faces and neck/shoulder areas"
+        },
+        {
+          "reasoning": "Hair strands show irregular, fine detail and natural flyaways without repetitive or smeared textures that often appear in generated images.",
+          "location": "Gray hair of the center person; curls on the right; short hair on the left"
+        },
+        {
+          "reasoning": "Skin texture, pores, and subtle color variation look photographic, including minor blemishes and realistic gradients rather than overly smooth or painterly surfaces.",
+          "location": "Cheeks and forehead of the right person; center person’s face"
+        },
+        {
+          "reasoning": "Optical depth-of-field and focus behavior look like a real camera: subjects are sharp while the textured wall is slightly softened, and edges don’t show typical AI warping.",
+          "location": "Edge transitions between subjects and the white wall"
+        },
+        {
+          "reasoning": "Background wall texture appears physically consistent (fine grain/rough plaster) with coherent perspective and no morphing patterns.",
+          "location": "White wall across the frame"
+        },
+        {
+          "reasoning": "Objects (flowers/leaves) have natural irregular shapes and consistent blur/noise relative to their apparent distance, matching a real scene capture.",
+          "location": "Top-left flowers and leaves"
+        }
+      ]
+    }
+  ]
+}

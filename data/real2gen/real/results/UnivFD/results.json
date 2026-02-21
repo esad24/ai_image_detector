@@ -1,11 +1,10 @@
 {
   "model": "UniversalFakeDetect (CLIP:ViT-L/14)",
-  "source_folder": "/home/usluesyr/ai_image_detector/data/reconstructed_images/real/images",
-  "total_images": 20,
+  "source_folder": "/home/usluesyr/ai_image_detector/data/real2gen/real/images",
+  "total_images": 30,
   "detected_fake": 1,
-  "detected_real": 19,
-  "fake_rate": 5.0,
-  "acc": 0.95,
+  "detected_real": 29,
+  "fake_rate": 3.3,
   "results": [
     {
       "filename": "07033864d4889d76cabaf716194d08b1.jpeg",
@@ -106,6 +105,56 @@
       "filename": "cf33ccfee6f7eb1725eaa67ab3de4476.jpeg",
       "classification": "real",
       "probability": 0.0082
+    },
+    {
+      "filename": "pexels-ash-valiente-1680519-3533228.jpg",
+      "classification": "real",
+      "probability": 0.0012
+    },
+    {
+      "filename": "pexels-dennisshotit-10415856.jpg",
+      "classification": "real",
+      "probability": 0.0306
+    },
+    {
+      "filename": "pexels-elletakesphotos-1680173.jpg",
+      "classification": "real",
+      "probability": 0.0004
+    },
+    {
+      "filename": "pexels-hannah-nelson-390257-1456951.jpg",
+      "classification": "real",
+      "probability": 0.0003
+    },
+    {
+      "filename": "pexels-kampus-6763716.jpg",
+      "classification": "real",
+      "probability": 0.0
+    },
+    {
+      "filename": "pexels-markarronsmith-2168356.jpg",
+      "classification": "real",
+      "probability": 0.0625
+    },
+    {
+      "filename": "pexels-ollivves-1122462.jpg",
+      "classification": "real",
+      "probability": 0.0078
+    },
+    {
+      "filename": "pexels-rebrand-cities-581004-1367269.jpg",
+      "classification": "real",
+      "probability": 0.0018
+    },
+    {
+      "filename": "pexels-simon-robben-55958-614810.jpg",
+      "classification": "real",
+      "probability": 0.0433
+    },
+    {
+      "filename": "pexels-thgusstavo-1933873.jpg",
+      "classification": "real",
+      "probability": 0.0003
     }
   ]
 }

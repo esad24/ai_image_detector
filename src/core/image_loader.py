@@ -13,7 +13,7 @@ def load_images(image_folder):
         folder_path = "/home/usluesyr/ai_image_detector/data/genArtifact/real/test/images"
     elif(image_folder == "real2gen_fake"):
         folder_path = "/home/usluesyr/ai_image_detector/data/real2gen/fake/images"
-    elif(image_folder == "real2gen_fake"):
+    elif(image_folder == "real2gen_real"):
         folder_path = "/home/usluesyr/ai_image_detector/data/real2gen/real/images"
     else:
         if not os.path.isdir(image_folder):
