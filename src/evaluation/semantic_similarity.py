@@ -25,12 +25,12 @@ hf_logging.set_verbosity_error()
 # ═══════════════════════════════════════════════════════════════
 # CONFIGURATION
 # ═══════════════════════════════════════════════════════════════
-RESULT_JSON = "/home/usluesyr/ai_image_detector/data/fake/test/results/qwen3-vl/prompt6/2026-01-24_15-59-12/results.json"
+RESULT_JSON = "/home/usluesyr/ai_image_detector/data/genArtifact/fake/test/results/gpt-5.2/prompt3/2026-01-12_17-13-35/results_old.json"
 GT = "gt_2"
-GT_JSON = f"/home/usluesyr/ai_image_detector/data/ground_truth/{GT}/json/{GT}.json"
+GT_JSON = f"/home/usluesyr/ai_image_detector/data/genArtifact/ground_truth/{GT}/json/{GT}.json"
 
 MODEL_NAME = "all-mpnet-base-v2"
-THRESHOLD = 0.6
+THRESHOLD = 0.7
 
 OUTPUT_FILE = os.path.join(
     os.path.dirname(RESULT_JSON),
