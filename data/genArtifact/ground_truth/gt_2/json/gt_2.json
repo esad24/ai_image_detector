@@ -1232,12 +1232,12 @@
     }
   ],
   "stats": {
-    "total_artifacts": 137,
+    "total_artifacts": 186,
     "artifact_types": {
-      "structural": 69,
-      "stylistic": 23,
-      "physical": 10,
-      "semantic": 35
+      "structural": 98,
+      "stylistic": 33,
+      "physical": 11,
+      "semantic": 44
     }
   }
 }

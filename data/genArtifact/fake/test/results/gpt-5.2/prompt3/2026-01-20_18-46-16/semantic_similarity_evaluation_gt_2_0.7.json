@@ -75,7 +75,7 @@
     "valid_match_recall": 0.15591397849462366,
     "valid_match_precision": 0.15934065934065933,
     "valid_match_f1": 0.15760869565217392,
-    "mismatches": "unknown"
+    "mismatches": 0
   },
   "image_scores": [
     {

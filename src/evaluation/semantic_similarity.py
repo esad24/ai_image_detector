@@ -25,12 +25,12 @@ hf_logging.set_verbosity_error()
 # ═══════════════════════════════════════════════════════════════
 # CONFIGURATION
 # ═══════════════════════════════════════════════════════════════
-RESULT_JSON = "/home/usluesyr/ai_image_detector/data/genArtifact/fake/test/results/gpt-5.2/prompt3/2026-01-12_17-13-35/results_old.json"
-GT = "gt_2"
+RESULT_JSON = "/home/usluesyr/ai_image_detector/data/genArtifact/fake/test/results/qwen3-vl/prompt3/2026-01-22_21-28-42/results_manual_review.json"
+GT = "gt_1"
 GT_JSON = f"/home/usluesyr/ai_image_detector/data/genArtifact/ground_truth/{GT}/json/{GT}.json"
 
 MODEL_NAME = "all-mpnet-base-v2"
-THRESHOLD = 0.7
+THRESHOLD = 0.6
 
 OUTPUT_FILE = os.path.join(
     os.path.dirname(RESULT_JSON),
@@ -401,6 +401,21 @@ def _empty_dataset_average():
         "valid_match_precision": 0.0, "valid_match_f1": 0.0, "mismatches": None,
     }
 
+# ═══════════════════════════════════════════════════════════════
+# Testing 
+# ═══════════════════════════════════════════════════════════════
+def test_two_pairs():
+    model = SentenceTransformer("all-mpnet-base-v2")
+
+    text_a = "The left eye has a realistic natural reflection."
+    text_b = "The left eye has an unrealistic artificial reflection."
+
+    emb = model.encode([text_a, text_b], convert_to_tensor=True)
+    score = util.cos_sim(emb[0], emb[1])
+
+    print(float(score))
+
+
 
 # ═══════════════════════════════════════════════════════════════
 # MAIN
@@ -415,6 +430,6 @@ def main():
     model = SentenceTransformer(MODEL_NAME)
     evaluate_fake(result_json, gt_json, model, THRESHOLD, OUTPUT_FILE)
 
-
 if __name__ == "__main__":
     main()
+    #test_two_pairs()

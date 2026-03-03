@@ -753,7 +753,8 @@
             "location": "Right side of the image, on the boy's hands."
           },
           "cosine_score": 0.5956242680549622,
-          "valid_match": true
+          "valid_match": true,
+          "mismatch": true
         },
         {
           "result_artifact": {
@@ -900,7 +901,7 @@
             "type": "structural",
             "reasoning": "Object being held (appears like a cup/strap) has ambiguous geometry and blending into the hand and clothing edges.",
             "location": "left-center, between the left woman and the man, near the hand",
-            "manual_review": "valid and new artifact"
+            "manual_review": "uncertain"
           },
           "matched_gt_artifact": {
             "type": "structural",
@@ -923,7 +924,8 @@
             "location": "Right side of the image, on the woman's neck."
           },
           "cosine_score": 0.558768630027771,
-          "valid_match": true
+          "valid_match": true,
+          "mismatch": true
         },
         {
           "result_artifact": {
@@ -1075,7 +1077,8 @@
             "location": "Right side of the image, on the lower microphone near the podium."
           },
           "cosine_score": 0.5293240547180176,
-          "valid_match": true
+          "valid_match": true,
+          "mismatch": true
         },
         {
           "result_artifact": {
@@ -1303,7 +1306,8 @@
             "location": "Left-center of the image, on the utensil tray on the table."
           },
           "cosine_score": 0.5712950229644775,
-          "valid_match": true
+          "valid_match": true,
+          "mismatch": true
         },
         {
           "result_artifact": {
@@ -1318,7 +1322,8 @@
             "location": "Top-left of the image, on the patient monitor display."
           },
           "cosine_score": 0.5210970044136047,
-          "valid_match": true
+          "valid_match": true,
+          "mismatch": true
         }
       ],
       "artifact_type_acc": 1.0,
@@ -1738,7 +1743,8 @@
             "location": "Right-center of the image, on the woman's face."
           },
           "cosine_score": 0.5690515637397766,
-          "valid_match": true
+          "valid_match": true,
+          "mismatch": true
         },
         {
           "result_artifact": {
@@ -2081,7 +2087,7 @@
             "type": "structural",
             "reasoning": "Eye anatomy appears doll-like: iris/limbal ring looks overly crisp and saturated with an unnatural, glassy gradient.",
             "location": "Both irises (left eye mid-left; right eye mid-right)",
-            "manual_review": "valid and new artifact: overly glossy eyes"
+            "manual_review": "uncertain"
           },
           "matched_gt_artifact": {
             "type": "structural",
@@ -2326,7 +2332,8 @@
             "location": "Upper Center of the image, on the person's face."
           },
           "cosine_score": 0.5734434127807617,
-          "valid_match": true
+          "valid_match": true,
+          "mismatch": true
         },
         {
           "result_artifact": {
@@ -2473,7 +2480,8 @@
             "location": "Bottom-left of the image, on the seated child's face."
           },
           "cosine_score": 0.5233653783798218,
-          "valid_match": true
+          "valid_match": true,
+          "mismatch": true
         },
         {
           "result_artifact": {
@@ -3152,7 +3160,8 @@
             "location": "Upper center of the image, on the two women's faces."
           },
           "cosine_score": 0.5146616697311401,
-          "valid_match": true
+          "valid_match": true,
+          "mismatch": true
         }
       ],
       "artifact_type_acc": 0.75,
@@ -3338,9 +3347,9 @@
     "valid_match_recall": 0.40860215053763443,
     "valid_match_precision": 0.4175824175824176,
     "valid_match_f1": 0.4130434782608696,
-    "total_valid_matches": 76,
+    "total_valid_matches": 67,
     "total_gt_artifacts": 186,
     "total_result_artifacts": 182,
-    "mismatches": 8
+    "mismatches": 17
   }
 }

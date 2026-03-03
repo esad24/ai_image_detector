@@ -963,7 +963,7 @@
             "type": "structural",
             "reasoning": "Object being held (appears like a cup/strap) has ambiguous geometry and blending into the hand and clothing edges.",
             "location": "left-center, between the left woman and the man, near the hand",
-            "manual_review": "valid and new artifact"
+            "manual_review": "uncertain"
           },
           "matched_gt_artifact": {
             "type": "structural",
@@ -2143,7 +2143,7 @@
             "type": "structural",
             "reasoning": "Eye anatomy appears doll-like: iris/limbal ring looks overly crisp and saturated with an unnatural, glassy gradient.",
             "location": "Both irises (left eye mid-left; right eye mid-right)",
-            "manual_review": "valid and new artifact: overly glossy eyes"
+            "manual_review": "uncertain"
           },
           "matched_gt_artifact": {
             "type": "structural",

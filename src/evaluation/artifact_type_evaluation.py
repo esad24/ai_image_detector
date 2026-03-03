@@ -24,16 +24,16 @@ ALL_TYPES = ["structural", "semantic", "stylistic", "physical"]
 # ═══════════════════════════════════════════════════════════════
 # CONFIGURATION
 # ═══════════════════════════════════════════════════════════════
-MODE = "real"  # "fake" or "real"
+MODE = "fake"  # "fake" or "real"
 
 GT = "gt_2"
 
-GT_JSON = None
-RESULT_JSON  = "/home/usluesyr/ai_image_detector/data/real2gen/real/results/qwen3-vl/prompt3/2026-02-21_13-15-29/results.json"
+GT_JSON = "/home/usluesyr/ai_image_detector/data/genArtifact/ground_truth/gt_2/json/gt_2.json"
+RESULT_JSON  = "/home/usluesyr/ai_image_detector/data/genArtifact/fake/test/results/qwen3-vl/prompt2/2026-01-24_13-54-27/results.json"
 if MODE == "fake":
     OUTPUT_FILE = os.path.join(
         os.path.dirname(RESULT_JSON),
-        f"artifact_type_evaluation_{GT}.json"
+        f"artifact_type_evaluation2_{GT}.json"
     )
 else:
     OUTPUT_FILE = os.path.join(
