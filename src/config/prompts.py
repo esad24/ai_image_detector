@@ -14,7 +14,7 @@ prompt_dict = {
         "schema": reasoning
         },
       "4": {
-        "text": "Tell me if synthesis artifacts are in the this image. Must return with 1) fake or real; 2) if real, explain why and where the artifacts exist. Respond ONLY with valid JSON",
+        "text": "Tell me if synthesis artifacts are in the this image. Must return with 1) fake or real; 2) if fake, explain why and where the artifacts exist. Respond ONLY with valid JSON",
         "schema": explain
       },
       "5": {
