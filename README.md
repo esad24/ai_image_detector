@@ -15,7 +15,6 @@ cd ai_image_detector
 pip install -r requirements.txt
 ```
 
-> Key dependencies: `openai`, `anthropic`, `ollama`, `sentence-transformers`, `torch`, `pydantic`, `python-dotenv`, `tqdm`, `scipy`, `Pillow`
 
 ### 3. Configure environment variables
 
@@ -82,3 +81,4 @@ data/<split>/test/results/<model>/prompt<id>/<timestamp>/results.json
 ```
 
 ---
+
