@@ -1,0 +1,25 @@
+# API clients
+openai
+anthropic
+ollama
+
+# Environment variables
+python-dotenv
+
+# Image processing
+Pillow
+
+# ML / Embeddings
+torch
+transformers
+sentence-transformers
+
+# Scientific computing
+numpy
+scipy
+
+# Progress bars
+tqdm
+
+# Data validation
+pydantic
