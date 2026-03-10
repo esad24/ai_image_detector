@@ -13,9 +13,9 @@ Semantic Matching (threshold=0.6):
   Unmatched GT:     54
   Unmatched pred:   50
   Mismatches:       3
-  Precision:        0.2967
-  Recall:           0.2903
-  F1:               0.2935
+  Precision:        0.0.5047
+  Recall:           0.0.4865
+  F1:               0.0.4954
 
 Cosine Similarity (all files):
   Mean (all pairs):     0.2562 ± 0.1947

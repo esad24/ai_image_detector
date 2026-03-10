@@ -13,8 +13,8 @@ Semantic Matching (threshold=0.6):
   Unmatched GT:     136
   Unmatched pred:   5
   Mismatches:       unknown
-  Precision:        0.1000
-  Recall:           0.0186
+  Precision:        unknown
+  Recall:           0.0161
   F1:               0.0314
 
 Cosine Similarity (all files):
