@@ -24,3 +24,5 @@ core.*
 *.tar.gz
 *.zip
 EOF
+
+**/src/utils/helper_functions/
